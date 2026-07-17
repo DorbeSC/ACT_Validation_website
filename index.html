@@ -1,0 +1,1147 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>2.0智能報價助理驗測</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      :root {
+        color-scheme: light;
+        --bg: #f4f6f8;
+        --surface: #ffffff;
+        --soft: #f8fafc;
+        --line: #d8e0ea;
+        --line-strong: #b8c5d4;
+        --text: #17212b;
+        --muted: #627386;
+        --accent: #237a78;
+        --accent-soft: #e2f3f1;
+        --blue: #3268b8;
+        --amber: #a96300;
+        --amber-soft: #fff1d8;
+        --rose: #b4364d;
+        --rose-soft: #fde7eb;
+        --green: #28764b;
+        --green-soft: #e4f4e9;
+        --shadow: 0 14px 34px rgba(23, 33, 43, 0.08);
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        color: var(--text);
+        background: var(--bg);
+        font-family:
+          "Noto Sans TC",
+          "Microsoft JhengHei",
+          "PingFang TC",
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+      }
+
+      button,
+      input,
+      textarea {
+        font: inherit;
+      }
+
+      button {
+        cursor: pointer;
+      }
+
+      .app {
+        min-height: 100vh;
+      }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        display: grid;
+        grid-template-columns: minmax(260px, 1fr) auto;
+        gap: 18px;
+        align-items: center;
+        padding: 16px 24px;
+        background: rgba(244, 246, 248, 0.94);
+        border-bottom: 1px solid var(--line);
+        backdrop-filter: blur(10px);
+      }
+
+      h1,
+      h2,
+      h3 {
+        letter-spacing: 0;
+      }
+
+      .brand h1 {
+        margin: 0;
+        font-size: 22px;
+        line-height: 1.25;
+      }
+
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 8px;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        min-height: 26px;
+        padding: 3px 9px;
+        color: var(--muted);
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        font-size: 13px;
+        white-space: nowrap;
+      }
+
+      .toolbar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: flex-end;
+      }
+
+      .search {
+        width: min(330px, 36vw);
+        min-width: 220px;
+        height: 38px;
+        padding: 0 12px;
+        color: var(--text);
+        background: var(--surface);
+        border: 1px solid var(--line-strong);
+        border-radius: 8px;
+      }
+
+      .action-button {
+        height: 38px;
+        padding: 0 12px;
+        color: var(--text);
+        background: var(--surface);
+        border: 1px solid var(--line-strong);
+        border-radius: 8px;
+      }
+
+      .layout {
+        display: grid;
+        grid-template-columns: 310px minmax(0, 1fr);
+        min-height: calc(100vh - 73px);
+      }
+
+      .sidebar {
+        position: sticky;
+        top: 73px;
+        height: calc(100vh - 73px);
+        overflow: auto;
+        padding: 18px 16px 24px 24px;
+        background: #eef2f6;
+        border-right: 1px solid var(--line);
+      }
+
+      .sidebar-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 12px;
+      }
+
+      .sidebar-head h2 {
+        margin: 0;
+        font-size: 15px;
+      }
+
+      .case-count {
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .case-list {
+        display: grid;
+        gap: 8px;
+      }
+
+      .case-button {
+        width: 100%;
+        min-height: 76px;
+        padding: 12px;
+        text-align: left;
+        color: var(--text);
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+      }
+
+      .case-button:hover,
+      .module-filter:hover,
+      .status-button:hover,
+      .action-button:hover {
+        border-color: var(--accent);
+      }
+
+      .case-button.is-active {
+        border-color: var(--accent);
+        box-shadow: inset 4px 0 0 var(--accent);
+      }
+
+      .case-name {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 15px;
+        font-weight: 800;
+        line-height: 1.35;
+      }
+
+      .case-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+
+      .mini-tag {
+        display: inline-flex;
+        align-items: center;
+        min-height: 22px;
+        padding: 2px 7px;
+        color: var(--muted);
+        background: var(--soft);
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        font-size: 12px;
+      }
+
+      .main {
+        min-width: 0;
+        padding: 24px;
+      }
+
+      .case-header,
+      .module-section {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        box-shadow: var(--shadow);
+      }
+
+      .case-header {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 18px;
+        align-items: start;
+        padding: 20px;
+      }
+
+      .case-title {
+        margin: 0;
+        font-size: 24px;
+        line-height: 1.25;
+      }
+
+      .summary-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(130px, 1fr));
+        gap: 10px;
+        margin-top: 16px;
+      }
+
+      .summary-item {
+        min-height: 72px;
+        padding: 10px 12px;
+        background: var(--soft);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+      }
+
+      .summary-label {
+        display: block;
+        margin-bottom: 6px;
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .summary-value {
+        display: block;
+        overflow-wrap: anywhere;
+        font-size: 15px;
+        font-weight: 800;
+        line-height: 1.35;
+      }
+
+      .score-stack {
+        display: grid;
+        gap: 8px;
+        justify-items: end;
+      }
+
+      .score-pill {
+        display: inline-flex;
+        align-items: center;
+        min-height: 30px;
+        padding: 4px 10px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: var(--soft);
+        font-size: 13px;
+        font-weight: 800;
+      }
+
+      .score-pill.high {
+        color: var(--rose);
+        background: var(--rose-soft);
+        border-color: #f3b8c2;
+      }
+
+      .score-pill.medium {
+        color: var(--amber);
+        background: var(--amber-soft);
+        border-color: #edc477;
+      }
+
+      .score-pill.low {
+        color: var(--green);
+        background: var(--green-soft);
+        border-color: #acd7bc;
+      }
+
+      .module-filters {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 18px 0;
+      }
+
+      .module-filter {
+        min-height: 34px;
+        padding: 6px 12px;
+        color: var(--text);
+        background: var(--surface);
+        border: 1px solid var(--line-strong);
+        border-radius: 8px;
+      }
+
+      .module-filter.is-active {
+        color: #ffffff;
+        background: var(--accent);
+        border-color: var(--accent);
+      }
+
+      .modules {
+        display: grid;
+        gap: 22px;
+      }
+
+      .module-section {
+        padding: 20px;
+      }
+
+      .module-header {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 14px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .module-title-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .module-title-row h2 {
+        margin: 0;
+        font-size: 20px;
+        line-height: 1.25;
+      }
+
+      .status-controls {
+        display: grid;
+        gap: 8px;
+        justify-items: end;
+      }
+
+      .status-group {
+        display: inline-flex;
+        overflow: hidden;
+        background: var(--surface);
+        border: 1px solid var(--line-strong);
+        border-radius: 8px;
+      }
+
+      .status-button {
+        min-height: 32px;
+        padding: 5px 10px;
+        color: var(--muted);
+        background: transparent;
+        border: 0;
+        border-right: 1px solid var(--line);
+      }
+
+      .status-button:last-child {
+        border-right: 0;
+      }
+
+      .status-button.is-active {
+        color: #ffffff;
+        background: var(--accent);
+      }
+
+      .note-input {
+        width: 320px;
+        max-width: 100%;
+        min-height: 38px;
+        padding: 8px 10px;
+        resize: vertical;
+        color: var(--text);
+        background: var(--soft);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+      }
+
+      .module-body {
+        display: grid;
+        grid-template-columns: minmax(280px, 360px) minmax(0, 1fr);
+        gap: 18px;
+        padding-top: 18px;
+      }
+
+      .pane-title {
+        margin: 0 0 10px;
+        color: var(--muted);
+        font-size: 13px;
+        font-weight: 800;
+      }
+
+      .input-table {
+        width: 100%;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-collapse: collapse;
+        border-radius: 8px;
+        background: var(--surface);
+      }
+
+      .input-table th,
+      .input-table td {
+        padding: 10px 12px;
+        vertical-align: top;
+        border-bottom: 1px solid var(--line);
+        line-height: 1.45;
+      }
+
+      .input-table tr:last-child th,
+      .input-table tr:last-child td {
+        border-bottom: 0;
+      }
+
+      .input-table th {
+        width: 38%;
+        color: var(--muted);
+        text-align: left;
+        background: var(--soft);
+        font-size: 13px;
+        font-weight: 800;
+      }
+
+      .input-table td {
+        overflow-wrap: anywhere;
+        font-size: 14px;
+      }
+
+      .output-stack {
+        display: grid;
+        gap: 16px;
+      }
+
+      .condition-summary {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .condition-summary .pill {
+        color: var(--accent);
+        background: var(--accent-soft);
+        border-color: #9fd6d0;
+        font-weight: 800;
+      }
+
+      .comparison-chart {
+        padding: 16px;
+        overflow-x: auto;
+        background: #fbfcfd;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+      }
+
+      .comparison-plot {
+        min-width: 660px;
+      }
+
+      .comparison-row {
+        display: grid;
+        grid-template-columns: 54px minmax(520px, 1fr);
+        gap: 10px;
+        align-items: center;
+        min-height: 82px;
+      }
+
+      .comparison-label {
+        color: #6a7480;
+        font-size: 14px;
+        font-weight: 800;
+      }
+
+      .comparison-bars {
+        position: relative;
+        display: grid;
+        gap: 5px;
+        padding: 8px 0;
+        background-image: linear-gradient(to right, rgba(23, 33, 43, 0.1) 1px, transparent 1px);
+        background-size: calc(100% / var(--tick-count)) 100%;
+      }
+
+      .comparison-bar {
+        position: relative;
+        height: 12px;
+      }
+
+      .comparison-fill {
+        position: absolute;
+        inset: 0 auto 0 0;
+        width: var(--bar-width);
+        min-width: var(--bar-min);
+        background: var(--series-color);
+        border-radius: 2px;
+      }
+
+      .comparison-axis {
+        display: grid;
+        grid-template-columns: 54px minmax(520px, 1fr);
+        gap: 10px;
+        margin-top: 2px;
+      }
+
+      .axis-ticks {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 6px;
+        color: #6a7480;
+        border-top: 1px solid #cfd8e3;
+        font-size: 12px;
+        font-weight: 800;
+      }
+
+      .chart-legend {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 12px;
+        color: var(--muted);
+        font-size: 13px;
+        font-weight: 800;
+      }
+
+      .legend-item {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .legend-swatch {
+        width: 9px;
+        height: 9px;
+        background: var(--series-color);
+        border-radius: 2px;
+      }
+
+      .insight-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+        gap: 12px;
+      }
+
+      .insight {
+        padding: 14px;
+        background: var(--soft);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+      }
+
+      .insight h3 {
+        margin: 0 0 8px;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+
+      .insight p {
+        margin: 0;
+        color: #334151;
+        font-size: 14px;
+        line-height: 1.75;
+        white-space: pre-line;
+      }
+
+      .empty {
+        padding: 18px;
+        color: var(--muted);
+        background: var(--surface);
+        border: 1px dashed var(--line-strong);
+        border-radius: 8px;
+      }
+
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+
+      @media (max-width: 1100px) {
+        .layout {
+          grid-template-columns: 1fr;
+        }
+
+        .sidebar {
+          position: static;
+          height: auto;
+          max-height: 280px;
+          padding: 16px 24px;
+          border-right: 0;
+          border-bottom: 1px solid var(--line);
+        }
+
+        .case-list {
+          grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        }
+
+        .module-body {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 760px) {
+        .topbar,
+        .case-header,
+        .module-header {
+          grid-template-columns: 1fr;
+        }
+
+        .topbar {
+          padding: 14px;
+        }
+
+        .toolbar {
+          justify-content: stretch;
+        }
+
+        .search,
+        .action-button {
+          width: 100%;
+        }
+
+        .main {
+          padding: 14px;
+        }
+
+        .summary-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .score-stack,
+        .status-controls {
+          justify-items: stretch;
+        }
+
+        .status-group {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          width: 100%;
+        }
+
+        .note-input {
+          width: 100%;
+        }
+
+        .comparison-row,
+        .comparison-axis {
+          grid-template-columns: 42px minmax(520px, 1fr);
+        }
+      }
+
+      @media print {
+        body {
+          background: #ffffff;
+        }
+
+        .topbar,
+        .sidebar,
+        .module-filters,
+        .status-controls {
+          display: none !important;
+        }
+
+        .layout {
+          display: block;
+        }
+
+        .main {
+          padding: 0;
+        }
+
+        .case-header,
+        .module-section {
+          box-shadow: none;
+          break-inside: avoid;
+        }
+
+        .module-section {
+          margin-top: 12px;
+        }
+
+        * {
+          print-color-adjust: exact;
+          -webkit-print-color-adjust: exact;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <header class="topbar">
+        <div class="brand">
+          <h1>2.0智能報價助理驗測</h1>
+          <div class="meta" id="sourceMeta"></div>
+        </div>
+        <div class="toolbar">
+          <label class="visually-hidden" for="caseSearch">搜尋案例</label>
+          <input id="caseSearch" class="search" type="search" placeholder="搜尋客戶、ID、模組" />
+          <button class="action-button" id="printButton" type="button">列印</button>
+        </div>
+      </header>
+
+      <div class="layout">
+        <aside class="sidebar">
+          <div class="sidebar-head">
+            <h2>案例清單</h2>
+            <span class="case-count" id="caseCount"></span>
+          </div>
+          <div class="case-list" id="caseList"></div>
+        </aside>
+
+        <main class="main">
+          <section class="case-header" id="caseHeader"></section>
+          <nav class="module-filters" id="moduleFilters" aria-label="模組篩選"></nav>
+          <section class="modules" id="moduleContainer"></section>
+        </main>
+      </div>
+    </div>
+
+    <script src="./validation-review-data.js"></script>
+    <script>
+      const data = window.validationReviewData || {};
+      const cases = Array.isArray(data.cases) ? data.cases : [];
+      const state = {
+        activeCaseId: cases[0]?.id || "",
+        activeModule: "全部",
+        query: "",
+      };
+
+      const sourceMeta = document.getElementById("sourceMeta");
+      const caseSearch = document.getElementById("caseSearch");
+      const caseList = document.getElementById("caseList");
+      const caseCount = document.getElementById("caseCount");
+      const caseHeader = document.getElementById("caseHeader");
+      const moduleFilters = document.getElementById("moduleFilters");
+      const moduleContainer = document.getElementById("moduleContainer");
+      const statusOptions = ["待確認", "通過", "需調整"];
+      const chartSeries = [
+        { label: "中位", color: "#ffc000" },
+        { label: "P75", color: "#ed7d31" },
+        { label: "本案", color: "#4472c4" },
+        { label: "法定", color: "#a5a5a5" },
+      ];
+      const chartMetricOrder = ["AOP", "AOA", "APD", "AGG"];
+      const summaryKeys = [
+        ["CUSTOMER_ID", "客戶 ID"],
+        ["OBJECT_NAME", "標的"],
+        ["REVENUE", "營業額"],
+        ["產品名稱", "產品名稱"],
+      ];
+
+      function escapeHtml(value) {
+        return String(value ?? "")
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;")
+          .replaceAll("'", "&#039;");
+      }
+
+      function formatNumber(value) {
+        const text = String(value ?? "").trim();
+        if (!/^[0-9,]+$/.test(text)) {
+          return text || "無資料";
+        }
+        return Number(text.replaceAll(",", "")).toLocaleString("zh-TW");
+      }
+
+      function formatValue(value, key) {
+        const text = String(value ?? "").trim();
+        if (!text) return "無資料";
+        if (/ID|識別|身分|證號/i.test(String(key ?? ""))) {
+          return text;
+        }
+        return formatNumber(text);
+      }
+
+      function scoreClass(score) {
+        const value = Number(score);
+        if (!Number.isFinite(value)) return "low";
+        if (value >= 7) return "high";
+        if (value >= 4) return "medium";
+        return "low";
+      }
+
+      function storageKey(caseId, moduleName, type) {
+        return `validation-review:${caseId}:${moduleName}:${type}`;
+      }
+
+      function getActiveCase() {
+        return cases.find((item) => item.id === state.activeCaseId) || cases[0];
+      }
+
+      function getFilteredCases() {
+        const query = state.query.trim().toLowerCase();
+        if (!query) return cases;
+        return cases.filter((item) => {
+          const summaryText = Object.values(item.summary || {}).join(" ").toLowerCase();
+          const moduleText = (item.modules || []).map((module) => `${module.name} ${module.output}`).join(" ").toLowerCase();
+          return `${item.title} ${summaryText} ${moduleText}`.toLowerCase().includes(query);
+        });
+      }
+
+      function renderMeta() {
+        const parts = [
+          data.sourceFile ? `來源：${data.sourceFile}` : "",
+          data.sourceSheet ? `頁籤：${data.sourceSheet}` : "",
+          data.generatedAt ? `產生：${data.generatedAt}` : "",
+          `案例：${cases.length}`,
+        ].filter(Boolean);
+        sourceMeta.innerHTML = parts.map((part) => `<span class="pill">${escapeHtml(part)}</span>`).join("");
+      }
+
+      function renderCaseList() {
+        const filtered = getFilteredCases();
+        caseCount.textContent = `${filtered.length}/${cases.length}`;
+
+        if (!filtered.length) {
+          caseList.innerHTML = '<div class="empty">沒有符合條件的案例</div>';
+          return;
+        }
+
+        caseList.innerHTML = filtered
+          .map((item) => {
+            const tags = (item.modules || [])
+              .map((module) => `<span class="mini-tag">${escapeHtml(module.name)} ${escapeHtml(module.score ?? "-")}</span>`)
+              .join("");
+            return `
+              <button class="case-button ${item.id === state.activeCaseId ? "is-active" : ""}" type="button" data-case-id="${escapeHtml(item.id)}">
+                <span class="case-name">${escapeHtml(item.title)}</span>
+                <span class="case-tags">${tags}</span>
+              </button>
+            `;
+          })
+          .join("");
+
+        caseList.querySelectorAll("[data-case-id]").forEach((button) => {
+          button.addEventListener("click", () => {
+            state.activeCaseId = button.dataset.caseId;
+            state.activeModule = "全部";
+            render();
+          });
+        });
+      }
+
+      function renderHeader(activeCase) {
+        if (!activeCase) {
+          caseHeader.innerHTML = '<div class="empty">沒有可顯示的案例資料</div>';
+          return;
+        }
+
+        const summary = activeCase.summary || {};
+        const scoreBadges = (activeCase.modules || [])
+          .map((module) => `<span class="score-pill ${scoreClass(module.score)}">${escapeHtml(module.name)}風險 ${escapeHtml(module.score ?? "-")}</span>`)
+          .join("");
+        const summaryItems = summaryKeys
+          .map(([key, label]) => `
+            <div class="summary-item">
+              <span class="summary-label">${escapeHtml(label)}</span>
+              <span class="summary-value">${escapeHtml(formatValue(summary[key], key))}</span>
+            </div>
+          `)
+          .join("");
+
+        caseHeader.innerHTML = `
+          <div>
+            <h2 class="case-title">${escapeHtml(activeCase.title)}</h2>
+            <div class="summary-grid">${summaryItems}</div>
+          </div>
+          <div class="score-stack">${scoreBadges}</div>
+        `;
+      }
+
+      function renderModuleFilters(activeCase) {
+        const names = ["全部", ...(activeCase?.modules || []).map((module) => module.name)];
+        moduleFilters.innerHTML = names
+          .map((name) => `<button class="module-filter ${name === state.activeModule ? "is-active" : ""}" type="button" data-module="${escapeHtml(name)}">${escapeHtml(name)}</button>`)
+          .join("");
+        moduleFilters.querySelectorAll("[data-module]").forEach((button) => {
+          button.addEventListener("click", () => {
+            state.activeModule = button.dataset.module;
+            renderModuleFilters(activeCase);
+            renderModules(activeCase);
+          });
+        });
+      }
+
+      function renderInputs(inputs) {
+        if (!Array.isArray(inputs) || !inputs.length) {
+          return '<div class="empty">此模組沒有 input 資料</div>';
+        }
+        return `
+          <table class="input-table">
+            <tbody>
+              ${inputs
+                .map((item) => `
+                  <tr>
+                    <th>${escapeHtml(item.key)}</th>
+                    <td>${escapeHtml(formatValue(item.value, item.key))}</td>
+                  </tr>
+                `)
+                .join("")}
+            </tbody>
+          </table>
+        `;
+      }
+
+      function renderSections(sections) {
+        if (!Array.isArray(sections) || !sections.length) {
+          return '<div class="empty">此模組沒有 output 判讀</div>';
+        }
+        return `
+          <div class="insight-grid">
+            ${sections
+              .map((section) => `
+                <article class="insight">
+                  ${section.title ? `<h3>${escapeHtml(section.title)}</h3>` : ""}
+                  <p>${escapeHtml(section.body)}</p>
+                </article>
+              `)
+              .join("")}
+          </div>
+        `;
+      }
+
+      function renderChart(chart) {
+        const metrics = chart?.metrics || [];
+        if (!metrics.length) return "";
+        const summary = [
+          chart.riskLevel ? `<span class="pill">曝險等級：${escapeHtml(chart.riskLevel)}</span>` : "",
+          chart.focus ? `<span class="pill">核心看：${escapeHtml(chart.focus)}</span>` : "",
+        ].filter(Boolean).join("");
+        const normalizedMetrics = chartMetricOrder
+          .map((metricName) => metrics.find((metric) => metric.metric === metricName))
+          .filter(Boolean);
+        const maxAmount = Math.max(
+          ...normalizedMetrics.flatMap((metric) => metric.values.map((item) => Number(item.amount) || 0)),
+          0,
+        );
+        const axis = makeAxis(maxAmount / 10000);
+        const rows = normalizedMetrics
+          .map((metric) => {
+            const valueMap = new Map(
+              metric.values.map((item) => [normalizeSeriesLabel(item.label), item]),
+            );
+            const bars = chartSeries
+              .map((series) => {
+                const item = valueMap.get(series.label);
+                const amount = Number(item?.amount) || 0;
+                const percent = axis.max > 0 ? Math.max(0, Math.min(100, (amount / 10000 / axis.max) * 100)) : 0;
+                const display = item?.display || "0";
+                return `
+                  <div class="comparison-bar" title="${escapeHtml(metric.metric)} ${escapeHtml(series.label)}：${escapeHtml(display)}">
+                    <div class="comparison-fill" style="--bar-width:${percent}%; --bar-min:${amount > 0 ? "5px" : "0px"}; --series-color:${series.color};"></div>
+                  </div>
+                `;
+              })
+              .join("");
+            return `
+              <div class="comparison-row">
+                <div class="comparison-label">${escapeHtml(metric.metric)}</div>
+                <div class="comparison-bars">${bars}</div>
+              </div>
+            `;
+          })
+          .join("");
+        const ticks = axis.ticks.map((tick) => `<span>${escapeHtml(tick)}</span>`).join("");
+        const legend = chartSeries
+          .map((series) => `
+            <span class="legend-item">
+              <span class="legend-swatch" style="--series-color:${series.color};"></span>
+              ${escapeHtml(series.label)}
+            </span>
+          `)
+          .join("");
+        return `
+          <div class="output-stack">
+            <div class="condition-summary">${summary}</div>
+            <div class="comparison-chart">
+              <div class="comparison-plot" style="--tick-count:${Math.max(axis.ticks.length - 1, 1)};">
+                ${rows}
+                <div class="comparison-axis">
+                  <div></div>
+                  <div class="axis-ticks">${ticks}</div>
+                </div>
+              </div>
+              <div class="chart-legend">${legend}</div>
+            </div>
+          </div>
+        `;
+      }
+
+      function normalizeSeriesLabel(label) {
+        return label === "最低" ? "法定" : label;
+      }
+
+      function makeAxis(maxValue) {
+        if (!Number.isFinite(maxValue) || maxValue <= 0) {
+          return { max: 100, ticks: [0, 20, 40, 60, 80, 100] };
+        }
+        const targetTickCount = 6;
+        const roughStep = maxValue / targetTickCount;
+        const magnitude = 10 ** Math.floor(Math.log10(roughStep));
+        const normalized = roughStep / magnitude;
+        const niceNormalized = normalized <= 1 ? 1 : normalized <= 2 ? 2 : normalized <= 5 ? 5 : 10;
+        const step = niceNormalized * magnitude;
+        const max = Math.ceil(maxValue / step) * step;
+        const ticks = [];
+        for (let tick = 0; tick <= max + step / 2; tick += step) {
+          ticks.push(Number.isInteger(tick) ? tick : Number(tick.toFixed(2)));
+        }
+        return { max, ticks };
+      }
+
+      function renderStatus(activeCase, module) {
+        const current = localStorage.getItem(storageKey(activeCase.id, module.name, "status")) || statusOptions[0];
+        const note = localStorage.getItem(storageKey(activeCase.id, module.name, "note")) || "";
+        return `
+          <div class="status-controls" data-status-scope="${escapeHtml(module.name)}">
+            <div class="status-group">
+              ${statusOptions
+                .map((option) => `<button class="status-button ${option === current ? "is-active" : ""}" type="button" data-status="${escapeHtml(option)}">${escapeHtml(option)}</button>`)
+                .join("")}
+            </div>
+            <textarea class="note-input" rows="1" placeholder="驗測備註">${escapeHtml(note)}</textarea>
+          </div>
+        `;
+      }
+
+      function bindStatusControls(activeCase) {
+        moduleContainer.querySelectorAll("[data-status-scope]").forEach((scope) => {
+          const moduleName = scope.dataset.statusScope;
+          scope.querySelectorAll("[data-status]").forEach((button) => {
+            button.addEventListener("click", () => {
+              localStorage.setItem(storageKey(activeCase.id, moduleName, "status"), button.dataset.status);
+              renderModules(activeCase);
+            });
+          });
+          const note = scope.querySelector(".note-input");
+          if (note) {
+            note.addEventListener("input", () => {
+              localStorage.setItem(storageKey(activeCase.id, moduleName, "note"), note.value);
+            });
+          }
+        });
+      }
+
+      function renderModules(activeCase) {
+        if (!activeCase) {
+          moduleContainer.innerHTML = "";
+          return;
+        }
+        const modules = (activeCase.modules || []).filter((module) => state.activeModule === "全部" || module.name === state.activeModule);
+        moduleContainer.innerHTML = modules
+          .map((module) => `
+            <article class="module-section">
+              <header class="module-header">
+                <div class="module-title-row">
+                  <h2>${escapeHtml(module.name)}</h2>
+                  <span class="score-pill ${scoreClass(module.score)}">風險分數 ${escapeHtml(module.score ?? "-")}</span>
+                </div>
+                ${renderStatus(activeCase, module)}
+              </header>
+              <div class="module-body">
+                <div>
+                  <h3 class="pane-title">INPUT 資訊</h3>
+                  ${renderInputs(module.inputs)}
+                </div>
+                <div class="output-stack">
+                  <div>
+                    <h3 class="pane-title">OUTPUT 判讀</h3>
+                    ${renderChart(module.chart)}
+                  </div>
+                  ${renderSections(module.sections)}
+                </div>
+              </div>
+            </article>
+          `)
+          .join("");
+        bindStatusControls(activeCase);
+      }
+
+      function render() {
+        renderMeta();
+        renderCaseList();
+        const activeCase = getActiveCase();
+        renderHeader(activeCase);
+        renderModuleFilters(activeCase);
+        renderModules(activeCase);
+      }
+
+      caseSearch.addEventListener("input", () => {
+        state.query = caseSearch.value;
+        const filtered = getFilteredCases();
+        if (filtered.length && !filtered.some((item) => item.id === state.activeCaseId)) {
+          state.activeCaseId = filtered[0].id;
+          state.activeModule = "全部";
+        }
+        render();
+      });
+
+      document.getElementById("printButton").addEventListener("click", () => window.print());
+      render();
+    </script>
+  </body>
+</html>
