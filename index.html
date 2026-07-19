@@ -369,7 +369,7 @@
       </main>
     </div>
     <section class="usage-view" id="usageView" hidden></section>
-    <script src="./validation-review-data-new.js"></script>
+    <script>document.write('<script src="./validation-review-data-new.js?v=' + Date.now() + '"><\/script>');</script>
     <script>
       const data = window.validationReviewData || {};
       const cases = Array.isArray(data.cases) ? data.cases : [];
