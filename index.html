@@ -664,7 +664,7 @@
         if (!item) { els.modules.innerHTML = ""; return; }
         const grouped = new Map();
         (item.modules || []).forEach(m => { if (!grouped.has(m.name)) grouped.set(m.name, []); grouped.get(m.name).push(m); });
-        const list = [...grouped.entries()].filter(([name]) => state.activeModule === "?券" || name === state.activeModule);
+        const list = [...grouped.entries()].filter(([name]) => state.activeModule === "全部" || name === state.activeModule);
         els.modules.innerHTML = list.length ? list.map(([name, versions], groupIndex) => {
           const selected = versions[0];
           const selectedScore = selected.score ?? selected.SCORE;
@@ -735,7 +735,7 @@
           const reviewed = reviewedByModule.size > 0;
           return `<button class="case-btn ${item.id === state.activeCaseId ? "active" : ""} ${reviewed ? "reviewed" : ""}" data-id="${esc(item.id)}"><span class="case-title">${esc(s.CUSTOMER_NAME || item.title)}</span><span class="case-sub">APPLLTE_NO：${esc(s.APPLLTE_NO || item.appllteNo || "-")}</span><span class="case-modules">${names.map(n => `<span class="case-module">${esc(n)}</span>`).join("")}</span>${reviewed ? `<span class="reviewed-mark" title="${esc(reviewedDetail)}">✓ 已驗測：${esc(reviewedSummary)}</span>` : ""}</button>`;
         }).join("") : `<div class="empty">No cases</div>`;
-        els.caseList.querySelectorAll("[data-id]").forEach(button => button.addEventListener("click", () => { state.activeCaseId = button.dataset.id; state.activeModule = "?券"; render(); }));
+        els.caseList.querySelectorAll("[data-id]").forEach(button => button.addEventListener("click", () => { state.activeCaseId = button.dataset.id; state.activeModule = "全部"; render(); }));
       }
       function render() {
         const list = filteredCases();
