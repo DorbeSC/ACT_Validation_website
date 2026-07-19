@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>2.0 驗測結果審閱</title>
+    <style>
+      * { box-sizing: border-box; }
+      [hidden] { display: none !important; }
+      :root {
+        --bg: #f2f5f8;
+        --panel: #fff;
+        --ink: #1d2b3a;
+        --muted: #607286;
+        --line: #cfd9e4;
+        --accent: #315f80;
+        --accent-soft: #e5eff7;
+        --warn: #a96300;
+        --danger: #b4364d;
+        --ok: #356b8c;
+      }
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: var(--bg);
+        font-family: "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", "Segoe UI", system-ui, sans-serif;
+      }
+      button, input, textarea { font: inherit; }
+      button { cursor: pointer; }
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 16px;
+        align-items: center;
+        padding: 14px 22px;
+        background: rgba(245, 247, 249, .95);
+        border-bottom: 1px solid var(--line);
+        backdrop-filter: blur(8px);
+      }
+      h1 { margin: 0 0 8px; font-size: 28px; line-height: 1.25; }
+      .meta, .pillrow { display: flex; flex-wrap: wrap; gap: 8px; }
+      .top-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 10px; }
+      .view-switch { display: flex; flex-wrap: wrap; gap: 8px; }
+      .top-controls .meta { gap: 6px; }
+      .top-controls .meta .pill { min-height: 24px; padding: 2px 8px; font-size: 12px; }
+      .view-switch button { padding: 6px 10px; border: 1px solid var(--line); border-radius: 6px; background: #fff; color: var(--ink); font-size: 14px; }
+      .view-switch button.active { border-color: var(--accent); background: var(--accent); color: #fff; }
+      .pill, .tag {
+        display: inline-flex;
+        align-items: center;
+        min-height: 26px;
+        padding: 3px 9px;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        background: #fff;
+        color: var(--muted);
+        font-size: 13px;
+      }
+      .actions { display: flex; gap: 10px; align-items: center; }
+      .search {
+        width: min(420px, 44vw);
+        padding: 9px 11px;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        background: #fff;
+      }
+      .btn {
+        padding: 9px 12px;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        background: var(--accent);
+        color: #fff;
+      }
+      #print { display: none; }
+      .layout {
+        display: grid;
+        grid-template-columns: 245px minmax(0, 1fr);
+        gap: 12px;
+        padding: 12px;
+      }
+      .sidebar, .content, .case-head, .module {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+      }
+      .sidebar { max-height: calc(100vh - 105px); overflow: auto; }
+      .sidebar-head {
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        padding: 13px 14px;
+        background: #fff;
+        border-bottom: 1px solid var(--line);
+      }
+      .case-list { display: grid; gap: 5px; padding: 6px; }
+      .case-btn {
+        width: 100%;
+        padding: 7px 8px;
+        text-align: left;
+        border: 1px solid transparent;
+        border-radius: 6px;
+        background: #f9fbfc;
+      }
+      .case-btn:hover, .case-btn.active { border-color: var(--accent); background: #dceaf5; }
+      .case-btn.reviewed { border-color: #55ae82; background: #eef9f3; }
+      .case-title { display: block; font-weight: 700; font-size: 13px; overflow-wrap: anywhere; }
+      .case-sub { display: block; margin-top: 2px; color: var(--muted); font-size: 11px; overflow-wrap: anywhere; }
+      .case-modules { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 5px; }
+      .case-module { padding: 3px 7px; border: 1px solid #a9c5da; border-radius: 4px; background: #c9ddec; color: #244d6b; font-size: 11px; font-weight: 700; }
+      .reviewed-mark { display: block; max-width: 100%; margin-top: 5px; padding: 4px 8px; border-radius: 999px; background: #50b783; color: #fff; font-size: 11px; line-height: 1.35; font-weight: 700; overflow-wrap: anywhere; }
+      .condition-meta { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-bottom: 14px; }
+      .condition-meta > div { padding: 10px; background: #f8fafb; }
+      .exposure-chart { padding: 12px 8px; border: 1px solid var(--line); background: #fff; }
+      .bar-row { display: grid; grid-template-columns: 42px 1fr; gap: 8px; align-items: center; margin: 17px 0; }
+      .bar-label { color: var(--muted); font-size: 12px; }
+      .bar-stack { display: grid; gap: 5px; background: repeating-linear-gradient(to right, transparent 0, transparent calc(20% - 1px), #edf1f4 calc(20% - 1px), #edf1f4 20%); }
+      .bar { position: relative; height: 10px; min-width: 2px; border-radius: 5px; }
+      .bar::after { content: attr(data-tooltip); position: absolute; left: 0; bottom: 15px; z-index: 3; display: none; padding: 5px 8px; border-radius: 4px; background: #17212b; color: #fff; white-space: nowrap; font-size: 11px; font-weight: 500; pointer-events: none; }
+      .bar:hover::after { display: block; }
+      .bar.case { background: #8bd5b0; } .bar.p75 { background: #ff8d8d; } .bar.minimum { background: #76b7ed; }
+      .chart-legend { display: flex; gap: 14px; margin-top: 12px; color: var(--muted); font-size: 12px; }
+      .chart-scale { display: grid; grid-template-columns: repeat(6, 1fr); margin-left: 50px; color: var(--muted); font-size: 10px; }
+      .chart-scale span { text-align: right; }
+      .legend-dot { display: inline-block; width: 10px; height: 7px; margin-right: 4px; border-radius: 4px; }
+      .condition-table { table-layout: fixed; }
+      .condition-table th:first-child, .condition-table td:first-child { width: 85px; max-width: 85px; white-space: nowrap; color: var(--muted); font-weight: 700; }
+      .condition-table th:nth-child(2), .condition-table td:nth-child(2) { width: auto; }
+      .subject-table th, .subject-table td { text-align: left; color: var(--ink); }
+      .subject-table th:first-child, .subject-table td:first-child { width: calc(5em + 26px); max-width: calc(5em + 26px); white-space: nowrap; color: var(--ink); font-weight: 700; }
+      .subject-table th:nth-child(2), .subject-table td:nth-child(2) { width: 20px; max-width: 20px; white-space: nowrap; }
+      .subject-table td:nth-child(3) { line-height: 1.7; }
+      .subject-result { color: var(--ink) !important; font-weight: 700; }
+      .history-summary { padding: 12px; border: 1px solid var(--line); border-radius: 6px; line-height: 1.75; white-space: pre-wrap; }
+      .history-table { table-layout: fixed; }
+      .history-table th:first-child, .history-table td:first-child { width: calc(4em + 16px); max-width: calc(4em + 16px); white-space: nowrap; font-weight: 700; }
+      .history-table td { line-height: 1.7; white-space: pre-wrap; }
+      .review-table th:first-child, .review-table td:first-child { width: 105px; white-space: nowrap; font-weight: 700; }
+      .review-table th:nth-child(2), .review-table td:nth-child(2) { width: 170px; white-space: nowrap; }
+      .review-table td { line-height: 1.65; white-space: pre-wrap; }
+      .review-table tr.review-alt td { background: #f0f1f2; }
+      .version-picker { display: flex; align-items: center; gap: 8px; margin-top: 10px; }
+      .version-picker label { color: var(--muted); font-size: 12px; }
+      .delivery-date { color: var(--muted); font-size: 12px; }
+      .version-select { padding: 6px 9px; border: 1px solid var(--line); border-radius: 5px; background: #fff; }
+      @media (max-width: 620px) { .condition-meta { grid-template-columns: 1fr; } }
+      .content { padding: 16px; }
+      .case-head { padding: 18px; margin-bottom: 14px; }
+      .case-head h2 { margin: 0 0 14px; font-size: 24px; }
+      .case-head > .pillrow { display: none; }
+      .summary-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 6px;
+      }
+      .summary-item { padding: 7px 9px; border: 1px solid var(--line); border-radius: 6px; background: #fbfcfd; }
+      .label { display: block; color: var(--muted); font-size: 11px; }
+      .value { display: block; margin-top: 2px; overflow-wrap: anywhere; font-size: 16px; font-weight: 700; }
+      .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+      .filter {
+        padding: 7px 12px;
+        font-size: 14px;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        background: #fff;
+      }
+      .filter.active { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); }
+      .filter[data-module="歷史"] { border-color: #9bb7cc; background: #e7eff5; color: #31566f; }
+      .filter[data-module="條件"] { border-color: #8fb9b8; background: #e5f1f0; color: #286267; }
+      .filter[data-module="標的"] { border-color: #b4add0; background: #eeeaf7; color: #554b7b; }
+      .filter[data-module="歷史"].active, .filter[data-module="條件"].active, .filter[data-module="標的"].active { box-shadow: inset 0 0 0 2px currentColor; }
+      .modules { display: grid; gap: 14px; }
+      .module { overflow: hidden; }
+      .module-head {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 180px;
+        gap: 14px;
+        padding: 14px 16px;
+        border-bottom: 1px solid var(--line);
+        background: #fbfcfd;
+      }
+      .module h3 { margin: 0; font-size: 19px; }
+      .score { color: #fff; background: var(--accent); }
+      .score.mid { background: var(--warn); }
+      .score.high { background: var(--danger); }
+      .score-panel {
+        display: grid;
+        align-content: center;
+        gap: 7px;
+        min-width: 0;
+      }
+      .web-search-score { display: none; }
+      .score-number {
+        font-size: 24px;
+        font-weight: 800;
+        text-align: right;
+      }
+      .score-track {
+        height: 9px;
+        overflow: hidden;
+        border-radius: 5px;
+        background: #e8edf2;
+      }
+      .score-fill {
+        width: var(--score-width);
+        height: 100%;
+        background: var(--score-color);
+      }
+      .module-body { display: block; padding: 16px; }
+      .quick-review {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 8px;
+        padding: 0 16px 16px;
+        border-bottom: 1px solid var(--line);
+        background: #fbfcfd;
+      }
+      .check-chip {
+        min-height: 54px;
+        padding: 9px 10px;
+        border: 1px solid var(--line);
+        border-left: 4px solid var(--accent);
+        border-radius: 6px;
+        background: #fff;
+      }
+      .check-chip.warn { border-left-color: var(--warn); }
+      .check-chip.danger { border-left-color: var(--danger); }
+      .check-chip strong { display: block; font-size: 13px; }
+      .check-chip span { display: block; margin-top: 3px; color: var(--muted); font-size: 12px; overflow-wrap: anywhere; }
+      table { width: 100%; border-collapse: collapse; font-size: 14px; }
+      th, td { padding: 8px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+      th { width: 42%; color: var(--muted); font-weight: 600; }
+      .section {
+        margin-bottom: 10px;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        background: #fff;
+      }
+      .section summary {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 10px 12px;
+        color: var(--ink);
+        font-weight: 800;
+        list-style: none;
+        cursor: pointer;
+      }
+      .section summary::-webkit-details-marker { display: none; }
+      .section summary::after { content: "展開"; color: var(--muted); font-size: 12px; font-weight: 500; }
+      .section[open] summary::after { content: "收合"; }
+      .section p { margin: 0; padding: 0 12px 12px; line-height: 1.72; white-space: pre-wrap; }
+      .status { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 34px; padding-top: 14px; border-top: 1px solid var(--line); }
+      .status button {
+        padding: 6px 9px;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        background: #fff;
+      }
+      .status button.active { border-color: var(--accent); background: var(--accent-soft); }
+      .status .status-submit { margin-left: auto; border-color: var(--accent); background: var(--accent); color: #fff; cursor: pointer; font-weight: 700; }
+      .status .status-submit:hover { filter: brightness(.95); }
+      .status .status-update { border-color: var(--accent); color: var(--accent); background: #fff; cursor: pointer; }
+      .status .status-update:hover { background: var(--accent-soft); }
+      .status .status-clear { border-color: #c87979; color: #a64b4b; background: #fff; cursor: pointer; }
+      .status .status-clear:hover { background: #fff1f1; }
+      .reviewed-badge { color: #23865a; font-size: 13px; font-weight: 700; }
+      .local-only-note { flex-basis: 100%; color: var(--muted); font-size: 12px; line-height: 1.5; }
+      textarea { width: 100%; min-height: 36px; resize: vertical; border: 1px solid var(--line); border-radius: 6px; padding: 8px; }
+      .empty { padding: 24px; color: var(--muted); text-align: center; }
+      .usage-view { margin: 12px; padding: 18px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); overflow-x: auto; }
+      .usage-view h2 { margin: 0 0 14px; font-size: 20px; }
+      .usage-table { width: 100%; min-width: 850px; table-layout: fixed; border-collapse: collapse; font-size: 13px; }
+      .usage-table th, .usage-table td { padding: 10px 12px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+      .usage-table th:nth-child(1), .usage-table td:nth-child(1) { width: 180px; max-width: 180px; }
+      .usage-table th:nth-child(2), .usage-table td:nth-child(2) { width: 180px; max-width: 180px; }
+      .usage-table th:nth-child(3), .usage-table td:nth-child(3) { width: 110px; max-width: 110px; }
+      .usage-table th:nth-child(4), .usage-table td:nth-child(4),
+      .usage-table th:nth-child(5), .usage-table td:nth-child(5),
+      .usage-table th:nth-child(6), .usage-table td:nth-child(6) { width: 85px; max-width: 85px; }
+      .usage-table th:nth-child(7), .usage-table td:nth-child(7),
+      .usage-table th:nth-child(8), .usage-table td:nth-child(8),
+      .usage-table th:nth-child(9), .usage-table td:nth-child(9) { width: 110px; max-width: 110px; }
+      .usage-table th:nth-child(10), .usage-table td:nth-child(10) { width: 110px; max-width: 110px; }
+      .usage-table th { background: var(--accent-soft); color: var(--accent); white-space: nowrap; }
+      .usage-table tr:nth-child(even) td { background: #f8fafc; }
+      .web-search-box { padding: 12px; border: 1px solid var(--line); border-radius: 6px; background: #fbfcfd; }
+      .web-search-stats { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+      .web-search-box pre { max-height: 360px; margin: 0; overflow: auto; white-space: pre-wrap; word-break: break-word; color: var(--ink); font: 12px/1.6 Consolas, monospace; }
+      .usage-summary { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin: 14px 0 20px; }
+      .usage-stat { padding: 12px; border: 1px solid var(--line); border-radius: 7px; background: #f8fafc; }
+      .usage-stat h3 { margin: 0 0 8px; font-size: 15px; color: var(--accent); }
+      .usage-stat .kpi-value { margin: 2px 0 8px; font-size: 28px; font-weight: 800; color: var(--ink); }
+      .usage-stat .kpi-range { position: relative; height: 31px; padding-top: 8px; }
+      .kpi-track { height: 6px; border-radius: 4px; background: #dce7ef; }
+      .kpi-marker { position: absolute; top: 3px; width: 15px; height: 15px; transform: translateX(-50%); border: 3px solid #fff; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+      .kpi-scale-labels { display: flex; justify-content: space-between; margin-top: 6px; color: var(--muted); font-size: 11px; }
+      .usage-cost-card { grid-column: 1 / -1; }
+      .usage-cost-row { display: grid; grid-template-columns: 180px 100px minmax(0, 1fr); gap: 16px; align-items: center; padding: 9px 0; border-bottom: 1px solid var(--line); }
+      .usage-cost-row:last-of-type { border-bottom: 0; }
+      .usage-cost-name { font-size: 16px; font-weight: 700; }
+      .usage-cost-average { font-size: 20px; font-weight: 800; color: var(--ink); }
+      .usage-cost-average small { display: block; color: var(--muted); font-size: 11px; font-weight: 400; }
+      .usage-cost-range { position: relative; padding-top: 7px; }
+      .cost-track { height: 7px; border-radius: 5px; background: #dce7ef; }
+      .cost-marker { position: absolute; top: 1px; width: 17px; height: 17px; transform: translateX(-50%); border: 3px solid #fff; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+      .cost-scale { display: flex; justify-content: space-between; margin-top: 6px; color: var(--muted); font-size: 11px; }
+      .usage-saving { margin-top: 9px; color: #23865a; font-size: 13px; font-weight: 700; }
+      .usage-stat table { width: 100%; border-collapse: collapse; font-size: 12px; }
+      .usage-stat td { padding: 3px 0; border: 0; }
+      .usage-stat td:last-child { text-align: right; font-weight: 700; }
+      .usage-section-title { margin: 34px 0 10px; padding-top: 6px; font-size: 20px; }
+      .usage-note { margin: 0 0 12px; color: var(--muted); font-size: 12px; }
+      .usage-total-note { margin: 14px 0 8px; color: var(--accent); font-size: 14px; font-weight: 700; }
+      .usage-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 8px 0 10px; }
+      .usage-toolbar label { color: var(--muted); font-size: 13px; }
+      .usage-toolbar select, .usage-sort-button { padding: 6px 9px; border: 1px solid var(--line); border-radius: 6px; background: #fff; color: var(--ink); }
+      .usage-sort-button.active { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); font-weight: 700; }
+      .usage-table .table-sort { margin-left: 4px; padding: 0 2px; border: 0; background: transparent; color: inherit; font-size: 14px; line-height: 1; cursor: pointer; }
+      .usage-table .table-sort:hover, .usage-table .table-sort.active { color: var(--accent); }
+      @media (max-width: 900px) { .usage-summary { grid-template-columns: 1fr; } }
+      @media (max-width: 980px) {
+        .topbar, .layout, .module-head, .module-body, .quick-review { grid-template-columns: 1fr; }
+        .search { width: 100%; }
+        .summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        .sidebar { max-height: 45vh; }
+      }
+      @media (max-width: 620px) {
+        .summary-grid { grid-template-columns: 1fr; }
+        .actions { flex-direction: column; align-items: stretch; }
+      }
+      @media print {
+        .topbar, .sidebar, .filters, .status { display: none; }
+        .layout, .module-body { display: block; padding: 0; }
+        .content, .case-head, .module { border: 0; }
+        .module { break-inside: avoid; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>2.0智能助理驗測平台</h1>
+        <div class="top-controls">
+          <div class="view-switch" aria-label="頁面切換">
+            <button type="button" id="reviewViewButton" class="active">驗測介面</button>
+            <button type="button" id="usageViewButton">token＆時間＆成本紀錄</button>
+          </div>
+          <div class="meta" id="meta"></div>
+        </div>
+      </div>
+      <div class="actions">
+        <input class="search" id="search" type="search" placeholder="搜尋客戶、進件編號、標的或模組內容" />
+        <button class="btn" id="print" type="button">列印</button>
+      </div>
+    </header>
+    <div class="layout" id="reviewLayout">
+      <aside class="sidebar">
+        <div class="sidebar-head"><strong>案例清單</strong><span id="count"></span></div>
+        <div class="case-list" id="caseList"></div>
+      </aside>
+      <main class="content">
+        <section class="case-head" id="caseHead"></section>
+        <nav class="filters" id="filters"></nav>
+        <section class="modules" id="modules"></section>
+      </main>
+    </div>
+    <section class="usage-view" id="usageView" hidden></section>
+    <script src="./validation-review-data-new.js"></script>
+    <script>
+      const data = window.validationReviewData || {};
+      const cases = Array.isArray(data.cases) ? data.cases : [];
+      const state = { query: "", activeCaseId: cases[0]?.id || "", activeModule: "全部", view: "review" };
+      const summaryKeys = [
+        ["CUSTOMER_ID", "客戶 ID"], ["APPLLTE_NO", "進件編號"], ["OBJECT_NAME", "承接標的"],
+        ["REVENUE", "營業額"], ["AOP_AMOUNT_PRODUCT", "每一人身體傷害"], ["AOA_AMOUNT_PRODUCT", "每一事故身體傷害"],
+        ["APD_AMOUNT_PRODUCT", "每一事故財物損失"], ["AGG_AMOUNT_PRODUCT", "保險期間累計"]
+      ];
+      const statusOptions = ["已確認並回饋在excel"];
+      const els = {
+        meta: document.getElementById("meta"), search: document.getElementById("search"), count: document.getElementById("count"),
+        caseList: document.getElementById("caseList"), caseHead: document.getElementById("caseHead"),
+        filters: document.getElementById("filters"), modules: document.getElementById("modules"), reviewLayout: document.getElementById("reviewLayout"),
+        usageView: document.getElementById("usageView"), reviewViewButton: document.getElementById("reviewViewButton"), usageViewButton: document.getElementById("usageViewButton")
+      };
+      function esc(v) {
+        return String(v ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" }[c]));
+      }
+      function fmt(v, key = "") {
+        const s = String(v ?? "");
+        if (!s) return "-";
+        if (/AMOUNT|REVENUE|DDCB/.test(key) && !Number.isNaN(Number(s))) return Number(s).toLocaleString("zh-TW");
+        return s;
+      }
+      function filteredCases() {
+        const q = state.query.trim().toLowerCase();
+        if (!q) return cases;
+        return cases.filter(item => {
+          const summary = Object.values(item.summary || {}).join(" ");
+          const modules = (item.modules || []).map(m => `${m.name} ${m.output} ${m.claimSummary}`).join(" ");
+          return `${item.title} ${summary} ${modules}`.toLowerCase().includes(q);
+        });
+      }
+      function activeCase() {
+        return cases.find(item => item.id === state.activeCaseId) || cases[0];
+      }
+      function renderUsageView() {
+        const num = value => Number.isFinite(Number(value)) ? Number(value) : 0;
+        const money = value => num(value).toLocaleString("zh-TW", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        const latest = new Map();
+        cases.forEach(item => {
+          const caseNo = item.summary?.APPLLTE_NO || item.appllteNo || item.id || "-";
+          (item.modules || []).forEach(module => {
+            const key = `${caseNo}::${module.name || "未分類"}`;
+            const date = module.deliveryDate || module.DELIVERY_DATE || "";
+            const old = latest.get(key);
+            if (!old || (Date.parse(date) || 0) >= (Date.parse(old.deliveryDate) || 0)) latest.set(key, { item, module, caseNo, deliveryDate: date });
+          });
+        });
+        const moduleRows = [...latest.values()].map(({ item, module, caseNo, deliveryDate }) => {
+          const tokens = module.tokens || {};
+          const input = num(tokens.input ?? module.INPUT_TOKENS);
+          const output = num(tokens.output ?? module.OUTPUT_TOKENS);
+          const total = num(tokens.total ?? module.TOTAL_TOKENS) || input + output;
+          const webSearchApiFee = module.name === "web search" ? 1 : 0;
+          return { item, module, caseNo, deliveryDate, input, output, total, gpt55: input * 0.00016 + output * 0.000960 + webSearchApiFee, luna: input * 0.00003 + output * 0.00018 + webSearchApiFee };
+        });
+        const aggregateByCase = source => {
+          const byCase = new Map();
+          source.forEach(row => {
+            if (!byCase.has(row.caseNo)) byCase.set(row.caseNo, { ...row, modules: 1, moduleNames: [row.module.name || "未分類"] });
+            else {
+              const target = byCase.get(row.caseNo);
+              ["input", "output", "total", "gpt55", "luna"].forEach(key => target[key] += row[key]);
+              target.modules += 1;
+              if (!target.moduleNames.includes(row.module.name || "未分類")) target.moduleNames.push(row.module.name || "未分類");
+              if ((Date.parse(row.deliveryDate) || 0) > (Date.parse(target.deliveryDate) || 0)) target.deliveryDate = row.deliveryDate;
+            }
+          });
+          return [...byCase.values()];
+        };
+        const caseRows = aggregateByCase(moduleRows);
+        const stat = key => {
+          const values = caseRows.map(row => row[key]);
+          if (!values.length) return { avg: 0, max: 0, min: 0 };
+          return { avg: values.reduce((a, b) => a + b, 0) / values.length, max: Math.max(...values), min: Math.min(...values) };
+        };
+        const statCard = (title, key, isMoney = false) => { const s = stat(key); const f = isMoney ? money : value => Math.round(value).toLocaleString("zh-TW"); return `<div class="usage-stat"><h3>${title}</h3><table><tr><td>平均</td><td>${f(s.avg)}</td></tr><tr><td>最大</td><td>${f(s.max)}</td></tr><tr><td>最小</td><td>${f(s.min)}</td></tr></table></div>`; };
+        const tokenCard = (title, key) => { const s = stat(key); const position = s.max === s.min ? 50 : Math.max(0, Math.min(100, ((s.avg - s.min) / (s.max - s.min)) * 100)); return `<div class="usage-stat"><h3>${title}</h3><div class="kpi-value">${Math.round(s.avg).toLocaleString("zh-TW")}</div><div class="kpi-range" title="平均值：${Math.round(s.avg).toLocaleString("zh-TW")}"><div class="kpi-track"></div><div class="kpi-marker" style="left:${position}%"></div><div class="kpi-scale-labels"><span>最小 ${Math.round(s.min).toLocaleString("zh-TW")}</span><span>最大 ${Math.round(s.max).toLocaleString("zh-TW")}</span></div></div></div>`; };
+        const gpt55Stat = stat("gpt55");
+        const lunaStat = stat("luna");
+        const saving = gpt55Stat.avg - lunaStat.avg;
+        const savingRate = gpt55Stat.avg ? (saving / gpt55Stat.avg) * 100 : 0;
+        const costRange = statValue => { const position = statValue.max === statValue.min ? 50 : Math.max(0, Math.min(100, ((statValue.avg - statValue.min) / (statValue.max - statValue.min)) * 100)); return `<div class="usage-cost-range"><div class="cost-track"></div><div class="cost-marker" style="left:${position}%"></div><div class="cost-scale"><span>最小 ${money(statValue.min)}</span><span>最大 ${money(statValue.max)}</span></div></div>`; };
+        const costCard = `<div class="usage-stat usage-cost-card"><h3>模型成本比較</h3><div class="usage-cost-row"><span class="usage-cost-name">GPT-5.5</span><span class="usage-cost-average">${money(gpt55Stat.avg)}<small>平均成本</small></span>${costRange(gpt55Stat)}</div><div class="usage-cost-row"><span class="usage-cost-name">GPT-5.6（Luna）</span><span class="usage-cost-average">${money(lunaStat.avg)}<small>平均成本</small></span>${costRange(lunaStat)}</div><div class="usage-saving">Luna 預估節省 ${money(saving)}（約 ${savingRate.toFixed(1)}%）</div></div>`;
+        const moduleNames = [...new Set(moduleRows.map(row => row.module.name).filter(Boolean))];
+        let selectedModule = "全部";
+        let sortKey = "total";
+        let descending = true;
+        els.usageView.innerHTML = `<h2>token＆時間＆成本紀錄</h2><p class="usage-note">每個進件編號的各模組僅取最新交付日期版本計算；成本單位依提供單價計算。GPT-5.5：Input × 0.00016＋Output × 0.000960；GPT-5.6（Luna）：Input × 0.00003＋Output × 0.00018。</p><div class="usage-summary">${tokenCard("平均 Input tokens", "input")}${tokenCard("平均 Output tokens", "output")}${tokenCard("平均 Total tokens", "total")}${costCard}</div><p class="usage-total-note" id="usageTotalNote">總筆數為 ${caseRows.length} 筆，詳細資訊請看下方明細資訊</p><h3 class="usage-section-title">各案件狀況</h3><div class="usage-toolbar"><label for="usageModuleFilter">模組篩選</label><select id="usageModuleFilter"><option value="全部">全部模組</option>${moduleNames.map(name => `<option value="${esc(name)}">${esc(name)}</option>`).join("")}</select></div><table class="usage-table"><thead><tr><th>客戶</th><th>進件編號</th><th>模組名稱</th><th>Input</th><th>Output</th><th>Total <button type="button" class="table-sort active" data-usage-sort="total" aria-label="排序 Total tokens">↕</button></th><th>GPT-5.5 成本 <button type="button" class="table-sort" data-usage-sort="gpt55" aria-label="排序 GPT-5.5 成本">↕</button></th><th>Luna 成本 <button type="button" class="table-sort" data-usage-sort="luna" aria-label="排序 Luna 成本">↕</button></th><th>最新交付日期</th></tr></thead><tbody id="usageCaseBody"></tbody></table>`;
+        els.usageView.querySelector(".usage-note").textContent += " web search 每筆另加 1 元 API 費用。";
+        els.usageView.querySelector(".usage-table thead tr").insertAdjacentHTML("beforeend", "<th>驗測時間</th>");
+        els.usageView.querySelector(".usage-section-title").textContent = "各案件明細狀況";
+        const drawCaseTable = () => {
+          const source = selectedModule === "全部" ? moduleRows : moduleRows.filter(row => row.module.name === selectedModule);
+          const rows = aggregateByCase(source).sort((a, b) => (descending ? -1 : 1) * (num(a[sortKey]) - num(b[sortKey])));
+          document.getElementById("usageTotalNote").textContent = `總筆數為 ${rows.length} 筆，詳細資訊請看下方明細資訊`;
+          document.getElementById("usageCaseBody").innerHTML = rows.length ? rows.map(row => { const customer = row.item.summary?.CUSTOMER_NAME || row.item.title || "-"; const modulesText = row.moduleNames.join("、"); return `<tr><td title="${esc(customer)}">${esc(customer)}</td><td title="${esc(row.caseNo)}">${esc(row.caseNo)}</td><td title="${esc(modulesText)}">${esc(modulesText)}</td><td title="${row.input.toLocaleString("zh-TW")}">${row.input.toLocaleString("zh-TW")}</td><td title="${row.output.toLocaleString("zh-TW")}">${row.output.toLocaleString("zh-TW")}</td><td title="${row.total.toLocaleString("zh-TW")}">${row.total.toLocaleString("zh-TW")}</td><td title="${money(row.gpt55)}">${money(row.gpt55)}</td><td title="${money(row.luna)}">${money(row.luna)}</td><td title="${esc(row.deliveryDate || "-")}">${esc(row.deliveryDate || "-")}</td><td></td></tr>`; }).join("") : `<tr><td colspan="10">目前沒有紀錄</td></tr>`;
+        };
+        document.getElementById("usageModuleFilter").addEventListener("change", event => { selectedModule = event.target.value; drawCaseTable(); });
+        els.usageView.querySelectorAll("[data-usage-sort]").forEach(button => button.addEventListener("click", () => { const nextKey = button.dataset.usageSort; if (sortKey === nextKey) descending = !descending; else { sortKey = nextKey; descending = true; } els.usageView.querySelectorAll("[data-usage-sort]").forEach(item => { item.classList.toggle("active", item === button); item.textContent = item === button ? (descending ? "↓" : "↑") : "↕"; }); drawCaseTable(); }));
+        drawCaseTable();
+      }
+      function setView(view) {
+        state.view = view;
+        const isUsage = view === "usage";
+        els.reviewLayout.hidden = isUsage;
+        els.usageView.hidden = !isUsage;
+        els.reviewViewButton.classList.toggle("active", !isUsage);
+        els.usageViewButton.classList.toggle("active", isUsage);
+        if (isUsage) renderUsageView();
+      }
+      function moduleVersion(module) {
+        return String(module?.version || module?.VERSION || "未標示版次");
+      }
+      function storageKey(caseId, moduleName, field, version = "") {
+        const suffix = version ? `:${version}` : "";
+        return `validation-review-v3:${caseId}:${moduleName}:${field}${suffix}`;
+      }
+      function renderMeta() {
+        const parts = [`來源：${data.sourceFile || "-"}`, `頁籤：${data.sourceSheet || "-"}`, `最新更新時間：${data.generatedAt || "-"}`, `案例：${cases.length}`];
+        els.meta.innerHTML = parts.map(part => `<span class="pill">${esc(part)}</span>`).join("");
+      }
+      function renderList() {
+        const list = filteredCases();
+        els.count.textContent = `${list.length}/${cases.length}`;
+        els.caseList.innerHTML = list.length ? list.map(item => {
+          const s = item.summary || {};
+          return `<button class="case-btn ${item.id === state.activeCaseId ? "active" : ""}" data-id="${esc(item.id)}">
+            <span class="case-title">${esc(item.title)}</span>
+            <span class="case-sub">${esc(s.APPLLTE_NO || "")} · ${esc(s.OBJECT_NAME || "")}</span>
+            <span class="case-sub">模組 ${esc((item.modules || []).length)}</span>
+          </button>`;
+        }).join("") : `<div class="empty">找不到符合條件的案例</div>`;
+        els.caseList.querySelectorAll("[data-id]").forEach(button => button.addEventListener("click", () => {
+          state.activeCaseId = button.dataset.id;
+          state.activeModule = "全部";
+          render();
+        }));
+      }
+      function scoreClass(score) {
+        const n = Number(score);
+        if (!Number.isFinite(n)) return "";
+        if (n < 5) return "high";
+        if (n < 8) return "mid";
+        return "";
+      }
+      function scoreMeta(score) {
+        const n = Number(score);
+        const safe = Number.isFinite(n) ? Math.max(0, Math.min(10, n)) : 0;
+        let color = "var(--accent)";
+        let label = "低風險";
+        if (safe < 5) { color = "var(--danger)"; label = "高風險"; }
+        else if (safe < 8) { color = "var(--warn)"; label = "中風險"; }
+        return { value: Number.isFinite(n) ? n.toFixed(Number.isInteger(n) ? 0 : 1) : "-", width: `${safe * 10}%`, color, label };
+      }
+      function renderHead(item) {
+        if (!item) { els.caseHead.innerHTML = `<div class="empty">沒有案例資料</div>`; return; }
+        const s = item.summary || {};
+        const summary = summaryKeys.map(([key, label]) => `<div class="summary-item"><span class="label">${esc(label)}</span><span class="value">${esc(fmt(s[key], key))}</span></div>`).join("");
+        const badges = (item.modules || []).map(m => `<span class="pill score ${scoreClass(m.score)}">${esc(m.name)} ${esc(m.score || "-")}</span>`).join("");
+        els.caseHead.innerHTML = `<h2>${esc(item.title)}</h2><div class="summary-grid">${summary}</div><div class="pillrow" style="margin-top:12px">${badges}</div>`;
+      }
+      function renderFilters(item) {
+        const names = [...new Set((item?.modules || []).map(m => m.name))];
+        els.filters.innerHTML = names.map(name => `<button class="filter ${name === state.activeModule ? "active" : ""}" data-module="${esc(name)}">${esc(name)}</button>`).join("");
+        els.filters.querySelectorAll("[data-module]").forEach(button => button.addEventListener("click", () => {
+          state.activeModule = button.dataset.module;
+          renderModules(item);
+          renderFilters(item);
+        }));
+      }
+      function renderStatus(item, module) {
+        const version = moduleVersion(module);
+        const reviewed = localStorage.getItem(storageKey(item.id, module.name, "reviewed", version)) === "1";
+        const current = localStorage.getItem(storageKey(item.id, module.name, "status", version)) || statusOptions[0];
+        const note = localStorage.getItem(storageKey(item.id, module.name, "note", version)) || "";
+        return `<div class="status" data-scope="${esc(module.name)}">
+          ${statusOptions.map(option => `<button class="${option === current ? "active" : ""}" data-status="${esc(option)}">${esc(option)}</button>`).join("")}
+          <button type="button" class="status-submit" data-submit-review>送出</button>
+          <button type="button" class="status-update" data-update-review>更新</button>
+          <button type="button" class="status-clear" data-clear-review>清除本版次紀錄</button>
+          ${reviewed ? `<span class="reviewed-badge">✓ 已驗測（版次：${esc(version)}）</span>` : ""}
+          <textarea placeholder="審閱註記">${esc(note)}</textarea>
+          <div class="local-only-note">在此送出的內容僅供本機使用者紀錄，無法同步給其他使用者</div>
+        </div>`;
+      }
+      function renderSections(sections) {
+        return (sections || []).map((section, index) => `<details class="section" ${index < 2 ? "open" : ""}><summary>${esc(section.title)}</summary><p>${esc(section.body)}</p></details>`).join("");
+      }
+      function renderWebSearch(module) {
+        const tokens = module.tokens || {};
+        const result = module.WEB_SEARCH_RESULT ?? module.webSearchResult ?? {};
+        const text = typeof result === "string" ? result : JSON.stringify(result, null, 2);
+        return `<div class="web-search-box"><pre>${esc(text || "目前沒有 Web Search 結果")}</pre></div>`;
+      }
+      function flagLabel(value) {
+        if (value === true) return "是";
+        if (value === false) return "否";
+        return "-";
+      }
+      function renderQuickReview(module) {
+        const flags = module.flags || {};
+        const tokens = module.tokens || {};
+        const focus = module.chart?.focus || module.lossPattern || "-";
+        const tokenText = tokens.total ? Number(tokens.total).toLocaleString("zh-TW") : "-";
+        return `<div class="quick-review">
+          <div class="check-chip ${flags.noRisk === false ? "warn" : ""}"><strong>風險判斷</strong><span>${esc(module.chart?.riskLevel || "-")} / 無風險：${esc(flagLabel(flags.noRisk))}</span></div>
+          <div class="check-chip ${flags.isBlock ? "danger" : ""}"><strong>阻擋狀態</strong><span>${esc(flagLabel(flags.isBlock))}</span></div>
+          <div class="check-chip ${flags.isMask ? "warn" : ""}"><strong>遮罩狀態</strong><span>${esc(flagLabel(flags.isMask))}</span></div>
+          <div class="check-chip"><strong>驗測線索</strong><span>${esc(focus)} / Tokens ${esc(tokenText)}</span></div>
+        </div>`;
+      }
+      function conditionValue(module, key) {
+        if (module[key] != null) return module[key];
+        const section = (module.sections || []).find(s => s.title === key);
+        return section?.body || "-";
+      }
+      function renderCondition(module) {
+        let comparison = module.EXPOSURE_COMPARISON || module.exposureComparison || {};
+        if (!Object.keys(comparison).length) {
+          const raw = (module.sections || []).find(s => s.title === "EXPOSURE_COMPARISON")?.body;
+          if (raw) { try { comparison = typeof raw === "string" ? JSON.parse(raw) : raw; } catch (_) {} }
+        }
+        const allValues = ["AOP", "AOA", "APD", "AGG"].flatMap(name => { const i = comparison[name] || {}; return [i.case_amount, i.p75_amount, i.minimum_amount].map(v => Number(v) || 0); });
+        const chartMax = Math.max(...allValues, 1);
+        const rows = ["AOP", "AOA", "APD", "AGG"].map(name => {
+          const item = comparison[name] || {};
+          const values = [Number(item.case_amount) || 0, Number(item.p75_amount) || 0, Number(item.minimum_amount) || 0];
+          return `<div class="bar-row"><span class="bar-label">${name}</span><div class="bar-stack">${values.map((v, i) => { const label = ["本案", "P75", "最小"][i]; return `<div class="bar ${["case", "p75", "minimum"][i]}" style="width:${Math.max(0, v / chartMax * 100)}%" data-tooltip="${label}：${v.toLocaleString("zh-TW")}"></div>`; }).join("")}</div></div>`;
+        }).join("");
+        const scale = [0, 20, 40, 60, 80, 100].map(p => `<span>${(chartMax * p / 100).toLocaleString("zh-TW")}</span>`).join("");
+        const descriptions = [["AOP", "AOP_ASSESSMENT"], ["AOA", "AOA_ASSESSMENT"], ["APD", "APD_ASSESSMENT"], ["AGG", "AGG_ASSESSMENT"], ["自負額", "DEDUCTIBLE_ASSESSMENT"]];
+        return `<div class="condition-meta"><div><strong>曝險程度</strong><br>${esc(conditionValue(module, "EXPOSURE_LEVEL"))}</div><div><strong>核心項目</strong><br>${esc(conditionValue(module, "CORE_FOCUS"))}</div></div><details class="section" open><summary>曝險程度對照圖</summary><div class="exposure-chart">${rows}<div class="chart-scale">${scale}</div><div class="chart-legend"><span><i class="legend-dot bar case"></i>本案</span><span><i class="legend-dot bar p75"></i>P75</span><span><i class="legend-dot bar minimum"></i>最小</span></div></div></details><table class="condition-table"><thead><tr><th>分析項目</th><th>說明</th></tr></thead><tbody>${descriptions.map(([label, key]) => `<tr><td>${label}</td><td>${esc(conditionValue(module, key))}</td></tr>`).join("")}</tbody></table>`;
+      }
+      function renderSubject(module) {
+        const assessments = module.REVENUE_EXPOSURE_ASSESSMENTS || {};
+        const rows = [
+          ["營業合理性", module.REVENUE_REASONABILITY_CATEGORY || "-", module.REVENUE_REASONABILITY_DESCRIPTION || "-"],
+          ["曝險特性", assessments.large_catering?.label ? `${assessments.large_catering.label}：${assessments.large_catering.level || "-"}` : "大型供餐型：-", module.REVENUE_EXPOSURE_DESCRIPTION || "-"],
+          ["", assessments.continuous_use?.label ? `${assessments.continuous_use.label}：${assessments.continuous_use.level || "-"}` : "持續使用型：-", ""],
+          ["", assessments.multi_channel_supply?.label ? `${assessments.multi_channel_supply.label}：${assessments.multi_channel_supply.level || "-"}` : "多通路／供應型：-", ""]
+        ];
+        return `<table class="subject-table"><thead><tr><th>分析項目</th><th>檢核結果</th><th>評估依據</th></tr></thead><tbody><tr><td>營業合理性</td><td class="subject-result">${esc(rows[0][1])}</td><td>${esc(rows[0][2])}</td></tr><tr><td rowspan="3">曝險特性</td><td class="subject-result">${esc(rows[1][1])}</td><td rowspan="3">${esc(rows[1][2])}</td></tr>${rows.slice(2).map(r => `<tr><td class="subject-result">${esc(r[1])}</td></tr>`).join("")}</tbody></table>`;
+      }
+      function richText(value) {
+        return esc(value || "-").replace(/&lt;strong&gt;(.*?)&lt;\/strong&gt;/gs, "<strong>$1</strong>");
+      }
+      function renderHistory(module) {
+        const facts = module.KEY_FACTS || {};
+        const baseline = Array.isArray(facts.baseline) ? facts.baseline : [];
+        const changes = Array.isArray(facts.change_trajectory) ? facts.change_trajectory : [];
+        const reviews = Array.isArray(module.RECOMMENDED_REVIEW_CASES) ? module.RECOMMENDED_REVIEW_CASES : [];
+        const factRows = [["過往脈絡", baseline.map((v, i) => `${i + 1}. ${v}`).join("\n")], ["變動重點", changes.map((v, i) => `${i + 1}. ${v}`).join("\n")]];
+        return `<details class="section" open><summary>整體判讀</summary><div class="history-summary">${richText(module.OVERALL_ASSESSMENT)}</div></details><details class="section" open><summary>關鍵事實</summary><table class="history-table"><thead><tr><th>分析項目</th><th>說明</th></tr></thead><tbody>${factRows.map(r => `<tr><td>${esc(r[0])}</td><td>${richText(r[1])}</td></tr>`).join("")}</tbody></table></details><details class="section" open><summary>建議回看案件</summary><table class="review-table"><thead><tr><th>欄位</th><th>案件資料</th><th>回看重點</th></tr></thead><tbody>${reviews.map((r, reviewIndex) => { const alt = reviewIndex % 2 ? "review-alt" : ""; return `<tr class="${alt}"><td>進件編號</td><td>${esc(r.appllte_no || "-")}</td><td rowspan="3"><strong>建議確認：</strong>${richText(r.verification)}<br><strong>優先查看：</strong>${richText(r.fields_to_review)}</td></tr><tr class="${alt}"><td>報價單號</td><td>${esc(r.quote_no_version || "-")}</td></tr><tr class="${alt}"><td>保單號碼</td><td>${esc(r.policy_no || "-")}</td></tr>`; }).join("")}</tbody></table></details>`;
+      }
+      function renderModules(item) {
+        if (!item) { els.modules.innerHTML = ""; return; }
+        const list = (item.modules || []).filter(m => state.activeModule === "全部" || m.name === state.activeModule);
+        els.modules.innerHTML = list.length ? list.map(module => {
+          const meta = scoreMeta(module.score);
+          return `<article class="module">
+            <header class="module-head">
+              <div><h3>${esc(module.name)}</h3><div class="pillrow" style="margin-top:8px">
+                <span class="pill">版次：${esc(module.version || "-")}</span>
+                <span class="pill">交付日：${esc(module.deliveryDate || "-")}</span>
+                <span class="pill">理賠：${esc(module.claimSummary || "-")}</span>
+              </div></div>
+              <div class="score-panel">
+                <div class="score-number">${esc(meta.value)}</div>
+                <div class="score-track"><div class="score-fill" style="--score-width:${esc(meta.width)}; --score-color:${esc(meta.color)}"></div></div>
+                <span class="pill score ${scoreClass(module.score)}">風險分數 ${esc(meta.label)}</span>
+              </div>
+            </header>
+            ${renderQuickReview(module)}
+            <div class="module-body">${module.name === "條件" ? renderCondition(module) : `${renderSections(module.sections)}${renderStatus(item, module)}`}</div>
+          </article>`;
+        }).join("") : `<div class="empty">此案例沒有模組資料</div>`;
+        els.modules.querySelectorAll("[data-scope]").forEach(scope => {
+          const moduleName = scope.dataset.scope;
+          scope.querySelectorAll("[data-status]").forEach(button => button.addEventListener("click", () => {
+            localStorage.setItem(storageKey(item.id, moduleName, "status", moduleVersion(module)), button.dataset.status);
+            renderModules(item);
+          }));
+          scope.querySelector("textarea")?.addEventListener("input", event => {
+            localStorage.setItem(storageKey(item.id, moduleName, "note", moduleVersion(module)), event.target.value);
+          });
+        });
+      }
+      function renderModules(item) {
+        if (!item) { els.modules.innerHTML = ""; return; }
+        const grouped = new Map();
+        (item.modules || []).forEach(m => { if (!grouped.has(m.name)) grouped.set(m.name, []); grouped.get(m.name).push(m); });
+        const list = [...grouped.entries()].filter(([name]) => state.activeModule === "?券" || name === state.activeModule);
+        els.modules.innerHTML = list.length ? list.map(([name, versions], groupIndex) => {
+          const selected = versions[0];
+          const selectedScore = selected.score ?? selected.SCORE;
+          const meta = scoreMeta(selectedScore);
+          return `<article class="module" data-version-group="${groupIndex}"><header class="module-head"><div><h3>${esc(name)}</h3><div class="version-picker"><label>選擇版次</label><select class="version-select" data-version-select="${groupIndex}">${versions.map((m, i) => `<option value="${i}">${esc(m.version || `版次 ${i + 1}`)}</option>`).join("")}</select><span class="delivery-date">交付日期：${esc(selected.deliveryDate || "-")}</span></div></div><div class="score-panel ${name === "web search" ? "web-search-score" : ""}"><div class="score-number" data-version-score="${groupIndex}">${esc(meta.value)}</div><div class="score-track"><div class="score-fill" data-version-fill="${groupIndex}" style="--score-width:${esc(meta.width)}; --score-color:${esc(meta.color)}"></div></div><span class="pill score ${scoreClass(selectedScore)}" data-version-label="${groupIndex}">${esc(meta.label)}</span></div></header><div class="module-body" data-version-body="${groupIndex}">${name === "條件" ? renderCondition(selected) : name === "標的" ? renderSubject(selected) : name === "歷史" ? renderHistory(selected) : name === "web search" ? renderWebSearch(selected) : renderSections(selected.sections)}${renderStatus(item, selected)}</div></article>`;
+        }).join("") : `<div class="empty">目前沒有模組資料</div>`;
+        els.modules.querySelectorAll("[data-version-select]").forEach(select => select.addEventListener("change", () => {
+          const group = Number(select.dataset.versionSelect), versions = list[group][1], module = versions[Number(select.value)], moduleScore = module.score ?? module.SCORE, meta = scoreMeta(moduleScore);
+          const card = select.closest(".module");
+          card.querySelector(`[data-version-score="${group}"]`).textContent = meta.value;
+          card.querySelector(`[data-version-fill="${group}"]`).style.setProperty("--score-width", meta.width);
+          card.querySelector(`[data-version-fill="${group}"]`).style.setProperty("--score-color", meta.color);
+          const label = card.querySelector(`[data-version-label="${group}"]`); label.textContent = meta.label; label.className = `pill score ${scoreClass(moduleScore)}`;
+          card.querySelector(".delivery-date").textContent = `交付日期：${module.deliveryDate || "-"}`;
+          card.querySelector(`[data-version-body="${group}"]`).innerHTML = `${module.name === "條件" ? renderCondition(module) : module.name === "標的" ? renderSubject(module) : module.name === "歷史" ? renderHistory(module) : module.name === "web search" ? renderWebSearch(module) : renderSections(module.sections)}${renderStatus(item, module)}`;
+          wireStatus(card.querySelector("[data-scope]"), item, module);
+        }));
+        els.modules.querySelectorAll("[data-scope]").forEach(scope => {
+          const moduleName = scope.dataset.scope;
+          const module = (item.modules || []).find(m => m.name === moduleName) || {};
+          wireStatus(scope, item, module);
+        });
+      }
+      function wireStatus(scope, item, module) {
+        if (!scope) return;
+        scope.querySelectorAll("[data-status]").forEach(button => button.addEventListener("click", () => {
+          localStorage.setItem(storageKey(item.id, module.name, "status", moduleVersion(module)), button.dataset.status);
+          renderModules(item);
+        }));
+        scope.querySelector("[data-submit-review]")?.addEventListener("click", () => {
+          localStorage.setItem(storageKey(item.id, module.name, "reviewed", moduleVersion(module)), "1");
+          localStorage.setItem(storageKey(item.id, module.name, "status", moduleVersion(module)), "已確認並回饋在excel");
+          render();
+        });
+        scope.querySelector("[data-update-review]")?.addEventListener("click", () => {
+          const version = moduleVersion(module);
+          const selectedStatus = scope.querySelector("[data-status].active")?.dataset.status || statusOptions[0];
+          const note = scope.querySelector("textarea")?.value || "";
+          localStorage.setItem(storageKey(item.id, module.name, "status", version), selectedStatus);
+          localStorage.setItem(storageKey(item.id, module.name, "note", version), note);
+          render();
+        });
+        scope.querySelector("[data-clear-review]")?.addEventListener("click", () => {
+          const version = moduleVersion(module);
+          if (!window.confirm(`確定要清除「${module.name}」${version}的本機驗測紀錄嗎？`)) return;
+          ["reviewed", "status", "note"].forEach(field => localStorage.removeItem(storageKey(item.id, module.name, field, version)));
+          render();
+        });
+        scope.querySelector("textarea")?.addEventListener("input", event => {
+          localStorage.setItem(storageKey(item.id, module.name, "note", moduleVersion(module)), event.target.value);
+        });
+      }
+      function renderCompactList() {
+        const list = filteredCases();
+        els.count.textContent = `${list.length}/${cases.length}`;
+        els.caseList.innerHTML = list.length ? list.map(item => {
+          const s = item.summary || {};
+          const names = [...new Set((item.modules || []).map(m => m.name).filter(Boolean))];
+          const reviewedByModule = new Map();
+          (item.modules || []).forEach(m => {
+            const version = moduleVersion(m);
+            if (localStorage.getItem(storageKey(item.id, m.name, "reviewed", version)) !== "1") return;
+            if (!reviewedByModule.has(m.name)) reviewedByModule.set(m.name, []);
+            reviewedByModule.get(m.name).push(version);
+          });
+          const reviewedSummary = [...reviewedByModule.entries()].map(([name, versions]) => `${name} ${versions.length}`).join("、");
+          const reviewedDetail = [...reviewedByModule.entries()].map(([name, versions]) => `${name}：${versions.join("、")}`).join("｜");
+          const reviewed = reviewedByModule.size > 0;
+          return `<button class="case-btn ${item.id === state.activeCaseId ? "active" : ""} ${reviewed ? "reviewed" : ""}" data-id="${esc(item.id)}"><span class="case-title">${esc(s.CUSTOMER_NAME || item.title)}</span><span class="case-sub">APPLLTE_NO：${esc(s.APPLLTE_NO || item.appllteNo || "-")}</span><span class="case-modules">${names.map(n => `<span class="case-module">${esc(n)}</span>`).join("")}</span>${reviewed ? `<span class="reviewed-mark" title="${esc(reviewedDetail)}">✓ 已驗測：${esc(reviewedSummary)}</span>` : ""}</button>`;
+        }).join("") : `<div class="empty">No cases</div>`;
+        els.caseList.querySelectorAll("[data-id]").forEach(button => button.addEventListener("click", () => { state.activeCaseId = button.dataset.id; state.activeModule = "?券"; render(); }));
+      }
+      function render() {
+        const list = filteredCases();
+        if (list.length && !list.some(item => item.id === state.activeCaseId)) state.activeCaseId = list[0].id;
+        const item = activeCase();
+        renderMeta();
+        if (state.view === "usage") {
+          setView("usage");
+          return;
+        }
+        setView("review");
+        renderCompactList();
+        renderHead(item);
+        renderFilters(item);
+        renderModules(item);
+      }
+      els.search.addEventListener("input", () => { state.query = els.search.value; render(); });
+      els.reviewViewButton.addEventListener("click", () => { state.view = "review"; render(); });
+      els.usageViewButton.addEventListener("click", () => { state.view = "usage"; render(); });
+      document.getElementById("print").addEventListener("click", () => window.print());
+      render();
+    </script>
+  </body>
+</html>
