@@ -1,5 +1,5 @@
 window.validationReviewData = {
-    "generatedAt":  "2026-07-19 16:01:01",
+    "generatedAt":  "2026-07-19 16:07:46",
     "sourceFile":  "驗測資料.xlsx",
     "sourceSheet":  "input / 各模組資料",
     "header":  [
@@ -13592,51 +13592,7 @@ window.validationReviewData = {
                                       "APPLLTE_NO":  "A2401000043467843"
                                   },
                       "modules":  [
-                                      {
-                                          "name":  "標的",
-                                          "version":  "小量v2",
-                                          "deliveryDate":  "2026-07-13",
-                                          "tokens":  {
-                                                         "input":  13758,
-                                                         "output":  993,
-                                                         "total":  14751
-                                                     },
-                                          "SCORE":  4.1,
-                                          "IS_MASK":  false,
-                                          "NO_RISK":  false,
-                                          "IS_BLOCK":  false,
-                                          "MASK_RAIL":  null,
-                                          "BLOCK_RAIL":  null,
-                                          "INPUT_TOKENS":  13758,
-                                          "TOTAL_TOKENS":  14751,
-                                          "OUTPUT_TOKENS":  993,
-                                          "PRODUCT_SCORE":  9.0,
-                                          "SUBJECT_SUMMARY":  "常溫加工食品可能因保存不當致細菌滋生、加熱不足或接觸生食或不潔器具導致食物中毒，為低風險。",
-                                          "REVENUE_EXPOSURE_SCORE":  4.1,
-                                          "SUBJECT_RISK_REPORT_TABLE":  {
-                                                                            "常溫加工食品":  {
-                                                                                           "RISK_DESC":  "保存不當、加熱不足或接觸不潔器具致菌生",
-                                                                                           "RISK_SUGGESTION":  "低風險"
-                                                                                       }
-                                                                        },
-                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
-                                                                               "continuous_use":  {
-                                                                                                      "label":  "持續使用型",
-                                                                                                      "level":  "中度"
-                                                                                                  },
-                                                                               "large_catering":  {
-                                                                                                      "label":  "大型供餐型",
-                                                                                                      "level":  "有限"
-                                                                                                  },
-                                                                               "multi_channel_supply":  {
-                                                                                                            "label":  "多通路/供應型",
-                                                                                                            "level":  "顯著"
-                                                                                                        }
-                                                                           },
-                                          "REVENUE_EXPOSURE_DESCRIPTION":  "未見婚宴、團膳、Buffet或大型同步供餐資訊，故大型供餐型為有限。公開資訊顯示有食品工廠、批發零售、量販通路、電商及辛香料代工代銷，且與多個餐飲品牌合作，多通路/供應型顯著。產品多為常溫調理包、火鍋湯底等短中期食用食品，保存期可達1至2年，故持續使用型為中度。",
-                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
-                                          "REVENUE_REASONABILITY_DESCRIPTION":  "申報預估年營業額3億元，相對於資本額6,500萬元、兩處生產中食品工廠、約95名員工及食品製造批發零售模式，具一定規模基礎。公開資訊顯示其有自有品牌、量販通路銷售、電商元素、B2B餐飲品牌商品化及辛香料代工代銷等市場接觸方式，足以支持較高營收規模。雖未查得公開財報或實際銷售金額，但以其製造商兼品牌/代工/通路供應商型態，該營業額大致可解釋。"
-                                      }
+
                                   ]
                   },
                   {
@@ -13659,59 +13615,7 @@ window.validationReviewData = {
                                       "APPLLTE_NO":  "A2401000064972241"
                                   },
                       "modules":  [
-                                      {
-                                          "name":  "條件",
-                                          "version":  "小量v2",
-                                          "deliveryDate":  "2026-07-13",
-                                          "tokens":  {
-                                                         "input":  5855,
-                                                         "output":  2136,
-                                                         "total":  7991
-                                                     },
-                                          "SCORE":  9.0,
-                                          "EXPOSURE_LEVEL":  "中",
-                                          "CORE_FOCUS":  "AOA/AGG",
-                                          "EXPOSURE_COMPARISON_NOTE":  "核保情境推估，非官方統計",
-                                          "EXPOSURE_COMPARISON":  {
-                                                                      "AOP":  {
-                                                                                  "median_amount":  50000,
-                                                                                  "p75_amount":  150000,
-                                                                                  "minimum_amount":  1000000,
-                                                                                  "case_amount":  500000
-                                                                              },
-                                                                      "AOA":  {
-                                                                                  "median_amount":  1000000,
-                                                                                  "p75_amount":  4500000,
-                                                                                  "minimum_amount":  4000000,
-                                                                                  "case_amount":  1000000
-                                                                              },
-                                                                      "APD":  {
-                                                                                  "median_amount":  null,
-                                                                                  "p75_amount":  null,
-                                                                                  "minimum_amount":  null,
-                                                                                  "case_amount":  0
-                                                                              },
-                                                                      "AGG":  {
-                                                                                  "median_amount":  1250000,
-                                                                                  "p75_amount":  6750000,
-                                                                                  "minimum_amount":  10000000,
-                                                                                  "case_amount":  2000000
-                                                                              }
-                                                                  },
-                                          "AOP_ASSESSMENT":  "單一受害人體傷非本案核心；常見損害多為門診或急診、藥費、短期休養及小額和解，圖表顯示本案限額高於 P75 單人體傷曝險，通常需重症、重大後遺症或高額和解才較可能大量利用。",
-                                          "AOA_ASSESSMENT":  "\u003cstrong\u003e核心風險在同批食材或同時段出餐造成多人食物中毒。\u003c/strong\u003e以圖表中位單人體傷曝險估算，約 20 人群聚事件即可能達中位損失幅度；若尖峰時段或盒餐團體訂購造成較多人求償，醫療費、短期休養、工作損失與和解金會使損失接近 P75。本案單次事故額度僅約落在中位曝險，對較大型群聚事故承接能力不足。",
-                                          "APD_ASSESSMENT":  "未承保。",
-                                          "AGG_ASSESSMENT":  "保險期間累計限額約為單次事故限額的 2 倍；以盒餐、便當及現場製餐型態，年度累積主要來自多次食安事件重複發生之多人醫療費、短期休養、工作損失與批量和解成本。現有累計額度可承接兩次接近滿額的單次事故，但低於合理 P75 累計暴露，若出餐頻率高或團體訂餐占比較高，年度累積緩衝偏薄。",
-                                          "DEDUCTIBLE_ASSESSMENT":  "自負額 10% 且每次至少 5000，對門診藥費、小額不適或低額和解案件具基本過濾效果；但主要作用仍限於小額案件自留與理賠頻率管理。",
-                                          "INPUT_TOKENS":  5855,
-                                          "OUTPUT_TOKENS":  2136,
-                                          "TOTAL_TOKENS":  7991,
-                                          "NO_RISK":  false,
-                                          "IS_BLOCK":  false,
-                                          "IS_MASK":  false,
-                                          "BLOCK_RAIL":  null,
-                                          "MASK_RAIL":  null
-                                      }
+
                                   ]
                   },
                   {
