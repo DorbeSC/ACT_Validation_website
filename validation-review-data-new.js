@@ -1,5 +1,5 @@
 window.validationReviewData = {
-    "generatedAt":  "2026-07-19 15:50:04",
+    "generatedAt":  "2026-07-19 16:01:01",
     "sourceFile":  "驗測資料.xlsx",
     "sourceSheet":  "input / 各模組資料",
     "header":  [
@@ -23,19 +23,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2505000358362380",
                       "title":  "元岑小吃店",
                       "summary":  {
-                                      "CUSTOMER_ID":  "37810544",
-                                      "CUSTOMER_NAME":  "元岑小吃店",
-                                      "APPLLTE_NO":  "A2505000358362380",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "雞排。羹麵",
-                                      "REVENUE":  "100000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "元岑小吃店",
+                                      "REVENUE":  "100000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "雞排。羹麵",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "37810544",
+                                      "APPLLTE_NO":  "A2505000358362380"
                                   },
                       "modules":  [
                                       {
@@ -1106,19 +1106,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2505000330951249",
                       "title":  "皇廷煨湯餐廳",
                       "summary":  {
-                                      "CUSTOMER_ID":  "99960727",
-                                      "CUSTOMER_NAME":  "皇廷煨湯餐廳",
-                                      "APPLLTE_NO":  "A2505000330951249",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "中餐廳",
-                                      "REVENUE":  "30000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "皇廷煨湯餐廳",
+                                      "REVENUE":  "30000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "中餐廳",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "99960727",
+                                      "APPLLTE_NO":  "A2505000330951249"
                                   },
                       "modules":  [
                                       {
@@ -2245,19 +2245,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2505000312675646",
                       "title":  "超淘氣餐飲股份有限公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "94172820",
-                                      "CUSTOMER_NAME":  "超淘氣餐飲股份有限公司",
-                                      "APPLLTE_NO":  "A2505000312675646",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "鐵板燒料理",
-                                      "REVENUE":  "10000000",
-                                      "AOP_AMOUNT_PRODUCT":  "10000000",
-                                      "AOA_AMOUNT_PRODUCT":  "10000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "超淘氣餐飲股份有限公司",
+                                      "REVENUE":  "10000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "20000000",
                                       "DDCB_AMOUNT":  "2500",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "10000000",
+                                      "OBJECT_NAME":  "鐵板燒料理",
+                                      "AOA_AMOUNT_PRODUCT":  "10000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "94172820",
+                                      "APPLLTE_NO":  "A2505000312675646"
                                   },
                       "modules":  [
                                       {
@@ -3360,19 +3360,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2505000345915986",
                       "title":  "藥一藥業股份有限公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "52931808",
-                                      "CUSTOMER_NAME":  "藥一藥業股份有限公司",
-                                      "APPLLTE_NO":  "A2505000345915986",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "保健食品(詳附件)",
-                                      "REVENUE":  "50000000",
-                                      "AOP_AMOUNT_PRODUCT":  "10000000",
-                                      "AOA_AMOUNT_PRODUCT":  "10000000",
                                       "APD_AMOUNT_PRODUCT":  "10000000",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "藥一藥業股份有限公司",
+                                      "REVENUE":  "50000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "20000000",
                                       "DDCB_AMOUNT":  "2500",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "10000000",
+                                      "OBJECT_NAME":  "保健食品(詳附件)",
+                                      "AOA_AMOUNT_PRODUCT":  "10000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "52931808",
+                                      "APPLLTE_NO":  "A2505000345915986"
                                   },
                       "modules":  [
                                       {
@@ -4493,19 +4493,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2502000058993542",
                       "title":  "繽鮮有限公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "97584108",
-                                      "CUSTOMER_NAME":  "繽鮮有限公司",
-                                      "APPLLTE_NO":  "A2502000058993542",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "潮虎老火鍋生產販售全品項食品",
-                                      "REVENUE":  "20000000",
-                                      "AOP_AMOUNT_PRODUCT":  "20000000",
-                                      "AOA_AMOUNT_PRODUCT":  "20000000",
                                       "APD_AMOUNT_PRODUCT":  "20000000",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "繽鮮有限公司",
+                                      "REVENUE":  "20000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "200000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "20000000",
+                                      "OBJECT_NAME":  "潮虎老火鍋生產販售全品項食品",
+                                      "AOA_AMOUNT_PRODUCT":  "20000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "97584108",
+                                      "APPLLTE_NO":  "A2502000058993542"
                                   },
                       "modules":  [
                                       {
@@ -5628,19 +5628,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2504000278824248",
                       "title":  "謝佳榛(Doris 烘焙)",
                       "summary":  {
-                                      "CUSTOMER_ID":  "J222538362",
-                                      "CUSTOMER_NAME":  "謝佳榛(Doris 烘焙)",
-                                      "APPLLTE_NO":  "A2504000278824248",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "法式奶酥醬、奶酥厚片吐司、白木耳、飲品、米蛋糕、西點麵包、西點餅乾、西點蛋糕、月餅、饅頭等",
-                                      "REVENUE":  "10000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "謝佳榛(Doris 烘焙)",
+                                      "REVENUE":  "10000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "法式奶酥醬、奶酥厚片吐司、白木耳、飲品、米蛋糕、西點麵包、西點餅乾、西點蛋糕、月餅、饅頭等",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "J222538362",
+                                      "APPLLTE_NO":  "A2504000278824248"
                                   },
                       "modules":  [
                                       {
@@ -6628,19 +6628,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2508000604038107",
                       "title":  "晉欣食品股份有限公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "28802380",
-                                      "CUSTOMER_NAME":  "晉欣食品股份有限公司",
-                                      "APPLLTE_NO":  "A2508000604038107",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "御便當、御飯團",
-                                      "REVENUE":  "2330000000",
-                                      "AOP_AMOUNT_PRODUCT":  "10000000",
-                                      "AOA_AMOUNT_PRODUCT":  "10000000",
                                       "APD_AMOUNT_PRODUCT":  "10000000",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "晉欣食品股份有限公司",
+                                      "REVENUE":  "2330000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "100000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "10000000",
+                                      "OBJECT_NAME":  "御便當、御飯團",
+                                      "AOA_AMOUNT_PRODUCT":  "10000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "28802380",
+                                      "APPLLTE_NO":  "A2508000604038107"
                                   },
                       "modules":  [
                                       {
@@ -7851,19 +7851,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2509000645527904",
                       "title":  "斯伯登寶翠有限公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "80158586",
-                                      "CUSTOMER_NAME":  "斯伯登寶翠有限公司",
-                                      "APPLLTE_NO":  "A2509000645527904",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "進口食品(餅乾、果醬、水、咖啡、果汁、酒)",
-                                      "REVENUE":  "60000000",
-                                      "AOP_AMOUNT_PRODUCT":  "3000000",
-                                      "AOA_AMOUNT_PRODUCT":  "12000000",
                                       "APD_AMOUNT_PRODUCT":  "3000000",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "斯伯登寶翠有限公司",
+                                      "REVENUE":  "60000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "30000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "3000000",
+                                      "OBJECT_NAME":  "進口食品(餅乾、果醬、水、咖啡、果汁、酒)",
+                                      "AOA_AMOUNT_PRODUCT":  "12000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "80158586",
+                                      "APPLLTE_NO":  "A2509000645527904"
                                   },
                       "modules":  [
                                       {
@@ -8851,19 +8851,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2504000270842824",
                       "title":  "新福農場",
                       "summary":  {
-                                      "CUSTOMER_ID":  "26498807",
-                                      "CUSTOMER_NAME":  "新福農場",
-                                      "APPLLTE_NO":  "A2504000270842824",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "生鮮食品",
-                                      "REVENUE":  "100",
-                                      "AOP_AMOUNT_PRODUCT":  "2000000",
-                                      "AOA_AMOUNT_PRODUCT":  "8000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "新福農場",
+                                      "REVENUE":  "100",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "20000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "2000000",
+                                      "OBJECT_NAME":  "生鮮食品",
+                                      "AOA_AMOUNT_PRODUCT":  "8000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "26498807",
+                                      "APPLLTE_NO":  "A2504000270842824"
                                   },
                       "modules":  [
                                       {
@@ -9988,19 +9988,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2507000544954825",
                       "title":  "德隆國際事業有限公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "42710025",
-                                      "CUSTOMER_NAME":  "德隆國際事業有限公司",
-                                      "APPLLTE_NO":  "A2507000544954825",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "火鍋湯底、牛肉調理包、調理醬包、鴨血調理包、常溫調理包、覆熱即食品",
-                                      "REVENUE":  "300000000",
-                                      "AOP_AMOUNT_PRODUCT":  "150000000",
-                                      "AOA_AMOUNT_PRODUCT":  "150000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "德隆國際事業有限公司",
+                                      "REVENUE":  "300000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "150000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "150000000",
+                                      "OBJECT_NAME":  "火鍋湯底、牛肉調理包、調理醬包、鴨血調理包、常溫調理包、覆熱即食品",
+                                      "AOA_AMOUNT_PRODUCT":  "150000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "42710025",
+                                      "APPLLTE_NO":  "A2507000544954825"
                                   },
                       "modules":  [
                                       {
@@ -11181,19 +11181,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2503000149319906",
                       "title":  "驊亞國際貿易有限公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "50919883",
-                                      "CUSTOMER_NAME":  "驊亞國際貿易有限公司",
-                                      "APPLLTE_NO":  "A2503000149319906",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "活體海鮮、冷凍海鮮",
-                                      "REVENUE":  "70000000",
-                                      "AOP_AMOUNT_PRODUCT":  "2000000",
-                                      "AOA_AMOUNT_PRODUCT":  "8000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "驊亞國際貿易有限公司",
+                                      "REVENUE":  "70000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "20000000",
                                       "DDCB_AMOUNT":  "0",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "2000000",
+                                      "OBJECT_NAME":  "活體海鮮、冷凍海鮮",
+                                      "AOA_AMOUNT_PRODUCT":  "8000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "50919883",
+                                      "APPLLTE_NO":  "A2503000149319906"
                                   },
                       "modules":  [
                                       {
@@ -12292,19 +12292,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2501000036311664",
                       "title":  "李俊融 (饗 鍋貼蒸餃專賣店)",
                       "summary":  {
-                                      "CUSTOMER_ID":  "Q123332492",
-                                      "CUSTOMER_NAME":  "李俊融 (饗 鍋貼蒸餃專賣店)",
-                                      "APPLLTE_NO":  "A2501000036311664",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "鍋貼、蒸餃、盒餐、便當",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "500000",
-                                      "AOA_AMOUNT_PRODUCT":  "1000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "10",
+                                      "CUSTOMER_NAME":  "李俊融 (饗 鍋貼蒸餃專賣店)",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "2000000",
                                       "DDCB_AMOUNT":  "5000",
-                                      "DDCB_RATIO":  "10"
+                                      "AOP_AMOUNT_PRODUCT":  "500000",
+                                      "OBJECT_NAME":  "鍋貼、蒸餃、盒餐、便當",
+                                      "AOA_AMOUNT_PRODUCT":  "1000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "Q123332492",
+                                      "APPLLTE_NO":  "A2501000036311664"
                                   },
                       "modules":  [
                                       {
@@ -13292,19 +13292,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2401000023810247",
                       "title":  "順興小吃店  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "77300878",
-                                      "CUSTOMER_NAME":  "順興小吃店  ",
-                                      "APPLLTE_NO":  "A2401000023810247",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "高梁嗆蟹、小魚海鮮干貝醬",
-                                      "REVENUE":  "1000000",
-                                      "AOP_AMOUNT_PRODUCT":  "2000000",
-                                      "AOA_AMOUNT_PRODUCT":  "5000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "順興小吃店  ",
+                                      "REVENUE":  "1000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "15000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "2000000",
+                                      "OBJECT_NAME":  "高梁嗆蟹、小魚海鮮干貝醬",
+                                      "AOA_AMOUNT_PRODUCT":  "5000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "77300878",
+                                      "APPLLTE_NO":  "A2401000023810247"
                                   },
                       "modules":  [
                                       {
@@ -13577,19 +13577,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2401000043467843",
                       "title":  "小北百貨有限公司  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "97268593",
-                                      "CUSTOMER_NAME":  "小北百貨有限公司  ",
-                                      "APPLLTE_NO":  "A2401000043467843",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "麵包、蛋糕、餅乾、吐司、咖啡飲品",
-                                      "REVENUE":  "20000000",
-                                      "AOP_AMOUNT_PRODUCT":  "3000000",
-                                      "AOA_AMOUNT_PRODUCT":  "20000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "小北百貨有限公司  ",
+                                      "REVENUE":  "20000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "20000000",
                                       "DDCB_AMOUNT":  "0",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "3000000",
+                                      "OBJECT_NAME":  "麵包、蛋糕、餅乾、吐司、咖啡飲品",
+                                      "AOA_AMOUNT_PRODUCT":  "20000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "97268593",
+                                      "APPLLTE_NO":  "A2401000043467843"
                                   },
                       "modules":  [
                                       {
@@ -13644,22 +13644,74 @@ window.validationReviewData = {
                       "appllteNo":  "A2401000064972241",
                       "title":  "陳德忠(阿華客家美食)  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "K121140983",
-                                      "CUSTOMER_NAME":  "陳德忠(阿華客家美食)  ",
-                                      "APPLLTE_NO":  "A2401000064972241",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "黑糖糕、客家粽、客家菜包、手工糬、純米豬籠粄",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "陳德忠(阿華客家美食)  ",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "黑糖糕、客家粽、客家菜包、手工糬、純米豬籠粄",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "K121140983",
+                                      "APPLLTE_NO":  "A2401000064972241"
                                   },
                       "modules":  [
-
+                                      {
+                                          "name":  "條件",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-13",
+                                          "tokens":  {
+                                                         "input":  5855,
+                                                         "output":  2136,
+                                                         "total":  7991
+                                                     },
+                                          "SCORE":  9.0,
+                                          "EXPOSURE_LEVEL":  "中",
+                                          "CORE_FOCUS":  "AOA/AGG",
+                                          "EXPOSURE_COMPARISON_NOTE":  "核保情境推估，非官方統計",
+                                          "EXPOSURE_COMPARISON":  {
+                                                                      "AOP":  {
+                                                                                  "median_amount":  50000,
+                                                                                  "p75_amount":  150000,
+                                                                                  "minimum_amount":  1000000,
+                                                                                  "case_amount":  500000
+                                                                              },
+                                                                      "AOA":  {
+                                                                                  "median_amount":  1000000,
+                                                                                  "p75_amount":  4500000,
+                                                                                  "minimum_amount":  4000000,
+                                                                                  "case_amount":  1000000
+                                                                              },
+                                                                      "APD":  {
+                                                                                  "median_amount":  null,
+                                                                                  "p75_amount":  null,
+                                                                                  "minimum_amount":  null,
+                                                                                  "case_amount":  0
+                                                                              },
+                                                                      "AGG":  {
+                                                                                  "median_amount":  1250000,
+                                                                                  "p75_amount":  6750000,
+                                                                                  "minimum_amount":  10000000,
+                                                                                  "case_amount":  2000000
+                                                                              }
+                                                                  },
+                                          "AOP_ASSESSMENT":  "單一受害人體傷非本案核心；常見損害多為門診或急診、藥費、短期休養及小額和解，圖表顯示本案限額高於 P75 單人體傷曝險，通常需重症、重大後遺症或高額和解才較可能大量利用。",
+                                          "AOA_ASSESSMENT":  "\u003cstrong\u003e核心風險在同批食材或同時段出餐造成多人食物中毒。\u003c/strong\u003e以圖表中位單人體傷曝險估算，約 20 人群聚事件即可能達中位損失幅度；若尖峰時段或盒餐團體訂購造成較多人求償，醫療費、短期休養、工作損失與和解金會使損失接近 P75。本案單次事故額度僅約落在中位曝險，對較大型群聚事故承接能力不足。",
+                                          "APD_ASSESSMENT":  "未承保。",
+                                          "AGG_ASSESSMENT":  "保險期間累計限額約為單次事故限額的 2 倍；以盒餐、便當及現場製餐型態，年度累積主要來自多次食安事件重複發生之多人醫療費、短期休養、工作損失與批量和解成本。現有累計額度可承接兩次接近滿額的單次事故，但低於合理 P75 累計暴露，若出餐頻率高或團體訂餐占比較高，年度累積緩衝偏薄。",
+                                          "DEDUCTIBLE_ASSESSMENT":  "自負額 10% 且每次至少 5000，對門診藥費、小額不適或低額和解案件具基本過濾效果；但主要作用仍限於小額案件自留與理賠頻率管理。",
+                                          "INPUT_TOKENS":  5855,
+                                          "OUTPUT_TOKENS":  2136,
+                                          "TOTAL_TOKENS":  7991,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null
+                                      }
                                   ]
                   },
                   {
@@ -13667,19 +13719,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2401000075922406",
                       "title":  "杏澤藥局  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "93001237",
-                                      "CUSTOMER_NAME":  "杏澤藥局  ",
-                                      "APPLLTE_NO":  "A2401000075922406",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "玫瑰福桂茶、宏亮開嗓茶、炯炯有神茶、每日好眠茶、黑豆杜仲茶、人生養氣茶、元氣大增茶",
-                                      "REVENUE":  "500000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "杏澤藥局  ",
+                                      "REVENUE":  "500000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "玫瑰福桂茶、宏亮開嗓茶、炯炯有神茶、每日好眠茶、黑豆杜仲茶、人生養氣茶、元氣大增茶",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "93001237",
+                                      "APPLLTE_NO":  "A2401000075922406"
                                   },
                       "modules":  [
 
@@ -13690,19 +13742,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2401000103350885",
                       "title":  "小博士股份有限公司  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "76432513",
-                                      "CUSTOMER_NAME":  "小博士股份有限公司  ",
-                                      "APPLLTE_NO":  "A2401000103350885",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "佳味纖(冷凍食品,素火腿,素料,湯品,醬汁,飲品,南瓜豆漿,素粽,素水餃)",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "小博士股份有限公司  ",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "佳味纖(冷凍食品,素火腿,素料,湯品,醬汁,飲品,南瓜豆漿,素粽,素水餃)",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "76432513",
+                                      "APPLLTE_NO":  "A2401000103350885"
                                   },
                       "modules":  [
 
@@ -13713,19 +13765,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2403000225112507",
                       "title":  "禾埕企業社  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "92732586",
-                                      "CUSTOMER_NAME":  "禾埕企業社  ",
-                                      "APPLLTE_NO":  "A2403000225112507",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "生鮮肉品-\t雞肉、鴨肉等",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "5000000",
                                       "APD_AMOUNT_PRODUCT":  "1000000",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "禾埕企業社  ",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "生鮮肉品-\t雞肉、鴨肉等",
+                                      "AOA_AMOUNT_PRODUCT":  "5000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "92732586",
+                                      "APPLLTE_NO":  "A2403000225112507"
                                   },
                       "modules":  [
 
@@ -13736,19 +13788,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2403000225315186",
                       "title":  "溪邊土雞城  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "36671397",
-                                      "CUSTOMER_NAME":  "溪邊土雞城  ",
-                                      "APPLLTE_NO":  "A2403000225315186",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "台式料理、血藤雞湯、三杯雞、半天花、店內銷售所有餐飲",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "溪邊土雞城  ",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "台式料理、血藤雞湯、三杯雞、半天花、店內銷售所有餐飲",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "36671397",
+                                      "APPLLTE_NO":  "A2403000225315186"
                                   },
                       "modules":  [
 
@@ -13759,19 +13811,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2403000225392709",
                       "title":  "芋圓攤  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "36808020",
-                                      "CUSTOMER_NAME":  "芋圓攤  ",
-                                      "APPLLTE_NO":  "A2403000225392709",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "芋圓粉圓蕃薯圓抹茶圓QQ圓豆類綜合冰品（熱品）、燒仙草、仙草冰",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "芋圓攤  ",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "芋圓粉圓蕃薯圓抹茶圓QQ圓豆類綜合冰品（熱品）、燒仙草、仙草冰",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "36808020",
+                                      "APPLLTE_NO":  "A2403000225392709"
                                   },
                       "modules":  [
 
@@ -13782,19 +13834,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2403000225676007",
                       "title":  "洽維早餐店  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "47416514",
-                                      "CUSTOMER_NAME":  "洽維早餐店  ",
-                                      "APPLLTE_NO":  "A2403000225676007",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "盒餐、外燴、便當",
-                                      "REVENUE":  "1200000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "洽維早餐店  ",
+                                      "REVENUE":  "1200000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "盒餐、外燴、便當",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "47416514",
+                                      "APPLLTE_NO":  "A2403000225676007"
                                   },
                       "modules":  [
 
@@ -13805,19 +13857,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2411000752261786",
                       "title":  "新加坡商海底撈事業股份有限公司台灣第二分公司  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "58579916",
-                                      "CUSTOMER_NAME":  "新加坡商海底撈事業股份有限公司台灣第二分公司  ",
-                                      "APPLLTE_NO":  "A2411000752261786",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "餐館業、食品什貨、冷凍調理食品、乳製品、蛋、食用油脂等",
-                                      "REVENUE":  "100000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "新加坡商海底撈事業股份有限公司台灣第二分公司  ",
+                                      "REVENUE":  "100000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "5000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "餐館業、食品什貨、冷凍調理食品、乳製品、蛋、食用油脂等",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "58579916",
+                                      "APPLLTE_NO":  "A2411000752261786"
                                   },
                       "modules":  [
 
@@ -13828,19 +13880,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2411000753357648",
                       "title":  "瑪俐固商行  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "50689720",
-                                      "CUSTOMER_NAME":  "瑪俐固商行  ",
-                                      "APPLLTE_NO":  "A2411000753357648",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "便當、餐飲",
-                                      "REVENUE":  "2000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "瑪俐固商行  ",
+                                      "REVENUE":  "2000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "便當、餐飲",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "50689720",
+                                      "APPLLTE_NO":  "A2411000753357648"
                                   },
                       "modules":  [
 
@@ -13851,19 +13903,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2411000768872545",
                       "title":  "新加坡商海底撈事業股份有限公司台灣第二分公司  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "58579916",
-                                      "CUSTOMER_NAME":  "新加坡商海底撈事業股份有限公司台灣第二分公司  ",
-                                      "APPLLTE_NO":  "A2411000768872545",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "餐館業、食品什貨、冷凍調理食品、乳製品、蛋、食用油脂等",
-                                      "REVENUE":  "100000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "新加坡商海底撈事業股份有限公司台灣第二分公司  ",
+                                      "REVENUE":  "100000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "5000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "餐館業、食品什貨、冷凍調理食品、乳製品、蛋、食用油脂等",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "58579916",
+                                      "APPLLTE_NO":  "A2411000768872545"
                                   },
                       "modules":  [
 
@@ -13874,19 +13926,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2412000793844060",
                       "title":  "惠比壽餐飲股份有限公司(店名:元一營業所)  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "94053330",
-                                      "CUSTOMER_NAME":  "惠比壽餐飲股份有限公司(店名:元一營業所)  ",
-                                      "APPLLTE_NO":  "A2412000793844060",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "無菜單料理(含各式餐飲料理、飲品及酒類)",
-                                      "REVENUE":  "58000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "惠比壽餐飲股份有限公司(店名:元一營業所)  ",
+                                      "REVENUE":  "58000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "無菜單料理(含各式餐飲料理、飲品及酒類)",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "94053330",
+                                      "APPLLTE_NO":  "A2412000793844060"
                                   },
                       "modules":  [
 
@@ -13897,19 +13949,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2412000795029742",
                       "title":  "新加坡商海底撈事業股份有限公司台灣第二分公司  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "58579916",
-                                      "CUSTOMER_NAME":  "新加坡商海底撈事業股份有限公司台灣第二分公司  ",
-                                      "APPLLTE_NO":  "A2412000795029742",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "餐館業、食品什貨、冷凍調理食品、乳製品、蛋、食用油脂等",
-                                      "REVENUE":  "100000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "新加坡商海底撈事業股份有限公司台灣第二分公司  ",
+                                      "REVENUE":  "100000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "餐館業、食品什貨、冷凍調理食品、乳製品、蛋、食用油脂等",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "58579916",
+                                      "APPLLTE_NO":  "A2412000795029742"
                                   },
                       "modules":  [
 
@@ -13920,19 +13972,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2412000795339409",
                       "title":  "新加坡商海底撈事業股份有限公司台灣第一分公司新莊宏匯門市部  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "92634332",
-                                      "CUSTOMER_NAME":  "新加坡商海底撈事業股份有限公司台灣第一分公司新莊宏匯門市部  ",
-                                      "APPLLTE_NO":  "A2412000795339409",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "餐館業、食品什貨、冷凍調理食品、乳製品、蛋、食用油脂等",
-                                      "REVENUE":  "100000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "新加坡商海底撈事業股份有限公司台灣第一分公司新莊宏匯門市部  ",
+                                      "REVENUE":  "100000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "餐館業、食品什貨、冷凍調理食品、乳製品、蛋、食用油脂等",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "92634332",
+                                      "APPLLTE_NO":  "A2412000795339409"
                                   },
                       "modules":  [
 
@@ -13943,19 +13995,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2412000803094520",
                       "title":  "新加坡商海底撈事業股份有限公司台灣第一分公司新莊宏匯門市部  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "92634332",
-                                      "CUSTOMER_NAME":  "新加坡商海底撈事業股份有限公司台灣第一分公司新莊宏匯門市部  ",
-                                      "APPLLTE_NO":  "A2412000803094520",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "餐館業、食品什貨、冷凍調理食品、乳製品、蛋、食用油脂等",
-                                      "REVENUE":  "100000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "新加坡商海底撈事業股份有限公司台灣第一分公司新莊宏匯門市部  ",
+                                      "REVENUE":  "100000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "餐館業、食品什貨、冷凍調理食品、乳製品、蛋、食用油脂等",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "92634332",
+                                      "APPLLTE_NO":  "A2412000803094520"
                                   },
                       "modules":  [
 
@@ -13966,19 +14018,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2412000823459763",
                       "title":  "佳誼工作室  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "88789050",
-                                      "CUSTOMER_NAME":  "佳誼工作室  ",
-                                      "APPLLTE_NO":  "A2412000823459763",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "各種點心,花生糖",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "佳誼工作室  ",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "各種點心,花生糖",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "88789050",
+                                      "APPLLTE_NO":  "A2412000823459763"
                                   },
                       "modules":  [
 
@@ -13989,19 +14041,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2506000437468364",
                       "title":  "雅嵐股份有限公司加盟店-新竹食品店  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "28063574",
-                                      "CUSTOMER_NAME":  "雅嵐股份有限公司加盟店-新竹食品店  ",
-                                      "APPLLTE_NO":  "A2506000437468364",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "手搖冷飲",
-                                      "REVENUE":  "336000000",
-                                      "AOP_AMOUNT_PRODUCT":  "20000000",
-                                      "AOA_AMOUNT_PRODUCT":  "100000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "雅嵐股份有限公司加盟店-新竹食品店  ",
+                                      "REVENUE":  "336000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "300000000",
                                       "DDCB_AMOUNT":  "2500",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "20000000",
+                                      "OBJECT_NAME":  "手搖冷飲",
+                                      "AOA_AMOUNT_PRODUCT":  "100000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "28063574",
+                                      "APPLLTE_NO":  "A2506000437468364"
                                   },
                       "modules":  [
 
@@ -14012,19 +14064,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2509000686796648",
                       "title":  "匹塔餐飲股份有限公司  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "84012536",
-                                      "CUSTOMER_NAME":  "匹塔餐飲股份有限公司  ",
-                                      "APPLLTE_NO":  "A2509000686796648",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "盒餐、外燴、便當",
-                                      "REVENUE":  "22800000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "10",
+                                      "CUSTOMER_NAME":  "匹塔餐飲股份有限公司  ",
+                                      "REVENUE":  "22800000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "10000",
-                                      "DDCB_RATIO":  "10"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "盒餐、外燴、便當",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "84012536",
+                                      "APPLLTE_NO":  "A2509000686796648"
                                   },
                       "modules":  [
 
@@ -14035,19 +14087,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2512000912872627",
                       "title":  "黃麗香  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "R223126951",
-                                      "CUSTOMER_NAME":  "黃麗香  ",
-                                      "APPLLTE_NO":  "A2512000912872627",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "糕點、炸物",
-                                      "REVENUE":  "1000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "黃麗香  ",
+                                      "REVENUE":  "1000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2500",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "糕點、炸物",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "R223126951",
+                                      "APPLLTE_NO":  "A2512000912872627"
                                   },
                       "modules":  [
 
@@ -14058,19 +14110,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2601000002133222",
                       "title":  "春之鍋涮涮鍋 陳哲賢  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "A124169123",
-                                      "CUSTOMER_NAME":  "春之鍋涮涮鍋 陳哲賢  ",
-                                      "APPLLTE_NO":  "A2601000002133222",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "春之鍋涮涮鍋",
-                                      "REVENUE":  "1000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "春之鍋涮涮鍋 陳哲賢  ",
+                                      "REVENUE":  "1000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "春之鍋涮涮鍋",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "A124169123",
+                                      "APPLLTE_NO":  "A2601000002133222"
                                   },
                       "modules":  [
 
@@ -14081,19 +14133,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2601000002906387",
                       "title":  "曾俊儒(戀之森咖啡)  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "F129484095",
-                                      "CUSTOMER_NAME":  "曾俊儒(戀之森咖啡)  ",
-                                      "APPLLTE_NO":  "A2601000002906387",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "咖啡豆、咖啡掛耳包及店內販售之所有商品",
-                                      "REVENUE":  "500000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "曾俊儒(戀之森咖啡)  ",
+                                      "REVENUE":  "500000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "咖啡豆、咖啡掛耳包及店內販售之所有商品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "F129484095",
+                                      "APPLLTE_NO":  "A2601000002906387"
                                   },
                       "modules":  [
 
@@ -14104,19 +14156,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2602000074273429",
                       "title":  "陳泳伶  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "T222350197",
-                                      "CUSTOMER_NAME":  "陳泳伶  ",
-                                      "APPLLTE_NO":  "A2602000074273429",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "蛋糕、(網購)",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "陳泳伶  ",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "蛋糕、(網購)",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "T222350197",
+                                      "APPLLTE_NO":  "A2602000074273429"
                                   },
                       "modules":  [
 
@@ -14127,19 +14179,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2404000296037704",
                       "title":  "馥鎂商行  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "19857779",
-                                      "CUSTOMER_NAME":  "馥鎂商行  ",
-                                      "APPLLTE_NO":  "A2404000296037704",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "各類餅乾雜貨等食品(不含冷凍(藏)等生鮮食品)",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "10",
+                                      "CUSTOMER_NAME":  "馥鎂商行  ",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "10"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "各類餅乾雜貨等食品(不含冷凍(藏)等生鮮食品)",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "19857779",
+                                      "APPLLTE_NO":  "A2404000296037704"
                                   },
                       "modules":  [
 
@@ -14150,19 +14202,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2401000049089108",
                       "title":  "雞大衛健康餐工作室",
                       "summary":  {
-                                      "CUSTOMER_ID":  "91771358",
-                                      "CUSTOMER_NAME":  "雞大衛健康餐工作室",
-                                      "APPLLTE_NO":  "A2401000049089108",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "雞大衛的健康餐盒、商業午餐、沙拉餐、舒肥鹹水雞餐......等",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "雞大衛健康餐工作室",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "雞大衛的健康餐盒、商業午餐、沙拉餐、舒肥鹹水雞餐......等",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "91771358",
+                                      "APPLLTE_NO":  "A2401000049089108"
                                   },
                       "modules":  [
 
@@ -14173,19 +14225,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2404000295546461",
                       "title":  "憶心鴨肉羹  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "94334043",
-                                      "CUSTOMER_NAME":  "憶心鴨肉羹  ",
-                                      "APPLLTE_NO":  "A2404000295546461",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "鴨肉羹盒餐.便當, 冷熱飲小吃. 點心",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "憶心鴨肉羹  ",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "鴨肉羹盒餐.便當, 冷熱飲小吃. 點心",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "94334043",
+                                      "APPLLTE_NO":  "A2404000295546461"
                                   },
                       "modules":  [
 
@@ -14196,19 +14248,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2401000020473924",
                       "title":  "歐澧國際有限公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "96879028",
-                                      "CUSTOMER_NAME":  "歐澧國際有限公司",
-                                      "APPLLTE_NO":  "A2401000020473924",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "冷凍豬/牛/羊/雞",
-                                      "REVENUE":  "35000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "歐澧國際有限公司",
+                                      "REVENUE":  "35000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "冷凍豬/牛/羊/雞",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "96879028",
+                                      "APPLLTE_NO":  "A2401000020473924"
                                   },
                       "modules":  [
 
@@ -14219,19 +14271,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2404000231024428",
                       "title":  "歐圖親子書坊  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "30268095",
-                                      "CUSTOMER_NAME":  "歐圖親子書坊  ",
-                                      "APPLLTE_NO":  "A2404000231024428",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "飯類、麵類、肉類、果醬、各式飲品、各式沙拉蔬果、各式麵粉類產品、各式炸物",
-                                      "REVENUE":  "4000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "歐圖親子書坊  ",
+                                      "REVENUE":  "4000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2500",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "飯類、麵類、肉類、果醬、各式飲品、各式沙拉蔬果、各式麵粉類產品、各式炸物",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "30268095",
+                                      "APPLLTE_NO":  "A2404000231024428"
                                   },
                       "modules":  [
 
@@ -14242,19 +14294,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2405000334516160",
                       "title":  "歐都納股份有限公司  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "59112564",
-                                      "CUSTOMER_NAME":  "歐都納股份有限公司  ",
-                                      "APPLLTE_NO":  "A2405000334516160",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "餐飲",
-                                      "REVENUE":  "900000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "歐都納股份有限公司  ",
+                                      "REVENUE":  "900000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
-                                      "DDCB_AMOUNT":  "",
-                                      "DDCB_RATIO":  ""
+                                      "DDCB_AMOUNT":  null,
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "餐飲",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "59112564",
+                                      "APPLLTE_NO":  "A2405000334516160"
                                   },
                       "modules":  [
 
@@ -14265,19 +14317,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2405000349074828",
                       "title":  "鳳青飲品店  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "82763292",
-                                      "CUSTOMER_NAME":  "鳳青飲品店  ",
-                                      "APPLLTE_NO":  "A2405000349074828",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "手搖飲-店內銷售之所有飲品",
-                                      "REVENUE":  "1000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "鳳青飲品店  ",
+                                      "REVENUE":  "1000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "手搖飲-店內銷售之所有飲品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "82763292",
+                                      "APPLLTE_NO":  "A2405000349074828"
                                   },
                       "modules":  [
 
@@ -14288,19 +14340,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2404000295593665",
                       "title":  "鳳松早點  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "85455678",
-                                      "CUSTOMER_NAME":  "鳳松早點  ",
-                                      "APPLLTE_NO":  "A2404000295593665",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "鳳松小吃店全系列食品",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "鳳松早點  ",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "鳳松小吃店全系列食品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "85455678",
+                                      "APPLLTE_NO":  "A2404000295593665"
                                   },
                       "modules":  [
 
@@ -14311,19 +14363,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2404000295883926",
                       "title":  "義民行  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "10146102",
-                                      "CUSTOMER_NAME":  "義民行  ",
-                                      "APPLLTE_NO":  "A2404000295883926",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "蒜頭、蒜仁、蒜末、南北雜貨",
-                                      "REVENUE":  "1000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "義民行  ",
+                                      "REVENUE":  "1000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "蒜頭、蒜仁、蒜末、南北雜貨",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "10146102",
+                                      "APPLLTE_NO":  "A2404000295883926"
                                   },
                       "modules":  [
 
@@ -14334,19 +14386,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2404000296809644",
                       "title":  "群益食品行  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "72404430",
-                                      "CUSTOMER_NAME":  "群益食品行  ",
-                                      "APPLLTE_NO":  "A2404000296809644",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "肉鬆、抓餅、蛋餅皮、煎餃、豬肉漢堡、啦雞腿堡、豬排堡、火腿、起司片、港式蘿蔔糕、日式炸豬排、鬆餅堡、漢堡麵包、丹麥吐司、調和蜂蜜等食品",
-                                      "REVENUE":  "30000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "群益食品行  ",
+                                      "REVENUE":  "30000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "肉鬆、抓餅、蛋餅皮、煎餃、豬肉漢堡、啦雞腿堡、豬排堡、火腿、起司片、港式蘿蔔糕、日式炸豬排、鬆餅堡、漢堡麵包、丹麥吐司、調和蜂蜜等食品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "72404430",
+                                      "APPLLTE_NO":  "A2404000296809644"
                                   },
                       "modules":  [
 
@@ -14357,19 +14409,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2411000752257422",
                       "title":  "新加坡商海底撈事業股份有限公司台灣第一分公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "58493538",
-                                      "CUSTOMER_NAME":  "新加坡商海底撈事業股份有限公司台灣第一分公司",
-                                      "APPLLTE_NO":  "A2411000752257422",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "餐館業、食品什貨、冷凍調理食品、乳製品、蛋、食用油脂等",
-                                      "REVENUE":  "100000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "新加坡商海底撈事業股份有限公司台灣第一分公司",
+                                      "REVENUE":  "100000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "5000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "餐館業、食品什貨、冷凍調理食品、乳製品、蛋、食用油脂等",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "58493538",
+                                      "APPLLTE_NO":  "A2411000752257422"
                                   },
                       "modules":  [
 
@@ -14380,19 +14432,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2411000768904068",
                       "title":  "新加坡商海底撈事業股份有限公司台灣第一分公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "58493538",
-                                      "CUSTOMER_NAME":  "新加坡商海底撈事業股份有限公司台灣第一分公司",
-                                      "APPLLTE_NO":  "A2411000768904068",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "餐館業、食品什貨、冷凍調理食品、乳製品、蛋、食用油脂等",
-                                      "REVENUE":  "100000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "新加坡商海底撈事業股份有限公司台灣第一分公司",
+                                      "REVENUE":  "100000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "5000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "餐館業、食品什貨、冷凍調理食品、乳製品、蛋、食用油脂等",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "58493538",
+                                      "APPLLTE_NO":  "A2411000768904068"
                                   },
                       "modules":  [
 
@@ -14403,19 +14455,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2412000798926101",
                       "title":  "新加坡商海底撈事業股份有限公司台灣第一分公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "58493538",
-                                      "CUSTOMER_NAME":  "新加坡商海底撈事業股份有限公司台灣第一分公司",
-                                      "APPLLTE_NO":  "A2412000798926101",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "餐館業、食品什貨、冷凍調理食品、乳製品、蛋、食用油脂等",
-                                      "REVENUE":  "100000000",
-                                      "AOP_AMOUNT_PRODUCT":  "2000000",
-                                      "AOA_AMOUNT_PRODUCT":  "8000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "新加坡商海底撈事業股份有限公司台灣第一分公司",
+                                      "REVENUE":  "100000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "20000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "2000000",
+                                      "OBJECT_NAME":  "餐館業、食品什貨、冷凍調理食品、乳製品、蛋、食用油脂等",
+                                      "AOA_AMOUNT_PRODUCT":  "8000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "58493538",
+                                      "APPLLTE_NO":  "A2412000798926101"
                                   },
                       "modules":  [
 
@@ -14426,19 +14478,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2405000345459641",
                       "title":  "傳奇酒業股份有限公司  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "56022006",
-                                      "CUSTOMER_NAME":  "傳奇酒業股份有限公司  ",
-                                      "APPLLTE_NO":  "A2405000345459641",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "啤酒類、其他水果酒、其他釀造酒類、威士忌、其他蒸餾酒、再製酒類、其他酒類、飲料類",
-                                      "REVENUE":  "47000000",
-                                      "AOP_AMOUNT_PRODUCT":  "2000000",
-                                      "AOA_AMOUNT_PRODUCT":  "10000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "10",
+                                      "CUSTOMER_NAME":  "傳奇酒業股份有限公司  ",
+                                      "REVENUE":  "47000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "30000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "10"
+                                      "AOP_AMOUNT_PRODUCT":  "2000000",
+                                      "OBJECT_NAME":  "啤酒類、其他水果酒、其他釀造酒類、威士忌、其他蒸餾酒、再製酒類、其他酒類、飲料類",
+                                      "AOA_AMOUNT_PRODUCT":  "10000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "56022006",
+                                      "APPLLTE_NO":  "A2405000345459641"
                                   },
                       "modules":  [
 
@@ -14449,19 +14501,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2405000347774766",
                       "title":  "琴姐廚房  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "26087678",
-                                      "CUSTOMER_NAME":  "琴姐廚房  ",
-                                      "APPLLTE_NO":  "A2405000347774766",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "湖南家常菜及店內販售之食品",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "2000000",
-                                      "AOA_AMOUNT_PRODUCT":  "8000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "琴姐廚房  ",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "20000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "2000000",
+                                      "OBJECT_NAME":  "湖南家常菜及店內販售之食品",
+                                      "AOA_AMOUNT_PRODUCT":  "8000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "26087678",
+                                      "APPLLTE_NO":  "A2405000347774766"
                                   },
                       "modules":  [
 
@@ -14472,19 +14524,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2404000255040163",
                       "title":  "曾信勝  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "T123208412",
-                                      "CUSTOMER_NAME":  "曾信勝  ",
-                                      "APPLLTE_NO":  "A2404000255040163",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "中.西式餐點飲品",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "曾信勝  ",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "中.西式餐點飲品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "T123208412",
+                                      "APPLLTE_NO":  "A2404000255040163"
                                   },
                       "modules":  [
 
@@ -14495,19 +14547,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2404000249904705",
                       "title":  "彭有成(饗吃拉麵)  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "L122540736",
-                                      "CUSTOMER_NAME":  "彭有成(饗吃拉麵)  ",
-                                      "APPLLTE_NO":  "A2404000249904705",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "拉麵、壽司、海南雞飯、燒雞、油雞、叉燒、脆皮燒肉",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "彭有成(饗吃拉麵)  ",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "拉麵、壽司、海南雞飯、燒雞、油雞、叉燒、脆皮燒肉",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "L122540736",
+                                      "APPLLTE_NO":  "A2404000249904705"
                                   },
                       "modules":  [
 
@@ -14518,19 +14570,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2404000295994121",
                       "title":  "莊上輝(金可口烘焙)  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "F127729000",
-                                      "CUSTOMER_NAME":  "莊上輝(金可口烘焙)  ",
-                                      "APPLLTE_NO":  "A2404000295994121",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "金可口烘焙販售之泡芙、烤布蕾、奶酪、提拉米蘇、巴斯克蛋糕、可麗露、德式布丁、巧克力球各種烘焙食品",
-                                      "REVENUE":  "2400000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "莊上輝(金可口烘焙)  ",
+                                      "REVENUE":  "2400000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "金可口烘焙販售之泡芙、烤布蕾、奶酪、提拉米蘇、巴斯克蛋糕、可麗露、德式布丁、巧克力球各種烘焙食品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "F127729000",
+                                      "APPLLTE_NO":  "A2404000295994121"
                                   },
                       "modules":  [
 
@@ -14541,19 +14593,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2601000017745429",
                       "title":  "章嘉玲",
                       "summary":  {
-                                      "CUSTOMER_ID":  "S224578174",
-                                      "CUSTOMER_NAME":  "章嘉玲",
-                                      "APPLLTE_NO":  "A2601000017745429",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "糕點點心、麵包類",
-                                      "REVENUE":  "500000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "章嘉玲",
+                                      "REVENUE":  "500000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "糕點點心、麵包類",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "S224578174",
+                                      "APPLLTE_NO":  "A2601000017745429"
                                   },
                       "modules":  [
 
@@ -14564,19 +14616,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2404000296476925",
                       "title":  "海象科技企業有限公司  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "82992513",
-                                      "CUSTOMER_NAME":  "海象科技企業有限公司  ",
-                                      "APPLLTE_NO":  "A2404000296476925",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "自助加水站所販售之水品(不含設備)",
-                                      "REVENUE":  "720000",
-                                      "AOP_AMOUNT_PRODUCT":  "3000000",
-                                      "AOA_AMOUNT_PRODUCT":  "12000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "海象科技企業有限公司  ",
+                                      "REVENUE":  "720000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "30000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "3000000",
+                                      "OBJECT_NAME":  "自助加水站所販售之水品(不含設備)",
+                                      "AOA_AMOUNT_PRODUCT":  "12000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "82992513",
+                                      "APPLLTE_NO":  "A2404000296476925"
                                   },
                       "modules":  [
 
@@ -14587,19 +14639,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2404000256158704",
                       "title":  "泰惠盈股份有限公司  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "93791324",
-                                      "CUSTOMER_NAME":  "泰惠盈股份有限公司  ",
-                                      "APPLLTE_NO":  "A2404000256158704",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "椰子凍(芒果波羅蜜、龍眼椰子原味、燕窩口味)",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "泰惠盈股份有限公司  ",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "椰子凍(芒果波羅蜜、龍眼椰子原味、燕窩口味)",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "93791324",
+                                      "APPLLTE_NO":  "A2404000256158704"
                                   },
                       "modules":  [
 
@@ -14610,19 +14662,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2405000350319103",
                       "title":  "重慶市場玉里麵  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "V120215097",
-                                      "CUSTOMER_NAME":  "重慶市場玉里麵  ",
-                                      "APPLLTE_NO":  "A2405000350319103",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "玉里麵 陽春麵 乾麵 滷肉飯",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "重慶市場玉里麵  ",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "玉里麵 陽春麵 乾麵 滷肉飯",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "V120215097",
+                                      "APPLLTE_NO":  "A2405000350319103"
                                   },
                       "modules":  [
 
@@ -14633,19 +14685,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2404000230767724",
                       "title":  "長沙早餐店(宋玉琴)",
                       "summary":  {
-                                      "CUSTOMER_ID":  "H221990296",
-                                      "CUSTOMER_NAME":  "長沙早餐店(宋玉琴)",
-                                      "APPLLTE_NO":  "A2404000230767724",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "土司，漢堡，蛋餅",
-                                      "REVENUE":  "990000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "長沙早餐店(宋玉琴)",
+                                      "REVENUE":  "990000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "土司，漢堡，蛋餅",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "H221990296",
+                                      "APPLLTE_NO":  "A2404000230767724"
                                   },
                       "modules":  [
 
@@ -14656,19 +14708,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2404000295766847",
                       "title":  "佳昕手工花生糖食品  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "92673664",
-                                      "CUSTOMER_NAME":  "佳昕手工花生糖食品  ",
-                                      "APPLLTE_NO":  "A2404000295766847",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "花生糖、花生醬、芝麻糖、芝麻醬、花生",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "佳昕手工花生糖食品  ",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "花生糖、花生醬、芝麻糖、芝麻醬、花生",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "92673664",
+                                      "APPLLTE_NO":  "A2404000295766847"
                                   },
                       "modules":  [
 
@@ -14679,19 +14731,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2406000376424648",
                       "title":  "旭騰企業社  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "31464790",
-                                      "CUSTOMER_NAME":  "旭騰企業社  ",
-                                      "APPLLTE_NO":  "A2406000376424648",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "芮\u0026#58680;絲NADH諾氫超能素(保健食品)及喜酵順綜合蔬果發酵物複方錠",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "2000000",
-                                      "AOA_AMOUNT_PRODUCT":  "8000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "旭騰企業社  ",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "20000000",
-                                      "DDCB_AMOUNT":  "",
-                                      "DDCB_RATIO":  ""
+                                      "DDCB_AMOUNT":  null,
+                                      "AOP_AMOUNT_PRODUCT":  "2000000",
+                                      "OBJECT_NAME":  "芮\u0026#58680;絲NADH諾氫超能素(保健食品)及喜酵順綜合蔬果發酵物複方錠",
+                                      "AOA_AMOUNT_PRODUCT":  "8000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "31464790",
+                                      "APPLLTE_NO":  "A2406000376424648"
                                   },
                       "modules":  [
 
@@ -14702,19 +14754,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2404000255477886",
                       "title":  "地心引力娃娃機柳營分店  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "85612136",
-                                      "CUSTOMER_NAME":  "地心引力娃娃機柳營分店  ",
-                                      "APPLLTE_NO":  "A2404000255477886",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "娃娃機內的餅乾、零食",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "地心引力娃娃機柳營分店  ",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "娃娃機內的餅乾、零食",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "85612136",
+                                      "APPLLTE_NO":  "A2404000255477886"
                                   },
                       "modules":  [
 
@@ -14725,19 +14777,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2405000350503041",
                       "title":  "全品冷凍實業有限公司高雄分公司  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "83093790",
-                                      "CUSTOMER_NAME":  "全品冷凍實業有限公司高雄分公司  ",
-                                      "APPLLTE_NO":  "A2405000350503041",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "各式畜肉、水產品、冷凍冷藏調理肉品加工、批發、零售",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "全品冷凍實業有限公司高雄分公司  ",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "各式畜肉、水產品、冷凍冷藏調理肉品加工、批發、零售",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "83093790",
+                                      "APPLLTE_NO":  "A2405000350503041"
                                   },
                       "modules":  [
 
@@ -14748,19 +14800,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2404000249469824",
                       "title":  "禾一發有限公司  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "80130808",
-                                      "CUSTOMER_NAME":  "禾一發有限公司  ",
-                                      "APPLLTE_NO":  "A2404000249469824",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "香菇素燥醬 , 香椿拌醬 , 味噌 , 果凍 , 豆腐乳",
-                                      "REVENUE":  "40000000",
-                                      "AOP_AMOUNT_PRODUCT":  "2000000",
-                                      "AOA_AMOUNT_PRODUCT":  "8000000",
                                       "APD_AMOUNT_PRODUCT":  "2000000",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "禾一發有限公司  ",
+                                      "REVENUE":  "40000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "20000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "2000000",
+                                      "OBJECT_NAME":  "香菇素燥醬 , 香椿拌醬 , 味噌 , 果凍 , 豆腐乳",
+                                      "AOA_AMOUNT_PRODUCT":  "8000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "80130808",
+                                      "APPLLTE_NO":  "A2404000249469824"
                                   },
                       "modules":  [
 
@@ -14771,19 +14823,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2405000360049687",
                       "title":  "台灣農畜產工業股份有限公司、好市多股份有限公司  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "90460840",
-                                      "CUSTOMER_NAME":  "台灣農畜產工業股份有限公司、好市多股份有限公司  ",
-                                      "APPLLTE_NO":  "A2405000360049687",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "經由COSTCO販售之香腸、火腿、漢堡肉、肉鬆、冷凍冷藏肉品、生鮮冷藏肉品、冷凍冷藏調理食品、冰品及冷凍冷藏食品",
-                                      "REVENUE":  "555000000",
-                                      "AOP_AMOUNT_PRODUCT":  "33700000",
-                                      "AOA_AMOUNT_PRODUCT":  "33700000",
                                       "APD_AMOUNT_PRODUCT":  "33700000",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "台灣農畜產工業股份有限公司、好市多股份有限公司  ",
+                                      "REVENUE":  "555000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "33700000",
-                                      "DDCB_AMOUNT":  "",
-                                      "DDCB_RATIO":  ""
+                                      "DDCB_AMOUNT":  null,
+                                      "AOP_AMOUNT_PRODUCT":  "33700000",
+                                      "OBJECT_NAME":  "經由COSTCO販售之香腸、火腿、漢堡肉、肉鬆、冷凍冷藏肉品、生鮮冷藏肉品、冷凍冷藏調理食品、冰品及冷凍冷藏食品",
+                                      "AOA_AMOUNT_PRODUCT":  "33700000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "90460840",
+                                      "APPLLTE_NO":  "A2405000360049687"
                                   },
                       "modules":  [
 
@@ -14794,19 +14846,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2411000752254384",
                       "title":  "台灣海底撈餐飲股份有限公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "56700498",
-                                      "CUSTOMER_NAME":  "台灣海底撈餐飲股份有限公司",
-                                      "APPLLTE_NO":  "A2411000752254384",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "餐館業、食品什貨、冷凍調理食品、乳製品、蛋、食用油脂等",
-                                      "REVENUE":  "100000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "台灣海底撈餐飲股份有限公司",
+                                      "REVENUE":  "100000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "餐館業、食品什貨、冷凍調理食品、乳製品、蛋、食用油脂等",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "56700498",
+                                      "APPLLTE_NO":  "A2411000752254384"
                                   },
                       "modules":  [
 
@@ -14817,19 +14869,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2404000285411304",
                       "title":  "古厝小吃店  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "72732193",
-                                      "CUSTOMER_NAME":  "古厝小吃店  ",
-                                      "APPLLTE_NO":  "A2404000285411304",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "小吃、串烤、飲品 (含酒精類飲品)",
-                                      "REVENUE":  "1500000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "古厝小吃店  ",
+                                      "REVENUE":  "1500000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "小吃、串烤、飲品 (含酒精類飲品)",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "72732193",
+                                      "APPLLTE_NO":  "A2404000285411304"
                                   },
                       "modules":  [
 
@@ -14840,19 +14892,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2404000255325305",
                       "title":  "王昭雄  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "R102732046",
-                                      "CUSTOMER_NAME":  "王昭雄  ",
-                                      "APPLLTE_NO":  "A2404000255325305",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "當歸鴨,麵線,肉燥飯,雞肉飯",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "王昭雄  ",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "當歸鴨,麵線,肉燥飯,雞肉飯",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "R102732046",
+                                      "APPLLTE_NO":  "A2404000255325305"
                                   },
                       "modules":  [
 
@@ -14863,19 +14915,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2405000349318469",
                       "title":  "天友茶莊  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "85972390",
-                                      "CUSTOMER_NAME":  "天友茶莊  ",
-                                      "APPLLTE_NO":  "A2405000349318469",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "茶行",
-                                      "REVENUE":  "10000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "天友茶莊  ",
+                                      "REVENUE":  "10000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "茶行",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "85972390",
+                                      "APPLLTE_NO":  "A2405000349318469"
                                   },
                       "modules":  [
 
@@ -14886,19 +14938,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2404000294488049",
                       "title":  "中山國小暨彭福國小兩校含幼稚園等詳備註  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "97079024",
-                                      "CUSTOMER_NAME":  "中山國小暨彭福國小兩校含幼稚園等詳備註  ",
-                                      "APPLLTE_NO":  "A2404000294488049",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "營養午餐(限提供中山國小暨彭福國小兩校含幼稚園)",
-                                      "REVENUE":  "25000000",
-                                      "AOP_AMOUNT_PRODUCT":  "3000000",
-                                      "AOA_AMOUNT_PRODUCT":  "35000000",
                                       "APD_AMOUNT_PRODUCT":  "15000000",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "中山國小暨彭福國小兩校含幼稚園等詳備註  ",
+                                      "REVENUE":  "25000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "100000000",
                                       "DDCB_AMOUNT":  "2500",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "3000000",
+                                      "OBJECT_NAME":  "營養午餐(限提供中山國小暨彭福國小兩校含幼稚園)",
+                                      "AOA_AMOUNT_PRODUCT":  "35000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "97079024",
+                                      "APPLLTE_NO":  "A2404000294488049"
                                   },
                       "modules":  [
 
@@ -14909,19 +14961,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2405000350005341",
                       "title":  "川都麻辣魯味  ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "94364019",
-                                      "CUSTOMER_NAME":  "川都麻辣魯味  ",
-                                      "APPLLTE_NO":  "A2405000350005341",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "滷味等各式餐點",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "川都麻辣魯味  ",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "滷味等各式餐點",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "94364019",
+                                      "APPLLTE_NO":  "A2405000350005341"
                                   },
                       "modules":  [
 
@@ -14932,19 +14984,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2601000021386043",
                       "title":  "昂星小吃店",
                       "summary":  {
-                                      "CUSTOMER_ID":  "88400797",
-                                      "CUSTOMER_NAME":  "昂星小吃店",
-                                      "APPLLTE_NO":  "A2601000021386043",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "便當、麵食、小菜、飲品全品項",
-                                      "REVENUE":  "1000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "昂星小吃店",
+                                      "REVENUE":  "1000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "便當、麵食、小菜、飲品全品項",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "88400797",
+                                      "APPLLTE_NO":  "A2601000021386043"
                                   },
                       "modules":  [
 
@@ -14955,19 +15007,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2601000020552160",
                       "title":  "林雅蘋 (卑南阿文雞排)",
                       "summary":  {
-                                      "CUSTOMER_ID":  "V220393758",
-                                      "CUSTOMER_NAME":  "林雅蘋 (卑南阿文雞排)",
-                                      "APPLLTE_NO":  "A2601000020552160",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "各類炸物、青菜",
-                                      "REVENUE":  "1000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "林雅蘋 (卑南阿文雞排)",
+                                      "REVENUE":  "1000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "各類炸物、青菜",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "V220393758",
+                                      "APPLLTE_NO":  "A2601000020552160"
                                   },
                       "modules":  [
 
@@ -14978,19 +15030,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2602000127226864",
                       "title":  "姚漢民",
                       "summary":  {
-                                      "CUSTOMER_ID":  "V120955943",
-                                      "CUSTOMER_NAME":  "姚漢民",
-                                      "APPLLTE_NO":  "A2602000127226864",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "綠豆冰沙.飲品",
-                                      "REVENUE":  "1000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "姚漢民",
+                                      "REVENUE":  "1000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "綠豆冰沙.飲品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "V120955943",
+                                      "APPLLTE_NO":  "A2602000127226864"
                                   },
                       "modules":  [
 
@@ -15001,19 +15053,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2506000389568406",
                       "title":  "Yume dessert",
                       "summary":  {
-                                      "CUSTOMER_ID":  "U222010359",
-                                      "CUSTOMER_NAME":  "Yume dessert",
-                                      "APPLLTE_NO":  "A2506000389568406",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "千層蛋糕",
-                                      "REVENUE":  "1000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "Yume dessert",
+                                      "REVENUE":  "1000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "千層蛋糕",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "U222010359",
+                                      "APPLLTE_NO":  "A2506000389568406"
                                   },
                       "modules":  [
 
@@ -15024,19 +15076,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2601000003147004",
                       "title":  "黃珮瑄",
                       "summary":  {
-                                      "CUSTOMER_ID":  "T225535503",
-                                      "CUSTOMER_NAME":  "黃珮瑄",
-                                      "APPLLTE_NO":  "A2601000003147004",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "馬卡龍、月餅、餅乾、草莓大福及黃珮瑄所販售的食品",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "黃珮瑄",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "馬卡龍、月餅、餅乾、草莓大福及黃珮瑄所販售的食品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "T225535503",
+                                      "APPLLTE_NO":  "A2601000003147004"
                                   },
                       "modules":  [
 
@@ -15047,19 +15099,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2602000089029468",
                       "title":  "潘玉婷",
                       "summary":  {
-                                      "CUSTOMER_ID":  "T224021975",
-                                      "CUSTOMER_NAME":  "潘玉婷",
-                                      "APPLLTE_NO":  "A2602000089029468",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "1850爆奶牛牛棒-琉球店全品項(牛奶棒)",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "潘玉婷",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "1850爆奶牛牛棒-琉球店全品項(牛奶棒)",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "T224021975",
+                                      "APPLLTE_NO":  "A2602000089029468"
                                   },
                       "modules":  [
 
@@ -15070,19 +15122,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2602000123995841",
                       "title":  "林莉華",
                       "summary":  {
-                                      "CUSTOMER_ID":  "T223633239",
-                                      "CUSTOMER_NAME":  "林莉華",
-                                      "APPLLTE_NO":  "A2602000123995841",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "雞蛋糕、紅茶、串成燒雞蛋糕店內餐飲類全品項",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "林莉華",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "雞蛋糕、紅茶、串成燒雞蛋糕店內餐飲類全品項",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "T223633239",
+                                      "APPLLTE_NO":  "A2602000123995841"
                                   },
                       "modules":  [
 
@@ -15093,19 +15145,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2505000353632903",
                       "title":  "Ｑ妹廚房",
                       "summary":  {
-                                      "CUSTOMER_ID":  "00320611",
-                                      "CUSTOMER_NAME":  "Ｑ妹廚房",
-                                      "APPLLTE_NO":  "A2505000353632903",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "蛋製品及飲品全品項",
-                                      "REVENUE":  "1000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "Ｑ妹廚房",
+                                      "REVENUE":  "1000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "蛋製品及飲品全品項",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "00320611",
+                                      "APPLLTE_NO":  "A2505000353632903"
                                   },
                       "modules":  [
 
@@ -15116,19 +15168,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2505000346709360",
                       "title":  "哇鬆餅屋",
                       "summary":  {
-                                      "CUSTOMER_ID":  "89081814",
-                                      "CUSTOMER_NAME":  "哇鬆餅屋",
-                                      "APPLLTE_NO":  "A2505000346709360",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "鬆餅系列 義大利麵系列 燉飯系列 炸物系列  各式飲料",
-                                      "REVENUE":  "2000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "哇鬆餅屋",
+                                      "REVENUE":  "2000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "鬆餅系列 義大利麵系列 燉飯系列 炸物系列  各式飲料",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "89081814",
+                                      "APPLLTE_NO":  "A2505000346709360"
                                   },
                       "modules":  [
 
@@ -15139,19 +15191,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2506000396973640",
                       "title":  "林瑛雅",
                       "summary":  {
-                                      "CUSTOMER_ID":  "T221713967",
-                                      "CUSTOMER_NAME":  "林瑛雅",
-                                      "APPLLTE_NO":  "A2506000396973640",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "烏龍素食麵全品項",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "林瑛雅",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "烏龍素食麵全品項",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "T221713967",
+                                      "APPLLTE_NO":  "A2506000396973640"
                                   },
                       "modules":  [
 
@@ -15162,19 +15214,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2601000024216688",
                       "title":  "林秀芳",
                       "summary":  {
-                                      "CUSTOMER_ID":  "T220616076",
-                                      "CUSTOMER_NAME":  "林秀芳",
-                                      "APPLLTE_NO":  "A2601000024216688",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "台灣牛肉莊店內餐飲品全品項",
-                                      "REVENUE":  "1800000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "林秀芳",
+                                      "REVENUE":  "1800000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "台灣牛肉莊店內餐飲品全品項",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "T220616076",
+                                      "APPLLTE_NO":  "A2601000024216688"
                                   },
                       "modules":  [
 
@@ -15185,19 +15237,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2507000493490621",
                       "title":  "黃洪美錄",
                       "summary":  {
-                                      "CUSTOMER_ID":  "T202675353",
-                                      "CUSTOMER_NAME":  "黃洪美錄",
-                                      "APPLLTE_NO":  "A2507000493490621",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "海外琉學海龜棒棒糖 生產販售全品項食品",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "黃洪美錄",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "海外琉學海龜棒棒糖 生產販售全品項食品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "T202675353",
+                                      "APPLLTE_NO":  "A2507000493490621"
                                   },
                       "modules":  [
 
@@ -15208,19 +15260,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2601000020746626",
                       "title":  "魏潘珠英",
                       "summary":  {
-                                      "CUSTOMER_ID":  "T202615839",
-                                      "CUSTOMER_NAME":  "魏潘珠英",
-                                      "APPLLTE_NO":  "A2601000020746626",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "雞肉熟食",
-                                      "REVENUE":  "1000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "魏潘珠英",
+                                      "REVENUE":  "1000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "雞肉熟食",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "T202615839",
+                                      "APPLLTE_NO":  "A2601000020746626"
                                   },
                       "modules":  [
 
@@ -15231,19 +15283,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2511000792754249",
                       "title":  "伍何惠珠(大腸蚵仔麵線)",
                       "summary":  {
-                                      "CUSTOMER_ID":  "T201925498",
-                                      "CUSTOMER_NAME":  "伍何惠珠(大腸蚵仔麵線)",
-                                      "APPLLTE_NO":  "A2511000792754249",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "大腸蚵仔麵線、臭豆腐、糯米腸等店內販售之所有食品",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "伍何惠珠(大腸蚵仔麵線)",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "大腸蚵仔麵線、臭豆腐、糯米腸等店內販售之所有食品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "T201925498",
+                                      "APPLLTE_NO":  "A2511000792754249"
                                   },
                       "modules":  [
 
@@ -15254,19 +15306,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2508000617032284",
                       "title":  "陳坤郎",
                       "summary":  {
-                                      "CUSTOMER_ID":  "T120970055",
-                                      "CUSTOMER_NAME":  "陳坤郎",
-                                      "APPLLTE_NO":  "A2508000617032284",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "麵店、小吃店、冷凍蝦、冷凍魚",
-                                      "REVENUE":  "1000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "陳坤郎",
+                                      "REVENUE":  "1000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "麵店、小吃店、冷凍蝦、冷凍魚",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "T120970055",
+                                      "APPLLTE_NO":  "A2508000617032284"
                                   },
                       "modules":  [
 
@@ -15277,19 +15329,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2508000621560522",
                       "title":  "洪元志",
                       "summary":  {
-                                      "CUSTOMER_ID":  "T120489219",
-                                      "CUSTOMER_NAME":  "洪元志",
-                                      "APPLLTE_NO":  "A2508000621560522",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "大阪燒-攤位銷售之所有食品",
-                                      "REVENUE":  "1000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "洪元志",
+                                      "REVENUE":  "1000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "大阪燒-攤位銷售之所有食品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "T120489219",
+                                      "APPLLTE_NO":  "A2508000621560522"
                                   },
                       "modules":  [
 
@@ -15300,19 +15352,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2511000845944283",
                       "title":  "蔡天祥",
                       "summary":  {
-                                      "CUSTOMER_ID":  "S124480051",
-                                      "CUSTOMER_NAME":  "蔡天祥",
-                                      "APPLLTE_NO":  "A2511000845944283",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "海鮮水產、牛排",
-                                      "REVENUE":  "2000000",
-                                      "AOP_AMOUNT_PRODUCT":  "2000000",
-                                      "AOA_AMOUNT_PRODUCT":  "8000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "蔡天祥",
+                                      "REVENUE":  "2000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "20000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "2000000",
+                                      "OBJECT_NAME":  "海鮮水產、牛排",
+                                      "AOA_AMOUNT_PRODUCT":  "8000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "S124480051",
+                                      "APPLLTE_NO":  "A2511000845944283"
                                   },
                       "modules":  [
 
@@ -15323,19 +15375,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2506000396698127",
                       "title":  "黃文賢",
                       "summary":  {
-                                      "CUSTOMER_ID":  "S122051356",
-                                      "CUSTOMER_NAME":  "黃文賢",
-                                      "APPLLTE_NO":  "A2506000396698127",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "西點(驪手作)",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "黃文賢",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "西點(驪手作)",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "S122051356",
+                                      "APPLLTE_NO":  "A2506000396698127"
                                   },
                       "modules":  [
 
@@ -15346,19 +15398,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2508000569683226",
                       "title":  "簡清立",
                       "summary":  {
-                                      "CUSTOMER_ID":  "S120528201",
-                                      "CUSTOMER_NAME":  "簡清立",
-                                      "APPLLTE_NO":  "A2508000569683226",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "各種水果盒、鮮果汁系列、果汁牛奶",
-                                      "REVENUE":  "500000",
-                                      "AOP_AMOUNT_PRODUCT":  "2000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "簡清立",
+                                      "REVENUE":  "500000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "20000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "2000000",
+                                      "OBJECT_NAME":  "各種水果盒、鮮果汁系列、果汁牛奶",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "S120528201",
+                                      "APPLLTE_NO":  "A2508000569683226"
                                   },
                       "modules":  [
 
@@ -15369,19 +15421,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2505000324656626",
                       "title":  "黃鈺捷",
                       "summary":  {
-                                      "CUSTOMER_ID":  "R224107638",
-                                      "CUSTOMER_NAME":  "黃鈺捷",
-                                      "APPLLTE_NO":  "A2505000324656626",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "豬小妹刈包、炸年糕等食品",
-                                      "REVENUE":  "1000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "黃鈺捷",
+                                      "REVENUE":  "1000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "豬小妹刈包、炸年糕等食品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "R224107638",
+                                      "APPLLTE_NO":  "A2505000324656626"
                                   },
                       "modules":  [
 
@@ -15392,19 +15444,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2511000800377868",
                       "title":  "沈采蓉(饅裡偷閒工作室)",
                       "summary":  {
-                                      "CUSTOMER_ID":  "R223119830",
-                                      "CUSTOMER_NAME":  "沈采蓉(饅裡偷閒工作室)",
-                                      "APPLLTE_NO":  "A2511000800377868",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "造型饅頭、烘培類",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "沈采蓉(饅裡偷閒工作室)",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "造型饅頭、烘培類",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "R223119830",
+                                      "APPLLTE_NO":  "A2511000800377868"
                                   },
                       "modules":  [
 
@@ -15415,19 +15467,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2511000826860885",
                       "title":  "黃月琴",
                       "summary":  {
-                                      "CUSTOMER_ID":  "R222243159",
-                                      "CUSTOMER_NAME":  "黃月琴",
-                                      "APPLLTE_NO":  "A2511000826860885",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "各式吐司、漢堡、蛋餅、油餅、點心、飲品、湯品",
-                                      "REVENUE":  "2550000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "黃月琴",
+                                      "REVENUE":  "2550000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "各式吐司、漢堡、蛋餅、油餅、點心、飲品、湯品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "R222243159",
+                                      "APPLLTE_NO":  "A2511000826860885"
                                   },
                       "modules":  [
 
@@ -15438,19 +15490,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2604000212612589",
                       "title":  "林阿蠻",
                       "summary":  {
-                                      "CUSTOMER_ID":  "R222145792",
-                                      "CUSTOMER_NAME":  "林阿蠻",
-                                      "APPLLTE_NO":  "A2604000212612589",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "各式早點",
-                                      "REVENUE":  "500000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "林阿蠻",
+                                      "REVENUE":  "500000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "各式早點",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "R222145792",
+                                      "APPLLTE_NO":  "A2604000212612589"
                                   },
                       "modules":  [
 
@@ -15461,19 +15513,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2502000132076301",
                       "title":  "黃素美陽春麵",
                       "summary":  {
-                                      "CUSTOMER_ID":  "R200808969",
-                                      "CUSTOMER_NAME":  "黃素美陽春麵",
-                                      "APPLLTE_NO":  "A2502000132076301",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "麵攤小吃店",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "黃素美陽春麵",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "麵攤小吃店",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "R200808969",
+                                      "APPLLTE_NO":  "A2502000132076301"
                                   },
                       "modules":  [
 
@@ -15484,19 +15536,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2604000227143742",
                       "title":  "佳質小吃",
                       "summary":  {
-                                      "CUSTOMER_ID":  "47685735",
-                                      "CUSTOMER_NAME":  "佳質小吃",
-                                      "APPLLTE_NO":  "A2604000227143742",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "早什餐.盒餐、外燴、便當 冷熱飲.點心,小吃",
-                                      "REVENUE":  "1000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "佳質小吃",
+                                      "REVENUE":  "1000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "早什餐.盒餐、外燴、便當 冷熱飲.點心,小吃",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "47685735",
+                                      "APPLLTE_NO":  "A2604000227143742"
                                   },
                       "modules":  [
 
@@ -15507,19 +15559,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2605000327626762",
                       "title":  "林重凱",
                       "summary":  {
-                                      "CUSTOMER_ID":  "R122262303",
-                                      "CUSTOMER_NAME":  "林重凱",
-                                      "APPLLTE_NO":  "A2605000327626762",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "養樂多、水果、春捲皮、煎甜粿",
-                                      "REVENUE":  "700000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "林重凱",
+                                      "REVENUE":  "700000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2500",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "養樂多、水果、春捲皮、煎甜粿",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "R122262303",
+                                      "APPLLTE_NO":  "A2605000327626762"
                                   },
                       "modules":  [
 
@@ -15530,19 +15582,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2601000015620025",
                       "title":  "盧允熙(嚼貨雞蛋糕)",
                       "summary":  {
-                                      "CUSTOMER_ID":  "Q223215416",
-                                      "CUSTOMER_NAME":  "盧允熙(嚼貨雞蛋糕)",
-                                      "APPLLTE_NO":  "A2601000015620025",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "雞蛋糕等相關製品",
-                                      "REVENUE":  "800000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "盧允熙(嚼貨雞蛋糕)",
+                                      "REVENUE":  "800000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "雞蛋糕等相關製品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "Q223215416",
+                                      "APPLLTE_NO":  "A2601000015620025"
                                   },
                       "modules":  [
 
@@ -15553,19 +15605,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2512000889592180",
                       "title":  "法羅米食品行",
                       "summary":  {
-                                      "CUSTOMER_ID":  "40918338",
-                                      "CUSTOMER_NAME":  "法羅米食品行",
-                                      "APPLLTE_NO":  "A2512000889592180",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "蛋糕、麵包批發零售",
-                                      "REVENUE":  "1000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "法羅米食品行",
+                                      "REVENUE":  "1000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "蛋糕、麵包批發零售",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "40918338",
+                                      "APPLLTE_NO":  "A2512000889592180"
                                   },
                       "modules":  [
 
@@ -15576,19 +15628,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2602000111175163",
                       "title":  "森小吃店",
                       "summary":  {
-                                      "CUSTOMER_ID":  "10318195",
-                                      "CUSTOMER_NAME":  "森小吃店",
-                                      "APPLLTE_NO":  "A2602000111175163",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "海鮮快炒",
-                                      "REVENUE":  "15000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "森小吃店",
+                                      "REVENUE":  "15000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "海鮮快炒",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "10318195",
+                                      "APPLLTE_NO":  "A2602000111175163"
                                   },
                       "modules":  [
 
@@ -15599,19 +15651,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2603000190698565",
                       "title":  "福上海臭臭鍋",
                       "summary":  {
-                                      "CUSTOMER_ID":  "92128692",
-                                      "CUSTOMER_NAME":  "福上海臭臭鍋",
-                                      "APPLLTE_NO":  "A2603000190698565",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "火鍋、熟食",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "福上海臭臭鍋",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "火鍋、熟食",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "92128692",
+                                      "APPLLTE_NO":  "A2603000190698565"
                                   },
                       "modules":  [
 
@@ -15622,19 +15674,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2504000280161122",
                       "title":  "陳怡慧(Kei\u0027s bakery)",
                       "summary":  {
-                                      "CUSTOMER_ID":  "P222856814",
-                                      "CUSTOMER_NAME":  "陳怡慧(Kei\u0027s bakery)",
-                                      "APPLLTE_NO":  "A2504000280161122",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "麵包、手工餅乾、甜點、中西式烘焙",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "陳怡慧(Kei\u0027s bakery)",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "麵包、手工餅乾、甜點、中西式烘焙",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "P222856814",
+                                      "APPLLTE_NO":  "A2504000280161122"
                                   },
                       "modules":  [
 
@@ -15645,19 +15697,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2602000103946766",
                       "title":  "早安客棧",
                       "summary":  {
-                                      "CUSTOMER_ID":  "26713073",
-                                      "CUSTOMER_NAME":  "早安客棧",
-                                      "APPLLTE_NO":  "A2602000103946766",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "盒餐、外燴、便當",
-                                      "REVENUE":  "10000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "早安客棧",
+                                      "REVENUE":  "10000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "盒餐、外燴、便當",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "26713073",
+                                      "APPLLTE_NO":  "A2602000103946766"
                                   },
                       "modules":  [
 
@@ -15668,19 +15720,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2503000149881225",
                       "title":  "阿祥平價熱炒",
                       "summary":  {
-                                      "CUSTOMER_ID":  "82620128",
-                                      "CUSTOMER_NAME":  "阿祥平價熱炒",
-                                      "APPLLTE_NO":  "A2503000149881225",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "各式熱炒、炒飯、炒麵、燴飯、蓋飯、丼飯、燉品",
-                                      "REVENUE":  "3600000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "阿祥平價熱炒",
+                                      "REVENUE":  "3600000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2500",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "各式熱炒、炒飯、炒麵、燴飯、蓋飯、丼飯、燉品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "82620128",
+                                      "APPLLTE_NO":  "A2503000149881225"
                                   },
                       "modules":  [
 
@@ -15691,19 +15743,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2601000019280021",
                       "title":  "李家萱(桂林酸辣粉酸辣魚)",
                       "summary":  {
-                                      "CUSTOMER_ID":  "O290012692",
-                                      "CUSTOMER_NAME":  "李家萱(桂林酸辣粉酸辣魚)",
-                                      "APPLLTE_NO":  "A2601000019280021",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "各式餐飲",
-                                      "REVENUE":  "1000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "李家萱(桂林酸辣粉酸辣魚)",
+                                      "REVENUE":  "1000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "各式餐飲",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "O290012692",
+                                      "APPLLTE_NO":  "A2601000019280021"
                                   },
                       "modules":  [
 
@@ -15714,19 +15766,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2504000278024745",
                       "title":  "王馨葦(傳家麻油藥膳鍋)",
                       "summary":  {
-                                      "CUSTOMER_ID":  "O200418642",
-                                      "CUSTOMER_NAME":  "王馨葦(傳家麻油藥膳鍋)",
-                                      "APPLLTE_NO":  "A2504000278024745",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "麻油及藥膳餐點",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "王馨葦(傳家麻油藥膳鍋)",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "麻油及藥膳餐點",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "O200418642",
+                                      "APPLLTE_NO":  "A2504000278024745"
                                   },
                       "modules":  [
 
@@ -15737,19 +15789,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2503000172689160",
                       "title":  "彭思瑋(胖妞妞地瓜球)",
                       "summary":  {
-                                      "CUSTOMER_ID":  "O200241249",
-                                      "CUSTOMER_NAME":  "彭思瑋(胖妞妞地瓜球)",
-                                      "APPLLTE_NO":  "A2503000172689160",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "地瓜球餡料製作販賣 /地瓜球成品販賣",
-                                      "REVENUE":  "1800000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "彭思瑋(胖妞妞地瓜球)",
+                                      "REVENUE":  "1800000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "地瓜球餡料製作販賣 /地瓜球成品販賣",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "O200241249",
+                                      "APPLLTE_NO":  "A2503000172689160"
                                   },
                       "modules":  [
 
@@ -15760,19 +15812,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2604000232323366",
                       "title":  "何美珊（禾?ⅩI工作室）",
                       "summary":  {
-                                      "CUSTOMER_ID":  "N226343380",
-                                      "CUSTOMER_NAME":  "何美珊（禾?ⅩI工作室）",
-                                      "APPLLTE_NO":  "A2604000232323366",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "甜點、戚風蛋糕、提拉米蘇、餅乾",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "何美珊（禾?ⅩI工作室）",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "甜點、戚風蛋糕、提拉米蘇、餅乾",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "N226343380",
+                                      "APPLLTE_NO":  "A2604000232323366"
                                   },
                       "modules":  [
 
@@ -15783,19 +15835,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2503000203321326",
                       "title":  "粘雅蘭(呼拉貓鬆餅鋪",
                       "summary":  {
-                                      "CUSTOMER_ID":  "72372227",
-                                      "CUSTOMER_NAME":  "粘雅蘭(呼拉貓鬆餅鋪",
-                                      "APPLLTE_NO":  "A2503000203321326",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "鬆餅系列商品(及其配料)、中西式甜點、飲品、點心",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "粘雅蘭(呼拉貓鬆餅鋪",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "鬆餅系列商品(及其配料)、中西式甜點、飲品、點心",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "72372227",
+                                      "APPLLTE_NO":  "A2503000203321326"
                                   },
                       "modules":  [
 
@@ -15806,19 +15858,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2504000262210622",
                       "title":  "李宜蓁(北平祥福樓)",
                       "summary":  {
-                                      "CUSTOMER_ID":  "N221209669",
-                                      "CUSTOMER_NAME":  "李宜蓁(北平祥福樓)",
-                                      "APPLLTE_NO":  "A2504000262210622",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "盒餐、外燴、便當、飲料",
-                                      "REVENUE":  "2000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "李宜蓁(北平祥福樓)",
+                                      "REVENUE":  "2000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "盒餐、外燴、便當、飲料",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "N221209669",
+                                      "APPLLTE_NO":  "A2504000262210622"
                                   },
                       "modules":  [
 
@@ -15829,19 +15881,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2509000645619344",
                       "title":  "賴裔甯(酉燒蔬食有限公司)",
                       "summary":  {
-                                      "CUSTOMER_ID":  "M221977107",
-                                      "CUSTOMER_NAME":  "賴裔甯(酉燒蔬食有限公司)",
-                                      "APPLLTE_NO":  "A2509000645619344",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "中日式餐點飲料",
-                                      "REVENUE":  "1000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "賴裔甯(酉燒蔬食有限公司)",
+                                      "REVENUE":  "1000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "中日式餐點飲料",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "M221977107",
+                                      "APPLLTE_NO":  "A2509000645619344"
                                   },
                       "modules":  [
 
@@ -15852,19 +15904,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2601000020575503",
                       "title":  "陳明珠",
                       "summary":  {
-                                      "CUSTOMER_ID":  "M220076209",
-                                      "CUSTOMER_NAME":  "陳明珠",
-                                      "APPLLTE_NO":  "A2601000020575503",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "歐式麵包",
-                                      "REVENUE":  "950000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "1000000",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "陳明珠",
+                                      "REVENUE":  "950000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "歐式麵包",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "M220076209",
+                                      "APPLLTE_NO":  "A2601000020575503"
                                   },
                       "modules":  [
 
@@ -15875,19 +15927,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2503000191210161",
                       "title":  "許秀瑜",
                       "summary":  {
-                                      "CUSTOMER_ID":  "L223361517",
-                                      "CUSTOMER_NAME":  "許秀瑜",
-                                      "APPLLTE_NO":  "A2503000191210161",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "做糖趣(吻仔瑜手作馬林糖)",
-                                      "REVENUE":  "300000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "10",
+                                      "CUSTOMER_NAME":  "許秀瑜",
+                                      "REVENUE":  "300000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "5000",
-                                      "DDCB_RATIO":  "10"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "做糖趣(吻仔瑜手作馬林糖)",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "L223361517",
+                                      "APPLLTE_NO":  "A2503000191210161"
                                   },
                       "modules":  [
 
@@ -15898,19 +15950,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2602000075066600",
                       "title":  "小飛牛餐飲 (負責人:劉湘芬)",
                       "summary":  {
-                                      "CUSTOMER_ID":  "L220953540",
-                                      "CUSTOMER_NAME":  "小飛牛餐飲 (負責人:劉湘芬)",
-                                      "APPLLTE_NO":  "A2602000075066600",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "小籠包.烤鴨夾餅及店面提供之餐飲",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "小飛牛餐飲 (負責人:劉湘芬)",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "小籠包.烤鴨夾餅及店面提供之餐飲",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "L220953540",
+                                      "APPLLTE_NO":  "A2602000075066600"
                                   },
                       "modules":  [
 
@@ -15921,19 +15973,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2601000023497981",
                       "title":  "林家洧",
                       "summary":  {
-                                      "CUSTOMER_ID":  "L123975626",
-                                      "CUSTOMER_NAME":  "林家洧",
-                                      "APPLLTE_NO":  "A2601000023497981",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "堅果",
-                                      "REVENUE":  "2000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "林家洧",
+                                      "REVENUE":  "2000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "堅果",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "L123975626",
+                                      "APPLLTE_NO":  "A2601000023497981"
                                   },
                       "modules":  [
 
@@ -15944,19 +15996,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2507000568465783",
                       "title":  "漁小路國際有限公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "54125604",
-                                      "CUSTOMER_NAME":  "漁小路國際有限公司",
-                                      "APPLLTE_NO":  "A2507000568465783",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "乾燥水產品、休閒零嘴食品零售",
-                                      "REVENUE":  "2000000",
-                                      "AOP_AMOUNT_PRODUCT":  "3000000",
-                                      "AOA_AMOUNT_PRODUCT":  "15000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "漁小路國際有限公司",
+                                      "REVENUE":  "2000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "30000000",
                                       "DDCB_AMOUNT":  "2500",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "3000000",
+                                      "OBJECT_NAME":  "乾燥水產品、休閒零嘴食品零售",
+                                      "AOA_AMOUNT_PRODUCT":  "15000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "54125604",
+                                      "APPLLTE_NO":  "A2507000568465783"
                                   },
                       "modules":  [
 
@@ -15967,19 +16019,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2501000004599229",
                       "title":  "徐吉民(早安好廚房)",
                       "summary":  {
-                                      "CUSTOMER_ID":  "L120019425",
-                                      "CUSTOMER_NAME":  "徐吉民(早安好廚房)",
-                                      "APPLLTE_NO":  "A2501000004599229",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "餐飲業",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "1000000",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "徐吉民(早安好廚房)",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "餐飲業",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "L120019425",
+                                      "APPLLTE_NO":  "A2501000004599229"
                                   },
                       "modules":  [
 
@@ -15990,19 +16042,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2602000102044966",
                       "title":  "蔡淑惠",
                       "summary":  {
-                                      "CUSTOMER_ID":  "K222022575",
-                                      "CUSTOMER_NAME":  "蔡淑惠",
-                                      "APPLLTE_NO":  "A2602000102044966",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "虱目魚丸、香菇丸、蝦仁丸、魚肚、魚腸、魚頭、魚皮、魚鰭、魚骨及攤位販賣之所有食品",
-                                      "REVENUE":  "1000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "蔡淑惠",
+                                      "REVENUE":  "1000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "虱目魚丸、香菇丸、蝦仁丸、魚肚、魚腸、魚頭、魚皮、魚鰭、魚骨及攤位販賣之所有食品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "K222022575",
+                                      "APPLLTE_NO":  "A2602000102044966"
                                   },
                       "modules":  [
 
@@ -16013,19 +16065,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2601000020374005",
                       "title":  "黃愉容(林記肉品)",
                       "summary":  {
-                                      "CUSTOMER_ID":  "K220759088",
-                                      "CUSTOMER_NAME":  "黃愉容(林記肉品)",
-                                      "APPLLTE_NO":  "A2601000020374005",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "各種速食產品及店內銷售食品",
-                                      "REVENUE":  "1500000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "黃愉容(林記肉品)",
+                                      "REVENUE":  "1500000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "各種速食產品及店內銷售食品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "K220759088",
+                                      "APPLLTE_NO":  "A2601000020374005"
                                   },
                       "modules":  [
 
@@ -16036,19 +16088,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2504000256510921",
                       "title":  "汐止區觀光夜市82號剉冰女王",
                       "summary":  {
-                                      "CUSTOMER_ID":  "34761773",
-                                      "CUSTOMER_NAME":  "汐止區觀光夜市82號剉冰女王",
-                                      "APPLLTE_NO":  "A2504000256510921",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "冰品等食品全品項",
-                                      "REVENUE":  "2200000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "汐止區觀光夜市82號剉冰女王",
+                                      "REVENUE":  "2200000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "冰品等食品全品項",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "34761773",
+                                      "APPLLTE_NO":  "A2504000256510921"
                                   },
                       "modules":  [
 
@@ -16059,19 +16111,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2605000320424985",
                       "title":  "盛日甜點",
                       "summary":  {
-                                      "CUSTOMER_ID":  "60151580",
-                                      "CUSTOMER_NAME":  "盛日甜點",
-                                      "APPLLTE_NO":  "A2605000320424985",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "各式甜點及店內所販售之食品",
-                                      "REVENUE":  "600000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "盛日甜點",
+                                      "REVENUE":  "600000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "各式甜點及店內所販售之食品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "60151580",
+                                      "APPLLTE_NO":  "A2605000320424985"
                                   },
                       "modules":  [
 
@@ -16082,19 +16134,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2602000099745543",
                       "title":  "霸鍋燒(秦裕華)",
                       "summary":  {
-                                      "CUSTOMER_ID":  "J222005313",
-                                      "CUSTOMER_NAME":  "霸鍋燒(秦裕華)",
-                                      "APPLLTE_NO":  "A2602000099745543",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "鍋燒麵系列",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "霸鍋燒(秦裕華)",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "鍋燒麵系列",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "J222005313",
+                                      "APPLLTE_NO":  "A2602000099745543"
                                   },
                       "modules":  [
 
@@ -16105,19 +16157,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2506000413750722",
                       "title":  "徐瑞蘭 (麥軒活力站)",
                       "summary":  {
-                                      "CUSTOMER_ID":  "J220777432",
-                                      "CUSTOMER_NAME":  "徐瑞蘭 (麥軒活力站)",
-                                      "APPLLTE_NO":  "A2506000413750722",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "店內販售之蛋餅、吐司、飲品等",
-                                      "REVENUE":  "1500000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "徐瑞蘭 (麥軒活力站)",
+                                      "REVENUE":  "1500000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "店內販售之蛋餅、吐司、飲品等",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "J220777432",
+                                      "APPLLTE_NO":  "A2506000413750722"
                                   },
                       "modules":  [
 
@@ -16128,19 +16180,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2601000019627509",
                       "title":  "陳威莉(小香香食坊)",
                       "summary":  {
-                                      "CUSTOMER_ID":  "J220278532",
-                                      "CUSTOMER_NAME":  "陳威莉(小香香食坊)",
-                                      "APPLLTE_NO":  "A2601000019627509",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "各式餐飲",
-                                      "REVENUE":  "1000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "陳威莉(小香香食坊)",
+                                      "REVENUE":  "1000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "各式餐飲",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "J220278532",
+                                      "APPLLTE_NO":  "A2601000019627509"
                                   },
                       "modules":  [
 
@@ -16151,19 +16203,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2503000228206347",
                       "title":  "雪敲食品行",
                       "summary":  {
-                                      "CUSTOMER_ID":  "42527456",
-                                      "CUSTOMER_NAME":  "雪敲食品行",
-                                      "APPLLTE_NO":  "A2503000228206347",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "各式甜點、各式咖啡、各式飲料",
-                                      "REVENUE":  "3000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "雪敲食品行",
+                                      "REVENUE":  "3000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "各式甜點、各式咖啡、各式飲料",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "42527456",
+                                      "APPLLTE_NO":  "A2503000228206347"
                                   },
                       "modules":  [
 
@@ -16174,19 +16226,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2504000300815042",
                       "title":  "李芷青(療心糰)",
                       "summary":  {
-                                      "CUSTOMER_ID":  "H224310076",
-                                      "CUSTOMER_NAME":  "李芷青(療心糰)",
-                                      "APPLLTE_NO":  "A2504000300815042",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "療心糰所製作販售之日式糰子、櫻餅、葛餅、蕨餅、銅鑼燒、泰式糕點",
-                                      "REVENUE":  "400000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "李芷青(療心糰)",
+                                      "REVENUE":  "400000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "療心糰所製作販售之日式糰子、櫻餅、葛餅、蕨餅、銅鑼燒、泰式糕點",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "H224310076",
+                                      "APPLLTE_NO":  "A2504000300815042"
                                   },
                       "modules":  [
 
@@ -16197,19 +16249,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2603000172190786",
                       "title":  "原香嘟論竹筒飯",
                       "summary":  {
-                                      "CUSTOMER_ID":  "50567732",
-                                      "CUSTOMER_NAME":  "原香嘟論竹筒飯",
-                                      "APPLLTE_NO":  "A2603000172190786",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "原住民美食",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "原香嘟論竹筒飯",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "原住民美食",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "50567732",
+                                      "APPLLTE_NO":  "A2603000172190786"
                                   },
                       "modules":  [
 
@@ -16220,19 +16272,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2601000052441645",
                       "title":  "曾永翔(傳承脆皮肉圓)",
                       "summary":  {
-                                      "CUSTOMER_ID":  "H123058511",
-                                      "CUSTOMER_NAME":  "曾永翔(傳承脆皮肉圓)",
-                                      "APPLLTE_NO":  "A2601000052441645",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "肉圓飲食店",
-                                      "REVENUE":  "600000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "曾永翔(傳承脆皮肉圓)",
+                                      "REVENUE":  "600000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "肉圓飲食店",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "H123058511",
+                                      "APPLLTE_NO":  "A2601000052441645"
                                   },
                       "modules":  [
 
@@ -16243,19 +16295,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2505000313183360",
                       "title":  "大新坡有限公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "90109781",
-                                      "CUSTOMER_NAME":  "大新坡有限公司",
-                                      "APPLLTE_NO":  "A2505000313183360",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "素食加工食品",
-                                      "REVENUE":  "12000000",
-                                      "AOP_AMOUNT_PRODUCT":  "2000000",
-                                      "AOA_AMOUNT_PRODUCT":  "8000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "10",
+                                      "CUSTOMER_NAME":  "大新坡有限公司",
+                                      "REVENUE":  "12000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "20000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "10"
+                                      "AOP_AMOUNT_PRODUCT":  "2000000",
+                                      "OBJECT_NAME":  "素食加工食品",
+                                      "AOA_AMOUNT_PRODUCT":  "8000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "90109781",
+                                      "APPLLTE_NO":  "A2505000313183360"
                                   },
                       "modules":  [
 
@@ -16266,19 +16318,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2505000324273946",
                       "title":  "小貞越南小吃-蘇和貞",
                       "summary":  {
-                                      "CUSTOMER_ID":  "G260002538",
-                                      "CUSTOMER_NAME":  "小貞越南小吃-蘇和貞",
-                                      "APPLLTE_NO":  "A2505000324273946",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "豬牛肉河粉.豬肉涼拌.米線.越南法國麵包.越南鮮蝦豬肉春捲",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "小貞越南小吃-蘇和貞",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "豬牛肉河粉.豬肉涼拌.米線.越南法國麵包.越南鮮蝦豬肉春捲",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "G260002538",
+                                      "APPLLTE_NO":  "A2505000324273946"
                                   },
                       "modules":  [
 
@@ -16289,19 +16341,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2505000362246061",
                       "title":  "暖町車輪餅",
                       "summary":  {
-                                      "CUSTOMER_ID":  "G222444925",
-                                      "CUSTOMER_NAME":  "暖町車輪餅",
-                                      "APPLLTE_NO":  "A2505000362246061",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "暖町車輪餅販售之所有食品",
-                                      "REVENUE":  "720000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "暖町車輪餅",
+                                      "REVENUE":  "720000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "暖町車輪餅販售之所有食品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "G222444925",
+                                      "APPLLTE_NO":  "A2505000362246061"
                                   },
                       "modules":  [
 
@@ -16312,19 +16364,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2502000088377024",
                       "title":  "馬克早午餐店",
                       "summary":  {
-                                      "CUSTOMER_ID":  "49798735",
-                                      "CUSTOMER_NAME":  "馬克早午餐店",
-                                      "APPLLTE_NO":  "A2502000088377024",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "漢堡、麵、雞蛋糕、糖葫蘆、飲料等",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "馬克早午餐店",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "漢堡、麵、雞蛋糕、糖葫蘆、飲料等",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "49798735",
+                                      "APPLLTE_NO":  "A2502000088377024"
                                   },
                       "modules":  [
 
@@ -16335,19 +16387,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2603000152719365",
                       "title":  "桶好呷現滷滷味",
                       "summary":  {
-                                      "CUSTOMER_ID":  "38593313",
-                                      "CUSTOMER_NAME":  "桶好呷現滷滷味",
-                                      "APPLLTE_NO":  "A2603000152719365",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "各式滷味食品、餐飲",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "桶好呷現滷滷味",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
-                                      "DDCB_AMOUNT":  "",
-                                      "DDCB_RATIO":  ""
+                                      "DDCB_AMOUNT":  null,
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "各式滷味食品、餐飲",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "38593313",
+                                      "APPLLTE_NO":  "A2603000152719365"
                                   },
                       "modules":  [
 
@@ -16358,19 +16410,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2511000853207688",
                       "title":  "楊德紅 (鄰家小吃)",
                       "summary":  {
-                                      "CUSTOMER_ID":  "F229789300",
-                                      "CUSTOMER_NAME":  "楊德紅 (鄰家小吃)",
-                                      "APPLLTE_NO":  "A2511000853207688",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "麵類，飯類",
-                                      "REVENUE":  "1000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "楊德紅 (鄰家小吃)",
+                                      "REVENUE":  "1000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "麵類，飯類",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "F229789300",
+                                      "APPLLTE_NO":  "A2511000853207688"
                                   },
                       "modules":  [
 
@@ -16381,19 +16433,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2602000077497183",
                       "title":  "李秋宜（珍芙雪花冰）",
                       "summary":  {
-                                      "CUSTOMER_ID":  "F226118247",
-                                      "CUSTOMER_NAME":  "李秋宜（珍芙雪花冰）",
-                                      "APPLLTE_NO":  "A2602000077497183",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "雪花冰",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "李秋宜（珍芙雪花冰）",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "雪花冰",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "F226118247",
+                                      "APPLLTE_NO":  "A2602000077497183"
                                   },
                       "modules":  [
 
@@ -16404,19 +16456,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2601000018407122",
                       "title":  "張盛超(一三七港式燒臘)",
                       "summary":  {
-                                      "CUSTOMER_ID":  "F128658242",
-                                      "CUSTOMER_NAME":  "張盛超(一三七港式燒臘)",
-                                      "APPLLTE_NO":  "A2601000018407122",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "便當、燒鴨",
-                                      "REVENUE":  "9000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "張盛超(一三七港式燒臘)",
+                                      "REVENUE":  "9000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "便當、燒鴨",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "F128658242",
+                                      "APPLLTE_NO":  "A2601000018407122"
                                   },
                       "modules":  [
 
@@ -16427,19 +16479,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2601000021730169",
                       "title":  "唐萬來",
                       "summary":  {
-                                      "CUSTOMER_ID":  "F123452946",
-                                      "CUSTOMER_NAME":  "唐萬來",
-                                      "APPLLTE_NO":  "A2601000021730169",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "熱炒餐飲",
-                                      "REVENUE":  "600000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "唐萬來",
+                                      "REVENUE":  "600000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "熱炒餐飲",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "F123452946",
+                                      "APPLLTE_NO":  "A2601000021730169"
                                   },
                       "modules":  [
 
@@ -16450,19 +16502,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2510000762084724",
                       "title":  "可口滷味",
                       "summary":  {
-                                      "CUSTOMER_ID":  "13481298",
-                                      "CUSTOMER_NAME":  "可口滷味",
-                                      "APPLLTE_NO":  "A2510000762084724",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "各式滷味、各式料理、各式小吃",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "可口滷味",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "各式滷味、各式料理、各式小吃",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "13481298",
+                                      "APPLLTE_NO":  "A2510000762084724"
                                   },
                       "modules":  [
 
@@ -16473,19 +16525,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2504000262993002",
                       "title":  "吳美金",
                       "summary":  {
-                                      "CUSTOMER_ID":  "E290102692",
-                                      "CUSTOMER_NAME":  "吳美金",
-                                      "APPLLTE_NO":  "A2504000262993002",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "蘭州拉麵",
-                                      "REVENUE":  "1000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "吳美金",
+                                      "REVENUE":  "1000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "蘭州拉麵",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "E290102692",
+                                      "APPLLTE_NO":  "A2504000262993002"
                                   },
                       "modules":  [
 
@@ -16496,19 +16548,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2601000020546961",
                       "title":  "陳秋梅",
                       "summary":  {
-                                      "CUSTOMER_ID":  "E260110426",
-                                      "CUSTOMER_NAME":  "陳秋梅",
-                                      "APPLLTE_NO":  "A2601000020546961",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "陳秋梅(今彩餐館)生產販售之食品",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "陳秋梅",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "陳秋梅(今彩餐館)生產販售之食品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "E260110426",
+                                      "APPLLTE_NO":  "A2601000020546961"
                                   },
                       "modules":  [
 
@@ -16519,19 +16571,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2504000236689487",
                       "title":  "歐義冰淇淋店",
                       "summary":  {
-                                      "CUSTOMER_ID":  "88307363",
-                                      "CUSTOMER_NAME":  "歐義冰淇淋店",
-                                      "APPLLTE_NO":  "A2504000236689487",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "義式冰淇淋、餐點、飲料",
-                                      "REVENUE":  "2000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "歐義冰淇淋店",
+                                      "REVENUE":  "2000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "義式冰淇淋、餐點、飲料",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "88307363",
+                                      "APPLLTE_NO":  "A2504000236689487"
                                   },
                       "modules":  [
 
@@ -16542,19 +16594,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2604000246177100",
                       "title":  "黃淑絹",
                       "summary":  {
-                                      "CUSTOMER_ID":  "E222189534",
-                                      "CUSTOMER_NAME":  "黃淑絹",
-                                      "APPLLTE_NO":  "A2604000246177100",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "米糕、四神湯",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "2000000",
-                                      "AOA_AMOUNT_PRODUCT":  "8000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "黃淑絹",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "20000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "2000000",
+                                      "OBJECT_NAME":  "米糕、四神湯",
+                                      "AOA_AMOUNT_PRODUCT":  "8000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "E222189534",
+                                      "APPLLTE_NO":  "A2604000246177100"
                                   },
                       "modules":  [
 
@@ -16565,19 +16617,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2601000017517606",
                       "title":  "郭淑芳",
                       "summary":  {
-                                      "CUSTOMER_ID":  "E222004205",
-                                      "CUSTOMER_NAME":  "郭淑芳",
-                                      "APPLLTE_NO":  "A2601000017517606",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "烘培手作坊",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "郭淑芳",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "烘培手作坊",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "E222004205",
+                                      "APPLLTE_NO":  "A2601000017517606"
                                   },
                       "modules":  [
 
@@ -16588,19 +16640,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2508000571180489",
                       "title":  "謝沛浩",
                       "summary":  {
-                                      "CUSTOMER_ID":  "E180007115",
-                                      "CUSTOMER_NAME":  "謝沛浩",
-                                      "APPLLTE_NO":  "A2508000571180489",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "香腸卷、各式餡料卷",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "謝沛浩",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "香腸卷、各式餡料卷",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "E180007115",
+                                      "APPLLTE_NO":  "A2508000571180489"
                                   },
                       "modules":  [
 
@@ -16611,19 +16663,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2601000018142487",
                       "title":  "楊育晨-Slide burger",
                       "summary":  {
-                                      "CUSTOMER_ID":  "E124650561",
-                                      "CUSTOMER_NAME":  "楊育晨-Slide burger",
-                                      "APPLLTE_NO":  "A2601000018142487",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "漢堡系列  加點系列",
-                                      "REVENUE":  "1000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "楊育晨-Slide burger",
+                                      "REVENUE":  "1000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "漢堡系列  加點系列",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "E124650561",
+                                      "APPLLTE_NO":  "A2601000018142487"
                                   },
                       "modules":  [
 
@@ -16634,19 +16686,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2601000000997105",
                       "title":  "李松葦",
                       "summary":  {
-                                      "CUSTOMER_ID":  "E124582424",
-                                      "CUSTOMER_NAME":  "李松葦",
-                                      "APPLLTE_NO":  "A2601000000997105",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "寶仔豆乳雞所製食品",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "李松葦",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "寶仔豆乳雞所製食品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "E124582424",
+                                      "APPLLTE_NO":  "A2601000000997105"
                                   },
                       "modules":  [
 
@@ -16657,19 +16709,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2505000341092528",
                       "title":  "侯博鈞",
                       "summary":  {
-                                      "CUSTOMER_ID":  "E124404863",
-                                      "CUSTOMER_NAME":  "侯博鈞",
-                                      "APPLLTE_NO":  "A2505000341092528",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "各式果汁、小吃",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "侯博鈞",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "各式果汁、小吃",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "E124404863",
+                                      "APPLLTE_NO":  "A2505000341092528"
                                   },
                       "modules":  [
 
@@ -16680,19 +16732,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2509000651694401",
                       "title":  "澤泰豐有限公司、澤泰豐有限公司亞灣店",
                       "summary":  {
-                                      "CUSTOMER_ID":  "59695625",
-                                      "CUSTOMER_NAME":  "澤泰豐有限公司、澤泰豐有限公司亞灣店",
-                                      "APPLLTE_NO":  "A2509000651694401",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "海鮮、炸物、涼拌、輕食沙拉、優格、果昔、辣椒醬、醬料等食品",
-                                      "REVENUE":  "20000000",
-                                      "AOP_AMOUNT_PRODUCT":  "2000000",
-                                      "AOA_AMOUNT_PRODUCT":  "10000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "澤泰豐有限公司、澤泰豐有限公司亞灣店",
+                                      "REVENUE":  "20000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "20000000",
                                       "DDCB_AMOUNT":  "5000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "2000000",
+                                      "OBJECT_NAME":  "海鮮、炸物、涼拌、輕食沙拉、優格、果昔、辣椒醬、醬料等食品",
+                                      "AOA_AMOUNT_PRODUCT":  "10000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "59695625",
+                                      "APPLLTE_NO":  "A2509000651694401"
                                   },
                       "modules":  [
 
@@ -16703,19 +16755,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2504000265562502",
                       "title":  "第一名火烤兩吃",
                       "summary":  {
-                                      "CUSTOMER_ID":  "47699766",
-                                      "CUSTOMER_NAME":  "第一名火烤兩吃",
-                                      "APPLLTE_NO":  "A2504000265562502",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "火烤兩吃",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "第一名火烤兩吃",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "火烤兩吃",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "47699766",
+                                      "APPLLTE_NO":  "A2504000265562502"
                                   },
                       "modules":  [
 
@@ -16726,19 +16778,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2504000286393967",
                       "title":  "第一名火烤兩吃",
                       "summary":  {
-                                      "CUSTOMER_ID":  "47699766",
-                                      "CUSTOMER_NAME":  "第一名火烤兩吃",
-                                      "APPLLTE_NO":  "A2504000286393967",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "火烤兩吃",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "第一名火烤兩吃",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "火烤兩吃",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "47699766",
+                                      "APPLLTE_NO":  "A2504000286393967"
                                   },
                       "modules":  [
 
@@ -16749,19 +16801,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2602000088548564",
                       "title":  "林毓婷",
                       "summary":  {
-                                      "CUSTOMER_ID":  "D221179435",
-                                      "CUSTOMER_NAME":  "林毓婷",
-                                      "APPLLTE_NO":  "A2602000088548564",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "便當.冷飲",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "林毓婷",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "便當.冷飲",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "D221179435",
+                                      "APPLLTE_NO":  "A2602000088548564"
                                   },
                       "modules":  [
 
@@ -16772,19 +16824,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2602000076912421",
                       "title":  "蘇靚麗",
                       "summary":  {
-                                      "CUSTOMER_ID":  "D220862306",
-                                      "CUSTOMER_NAME":  "蘇靚麗",
-                                      "APPLLTE_NO":  "A2602000076912421",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "生鮮肉品(秀紅肉舖)",
-                                      "REVENUE":  "2000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "蘇靚麗",
+                                      "REVENUE":  "2000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "5000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "生鮮肉品(秀紅肉舖)",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "D220862306",
+                                      "APPLLTE_NO":  "A2602000076912421"
                                   },
                       "modules":  [
 
@@ -16795,19 +16847,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2601000015614343",
                       "title":  "何詩潁(Mydessert)",
                       "summary":  {
-                                      "CUSTOMER_ID":  "C221024747",
-                                      "CUSTOMER_NAME":  "何詩潁(Mydessert)",
-                                      "APPLLTE_NO":  "A2601000015614343",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "造型馬林糖.手作甜點",
-                                      "REVENUE":  "200000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "何詩潁(Mydessert)",
+                                      "REVENUE":  "200000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "造型馬林糖.手作甜點",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "C221024747",
+                                      "APPLLTE_NO":  "A2601000015614343"
                                   },
                       "modules":  [
 
@@ -16818,19 +16870,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2503000183870063",
                       "title":  "玲萌手作坊",
                       "summary":  {
-                                      "CUSTOMER_ID":  "94896297",
-                                      "CUSTOMER_NAME":  "玲萌手作坊",
-                                      "APPLLTE_NO":  "A2503000183870063",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "麵包、蛋糕、糖果、糕點、甜點",
-                                      "REVENUE":  "200000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "玲萌手作坊",
+                                      "REVENUE":  "200000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "麵包、蛋糕、糖果、糕點、甜點",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "94896297",
+                                      "APPLLTE_NO":  "A2503000183870063"
                                   },
                       "modules":  [
 
@@ -16841,19 +16893,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2601000018004642",
                       "title":  "郭安庭",
                       "summary":  {
-                                      "CUSTOMER_ID":  "C220945809",
-                                      "CUSTOMER_NAME":  "郭安庭",
-                                      "APPLLTE_NO":  "A2601000018004642",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "醉雞",
-                                      "REVENUE":  "1200000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "郭安庭",
+                                      "REVENUE":  "1200000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "醉雞",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "C220945809",
+                                      "APPLLTE_NO":  "A2601000018004642"
                                   },
                       "modules":  [
 
@@ -16864,19 +16916,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2602000100954324",
                       "title":  "美好早餐店(負責人:楊文菱)",
                       "summary":  {
-                                      "CUSTOMER_ID":  "C220793896",
-                                      "CUSTOMER_NAME":  "美好早餐店(負責人:楊文菱)",
-                                      "APPLLTE_NO":  "A2602000100954324",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "早餐店提供之餐飲",
-                                      "REVENUE":  "2000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "美好早餐店(負責人:楊文菱)",
+                                      "REVENUE":  "2000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "早餐店提供之餐飲",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "C220793896",
+                                      "APPLLTE_NO":  "A2602000100954324"
                                   },
                       "modules":  [
 
@@ -16887,19 +16939,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2604000247805705",
                       "title":  "北京素食店",
                       "summary":  {
-                                      "CUSTOMER_ID":  "60283766",
-                                      "CUSTOMER_NAME":  "北京素食店",
-                                      "APPLLTE_NO":  "A2604000247805705",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "什錦炒飯等素食",
-                                      "REVENUE":  "3000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "北京素食店",
+                                      "REVENUE":  "3000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2500",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "什錦炒飯等素食",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "60283766",
+                                      "APPLLTE_NO":  "A2604000247805705"
                                   },
                       "modules":  [
 
@@ -16910,19 +16962,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2508000601398967",
                       "title":  "鑫源麵食館",
                       "summary":  {
-                                      "CUSTOMER_ID":  "60807588",
-                                      "CUSTOMER_NAME":  "鑫源麵食館",
-                                      "APPLLTE_NO":  "A2508000601398967",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "麵食/飲料",
-                                      "REVENUE":  "1200000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "鑫源麵食館",
+                                      "REVENUE":  "1200000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "麵食/飲料",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "60807588",
+                                      "APPLLTE_NO":  "A2508000601398967"
                                   },
                       "modules":  [
 
@@ -16933,19 +16985,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2602000109996644",
                       "title":  "黃施倩(小倩奶油餅)",
                       "summary":  {
-                                      "CUSTOMER_ID":  "A225256823",
-                                      "CUSTOMER_NAME":  "黃施倩(小倩奶油餅)",
-                                      "APPLLTE_NO":  "A2602000109996644",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "奶油餅",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "黃施倩(小倩奶油餅)",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "奶油餅",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "A225256823",
+                                      "APPLLTE_NO":  "A2602000109996644"
                                   },
                       "modules":  [
 
@@ -16956,19 +17008,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2505000343841904",
                       "title":  "徐瑤琪(杯杯樂綠豆沙專賣店)",
                       "summary":  {
-                                      "CUSTOMER_ID":  "A203544404",
-                                      "CUSTOMER_NAME":  "徐瑤琪(杯杯樂綠豆沙專賣店)",
-                                      "APPLLTE_NO":  "A2505000343841904",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "綠豆沙及各類茶類",
-                                      "REVENUE":  "600000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "徐瑤琪(杯杯樂綠豆沙專賣店)",
+                                      "REVENUE":  "600000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "綠豆沙及各類茶類",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "A203544404",
+                                      "APPLLTE_NO":  "A2505000343841904"
                                   },
                       "modules":  [
 
@@ -16979,19 +17031,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2507000486639022",
                       "title":  "余哲覟(依咻泥咖啡)",
                       "summary":  {
-                                      "CUSTOMER_ID":  "A129220845",
-                                      "CUSTOMER_NAME":  "余哲覟(依咻泥咖啡)",
-                                      "APPLLTE_NO":  "A2507000486639022",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "手工餅乾及咖啡熟豆",
-                                      "REVENUE":  "1000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "余哲覟(依咻泥咖啡)",
+                                      "REVENUE":  "1000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "手工餅乾及咖啡熟豆",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "A129220845",
+                                      "APPLLTE_NO":  "A2507000486639022"
                                   },
                       "modules":  [
 
@@ -17002,19 +17054,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2503000153469884",
                       "title":  "貓空大觀園餐館",
                       "summary":  {
-                                      "CUSTOMER_ID":  "81716413",
-                                      "CUSTOMER_NAME":  "貓空大觀園餐館",
-                                      "APPLLTE_NO":  "A2503000153469884",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "盒餐、外燴、便當、飲料",
-                                      "REVENUE":  "2000000",
-                                      "AOP_AMOUNT_PRODUCT":  "2000000",
-                                      "AOA_AMOUNT_PRODUCT":  "8000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "貓空大觀園餐館",
+                                      "REVENUE":  "2000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "20000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "2000000",
+                                      "OBJECT_NAME":  "盒餐、外燴、便當、飲料",
+                                      "AOA_AMOUNT_PRODUCT":  "8000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "81716413",
+                                      "APPLLTE_NO":  "A2503000153469884"
                                   },
                       "modules":  [
 
@@ -17025,19 +17077,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2512000916178844",
                       "title":  "蒔玖製研所",
                       "summary":  {
-                                      "CUSTOMER_ID":  "60126210",
-                                      "CUSTOMER_NAME":  "蒔玖製研所",
-                                      "APPLLTE_NO":  "A2512000916178844",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "冰品冷飲店",
-                                      "REVENUE":  "1000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "蒔玖製研所",
+                                      "REVENUE":  "1000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2500",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "冰品冷飲店",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "60126210",
+                                      "APPLLTE_NO":  "A2512000916178844"
                                   },
                       "modules":  [
 
@@ -17048,19 +17100,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2508000582997162",
                       "title":  "148雞湯煨麵",
                       "summary":  {
-                                      "CUSTOMER_ID":  "77428170",
-                                      "CUSTOMER_NAME":  "148雞湯煨麵",
-                                      "APPLLTE_NO":  "A2508000582997162",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "雞湯麵、湯品",
-                                      "REVENUE":  "800000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "148雞湯煨麵",
+                                      "REVENUE":  "800000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "雞湯麵、湯品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "77428170",
+                                      "APPLLTE_NO":  "A2508000582997162"
                                   },
                       "modules":  [
 
@@ -17071,19 +17123,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2503000234739862",
                       "title":  "老地方餐飲店",
                       "summary":  {
-                                      "CUSTOMER_ID":  "98928171",
-                                      "CUSTOMER_NAME":  "老地方餐飲店",
-                                      "APPLLTE_NO":  "A2503000234739862",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "炒飯、炒麵、鍋燒、關東煮、老地方店內餐飲類全品項",
-                                      "REVENUE":  "2500000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "老地方餐飲店",
+                                      "REVENUE":  "2500000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "炒飯、炒麵、鍋燒、關東煮、老地方店內餐飲類全品項",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "98928171",
+                                      "APPLLTE_NO":  "A2503000234739862"
                                   },
                       "modules":  [
 
@@ -17094,19 +17146,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2502000075849585",
                       "title":  "弦品股份有限公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "95479164",
-                                      "CUSTOMER_NAME":  "弦品股份有限公司",
-                                      "APPLLTE_NO":  "A2502000075849585",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "糕點點心、糖果、蜜餞、餅乾",
-                                      "REVENUE":  "10000000",
-                                      "AOP_AMOUNT_PRODUCT":  "2000000",
-                                      "AOA_AMOUNT_PRODUCT":  "8000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "弦品股份有限公司",
+                                      "REVENUE":  "10000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "20000000",
                                       "DDCB_AMOUNT":  "2500",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "2000000",
+                                      "OBJECT_NAME":  "糕點點心、糖果、蜜餞、餅乾",
+                                      "AOA_AMOUNT_PRODUCT":  "8000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "95479164",
+                                      "APPLLTE_NO":  "A2502000075849585"
                                   },
                       "modules":  [
 
@@ -17117,19 +17169,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2507000544937084",
                       "title":  "嘉恩商行",
                       "summary":  {
-                                      "CUSTOMER_ID":  "95397924",
-                                      "CUSTOMER_NAME":  "嘉恩商行",
-                                      "APPLLTE_NO":  "A2507000544937084",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "各式餐飲、飲品",
-                                      "REVENUE":  "2000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "嘉恩商行",
+                                      "REVENUE":  "2000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "各式餐飲、飲品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "95397924",
+                                      "APPLLTE_NO":  "A2507000544937084"
                                   },
                       "modules":  [
 
@@ -17140,19 +17192,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2602000117882603",
                       "title":  "宸語小吃",
                       "summary":  {
-                                      "CUSTOMER_ID":  "95184598",
-                                      "CUSTOMER_NAME":  "宸語小吃",
-                                      "APPLLTE_NO":  "A2602000117882603",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "盒餐、外燴、便當",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "宸語小吃",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "盒餐、外燴、便當",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "95184598",
+                                      "APPLLTE_NO":  "A2602000117882603"
                                   },
                       "modules":  [
 
@@ -17163,19 +17215,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2601000001514088",
                       "title":  "鍾佳蓉",
                       "summary":  {
-                                      "CUSTOMER_ID":  "G260018465",
-                                      "CUSTOMER_NAME":  "鍾佳蓉",
-                                      "APPLLTE_NO":  "A2601000001514088",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "中式料理、快炒",
-                                      "REVENUE":  "1200000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "鍾佳蓉",
+                                      "REVENUE":  "1200000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "中式料理、快炒",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "G260018465",
+                                      "APPLLTE_NO":  "A2601000001514088"
                                   },
                       "modules":  [
 
@@ -17186,19 +17238,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2510000747736260",
                       "title":  "山鳩咖啡室",
                       "summary":  {
-                                      "CUSTOMER_ID":  "94345294",
-                                      "CUSTOMER_NAME":  "山鳩咖啡室",
-                                      "APPLLTE_NO":  "A2510000747736260",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "咖啡、糕點",
-                                      "REVENUE":  "3000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "山鳩咖啡室",
+                                      "REVENUE":  "3000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "咖啡、糕點",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "94345294",
+                                      "APPLLTE_NO":  "A2510000747736260"
                                   },
                       "modules":  [
 
@@ -17209,19 +17261,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2503000179226782",
                       "title":  "寶楹企業社小港店",
                       "summary":  {
-                                      "CUSTOMER_ID":  "93290996",
-                                      "CUSTOMER_NAME":  "寶楹企業社小港店",
-                                      "APPLLTE_NO":  "A2503000179226782",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "飲品、麵食品",
-                                      "REVENUE":  "2000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "寶楹企業社小港店",
+                                      "REVENUE":  "2000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "飲品、麵食品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "93290996",
+                                      "APPLLTE_NO":  "A2503000179226782"
                                   },
                       "modules":  [
 
@@ -17232,19 +17284,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2504000283462668",
                       "title":  "阿志生炒羊肉",
                       "summary":  {
-                                      "CUSTOMER_ID":  "93019118",
-                                      "CUSTOMER_NAME":  "阿志生炒羊肉",
-                                      "APPLLTE_NO":  "A2504000283462668",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "全系列餐飲",
-                                      "REVENUE":  "3000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "阿志生炒羊肉",
+                                      "REVENUE":  "3000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "全系列餐飲",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "93019118",
+                                      "APPLLTE_NO":  "A2504000283462668"
                                   },
                       "modules":  [
 
@@ -17255,19 +17307,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2503000199249206",
                       "title":  "就是要吃早午餐",
                       "summary":  {
-                                      "CUSTOMER_ID":  "92488725",
-                                      "CUSTOMER_NAME":  "就是要吃早午餐",
-                                      "APPLLTE_NO":  "A2503000199249206",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "早、午餐簡餐、飲料等製品",
-                                      "REVENUE":  "500000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "就是要吃早午餐",
+                                      "REVENUE":  "500000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "早、午餐簡餐、飲料等製品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "92488725",
+                                      "APPLLTE_NO":  "A2503000199249206"
                                   },
                       "modules":  [
 
@@ -17278,19 +17330,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2508000601305347",
                       "title":  "豐里食堂",
                       "summary":  {
-                                      "CUSTOMER_ID":  "92429037",
-                                      "CUSTOMER_NAME":  "豐里食堂",
-                                      "APPLLTE_NO":  "A2508000601305347",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "牛肉麵、各類小菜",
-                                      "REVENUE":  "1000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "豐里食堂",
+                                      "REVENUE":  "1000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "牛肉麵、各類小菜",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "92429037",
+                                      "APPLLTE_NO":  "A2508000601305347"
                                   },
                       "modules":  [
 
@@ -17301,19 +17353,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2507000514048781",
                       "title":  "黃英桂",
                       "summary":  {
-                                      "CUSTOMER_ID":  "92182034",
-                                      "CUSTOMER_NAME":  "黃英桂",
-                                      "APPLLTE_NO":  "A2507000514048781",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "鱔魚意麵、花枝意麵",
-                                      "REVENUE":  "800000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "黃英桂",
+                                      "REVENUE":  "800000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "鱔魚意麵、花枝意麵",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "92182034",
+                                      "APPLLTE_NO":  "A2507000514048781"
                                   },
                       "modules":  [
 
@@ -17324,19 +17376,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2601000061003380",
                       "title":  "茶萱飲品屋",
                       "summary":  {
-                                      "CUSTOMER_ID":  "92110193",
-                                      "CUSTOMER_NAME":  "茶萱飲品屋",
-                                      "APPLLTE_NO":  "A2601000061003380",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "非玻璃瓶裝汽水及各類不含酒精飲料",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "茶萱飲品屋",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "非玻璃瓶裝汽水及各類不含酒精飲料",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "92110193",
+                                      "APPLLTE_NO":  "A2601000061003380"
                                   },
                       "modules":  [
 
@@ -17347,19 +17399,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2602000079231169",
                       "title":  "永盛小籠包",
                       "summary":  {
-                                      "CUSTOMER_ID":  "91810535",
-                                      "CUSTOMER_NAME":  "永盛小籠包",
-                                      "APPLLTE_NO":  "A2602000079231169",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "小籠包、蘿蔔糕、炒麵、魯肉飯、蛋餅、各式小吃、飲品、辣椒醬",
-                                      "REVENUE":  "3000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "永盛小籠包",
+                                      "REVENUE":  "3000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2500",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "小籠包、蘿蔔糕、炒麵、魯肉飯、蛋餅、各式小吃、飲品、辣椒醬",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "91810535",
+                                      "APPLLTE_NO":  "A2602000079231169"
                                   },
                       "modules":  [
 
@@ -17370,19 +17422,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2506000389964305",
                       "title":  "大智得勝商行",
                       "summary":  {
-                                      "CUSTOMER_ID":  "91413846",
-                                      "CUSTOMER_NAME":  "大智得勝商行",
-                                      "APPLLTE_NO":  "A2506000389964305",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "大智得勝商行所製作販售之飯類、麵類、各式小點、飲料及各類含酒精飲料等所有食品",
-                                      "REVENUE":  "9000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "大智得勝商行",
+                                      "REVENUE":  "9000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "大智得勝商行所製作販售之飯類、麵類、各式小點、飲料及各類含酒精飲料等所有食品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "91413846",
+                                      "APPLLTE_NO":  "A2506000389964305"
                                   },
                       "modules":  [
 
@@ -17393,19 +17445,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2505000354647269",
                       "title":  "台灣農畜產工業股份有限公司、好市多股份有限公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "90460840",
-                                      "CUSTOMER_NAME":  "台灣農畜產工業股份有限公司、好市多股份有限公司",
-                                      "APPLLTE_NO":  "A2505000354647269",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "經由COSTCO販售之香腸、火腿、漢堡肉、肉鬆、冷凍冷藏肉品、生鮮冷藏肉品、冷凍冷藏調理食品、冰品及冷凍冷藏食品",
-                                      "REVENUE":  "720000000",
-                                      "AOP_AMOUNT_PRODUCT":  "33700000",
-                                      "AOA_AMOUNT_PRODUCT":  "33700000",
                                       "APD_AMOUNT_PRODUCT":  "33700000",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "台灣農畜產工業股份有限公司、好市多股份有限公司",
+                                      "REVENUE":  "720000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "33700000",
                                       "DDCB_AMOUNT":  "5000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "33700000",
+                                      "OBJECT_NAME":  "經由COSTCO販售之香腸、火腿、漢堡肉、肉鬆、冷凍冷藏肉品、生鮮冷藏肉品、冷凍冷藏調理食品、冰品及冷凍冷藏食品",
+                                      "AOA_AMOUNT_PRODUCT":  "33700000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "90460840",
+                                      "APPLLTE_NO":  "A2505000354647269"
                                   },
                       "modules":  [
 
@@ -17416,19 +17468,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2511000823302401",
                       "title":  "台灣農畜產工業股份有限公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "90460840",
-                                      "CUSTOMER_NAME":  "台灣農畜產工業股份有限公司",
-                                      "APPLLTE_NO":  "A2511000823302401",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "公司製造、加工、銷售的肉製品(含冷凍冷藏肉品、生鮮冷藏肉品、加工食品、冷凍冷藏調理食品、冰品、冷凍冷藏食品、酒類等全產品)",
-                                      "REVENUE":  "5620000000",
-                                      "AOP_AMOUNT_PRODUCT":  "5000000",
-                                      "AOA_AMOUNT_PRODUCT":  "15000000",
                                       "APD_AMOUNT_PRODUCT":  "3000000",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "台灣農畜產工業股份有限公司",
+                                      "REVENUE":  "5620000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "50000000",
                                       "DDCB_AMOUNT":  "2500",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "5000000",
+                                      "OBJECT_NAME":  "公司製造、加工、銷售的肉製品(含冷凍冷藏肉品、生鮮冷藏肉品、加工食品、冷凍冷藏調理食品、冰品、冷凍冷藏食品、酒類等全產品)",
+                                      "AOA_AMOUNT_PRODUCT":  "15000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "90460840",
+                                      "APPLLTE_NO":  "A2511000823302401"
                                   },
                       "modules":  [
 
@@ -17439,19 +17491,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2603000207651248",
                       "title":  "逢國企業有限公司(詳備註)",
                       "summary":  {
-                                      "CUSTOMER_ID":  "89941286",
-                                      "CUSTOMER_NAME":  "逢國企業有限公司(詳備註)",
-                                      "APPLLTE_NO":  "A2603000207651248",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "飲料.罐頭.糖果.餅乾.調味品.零食.蛋捲.料理包.酒精飲品食品.素食.冰品(保健食品.減肥食品.藥品除外不保)",
-                                      "REVENUE":  "92000000",
-                                      "AOP_AMOUNT_PRODUCT":  "6000000",
-                                      "AOA_AMOUNT_PRODUCT":  "16000000",
                                       "APD_AMOUNT_PRODUCT":  "4000000",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "逢國企業有限公司(詳備註)",
+                                      "REVENUE":  "92000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "33700000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "6000000",
+                                      "OBJECT_NAME":  "飲料.罐頭.糖果.餅乾.調味品.零食.蛋捲.料理包.酒精飲品食品.素食.冰品(保健食品.減肥食品.藥品除外不保)",
+                                      "AOA_AMOUNT_PRODUCT":  "16000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "89941286",
+                                      "APPLLTE_NO":  "A2603000207651248"
                                   },
                       "modules":  [
 
@@ -17462,19 +17514,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2504000290241762",
                       "title":  "冰東咖咖啡烘焙工作室",
                       "summary":  {
-                                      "CUSTOMER_ID":  "89078873",
-                                      "CUSTOMER_NAME":  "冰東咖咖啡烘焙工作室",
-                                      "APPLLTE_NO":  "A2504000290241762",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "冰東咖咖啡烘焙工作室全品項(咖啡麵包飲料等烘培食品)",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "冰東咖咖啡烘焙工作室",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "冰東咖咖啡烘焙工作室全品項(咖啡麵包飲料等烘培食品)",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "89078873",
+                                      "APPLLTE_NO":  "A2504000290241762"
                                   },
                       "modules":  [
 
@@ -17485,19 +17537,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2602000121150066",
                       "title":  "貳餓早午餐",
                       "summary":  {
-                                      "CUSTOMER_ID":  "89062268",
-                                      "CUSTOMER_NAME":  "貳餓早午餐",
-                                      "APPLLTE_NO":  "A2602000121150066",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "早餐、飲品",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "貳餓早午餐",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "早餐、飲品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "89062268",
+                                      "APPLLTE_NO":  "A2602000121150066"
                                   },
                       "modules":  [
 
@@ -17508,19 +17560,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2508000603056601",
                       "title":  "益群釣蝦場",
                       "summary":  {
-                                      "CUSTOMER_ID":  "88723488",
-                                      "CUSTOMER_NAME":  "益群釣蝦場",
-                                      "APPLLTE_NO":  "A2508000603056601",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "熱炒等店內銷售食品",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "10",
+                                      "CUSTOMER_NAME":  "益群釣蝦場",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "10"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "熱炒等店內銷售食品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "88723488",
+                                      "APPLLTE_NO":  "A2508000603056601"
                                   },
                       "modules":  [
 
@@ -17531,19 +17583,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2511000803563442",
                       "title":  "全春燕",
                       "summary":  {
-                                      "CUSTOMER_ID":  "L290047931",
-                                      "CUSTOMER_NAME":  "全春燕",
-                                      "APPLLTE_NO":  "A2511000803563442",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "1",
-                                      "OBJECT_NAME":  "鍋物等全品項",
-                                      "REVENUE":  "3000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "全春燕",
+                                      "REVENUE":  "3000000",
+                                      "IDNTFCTN_TYPE":  "1",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "鍋物等全品項",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "L290047931",
+                                      "APPLLTE_NO":  "A2511000803563442"
                                   },
                       "modules":  [
 
@@ -17554,19 +17606,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2601000002411861",
                       "title":  "樂樂小館",
                       "summary":  {
-                                      "CUSTOMER_ID":  "85160196",
-                                      "CUSTOMER_NAME":  "樂樂小館",
-                                      "APPLLTE_NO":  "A2601000002411861",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "餐點",
-                                      "REVENUE":  "3000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "樂樂小館",
+                                      "REVENUE":  "3000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "餐點",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "85160196",
+                                      "APPLLTE_NO":  "A2601000002411861"
                                   },
                       "modules":  [
 
@@ -17577,19 +17629,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2509000685403967",
                       "title":  "匹塔餐飲股份有限公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "84012536",
-                                      "CUSTOMER_NAME":  "匹塔餐飲股份有限公司",
-                                      "APPLLTE_NO":  "A2509000685403967",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "盒餐、外燴、便當",
-                                      "REVENUE":  "22800000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "匹塔餐飲股份有限公司",
+                                      "REVENUE":  "22800000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "盒餐、外燴、便當",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "84012536",
+                                      "APPLLTE_NO":  "A2509000685403967"
                                   },
                       "modules":  [
 
@@ -17600,19 +17652,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2501000052855621",
                       "title":  "六少爺企業有限公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "83711553",
-                                      "CUSTOMER_NAME":  "六少爺企業有限公司",
-                                      "APPLLTE_NO":  "A2501000052855621",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "海鮮烤肉餐飲",
-                                      "REVENUE":  "4000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "1000000",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "六少爺企業有限公司",
+                                      "REVENUE":  "4000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "海鮮烤肉餐飲",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "83711553",
+                                      "APPLLTE_NO":  "A2501000052855621"
                                   },
                       "modules":  [
 
@@ -17623,19 +17675,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2601000046055144",
                       "title":  "六少爺企業有限公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "83711553",
-                                      "CUSTOMER_NAME":  "六少爺企業有限公司",
-                                      "APPLLTE_NO":  "A2601000046055144",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "海鮮烤肉餐飲",
-                                      "REVENUE":  "4000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "1000000",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "六少爺企業有限公司",
+                                      "REVENUE":  "4000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "海鮮烤肉餐飲",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "83711553",
+                                      "APPLLTE_NO":  "A2601000046055144"
                                   },
                       "modules":  [
 
@@ -17646,19 +17698,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2501000015920005",
                       "title":  "來客鍋小吃店",
                       "summary":  {
-                                      "CUSTOMER_ID":  "82385361",
-                                      "CUSTOMER_NAME":  "來客鍋小吃店",
-                                      "APPLLTE_NO":  "A2501000015920005",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "小吃店、火鍋",
-                                      "REVENUE":  "3000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "5000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "來客鍋小吃店",
+                                      "REVENUE":  "3000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "小吃店、火鍋",
+                                      "AOA_AMOUNT_PRODUCT":  "5000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "82385361",
+                                      "APPLLTE_NO":  "A2501000015920005"
                                   },
                       "modules":  [
 
@@ -17669,19 +17721,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2604000238148525",
                       "title":  "馥行",
                       "summary":  {
-                                      "CUSTOMER_ID":  "81937871",
-                                      "CUSTOMER_NAME":  "馥行",
-                                      "APPLLTE_NO":  "A2604000238148525",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "各式手搖飲",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "500000",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "馥行",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "各式手搖飲",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "81937871",
+                                      "APPLLTE_NO":  "A2604000238148525"
                                   },
                       "modules":  [
 
@@ -17692,19 +17744,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2509000671706621",
                       "title":  "漢來美食股份有限公司(詳附件)",
                       "summary":  {
-                                      "CUSTOMER_ID":  "80352343",
-                                      "CUSTOMER_NAME":  "漢來美食股份有限公司(詳附件)",
-                                      "APPLLTE_NO":  "A2509000671706621",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "食品類",
-                                      "REVENUE":  "100000000",
-                                      "AOP_AMOUNT_PRODUCT":  "6000000",
-                                      "AOA_AMOUNT_PRODUCT":  "12000000",
                                       "APD_AMOUNT_PRODUCT":  "4000000",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "漢來美食股份有限公司(詳附件)",
+                                      "REVENUE":  "100000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "60000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "6000000",
+                                      "OBJECT_NAME":  "食品類",
+                                      "AOA_AMOUNT_PRODUCT":  "12000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "80352343",
+                                      "APPLLTE_NO":  "A2509000671706621"
                                   },
                       "modules":  [
 
@@ -17715,19 +17767,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2603000183853605",
                       "title":  "政江號",
                       "summary":  {
-                                      "CUSTOMER_ID":  "77851725",
-                                      "CUSTOMER_NAME":  "政江號",
-                                      "APPLLTE_NO":  "A2603000183853605",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "小吃店",
-                                      "REVENUE":  "1000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "政江號",
+                                      "REVENUE":  "1000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "小吃店",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "77851725",
+                                      "APPLLTE_NO":  "A2603000183853605"
                                   },
                       "modules":  [
 
@@ -17738,19 +17790,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2506000420384947",
                       "title":  "龍泉茶飲行",
                       "summary":  {
-                                      "CUSTOMER_ID":  "76401271",
-                                      "CUSTOMER_NAME":  "龍泉茶飲行",
-                                      "APPLLTE_NO":  "A2506000420384947",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "手搖飲",
-                                      "REVENUE":  "2000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "龍泉茶飲行",
+                                      "REVENUE":  "2000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "手搖飲",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "76401271",
+                                      "APPLLTE_NO":  "A2506000420384947"
                                   },
                       "modules":  [
 
@@ -17761,19 +17813,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2511000807490388",
                       "title":  "滿牛小吃館",
                       "summary":  {
-                                      "CUSTOMER_ID":  "72929533",
-                                      "CUSTOMER_NAME":  "滿牛小吃館",
-                                      "APPLLTE_NO":  "A2511000807490388",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "烤肉串、烤海鮮、烤蔬菜、飲料等餐飲",
-                                      "REVENUE":  "10000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "5000000",
                                       "APD_AMOUNT_PRODUCT":  "1000000",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "滿牛小吃館",
+                                      "REVENUE":  "10000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "12000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "烤肉串、烤海鮮、烤蔬菜、飲料等餐飲",
+                                      "AOA_AMOUNT_PRODUCT":  "5000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "72929533",
+                                      "APPLLTE_NO":  "A2511000807490388"
                                   },
                       "modules":  [
 
@@ -17784,19 +17836,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2506000395119922",
                       "title":  "食為大港式燒臘",
                       "summary":  {
-                                      "CUSTOMER_ID":  "72522014",
-                                      "CUSTOMER_NAME":  "食為大港式燒臘",
-                                      "APPLLTE_NO":  "A2506000395119922",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "餐飲",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "1000000",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "食為大港式燒臘",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "餐飲",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "72522014",
+                                      "APPLLTE_NO":  "A2506000395119922"
                                   },
                       "modules":  [
 
@@ -17807,19 +17859,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2512000925750626",
                       "title":  "強尼的甜點烘培工作室",
                       "summary":  {
-                                      "CUSTOMER_ID":  "61307983",
-                                      "CUSTOMER_NAME":  "強尼的甜點烘培工作室",
-                                      "APPLLTE_NO":  "A2512000925750626",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "各式蛋糕、麵包、糕點等",
-                                      "REVENUE":  "800000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "強尼的甜點烘培工作室",
+                                      "REVENUE":  "800000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "各式蛋糕、麵包、糕點等",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "61307983",
+                                      "APPLLTE_NO":  "A2512000925750626"
                                   },
                       "modules":  [
 
@@ -17830,19 +17882,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2601000002981807",
                       "title":  "淡海城小吃店",
                       "summary":  {
-                                      "CUSTOMER_ID":  "61221445",
-                                      "CUSTOMER_NAME":  "淡海城小吃店",
-                                      "APPLLTE_NO":  "A2601000002981807",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "盒餐、外燴、便當",
-                                      "REVENUE":  "4500000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "淡海城小吃店",
+                                      "REVENUE":  "4500000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2500",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "盒餐、外燴、便當",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "61221445",
+                                      "APPLLTE_NO":  "A2601000002981807"
                                   },
                       "modules":  [
 
@@ -17853,19 +17905,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2509000671144380",
                       "title":  "永豐商號",
                       "summary":  {
-                                      "CUSTOMER_ID":  "61084516",
-                                      "CUSTOMER_NAME":  "永豐商號",
-                                      "APPLLTE_NO":  "A2509000671144380",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "加工及非加工肉製品",
-                                      "REVENUE":  "400000",
-                                      "AOP_AMOUNT_PRODUCT":  "2000000",
-                                      "AOA_AMOUNT_PRODUCT":  "8000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "永豐商號",
+                                      "REVENUE":  "400000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "20000000",
                                       "DDCB_AMOUNT":  "2500",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "2000000",
+                                      "OBJECT_NAME":  "加工及非加工肉製品",
+                                      "AOA_AMOUNT_PRODUCT":  "8000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "61084516",
+                                      "APPLLTE_NO":  "A2509000671144380"
                                   },
                       "modules":  [
 
@@ -17876,19 +17928,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2509000649781168",
                       "title":  "饗羊餐飲有限公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "60799243",
-                                      "CUSTOMER_NAME":  "饗羊餐飲有限公司",
-                                      "APPLLTE_NO":  "A2509000649781168",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "饗羊餐飲有限公司販售之食品",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "饗羊餐飲有限公司",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "饗羊餐飲有限公司販售之食品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "60799243",
+                                      "APPLLTE_NO":  "A2509000649781168"
                                   },
                       "modules":  [
 
@@ -17899,19 +17951,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2606000365980421",
                       "title":  "華盈樓有限公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "60624770",
-                                      "CUSTOMER_NAME":  "華盈樓有限公司",
-                                      "APPLLTE_NO":  "A2606000365980421",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "肉類、海鮮、米飯、甜點...等製品、泡菜、佛跳牆、便當以及店內所提供之所有食品",
-                                      "REVENUE":  "500000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "2000000",
                                       "APD_AMOUNT_PRODUCT":  "1000000",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "華盈樓有限公司",
+                                      "REVENUE":  "500000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "5000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "肉類、海鮮、米飯、甜點...等製品、泡菜、佛跳牆、便當以及店內所提供之所有食品",
+                                      "AOA_AMOUNT_PRODUCT":  "2000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "60624770",
+                                      "APPLLTE_NO":  "A2606000365980421"
                                   },
                       "modules":  [
 
@@ -17922,19 +17974,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2505000310548823",
                       "title":  "歐都納股份有限公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "59112564",
-                                      "CUSTOMER_NAME":  "歐都納股份有限公司",
-                                      "APPLLTE_NO":  "A2505000310548823",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "餐飲",
-                                      "REVENUE":  "900000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "歐都納股份有限公司",
+                                      "REVENUE":  "900000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "餐飲",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "59112564",
+                                      "APPLLTE_NO":  "A2505000310548823"
                                   },
                       "modules":  [
 
@@ -17945,19 +17997,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2601000056814205",
                       "title":  "松豐實業股份有限公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "56622183",
-                                      "CUSTOMER_NAME":  "松豐實業股份有限公司",
-                                      "APPLLTE_NO":  "A2601000056814205",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "豆干、蝦餅、素肉干、花生、喉糖、香菇頭、地瓜片、甘栗仁、核桃、黃魚酥、白帶魚酥、牛肉乾、豬肉乾、海苔、魚酥、蓮子、黑豆、紅棗",
-                                      "REVENUE":  "3000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "5000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "松豐實業股份有限公司",
+                                      "REVENUE":  "3000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2500",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "豆干、蝦餅、素肉干、花生、喉糖、香菇頭、地瓜片、甘栗仁、核桃、黃魚酥、白帶魚酥、牛肉乾、豬肉乾、海苔、魚酥、蓮子、黑豆、紅棗",
+                                      "AOA_AMOUNT_PRODUCT":  "5000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "56622183",
+                                      "APPLLTE_NO":  "A2601000056814205"
                                   },
                       "modules":  [
 
@@ -17968,19 +18020,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2601000063111203",
                       "title":  "松豐實業股份有限公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "56622183",
-                                      "CUSTOMER_NAME":  "松豐實業股份有限公司",
-                                      "APPLLTE_NO":  "A2601000063111203",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "蜂蜜冰糖燉梨、豆干、蝦餅、素肉干、花生、喉糖、香菇頭、地瓜片、甘栗仁、核桃、黃魚酥、白帶魚酥、牛肉乾、豬肉乾、海苔、魚酥、蓮子、黑豆、紅棗",
-                                      "REVENUE":  "3000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "5000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "松豐實業股份有限公司",
+                                      "REVENUE":  "3000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2500",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "蜂蜜冰糖燉梨、豆干、蝦餅、素肉干、花生、喉糖、香菇頭、地瓜片、甘栗仁、核桃、黃魚酥、白帶魚酥、牛肉乾、豬肉乾、海苔、魚酥、蓮子、黑豆、紅棗",
+                                      "AOA_AMOUNT_PRODUCT":  "5000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "56622183",
+                                      "APPLLTE_NO":  "A2601000063111203"
                                   },
                       "modules":  [
 
@@ -17991,19 +18043,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2504000260401880",
                       "title":  "典華幸福資源整合股份有限公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "53524006",
-                                      "CUSTOMER_NAME":  "典華幸福資源整合股份有限公司",
-                                      "APPLLTE_NO":  "A2504000260401880",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "內銷-月餅、粽子、年菜、伴手禮、節慶禮盒、餐盒、經典名菜、外燴、婚禮小品等",
-                                      "REVENUE":  "6000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "5000000",
                                       "APD_AMOUNT_PRODUCT":  "1000000",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "典華幸福資源整合股份有限公司",
+                                      "REVENUE":  "6000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "12000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "內銷-月餅、粽子、年菜、伴手禮、節慶禮盒、餐盒、經典名菜、外燴、婚禮小品等",
+                                      "AOA_AMOUNT_PRODUCT":  "5000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "53524006",
+                                      "APPLLTE_NO":  "A2504000260401880"
                                   },
                       "modules":  [
 
@@ -18014,19 +18066,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2504000262876181",
                       "title":  "東翔生技股份有限公司、大黃蜂國際開發有限公司53184816",
                       "summary":  {
-                                      "CUSTOMER_ID":  "53093338",
-                                      "CUSTOMER_NAME":  "東翔生技股份有限公司、大黃蜂國際開發有限公司53184816",
-                                      "APPLLTE_NO":  "A2504000262876181",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "詳特別約定事項",
-                                      "REVENUE":  "10000000",
-                                      "AOP_AMOUNT_PRODUCT":  "2000000",
-                                      "AOA_AMOUNT_PRODUCT":  "8000000",
                                       "APD_AMOUNT_PRODUCT":  "2000000",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "東翔生技股份有限公司、大黃蜂國際開發有限公司53184816",
+                                      "REVENUE":  "10000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "20000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "2000000",
+                                      "OBJECT_NAME":  "詳特別約定事項",
+                                      "AOA_AMOUNT_PRODUCT":  "8000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "53093338",
+                                      "APPLLTE_NO":  "A2504000262876181"
                                   },
                       "modules":  [
 
@@ -18037,19 +18089,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2504000277278307",
                       "title":  "六善股份有限公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "50910454",
-                                      "CUSTOMER_NAME":  "六善股份有限公司",
-                                      "APPLLTE_NO":  "A2504000277278307",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "餐飲",
-                                      "REVENUE":  "18000000",
-                                      "AOP_AMOUNT_PRODUCT":  "2000000",
-                                      "AOA_AMOUNT_PRODUCT":  "8000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "六善股份有限公司",
+                                      "REVENUE":  "18000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "20000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "2000000",
+                                      "OBJECT_NAME":  "餐飲",
+                                      "AOA_AMOUNT_PRODUCT":  "8000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "50910454",
+                                      "APPLLTE_NO":  "A2504000277278307"
                                   },
                       "modules":  [
 
@@ -18060,19 +18112,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2604000266834506",
                       "title":  "灃瀅原生茶飲",
                       "summary":  {
-                                      "CUSTOMER_ID":  "47966382",
-                                      "CUSTOMER_NAME":  "灃瀅原生茶飲",
-                                      "APPLLTE_NO":  "A2604000266834506",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "手工飲料、茶飲點心原料批發",
-                                      "REVENUE":  "6000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "灃瀅原生茶飲",
+                                      "REVENUE":  "6000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2500",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "手工飲料、茶飲點心原料批發",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "47966382",
+                                      "APPLLTE_NO":  "A2604000266834506"
                                   },
                       "modules":  [
 
@@ -18083,19 +18135,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2503000223554629",
                       "title":  "盛榮天福爾摩莎商貿有限公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "42645931",
-                                      "CUSTOMER_NAME":  "盛榮天福爾摩莎商貿有限公司",
-                                      "APPLLTE_NO":  "A2503000223554629",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "進口礦泉水",
-                                      "REVENUE":  "12000000",
-                                      "AOP_AMOUNT_PRODUCT":  "3000000",
-                                      "AOA_AMOUNT_PRODUCT":  "15000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "盛榮天福爾摩莎商貿有限公司",
+                                      "REVENUE":  "12000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "30000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "3000000",
+                                      "OBJECT_NAME":  "進口礦泉水",
+                                      "AOA_AMOUNT_PRODUCT":  "15000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "42645931",
+                                      "APPLLTE_NO":  "A2503000223554629"
                                   },
                       "modules":  [
 
@@ -18106,19 +18158,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2605000326930545",
                       "title":  "昱傑商行",
                       "summary":  {
-                                      "CUSTOMER_ID":  "40886666",
-                                      "CUSTOMER_NAME":  "昱傑商行",
-                                      "APPLLTE_NO":  "A2605000326930545",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "衛生冰塊",
-                                      "REVENUE":  "3000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "昱傑商行",
+                                      "REVENUE":  "3000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "衛生冰塊",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "40886666",
+                                      "APPLLTE_NO":  "A2605000326930545"
                                   },
                       "modules":  [
 
@@ -18129,19 +18181,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2505000360821721",
                       "title":  "豐川企業社",
                       "summary":  {
-                                      "CUSTOMER_ID":  "39860029",
-                                      "CUSTOMER_NAME":  "豐川企業社",
-                                      "APPLLTE_NO":  "A2505000360821721",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "蔬果.畜肉",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "5000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "豐川企業社",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "蔬果.畜肉",
+                                      "AOA_AMOUNT_PRODUCT":  "5000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "39860029",
+                                      "APPLLTE_NO":  "A2505000360821721"
                                   },
                       "modules":  [
 
@@ -18152,19 +18204,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2605000320715023",
                       "title":  "風侑人文咖啡館",
                       "summary":  {
-                                      "CUSTOMER_ID":  "39803098",
-                                      "CUSTOMER_NAME":  "風侑人文咖啡館",
-                                      "APPLLTE_NO":  "A2605000320715023",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "餐飲",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "1000000",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "風侑人文咖啡館",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "餐飲",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "39803098",
+                                      "APPLLTE_NO":  "A2605000320715023"
                                   },
                       "modules":  [
 
@@ -18175,19 +18227,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2508000591466129",
                       "title":  "香傳養生素食飯糰",
                       "summary":  {
-                                      "CUSTOMER_ID":  "31738623",
-                                      "CUSTOMER_NAME":  "香傳養生素食飯糰",
-                                      "APPLLTE_NO":  "A2508000591466129",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "飯糰、飲品",
-                                      "REVENUE":  "1000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "香傳養生素食飯糰",
+                                      "REVENUE":  "1000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "飯糰、飲品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "31738623",
+                                      "APPLLTE_NO":  "A2508000591466129"
                                   },
                       "modules":  [
 
@@ -18198,19 +18250,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2503000217076429",
                       "title":  "火車頭小吃店",
                       "summary":  {
-                                      "CUSTOMER_ID":  "31448639",
-                                      "CUSTOMER_NAME":  "火車頭小吃店",
-                                      "APPLLTE_NO":  "A2503000217076429",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "全系列餐飲",
-                                      "REVENUE":  "4500000",
-                                      "AOP_AMOUNT_PRODUCT":  "3000000",
-                                      "AOA_AMOUNT_PRODUCT":  "12000000",
                                       "APD_AMOUNT_PRODUCT":  "3000000",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "火車頭小吃店",
+                                      "REVENUE":  "4500000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "30000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "3000000",
+                                      "OBJECT_NAME":  "全系列餐飲",
+                                      "AOA_AMOUNT_PRODUCT":  "12000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "31448639",
+                                      "APPLLTE_NO":  "A2503000217076429"
                                   },
                       "modules":  [
 
@@ -18221,19 +18273,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2504000273772346",
                       "title":  "長安小吃店",
                       "summary":  {
-                                      "CUSTOMER_ID":  "31412323",
-                                      "CUSTOMER_NAME":  "長安小吃店",
-                                      "APPLLTE_NO":  "A2504000273772346",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "各式料理、快炒、小吃、湯品、小菜",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "長安小吃店",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "各式料理、快炒、小吃、湯品、小菜",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "31412323",
+                                      "APPLLTE_NO":  "A2504000273772346"
                                   },
                       "modules":  [
 
@@ -18244,19 +18296,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2511000848591745",
                       "title":  "威斯登食品有限公司等五家詳備註",
                       "summary":  {
-                                      "CUSTOMER_ID":  "29171740",
-                                      "CUSTOMER_NAME":  "威斯登食品有限公司等五家詳備註",
-                                      "APPLLTE_NO":  "A2511000848591745",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "西點麵包、冷凍食品",
-                                      "REVENUE":  "300000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "5000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "威斯登食品有限公司等五家詳備註",
+                                      "REVENUE":  "300000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "西點麵包、冷凍食品",
+                                      "AOA_AMOUNT_PRODUCT":  "5000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "29171740",
+                                      "APPLLTE_NO":  "A2511000848591745"
                                   },
                       "modules":  [
 
@@ -18267,19 +18319,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2508000592411401",
                       "title":  "香味股份有限公司 ",
                       "summary":  {
-                                      "CUSTOMER_ID":  "28210689",
-                                      "CUSTOMER_NAME":  "香味股份有限公司 ",
-                                      "APPLLTE_NO":  "A2508000592411401",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "經香味股份有限公司所販售與製造之全產品(酒類除外)",
-                                      "REVENUE":  "120000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "5000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "香味股份有限公司 ",
+                                      "REVENUE":  "120000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "經香味股份有限公司所販售與製造之全產品(酒類除外)",
+                                      "AOA_AMOUNT_PRODUCT":  "5000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "28210689",
+                                      "APPLLTE_NO":  "A2508000592411401"
                                   },
                       "modules":  [
 
@@ -18290,19 +18342,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2507000478776069",
                       "title":  "雅嵐股份有限公司加盟店-新竹食品店",
                       "summary":  {
-                                      "CUSTOMER_ID":  "28063574",
-                                      "CUSTOMER_NAME":  "雅嵐股份有限公司加盟店-新竹食品店",
-                                      "APPLLTE_NO":  "A2507000478776069",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "手搖冷飲",
-                                      "REVENUE":  "336000000",
-                                      "AOP_AMOUNT_PRODUCT":  "20000000",
-                                      "AOA_AMOUNT_PRODUCT":  "20000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "雅嵐股份有限公司加盟店-新竹食品店",
+                                      "REVENUE":  "336000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "50000000",
                                       "DDCB_AMOUNT":  "2500",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "20000000",
+                                      "OBJECT_NAME":  "手搖冷飲",
+                                      "AOA_AMOUNT_PRODUCT":  "20000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "28063574",
+                                      "APPLLTE_NO":  "A2507000478776069"
                                   },
                       "modules":  [
 
@@ -18313,19 +18365,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2507000480870247",
                       "title":  "雅嵐股份有限公司加盟店-新竹食品店",
                       "summary":  {
-                                      "CUSTOMER_ID":  "28063574",
-                                      "CUSTOMER_NAME":  "雅嵐股份有限公司加盟店-新竹食品店",
-                                      "APPLLTE_NO":  "A2507000480870247",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "手搖冷飲",
-                                      "REVENUE":  "336000000",
-                                      "AOP_AMOUNT_PRODUCT":  "2000000",
-                                      "AOA_AMOUNT_PRODUCT":  "20000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "雅嵐股份有限公司加盟店-新竹食品店",
+                                      "REVENUE":  "336000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "50000000",
                                       "DDCB_AMOUNT":  "2500",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "2000000",
+                                      "OBJECT_NAME":  "手搖冷飲",
+                                      "AOA_AMOUNT_PRODUCT":  "20000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "28063574",
+                                      "APPLLTE_NO":  "A2507000480870247"
                                   },
                       "modules":  [
 
@@ -18336,19 +18388,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2503000230220043",
                       "title":  "德意生物科技股份有限公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "27862304",
-                                      "CUSTOMER_NAME":  "德意生物科技股份有限公司",
-                                      "APPLLTE_NO":  "A2503000230220043",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "啤酒、麥汁、釀造酒、氣泡水",
-                                      "REVENUE":  "4000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "德意生物科技股份有限公司",
+                                      "REVENUE":  "4000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "啤酒、麥汁、釀造酒、氣泡水",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "27862304",
+                                      "APPLLTE_NO":  "A2503000230220043"
                                   },
                       "modules":  [
 
@@ -18359,19 +18411,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2504000239922547",
                       "title":  "德意生物科技股份有限公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "27862304",
-                                      "CUSTOMER_NAME":  "德意生物科技股份有限公司",
-                                      "APPLLTE_NO":  "A2504000239922547",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "啤酒、麥汁、釀造酒、氣泡水、蒸餾酒、再製酒",
-                                      "REVENUE":  "4000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "德意生物科技股份有限公司",
+                                      "REVENUE":  "4000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "啤酒、麥汁、釀造酒、氣泡水、蒸餾酒、再製酒",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "27862304",
+                                      "APPLLTE_NO":  "A2504000239922547"
                                   },
                       "modules":  [
 
@@ -18382,19 +18434,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2601000058057521",
                       "title":  "美食達人股份有限公司、美味達人股份有限公司及其加盟店直營店",
                       "summary":  {
-                                      "CUSTOMER_ID":  "27617149",
-                                      "CUSTOMER_NAME":  "美食達人股份有限公司、美味達人股份有限公司及其加盟店直營店",
-                                      "APPLLTE_NO":  "A2601000058057521",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "85度C咖啡蛋糕烘焙、超級市場、餐館業",
-                                      "REVENUE":  "5000000000",
-                                      "AOP_AMOUNT_PRODUCT":  "5000000",
-                                      "AOA_AMOUNT_PRODUCT":  "100000000",
                                       "APD_AMOUNT_PRODUCT":  "50000000",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "美食達人股份有限公司、美味達人股份有限公司及其加盟店直營店",
+                                      "REVENUE":  "5000000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "200000000",
                                       "DDCB_AMOUNT":  "0",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "5000000",
+                                      "OBJECT_NAME":  "85度C咖啡蛋糕烘焙、超級市場、餐館業",
+                                      "AOA_AMOUNT_PRODUCT":  "100000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "27617149",
+                                      "APPLLTE_NO":  "A2601000058057521"
                                   },
                       "modules":  [
 
@@ -18405,19 +18457,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2501000053601047",
                       "title":  "溪仔平行",
                       "summary":  {
-                                      "CUSTOMER_ID":  "26932345",
-                                      "CUSTOMER_NAME":  "溪仔平行",
-                                      "APPLLTE_NO":  "A2501000053601047",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "各項冷凍食品",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "2000000",
-                                      "AOA_AMOUNT_PRODUCT":  "20000000",
                                       "APD_AMOUNT_PRODUCT":  "2000000",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "溪仔平行",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "40000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "2000000",
+                                      "OBJECT_NAME":  "各項冷凍食品",
+                                      "AOA_AMOUNT_PRODUCT":  "20000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "26932345",
+                                      "APPLLTE_NO":  "A2501000053601047"
                                   },
                       "modules":  [
 
@@ -18428,19 +18480,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2602000106553527",
                       "title":  "幸福式咖啡",
                       "summary":  {
-                                      "CUSTOMER_ID":  "26770453",
-                                      "CUSTOMER_NAME":  "幸福式咖啡",
-                                      "APPLLTE_NO":  "A2602000106553527",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "咖啡豆、咖啡器具、手沖咖啡",
-                                      "REVENUE":  "70",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "1000000",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "幸福式咖啡",
+                                      "REVENUE":  "70",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "咖啡豆、咖啡器具、手沖咖啡",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "26770453",
+                                      "APPLLTE_NO":  "A2602000106553527"
                                   },
                       "modules":  [
 
@@ -18451,19 +18503,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2503000203849804",
                       "title":  "鼎天餐飲店",
                       "summary":  {
-                                      "CUSTOMER_ID":  "26756261",
-                                      "CUSTOMER_NAME":  "鼎天餐飲店",
-                                      "APPLLTE_NO":  "A2503000203849804",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "火鍋店食品",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "鼎天餐飲店",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "火鍋店食品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "26756261",
+                                      "APPLLTE_NO":  "A2503000203849804"
                                   },
                       "modules":  [
 
@@ -18474,19 +18526,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2503000203842964",
                       "title":  "大醬餐飲店",
                       "summary":  {
-                                      "CUSTOMER_ID":  "26546651",
-                                      "CUSTOMER_NAME":  "大醬餐飲店",
-                                      "APPLLTE_NO":  "A2503000203842964",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "火鍋店食品",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "大醬餐飲店",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "火鍋店食品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "26546651",
+                                      "APPLLTE_NO":  "A2503000203842964"
                                   },
                       "modules":  [
 
@@ -18497,19 +18549,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2503000203966129",
                       "title":  "錢儀小吃店",
                       "summary":  {
-                                      "CUSTOMER_ID":  "26516278",
-                                      "CUSTOMER_NAME":  "錢儀小吃店",
-                                      "APPLLTE_NO":  "A2503000203966129",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "火鍋店食品",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "錢儀小吃店",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "火鍋店食品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "26516278",
+                                      "APPLLTE_NO":  "A2503000203966129"
                                   },
                       "modules":  [
 
@@ -18520,19 +18572,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2503000203790124",
                       "title":  "錢樂餐飲店",
                       "summary":  {
-                                      "CUSTOMER_ID":  "26514686",
-                                      "CUSTOMER_NAME":  "錢樂餐飲店",
-                                      "APPLLTE_NO":  "A2503000203790124",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "火鍋店食品",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "錢樂餐飲店",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "火鍋店食品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "26514686",
+                                      "APPLLTE_NO":  "A2503000203790124"
                                   },
                       "modules":  [
 
@@ -18543,19 +18595,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2602000123760481",
                       "title":  "艾美小吃店",
                       "summary":  {
-                                      "CUSTOMER_ID":  "26353838",
-                                      "CUSTOMER_NAME":  "艾美小吃店",
-                                      "APPLLTE_NO":  "A2602000123760481",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "各式大餛飩湯及大餛飩麵系列，三絲湯，榨菜肉絲麵，乾拌麵，麻醬麵，炸醬麵，溫州涼麵，香辣老虎麵，各式紅油抄手及抄手麵系列，各式小菜，老虎醬，胡椒粉及各式調味品及醬料等。",
-                                      "REVENUE":  "1800000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "艾美小吃店",
+                                      "REVENUE":  "1800000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "各式大餛飩湯及大餛飩麵系列，三絲湯，榨菜肉絲麵，乾拌麵，麻醬麵，炸醬麵，溫州涼麵，香辣老虎麵，各式紅油抄手及抄手麵系列，各式小菜，老虎醬，胡椒粉及各式調味品及醬料等。",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "26353838",
+                                      "APPLLTE_NO":  "A2602000123760481"
                                   },
                       "modules":  [
 
@@ -18566,19 +18618,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2505000355270600",
                       "title":  "冠富資產管理股份有限公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "24315347",
-                                      "CUSTOMER_NAME":  "冠富資產管理股份有限公司",
-                                      "APPLLTE_NO":  "A2505000355270600",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "咖啡 蛋糕 簡餐等食品全品項",
-                                      "REVENUE":  "6400000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "冠富資產管理股份有限公司",
+                                      "REVENUE":  "6400000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "咖啡 蛋糕 簡餐等食品全品項",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "24315347",
+                                      "APPLLTE_NO":  "A2505000355270600"
                                   },
                       "modules":  [
 
@@ -18589,19 +18641,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2511000814959465",
                       "title":  "金禾麥食品股份有限公司、好市多股份有限公司、宜家家居股份有限公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "16978089",
-                                      "CUSTOMER_NAME":  "金禾麥食品股份有限公司、好市多股份有限公司、宜家家居股份有限公司",
-                                      "APPLLTE_NO":  "A2511000814959465",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "糕餅、麵包",
-                                      "REVENUE":  "35000000",
-                                      "AOP_AMOUNT_PRODUCT":  "50000000",
-                                      "AOA_AMOUNT_PRODUCT":  "50000000",
                                       "APD_AMOUNT_PRODUCT":  "50000000",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "金禾麥食品股份有限公司、好市多股份有限公司、宜家家居股份有限公司",
+                                      "REVENUE":  "35000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "50000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "50000000",
+                                      "OBJECT_NAME":  "糕餅、麵包",
+                                      "AOA_AMOUNT_PRODUCT":  "50000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "16978089",
+                                      "APPLLTE_NO":  "A2511000814959465"
                                   },
                       "modules":  [
 
@@ -18612,19 +18664,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2511000825050302",
                       "title":  "金禾麥食品股份有限公司、好市多股份有限公司、宜家家居股份有限公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "16978089",
-                                      "CUSTOMER_NAME":  "金禾麥食品股份有限公司、好市多股份有限公司、宜家家居股份有限公司",
-                                      "APPLLTE_NO":  "A2511000825050302",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "糕餅、麵包",
-                                      "REVENUE":  "35000000",
-                                      "AOP_AMOUNT_PRODUCT":  "50000000",
-                                      "AOA_AMOUNT_PRODUCT":  "50000000",
                                       "APD_AMOUNT_PRODUCT":  "50000000",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "金禾麥食品股份有限公司、好市多股份有限公司、宜家家居股份有限公司",
+                                      "REVENUE":  "35000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "50000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "50000000",
+                                      "OBJECT_NAME":  "糕餅、麵包",
+                                      "AOA_AMOUNT_PRODUCT":  "50000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "16978089",
+                                      "APPLLTE_NO":  "A2511000825050302"
                                   },
                       "modules":  [
 
@@ -18635,19 +18687,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2511000801842248",
                       "title":  "住都飯店股份有限公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "16647292",
-                                      "CUSTOMER_NAME":  "住都飯店股份有限公司",
-                                      "APPLLTE_NO":  "A2511000801842248",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "外燴、便當、年菜、各式自助餐BUFFET、外帶食品、各式餐點",
-                                      "REVENUE":  "120000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "住都飯店股份有限公司",
+                                      "REVENUE":  "120000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "25000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "外燴、便當、年菜、各式自助餐BUFFET、外帶食品、各式餐點",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "16647292",
+                                      "APPLLTE_NO":  "A2511000801842248"
                                   },
                       "modules":  [
 
@@ -18658,19 +18710,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2508000634153366",
                       "title":  "金御園食品實業股份有限公司、好市多股份有限公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "13019875",
-                                      "CUSTOMER_NAME":  "金御園食品實業股份有限公司、好市多股份有限公司",
-                                      "APPLLTE_NO":  "A2508000634153366",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "麵粉加工食品",
-                                      "REVENUE":  "30000000",
-                                      "AOP_AMOUNT_PRODUCT":  "33700000",
-                                      "AOA_AMOUNT_PRODUCT":  "33700000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "金御園食品實業股份有限公司、好市多股份有限公司",
+                                      "REVENUE":  "30000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "33700000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "33700000",
+                                      "OBJECT_NAME":  "麵粉加工食品",
+                                      "AOA_AMOUNT_PRODUCT":  "33700000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "13019875",
+                                      "APPLLTE_NO":  "A2508000634153366"
                                   },
                       "modules":  [
 
@@ -18681,19 +18733,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2602000108529128",
                       "title":  "桃園市楊梅志願服務協會",
                       "summary":  {
-                                      "CUSTOMER_ID":  "09968826",
-                                      "CUSTOMER_NAME":  "桃園市楊梅志願服務協會",
-                                      "APPLLTE_NO":  "A2602000108529128",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "盒餐、外燴、便當",
-                                      "REVENUE":  "100000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "桃園市楊梅志願服務協會",
+                                      "REVENUE":  "100000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "盒餐、外燴、便當",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "09968826",
+                                      "APPLLTE_NO":  "A2602000108529128"
                                   },
                       "modules":  [
 
@@ -18704,19 +18756,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2503000184863404",
                       "title":  "大家火鍋店",
                       "summary":  {
-                                      "CUSTOMER_ID":  "06993456",
-                                      "CUSTOMER_NAME":  "大家火鍋店",
-                                      "APPLLTE_NO":  "A2503000184863404",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "鍋物",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "大家火鍋店",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "鍋物",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "06993456",
+                                      "APPLLTE_NO":  "A2503000184863404"
                                   },
                       "modules":  [
 
@@ -18727,19 +18779,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2509000669032383",
                       "title":  "白日夢製所甜點工作室",
                       "summary":  {
-                                      "CUSTOMER_ID":  "00890083",
-                                      "CUSTOMER_NAME":  "白日夢製所甜點工作室",
-                                      "APPLLTE_NO":  "A2509000669032383",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "各式生乳捲、泡芙、煎餅、蛋塔、咖啡、茶、甜點等烘焙點心",
-                                      "REVENUE":  "240000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "白日夢製所甜點工作室",
+                                      "REVENUE":  "240000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "各式生乳捲、泡芙、煎餅、蛋塔、咖啡、茶、甜點等烘焙點心",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "00890083",
+                                      "APPLLTE_NO":  "A2509000669032383"
                                   },
                       "modules":  [
 
@@ -18750,19 +18802,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2605000344449247",
                       "title":  "高高點心坊",
                       "summary":  {
-                                      "CUSTOMER_ID":  "00848950",
-                                      "CUSTOMER_NAME":  "高高點心坊",
-                                      "APPLLTE_NO":  "A2605000344449247",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "高高點心坊全系列食品",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "2000000",
-                                      "AOA_AMOUNT_PRODUCT":  "10000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "高高點心坊",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "20000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "2000000",
+                                      "OBJECT_NAME":  "高高點心坊全系列食品",
+                                      "AOA_AMOUNT_PRODUCT":  "10000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "00848950",
+                                      "APPLLTE_NO":  "A2605000344449247"
                                   },
                       "modules":  [
 
@@ -18773,19 +18825,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2507000492922484",
                       "title":  "金玉良研台灣小吃",
                       "summary":  {
-                                      "CUSTOMER_ID":  "00846046",
-                                      "CUSTOMER_NAME":  "金玉良研台灣小吃",
-                                      "APPLLTE_NO":  "A2507000492922484",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "各式台灣小吃系列  各式餐點   飲料",
-                                      "REVENUE":  "2000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "金玉良研台灣小吃",
+                                      "REVENUE":  "2000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "各式台灣小吃系列  各式餐點   飲料",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "00846046",
+                                      "APPLLTE_NO":  "A2507000492922484"
                                   },
                       "modules":  [
 
@@ -18796,19 +18848,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2504000303566284",
                       "title":  "咚咚海鮮鍋燒",
                       "summary":  {
-                                      "CUSTOMER_ID":  "00843189",
-                                      "CUSTOMER_NAME":  "咚咚海鮮鍋燒",
-                                      "APPLLTE_NO":  "A2504000303566284",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "咚咚海鮮鍋燒製作之食品",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "咚咚海鮮鍋燒",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "咚咚海鮮鍋燒製作之食品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "00843189",
+                                      "APPLLTE_NO":  "A2504000303566284"
                                   },
                       "modules":  [
 
@@ -18819,19 +18871,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2602000077599164",
                       "title":  "瑑多多冰室",
                       "summary":  {
-                                      "CUSTOMER_ID":  "00833106",
-                                      "CUSTOMER_NAME":  "瑑多多冰室",
-                                      "APPLLTE_NO":  "A2602000077599164",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "瑑多多冰室冰室全系列食品",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "瑑多多冰室",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "瑑多多冰室冰室全系列食品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "00833106",
+                                      "APPLLTE_NO":  "A2602000077599164"
                                   },
                       "modules":  [
 
@@ -18842,19 +18894,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2501000040600581",
                       "title":  "吉鑽企業社",
                       "summary":  {
-                                      "CUSTOMER_ID":  "00823120",
-                                      "CUSTOMER_NAME":  "吉鑽企業社",
-                                      "APPLLTE_NO":  "A2501000040600581",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "中西式宵夜、點心",
-                                      "REVENUE":  "3600000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "吉鑽企業社",
+                                      "REVENUE":  "3600000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2500",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "中西式宵夜、點心",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "00823120",
+                                      "APPLLTE_NO":  "A2501000040600581"
                                   },
                       "modules":  [
 
@@ -18865,19 +18917,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2511000850675606",
                       "title":  "眾聲服飾股份有限公司中山門市",
                       "summary":  {
-                                      "CUSTOMER_ID":  "00649636",
-                                      "CUSTOMER_NAME":  "眾聲服飾股份有限公司中山門市",
-                                      "APPLLTE_NO":  "A2511000850675606",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "咖啡類、冰品類相關產品",
-                                      "REVENUE":  "4800000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "眾聲服飾股份有限公司中山門市",
+                                      "REVENUE":  "4800000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "咖啡類、冰品類相關產品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "00649636",
+                                      "APPLLTE_NO":  "A2511000850675606"
                                   },
                       "modules":  [
 
@@ -18888,19 +18940,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2505000334012948",
                       "title":  "鴻錦餐飲股份有限公司台北長春店",
                       "summary":  {
-                                      "CUSTOMER_ID":  "00584697",
-                                      "CUSTOMER_NAME":  "鴻錦餐飲股份有限公司台北長春店",
-                                      "APPLLTE_NO":  "A2505000334012948",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "麻辣燙、火鍋、店內食品",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "鴻錦餐飲股份有限公司台北長春店",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "麻辣燙、火鍋、店內食品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "00584697",
+                                      "APPLLTE_NO":  "A2505000334012948"
                                   },
                       "modules":  [
 
@@ -18911,19 +18963,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2506000436079664",
                       "title":  "回憶小時候台南德東店",
                       "summary":  {
-                                      "CUSTOMER_ID":  "00455531",
-                                      "CUSTOMER_NAME":  "回憶小時候台南德東店",
-                                      "APPLLTE_NO":  "A2506000436079664",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "回憶小時侯台南東德店生產眅售食品",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "回憶小時候台南德東店",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "回憶小時侯台南東德店生產眅售食品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "00455531",
+                                      "APPLLTE_NO":  "A2506000436079664"
                                   },
                       "modules":  [
 
@@ -18934,19 +18986,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2606000969872083",
                       "title":  "鄭家森山牛肉湯",
                       "summary":  {
-                                      "CUSTOMER_ID":  "00404392",
-                                      "CUSTOMER_NAME":  "鄭家森山牛肉湯",
-                                      "APPLLTE_NO":  "A2606000969872083",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "牛肉湯、各式牛肉料理、盒餐、外燴、便當、冷熱飲、點心、小吃",
-                                      "REVENUE":  "5000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "1000000",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "鄭家森山牛肉湯",
+                                      "REVENUE":  "5000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "牛肉湯、各式牛肉料理、盒餐、外燴、便當、冷熱飲、點心、小吃",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "00404392",
+                                      "APPLLTE_NO":  "A2606000969872083"
                                   },
                       "modules":  [
 
@@ -18957,19 +19009,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2509000706465701",
                       "title":  "明圓羊肉店",
                       "summary":  {
-                                      "CUSTOMER_ID":  "00389266",
-                                      "CUSTOMER_NAME":  "明圓羊肉店",
-                                      "APPLLTE_NO":  "A2509000706465701",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "明圓羊肉店所販售之食品",
-                                      "REVENUE":  "1200000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "明圓羊肉店",
+                                      "REVENUE":  "1200000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "明圓羊肉店所販售之食品",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "00389266",
+                                      "APPLLTE_NO":  "A2509000706465701"
                                   },
                       "modules":  [
 
@@ -18980,19 +19032,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2511000822223626",
                       "title":  "好米飯包",
                       "summary":  {
-                                      "CUSTOMER_ID":  "00339695",
-                                      "CUSTOMER_NAME":  "好米飯包",
-                                      "APPLLTE_NO":  "A2511000822223626",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "便當、自助餐店",
-                                      "REVENUE":  "1000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  null,
+                                      "CUSTOMER_NAME":  "好米飯包",
+                                      "REVENUE":  "1000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2500",
-                                      "DDCB_RATIO":  ""
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "便當、自助餐店",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "00339695",
+                                      "APPLLTE_NO":  "A2511000822223626"
                                   },
                       "modules":  [
 
@@ -19003,19 +19055,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2504000260288962",
                       "title":  "凱芯行銷育樂企業社",
                       "summary":  {
-                                      "CUSTOMER_ID":  "00305323",
-                                      "CUSTOMER_NAME":  "凱芯行銷育樂企業社",
-                                      "APPLLTE_NO":  "A2504000260288962",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "冰淇淋等相關食品",
-                                      "REVENUE":  "2000000",
-                                      "AOP_AMOUNT_PRODUCT":  "3000000",
-                                      "AOA_AMOUNT_PRODUCT":  "12000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "凱芯行銷育樂企業社",
+                                      "REVENUE":  "2000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "30000000",
                                       "DDCB_AMOUNT":  "5000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "3000000",
+                                      "OBJECT_NAME":  "冰淇淋等相關食品",
+                                      "AOA_AMOUNT_PRODUCT":  "12000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "00305323",
+                                      "APPLLTE_NO":  "A2504000260288962"
                                   },
                       "modules":  [
 
@@ -19026,19 +19078,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2504000288187904",
                       "title":  "餓吧餓吧早午餐",
                       "summary":  {
-                                      "CUSTOMER_ID":  "00269993",
-                                      "CUSTOMER_NAME":  "餓吧餓吧早午餐",
-                                      "APPLLTE_NO":  "A2504000288187904",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "餓吧餓吧早午餐所販售之餐飲",
-                                      "REVENUE":  "2000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "餓吧餓吧早午餐",
+                                      "REVENUE":  "2000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2500",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "餓吧餓吧早午餐所販售之餐飲",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "00269993",
+                                      "APPLLTE_NO":  "A2504000288187904"
                                   },
                       "modules":  [
 
@@ -19049,19 +19101,19 @@ window.validationReviewData = {
                       "appllteNo":  "A2510000776745408",
                       "title":  "一點心股份有限公司",
                       "summary":  {
-                                      "CUSTOMER_ID":  "00058532",
-                                      "CUSTOMER_NAME":  "一點心股份有限公司",
-                                      "APPLLTE_NO":  "A2510000776745408",
-                                      "PRODUCT_POLICY_CODE":  "NL01008",
-                                      "IDNTFCTN_TYPE":  "4",
-                                      "OBJECT_NAME":  "港式茶點",
-                                      "REVENUE":  "1000000",
-                                      "AOP_AMOUNT_PRODUCT":  "1000000",
-                                      "AOA_AMOUNT_PRODUCT":  "4000000",
                                       "APD_AMOUNT_PRODUCT":  "0",
+                                      "DDCB_RATIO":  "0",
+                                      "CUSTOMER_NAME":  "一點心股份有限公司",
+                                      "REVENUE":  "1000000",
+                                      "IDNTFCTN_TYPE":  "4",
                                       "AGG_AMOUNT_PRODUCT":  "10000000",
                                       "DDCB_AMOUNT":  "2000",
-                                      "DDCB_RATIO":  "0"
+                                      "AOP_AMOUNT_PRODUCT":  "1000000",
+                                      "OBJECT_NAME":  "港式茶點",
+                                      "AOA_AMOUNT_PRODUCT":  "4000000",
+                                      "PRODUCT_POLICY_CODE":  "NL01008",
+                                      "CUSTOMER_ID":  "00058532",
+                                      "APPLLTE_NO":  "A2510000776745408"
                                   },
                       "modules":  [
 
