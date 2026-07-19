@@ -1,5 +1,5 @@
 window.validationReviewData = {
-    "generatedAt":  "2026-07-19 15:36:36",
+    "generatedAt":  "2026-07-19 15:50:04",
     "sourceFile":  "驗測資料.xlsx",
     "sourceSheet":  "input / 各模組資料",
     "header":  [
@@ -13592,7 +13592,51 @@ window.validationReviewData = {
                                       "DDCB_RATIO":  "0"
                                   },
                       "modules":  [
-
+                                      {
+                                          "name":  "標的",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-13",
+                                          "tokens":  {
+                                                         "input":  13758,
+                                                         "output":  993,
+                                                         "total":  14751
+                                                     },
+                                          "SCORE":  4.1,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  13758,
+                                          "TOTAL_TOKENS":  14751,
+                                          "OUTPUT_TOKENS":  993,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "常溫加工食品可能因保存不當致細菌滋生、加熱不足或接觸生食或不潔器具導致食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  4.1,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "常溫加工食品":  {
+                                                                                           "RISK_DESC":  "保存不當、加熱不足或接觸不潔器具致菌生",
+                                                                                           "RISK_SUGGESTION":  "低風險"
+                                                                                       }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "中度"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "顯著"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "未見婚宴、團膳、Buffet或大型同步供餐資訊，故大型供餐型為有限。公開資訊顯示有食品工廠、批發零售、量販通路、電商及辛香料代工代銷，且與多個餐飲品牌合作，多通路/供應型顯著。產品多為常溫調理包、火鍋湯底等短中期食用食品，保存期可達1至2年，故持續使用型為中度。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "申報預估年營業額3億元，相對於資本額6,500萬元、兩處生產中食品工廠、約95名員工及食品製造批發零售模式，具一定規模基礎。公開資訊顯示其有自有品牌、量販通路銷售、電商元素、B2B餐飲品牌商品化及辛香料代工代銷等市場接觸方式，足以支持較高營收規模。雖未查得公開財報或實際銷售金額，但以其製造商兼品牌/代工/通路供應商型態，該營業額大致可解釋。"
+                                      }
                                   ]
                   },
                   {
