@@ -1,5 +1,5 @@
 window.validationReviewData = {
-    "generatedAt":  "2026-07-19 16:13:46",
+    "generatedAt":  "2026-07-20 09:14:12",
     "sourceFile":  "驗測資料.xlsx",
     "sourceSheet":  "input / 各模組資料",
     "header":  [
@@ -1098,6 +1098,96 @@ window.validationReviewData = {
                                                                 "url":  "https://cinc5200.pixnet.net/blog/posts/12199782403"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "標的",
+                                          "version":  "小量v2_gpt5.5",
+                                          "deliveryDate":  "2026-07-17",
+                                          "tokens":  {
+                                                         "input":  11610,
+                                                         "output":  570,
+                                                         "total":  12180
+                                                     },
+                                          "SCORE":  7.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  11610,
+                                          "TOTAL_TOKENS":  12180,
+                                          "OUTPUT_TOKENS":  570,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "糕餅果乾可能因保存不當致細菌滋生、加熱不足或接觸生食及不潔器具導致食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  7.0,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "糕餅果乾":  {
+                                                                                         "RISK_DESC":  "保存不當或接觸不潔器具致菌滋生。",
+                                                                                         "RISK_SUGGESTION":  "低風險"
+                                                                                     }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "有限"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "目前資訊指向單一實體小吃店的現食餐飲供應，未見團膳、宴席、大型活動供餐、中央廚房、批發、宅配或多通路銷售等放大機制。餐點屬即時或短期消費，通常不形成跨年度市場存量，事故影響範圍主要受限於單店、單批次接觸者。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "偏低且需確認",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "本案產品年度預估銷售額為新臺幣100,000元，約等於單店小吃業每月8,000多元，明顯低於一般持續營業餐飲店可合理推估的營業水準。公開資訊顯示其為設立多年、登記營業項目含餐館業與飲料店業的小吃店，雖資本額僅新臺幣10,000元，但仍需確認是否僅投保部分品項、部分期間、部分通路或為保守申報。"
+                                      },
+                                      {
+                                          "name":  "標的",
+                                          "version":  "小量v2_gpt5.6",
+                                          "deliveryDate":  "2026-07-17",
+                                          "tokens":  {
+                                                         "input":  10131,
+                                                         "output":  1047,
+                                                         "total":  11178
+                                                     },
+                                          "SCORE":  7.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  10131,
+                                          "TOTAL_TOKENS":  11178,
+                                          "OUTPUT_TOKENS":  1047,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "糕點及果乾可能因保存不當致細菌滋生、加熱不足或烹煮後接觸生食、不潔器具造成食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  7.0,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "糕點及果乾":  {
+                                                                                          "RISK_DESC":  "保存不當致細菌滋生、加熱不足或接觸生食及不潔器具",
+                                                                                          "RISK_SUGGESTION":  "低風險"
+                                                                                      }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "有限"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "目前可用資訊顯示其為單一據點的小吃店，餐飲產品通常屬現場製作、即時消費，未見大型同步供餐、跨區供應或可形成長期市場存量的營運模式。因此事故影響主要受限於單一店址及當次消費者，尚未形成大量同步或跨年度累積的放大機制。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "偏低且需確認",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額為新臺幣100,000元，約每月8,333元；相較於已登記經營的小吃店型態，金額明顯偏低。由於目前未能確認實際營業狀況、營業時間及銷售範圍，需確認是否僅投保部分產品或通路、保守申報，或目前已非持續營業。"
                                       }
                                   ]
                   },
@@ -2237,6 +2327,96 @@ window.validationReviewData = {
                                                                 "url":  "https://www.ubereats.com/tw-en/store/%E7%9A%87%E5%BB%B7%E4%B8%AD%E8%8F%AF%E6%96%99%E7%90%86/8nCwh3ZVXFmGwZkttk_I7w?pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMkNocmlzdGlhbi1QbGUlQzMlOUYtU3RyYSVDMyU5RmUlMjIlMkMlMjJyZWZlcmVuY2UlMjIlM0ElMjJFalpEYUhKcGMzUnBZVzR0VUd4bHc1OHRVM1J5WWNPZlpTd2dOak1nVDJabVpXNWlZV05vSUdGdElFMWhhVzRzSUVkbGNtMWhibmtpTGlvc0NoUUtFZ2x0SWhSY19nMjlSeEc3TVlOMkx4VE1DaElVQ2hJSl9VZExOUnNTdlVjUkVNYXdLVkJESWdRJTIyJTJDJTIycmVmZXJlbmNlVHlwZSUyMiUzQSUyMmdvb2dsZV9wbGFjZXMlMjIlMkMlMjJsYXRpdHVkZSUyMiUzQTUwLjA5Nzk5MTQlMkMlMjJsb25naXR1ZGUlMjIlM0E4Ljc2NjQ5MTQlN0Q%3D"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "標的",
+                                          "version":  "小量v2_gpt5.5",
+                                          "deliveryDate":  "2026-07-17",
+                                          "tokens":  {
+                                                         "input":  12415,
+                                                         "output":  1061,
+                                                         "total":  13476
+                                                     },
+                                          "SCORE":  7.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  12415,
+                                          "TOTAL_TOKENS":  13476,
+                                          "OUTPUT_TOKENS":  1061,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "鳳梨酥果乾可能因保存不當致細菌滋生、加熱不足或接觸生食、不潔器具導致食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  7.0,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "鳳梨酥果乾":  {
+                                                                                          "RISK_DESC":  "保存不當、加熱不足或接觸污染器具",
+                                                                                          "RISK_SUGGESTION":  "低風險"
+                                                                                      }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "顯著"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "有限"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "主要暴險放大機制來自婚宴、宴席與大型宴會廳服務；公開資訊顯示可容納約 10–320 人、全店約 400 席，單次宴會或團體用餐可能同時影響大量消費者。未見連鎖、多層經銷、實際批發供應、OEM／ODM 或中央廚房下游供應資訊，餐食亦以現場或短期消費為主，較不形成跨通路或跨期累積暴露。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額新臺幣 30,000,000 元可解釋。雖資本額為新臺幣 200,000 元，但公開資訊顯示其為已營運多年的中華料理與婚宴會館，具多廳房、包廂及約 400 席規模，30,000,000 元與單一大型餐飲宴會場地的營運樣態大致相符。"
+                                      },
+                                      {
+                                          "name":  "標的",
+                                          "version":  "小量v2_gpt5.6",
+                                          "deliveryDate":  "2026-07-17",
+                                          "tokens":  {
+                                                         "input":  12140,
+                                                         "output":  832,
+                                                         "total":  12972
+                                                     },
+                                          "SCORE":  7.5,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  12140,
+                                          "TOTAL_TOKENS":  12972,
+                                          "OUTPUT_TOKENS":  832,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "鳳梨酥及果乾可能因保存不當致細菌滋生、加熱不足或接觸生食及不潔器具引發食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  7.5,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "鳳梨酥及果乾":  {
+                                                                                           "RISK_DESC":  "保存不當以致細菌滋生、加熱不足、烹煮後接觸生食或不潔器具。",
+                                                                                           "RISK_SUGGESTION":  "低風險"
+                                                                                       }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "中度"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "有限"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "主要為單一餐飲據點現場供應熟食、煨湯及中式料理，產品以即時消費為主，未形成大量跨期市場存量或持續攝取暴露。婚宴、宴會、包廂及團體用餐可能使單次事件影響多人，但目前未見其主要經營大型同步供餐、團膳、Buffet或中央廚房供應；雖登記有食品及飲料批發項目，尚未確認實際多通路或供應鏈規模，因此事故擴散範圍主要受單一據點及有限市場接觸限制。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額為新臺幣3,000萬元，約每月250萬元。雖資本額為20萬元，但公開資訊顯示業者已經營多年，具固定餐廳據點並承接婚宴、宴會及團體用餐，該營運樣態足以合理支持此營業額，未見明顯不相稱情形。"
                                       }
                                   ]
                   },
@@ -3352,6 +3532,96 @@ window.validationReviewData = {
                                                                 "url":  "https://www.jumpman.tw/zhonghe-teppanyaki.html"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "標的",
+                                          "version":  "小量v2_gpt5.5",
+                                          "deliveryDate":  "2026-07-17",
+                                          "tokens":  {
+                                                         "input":  13560,
+                                                         "output":  784,
+                                                         "total":  14344
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  13560,
+                                          "TOTAL_TOKENS":  14344,
+                                          "OUTPUT_TOKENS":  784,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "糕餅果乾可能因保存不當致細菌滋生、加熱不足或接觸生食、不潔器具導致食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  9.0,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "糕餅果乾":  {
+                                                                                         "RISK_DESC":  "保存不當、加熱不足或接觸污染器具。",
+                                                                                         "RISK_SUGGESTION":  "低風險"
+                                                                                     }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "有限"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "目前可用資料指向單一地址的鐵板燒餐廳現場餐飲服務，市場接觸以內用及可能外帶為主，未見團膳、婚宴、Buffet、中央廚房、批發、連鎖多店或外送電商等放大機制。餐食屬即時消費，通常不形成跨期市場存量，因此單一事故影響範圍主要受限於該據點與當次消費者。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額新臺幣10,000,000元，約當單店餐廳月營收83萬元，與公開資訊顯示的中和單一鐵板燒餐廳、午晚餐現場服務及外帶線索大致相符。雖資本額為新臺幣1,000,000元且未見分店或工廠資訊，但餐飲業營收可高於資本額，該金額未明顯偏離可觀察營運樣態。"
+                                      },
+                                      {
+                                          "name":  "標的",
+                                          "version":  "小量v2_gpt5.6",
+                                          "deliveryDate":  "2026-07-17",
+                                          "tokens":  {
+                                                         "input":  11846,
+                                                         "output":  847,
+                                                         "total":  12693
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  11846,
+                                          "TOTAL_TOKENS":  12693,
+                                          "OUTPUT_TOKENS":  847,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "糕點及果乾可能因保存不當致細菌滋生、加熱不足或接觸生食及不潔器具造成食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  9.0,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "糕點及果乾":  {
+                                                                                          "RISK_DESC":  "保存不當致細菌滋生、加熱不足或接觸生食及不潔器具",
+                                                                                          "RISK_SUGGESTION":  "低風險"
+                                                                                      }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "有限"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "整體以單一地址的鐵板燒餐飲內用及外帶服務為主要可觀察模式，餐點屬即時消費，未見婚宴、團膳、Buffet、中央廚房、代工、批發或跨區供應等放大機制。市場接觸及事故影響範圍主要受單一餐飲據點與當次消費人數限制，尚不足以形成大量同步供餐、廣泛供應鏈擴散或跨年度產品存量暴露。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額為新臺幣1,000萬元。以目前可觀察的餐館業及食品飲料零售項目、單一地址餐飲門市線索及新臺幣100萬元資本額而言，該營業額可由持續門市交易及外帶服務支持，未顯著超出可觀察的營運樣態。"
                                       }
                                   ]
                   },
@@ -4485,6 +4755,96 @@ window.validationReviewData = {
                                                                 "url":  "https://data.zhupiter.com/oddt/16024953/%E8%97%A5%E4%B8%80%E8%97%A5%E6%A5%AD%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "標的",
+                                          "version":  "小量v2_gpt5.5",
+                                          "deliveryDate":  "2026-07-17",
+                                          "tokens":  {
+                                                         "input":  13693,
+                                                         "output":  1653,
+                                                         "total":  15346
+                                                     },
+                                          "SCORE":  6.25,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  13693,
+                                          "TOTAL_TOKENS":  15346,
+                                          "OUTPUT_TOKENS":  1653,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "糕點果乾可能因保存不當、加熱不足或接觸生食及不潔器具導致食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  6.25,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "糕點果乾":  {
+                                                                                         "RISK_DESC":  "保存不當或接觸不潔器具致菌滋生。",
+                                                                                         "RISK_SUGGESTION":  "低風險"
+                                                                                     }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "中度"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "中度"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "主要放大機制來自社區藥局與跨區域藥局通路供應，產品若發生問題可能隨批發或經銷批次分散至多個藥局及終端消費者；未見大型同步供餐或團膳型態。因公開產品線包含藥品、保健食品與醫療器材，部分商品可能持續攝取或在市場留存使用，會形成一定跨期暴露，但本案未提供具體被保產品名稱，尚不足以判定為大量市場存量。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "本案年度預估銷售額為新臺幣5,000萬元，對照目前可用資本額約新臺幣1,250萬元，以及公開資訊顯示其服務社區藥局、具採購儲存供應作業、藥品行銷遍及全省並有多項品牌／產品線，屬藥品、醫材與保健食品通路商可解釋的規模。雖未提供單一被保產品名稱，但現有營運樣態未顯示該金額明顯偏高或偏低。"
+                                      },
+                                      {
+                                          "name":  "標的",
+                                          "version":  "小量v2_gpt5.6",
+                                          "deliveryDate":  "2026-07-17",
+                                          "tokens":  {
+                                                         "input":  11397,
+                                                         "output":  1065,
+                                                         "total":  12462
+                                                     },
+                                          "SCORE":  6.25,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  11397,
+                                          "TOTAL_TOKENS":  12462,
+                                          "OUTPUT_TOKENS":  1065,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "糕餅果乾可能因保存不當致細菌滋生、加熱不足或接觸生食及不潔器具造成食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  6.25,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "糕餅果乾":  {
+                                                                                         "RISK_DESC":  "保存不當、加熱不足或接觸生食及不潔器具，恐致細菌滋生。",
+                                                                                         "RISK_SUGGESTION":  "低風險"
+                                                                                     }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "中度"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "中度"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "主要透過社區及會員藥局進行跨區域批發供應，產品可能分散進入多個終端市場，形成一定的通路擴散與事故傳遞範圍，但目前未見代工、中央廚房或大型同步使用情境。產品涵蓋藥品、醫療器材、保健食品等，部分可能於市場持續使用或攝取並形成跨期累積暴露；惟被保產品及實際產品存量尚不明確，尚不足以支持顯著程度。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額為新臺幣5,000萬元，約為可用實收資本額1,250萬元的4倍。考量公司以藥品、醫療器材及健康相關產品批發供應社區與會員藥局，並有全省行銷及多項批發、零售與國際貿易項目，該營業額與其B2B供應及跨區域經營樣態大致相符。"
                                       }
                                   ]
                   },
@@ -5620,6 +5980,96 @@ window.validationReviewData = {
                                                                 "url":  "https://www.ubereats.com/tw-en/store/%E6%BD%AE%E8%99%8E%E8%80%81%E7%81%AB%E9%8D%8B-chaohuhotpot/-EWf4L5BV1OZWeyrCu-yKQ"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "標的",
+                                          "version":  "小量v2_gpt5.5",
+                                          "deliveryDate":  "2026-07-17",
+                                          "tokens":  {
+                                                         "input":  12615,
+                                                         "output":  1645,
+                                                         "total":  14260
+                                                     },
+                                          "SCORE":  7.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  12615,
+                                          "TOTAL_TOKENS":  14260,
+                                          "OUTPUT_TOKENS":  1645,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "糕點果乾可能因保存不當致細菌滋生、加熱不足或接觸生食及不潔器具導致食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  7.0,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "糕點果乾":  {
+                                                                                         "RISK_DESC":  "保存不當等恐致細菌滋生",
+                                                                                         "RISK_SUGGESTION":  "低風險"
+                                                                                     }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "顯著"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "有限"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "主要市場接觸為高雄單一火鍋餐廳之內用餐飲，公開資訊並有自助吧、吃到飽等共同用餐型態線索，單一服務時段可能同時接觸多名消費者。未見連鎖、多據點、批發、代工或中央廚房對外供應資訊，且餐飲品項屬即時消費，事故擴散主要限於門市當次或短期用餐客群。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額為新臺幣20,000,000元，約每月166.7萬元；以火鍋餐廳、內用座位、自助吧／吃到飽及曾有外送平台曝光等營運型態觀察，屬單店餐飲可達成的營收區間。雖資本額為新臺幣200,000元且公開資訊主要支持單一據點，但該金額未明顯高於火鍋餐飲門市可能營運規模。"
+                                      },
+                                      {
+                                          "name":  "標的",
+                                          "version":  "小量v2_gpt5.6",
+                                          "deliveryDate":  "2026-07-17",
+                                          "tokens":  {
+                                                         "input":  11420,
+                                                         "output":  977,
+                                                         "total":  12397
+                                                     },
+                                          "SCORE":  7.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  11420,
+                                          "TOTAL_TOKENS":  12397,
+                                          "OUTPUT_TOKENS":  977,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "糕點果乾可能因保存不當以致細菌滋生、加熱不足或烹煮後接觸生食或不潔器具導致食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  7.0,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "糕點果乾":  {
+                                                                                         "RISK_DESC":  "保存不當或接觸生食、不潔器具致細菌滋生。",
+                                                                                         "RISK_SUGGESTION":  "低風險"
+                                                                                     }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "顯著"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "有限"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "主要為單一實體餐廳提供火鍋及吃到飽、自助餐飲服務，顧客可能在同一時段集中用餐，單一事件的影響可同時擴及現場多名消費者。未見多據點、團膳、中央廚房、代工或跨區域供應鏈，市場接觸與事故擴散主要受限於單一門市；餐飲屬即時消費，未形成長期流通或跨年度累積使用的主要機制。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額為新臺幣2,000萬元。以單一火鍋餐廳、含吃到飽及自助餐飲、具較大用餐空間與聚餐包廂的營運樣態推估，該金額尚屬可由門市客流與餐飲消費解釋的範圍，未見明顯高於目前可觀察的營運規模。"
                                       }
                                   ]
                   },
@@ -6620,6 +7070,96 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "標的",
+                                          "version":  "小量v2_gpt5.5",
+                                          "deliveryDate":  "2026-07-17",
+                                          "tokens":  {
+                                                         "input":  8071,
+                                                         "output":  552,
+                                                         "total":  8623
+                                                     },
+                                          "SCORE":  7.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  8071,
+                                          "TOTAL_TOKENS":  8623,
+                                          "OUTPUT_TOKENS":  552,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "糕餅果乾可能因保存不當致細菌滋生、加熱不足或接觸生食、不潔器具導致食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  7.0,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "糕餅果乾":  {
+                                                                                         "RISK_DESC":  "保存不當、加熱不足或接觸污染器具。",
+                                                                                         "RISK_SUGGESTION":  "低風險"
+                                                                                     }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "有限"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "目前僅能由名稱推知可能為烘焙相關小規模銷售，未見大型同步供餐、多通路供應、代工或跨區域通路資訊。烘焙品通常屬短期消費品，若無長保存期包裝或長期流通販售證據，事故影響較可能限於當次或短期銷售範圍。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "無法評估",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "本案年度預估營業額為 10,000 元，但未提供明確被保產品或服務名稱、公司資本額、公開營運規模、銷售通路、供應範圍或門市資訊，無法建立可比較的合理營業額區間。"
+                                      },
+                                      {
+                                          "name":  "標的",
+                                          "version":  "小量v2_gpt5.6",
+                                          "deliveryDate":  "2026-07-17",
+                                          "tokens":  {
+                                                         "input":  8074,
+                                                         "output":  787,
+                                                         "total":  8861
+                                                     },
+                                          "SCORE":  7.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  8074,
+                                          "TOTAL_TOKENS":  8861,
+                                          "OUTPUT_TOKENS":  787,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "鳳梨酥及果乾可能因保存不當致細菌滋生、加熱不足或接觸生食及不潔器具造成食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  7.0,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "鳳梨酥及果乾":  {
+                                                                                           "RISK_DESC":  "保存不當致細菌滋生、加熱不足或接觸生食及不潔器具。",
+                                                                                           "RISK_SUGGESTION":  "低風險"
+                                                                                       }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "有限"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "目前未提供被保產品或服務名稱、銷售模式及通路資訊，未見足以支持大量同步供餐、多通路供應或長期市場存量的資料，因此三項暴險暫評為有限；惟此結論係基於現有資訊，實際影響範圍仍取決於產品型態與營運方式。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "無法評估",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額為10,000元，但目前缺少被保產品或服務、營運規模、銷售通路、供應範圍及公司資本額等資訊，無法建立合理的營業額參考區間。"
                                       }
                                   ]
                   },
@@ -7843,6 +8383,96 @@ window.validationReviewData = {
                                                                 "url":  "https://www.findcompany.com.tw/%E6%99%89%E6%AC%A3%E9%A3%9F%E5%93%81%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "標的",
+                                          "version":  "小量v2_gpt5.5",
+                                          "deliveryDate":  "2026-07-17",
+                                          "tokens":  {
+                                                         "input":  13906,
+                                                         "output":  1697,
+                                                         "total":  15603
+                                                     },
+                                          "SCORE":  4.1,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  13906,
+                                          "TOTAL_TOKENS":  15603,
+                                          "OUTPUT_TOKENS":  1697,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "糕餅果乾可能因保存不當致細菌滋生、加熱不足或接觸生食及不潔器具導致食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  4.1,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "糕餅果乾":  {
+                                                                                         "RISK_DESC":  "保存不當、加熱不足或接觸污染器具。",
+                                                                                         "RISK_SUGGESTION":  "低風險"
+                                                                                     }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "中度"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "顯著"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "主要放大機制來自便利商店鮮食製造／供應鏈：產品透過全家便利商店門市接觸消費者，且涵蓋飯糰、便當、涼麵、湯品等多品項，單一批次或品項可能經由零售通路擴散至多個終端銷售點。其並非以婚宴、團膳或 Buffet 等大量同步供餐為主要公開營業模式，因此大型供餐暴險未達顯著；鮮食多屬短效期即時消費，市場累積存量有限。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估銷售額新臺幣 23.3 億元可解釋。晉欣食品具食品製造工廠及新臺幣 3 億元資本額，公開資訊顯示其為全家便利商店鮮食製造／供應體系之一，產品涵蓋多類即食鮮食與冷凍產品，與大型便利商店通路供應商的營運樣態大致相符。"
+                                      },
+                                      {
+                                          "name":  "標的",
+                                          "version":  "小量v2_gpt5.6",
+                                          "deliveryDate":  "2026-07-17",
+                                          "tokens":  {
+                                                         "input":  13053,
+                                                         "output":  1002,
+                                                         "total":  14055
+                                                     },
+                                          "SCORE":  4.5,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  13053,
+                                          "TOTAL_TOKENS":  14055,
+                                          "OUTPUT_TOKENS":  1002,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "加工食品可能因保存不當導致細菌滋生、加熱不足或接觸生食及不潔器具引發食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  4.5,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "加工食品":  {
+                                                                                         "RISK_DESC":  "保存不當致細菌滋生、加熱不足或接觸生食及不潔器具。",
+                                                                                         "RISK_SUGGESTION":  "低風險"
+                                                                                     }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "顯著"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "主要以飯糰、便當、壽司、麵類等即食或短期消費食品，透過便利商店及其他品牌合作通路供應市場；產品多於短期內食用，難形成大量跨期流通存量，且未見婚宴、團膳或大型同步供餐模式。惟具食品製造工廠並供應便利商店及聯名品牌，產品可經單一供應鏈進入多門市與多種終端商品，具有較明顯的市場擴散及事故連鎖影響機制。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額為新臺幣23.3億元，與可用資本額3億元，以及具生產中食品工廠、即食餐食製造及便利商店鮮食供應等營運樣態大致相符。公開資訊顯示其具工廠生產及通路供應基礎，該營業額尚屬可解釋。"
                                       }
                                   ]
                   },
@@ -8843,6 +9473,96 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "標的",
+                                          "version":  "小量v2_gpt5.5",
+                                          "deliveryDate":  "2026-07-17",
+                                          "tokens":  {
+                                                         "input":  11722,
+                                                         "output":  2244,
+                                                         "total":  13966
+                                                     },
+                                          "SCORE":  4.75,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  11722,
+                                          "TOTAL_TOKENS":  13966,
+                                          "OUTPUT_TOKENS":  2244,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "糕餅果乾可能因保存不當致細菌滋生、加熱不足或接觸生食、不潔器具導致食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  4.75,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "糕餅果乾":  {
+                                                                                         "RISK_DESC":  "保存不當、加熱不足或接觸污染器具。",
+                                                                                         "RISK_SUGGESTION":  "低風險"
+                                                                                     }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "中度"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "中度"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "中度"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "主要放大機制來自進口包裝食品飲料透過零售、電商及 B2B 飯店、百貨等多通路流通，同批商品可能分散至多個平台與下游客戶；飯店通路亦可能形成多人同時食用情境，但未見以團膳、中央廚房或大型宴席供餐為主要模式。部分果醬、果汁等包裝食品具數月至約一年保存與流通期間，可能在通路貨架與消費者端形成一定跨期累積，但不屬長期耐用品。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額新臺幣 6,000 萬元屬可解釋：目前可用資料顯示其為進口食品飲料代理與批發商，商品可見於 Costco、電商平台、連鎖超市、百貨及飯店等通路，足以支持數千萬元級銷售規模。資本額新臺幣 500 萬元雖低於年營業額，但批發代理業可透過庫存週轉形成高於資本額的年度銷售額。"
+                                      },
+                                      {
+                                          "name":  "標的",
+                                          "version":  "小量v2_gpt5.6",
+                                          "deliveryDate":  "2026-07-17",
+                                          "tokens":  {
+                                                         "input":  11761,
+                                                         "output":  1091,
+                                                         "total":  12852
+                                                     },
+                                          "SCORE":  5.5,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  11761,
+                                          "TOTAL_TOKENS":  12852,
+                                          "OUTPUT_TOKENS":  1091,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "鳳梨酥及果乾可能因保存不當致細菌滋生、加熱不足或烹煮後接觸生食、不潔器具引發食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  5.5,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "鳳梨酥及果乾":  {
+                                                                                           "RISK_DESC":  "保存不當、加熱不足或接觸生食及不潔器具致細菌滋生。",
+                                                                                           "RISK_SUGGESTION":  "低風險"
+                                                                                       }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "顯著"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "產品以進口食品、飲料及批發商品為主，已見連鎖超市、百貨、飯店及多個電商平台等多通路銷售，單一產品發生問題時可能透過不同下游通路擴散至多類消費者。未見團膳、中央廚房或大型同步供餐情境；產品屬即時或短期消費，暴露主要集中於當期流通與消費，未形成長期使用型市場存量。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額為新臺幣6,000萬元。公司資本額為500萬元，且公開資訊顯示其從事進口食品飲料代理、批發及多通路銷售，營運模式具商品流通與通路放大的特性，該營業額尚與可觀察的經營樣態相符。"
                                       }
                                   ]
                   },
@@ -9980,6 +10700,96 @@ window.validationReviewData = {
                                                                 "url":  "https://formesafood.com/zh/products/fmsa_0430"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "標的",
+                                          "version":  "小量v2_gpt5.5",
+                                          "deliveryDate":  "2026-07-17",
+                                          "tokens":  {
+                                                         "input":  12588,
+                                                         "output":  1926,
+                                                         "total":  14514
+                                                     },
+                                          "SCORE":  7.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  12588,
+                                          "TOTAL_TOKENS":  14514,
+                                          "OUTPUT_TOKENS":  1926,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "糕餅果乾可能因保存不當致細菌滋生、加熱不足或接觸生食及不潔器具導致食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  7.0,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "糕餅果乾":  {
+                                                                                         "RISK_DESC":  "保存不當、加熱不足或接觸污染器具。",
+                                                                                         "RISK_SUGGESTION":  "低風險"
+                                                                                     }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "中度"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "主要放大機制來自多通路銷售：公開資訊可見官方商城、PChome、momo、蝦皮、低溫宅配及批發／餐飲合作線索，使同一類雞肉商品可能接觸跨平台消費者與部分下游餐飲客戶。未見中央廚房、團膳、Buffet、婚宴或大型活動供餐等大量同步供餐模式；產品多為生鮮、熟食、冷凍雞肉、滴雞精等食品，通常在短期至數月內食用，市場長期累積有限。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "偏低且需確認",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "本案預估年度營業額為 100，明顯低於目前可見的營運樣態所暗示的銷售規模。新福農場公開資訊顯示有官方商城、多個電商平台、冷凍宅配、雞肉產品線及批發／餐飲合作線索；若 100 代表全部被保產品年度銷售，需確認是否僅投保部分產品、部分通路或為保守申報。"
+                                      },
+                                      {
+                                          "name":  "標的",
+                                          "version":  "小量v2_gpt5.6",
+                                          "deliveryDate":  "2026-07-17",
+                                          "tokens":  {
+                                                         "input":  11194,
+                                                         "output":  901,
+                                                         "total":  12095
+                                                     },
+                                          "SCORE":  7.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  11194,
+                                          "TOTAL_TOKENS":  12095,
+                                          "OUTPUT_TOKENS":  901,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "鳳梨酥果乾可能因保存不當、加熱不足或接觸生食及不潔器具導致食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  7.0,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "鳳梨酥果乾":  {
+                                                                                          "RISK_DESC":  "保存不當或接觸生食、不潔器具，可能造成細菌滋生與食物中毒。",
+                                                                                          "RISK_SUGGESTION":  "低風險"
+                                                                                      }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "中度"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "中度"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "主要透過農場餐飲據點、官方電商及至少一個餐飲合作通路接觸消費者，具一定跨通路擴散可能，但未見團膳、婚宴、Buffet、OEM／ODM或大宗供應等大量同步影響機制。產品同時包含即時消費的生鮮與熟食，以及滴雞精、雞湯包等包裝食品；加上品牌已經營多年，市場可能形成一定跨期流通與持續食用暴露，但目前不足以推論已有大量市場存量。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "無法評估",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額為100，但未提供金額單位，且目前未取得實際養殖與加工產能、產品年產量、門市及供應範圍等營運規模資訊；因此無法建立可比較的營業額合理參考區間。"
                                       }
                                   ]
                   },
@@ -11173,6 +11983,96 @@ window.validationReviewData = {
                                                                 "url":  "https://findbiz.nat.gov.tw/fts/company/42710025"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "標的",
+                                          "version":  "小量v2_gpt5.5",
+                                          "deliveryDate":  "2026-07-17",
+                                          "tokens":  {
+                                                         "input":  12703,
+                                                         "output":  660,
+                                                         "total":  13363
+                                                     },
+                                          "SCORE":  4.1,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  12703,
+                                          "TOTAL_TOKENS":  13363,
+                                          "OUTPUT_TOKENS":  660,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "糕果點心可能因保存不當、加熱不足或接觸生食及不潔器具導致食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  4.1,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "糕果點心":  {
+                                                                                         "RISK_DESC":  "保存不當恐致細菌滋生或污染。",
+                                                                                         "RISK_SUGGESTION":  "低風險"
+                                                                                     }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "中度"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "顯著"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "主要暴險放大機制來自食品工廠製造、品牌商品化、代工代銷、批發及量販通路銷售，產品可能透過多個餐飲品牌或零售通路接觸終端消費者。未見以團膳、婚宴、Buffet或大型活動同步供餐為主要模式，因此單次大量供餐暴險有限；但常溫調理包等食品可保存約1至2年，已售商品可能在市場與家庭端跨期流通並形成一定延續暴露。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額為新臺幣3億元，與目前可用資料顯示的6,500萬元資本額、兩處生產中食品工廠、約95名員工、食品製造批發零售及品牌商品化／量販通路銷售型態大致相符。雖未提供特定被保產品名稱，但若本案係涵蓋公司主要食品製造與通路商品化業務，該營業額具有可解釋性。"
+                                      },
+                                      {
+                                          "name":  "標的",
+                                          "version":  "小量v2_gpt5.6",
+                                          "deliveryDate":  "2026-07-17",
+                                          "tokens":  {
+                                                         "input":  12239,
+                                                         "output":  1030,
+                                                         "total":  13269
+                                                     },
+                                          "SCORE":  4.5,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  12239,
+                                          "TOTAL_TOKENS":  13269,
+                                          "OUTPUT_TOKENS":  1030,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "糕點果乾可能因保存不當致細菌滋生、加熱不足或烹煮後接觸生食及不潔器具造成食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  4.5,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "糕點果乾":  {
+                                                                                         "RISK_DESC":  "保存不當或接觸不潔器具致細菌滋生",
+                                                                                         "RISK_SUGGESTION":  "低風險"
+                                                                                     }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "顯著"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "產品以常溫調理食品、火鍋湯底及即食料理包等短期食用商品為主，未見婚宴、團膳或大型同步供餐模式，單次事件影響大量共同使用者的情境有限，且不形成長期使用型市場存量暴露。但公司具兩座生產中工廠，並透過官方電商、量販、超市、便利商店及餐飲品牌合作等方式流通，產品一旦發生共通性問題，可能沿多通路或合作品牌擴散至不同終端市場。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額為新臺幣3億元。公司資本額6,500萬元，具兩座生產中食品工廠，並同時從事食品製造、批發、無店面零售及餐飲品牌商品化，另有量販、超市、便利商店與電商等市場接觸，營業額與可觀察的製造及多通路經營樣態大致相符。"
                                       }
                                   ]
                   },
@@ -12284,6 +13184,96 @@ window.validationReviewData = {
                                                                 "url":  "https://thaubing.gcaa.org.tw/corp/50919883"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "標的",
+                                          "version":  "小量v2_gpt5.5",
+                                          "deliveryDate":  "2026-07-17",
+                                          "tokens":  {
+                                                         "input":  13740,
+                                                         "output":  1561,
+                                                         "total":  15301
+                                                     },
+                                          "SCORE":  5.5,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  13740,
+                                          "TOTAL_TOKENS":  15301,
+                                          "OUTPUT_TOKENS":  1561,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "糕點果乾可能因保存不當致細菌滋生、加熱不足或接觸生食及不潔器具導致食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  5.5,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "糕點果乾":  {
+                                                                                         "RISK_DESC":  "保存不當、加熱不足或接觸不潔器具",
+                                                                                         "RISK_SUGGESTION":  "低風險"
+                                                                                     }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "顯著"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "主要放大機制在於水產品、農畜產品與食品批發及進出口型態，商品可能經由下游客戶或零售通路再進入多個終端消費場景。未見中央廚房、團膳、宴席或大型同步供餐資訊，因此單次大量共同用餐暴險有限；相關商品多屬短期消費食品，較不會形成跨年度大量市場存量。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額 70,000,000 元，以其水產品與食品批發、零售及進出口貿易型態觀察，批發貿易本身可形成高於資本額的週轉規模。現有公開營運樣態未顯示該金額明顯高於或低於其可合理推估的批發交易規模，因此可解釋。"
+                                      },
+                                      {
+                                          "name":  "標的",
+                                          "version":  "小量v2_gpt5.6",
+                                          "deliveryDate":  "2026-07-17",
+                                          "tokens":  {
+                                                         "input":  15047,
+                                                         "output":  788,
+                                                         "total":  15835
+                                                     },
+                                          "SCORE":  5.75,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  15047,
+                                          "TOTAL_TOKENS":  15835,
+                                          "OUTPUT_TOKENS":  788,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "糕點與果乾可能因保存不當致細菌滋生、加熱不足或接觸生食及不潔器具造成食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  5.75,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "糕點與果乾":  {
+                                                                                          "RISK_DESC":  "保存不當致細菌滋生，或接觸生食及不潔器具",
+                                                                                          "RISK_SUGGESTION":  "低風險"
+                                                                                      }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "中度"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "預估營業額7,000萬元主要對應水產品及食品相關批發、零售與進出口型態，產品多屬即時或短期消費，未形成長期市場存量。批發、無店面零售及國際貿易可能使產品接觸多類客戶與跨區域通路，但未見團膳、中央廚房、婚宴或大量同步供餐資訊，因此尚無大型供餐造成單次集中影響的明確放大機制。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "預估產品年度營業額為新臺幣7,000萬元；以資本額500萬元及公開呈現的水產品、食品什貨批發、零售、無店面零售與國際貿易型態觀察，該營業額可由批發及進出口交易的周轉特性解釋，未見明顯偏離目前可觀察的經營樣態。"
                                       }
                                   ]
                   },
@@ -13284,6 +14274,96 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "標的",
+                                          "version":  "小量v2_gpt5.5",
+                                          "deliveryDate":  "2026-07-17",
+                                          "tokens":  {
+                                                         "input":  8081,
+                                                         "output":  1119,
+                                                         "total":  9200
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  8081,
+                                          "TOTAL_TOKENS":  9200,
+                                          "OUTPUT_TOKENS":  1119,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "糕點果乾可能因保存不當致細菌滋生、加熱不足或接觸生食不潔器具導致食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  10.0,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "糕點果乾":  {
+                                                                                         "RISK_DESC":  "保存不當、加熱不足或接觸污染器具致食物中毒。",
+                                                                                         "RISK_SUGGESTION":  "低風險"
+                                                                                     }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "有限"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "目前資訊呈現為鍋貼、蒸餃專賣店的現場餐飲零售型態，未見大型活動、團膳、中央廚房、批發或多通路供應等會放大單一事故影響範圍的機制。產品屬短期即時消費食品，通常不形成跨年度市場存量，影響範圍主要受限於單一據點與當期消費者。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額為500萬元，約每月42萬元；以投保名稱所呈現的鍋貼、蒸餃專賣店餐飲零售樣態來看，屬小型餐飲據點可合理解釋的營收量級。目前未見連鎖、多據點、工廠或批發供應等公開營運規模資訊，顯示該金額有明顯偏高或偏低。"
+                                      },
+                                      {
+                                          "name":  "標的",
+                                          "version":  "小量v2_gpt5.6",
+                                          "deliveryDate":  "2026-07-17",
+                                          "tokens":  {
+                                                         "input":  8085,
+                                                         "output":  852,
+                                                         "total":  8937
+                                                     },
+                                          "SCORE":  7.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  8085,
+                                          "TOTAL_TOKENS":  8937,
+                                          "OUTPUT_TOKENS":  852,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "鳳梨酥與果乾可能因保存不當致細菌滋生、加熱不足或接觸生食及不潔器具引發食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  7.0,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "鳳梨酥與果乾":  {
+                                                                                           "RISK_DESC":  "保存不當以致細菌滋生、加熱不足、烹煮後接觸生食或不潔器具。",
+                                                                                           "RISK_SUGGESTION":  "低風險"
+                                                                                       }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "有限"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "目前名稱顯示為鍋貼蒸餃專賣店，未見婚宴、團膳、中央廚房、代工或多據點供應等資訊，尚無足以支持大量同步供餐或多市場擴散的機制。產品以即時消費為主，未見長期使用或持續攝取形成跨年度市場存量的情形，因此整體影響範圍較受限。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "無法評估",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "產品年度預估營業額為新臺幣500萬元，但目前未取得公司資本額、門市規模、實際銷售通路或供應範圍等資訊，無法建立足夠的營運規模參考區間以判斷其合理性。"
                                       }
                                   ]
                   },
