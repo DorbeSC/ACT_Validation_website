@@ -1,5 +1,5 @@
 window.validationReviewData = {
-    "generatedAt":  "2026-07-21 15:45:01",
+    "generatedAt":  "2026-07-22 09:55:05",
     "sourceFile":  "驗測資料.xlsx",
     "sourceSheet":  "input / 各模組資料",
     "header":  [
@@ -1214,6 +1214,59 @@ window.validationReviewData = {
                                                                 "url":  "https://cinc5200.pixnet.net/blog/posts/12199782403"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "條件",
+                                          "version":  "Mickey",
+                                          "deliveryDate":  "2026-07-22",
+                                          "tokens":  {
+                                                         "input":  11029,
+                                                         "output":  1221,
+                                                         "total":  12250
+                                                     },
+                                          "SCORE":  8.75,
+                                          "EXPOSURE_LEVEL":  "中低",
+                                          "CORE_FOCUS":  "AOA/AGG",
+                                          "EXPOSURE_COMPARISON_NOTE":  "核保情境推估，非官方統計",
+                                          "EXPOSURE_COMPARISON":  {
+                                                                      "AOP":  {
+                                                                                  "median_amount":  50000,
+                                                                                  "p75_amount":  200000,
+                                                                                  "minimum_amount":  10000,
+                                                                                  "case_amount":  1000000
+                                                                              },
+                                                                      "AOA":  {
+                                                                                  "median_amount":  250000,
+                                                                                  "p75_amount":  3000000,
+                                                                                  "minimum_amount":  50000,
+                                                                                  "case_amount":  4000000
+                                                                              },
+                                                                      "APD":  {
+                                                                                  "median_amount":  0,
+                                                                                  "p75_amount":  0,
+                                                                                  "minimum_amount":  0,
+                                                                                  "case_amount":  0
+                                                                              },
+                                                                      "AGG":  {
+                                                                                  "median_amount":  250000,
+                                                                                  "p75_amount":  4500000,
+                                                                                  "minimum_amount":  50000,
+                                                                                  "case_amount":  10000000
+                                                                              }
+                                                                  },
+                                          "AOP_ASSESSMENT":  "單一受害人多以門診或急診、藥費、短期休養及和解金額形成損失，常見理賠金額約50000元；本案保額高於常見理賠金額，也高於偏高理賠情境，承接壓力較低。",
+                                          "AOA_ASSESSMENT":  "現做雞排、羹麵由餐飲服務直接提供，若同時段用餐或同批食材造成群聚，醫療費、短期休養、工作損失、慰撫金及和解金額將共同累積；常見理賠金額約250000元，約5人事故即可達常見理賠情境，較多人受害時進入偏高理賠情境。本案保額高於常見理賠金額，也高於偏高理賠情境，承接壓力較低。",
+                                          "APD_ASSESSMENT":  "未承保。",
+                                          "AGG_ASSESSMENT":  "單一門市即時消費的年度累積主要來自不同時段或不同食材事故，常見年度理賠金額約250000元；本案保額高於常見年度理賠金額，也高於偏高年度理賠情境，承接壓力較低。",
+                                          "DEDUCTIBLE_ASSESSMENT":  "固定自負額2000元，對小額案件具有過濾效果。",
+                                          "INPUT_TOKENS":  11029,
+                                          "OUTPUT_TOKENS":  1221,
+                                          "TOTAL_TOKENS":  12250,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null
                                       }
                                   ]
                   },
@@ -2469,6 +2522,59 @@ window.validationReviewData = {
                                                                 "url":  "https://www.ubereats.com/tw-en/store/%E7%9A%87%E5%BB%B7%E4%B8%AD%E8%8F%AF%E6%96%99%E7%90%86/8nCwh3ZVXFmGwZkttk_I7w?pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMkNocmlzdGlhbi1QbGUlQzMlOUYtU3RyYSVDMyU5RmUlMjIlMkMlMjJyZWZlcmVuY2UlMjIlM0ElMjJFalpEYUhKcGMzUnBZVzR0VUd4bHc1OHRVM1J5WWNPZlpTd2dOak1nVDJabVpXNWlZV05vSUdGdElFMWhhVzRzSUVkbGNtMWhibmtpTGlvc0NoUUtFZ2x0SWhSY19nMjlSeEc3TVlOMkx4VE1DaElVQ2hJSl9VZExOUnNTdlVjUkVNYXdLVkJESWdRJTIyJTJDJTIycmVmZXJlbmNlVHlwZSUyMiUzQSUyMmdvb2dsZV9wbGFjZXMlMjIlMkMlMjJsYXRpdHVkZSUyMiUzQTUwLjA5Nzk5MTQlMkMlMjJsb25naXR1ZGUlMjIlM0E4Ljc2NjQ5MTQlN0Q%3D"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "條件",
+                                          "version":  "Mickey",
+                                          "deliveryDate":  "2026-07-22",
+                                          "tokens":  {
+                                                         "input":  12634,
+                                                         "output":  1046,
+                                                         "total":  13680
+                                                     },
+                                          "SCORE":  8.0,
+                                          "EXPOSURE_LEVEL":  "中高",
+                                          "CORE_FOCUS":  "AOA/AGG",
+                                          "EXPOSURE_COMPARISON_NOTE":  "核保情境推估，非官方統計",
+                                          "EXPOSURE_COMPARISON":  {
+                                                                      "AOP":  {
+                                                                                  "median_amount":  100000,
+                                                                                  "p75_amount":  300000,
+                                                                                  "minimum_amount":  20000,
+                                                                                  "case_amount":  1000000
+                                                                              },
+                                                                      "AOA":  {
+                                                                                  "median_amount":  3000000,
+                                                                                  "p75_amount":  12000000,
+                                                                                  "minimum_amount":  1000000,
+                                                                                  "case_amount":  4000000
+                                                                              },
+                                                                      "APD":  {
+                                                                                  "median_amount":  0,
+                                                                                  "p75_amount":  0,
+                                                                                  "minimum_amount":  0,
+                                                                                  "case_amount":  0
+                                                                              },
+                                                                      "AGG":  {
+                                                                                  "median_amount":  3750000,
+                                                                                  "p75_amount":  18000000,
+                                                                                  "minimum_amount":  3000000,
+                                                                                  "case_amount":  10000000
+                                                                              }
+                                                                  },
+                                          "AOP_ASSESSMENT":  "現場餐飲及宴席事故以單一受害人的門診、急診、藥費、短期休養及和解金額為主，常見理賠金額約100000元；通常需住院、重大失能或長期健康影響才較可能進一步利用高額保障，本案保額高於偏高理賠情境，承接壓力較低。",
+                                          "AOA_ASSESSMENT":  "同時段用餐、宴席、包廂及多桌供餐可能形成同源多人事故，主要請求來源為醫療費、短期休養、工作損失、慰撫金及和解金額；常見理賠金額約3000000元，約30人群聚食物中毒事件即可能達到常見理賠情境的損失幅度，本案保額高於常見理賠金額但低於偏高理賠情境，承接壓力中等。",
+                                          "APD_ASSESSMENT":  "未承保。",
+                                          "AGG_ASSESSMENT":  "宴席及大型聚餐服務使保險期間可能因不同場次或供餐事故產生多次群聚求償，重複累積醫療費、短期休養、工作損失、慰撫金及和解金額；常見年度理賠金額約3750000元，本案保額高於常見年度理賠金額但低於偏高年度理賠情境，承接壓力中等。",
+                                          "DEDUCTIBLE_ASSESSMENT":  "固定自負額2000元，對小額案件具基本過濾效果。",
+                                          "INPUT_TOKENS":  12634,
+                                          "OUTPUT_TOKENS":  1046,
+                                          "TOTAL_TOKENS":  13680,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null
                                       }
                                   ]
                   },
@@ -3700,6 +3806,59 @@ window.validationReviewData = {
                                                                 "url":  "https://www.jumpman.tw/zhonghe-teppanyaki.html"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "條件",
+                                          "version":  "Mickey",
+                                          "deliveryDate":  "2026-07-22",
+                                          "tokens":  {
+                                                         "input":  11062,
+                                                         "output":  1293,
+                                                         "total":  12355
+                                                     },
+                                          "SCORE":  5.5,
+                                          "EXPOSURE_LEVEL":  "中",
+                                          "CORE_FOCUS":  "AOA/AGG",
+                                          "EXPOSURE_COMPARISON_NOTE":  "核保情境推估，非官方統計",
+                                          "EXPOSURE_COMPARISON":  {
+                                                                      "AOP":  {
+                                                                                  "median_amount":  100000,
+                                                                                  "p75_amount":  500000,
+                                                                                  "minimum_amount":  1000000,
+                                                                                  "case_amount":  10000000
+                                                                              },
+                                                                      "AOA":  {
+                                                                                  "median_amount":  1000000,
+                                                                                  "p75_amount":  4000000,
+                                                                                  "minimum_amount":  4000000,
+                                                                                  "case_amount":  10000000
+                                                                              },
+                                                                      "APD":  {
+                                                                                  "median_amount":  0,
+                                                                                  "p75_amount":  0,
+                                                                                  "minimum_amount":  0,
+                                                                                  "case_amount":  0
+                                                                              },
+                                                                      "AGG":  {
+                                                                                  "median_amount":  1000000,
+                                                                                  "p75_amount":  6000000,
+                                                                                  "minimum_amount":  10000000,
+                                                                                  "case_amount":  20000000
+                                                                              }
+                                                                  },
+                                          "AOP_ASSESSMENT":  "單一受害人多以門診或急診、藥費、短期休養及和解金額為主；常見理賠金額約100000元，本案保額高於常見理賠金額及偏高理賠情境，承接壓力較低。",
+                                          "AOA_ASSESSMENT":  "鐵板燒套餐於同時段現場供餐，肉類、海鮮及其他食材可能形成同源多人事故；常見理賠金額約1000000元，若發生約10人群聚事件，即可能達到常見理賠情境的損失幅度，偏高理賠情境則涉及較多桌次受害及醫療費、短期休養、工作損失、慰撫金或和解金額。本案保額高於常見理賠金額及偏高理賠情境，承接壓力較低。",
+                                          "APD_ASSESSMENT":  "未承保。",
+                                          "AGG_ASSESSMENT":  "以單一門市即時消費為主，年度累積主要來自不同營業時段或食材事故所產生的多人醫療費、短期休養、工作損失、慰撫金及和解金額；常見年度理賠金額約1000000元，本案保額高於常見年度理賠金額及偏高年度理賠情境，承接壓力較低。",
+                                          "DEDUCTIBLE_ASSESSMENT":  "固定自負額2500元，對小額案件具基本過濾效果。",
+                                          "INPUT_TOKENS":  11062,
+                                          "OUTPUT_TOKENS":  1293,
+                                          "TOTAL_TOKENS":  12355,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null
                                       }
                                   ]
                   },
@@ -4949,6 +5108,59 @@ window.validationReviewData = {
                                                                 "url":  "https://data.zhupiter.com/oddt/16024953/%E8%97%A5%E4%B8%80%E8%97%A5%E6%A5%AD%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "條件",
+                                          "version":  "Mickey",
+                                          "deliveryDate":  "2026-07-22",
+                                          "tokens":  {
+                                                         "input":  11566,
+                                                         "output":  1089,
+                                                         "total":  12655
+                                                     },
+                                          "SCORE":  5.0,
+                                          "EXPOSURE_LEVEL":  "中高",
+                                          "CORE_FOCUS":  "AOA/AGG",
+                                          "EXPOSURE_COMPARISON_NOTE":  "核保情境推估，非官方統計",
+                                          "EXPOSURE_COMPARISON":  {
+                                                                      "AOP":  {
+                                                                                  "median_amount":  200000,
+                                                                                  "p75_amount":  2000000,
+                                                                                  "minimum_amount":  50000,
+                                                                                  "case_amount":  10000000
+                                                                              },
+                                                                      "AOA":  {
+                                                                                  "median_amount":  6000000,
+                                                                                  "p75_amount":  30000000,
+                                                                                  "minimum_amount":  1000000,
+                                                                                  "case_amount":  10000000
+                                                                              },
+                                                                      "APD":  {
+                                                                                  "median_amount":  0,
+                                                                                  "p75_amount":  0,
+                                                                                  "minimum_amount":  0,
+                                                                                  "case_amount":  10000000
+                                                                              },
+                                                                      "AGG":  {
+                                                                                  "median_amount":  9000000,
+                                                                                  "p75_amount":  60000000,
+                                                                                  "minimum_amount":  3000000,
+                                                                                  "case_amount":  20000000
+                                                                              }
+                                                                  },
+                                          "AOP_ASSESSMENT":  "保健食品長期食用及成分異常爭議可能提高單一受害人的體傷嚴重度，常見理賠金額約 200000 元，主要來自醫療費、短期休養、工作損失及和解金額；本案保額高於常見理賠金額及偏高理賠情境，單人事故承接壓力較低。",
+                                          "AOA_ASSESSMENT":  "批次保健食品經藥局通路供應後，成分異常或污染可能引發同源多人求償；常見單人損失以醫療費、短期休養、工作損失及和解金額為主，常見理賠金額約 6000000 元。若發生約 30 人群聚事件，即可能達到常見理賠情境的損失幅度；較大批次或較嚴重長期食用爭議則可能形成偏高理賠情境。本案保額高於常見理賠金額，但低於偏高理賠情境，群聚事故承接壓力中等。",
+                                          "APD_ASSESSMENT":  "未承保。",
+                                          "AGG_ASSESSMENT":  "保健食品具批次供應及長期食用特性，保險期間可能因不同批次或重複供應事故累積醫療費、休養、工作損失、慰撫金及和解金額；常見年度理賠金額約 9000000 元。本案保額高於常見年度理賠金額，但低於偏高年度理賠情境，年度累計承接壓力中等。",
+                                          "DEDUCTIBLE_ASSESSMENT":  "固定自負額 2500 元，可過濾部分小額案件。",
+                                          "INPUT_TOKENS":  11566,
+                                          "OUTPUT_TOKENS":  1089,
+                                          "TOTAL_TOKENS":  12655,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null
                                       }
                                   ]
                   },
@@ -6200,6 +6412,59 @@ window.validationReviewData = {
                                                                 "url":  "https://www.ubereats.com/tw-en/store/%E6%BD%AE%E8%99%8E%E8%80%81%E7%81%AB%E9%8D%8B-chaohuhotpot/-EWf4L5BV1OZWeyrCu-yKQ"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "條件",
+                                          "version":  "Mickey",
+                                          "deliveryDate":  "2026-07-22",
+                                          "tokens":  {
+                                                         "input":  11629,
+                                                         "output":  1085,
+                                                         "total":  12714
+                                                     },
+                                          "SCORE":  4.5,
+                                          "EXPOSURE_LEVEL":  "中",
+                                          "CORE_FOCUS":  "AOA/AGG",
+                                          "EXPOSURE_COMPARISON_NOTE":  "核保情境推估，非官方統計",
+                                          "EXPOSURE_COMPARISON":  {
+                                                                      "AOP":  {
+                                                                                  "median_amount":  100000,
+                                                                                  "p75_amount":  500000,
+                                                                                  "minimum_amount":  30000,
+                                                                                  "case_amount":  20000000
+                                                                              },
+                                                                      "AOA":  {
+                                                                                  "median_amount":  2000000,
+                                                                                  "p75_amount":  30000000,
+                                                                                  "minimum_amount":  600000,
+                                                                                  "case_amount":  20000000
+                                                                              },
+                                                                      "APD":  {
+                                                                                  "median_amount":  0,
+                                                                                  "p75_amount":  0,
+                                                                                  "minimum_amount":  0,
+                                                                                  "case_amount":  20000000
+                                                                              },
+                                                                      "AGG":  {
+                                                                                  "median_amount":  2000000,
+                                                                                  "p75_amount":  45000000,
+                                                                                  "minimum_amount":  1000000,
+                                                                                  "case_amount":  200000000
+                                                                              }
+                                                                  },
+                                          "AOP_ASSESSMENT":  "單一受害人多以門診或急診、藥費、短期休養及和解金額為主，常見理賠金額約100000元；除發生重症、死亡或重大後遺症外，單人高額體傷較不易形成。本案保額高於常見理賠金額，亦高於偏高理賠情境，承接壓力低。",
+                                          "AOA_ASSESSMENT":  "火鍋餐飲涉及同時段用餐、同批食材及自助取用，若湯底、肉品、海鮮或手工火鍋料發生共同問題，可能形成店內群聚求償。常見理賠金額約2000000元，約20人事故即可能達到常見理賠情境的損失幅度；偏高理賠情境可延伸至較多人數，並增加醫療費、短期休養、工作損失、慰撫金及和解金額。本案保額高於常見理賠金額，但低於偏高理賠情境，承接壓力中等。",
+                                          "APD_ASSESSMENT":  "未承保。",
+                                          "AGG_ASSESSMENT":  "單一餐飲據點以即時消費為主，年度累計主要來自不同時段或不同食材事故，可能重複產生醫療費、短期休養、工作損失、慰撫金及和解金額。常見年度理賠金額約2000000元；本案保額高於常見年度理賠金額，亦高於偏高年度理賠情境，承接壓力低。",
+                                          "DEDUCTIBLE_ASSESSMENT":  "固定自負額2000元，可過濾部分小額案件。",
+                                          "INPUT_TOKENS":  11629,
+                                          "OUTPUT_TOKENS":  1085,
+                                          "TOTAL_TOKENS":  12714,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null
                                       }
                                   ]
                   },
@@ -7316,6 +7581,59 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "條件",
+                                          "version":  "Mickey",
+                                          "deliveryDate":  "2026-07-22",
+                                          "tokens":  {
+                                                         "input":  8085,
+                                                         "output":  1358,
+                                                         "total":  9443
+                                                     },
+                                          "SCORE":  8.75,
+                                          "EXPOSURE_LEVEL":  "中低",
+                                          "CORE_FOCUS":  "AOA/AGG",
+                                          "EXPOSURE_COMPARISON_NOTE":  "核保情境推估，非官方統計",
+                                          "EXPOSURE_COMPARISON":  {
+                                                                      "AOP":  {
+                                                                                  "median_amount":  100000,
+                                                                                  "p75_amount":  500000,
+                                                                                  "minimum_amount":  50000,
+                                                                                  "case_amount":  1000000
+                                                                              },
+                                                                      "AOA":  {
+                                                                                  "median_amount":  1000000,
+                                                                                  "p75_amount":  3000000,
+                                                                                  "minimum_amount":  500000,
+                                                                                  "case_amount":  4000000
+                                                                              },
+                                                                      "APD":  {
+                                                                                  "median_amount":  0,
+                                                                                  "p75_amount":  0,
+                                                                                  "minimum_amount":  0,
+                                                                                  "case_amount":  0
+                                                                              },
+                                                                      "AGG":  {
+                                                                                  "median_amount":  1500000,
+                                                                                  "p75_amount":  5000000,
+                                                                                  "minimum_amount":  1000000,
+                                                                                  "case_amount":  10000000
+                                                                              }
+                                                                  },
+                                          "AOP_ASSESSMENT":  "單一受害人通常以門診或急診、藥費、短期休養及和解金額為主，常見理賠金額約100000元；本案保額高於常見理賠金額，亦高於偏高理賠情境，承接壓力較低。",
+                                          "AOA_ASSESSMENT":  "法式奶酥醬、奶酥厚片吐司、白木耳、飲品及各類烘焙食品若於同一時段或同一批次造成多人腸胃不適，可能形成群聚求償；常見理賠金額約1000000元，約10人事故即可能達到常見理賠情境的損失幅度，偏高理賠情境則可能涉及較多人數及較高醫療費、短期休養、工作損失、慰撫金或和解金額。本案保額高於常見理賠金額，亦高於偏高理賠情境，承接壓力較低。",
+                                          "APD_ASSESSMENT":  "未承保。",
+                                          "AGG_ASSESSMENT":  "多品項食品於不同供應時點發生事故時，可能累積醫療費、短期休養、工作損失、慰撫金或和解金額；常見年度理賠金額約1500000元，本案保額高於常見年度理賠金額，亦高於偏高年度理賠情境，承接壓力較低。",
+                                          "DEDUCTIBLE_ASSESSMENT":  "固定自負額2000元，對小額案件具過濾效果。",
+                                          "INPUT_TOKENS":  8085,
+                                          "OUTPUT_TOKENS":  1358,
+                                          "TOTAL_TOKENS":  9443,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null
                                       }
                                   ]
                   },
@@ -8655,6 +8973,59 @@ window.validationReviewData = {
                                                                 "url":  "https://www.findcompany.com.tw/%E6%99%89%E6%AC%A3%E9%A3%9F%E5%93%81%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "條件",
+                                          "version":  "Mickey",
+                                          "deliveryDate":  "2026-07-22",
+                                          "tokens":  {
+                                                         "input":  13552,
+                                                         "output":  1092,
+                                                         "total":  14644
+                                                     },
+                                          "SCORE":  4.5,
+                                          "EXPOSURE_LEVEL":  "高",
+                                          "CORE_FOCUS":  "AOA/AGG",
+                                          "EXPOSURE_COMPARISON_NOTE":  "核保情境推估，非官方統計",
+                                          "EXPOSURE_COMPARISON":  {
+                                                                      "AOP":  {
+                                                                                  "median_amount":  200000,
+                                                                                  "p75_amount":  800000,
+                                                                                  "minimum_amount":  50000,
+                                                                                  "case_amount":  10000000
+                                                                              },
+                                                                      "AOA":  {
+                                                                                  "median_amount":  8000000,
+                                                                                  "p75_amount":  48000000,
+                                                                                  "minimum_amount":  1000000,
+                                                                                  "case_amount":  10000000
+                                                                              },
+                                                                      "APD":  {
+                                                                                  "median_amount":  0,
+                                                                                  "p75_amount":  0,
+                                                                                  "minimum_amount":  0,
+                                                                                  "case_amount":  10000000
+                                                                              },
+                                                                      "AGG":  {
+                                                                                  "median_amount":  12000000,
+                                                                                  "p75_amount":  96000000,
+                                                                                  "minimum_amount":  4000000,
+                                                                                  "case_amount":  100000000
+                                                                              }
+                                                                  },
+                                          "AOP_ASSESSMENT":  "單一受害人事故通常以急診或門診、藥費、短期休養及和解金額為主；常見理賠金額約200000元，本案保額高於偏高理賠情境，承接壓力較低，除非發生重症、重大後遺症或死亡事故，否則高額限額利用性相對有限。",
+                                          "AOA_ASSESSMENT":  "即食便當與飯糰具有同批次、同時段及通路批次流通的群聚特性，單一受害人多以醫療費、短期休養、工作損失、慰撫金或和解金額形成損失；若發生約40人群聚食物中毒事件，即可能達到常見理賠情境的損失幅度，較大批次或多通路事故則可能進入偏高理賠情境。常見理賠金額約8000000元，本案保額高於常見理賠金額但低於偏高理賠情境，承接壓力中等。",
+                                          "APD_ASSESSMENT":  "未承保。",
+                                          "AGG_ASSESSMENT":  "即食便當與飯糰由食品製造端供應便利商店通路，可能因不同批次或供應事故形成年度累積，賠償請求主要來自多人醫療費、短期休養、工作損失、慰撫金及和解金額；常見年度理賠金額約12000000元，本案保額高於常見年度理賠金額及偏高年度理賠情境，承接壓力較低。",
+                                          "DEDUCTIBLE_ASSESSMENT":  "固定自負額2000元，可過濾部分小額醫療、休養及和解案件。",
+                                          "INPUT_TOKENS":  13552,
+                                          "OUTPUT_TOKENS":  1092,
+                                          "TOTAL_TOKENS":  14644,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null
                                       }
                                   ]
                   },
@@ -9771,6 +10142,59 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "條件",
+                                          "version":  "Mickey",
+                                          "deliveryDate":  "2026-07-22",
+                                          "tokens":  {
+                                                         "input":  12774,
+                                                         "output":  1023,
+                                                         "total":  13797
+                                                     },
+                                          "SCORE":  6.0,
+                                          "EXPOSURE_LEVEL":  "中高",
+                                          "CORE_FOCUS":  "AOA/AGG",
+                                          "EXPOSURE_COMPARISON_NOTE":  "核保情境推估，非官方統計",
+                                          "EXPOSURE_COMPARISON":  {
+                                                                      "AOP":  {
+                                                                                  "median_amount":  200000,
+                                                                                  "p75_amount":  1500000,
+                                                                                  "minimum_amount":  100000,
+                                                                                  "case_amount":  3000000
+                                                                              },
+                                                                      "AOA":  {
+                                                                                  "median_amount":  3000000,
+                                                                                  "p75_amount":  12000000,
+                                                                                  "minimum_amount":  1000000,
+                                                                                  "case_amount":  12000000
+                                                                              },
+                                                                      "APD":  {
+                                                                                  "median_amount":  0,
+                                                                                  "p75_amount":  0,
+                                                                                  "minimum_amount":  0,
+                                                                                  "case_amount":  3000000
+                                                                              },
+                                                                      "AGG":  {
+                                                                                  "median_amount":  4500000,
+                                                                                  "p75_amount":  24000000,
+                                                                                  "minimum_amount":  10000000,
+                                                                                  "case_amount":  30000000
+                                                                              }
+                                                                  },
+                                          "AOP_ASSESSMENT":  "單一消費者事故通常以門急診、藥費、短期休養、工作損失或和解金額為主，常見理賠金額約200000元；重大事故才可能提高至偏高理賠情境。本案保額高於常見理賠金額及偏高理賠情境，單人事故承接壓力較低。",
+                                          "AOA_ASSESSMENT":  "進口包裝食品具批次流通及多通路擴散特性，同一問題可能造成多人提出醫療費、檢驗費、短期休養、工作損失、慰撫金或和解請求；常見理賠金額約3000000元，若發生約20人群聚事故，即可能達到常見理賠情境的損失幅度，較大型批次或多通路事件則屬偏高理賠情境。本案保額高於常見理賠金額，等於偏高理賠情境，群聚事故承接壓力中等。",
+                                          "APD_ASSESSMENT":  "未承保。",
+                                          "AGG_ASSESSMENT":  "多品牌進口食品經由超市、百貨、飯店及電商等通路銷售，保險期間可能因不同批次、品項或通路形成多次事故累積，常見年度理賠金額約4500000元；本案保額高於常見年度理賠金額及偏高年度理賠情境，年度累計承接壓力較低。",
+                                          "DEDUCTIBLE_ASSESSMENT":  "固定自負額2000元，對小額案件具有限度的過濾效果。",
+                                          "INPUT_TOKENS":  12774,
+                                          "OUTPUT_TOKENS":  1023,
+                                          "TOTAL_TOKENS":  13797,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null
                                       }
                                   ]
                   },
@@ -11024,6 +11448,59 @@ window.validationReviewData = {
                                                                 "url":  "https://formesafood.com/zh/products/fmsa_0430"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "條件",
+                                          "version":  "Mickey",
+                                          "deliveryDate":  "2026-07-22",
+                                          "tokens":  {
+                                                         "input":  11968,
+                                                         "output":  1534,
+                                                         "total":  13502
+                                                     },
+                                          "SCORE":  7.0,
+                                          "EXPOSURE_LEVEL":  "中高",
+                                          "CORE_FOCUS":  "AOA/AGG",
+                                          "EXPOSURE_COMPARISON_NOTE":  "核保情境推估，非官方統計",
+                                          "EXPOSURE_COMPARISON":  {
+                                                                      "AOP":  {
+                                                                                  "median_amount":  100000,
+                                                                                  "p75_amount":  500000,
+                                                                                  "minimum_amount":  1000000,
+                                                                                  "case_amount":  2000000
+                                                                              },
+                                                                      "AOA":  {
+                                                                                  "median_amount":  2000000,
+                                                                                  "p75_amount":  7500000,
+                                                                                  "minimum_amount":  4000000,
+                                                                                  "case_amount":  8000000
+                                                                              },
+                                                                      "APD":  {
+                                                                                  "median_amount":  0,
+                                                                                  "p75_amount":  0,
+                                                                                  "minimum_amount":  0,
+                                                                                  "case_amount":  0
+                                                                              },
+                                                                      "AGG":  {
+                                                                                  "median_amount":  2500000,
+                                                                                  "p75_amount":  15000000,
+                                                                                  "minimum_amount":  10000000,
+                                                                                  "case_amount":  20000000
+                                                                              }
+                                                                  },
+                                          "AOP_ASSESSMENT":  "單一受害人通常以急診或門診、藥費、短期休養及和解金額為主，常見理賠金額約100000元；重大感染或長期健康影響才可能提高單人損害。本案保額高於常見理賠情境及偏高理賠情境，單人事故承接壓力較低。",
+                                          "AOA_ASSESSMENT":  "同批次食品、同時段消費及多通路流通可能造成群聚食安事故；常見理賠金額約2000000元，約20人受害即可能達到常見理賠情境的損失幅度，醫療費、短期休養、工作損失、慰撫金及和解金額將隨受害人數增加。本案保額高於常見理賠情境及偏高理賠情境，群聚事故承接壓力較高。",
+                                          "APD_ASSESSMENT":  "未承保。",
+                                          "AGG_ASSESSMENT":  "保險期間內可能因生鮮雞肉、調理食品之不同批次或多通路銷售，重複發生多人醫療費、短期休養、工作損失、慰撫金或和解金額累積；常見年度理賠金額約2500000元，本案保額高於常見年度理賠金額及偏高年度理賠情境，年度累積承接壓力較高。",
+                                          "DEDUCTIBLE_ASSESSMENT":  "固定自負額2000元，可過濾部分小額案件。",
+                                          "INPUT_TOKENS":  11968,
+                                          "OUTPUT_TOKENS":  1534,
+                                          "TOTAL_TOKENS":  13502,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null
                                       }
                                   ]
                   },
@@ -12333,6 +12810,59 @@ window.validationReviewData = {
                                                                 "url":  "https://findbiz.nat.gov.tw/fts/company/42710025"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "條件",
+                                          "version":  "Mickey",
+                                          "deliveryDate":  "2026-07-22",
+                                          "tokens":  {
+                                                         "input":  12736,
+                                                         "output":  1091,
+                                                         "total":  13827
+                                                     },
+                                          "SCORE":  3.5,
+                                          "EXPOSURE_LEVEL":  "高",
+                                          "CORE_FOCUS":  "AOA/AGG",
+                                          "EXPOSURE_COMPARISON_NOTE":  "核保情境推估，非官方統計",
+                                          "EXPOSURE_COMPARISON":  {
+                                                                      "AOP":  {
+                                                                                  "median_amount":  500000,
+                                                                                  "p75_amount":  2000000,
+                                                                                  "minimum_amount":  1000000,
+                                                                                  "case_amount":  150000000
+                                                                              },
+                                                                      "AOA":  {
+                                                                                  "median_amount":  10000000,
+                                                                                  "p75_amount":  30000000,
+                                                                                  "minimum_amount":  4000000,
+                                                                                  "case_amount":  150000000
+                                                                              },
+                                                                      "APD":  {
+                                                                                  "median_amount":  0,
+                                                                                  "p75_amount":  0,
+                                                                                  "minimum_amount":  0,
+                                                                                  "case_amount":  0
+                                                                              },
+                                                                      "AGG":  {
+                                                                                  "median_amount":  15000000,
+                                                                                  "p75_amount":  75000000,
+                                                                                  "minimum_amount":  10000000,
+                                                                                  "case_amount":  150000000
+                                                                              }
+                                                                  },
+                                          "AOP_ASSESSMENT":  "單一消費者事故通常以門診或急診、藥費、短期休養及和解金額為主，常見理賠金額約 500000 元；本案保額高於常見理賠金額及偏高理賠情境，承接壓力較低，較高額利用通常須有重症、死亡或重大後遺症情境。",
+                                          "AOA_ASSESSMENT":  "火鍋湯底、肉類及常溫調理食品由製造商供應餐飲品牌、量販、超商及零售通路，若同批次產品發生食品安全事故，可能形成跨通路多人求償；以醫療費、短期休養、工作損失、慰撫金或和解金額計，常見理賠金額約 10000000 元，約 20 人群聚事件即可達常見理賠情境，偏高理賠情境則涉及較大批次或多通路受害。本案保額高於常見理賠金額及偏高理賠情境，承接壓力較低。",
+                                          "APD_ASSESSMENT":  "未承保。",
+                                          "AGG_ASSESSMENT":  "食品製造、批次流通、量販超商及電商供應，可能因不同批次、品項或通路事故形成年度多次賠償，重複累積醫療費、短期休養、工作損失、慰撫金或和解金額；常見年度理賠金額約 15000000 元，本案保額高於常見年度理賠金額及偏高年度理賠情境，承接壓力較低。",
+                                          "DEDUCTIBLE_ASSESSMENT":  "固定自負額 2000 元，可過濾小額案件。",
+                                          "INPUT_TOKENS":  12736,
+                                          "OUTPUT_TOKENS":  1091,
+                                          "TOTAL_TOKENS":  13827,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null
                                       }
                                   ]
                   },
@@ -13560,6 +14090,59 @@ window.validationReviewData = {
                                                                 "url":  "https://thaubing.gcaa.org.tw/corp/50919883"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "條件",
+                                          "version":  "Mickey",
+                                          "deliveryDate":  "2026-07-22",
+                                          "tokens":  {
+                                                         "input":  14230,
+                                                         "output":  1554,
+                                                         "total":  15784
+                                                     },
+                                          "SCORE":  3.5,
+                                          "EXPOSURE_LEVEL":  "高",
+                                          "CORE_FOCUS":  "AOA/AGG",
+                                          "EXPOSURE_COMPARISON_NOTE":  "核保情境推估，非官方統計",
+                                          "EXPOSURE_COMPARISON":  {
+                                                                      "AOP":  {
+                                                                                  "median_amount":  150000,
+                                                                                  "p75_amount":  500000,
+                                                                                  "minimum_amount":  1000000,
+                                                                                  "case_amount":  2000000
+                                                                              },
+                                                                      "AOA":  {
+                                                                                  "median_amount":  4500000,
+                                                                                  "p75_amount":  20000000,
+                                                                                  "minimum_amount":  4000000,
+                                                                                  "case_amount":  80000000
+                                                                              },
+                                                                      "APD":  {
+                                                                                  "median_amount":  0,
+                                                                                  "p75_amount":  0,
+                                                                                  "minimum_amount":  0,
+                                                                                  "case_amount":  0
+                                                                              },
+                                                                      "AGG":  {
+                                                                                  "median_amount":  6750000,
+                                                                                  "p75_amount":  40000000,
+                                                                                  "minimum_amount":  10000000,
+                                                                                  "case_amount":  20000000
+                                                                              }
+                                                                  },
+                                          "AOP_ASSESSMENT":  "單一受害人通常以急診或門診、藥費、短期休養、工作損失及和解金額為主，常見理賠金額約150000元；較高金額通常須有重症或重大後遺症。本案保額高於常見理賠金額及偏高理賠情境，承接壓力較低。",
+                                          "AOA_ASSESSMENT":  "進口及批發流通的活體、冷凍海鮮可能因同批產品或同一供應鏈問題形成多人求償；單一受害人的常見理賠金額約150000元，約30人群聚事件即可能達到常見理賠情境，較大型批次流通事故則可能因醫療費、短期休養、工作損失、慰撫金及和解金額增加而擴大。本案保額高於常見理賠金額及偏高理賠情境，承接壓力較低。",
+                                          "APD_ASSESSMENT":  "未承保。",
+                                          "AGG_ASSESSMENT":  "活體及冷凍海鮮涉及進口、批發及食品流通，若不同批次或不同交易期間發生污染、保存或品質相關事故，可能累積多人醫療費、短期休養、工作損失、慰撫金或和解金額；常見年度理賠金額約6750000元，本案保額高於常見年度理賠金額但低於偏高年度理賠情境，承接壓力中等。",
+                                          "DEDUCTIBLE_ASSESSMENT":  "本案未設定自負額，對小額案件不具過濾效果。",
+                                          "INPUT_TOKENS":  14230,
+                                          "OUTPUT_TOKENS":  1554,
+                                          "TOTAL_TOKENS":  15784,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null
                                       }
                                   ]
                   },
@@ -14676,6 +15259,59 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "條件",
+                                          "version":  "Mickey",
+                                          "deliveryDate":  "2026-07-22",
+                                          "tokens":  {
+                                                         "input":  8050,
+                                                         "output":  1348,
+                                                         "total":  9398
+                                                     },
+                                          "SCORE":  9.0,
+                                          "EXPOSURE_LEVEL":  "中",
+                                          "CORE_FOCUS":  "AOA/AGG",
+                                          "EXPOSURE_COMPARISON_NOTE":  "核保情境推估，非官方統計",
+                                          "EXPOSURE_COMPARISON":  {
+                                                                      "AOP":  {
+                                                                                  "median_amount":  100000,
+                                                                                  "p75_amount":  300000,
+                                                                                  "minimum_amount":  50000,
+                                                                                  "case_amount":  500000
+                                                                              },
+                                                                      "AOA":  {
+                                                                                  "median_amount":  1000000,
+                                                                                  "p75_amount":  3000000,
+                                                                                  "minimum_amount":  500000,
+                                                                                  "case_amount":  1000000
+                                                                              },
+                                                                      "APD":  {
+                                                                                  "median_amount":  0,
+                                                                                  "p75_amount":  0,
+                                                                                  "minimum_amount":  0,
+                                                                                  "case_amount":  0
+                                                                              },
+                                                                      "AGG":  {
+                                                                                  "median_amount":  1000000,
+                                                                                  "p75_amount":  4500000,
+                                                                                  "minimum_amount":  500000,
+                                                                                  "case_amount":  2000000
+                                                                              }
+                                                                  },
+                                          "AOP_ASSESSMENT":  "單一受害人多以急診或門診、藥費、短期休養及和解金額為主，常見理賠金額約100000元；本案保額高於常見理賠金額及偏高理賠情境，承接壓力較低，通常須有重症、死亡或重大後遺症情境才可能高度利用。",
+                                          "AOA_ASSESSMENT":  "同時段用餐或同批食品可能造成多人食物中毒，盒餐及便當的供餐型態使群聚事故成為主要觀察項目；單一受害人常見理賠金額約100000元，主要反映醫療費、短期休養、工作損失及和解金額。若發生約10人群聚事件，即可能達到常見理賠情境的損失幅度；較多人受害或個別治療期間較長時，將接近偏高理賠情境。本案保額等於常見理賠金額但低於偏高理賠情境，承接壓力中等。",
+                                          "APD_ASSESSMENT":  "未承保。",
+                                          "AGG_ASSESSMENT":  "鍋貼、蒸餃、盒餐及便當屬持續供餐型態，保險期間可能因不同供餐時段或食品事故形成多次體傷求償，累積來源包括醫療費、短期休養、工作損失、慰撫金或和解金額。常見年度理賠金額約1000000元，本案保額高於常見年度理賠金額但低於偏高年度理賠情境，年度累積承接壓力中等。",
+                                          "DEDUCTIBLE_ASSESSMENT":  "比例自負額10%，且至少5000元，對小額醫療、休養及和解案件具有過濾效果。",
+                                          "INPUT_TOKENS":  8050,
+                                          "OUTPUT_TOKENS":  1348,
+                                          "TOTAL_TOKENS":  9398,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null
                                       }
                                   ]
                   },
