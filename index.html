@@ -638,6 +638,7 @@
           ${statusOptions.map(option => `<button class="${option === current ? "active" : ""}" data-status="${esc(option)}">${esc(option)}</button>`).join("")}
           <button type="button" class="status-submit" data-submit-review>送出</button>
           <button type="button" class="status-update" data-update-review>更新</button>
+          <button type="button" class="status-clear" data-clear-review>清除本版次紀錄</button>
           ${reviewed ? `<span class="reviewed-badge">✓ 已驗測（版次：${esc(version)}）</span>` : ""}
           <div class="module-tag-editor"><label for="moduleTag-${esc(item.id)}-${esc(module.name)}-${esc(version)}">標籤註記</label><input class="module-tag-input" id="moduleTag-${esc(item.id)}-${esc(module.name)}-${esc(version)}" type="text" data-module-tag placeholder="例如：重要、資料異常、待確認" value="${esc(tag)}" /><span class="module-tag-hint">可用上方搜尋快速查找</span></div>
           <div class="feedback-grid"><textarea placeholder="BU回饋_好的" data-feedback-good>${esc(note)}</textarea><textarea placeholder="BU回饋_差的" data-feedback-bad>${esc(badNote)}</textarea></div>
