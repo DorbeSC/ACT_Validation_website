@@ -276,6 +276,9 @@
       .module-tag-editor label { color: var(--danger); font-size: 13px; font-weight: 700; white-space: nowrap; }
       .module-tag-input { flex: 1 1 360px; min-width: 220px; padding: 5px 8px; border: 1px solid #e4b8bf; border-radius: 5px; background: #fff; color: var(--ink); font-size: 13px; line-height: 1.4; }
       .module-tag-hint { color: var(--muted); font-size: 12px; }
+      .feedback-grid { flex-basis: 100%; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+      .feedback-grid textarea { width: 100%; height: 180px; min-height: 180px; }
+      .feedback-summary { flex-basis: 100%; }
       .reviewed-badge { color: #23865a; font-size: 13px; font-weight: 700; }
       .local-only-note { flex-basis: 100%; color: var(--muted); font-size: 12px; line-height: 1.5; }
       textarea { width: 100%; height: 120px; min-height: 120px; resize: vertical; border: 1px solid var(--line); border-radius: 6px; padding: 8px; }
@@ -526,8 +529,10 @@
             const reviewed = localStorage.getItem(storageKey(item.id, module.name, "reviewed", version));
             const status = localStorage.getItem(storageKey(item.id, module.name, "status", version));
             const note = localStorage.getItem(storageKey(item.id, module.name, "note", version));
+            const badNote = localStorage.getItem(storageKey(item.id, module.name, "badNote", version)) || "";
+            const feedbackSummary = localStorage.getItem(storageKey(item.id, module.name, "summary", version)) || "";
             const tag = moduleTag(item, module);
-            if (reviewed === null && status === null && note === null && !tag) return;
+            if (reviewed === null && status === null && note === null && !badNote && !feedbackSummary && !tag) return;
             const activityAt = localStorage.getItem(storageKey(item.id, module.name, "activityAt", version));
             rows.push({
               "案例": item.title || "-",
@@ -539,7 +544,9 @@
               "交付日期": module.deliveryDate || "-",
               "驗測狀態": status || "-",
               "模組標籤註記": tag,
-              "審閱註記": note || "",
+              "BU回饋_好的": note || "",
+              "BU回饋_差的": badNote,
+              "總結": feedbackSummary,
               "驗測／填寫時間": activityAt || "-"
             });
           });
@@ -559,7 +566,7 @@
         const worksheet = XLSX.utils.json_to_sheet(rows);
         worksheet["!cols"] = [
           { wch: 24 }, { wch: 14 }, { wch: 18 }, { wch: 24 }, { wch: 18 }, { wch: 14 },
-          { wch: 14 }, { wch: 24 }, { wch: 24 }, { wch: 48 }, { wch: 22 }
+          { wch: 14 }, { wch: 24 }, { wch: 24 }, { wch: 48 }, { wch: 48 }, { wch: 48 }, { wch: 22 }
         ];
         const workbook = XLSX.utils.book_new();
         XLSX.utils.book_append_sheet(workbook, worksheet, "本機驗測紀錄");
@@ -624,6 +631,8 @@
         const reviewed = localStorage.getItem(storageKey(item.id, module.name, "reviewed", version)) === "1";
         const current = localStorage.getItem(storageKey(item.id, module.name, "status", version)) || statusOptions[0];
         const note = localStorage.getItem(storageKey(item.id, module.name, "note", version)) || "";
+        const badNote = localStorage.getItem(storageKey(item.id, module.name, "badNote", version)) || "";
+        const feedbackSummary = localStorage.getItem(storageKey(item.id, module.name, "summary", version)) || "";
         const tag = localStorage.getItem(storageKey(item.id, module.name, "tag", version)) || "";
         return `<div class="status" data-scope="${esc(module.name)}">
           ${statusOptions.map(option => `<button class="${option === current ? "active" : ""}" data-status="${esc(option)}">${esc(option)}</button>`).join("")}
@@ -631,7 +640,8 @@
           <button type="button" class="status-update" data-update-review>更新</button>
           ${reviewed ? `<span class="reviewed-badge">✓ 已驗測（版次：${esc(version)}）</span>` : ""}
           <div class="module-tag-editor"><label for="moduleTag-${esc(item.id)}-${esc(module.name)}-${esc(version)}">標籤註記</label><input class="module-tag-input" id="moduleTag-${esc(item.id)}-${esc(module.name)}-${esc(version)}" type="text" data-module-tag placeholder="例如：重要、資料異常、待確認" value="${esc(tag)}" /><span class="module-tag-hint">可用上方搜尋快速查找</span></div>
-          <textarea placeholder="審閱註記">${esc(note)}</textarea>
+          <div class="feedback-grid"><textarea placeholder="BU回饋_好的" data-feedback-good>${esc(note)}</textarea><textarea placeholder="BU回饋_差的" data-feedback-bad>${esc(badNote)}</textarea></div>
+          <textarea class="feedback-summary" placeholder="總結" data-feedback-summary>${esc(feedbackSummary)}</textarea>
           <div class="local-only-note">在此送出的內容僅供本機使用者紀錄，無法同步給其他使用者</div>
         </div>`;
       }
@@ -741,10 +751,11 @@
             recordModuleActivity(item, module);
             renderModules(item);
           }));
-          scope.querySelector("textarea")?.addEventListener("input", event => {
-            localStorage.setItem(storageKey(item.id, moduleName, "note", moduleVersion(module)), event.target.value);
+          scope.querySelectorAll("[data-feedback-good], [data-feedback-bad], [data-feedback-summary]").forEach(textarea => textarea.addEventListener("input", event => {
+            const field = event.target.dataset.feedbackGood !== undefined ? "note" : event.target.dataset.feedbackBad !== undefined ? "badNote" : "summary";
+            localStorage.setItem(storageKey(item.id, moduleName, field, moduleVersion(module)), event.target.value);
             recordModuleActivity(item, module);
-          });
+          }));
         });
       }
       function renderModules(item) {
@@ -793,16 +804,20 @@
         scope.querySelector("[data-update-review]")?.addEventListener("click", () => {
           const version = moduleVersion(module);
           const selectedStatus = scope.querySelector("[data-status].active")?.dataset.status || statusOptions[0];
-          const note = scope.querySelector("textarea")?.value || "";
+          const note = scope.querySelector("[data-feedback-good]")?.value || "";
+          const badNote = scope.querySelector("[data-feedback-bad]")?.value || "";
+          const feedbackSummary = scope.querySelector("[data-feedback-summary]")?.value || "";
           localStorage.setItem(storageKey(item.id, module.name, "status", version), selectedStatus);
           localStorage.setItem(storageKey(item.id, module.name, "note", version), note);
+          localStorage.setItem(storageKey(item.id, module.name, "badNote", version), badNote);
+          localStorage.setItem(storageKey(item.id, module.name, "summary", version), feedbackSummary);
           recordModuleActivity(item, module, version);
           render();
         });
         scope.querySelector("[data-clear-review]")?.addEventListener("click", () => {
           const version = moduleVersion(module);
           if (!window.confirm(`確定要清除「${module.name}」${version}的本機驗測紀錄嗎？`)) return;
-          ["reviewed", "status", "note", "tag"].forEach(field => localStorage.removeItem(storageKey(item.id, module.name, field, version)));
+          ["reviewed", "status", "note", "badNote", "summary", "tag", "activityAt"].forEach(field => localStorage.removeItem(storageKey(item.id, module.name, field, version)));
           render();
         });
         scope.querySelector("[data-module-tag]")?.addEventListener("input", event => {
@@ -813,10 +828,11 @@
           recordModuleActivity(item, module);
         });
         scope.querySelector("[data-module-tag]")?.addEventListener("change", () => renderCompactList());
-        scope.querySelector("textarea")?.addEventListener("input", event => {
-          localStorage.setItem(storageKey(item.id, module.name, "note", moduleVersion(module)), event.target.value);
+        scope.querySelectorAll("[data-feedback-good], [data-feedback-bad], [data-feedback-summary]").forEach(textarea => textarea.addEventListener("input", event => {
+          const field = event.target.dataset.feedbackGood !== undefined ? "note" : event.target.dataset.feedbackBad !== undefined ? "badNote" : "summary";
+          localStorage.setItem(storageKey(item.id, module.name, field, moduleVersion(module)), event.target.value);
           recordModuleActivity(item, module);
-        });
+        }));
       }
       function renderCompactList() {
         const list = filteredCases();
