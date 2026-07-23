@@ -132,6 +132,10 @@
       .condition-table { table-layout: fixed; }
       .condition-table th:first-child, .condition-table td:first-child { width: 85px; max-width: 85px; white-space: nowrap; color: var(--muted); font-weight: 700; }
       .condition-table th:nth-child(2), .condition-table td:nth-child(2) { width: auto; }
+      .condition-clause-title { margin: 18px 0 6px; color: var(--ink); font-size: 16px; font-weight: 800; }
+      .condition-clause-subtitle { margin: 0 0 8px; color: var(--muted); }
+      .condition-clause-summary { margin: 0 0 14px; color: var(--muted); white-space: pre-wrap; line-height: 1.6; }
+      .condition-clause-table { margin-bottom: 14px; }
       .subject-table th, .subject-table td { text-align: left; color: var(--ink); }
       .subject-table th:first-child, .subject-table td:first-child { width: calc(5em + 26px); max-width: calc(5em + 26px); white-space: nowrap; color: var(--ink); font-weight: 700; }
       .subject-table th:nth-child(2), .subject-table td:nth-child(2) { width: 20px; max-width: 20px; white-space: nowrap; }
@@ -608,7 +612,7 @@
         let label = "低風險";
         if (safe < 5) { color = "var(--danger)"; label = "高風險"; }
         else if (safe < 8) { color = "var(--warn)"; label = "中風險"; }
-        return { value: Number.isFinite(n) ? n.toFixed(Number.isInteger(n) ? 0 : 1) : "-", width: `${safe * 10}%`, color, label };
+        return { value: Number.isFinite(n) ? String(score) : "-", width: `${safe * 10}%`, color, label };
       }
       function renderHead(item) {
         if (!item) { els.caseHead.innerHTML = `<div class="empty">沒有案例資料</div>`; return; }
@@ -677,6 +681,39 @@
         const section = (module.sections || []).find(s => s.title === key);
         return section?.body || "-";
       }
+      function conditionClauseRows(value) {
+        if (!Array.isArray(value)) return [];
+        return value.map(row => {
+          if (Array.isArray(row)) return [row[0] || "-", row[1] || "-"];
+          if (!row || typeof row !== "object") return ["-", String(row ?? "-")];
+          return [row.clause || row.code || row.name || row.title || "-", row.description || row.explanation || row.body || "-"];
+        });
+      }
+      function renderConditionClauseTable(rows) {
+        const dataRows = rows.length ? rows : [["無", ""]];
+        return `<table class="condition-table condition-clause-table"><thead><tr><th>條款</th><th>說明</th></tr></thead><tbody>${dataRows.map(row => `<tr><td>${esc(row[0])}</td><td>${esc(row[1])}</td></tr>`).join("")}</tbody></table>`;
+      }
+      function conditionClauseSummary(value) {
+        if (Array.isArray(value)) {
+          const rows = conditionClauseRows(value);
+          return rows.length ? rows.map(row => row.filter(Boolean).join("：")).join("\n") : "無";
+        }
+        if (value && typeof value === "object") return JSON.stringify(value);
+        const text = String(value ?? "").trim();
+        return text || "無";
+      }
+      function renderConditionClauseSummary(value) {
+        return `<div class="condition-clause-summary">${esc(conditionClauseSummary(value))}</div>`;
+      }
+      function renderConditionClauses(module) {
+        const knowledge = conditionClauseRows(module.CLAUSE_KNOWLEDGE || module.TERM_KNOWLEDGE || module.POLICY_CLAUSES);
+        const recommended = conditionClauseRows(module.RECOMMENDED_CLAUSES || module.RECOMMENDED_CLAUSE || module.ADDITIONAL_CLAUSES);
+        const hasSummaryA = Object.prototype.hasOwnProperty.call(module, "CLAUSE_RISK_A_SUM");
+        const hasSummaryB = Object.prototype.hasOwnProperty.call(module, "CLAUSE_RISK_B_SUM");
+        const knowledgeContent = hasSummaryA ? renderConditionClauseSummary(module.CLAUSE_RISK_A_SUM) : renderConditionClauseTable(knowledge);
+        const recommendedContent = hasSummaryB ? renderConditionClauseSummary(module.CLAUSE_RISK_B_SUM) : renderConditionClauseTable(recommended);
+        return `<div class="condition-clause-title">條款知識</div><div class="condition-clause-subtitle">已併條款風險</div>${knowledgeContent}<div class="condition-clause-title">建議加貼條款</div>${recommendedContent}`;
+      }
       function renderCondition(module) {
         let comparison = module.EXPOSURE_COMPARISON || module.exposureComparison || {};
         if (!Object.keys(comparison).length) {
@@ -692,7 +729,7 @@
         }).join("");
         const scale = [0, 20, 40, 60, 80, 100].map(p => `<span>${(chartMax * p / 100).toLocaleString("zh-TW")}</span>`).join("");
         const descriptions = [["AOP", "AOP_ASSESSMENT"], ["AOA", "AOA_ASSESSMENT"], ["APD", "APD_ASSESSMENT"], ["AGG", "AGG_ASSESSMENT"], ["自負額", "DEDUCTIBLE_ASSESSMENT"]];
-        return `<div class="condition-meta"><div><strong>曝險程度</strong><br>${esc(conditionValue(module, "EXPOSURE_LEVEL"))}</div><div><strong>核心項目</strong><br>${esc(conditionValue(module, "CORE_FOCUS"))}</div></div><details class="section" open><summary>曝險程度對照圖</summary><div class="exposure-chart">${rows}<div class="chart-scale">${scale}</div><div class="chart-legend"><span><i class="legend-dot bar case"></i>本案</span><span><i class="legend-dot bar p75"></i>P75</span><span><i class="legend-dot bar minimum"></i>最小</span></div></div></details><table class="condition-table"><thead><tr><th>分析項目</th><th>說明</th></tr></thead><tbody>${descriptions.map(([label, key]) => `<tr><td>${label}</td><td>${esc(conditionValue(module, key))}</td></tr>`).join("")}</tbody></table>`;
+        return `<div class="condition-meta"><div><strong>曝險程度</strong><br>${esc(conditionValue(module, "EXPOSURE_LEVEL"))}</div><div><strong>核心項目</strong><br>${esc(conditionValue(module, "CORE_FOCUS"))}</div></div><details class="section" open><summary>曝險程度對照圖</summary><div class="exposure-chart">${rows}<div class="chart-scale">${scale}</div><div class="chart-legend"><span><i class="legend-dot bar case"></i>本案</span><span><i class="legend-dot bar p75"></i>P75</span><span><i class="legend-dot bar minimum"></i>最小</span></div></div></details><table class="condition-table"><thead><tr><th>分析項目</th><th>說明</th></tr></thead><tbody>${descriptions.map(([label, key]) => `<tr><td>${label}</td><td>${esc(conditionValue(module, key))}</td></tr>`).join("")}</tbody></table>${renderConditionClauses(module)}`;
       }
       function renderSubject(module) {
         const assessments = module.REVENUE_EXPOSURE_ASSESSMENTS || {};
