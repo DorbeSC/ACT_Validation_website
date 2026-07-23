@@ -168,6 +168,9 @@
       .value { display: block; margin-top: 2px; overflow-wrap: anywhere; font-size: 16px; font-weight: 700; }
       .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
       .filter {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
         padding: 7px 12px;
         font-size: 14px;
         border: 1px solid var(--line);
@@ -181,6 +184,16 @@
       .filter[data-module="客戶"], .filter[data-module="客戶風險"] { border-color: #d8b18c; background: #fff3e8; color: #8a5429; }
       .filter[data-module="web search"] { border-color: #aeb8c4; background: #eef1f4; color: #465565; }
       .filter[data-module="歷史"].active, .filter[data-module="條件"].active, .filter[data-module="標的"].active, .filter[data-module="客戶"].active, .filter[data-module="客戶風險"].active, .filter[data-module="web search"].active { box-shadow: inset 0 0 0 2px currentColor; }
+      .filter-judge, .version-judge-result { padding: 2px 6px; border-radius: 4px; background: #e9eef2; color: #53616c; font-size: 11px; font-weight: 800; white-space: nowrap; }
+      .filter-judge.pass, .version-judge-result.pass { background: #d8f2e2; color: #176b49; }
+      .filter-judge.fail, .version-judge-result.fail { background: #f8d9de; color: #a52e49; }
+      .filter-judge.mixed { background: #f8ecd0; color: #8b5c00; }
+      .version-judge-list { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-top: 8px; }
+      .version-judge-list-label { color: var(--muted); font-size: 12px; }
+      .version-judge-chip { padding: 3px 7px; border: 1px solid #c9d3da; border-radius: 4px; background: #f1f4f6; color: #53616c; font-size: 11px; font-weight: 800; }
+      .version-judge-chip.pass { border-color: #b8dfca; background: #d8f2e2; color: #176b49; }
+      .version-judge-chip.fail { border-color: #efc2c2; background: #f8d9de; color: #a52e49; }
+      .version-judge-chip.selected { box-shadow: inset 0 0 0 2px currentColor; }
       .modules { display: grid; gap: 14px; }
       .module { overflow: hidden; }
       .module-head {
@@ -285,6 +298,42 @@
       .feedback-summary { flex-basis: 100%; }
       .reviewed-badge { color: #23865a; font-size: 13px; font-weight: 700; }
       .local-only-note { flex-basis: 100%; color: var(--muted); font-size: 12px; line-height: 1.5; }
+      .ai-judge-card { margin: 18px 0 16px; border: 1px solid #c9dbe8; border-radius: 8px; overflow: hidden; background: #f7fbfe; }
+      .ai-judge-card > summary { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 14px; list-style: none; cursor: pointer; }
+      .ai-judge-card > summary::-webkit-details-marker { display: none; }
+      .ai-judge-card > summary::after { content: "展開"; color: var(--muted); font-size: 12px; }
+      .ai-judge-card[open] > summary::after { content: "收合"; }
+      .ai-judge-title { color: var(--accent); font-size: 16px; font-weight: 800; }
+      .ai-judge-overview { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 7px; align-items: center; }
+      .ai-judge-decision, .ai-judge-score { display: inline-flex; align-items: center; min-height: 26px; padding: 3px 9px; border-radius: 999px; font-size: 12px; font-weight: 800; }
+      .ai-judge-decision { color: var(--muted); background: #eef2f5; }
+      .ai-judge-decision.pass { color: #19764f; background: #e6f6ee; }
+      .ai-judge-decision.fail { color: #a43636; background: #fdeaea; }
+      .ai-judge-score { color: var(--accent); background: #e8f1f8; }
+      .ai-judge-body { padding: 14px; border-top: 1px solid #c9dbe8; }
+      .ai-judge-final-result { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 10px; padding: 12px 14px; border: 1px solid #c9dbe8; border-left: 6px solid #9aa8b3; border-radius: 6px; background: #fff; }
+      .ai-judge-final-result.pass { border-color: #b8dfca; border-left-color: #23865a; background: #f1fbf5; }
+      .ai-judge-final-result.fail { border-color: #efc2c2; border-left-color: #b73550; background: #fff5f5; }
+      .ai-judge-final-label { color: var(--ink); font-size: 15px; font-weight: 800; }
+      .ai-judge-final-context { margin-top: 3px; color: var(--muted); font-size: 12px; }
+      .ai-judge-final-value { min-width: 86px; padding: 6px 12px; border-radius: 6px; color: #53616c; background: #e9eef2; text-align: center; font-size: 22px; font-weight: 900; letter-spacing: .3px; }
+      .ai-judge-final-value.pass { color: #176b49; background: #d8f2e2; }
+      .ai-judge-final-value.fail { color: #a52e49; background: #f8d9de; }
+      .ai-judge-metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+      .ai-judge-metric { padding: 10px; border: 1px solid var(--line); border-radius: 6px; background: #fff; }
+      .ai-judge-metric-head { display: flex; justify-content: space-between; gap: 8px; color: var(--muted); font-size: 12px; }
+      .ai-judge-metric-value { color: var(--ink); font-size: 18px; font-weight: 800; }
+      .ai-judge-meter { height: 6px; margin-top: 7px; overflow: hidden; border-radius: 4px; background: #e8edf2; }
+      .ai-judge-meter-fill { width: var(--judge-width); height: 100%; background: var(--accent); }
+      .ai-judge-reason { margin-top: 10px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 6px; background: #fff; }
+      .ai-judge-reason-label, .ai-judge-feedback-title { color: var(--ink); font-size: 13px; font-weight: 800; }
+      .ai-judge-reason-text { margin: 5px 0 0; color: var(--muted); line-height: 1.65; white-space: pre-wrap; }
+      .ai-judge-feedback { margin-top: 12px; padding-top: 12px; border-top: 1px dashed var(--line); }
+      .ai-judge-feedback-options { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 8px; }
+      .ai-judge-feedback-options button { padding: 6px 10px; border: 1px solid #b8ccd9; border-radius: 6px; background: #fff; color: var(--ink); cursor: pointer; }
+      .ai-judge-feedback-options button:hover, .ai-judge-feedback-options button.active { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); font-weight: 700; }
+      .ai-judge-feedback-note { height: 72px; min-height: 72px; margin-top: 8px; }
+      .ai-judge-feedback-hint { margin-top: 5px; color: var(--muted); font-size: 12px; }
       textarea { width: 100%; height: 120px; min-height: 120px; resize: vertical; border: 1px solid var(--line); border-radius: 6px; padding: 8px; }
       .empty { padding: 24px; color: var(--muted); text-align: center; }
       .usage-view { margin: 12px; padding: 18px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); overflow-x: auto; }
@@ -346,6 +395,8 @@
       }
       @media (max-width: 620px) {
         .summary-grid { grid-template-columns: 1fr; }
+        .ai-judge-card > summary { align-items: flex-start; flex-direction: column; }
+        .ai-judge-overview { justify-content: flex-start; }
         .actions { flex-direction: column; align-items: stretch; }
       }
       @media print {
@@ -398,6 +449,7 @@
         ["APD_AMOUNT_PRODUCT", "每一事故財物損失"], ["AGG_AMOUNT_PRODUCT", "保險期間累計"]
       ];
       const statusOptions = ["已確認並回饋在excel"];
+      const aiJudgeFeedbackOptions = ["認同", "部分認同", "不認同", "尚未確認"];
       const els = {
         meta: document.getElementById("meta"), search: document.getElementById("search"), count: document.getElementById("count"),
         caseList: document.getElementById("caseList"), caseHead: document.getElementById("caseHead"),
@@ -412,6 +464,67 @@
         if (!s) return "-";
         if (/AMOUNT|REVENUE|DDCB/.test(key) && !Number.isNaN(Number(s))) return Number(s).toLocaleString("zh-TW");
         return s;
+      }
+      function aiJudgeField(module, field) {
+        const nested = module?.AI_JUDGE || module?.aiJudge || module?.ai_judge;
+        if (nested && Object.prototype.hasOwnProperty.call(nested, field)) return nested[field];
+        return module?.[field];
+      }
+      function aiJudgeText(value, fallback = "-") {
+        if (value === null || value === undefined || String(value).trim() === "") return fallback;
+        return String(value);
+      }
+      function aiJudgeDecisionLabel(value) {
+        return aiJudgeText(value, "-");
+      }
+      function aiJudgeDecisionClass(value) {
+        const normalized = String(value ?? "").trim().toLowerCase();
+        if (["pass", "passed", "通過"].includes(normalized)) return "pass";
+        if (["fail", "failed", "需複核", "不通過"].includes(normalized)) return "fail";
+        return "";
+      }
+      function aiJudgeFinalLabel(value) {
+        return aiJudgeText(value, "-");
+      }
+      function judgeResultInfo(module) {
+        const raw = aiJudgeField(module, "overall_decision");
+        return { value: aiJudgeText(raw, "-"), className: aiJudgeDecisionClass(raw) };
+      }
+      function moduleJudgeSummary(item, name) {
+        if (name === "web search") return { value: "", className: "" };
+        const results = new Map();
+        (item?.modules || []).filter(module => module.name === name).forEach(module => {
+          const info = judgeResultInfo(module);
+          if (info.value !== "-" && !results.has(info.value)) results.set(info.value, info.className);
+        });
+        const values = [...results.keys()];
+        return { value: values.length ? values.join(" / ") : "-", className: values.length === 1 ? (results.get(values[0]) || "") : values.length > 1 ? "mixed" : "" };
+      }
+      function renderVersionJudgeResult(module, groupIndex) {
+        const info = judgeResultInfo(module);
+        return `<span class="version-judge-result ${info.className}" data-version-judge="${groupIndex}">Judge：${esc(info.value)}</span>`;
+      }
+      function renderVersionJudgeList(versions, groupIndex) {
+        const judgedVersions = versions.map((module, index) => ({ module, index, info: judgeResultInfo(module) })).filter(item => item.info.value !== "-");
+        if (!judgedVersions.length) return "";
+        return `<div class="version-judge-list"><span class="version-judge-list-label">各版次 Judge 結果</span>${judgedVersions.map(({ module, index, info }) => { const version = module.version || `版次 ${index + 1}`; return `<span class="version-judge-chip ${info.className} ${index === 0 ? "selected" : ""}" data-version-judge-option="${groupIndex}" data-version-judge-index="${index}">${esc(version)}：${esc(info.value)}</span>`; }).join("")}</div>`;
+      }
+      function aiJudgeMetric(label, value) {
+        const n = Number(value);
+        const width = Number.isFinite(n) ? `${Math.max(0, Math.min(5, n)) / 5 * 100}%` : "0%";
+        return `<div class="ai-judge-metric"><div class="ai-judge-metric-head"><span>${esc(label)}</span><span class="ai-judge-metric-value">${esc(aiJudgeText(value))}<small>/5</small></span></div><div class="ai-judge-meter"><div class="ai-judge-meter-fill" style="--judge-width:${esc(width)}"></div></div></div>`;
+      }
+      function renderAiJudge(item, module) {
+        const decisionRaw = aiJudgeField(module, "overall_decision");
+        const decision = aiJudgeDecisionLabel(decisionRaw);
+        const decisionClass = aiJudgeDecisionClass(decisionRaw);
+        const finalResult = aiJudgeFinalLabel(decisionRaw);
+        const overallScore = aiJudgeText(aiJudgeField(module, "overall_score"));
+        const reason = aiJudgeText(aiJudgeField(module, "reason"), "目前尚無 AI Judge 原因說明。");
+        const version = moduleVersion(module);
+        const feedback = localStorage.getItem(storageKey(item.id, module.name, "aiJudgeFeedback", version)) || "";
+        const feedbackNote = localStorage.getItem(storageKey(item.id, module.name, "aiJudgeFeedbackNote", version)) || "";
+        return `<details class="ai-judge-card" open><summary><span class="ai-judge-title">AI Judge 初步驗測</span><span class="ai-judge-overview"><span class="ai-judge-decision ${decisionClass}">${esc(decision)}</span><span class="ai-judge-score">整體分數 ${esc(overallScore)} / 5</span></span></summary><div class="ai-judge-body"><div class="ai-judge-final-result ${decisionClass}"><div><div class="ai-judge-final-label">Judge 最終結果</div><div class="ai-judge-final-context">${esc(moduleLabel(module.name))}／版次：${esc(version)}</div></div><span class="ai-judge-final-value ${decisionClass}">${esc(finalResult)}</span></div><div class="ai-judge-metrics">${aiJudgeMetric("正確性", aiJudgeField(module, "correctness"))}${aiJudgeMetric("完整性", aiJudgeField(module, "completeness"))}${aiJudgeMetric("幻覺", aiJudgeField(module, "hallucination_control"))}</div><div class="ai-judge-reason"><div class="ai-judge-reason-label">原因</div><p class="ai-judge-reason-text">${esc(reason)}</p></div><div class="ai-judge-feedback"><div class="ai-judge-feedback-title">請回饋 AI Judge 的評分結果</div><div class="ai-judge-feedback-options">${aiJudgeFeedbackOptions.map(option => `<button type="button" class="${option === feedback ? "active" : ""}" data-ai-judge-feedback="${esc(option)}">${esc(option)}</button>`).join("")}</div><textarea class="ai-judge-feedback-note" data-ai-judge-feedback-note placeholder="請補充原因或需要人工修正的地方">${esc(feedbackNote)}</textarea><div class="ai-judge-feedback-hint">回饋會保存於本機，下載 Excel 時一併匯出。</div></div></div></details>`;
       }
       function moduleTag(item, module) {
         if (!item || !module) return "";
@@ -535,8 +648,10 @@
             const note = localStorage.getItem(storageKey(item.id, module.name, "note", version));
             const badNote = localStorage.getItem(storageKey(item.id, module.name, "badNote", version)) || "";
             const feedbackSummary = localStorage.getItem(storageKey(item.id, module.name, "summary", version)) || "";
+            const aiJudgeFeedback = localStorage.getItem(storageKey(item.id, module.name, "aiJudgeFeedback", version)) || "";
+            const aiJudgeFeedbackNote = localStorage.getItem(storageKey(item.id, module.name, "aiJudgeFeedbackNote", version)) || "";
             const tag = moduleTag(item, module);
-            if (reviewed === null && status === null && note === null && !badNote && !feedbackSummary && !tag) return;
+            if (reviewed === null && status === null && note === null && !badNote && !feedbackSummary && !tag && !aiJudgeFeedback && !aiJudgeFeedbackNote) return;
             const activityAt = localStorage.getItem(storageKey(item.id, module.name, "activityAt", version));
             rows.push({
               "案例": item.title || "-",
@@ -551,7 +666,16 @@
               "BU回饋_好的": note || "",
               "BU回饋_差的": badNote,
               "總結": feedbackSummary,
-              "驗測／填寫時間": activityAt || "-"
+              "驗測／填寫時間": activityAt || "-",
+              "AI Judge整體判定": aiJudgeText(aiJudgeField(module, "overall_decision")),
+              "AI Judge最終結果": aiJudgeFinalLabel(aiJudgeField(module, "overall_decision")),
+              "AI Judge整體分數": aiJudgeText(aiJudgeField(module, "overall_score")),
+              "AI Judge正確性": aiJudgeText(aiJudgeField(module, "correctness")),
+              "AI Judge完整性": aiJudgeText(aiJudgeField(module, "completeness")),
+              "AI Judge幻覺": aiJudgeText(aiJudgeField(module, "hallucination_control")),
+              "AI Judge原因": aiJudgeText(aiJudgeField(module, "reason")),
+              "AI Judge使用者回饋": aiJudgeFeedback,
+              "AI Judge回饋說明": aiJudgeFeedbackNote
             });
           });
         });
@@ -570,7 +694,8 @@
         const worksheet = XLSX.utils.json_to_sheet(rows);
         worksheet["!cols"] = [
           { wch: 24 }, { wch: 14 }, { wch: 18 }, { wch: 24 }, { wch: 18 }, { wch: 14 },
-          { wch: 14 }, { wch: 24 }, { wch: 24 }, { wch: 48 }, { wch: 48 }, { wch: 48 }, { wch: 22 }
+          { wch: 14 }, { wch: 24 }, { wch: 24 }, { wch: 48 }, { wch: 48 }, { wch: 48 }, { wch: 22 },
+          { wch: 18 }, { wch: 18 }, { wch: 16 }, { wch: 16 }, { wch: 16 }, { wch: 16 }, { wch: 80 }, { wch: 20 }, { wch: 48 }
         ];
         const workbook = XLSX.utils.book_new();
         XLSX.utils.book_append_sheet(workbook, worksheet, "本機驗測紀錄");
@@ -606,7 +731,8 @@
         return "";
       }
       function scoreMeta(score) {
-        const n = Number(score);
+        const hasScore = score !== null && score !== undefined && String(score).trim() !== "" && String(score).toLowerCase() !== "null";
+        const n = hasScore ? Number(score) : NaN;
         const safe = Number.isFinite(n) ? Math.max(0, Math.min(10, n)) : 0;
         let color = "var(--accent)";
         let label = "低風險";
@@ -648,7 +774,7 @@
           <div class="feedback-grid"><textarea placeholder="BU回饋_好的" data-feedback-good>${esc(note)}</textarea><textarea placeholder="BU回饋_差的" data-feedback-bad>${esc(badNote)}</textarea></div>
           <textarea class="feedback-summary" placeholder="總結" data-feedback-summary>${esc(feedbackSummary)}</textarea>
           <div class="local-only-note">在此送出的內容僅供本機使用者紀錄，無法同步給其他使用者</div>
-        </div>`;
+        </div>${module.name === "web search" ? "" : renderAiJudge(item, module)}`;
       }
       function renderSections(sections) {
         return (sections || []).map((section, index) => `<details class="section" ${index < 2 ? "open" : ""}><summary>${esc(section.title)}</summary><p>${esc(section.body)}</p></details>`).join("");
@@ -805,7 +931,7 @@
           const selected = versions[0];
           const selectedScore = selected.score ?? selected.SCORE;
           const meta = scoreMeta(selectedScore);
-          return `<article class="module" data-version-group="${groupIndex}"><header class="module-head"><div><h3>${esc(moduleLabel(name))}</h3>${name === "歷史" ? `<div class="attention-tags" data-version-attention-tags="${groupIndex}">${renderAttentionTags(selected)}</div>` : ""}<div class="version-picker"><label>選擇版次</label><select class="version-select" data-version-select="${groupIndex}">${versions.map((m, i) => `<option value="${i}">${esc(m.version || `版次 ${i + 1}`)}</option>`).join("")}</select><span class="delivery-date">交付日期：${esc(selected.deliveryDate || "-")}</span></div></div><div class="score-panel ${name === "web search" ? "web-search-score" : ""}"><div class="score-number" data-version-score="${groupIndex}">${esc(meta.value)}</div><div class="score-track"><div class="score-fill" data-version-fill="${groupIndex}" style="--score-width:${esc(meta.width)}; --score-color:${esc(meta.color)}"></div></div><span class="pill score ${scoreClass(selectedScore)}" data-version-label="${groupIndex}">${esc(meta.label)}</span></div></header><div class="module-body" data-version-body="${groupIndex}">${name === "條件" ? renderCondition(selected) : name === "標的" ? renderSubject(selected) : name === "歷史" ? renderHistory(selected) : name === "web search" ? renderWebSearch(selected) : isCustomerRiskModule(name) ? renderCustomerRisk(selected) : renderSections(selected.sections)}${renderStatus(item, selected)}</div></article>`;
+          return `<article class="module" data-version-group="${groupIndex}"><header class="module-head"><div><h3>${esc(moduleLabel(name))}</h3>${name === "歷史" ? `<div class="attention-tags" data-version-attention-tags="${groupIndex}">${renderAttentionTags(selected)}</div>` : ""}<div class="version-picker"><label>選擇版次</label><select class="version-select" data-version-select="${groupIndex}">${versions.map((m, i) => `<option value="${i}">${esc(m.version || `版次 ${i + 1}`)}</option>`).join("")}</select><span class="delivery-date">交付日期：${esc(selected.deliveryDate || "-")}</span></div>${name === "web search" ? "" : renderVersionJudgeList(versions, groupIndex)}</div><div class="score-panel ${name === "web search" ? "web-search-score" : ""}"><div class="score-number" data-version-score="${groupIndex}">${esc(meta.value)}</div><div class="score-track"><div class="score-fill" data-version-fill="${groupIndex}" style="--score-width:${esc(meta.width)}; --score-color:${esc(meta.color)}"></div></div><span class="pill score ${scoreClass(selectedScore)}" data-version-label="${groupIndex}">${esc(meta.label)}</span></div></header><div class="module-body" data-version-body="${groupIndex}">${name === "條件" ? renderCondition(selected) : name === "標的" ? renderSubject(selected) : name === "歷史" ? renderHistory(selected) : name === "web search" ? renderWebSearch(selected) : isCustomerRiskModule(name) ? renderCustomerRisk(selected) : renderSections(selected.sections)}${renderStatus(item, selected)}</div></article>`;
         }).join("") : `<div class="empty">目前沒有模組資料</div>`;
         els.modules.querySelectorAll("[data-version-select]").forEach(select => select.addEventListener("change", () => {
           const group = Number(select.dataset.versionSelect), versions = list[group][1], module = versions[Number(select.value)], moduleScore = module.score ?? module.SCORE, meta = scoreMeta(moduleScore);
@@ -815,6 +941,7 @@
           card.querySelector(`[data-version-fill="${group}"]`).style.setProperty("--score-color", meta.color);
           const label = card.querySelector(`[data-version-label="${group}"]`); label.textContent = meta.label; label.className = `pill score ${scoreClass(moduleScore)}`;
           card.querySelector(".delivery-date").textContent = `交付日期：${module.deliveryDate || "-"}`;
+          card.querySelectorAll(`[data-version-judge-option="${group}"]`).forEach(chip => chip.classList.toggle("selected", chip.dataset.versionJudgeIndex === String(select.value)));
           const attentionTags = card.querySelector(`[data-version-attention-tags="${group}"]`);
           if (attentionTags) attentionTags.innerHTML = module.name === "歷史" ? renderAttentionTags(module) : "";
           card.querySelector(`[data-version-body="${group}"]`).innerHTML = `${module.name === "條件" ? renderCondition(module) : module.name === "標的" ? renderSubject(module) : module.name === "歷史" ? renderHistory(module) : module.name === "web search" ? renderWebSearch(module) : isCustomerRiskModule(module.name) ? renderCustomerRisk(module) : renderSections(module.sections)}${renderStatus(item, module)}`;
@@ -855,7 +982,7 @@
         scope.querySelector("[data-clear-review]")?.addEventListener("click", () => {
           const version = moduleVersion(module);
           if (!window.confirm(`確定要清除「${module.name}」${version}的本機驗測紀錄嗎？`)) return;
-          ["reviewed", "status", "note", "badNote", "summary", "tag", "activityAt"].forEach(field => localStorage.removeItem(storageKey(item.id, module.name, field, version)));
+          ["reviewed", "status", "note", "badNote", "summary", "tag", "aiJudgeFeedback", "aiJudgeFeedbackNote", "activityAt"].forEach(field => localStorage.removeItem(storageKey(item.id, module.name, field, version)));
           render();
         });
         scope.querySelector("[data-module-tag]")?.addEventListener("input", event => {
@@ -871,6 +998,21 @@
           localStorage.setItem(storageKey(item.id, module.name, field, moduleVersion(module)), event.target.value);
           recordModuleActivity(item, module);
         }));
+        scope.querySelectorAll("[data-ai-judge-feedback]").forEach(button => button.addEventListener("click", event => {
+          const value = event.currentTarget.dataset.aiJudgeFeedback || "";
+          const version = moduleVersion(module);
+          if (value) localStorage.setItem(storageKey(item.id, module.name, "aiJudgeFeedback", version), value);
+          else localStorage.removeItem(storageKey(item.id, module.name, "aiJudgeFeedback", version));
+          scope.querySelectorAll("[data-ai-judge-feedback]").forEach(option => option.classList.toggle("active", option === event.currentTarget));
+          recordModuleActivity(item, module, version);
+        }));
+        scope.querySelector("[data-ai-judge-feedback-note]")?.addEventListener("input", event => {
+          const version = moduleVersion(module);
+          const value = event.target.value;
+          if (value) localStorage.setItem(storageKey(item.id, module.name, "aiJudgeFeedbackNote", version), value);
+          else localStorage.removeItem(storageKey(item.id, module.name, "aiJudgeFeedbackNote", version));
+          recordModuleActivity(item, module, version);
+        });
       }
       function renderCompactList() {
         const list = filteredCases();
