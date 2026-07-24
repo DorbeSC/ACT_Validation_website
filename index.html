@@ -239,6 +239,16 @@
         background: var(--score-color);
       }
       .module-body { display: block; padding: 16px; }
+      .report-summary { display: grid; grid-template-columns: minmax(150px, 210px) minmax(0, 1fr); gap: 14px; }
+      .report-risk-card, .report-summary-card { padding: 16px; border: 1px solid var(--line); border-radius: 6px; background: #fbfcfd; }
+      .report-card-label { margin-bottom: 8px; color: var(--muted); font-size: 13px; font-weight: 700; }
+      .report-risk-value { font-size: 36px; font-weight: 800; line-height: 1; }
+      .report-risk-value small { color: var(--muted); font-size: 15px; font-weight: 600; }
+      .report-risk-level { display: inline-flex; margin-top: 10px; padding: 4px 8px; border-radius: 5px; background: var(--accent); color: #fff; font-size: 12px; font-weight: 800; }
+      .report-risk-level.mid { background: var(--warn); }
+      .report-risk-level.high { background: var(--danger); }
+      .report-summary-card p { margin: 0; line-height: 1.75; white-space: pre-wrap; }
+      @media (max-width: 620px) { .report-summary { grid-template-columns: 1fr; } }
       .quick-review {
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -563,6 +573,31 @@
       function moduleLabel(name) {
         return name === "客戶" || name === "客戶風險" ? "客戶風險" : name;
       }
+      function createReportModule(item) {
+        const existing = (item?.modules || []).find(module => module.name === "報告");
+        if (existing) return { ...existing, name: "報告", riskSummary: existing.final_summary ?? existing.FINAL_SUMMARY ?? existing.riskSummary ?? "-" };
+        const sourceByName = new Map();
+        (item?.modules || []).filter(module => module.name !== "報告").forEach(module => {
+          if (!sourceByName.has(module.name)) sourceByName.set(module.name, module);
+        });
+        const source = [...sourceByName.values()];
+        const scored = source.map(module => ({ name: moduleLabel(module.name), score: Number(module.score ?? module.SCORE) })).filter(module => Number.isFinite(module.score));
+        const score = scored.length ? scored.reduce((total, module) => total + module.score, 0) / scored.length : null;
+        const priority = [...scored].sort((a, b) => a.score - b.score).slice(0, 3);
+        const highRisk = priority.filter(module => module.score < 5);
+        const mediumRisk = priority.filter(module => module.score >= 5 && module.score < 8);
+        const summaryParts = [];
+        if (!scored.length) summaryParts.push("目前各模組尚無可彙整的風險分數，建議先確認模組資料是否完整。");
+        else if (highRisk.length) summaryParts.push(`高風險重點為${highRisk.map(module => `${module.name}（${module.score} 分）`).join("、")}，建議優先人工複核。`);
+        else if (mediumRisk.length) summaryParts.push(`目前主要關注項目為${mediumRisk.map(module => `${module.name}（${module.score} 分）`).join("、")}，建議依序確認相關評估內容。`);
+        else summaryParts.push("目前各模組整體呈低風險，未發現需要優先處理的高風險項目。");
+        summaryParts.push(`本摘要彙整 ${source.length} 個既有模組${scored.length !== source.length ? `，其中 ${scored.length} 個提供有效分數` : ""}。`);
+        return { name: "報告", score, riskSummary: summaryParts.join("\n") };
+      }
+      function reportModules(item) {
+        if ((item?.modules || []).some(module => module.name === "報告")) return item.modules;
+        return [...(item?.modules || []), createReportModule(item)];
+      }
       function isCustomerRiskModule(name) {
         return name === "客戶" || name === "客戶風險";
       }
@@ -781,7 +816,7 @@
         els.caseSummary.innerHTML = `<div class="summary-grid">${summary}</div>`;
       }
       function renderFilters(item) {
-        const names = [...new Set((item?.modules || []).map(m => m.name))];
+        const names = [...new Set(reportModules(item).map(m => m.name))];
         els.filters.innerHTML = names.map(name => `<button class="filter ${name === state.activeModule ? "active" : ""}" data-module="${esc(name)}">${esc(moduleLabel(name))}</button>`).join("");
         els.filters.querySelectorAll("[data-module]").forEach(button => button.addEventListener("click", () => {
           state.activeModule = button.dataset.module;
@@ -919,6 +954,11 @@
         const value = field => module[field] == null || module[field] === "" ? "-" : module[field];
         return `<details class="section" open><summary>店面照片辨識</summary><p><strong>店面照片</strong><br>${esc(value("SP_SUMMARY"))}</p></details><details class="section" open><summary>CoPlus裁罰紀錄</summary><p><strong>裁罰概況</strong><br>${esc(value("ESG_PENALTY_OVERVIEW"))}</p><p><strong>摘要判斷</strong><br>${esc(value("ESG_PENALTY_RELEVANCE_SUMMARY"))}</p></details>`;
       }
+      function renderReport(module) {
+        const meta = scoreMeta(module.score);
+        const summary = module.final_summary ?? module.FINAL_SUMMARY ?? module.riskSummary ?? "-";
+        return `<div class="report-summary"><section class="report-risk-card"><div class="report-card-label">風險分數</div><div class="report-risk-value">${esc(meta.value)} <small>/ 10</small></div><span class="report-risk-level ${scoreClass(module.score)}">${esc(meta.label)}</span></section><section class="report-summary-card"><div class="report-card-label">風險摘要</div><p>${esc(summary)}</p></section></div>`;
+      }
       function renderModules(item) {
         if (!item) { els.modules.innerHTML = ""; return; }
         const list = (item.modules || []).filter(m => state.activeModule === "全部" || m.name === state.activeModule);
@@ -958,13 +998,16 @@
       function renderModules(item) {
         if (!item) { els.modules.innerHTML = ""; return; }
         const grouped = new Map();
-        (item.modules || []).forEach(m => { if (!grouped.has(m.name)) grouped.set(m.name, []); grouped.get(m.name).push(m); });
+        reportModules(item).forEach(m => { if (!grouped.has(m.name)) grouped.set(m.name, []); grouped.get(m.name).push(m); });
         const list = [...grouped.entries()].filter(([name]) => state.activeModule === "全部" || name === state.activeModule);
         els.modules.innerHTML = list.length ? list.map(([name, versions], groupIndex) => {
           const selected = versions[0];
           const selectedScore = selected.score ?? selected.SCORE;
           const meta = scoreMeta(selectedScore);
-          return `<article class="module" data-version-group="${groupIndex}"><header class="module-head"><div><h3>${esc(moduleLabel(name))}</h3>${name === "歷史" ? `<div class="attention-tags" data-version-attention-tags="${groupIndex}">${renderAttentionTags(selected)}</div>` : ""}<div class="version-picker"><label>選擇版次</label><select class="version-select" data-version-select="${groupIndex}">${versions.map((m, i) => `<option value="${i}">${esc(m.version || `版次 ${i + 1}`)}</option>`).join("")}</select><span class="delivery-date">交付日期：${esc(selected.deliveryDate || "-")}</span></div>${name === "web search" ? "" : renderVersionJudgeList(versions, groupIndex)}</div><div class="score-panel ${name === "web search" ? "web-search-score" : ""}"><div class="score-number" data-version-score="${groupIndex}">${esc(meta.value)}</div><div class="score-track"><div class="score-fill" data-version-fill="${groupIndex}" style="--score-width:${esc(meta.width)}; --score-color:${esc(meta.color)}"></div></div><span class="pill score ${scoreClass(selectedScore)}" data-version-label="${groupIndex}">${esc(meta.label)}</span></div></header><div class="module-body" data-version-body="${groupIndex}">${name === "條件" ? renderCondition(selected) : name === "標的" ? renderSubject(selected) : name === "歷史" ? renderHistory(selected) : name === "web search" ? renderWebSearch(selected) : isCustomerRiskModule(name) ? renderCustomerRisk(selected) : renderSections(selected.sections)}${renderStatus(item, selected)}</div></article>`;
+          const isReport = name === "報告";
+          const versionPicker = isReport ? "" : `<div class="version-picker"><label>選擇版次</label><select class="version-select" data-version-select="${groupIndex}">${versions.map((m, i) => `<option value="${i}">${esc(m.version || `版次 ${i + 1}`)}</option>`).join("")}</select><span class="delivery-date">交付日期：${esc(selected.deliveryDate || "-")}</span></div>${name === "web search" ? "" : renderVersionJudgeList(versions, groupIndex)}`;
+          const body = isReport ? renderReport(selected) : name === "條件" ? renderCondition(selected) : name === "標的" ? renderSubject(selected) : name === "歷史" ? renderHistory(selected) : name === "web search" ? renderWebSearch(selected) : isCustomerRiskModule(name) ? renderCustomerRisk(selected) : renderSections(selected.sections);
+          return `<article class="module" data-version-group="${groupIndex}"><header class="module-head"><div><h3>${esc(moduleLabel(name))}</h3>${name === "歷史" ? `<div class="attention-tags" data-version-attention-tags="${groupIndex}">${renderAttentionTags(selected)}</div>` : ""}${versionPicker}</div><div class="score-panel ${name === "web search" ? "web-search-score" : ""}"><div class="score-number" data-version-score="${groupIndex}">${esc(meta.value)}</div><div class="score-track"><div class="score-fill" data-version-fill="${groupIndex}" style="--score-width:${esc(meta.width)}; --score-color:${esc(meta.color)}"></div></div><span class="pill score ${scoreClass(selectedScore)}" data-version-label="${groupIndex}">${esc(meta.label)}</span></div></header><div class="module-body" data-version-body="${groupIndex}">${body}${isReport ? "" : renderStatus(item, selected)}</div></article>`;
         }).join("") : `<div class="empty">目前沒有模組資料</div>`;
         els.modules.querySelectorAll("[data-version-select]").forEach(select => select.addEventListener("change", () => {
           const group = Number(select.dataset.versionSelect), versions = list[group][1], module = versions[Number(select.value)], moduleScore = module.score ?? module.SCORE, meta = scoreMeta(moduleScore);
@@ -982,7 +1025,7 @@
         }));
         els.modules.querySelectorAll("[data-scope]").forEach(scope => {
           const moduleName = scope.dataset.scope;
-          const module = (item.modules || []).find(m => m.name === moduleName) || {};
+          const module = reportModules(item).find(m => m.name === moduleName) || {};
           wireStatus(scope, item, module);
         });
       }
@@ -1053,7 +1096,7 @@
         els.caseList.innerHTML = list.length ? list.map(item => {
           const s = item.summary || {};
           const customer = customerDisplay(item);
-          const names = [...new Set((item.modules || []).map(m => m.name).filter(Boolean))];
+          const names = [...new Set(reportModules(item).map(m => m.name).filter(Boolean))];
           const moduleTagSummary = (item.modules || []).map(m => {
             const tag = moduleTag(item, m);
             return tag ? `${moduleLabel(m.name)}：${tag}` : "";
