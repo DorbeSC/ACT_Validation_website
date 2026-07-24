@@ -573,30 +573,8 @@
       function moduleLabel(name) {
         return name === "客戶" || name === "客戶風險" ? "客戶風險" : name;
       }
-      function createReportModule(item) {
-        const existing = (item?.modules || []).find(module => module.name === "報告");
-        if (existing) return { ...existing, name: "報告", riskSummary: existing.final_summary ?? existing.FINAL_SUMMARY ?? existing.riskSummary ?? "-" };
-        const sourceByName = new Map();
-        (item?.modules || []).filter(module => module.name !== "報告").forEach(module => {
-          if (!sourceByName.has(module.name)) sourceByName.set(module.name, module);
-        });
-        const source = [...sourceByName.values()];
-        const scored = source.map(module => ({ name: moduleLabel(module.name), score: Number(module.score ?? module.SCORE) })).filter(module => Number.isFinite(module.score));
-        const score = scored.length ? scored.reduce((total, module) => total + module.score, 0) / scored.length : null;
-        const priority = [...scored].sort((a, b) => a.score - b.score).slice(0, 3);
-        const highRisk = priority.filter(module => module.score < 5);
-        const mediumRisk = priority.filter(module => module.score >= 5 && module.score < 8);
-        const summaryParts = [];
-        if (!scored.length) summaryParts.push("目前各模組尚無可彙整的風險分數，建議先確認模組資料是否完整。");
-        else if (highRisk.length) summaryParts.push(`高風險重點為${highRisk.map(module => `${module.name}（${module.score} 分）`).join("、")}，建議優先人工複核。`);
-        else if (mediumRisk.length) summaryParts.push(`目前主要關注項目為${mediumRisk.map(module => `${module.name}（${module.score} 分）`).join("、")}，建議依序確認相關評估內容。`);
-        else summaryParts.push("目前各模組整體呈低風險，未發現需要優先處理的高風險項目。");
-        summaryParts.push(`本摘要彙整 ${source.length} 個既有模組${scored.length !== source.length ? `，其中 ${scored.length} 個提供有效分數` : ""}。`);
-        return { name: "報告", score, riskSummary: summaryParts.join("\n") };
-      }
       function reportModules(item) {
-        if ((item?.modules || []).some(module => module.name === "報告")) return item.modules;
-        return [...(item?.modules || []), createReportModule(item)];
+        return item?.modules || [];
       }
       function isCustomerRiskModule(name) {
         return name === "客戶" || name === "客戶風險";
