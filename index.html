@@ -8,6 +8,7 @@
       * { box-sizing: border-box; }
       [hidden] { display: none !important; }
       :root {
+        --sidebar-top: 100px;
         --bg: #f2f5f8;
         --panel: #fff;
         --ink: #1d2b3a;
@@ -30,13 +31,13 @@
       .topbar {
         position: sticky;
         top: 0;
-        z-index: 2;
+        z-index: 5;
         display: grid;
         grid-template-columns: 1fr auto;
         gap: 16px;
         align-items: center;
         padding: 14px 22px;
-        background: rgba(245, 247, 249, .95);
+        background: var(--panel);
         border-bottom: 1px solid var(--line);
         backdrop-filter: blur(8px);
       }
@@ -88,7 +89,7 @@
         border: 1px solid var(--line);
         border-radius: 8px;
       }
-      .sidebar { max-height: calc(100vh - 105px); overflow: auto; }
+      .sidebar { position: sticky; top: var(--sidebar-top); align-self: start; height: calc(100vh - var(--sidebar-top) - 12px); max-height: calc(100vh - var(--sidebar-top) - 12px); overflow-y: auto; overflow-x: hidden; }
       .sidebar-head {
         position: sticky;
         top: 0;
@@ -142,11 +143,14 @@
       .subject-table td:nth-child(3) { line-height: 1.7; }
       .subject-result { color: var(--ink) !important; font-weight: 700; }
       .history-summary { padding: 12px; border: 1px solid var(--line); border-radius: 6px; line-height: 1.75; white-space: pre-wrap; }
-      .history-table { table-layout: fixed; }
-      .history-table th:first-child, .history-table td:first-child { width: calc(4em + 16px); max-width: calc(4em + 16px); white-space: nowrap; font-weight: 700; }
+      .history-table { width: 100%; table-layout: auto; }
+      .history-table th:first-child, .history-table td:first-child { width: 180px; min-width: 180px; max-width: 180px; white-space: nowrap; font-weight: 700; }
+      .history-table th:nth-child(2), .history-table td:nth-child(2) { width: auto; }
       .history-table td { line-height: 1.7; white-space: pre-wrap; }
-      .review-table th:first-child, .review-table td:first-child { width: 105px; white-space: nowrap; font-weight: 700; }
-      .review-table th:nth-child(2), .review-table td:nth-child(2) { width: 170px; white-space: nowrap; }
+      .review-table { width: 100%; table-layout: auto; }
+      .review-table th:first-child, .review-table td:first-child { width: 200px; min-width: 200px; white-space: nowrap; font-weight: 700; }
+      .review-table th:nth-child(2), .review-table td:nth-child(2) { width: 260px; min-width: 260px; white-space: nowrap; }
+      .review-table th:nth-child(3), .review-table td:nth-child(3) { width: auto; }
       .review-table td { line-height: 1.65; white-space: pre-wrap; }
       .review-table tr.review-alt td { background: #f0f1f2; }
       .version-picker { display: flex; align-items: center; gap: 8px; margin-top: 10px; }
@@ -155,18 +159,21 @@
       .version-select { padding: 6px 9px; border: 1px solid var(--line); border-radius: 5px; background: #fff; }
       @media (max-width: 620px) { .condition-meta { grid-template-columns: 1fr; } }
       .content { padding: 16px; }
-      .case-head { padding: 18px; margin-bottom: 14px; }
-      .case-head h2 { margin: 0 0 14px; font-size: 24px; }
+      .context-sticky { position: sticky; top: var(--sidebar-top); z-index: 3; display: grid; grid-template-columns: minmax(180px, 240px) minmax(0, 1fr); grid-template-rows: auto; align-items: center; column-gap: 12px; row-gap: 10px; margin-bottom: 14px; padding: 10px 14px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); box-shadow: 0 3px 8px rgba(29, 43, 58, .08); isolation: isolate; }
+      .context-sticky::before { content: ""; position: absolute; left: -16px; right: -16px; bottom: 100%; height: var(--sidebar-top); background: var(--panel); pointer-events: none; }
+      .case-head { display: contents; }
+      .case-head h2 { grid-column: 1; grid-row: 1; margin: 0; overflow: hidden; font-size: 24px; line-height: 1.3; white-space: nowrap; text-overflow: ellipsis; }
       .case-head > .pillrow { display: none; }
       .summary-grid {
         display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 6px;
+        grid-template-columns: 120px 180px repeat(6, minmax(0, 1fr));
+        gap: 4px;
       }
-      .summary-item { padding: 7px 9px; border: 1px solid var(--line); border-radius: 6px; background: #fbfcfd; }
-      .label { display: block; color: var(--muted); font-size: 11px; }
-      .value { display: block; margin-top: 2px; overflow-wrap: anywhere; font-size: 16px; font-weight: 700; }
-      .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+      .summary-item { min-width: 0; padding: 4px 6px; border: 1px solid var(--line); border-radius: 5px; background: #fbfcfd; }
+      .label { display: block; overflow: hidden; color: var(--muted); font-size: 10px; white-space: nowrap; text-overflow: ellipsis; }
+      .value { display: block; margin-top: 1px; overflow: hidden; font-size: 14px; font-weight: 700; white-space: nowrap; text-overflow: ellipsis; }
+      .filters { grid-column: 2; grid-row: 1; align-self: center; display: flex; flex-wrap: wrap; gap: 8px; width: 100%; margin: 0; background: transparent; }
+      .case-summary { grid-column: 1 / -1; grid-row: 2; min-width: 0; padding: 0; margin: 0; background: transparent; }
       .filter {
         display: inline-flex;
         align-items: center;
@@ -390,10 +397,14 @@
       @media (max-width: 980px) {
         .topbar, .layout, .module-head, .module-body, .quick-review { grid-template-columns: 1fr; }
         .search { width: 100%; }
-        .summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-        .sidebar { max-height: 45vh; }
+        .context-sticky { grid-template-columns: 1fr; grid-template-rows: auto auto; row-gap: 10px; }
+        .case-head h2, .filters { grid-column: 1; grid-row: auto; }
+        .case-summary { grid-column: 1; grid-row: auto; }
+        .summary-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+        .sidebar { height: calc(100vh - var(--sidebar-top) - 12px); max-height: calc(100vh - var(--sidebar-top) - 12px); }
       }
       @media (max-width: 620px) {
+        .case-head h2 { margin-bottom: 10px; }
         .summary-grid { grid-template-columns: 1fr; }
         .ai-judge-card > summary { align-items: flex-start; flex-direction: column; }
         .ai-judge-overview { justify-content: flex-start; }
@@ -431,8 +442,11 @@
         <div class="case-list" id="caseList"></div>
       </aside>
       <main class="content">
-        <section class="case-head" id="caseHead"></section>
-        <nav class="filters" id="filters"></nav>
+        <div class="context-sticky">
+          <section class="case-head" id="caseHead"></section>
+          <nav class="filters" id="filters"></nav>
+          <section class="case-summary" id="caseSummary"></section>
+        </div>
         <section class="modules" id="modules"></section>
       </main>
     </div>
@@ -452,10 +466,17 @@
       const aiJudgeFeedbackOptions = ["認同", "部分認同", "不認同", "尚未確認"];
       const els = {
         meta: document.getElementById("meta"), search: document.getElementById("search"), count: document.getElementById("count"),
-        caseList: document.getElementById("caseList"), caseHead: document.getElementById("caseHead"),
+        caseList: document.getElementById("caseList"), caseHead: document.getElementById("caseHead"), caseSummary: document.getElementById("caseSummary"),
         filters: document.getElementById("filters"), modules: document.getElementById("modules"), reviewLayout: document.getElementById("reviewLayout"),
         usageView: document.getElementById("usageView"), reviewViewButton: document.getElementById("reviewViewButton"), usageViewButton: document.getElementById("usageViewButton")
       };
+      function syncSidebarLayout() {
+        const topbar = document.querySelector(".topbar");
+        const topOffset = (topbar?.getBoundingClientRect().height || 0) + 12;
+        document.documentElement.style.setProperty("--sidebar-top", `${topOffset}px`);
+      }
+      window.addEventListener("resize", syncSidebarLayout);
+      syncSidebarLayout();
       function esc(v) {
         return String(v ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" }[c]));
       }
@@ -464,6 +485,15 @@
         if (!s) return "-";
         if (/AMOUNT|REVENUE|DDCB/.test(key) && !Number.isNaN(Number(s))) return Number(s).toLocaleString("zh-TW");
         return s;
+      }
+      function customerDisplay(item) {
+        const summary = item?.summary || {};
+        const customerId = String(summary.CUSTOMER_ID ?? "").trim();
+        const isNaturalPerson = customerId !== "" && !/^\d{8}$/.test(customerId);
+        return {
+          id: isNaturalPerson ? "自然人ID" : summary.CUSTOMER_ID,
+          name: isNaturalPerson ? "自然人姓名" : (summary.CUSTOMER_NAME || item?.title || "-")
+        };
       }
       function aiJudgeField(module, field) {
         const nested = module?.AI_JUDGE || module?.aiJudge || module?.ai_judge;
@@ -612,7 +642,7 @@
           const source = selectedModule === "全部" ? moduleRows : moduleRows.filter(row => row.module.name === selectedModule);
           const rows = aggregateByCase(source).sort((a, b) => (descending ? -1 : 1) * (num(a[sortKey]) - num(b[sortKey])));
           document.getElementById("usageTotalNote").textContent = `總筆數為 ${rows.length} 筆，詳細資訊請看下方明細資訊`;
-          document.getElementById("usageCaseBody").innerHTML = rows.length ? rows.map(row => { const customer = row.item.summary?.CUSTOMER_NAME || row.item.title || "-"; const modulesText = row.moduleNames.map(moduleLabel).join("、"); return `<tr><td title="${esc(customer)}">${esc(customer)}</td><td title="${esc(row.caseNo)}">${esc(row.caseNo)}</td><td title="${esc(modulesText)}">${esc(modulesText)}</td><td title="${row.input.toLocaleString("zh-TW")}">${row.input.toLocaleString("zh-TW")}</td><td title="${row.output.toLocaleString("zh-TW")}">${row.output.toLocaleString("zh-TW")}</td><td title="${row.total.toLocaleString("zh-TW")}">${row.total.toLocaleString("zh-TW")}</td><td title="${money(row.gpt55)}">${money(row.gpt55)}</td><td title="${money(row.luna)}">${money(row.luna)}</td><td title="${esc(row.deliveryDate || "-")}">${esc(row.deliveryDate || "-")}</td><td></td></tr>`; }).join("") : `<tr><td colspan="10">目前沒有紀錄</td></tr>`;
+          document.getElementById("usageCaseBody").innerHTML = rows.length ? rows.map(row => { const customer = customerDisplay(row.item).name; const modulesText = row.moduleNames.map(moduleLabel).join("、"); return `<tr><td title="${esc(customer)}">${esc(customer)}</td><td title="${esc(row.caseNo)}">${esc(row.caseNo)}</td><td title="${esc(modulesText)}">${esc(modulesText)}</td><td title="${row.input.toLocaleString("zh-TW")}">${row.input.toLocaleString("zh-TW")}</td><td title="${row.output.toLocaleString("zh-TW")}">${row.output.toLocaleString("zh-TW")}</td><td title="${row.total.toLocaleString("zh-TW")}">${row.total.toLocaleString("zh-TW")}</td><td title="${money(row.gpt55)}">${money(row.gpt55)}</td><td title="${money(row.luna)}">${money(row.luna)}</td><td title="${esc(row.deliveryDate || "-")}">${esc(row.deliveryDate || "-")}</td><td></td></tr>`; }).join("") : `<tr><td colspan="10">目前沒有紀錄</td></tr>`;
         };
         document.getElementById("usageModuleFilter").addEventListener("change", event => { selectedModule = event.target.value; drawCaseTable(); });
         els.usageView.querySelectorAll("[data-usage-sort]").forEach(button => button.addEventListener("click", () => { const nextKey = button.dataset.usageSort; if (sortKey === nextKey) descending = !descending; else { sortKey = nextKey; descending = true; } els.usageView.querySelectorAll("[data-usage-sort]").forEach(item => { item.classList.toggle("active", item === button); item.textContent = item === button ? (descending ? "↓" : "↑") : "↕"; }); drawCaseTable(); }));
@@ -641,6 +671,7 @@
         const rows = [];
         cases.forEach(item => {
           const summary = item.summary || {};
+          const customer = customerDisplay(item);
           (item.modules || []).forEach(module => {
             const version = moduleVersion(module);
             const reviewed = localStorage.getItem(storageKey(item.id, module.name, "reviewed", version));
@@ -654,8 +685,8 @@
             if (reviewed === null && status === null && note === null && !badNote && !feedbackSummary && !tag && !aiJudgeFeedback && !aiJudgeFeedbackNote) return;
             const activityAt = localStorage.getItem(storageKey(item.id, module.name, "activityAt", version));
             rows.push({
-              "案例": item.title || "-",
-              "客戶 ID": fmt(summary.CUSTOMER_ID, "CUSTOMER_ID"),
+              "案例": customer.name,
+              "客戶 ID": fmt(customer.id, "CUSTOMER_ID"),
               "進件編號": fmt(summary.APPLLTE_NO, "APPLLTE_NO"),
               "承接標的": fmt(summary.OBJECT_NAME, "OBJECT_NAME"),
               "模組名稱": moduleLabel(module.name || "-"),
@@ -711,8 +742,9 @@
         els.count.textContent = `${list.length}/${cases.length}`;
         els.caseList.innerHTML = list.length ? list.map(item => {
           const s = item.summary || {};
+          const customer = customerDisplay(item);
           return `<button class="case-btn ${item.id === state.activeCaseId ? "active" : ""}" data-id="${esc(item.id)}">
-            <span class="case-title">${esc(item.title)}</span>
+            <span class="case-title">${esc(customer.name)}</span>
             <span class="case-sub">${esc(s.APPLLTE_NO || "")} · ${esc(s.OBJECT_NAME || "")}</span>
             <span class="case-sub">模組 ${esc((item.modules || []).length)}</span>
           </button>`;
@@ -741,11 +773,12 @@
         return { value: Number.isFinite(n) ? String(score) : "-", width: `${safe * 10}%`, color, label };
       }
       function renderHead(item) {
-        if (!item) { els.caseHead.innerHTML = `<div class="empty">沒有案例資料</div>`; return; }
+        if (!item) { els.caseHead.innerHTML = `<div class="empty">沒有案例資料</div>`; els.caseSummary.innerHTML = ""; return; }
         const s = item.summary || {};
-        const summary = summaryKeys.map(([key, label]) => `<div class="summary-item"><span class="label">${esc(label)}</span><span class="value">${esc(fmt(s[key], key))}</span></div>`).join("");
-        const badges = (item.modules || []).map(m => `<span class="pill score ${scoreClass(m.score)}">${esc(moduleLabel(m.name))} ${esc(m.score || "-")}</span>`).join("");
-        els.caseHead.innerHTML = `<h2>${esc(item.title)}</h2><div class="summary-grid">${summary}</div><div class="pillrow" style="margin-top:12px">${badges}</div>`;
+        const customer = customerDisplay(item);
+        const summary = summaryKeys.map(([key, label]) => { const value = fmt(key === "CUSTOMER_ID" ? customer.id : s[key], key); return `<div class="summary-item" title="${esc(value)}"><span class="label">${esc(label)}</span><span class="value" title="${esc(value)}">${esc(value)}</span></div>`; }).join("");
+        els.caseHead.innerHTML = `<h2 title="${esc(customer.name)}">${esc(customer.name)}</h2>`;
+        els.caseSummary.innerHTML = `<div class="summary-grid">${summary}</div>`;
       }
       function renderFilters(item) {
         const names = [...new Set((item?.modules || []).map(m => m.name))];
@@ -1019,6 +1052,7 @@
         els.count.textContent = `${list.length}/${cases.length}`;
         els.caseList.innerHTML = list.length ? list.map(item => {
           const s = item.summary || {};
+          const customer = customerDisplay(item);
           const names = [...new Set((item.modules || []).map(m => m.name).filter(Boolean))];
           const moduleTagSummary = (item.modules || []).map(m => {
             const tag = moduleTag(item, m);
@@ -1034,7 +1068,7 @@
           const reviewedSummary = [...reviewedByModule.entries()].map(([name, versions]) => `${name} ${versions.length}`).join("、");
           const reviewedDetail = [...reviewedByModule.entries()].map(([name, versions]) => `${name}：${versions.join("、")}`).join("｜");
           const reviewed = reviewedByModule.size > 0;
-          return `<button class="case-btn ${item.id === state.activeCaseId ? "active" : ""} ${reviewed ? "reviewed" : ""}" data-id="${esc(item.id)}"><span class="case-title">${esc(s.CUSTOMER_NAME || item.title)}</span><span class="case-sub">APPLLTE_NO：${esc(s.APPLLTE_NO || item.appllteNo || "-")}</span><span class="case-modules">${names.map(n => `<span class="case-module">${esc(moduleLabel(n))}</span>`).join("")}</span>${moduleTagSummary ? `<span class="module-tag-badge" title="模組標籤註記">⚑ ${esc(moduleTagSummary)}</span>` : ""}${reviewed ? `<span class="reviewed-mark" title="${esc(reviewedDetail)}">✓ 已驗測：${esc(reviewedSummary)}</span>` : ""}</button>`;
+          return `<button class="case-btn ${item.id === state.activeCaseId ? "active" : ""} ${reviewed ? "reviewed" : ""}" data-id="${esc(item.id)}"><span class="case-title">${esc(customer.name)}</span><span class="case-sub">APPLLTE_NO：${esc(s.APPLLTE_NO || item.appllteNo || "-")}</span><span class="case-modules">${names.map(n => `<span class="case-module">${esc(moduleLabel(n))}</span>`).join("")}</span>${moduleTagSummary ? `<span class="module-tag-badge" title="模組標籤註記">⚑ ${esc(moduleTagSummary)}</span>` : ""}${reviewed ? `<span class="reviewed-mark" title="${esc(reviewedDetail)}">✓ 已驗測：${esc(reviewedSummary)}</span>` : ""}</button>`;
         }).join("") : `<div class="empty">No cases</div>`;
         els.caseList.querySelectorAll("[data-id]").forEach(button => button.addEventListener("click", () => { state.activeCaseId = button.dataset.id; state.activeModule = "全部"; render(); }));
       }
@@ -1052,6 +1086,7 @@
         renderHead(item);
         renderFilters(item);
         renderModules(item);
+        syncSidebarLayout();
       }
       els.search.addEventListener("input", () => { state.query = els.search.value; render(); });
       els.reviewViewButton.addEventListener("click", () => { state.view = "review"; render(); });
