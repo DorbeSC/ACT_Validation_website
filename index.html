@@ -526,6 +526,15 @@
       function aiJudgeFinalLabel(value) {
         return aiJudgeText(value, "-");
       }
+      function hasAiJudgeRecord(module) {
+        if (!module || module.name === "web search") return false;
+        return ["overall_decision", "correctness", "completeness", "hallucination_control", "overall_score", "reason"].some(field => {
+          const value = aiJudgeField(module, field);
+          if (value === null || value === undefined) return false;
+          const normalized = String(value).trim().toLowerCase();
+          return normalized !== "" && !["-", "null", "undefined", "nan", "n/a", "na", "無", "無資料"].includes(normalized);
+        });
+      }
       function judgeResultInfo(module) {
         const raw = aiJudgeField(module, "overall_decision");
         return { value: aiJudgeText(raw, "-"), className: aiJudgeDecisionClass(raw) };
@@ -555,6 +564,7 @@
         return `<div class="ai-judge-metric"><div class="ai-judge-metric-head"><span>${esc(label)}</span><span class="ai-judge-metric-value">${esc(aiJudgeText(value))}<small>/5</small></span></div><div class="ai-judge-meter"><div class="ai-judge-meter-fill" style="--judge-width:${esc(width)}"></div></div></div>`;
       }
       function renderAiJudge(item, module) {
+        if (!hasAiJudgeRecord(module)) return "";
         const decisionRaw = aiJudgeField(module, "overall_decision");
         const decision = aiJudgeDecisionLabel(decisionRaw);
         const decisionClass = aiJudgeDecisionClass(decisionRaw);
@@ -820,7 +830,7 @@
           <div class="feedback-grid"><textarea placeholder="BU回饋_好的" data-feedback-good>${esc(note)}</textarea><textarea placeholder="BU回饋_差的" data-feedback-bad>${esc(badNote)}</textarea></div>
           <textarea class="feedback-summary" placeholder="總結" data-feedback-summary>${esc(feedbackSummary)}</textarea>
           <div class="local-only-note">在此送出的內容僅供本機使用者紀錄，無法同步給其他使用者</div>
-        </div>${module.name === "web search" ? "" : renderAiJudge(item, module)}`;
+        </div>${hasAiJudgeRecord(module) ? renderAiJudge(item, module) : ""}`;
       }
       function renderSections(sections) {
         return (sections || []).map((section, index) => `<details class="section" ${index < 2 ? "open" : ""}><summary>${esc(section.title)}</summary><p>${esc(section.body)}</p></details>`).join("");
@@ -932,10 +942,13 @@
         const value = field => module[field] == null || module[field] === "" ? "-" : module[field];
         return `<details class="section" open><summary>店面照片辨識</summary><p><strong>店面照片</strong><br>${esc(value("SP_SUMMARY"))}</p></details><details class="section" open><summary>CoPlus裁罰紀錄</summary><p><strong>裁罰概況</strong><br>${esc(value("ESG_PENALTY_OVERVIEW"))}</p><p><strong>摘要判斷</strong><br>${esc(value("ESG_PENALTY_RELEVANCE_SUMMARY"))}</p></details>`;
       }
-      function renderReport(module) {
+      function renderReportContent(module) {
         const meta = scoreMeta(module.score);
         const summary = module.final_summary ?? module.FINAL_SUMMARY ?? module.riskSummary ?? "-";
         return `<div class="report-summary"><section class="report-risk-card"><div class="report-card-label">風險分數</div><div class="report-risk-value">${esc(meta.value)} <small>/ 10</small></div><span class="report-risk-level ${scoreClass(module.score)}">${esc(meta.label)}</span></section><section class="report-summary-card"><div class="report-card-label">風險摘要</div><p>${esc(summary)}</p></section></div>`;
+      }
+      function renderReport(module) {
+        return `${renderReportContent(module)}${renderStatus(activeCase(), module)}`;
       }
       function renderModules(item) {
         if (!item) { els.modules.innerHTML = ""; return; }
