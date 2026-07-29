@@ -1,5 +1,5 @@
 window.validationReviewData = {
-    "generatedAt":  "2026-07-28 17:44:58",
+    "generatedAt":  "2026-07-29 11:05:18",
     "sourceFile":  "驗測資料.xlsx",
     "sourceSheet":  "input / 各模組資料",
     "header":  [
@@ -1258,6 +1258,61 @@ window.validationReviewData = {
                                           "final_summary":  "主要需確認營業額大幅下修但保費未變之合理性，並釐清保險期間及追溯日中斷情形。餐飲即食產品具單一門市小型群聚求償可能，現有保額承接壓力較低，惟食品相關條款及核保規則尚未具體適用；另店面照片資訊不足。核保應優先回看前期保單、營業額與費率／最低保費邏輯，確認承保期間、追溯安排及食品條款適用性。"
                                       },
                                       {
+                                          "name":  "標的",
+                                          "version":  "小量v3",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  null,
+                                                         "output":  null,
+                                                         "total":  null
+                                                     },
+                                          "SCORE":  7.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  12030,
+                                          "TOTAL_TOKENS":  12806,
+                                          "OUTPUT_TOKENS":  776,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "雞排羹麵可能因保存不當致細菌滋生、加熱不足或接觸生食及不潔器具導致食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  7.0,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "雞排羹麵":  {
+                                                                                         "RISK_DESC":  "保存不當、加熱不足或接觸生食及不潔器具致細菌滋生",
+                                                                                         "RISK_SUGGESTION":  "低風險"
+                                                                                     }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "有限"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "雞排、羹麵屬麵店或小吃店現製後供消費者即時食用的餐飲產品，依公開資訊可辨識的營業型態為固定地址之小吃店銷售，單次消費的使用期間短。此類銷售主要在單一餐飲服務情境中完成，市場接觸及單次事故可能影響的消費者範圍通常受限。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "偏低且需確認",
+                                          "REVENUE_SCORE_COMPARISON_RESULT":  "REASONABILITY_LOWER",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "本次被保產品為雞排、羹麵，公開資訊將元岑小吃店列為麵店、小吃店，屬需持續營業才能形成銷售的現製餐飲型態。年度預估營業額僅新臺幣10萬元，對照一般小吃店即使為小型營運所需的基本銷售規模仍明顯偏低，應確認營業額是否填列正確及計算期間或範圍是否符合本案。",
+                                          "overall_decision":  "pass",
+                                          "correctness":  5,
+                                          "completeness":  4,
+                                          "hallucination_control":  5,
+                                          "overall_score":  4.67,
+                                          "violated_critical_rules":  [
+
+                                                                      ],
+                                          "reason":  "正確性：Model Output 將營業額合理性評為「偏低且需確認」，並以小吃店現製餐飲、需持續營業且10萬元/年明顯偏低為理由，與 Golden Answer 的結論與主要判斷依據一致；曝險部分也維持單店、小吃店、即時食用、單次事故影響範圍有限、整體風險有限的方向，故 correctness 給 5。\n\n完整性：Golden Answer 有兩個重點略為淡化或未明說：一是「單次服務人數有限」作為事故影響範圍小的具體原因，Model Output僅以「單一餐飲服務情境、範圍受限」概括說明；二是 Golden Answer 提及「設立多年、登記營業項目含餐館業與飲料店業的小吃店」，Model Output 只寫成麵店、小吃店，未完整還原背景。這些為次要細節，主要判斷仍可理解，因此 completeness 給 4。\n\n幻覺控制：Model Output 未新增與 Golden Answer 或合理推論相矛盾的具體營運事實，也沒有捏造門市數、供應鏈、OEM 等資訊，新增描述僅為對小吃店現製即食、單一餐飲情境等合理推論與概括，因此 hallucination_control 給 5。\n\nCritical Rules：未以營業額單獨作為風險程度判斷依據，亦未將不確定資訊寫成確定事實，且未新增無根據的具體營運資訊，故無違反 critical rules。"
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
@@ -1396,58 +1451,6 @@ window.validationReviewData = {
                                                                 "url":  "https://www.findcompany.com.tw/%E5%85%83%E5%B2%91%E5%B0%8F%E5%90%83%E5%BA%97?utm_source=openai"
                                                             }
                                                         ]
-                                      },
-                                      {
-                                          "name":  "標的",
-                                          "version":  "小量v3",
-                                          "deliveryDate":  "2026-07-28",
-                                          "tokens":  {
-                                                         "input":  11178,
-                                                         "output":  852,
-                                                         "total":  12030
-                                                     },
-                                          "SCORE":  7.0,
-                                          "IS_MASK":  false,
-                                          "NO_RISK":  false,
-                                          "IS_BLOCK":  false,
-                                          "MASK_RAIL":  null,
-                                          "BLOCK_RAIL":  null,
-                                          "INPUT_TOKENS":  11178,
-                                          "TOTAL_TOKENS":  12030,
-                                          "OUTPUT_TOKENS":  852,
-                                          "PRODUCT_SCORE":  9.0,
-                                          "SUBJECT_SUMMARY":  "熟食餐點可能因保存不當致細菌滋生、加熱不足或接觸生食及不潔器具而引發食物中毒，為低風險。",
-                                          "REVENUE_EXPOSURE_SCORE":  7.0,
-                                          "SUBJECT_RISK_REPORT_TABLE":  {
-                                                                            "熟食餐點":  {
-                                                                                         "RISK_DESC":  "保存不當致細菌滋生、加熱不足或接觸生食及不潔器具。",
-                                                                                         "RISK_SUGGESTION":  "低風險"
-                                                                                     }
-                                                                        },
-                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
-                                                                               "continuous_use":  {
-                                                                                                      "label":  "持續使用型",
-                                                                                                      "level":  "有限"
-                                                                                                  },
-                                                                               "large_catering":  {
-                                                                                                      "label":  "大型供餐型",
-                                                                                                      "level":  "有限"
-                                                                                                  },
-                                                                               "multi_channel_supply":  {
-                                                                                                            "label":  "多通路/供應型",
-                                                                                                            "level":  "有限"
-                                                                                                        }
-                                                                           },
-                                          "REVENUE_EXPOSURE_DESCRIPTION":  "本次被保產品為雞排及羹麵，依小吃店的一般營運模式推估，主要於單一據點製作並供顧客即時食用，未見大型活動、團膳、中央廚房或供應多個據點的資訊。產品不具長期使用或跨年度市場存量特性；目前可辨識的市場接觸與單次服務影響範圍均有限。",
-                                          "REVENUE_REASONABILITY_CATEGORY":  "偏低且需確認",
-                                          "REVENUE_SCORE_COMPARISON_RESULT":  "REASONABILITY_LOWER",
-                                          "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額新臺幣10萬元，平均每月約8,333元，對照公開資訊所示之單一麵店、小吃店營業型態及自2013年設立至今的經營樣態，金額偏低。由於尚無法確認是否僅計入雞排、羹麵的部分銷售、特定期間或部分通路，建議確認預估營業額的計算範圍與期間。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null
                                       }
                                   ]
                   },
@@ -2699,6 +2702,61 @@ window.validationReviewData = {
                                           "final_summary":  "主要關注營運型態與實際承保標的是否一致，以及宴會供餐可能造成群聚食安事故與營業額偏低疑義。店面呈攤販型態，與宴會廳及婚宴規模資訊不一致；既往條件、保額及附加條款亦有變動，且NPD005責任遭再保除外。應優先確認營業額、保障是否中斷、承保範圍及經銷商條款加貼必要性。"
                                       },
                                       {
+                                          "name":  "標的",
+                                          "version":  "小量v3",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  null,
+                                                         "output":  null,
+                                                         "total":  null
+                                                     },
+                                          "SCORE":  7.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  13871,
+                                          "TOTAL_TOKENS":  14772,
+                                          "OUTPUT_TOKENS":  901,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "中餐廳可能因保存不當、加熱不足或烹煮後接觸生食及不潔器具導致食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  7.0,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "中餐廳":  {
+                                                                                        "RISK_DESC":  "保存不當、加熱不足或生熟食及器具交叉污染致食物中毒",
+                                                                                        "RISK_SUGGESTION":  "低風險"
+                                                                                    }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "顯著"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "有限"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "本次被保中餐廳設有大型宴會廳及宴客空間，公開介紹載有約400席規模並使用婚宴會館品牌，顯示固定承接大型宴席或婚宴型餐飲服務。單次供餐可能同時接觸大量消費者或共同使用者，若發生事故，影響人數與損失範圍將明顯擴大。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
+                                          "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額為新臺幣3,000萬元；公開資訊顯示本案為單一營業據點的中式餐廳，具大型宴會廳、包廂及約400席的餐飲接待規模。以一般中式餐廳結合宴會及婚宴服務的營運模式推估，該營業額與其座位容量及市場接觸程度大致相符，屬可解釋範圍。",
+                                          "overall_decision":  "pass",
+                                          "correctness":  5,
+                                          "completeness":  5,
+                                          "hallucination_control":  5,
+                                          "overall_score":  5.0,
+                                          "violated_critical_rules":  [
+
+                                                                      ],
+                                          "reason":  "Model Output 完整且正確反映 Golden Answer：\n\n1) Correctness：\n- 營業額合理性：皆判定為「可解釋」，並同樣以單一大型中式餐廳/婚宴會館、約400席、多廳房/包廂的大型宴席營運型態作為主要依據，與 Golden 完全一致。\n- 曝險特性：皆強調婚宴或大型宴會供餐，單次供餐人數眾多，若食品衛生問題導致食物中毒，短時間內影響大量消費者、事故擴散範圍明顯放大，與 Golden 的主要暴險方向與事故擴散機制一致。大型供餐型被標為「顯著」，亦符合 Golden 指出其群聚事故暴險程度明顯高於一般餐廳的描述。故給 5 分。\n\n2) Completeness：\n- Golden 的關鍵要素：多年營運之中華料理與婚宴會館、單一大型宴會餐飲場所、約400席規模、多廳房/包廂、婚宴/大型宴席型態、食品衛生事件導致短時間群聚食物中毒、暴險高於一般餐廳等，皆在 Model Output 中有對應呈現或同義改寫，未見重要依據遺漏，給 5 分。\n\n3) Hallucination Control：\n- Model Output 僅補充「單一營業據點的中式餐廳」等屬合理同義改寫，與 Golden 的單一大型餐飲宴會場地相符；未新增門市數、供應鏈、OEM/ODM 等具體營運事實，也未更動暴險方向或主因，且未引用任何與 Golden 矛盾的新事實，屬合理推論，給 5 分。\n\n4) Critical Rules：\n- REVENUE 僅作為與座位容量、營運模式及市場接觸程度相符的背景說明，未作為暴險程度的唯一依據。\n- 未將未確定資訊寫成確定事實，亦未新增無依據的具體營運資訊。\n- 未以缺乏外部資料作為『無法評估』判斷依據。故無違反 critical rules。"
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
@@ -2993,58 +3051,6 @@ window.validationReviewData = {
                                                                 "url":  "https://serv.gcis.nat.gov.tw/moeadsBF/cmpy/reportAction.do?fileName=379100000Gchange11303.pdf\u0026method=report\u0026reportClass=bmsItem\u0026subPath=11303"
                                                             }
                                                         ]
-                                      },
-                                      {
-                                          "name":  "標的",
-                                          "version":  "小量v3",
-                                          "deliveryDate":  "2026-07-28",
-                                          "tokens":  {
-                                                         "input":  14358,
-                                                         "output":  810,
-                                                         "total":  15168
-                                                     },
-                                          "SCORE":  7.5,
-                                          "IS_MASK":  false,
-                                          "NO_RISK":  false,
-                                          "IS_BLOCK":  false,
-                                          "MASK_RAIL":  null,
-                                          "BLOCK_RAIL":  null,
-                                          "INPUT_TOKENS":  14358,
-                                          "TOTAL_TOKENS":  15168,
-                                          "OUTPUT_TOKENS":  810,
-                                          "PRODUCT_SCORE":  9.0,
-                                          "SUBJECT_SUMMARY":  "中餐廳可能因保存不當致細菌滋生、加熱不足或烹煮後接觸生食及不潔器具引發食物中毒，為低風險。",
-                                          "REVENUE_EXPOSURE_SCORE":  7.5,
-                                          "SUBJECT_RISK_REPORT_TABLE":  {
-                                                                            "中餐廳":  {
-                                                                                        "RISK_DESC":  "保存不當、加熱不足或接觸生食及不潔器具，可能造成食物中毒。",
-                                                                                        "RISK_SUGGESTION":  "加強食品保存、加熱及生熟食與器具衛生管理。"
-                                                                                    }
-                                                                        },
-                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
-                                                                               "continuous_use":  {
-                                                                                                      "label":  "持續使用型",
-                                                                                                      "level":  "有限"
-                                                                                                  },
-                                                                               "large_catering":  {
-                                                                                                      "label":  "大型供餐型",
-                                                                                                      "level":  "中度"
-                                                                                                  },
-                                                                               "multi_channel_supply":  {
-                                                                                                            "label":  "多通路/供應型",
-                                                                                                            "level":  "有限"
-                                                                                                        }
-                                                                           },
-                                          "REVENUE_EXPOSURE_DESCRIPTION":  "本次被保的中餐廳以現場中餐、宴席及婚宴餐飲服務為主，公開資訊另有大型宴會廳與包廂等多人同時用餐情境；宴席服務可能使單次事故影響同桌或同場較多消費者，但整體並非明確以大量同步供餐為唯一主要模式。現有資訊主要呈現單一餐廳據點，外送平台屬單店配送，且餐飲以現場或短期食用為主，未足以支持多據點供應或長期市場存量暴險。",
-                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
-                                          "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
-                                          "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額新臺幣3,000萬元，與單一餐廳據點提供中華料理、宴席及婚宴服務的營運型態大致相符。公開資訊顯示該餐廳具宴會廳、包廂及較大席位規模，且品牌已有長期經營沿革，依此營運規模推估，3,000萬元屬可解釋範圍。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null
                                       }
                                   ]
                   },
@@ -4288,6 +4294,61 @@ window.validationReviewData = {
                                           "final_summary":  "主要關注攤販型態、食品衛生及多人群聚求償，且非固定店面可能影響承保適配性。條款應確認經銷商責任排除與再保限制，並檢視保額、自負額及目標保費是否足以承接事故；雖近五年無理賠，仍屬缺乏歷史基準的新承接案件。核保應優先回看店面及條款明細，確認營業型態、保障結構與財物損失保額為零之安排。"
                                       },
                                       {
+                                          "name":  "標的",
+                                          "version":  "小量v3",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  null,
+                                                         "output":  null,
+                                                         "total":  null
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  12891,
+                                          "TOTAL_TOKENS":  13542,
+                                          "OUTPUT_TOKENS":  651,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "鐵板燒料理可能因保存不當、加熱不足或接觸生食及不潔器具導致食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  9.0,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "鐵板燒料理":  {
+                                                                                          "RISK_DESC":  "保存不當、加熱不足或接觸生食及不潔器具致細菌滋生",
+                                                                                          "RISK_SUGGESTION":  "低風險"
+                                                                                      }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "有限"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "本次被保產品為單一餐廳據點提供的鐵板燒料理，主要於店內完成製作並由顧客即時食用，消費期間短且不形成長期使用或持續攝取的市場存量。現有營業型態屬一般現場餐飲服務，未見固定大量同步供餐或透過多據點、供應鏈進入多個終端市場的情形，因此事故影響範圍主要集中於單一據點及當次用餐顧客。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
+                                          "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "本次被保產品為鐵板燒餐飲，公開資訊顯示其以新北市中和區單一地址的餐廳現場料理及套餐服務為主。以單一餐飲據點的常見營運模式推估，年度預估營業額新臺幣1,000萬元落在可理解的餐飲營收寬幅內，與其產品型態及市場接觸方式大致相符。",
+                                          "overall_decision":  "fail",
+                                          "correctness":  2,
+                                          "completeness":  2,
+                                          "hallucination_control":  4,
+                                          "overall_score":  2.67,
+                                          "violated_critical_rules":  [
+
+                                                                      ],
+                                          "reason":  "Model Output 在營業額合理性部分與 Golden Answer 一致：皆判定為「可解釋」，且以單一中和區鐵板燒餐廳、現場料理與套餐服務推估 1,000 萬元營收，核心結論正確。\n\n主要問題在曝險特性：Golden Answer 明確指出有『長照中心餐食製備與分送給長輩』，形成『供應固定場域多人用餐』的情境，這是關鍵曝險方向與事故擴散機制。但 Model Output 將曝險描述為一般單一據點現場餐飲、即時食用、無固定大量同步供餐，事故僅集中於當次用餐顧客，實質改變並弱化了 Golden Answer 的主要曝險方向。這屬於對既有內容的錯誤改寫與相反判斷，因此 Correctness 降至 2 分。\n\nCompleteness 方面，Golden Answer 唯一點出且相當關鍵的『長照中心固定多人用餐』曝險完全未被提及，也沒有反映任何機構供餐情境，構成多項重要資訊遺漏，評為 2 分。\n\nHallucination 控制部分，Model Output 雖新增「未見固定大量同步供餐」、「未見多據點、供應鏈進入多終端市場」等描述，這與 Golden Answer 所載的長照中心固定供餐情境有偏離，但屬於對營運型態的推測性描述，並無新增具體數量、通路或供應鏈細節，尚屬少量延伸且不涉及具體客觀事實，故給 4 分而非更低。\n\nCritical rules 檢查：\n- 未以營業額作為唯一風險判斷依據，符合規則。\n- 未將 web 搜尋不確定性改寫為確定事實（此案無 WEB_REFERENCE）。\n- 未新增門市數、工廠數、OEM/ODM、品牌合作等具體營運事實。\n- 未因缺少 WEB_REFERENCE 而將營業額合理性判為無法評估。\n因此 violated_critical_rules 為空陣列。"
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
@@ -4514,58 +4575,6 @@ window.validationReviewData = {
                                                                 "url":  "https://www.chickpt.com.tw/job-xzlmp4JkWm9a"
                                                             }
                                                         ]
-                                      },
-                                      {
-                                          "name":  "標的",
-                                          "version":  "小量v3",
-                                          "deliveryDate":  "2026-07-28",
-                                          "tokens":  {
-                                                         "input":  11881,
-                                                         "output":  554,
-                                                         "total":  12435
-                                                     },
-                                          "SCORE":  9.0,
-                                          "IS_MASK":  false,
-                                          "NO_RISK":  false,
-                                          "IS_BLOCK":  false,
-                                          "MASK_RAIL":  null,
-                                          "BLOCK_RAIL":  null,
-                                          "INPUT_TOKENS":  11881,
-                                          "TOTAL_TOKENS":  12435,
-                                          "OUTPUT_TOKENS":  554,
-                                          "PRODUCT_SCORE":  9.0,
-                                          "SUBJECT_SUMMARY":  "鐵板燒料理可能因保存不當、加熱不足或接觸生食及不潔器具導致食物中毒，為低風險。",
-                                          "REVENUE_EXPOSURE_SCORE":  9.0,
-                                          "SUBJECT_RISK_REPORT_TABLE":  {
-                                                                            "鐵板燒料理":  {
-                                                                                          "RISK_DESC":  "保存不當、加熱不足或接觸生食及不潔器具致細菌滋生。",
-                                                                                          "RISK_SUGGESTION":  "低風險"
-                                                                                      }
-                                                                        },
-                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
-                                                                               "continuous_use":  {
-                                                                                                      "label":  "持續使用型",
-                                                                                                      "level":  "有限"
-                                                                                                  },
-                                                                               "large_catering":  {
-                                                                                                      "label":  "大型供餐型",
-                                                                                                      "level":  "有限"
-                                                                                                  },
-                                                                               "multi_channel_supply":  {
-                                                                                                            "label":  "多通路/供應型",
-                                                                                                            "level":  "有限"
-                                                                                                        }
-                                                                           },
-                                          "REVENUE_EXPOSURE_DESCRIPTION":  "本次被保產品為鐵板燒料理，依公開資訊及該類型的一般營運模式推估，主要是在單一餐飲據點現場製作並供顧客即時食用，單次服務的消費者與影響範圍通常有限。現有資訊未支持本產品涉及大型同步供餐、團膳、中央廚房、代工或多據點供應；其即時消費特性亦不形成跨年度的產品市場存量。",
-                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
-                                          "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
-                                          "REVENUE_REASONABILITY_DESCRIPTION":  "本次被保產品年度預估營業額為新臺幣1,000萬元，與餐館型鐵板燒料理以單一據點提供現場餐飲服務的營運模式及一般小型餐飲規模大致相符。公開資訊顯示該公司於2023年設立，營業項目以餐館及食品飲料零售相關業務為主，現有資料未顯示多分店、工廠或大型供應鏈營運，因此此營業額可予解釋。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null
                                       }
                                   ]
                   },
@@ -5815,6 +5824,61 @@ window.validationReviewData = {
                                           "final_summary":  "主要關注健康食品成分污染、標示及經銷責任，且經多通路遍及全省，具群聚與累計求償暴險。保額對常見損失尚可承接但群聚及年度累計壓力中高，另近期同條件報價保費回落，應確認定價依據；店面為臨時攤位亦需核實營運型態。核保應優先確認有無健字號、第三方檢驗、建議除外條款適用性及總公司自留或臨分再保安排。"
                                       },
                                       {
+                                          "name":  "標的",
+                                          "version":  "小量v3",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  null,
+                                                         "output":  null,
+                                                         "total":  null
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  13485,
+                                          "TOTAL_TOKENS":  14408,
+                                          "OUTPUT_TOKENS":  923,
+                                          "PRODUCT_SCORE":  6.0,
+                                          "SUBJECT_SUMMARY":  "保健食品可能因來源不純淨含重金屬或其他毒素導致食物中毒，建議確認第三方檢驗及檢驗項目符合規範。",
+                                          "REVENUE_EXPOSURE_SCORE":  6.0,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "保健食品":  {
+                                                                                         "RISK_DESC":  "過敏、劑量錯誤或交互作用，可能導致身體傷害。",
+                                                                                         "RISK_SUGGESTION":  ""
+                                                                                     }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "中度"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "顯著"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "本次被保產品為保健食品，依此類產品的一般營運模式，通常會在一定期間內重複食用，形成持續攝取及累積使用的市場暴露。公開資訊顯示公司主要服務社區藥局及會員藥局，並以全省各地的醫藥及健康產品供應為營運線索，保健食品可能經由多個藥局據點進入不同終端市場；若產品品質或標示存在共通性問題，影響範圍可能隨供應據點及市場存量擴大。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
+                                          "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "本次被保產品年度預估營業額為新臺幣5,000萬元，與保健食品之批發／供應型態及公司公開呈現的營運規模大致相符。公司登記業務涵蓋食品批發零售，公開資訊亦顯示主要服務社區藥局及會員藥局、業務遍及全省各地，足以支持該營業額屬於可解釋範圍。",
+                                          "overall_decision":  "pass",
+                                          "correctness":  5,
+                                          "completeness":  4,
+                                          "hallucination_control":  5,
+                                          "overall_score":  4.67,
+                                          "violated_critical_rules":  [
+
+                                                                      ],
+                                          "reason":  "Model Output 對營業額合理性判定為「可解釋」，說明與 Golden Answer 一致，並未改變金額、規模或判斷方向；對曝險特性也抓到保健食品透過社區（會員）藥局、多據點供應、同批產品出問題會擴散至多地區消費者等核心機制，屬同義改寫，因此 correctness 給 5 分。\n\nCompleteness 方面，雖有提及重複食用及市場暴露，但未明確重申 Golden Answer 中「多項品牌／產品線」以及「長期、持續性食用使暴露期間較一般食品為長、累積風險相對高於一般即食食品」這兩點，因此略有重要依據被弱化，給 4 分。\n\nModel Output 未新增 Golden Answer 或外部資料無法支持的具體營運事實或通路資訊，對保健食品重複食用與多藥局供應的描述屬合理推論與同義改寫，無明顯 hallucination，故 hallucination_control 給 5 分。Critical Rules 無違反。"
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
@@ -6069,58 +6133,6 @@ window.validationReviewData = {
                                                                 "url":  "https://www.1111.com.tw/corp/73591437"
                                                             }
                                                         ]
-                                      },
-                                      {
-                                          "name":  "標的",
-                                          "version":  "小量v3",
-                                          "deliveryDate":  "2026-07-28",
-                                          "tokens":  {
-                                                         "input":  12414,
-                                                         "output":  1034,
-                                                         "total":  13448
-                                                     },
-                                          "SCORE":  6.0,
-                                          "IS_MASK":  false,
-                                          "NO_RISK":  false,
-                                          "IS_BLOCK":  false,
-                                          "MASK_RAIL":  null,
-                                          "BLOCK_RAIL":  null,
-                                          "INPUT_TOKENS":  12414,
-                                          "TOTAL_TOKENS":  13448,
-                                          "OUTPUT_TOKENS":  1034,
-                                          "PRODUCT_SCORE":  6.0,
-                                          "SUBJECT_SUMMARY":  "保健食品可能因來源不純淨而含重金屬或其他毒素，建議確認是否通過第三方檢驗、檢驗項目與產品類型是否相符並符合規範。",
-                                          "REVENUE_EXPOSURE_SCORE":  6.75,
-                                          "SUBJECT_RISK_REPORT_TABLE":  {
-                                                                            "保健食品":  {
-                                                                                         "RISK_DESC":  "過敏原、劑量及交互作用標示不清，可能造成傷害。",
-                                                                                         "RISK_SUGGESTION":  ""
-                                                                                     }
-                                                                        },
-                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
-                                                                               "continuous_use":  {
-                                                                                                      "label":  "持續使用型",
-                                                                                                      "level":  "有限"
-                                                                                                  },
-                                                                               "large_catering":  {
-                                                                                                      "label":  "大型供餐型",
-                                                                                                      "level":  "有限"
-                                                                                                  },
-                                                                               "multi_channel_supply":  {
-                                                                                                            "label":  "多通路/供應型",
-                                                                                                            "level":  "中度"
-                                                                                                        }
-                                                                           },
-                                          "REVENUE_EXPOSURE_DESCRIPTION":  "本次被保產品為保健食品，依該類型的一般營運模式推估，主要屬單次購買、持續食用後消耗的產品，不涉及大量消費者同步使用或大型供餐情境。公開資訊及營業型態顯示，相關產品除零售外亦有供應社區藥局的通路線索，可能觸及多個銷售據點，因此多通路／供應型暴險為中度；但尚無足夠資訊支持其涉及代工、中央供應或更廣泛的品牌與供應鏈擴散。",
-                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
-                                          "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
-                                          "REVENUE_REASONABILITY_DESCRIPTION":  "本次被保產品為保健食品，年度預估營業額新臺幣5,000萬元。公開資訊顯示該公司具食品及食品添加物批發、零售業務，並有供應社區藥局的營運線索；以此類批發／零售及藥局通路型業態推估，該營業額與其可能的經營規模大致相符。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null
                                       }
                                   ]
                   },
@@ -7364,6 +7376,61 @@ window.validationReviewData = {
                                           "final_summary":  "主要關注攤販型店面之食品責任及群聚事故暴險，內用、自助吧與外送可能擴大同批食材事故影響。雖近五年無理賠且保額對常見情境承接壓力較低，仍須留意新進件缺乏同客戶承保脈絡、目標保費與承保條件適配性，以及經銷商條款對產品更改、標示及警語責任之排除。核保應優先確認實際營運型態、參考案件可比性、建議條款加貼及相關再保與承保規範。"
                                       },
                                       {
+                                          "name":  "標的",
+                                          "version":  "小量v3",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  null,
+                                                         "output":  null,
+                                                         "total":  null
+                                                     },
+                                          "SCORE":  7.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  13205,
+                                          "TOTAL_TOKENS":  14149,
+                                          "OUTPUT_TOKENS":  944,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "潮虎老火鍋食品可能因保存不當致細菌滋生、加熱不足或烹煮後接觸生食、不潔器具引發食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  7.0,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "潮虎老火鍋食品":  {
+                                                                                            "RISK_DESC":  "保存不當、加熱不足或生熟器具交叉接觸，可能導致細菌滋生。",
+                                                                                            "RISK_SUGGESTION":  "低風險"
+                                                                                        }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "顯著"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "有限"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "本次被保產品以潮虎老火鍋之現場火鍋及自助餐檯、吃到飽形式提供，單次用餐可能由較多消費者共同使用餐飲服務，若發生產品或服務事故，影響可在同一時段集中擴大至同桌或同批用餐人員。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
+                                          "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "本次被保產品為火鍋餐飲店的全品項食品，公開資訊顯示主要於高雄單一據點提供現場用餐，並曾透過外送平台銷售餐點。依單店餐飲的一般營運模式推估，新臺幣2,000萬元年度營業額與火鍋店、多品項餐飲及吃到飽服務所需的持續客流大致相符。",
+                                          "overall_decision":  "fail",
+                                          "correctness":  2,
+                                          "completeness":  3,
+                                          "hallucination_control":  4,
+                                          "overall_score":  3.0,
+                                          "violated_critical_rules":  [
+
+                                                                      ],
+                                          "reason":  "營業額合理性部分，Model Output 判定為「可解釋」，並以單店火鍋、自助吧、吃到飽與外送平台等為依據，與 Golden Answer 整體判斷一致，因此在營業額合理性上是正確的。曝險特性部分出現明顯偏差：Golden Answer 認為單店經營、無婚宴宴席或大型活動供餐，整體風險尚屬有限；而 Model Output 將「大型供餐型」標為顯著，且未說明婚宴、Buffet、大型活動供餐為不存在，實質提高了核心暴險程度評價，與 Golden 的『整體有限』判斷不符，因此 correctness 降為 2。Completeness 方面，營業額合理性的關鍵依據大致都有呈現，但漏掉『無婚宴/宴席/Buffet 或大型活動供餐』這一重要限制，以及『整體風險尚屬有限』與『單店經營』在曝險層面的總結性表述，因此評為 3。Hallucination 方面，Model Output 主要是把既有內容改判為顯著風險，而非捏造全新事實；雖然「大型供餐型：顯著」與 Golden 的有限風險不符，但屬於判斷偏差而非新增具體營運事實，故記為 unsupported_information 一項，整體仍給 4 分。無明顯違反 Critical Rules 的情況。"
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
@@ -7535,58 +7602,6 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
-                                      },
-                                      {
-                                          "name":  "標的",
-                                          "version":  "小量v3",
-                                          "deliveryDate":  "2026-07-28",
-                                          "tokens":  {
-                                                         "input":  12378,
-                                                         "output":  998,
-                                                         "total":  13376
-                                                     },
-                                          "SCORE":  7.0,
-                                          "IS_MASK":  false,
-                                          "NO_RISK":  false,
-                                          "IS_BLOCK":  false,
-                                          "MASK_RAIL":  null,
-                                          "BLOCK_RAIL":  null,
-                                          "INPUT_TOKENS":  12378,
-                                          "TOTAL_TOKENS":  13376,
-                                          "OUTPUT_TOKENS":  998,
-                                          "PRODUCT_SCORE":  9.0,
-                                          "SUBJECT_SUMMARY":  "潮虎老火鍋食品可能因保存不當致細菌滋生、加熱不足或烹煮後接觸生食及不潔器具引發食物中毒，為低風險。",
-                                          "REVENUE_EXPOSURE_SCORE":  7.0,
-                                          "SUBJECT_RISK_REPORT_TABLE":  {
-                                                                            "潮虎老火鍋食品":  {
-                                                                                            "RISK_DESC":  "保存不當、加熱不足或接觸生食及不潔器具恐致細菌滋生",
-                                                                                            "RISK_SUGGESTION":  "低風險"
-                                                                                        }
-                                                                        },
-                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
-                                                                               "continuous_use":  {
-                                                                                                      "label":  "持續使用型",
-                                                                                                      "level":  "有限"
-                                                                                                  },
-                                                                               "large_catering":  {
-                                                                                                      "label":  "大型供餐型",
-                                                                                                      "level":  "顯著"
-                                                                                                  },
-                                                                               "multi_channel_supply":  {
-                                                                                                            "label":  "多通路/供應型",
-                                                                                                            "level":  "有限"
-                                                                                                        }
-                                                                           },
-                                          "REVENUE_EXPOSURE_DESCRIPTION":  "本次被保產品為潮虎老火鍋門市生產販售的全品項食品，公開資訊主要顯示以單一門市現場供應吃到飽、自助吧及聚餐餐飲，單次可能同時服務多人，若發生事故，影響可集中於同一時段的共同用餐者。產品主要屬現場即時消費，雖有外送平台接觸，但仍以單一門市配送為主，未有資料支持多門市、供應鏈或大量外部據點流通；目前亦未足以確認已形成長期市場存量。",
-                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
-                                          "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
-                                          "REVENUE_REASONABILITY_DESCRIPTION":  "本案年度預估營業額為新臺幣2,000萬元，與單一門市經營火鍋吃到飽、自助吧及多人聚餐服務的餐飲型態大致相符。公開資訊顯示主要營運據點集中於高雄一處門市，依該類型的一般營運模式推估，該營業額屬可由門市客流、客單價及營業期間支持的寬幅範圍。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null
                                       }
                                   ]
                   },
@@ -8780,6 +8795,61 @@ window.validationReviewData = {
                                           "final_summary":  "主要需確認營業額申報明顯偏低與攤販型態是否涵蓋完整銷售通路。雖近五年無理賠且保額承接壓力較低，仍應注意食品產品範圍、經銷商責任及建議加貼條款。核保請優先確認食品業者登錄涵蓋內容、實際銷售型態與NPD003A、NPD003B適用性。"
                                       },
                                       {
+                                          "name":  "標的",
+                                          "version":  "小量v3",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  null,
+                                                         "output":  null,
+                                                         "total":  null
+                                                     },
+                                          "SCORE":  7.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  11097,
+                                          "TOTAL_TOKENS":  12273,
+                                          "OUTPUT_TOKENS":  1176,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "食品及飲品可能因保存不當致細菌滋生、加熱不足或接觸生食及不潔器具而引發食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  7.0,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "食品及飲品":  {
+                                                                                          "RISK_DESC":  "保存不當致細菌滋生、加熱不足或接觸生食及不潔器具",
+                                                                                          "RISK_SUGGESTION":  "妥善保存並充分加熱，避免接觸生食或不潔器具"
+                                                                                      }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "有限"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "本次被保產品為烘焙食品、糕點、吐司、饅頭、飲品及白木耳等，依該類型的一般營運模式推估，主要屬單次購買、短期食用的消費型產品。案件未提供大型團體供餐、跨店或供應鏈銷售資訊，因此市場接觸通常以個別消費者的單次購買為主，事故影響範圍相對受限。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "偏低且需確認",
+                                          "REVENUE_SCORE_COMPARISON_RESULT":  "REASONABILITY_LOWER",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "本次被保產品涵蓋多項烘焙食品、糕點、飲品及食品類別，依該類型的一般營運模式推估，即使為小型營業，年度營業額通常仍應高於新臺幣1萬元。案件未提供可支持特殊營業範圍或計算方式的資訊，故該預估營業額明顯偏低，需確認其是否正確反映本次被保產品的全年銷售額。",
+                                          "overall_decision":  "fail",
+                                          "correctness":  2,
+                                          "completeness":  3,
+                                          "hallucination_control":  4,
+                                          "overall_score":  3.0,
+                                          "violated_critical_rules":  [
+
+                                                                      ],
+                                          "reason":  "Golden Answer 認為：申報營業額僅1萬元，若為個人接單或小量直售烘焙，年度接觸消費者與批次低，整體風險有限，且未對營業額合理性提出偏高或偏低的質疑。Model Output 則將營業額合理性分類為「偏低且需確認」，表示營業額明顯偏低並需確認，已改變 Golden Answer 對營業額合理性與其背後假設（個人接單、小量直售可解釋）的核心判斷，故 Correctness 顯著降低。\n\nCompleteness 方面，Model Output 未明確提及「申報營業額僅1萬元」這一關鍵數字，也未保留 Golden Answer 關於「若為個人接單或小量直售、年度接觸量低、整體風險有限」的明確前提與結論，只概括描述為單次購買、事故影響範圍受限，與原本對營業規模及型態的關鍵條件不完全對應，因此評為 3 分。\n\nHallucination Control 方面，Model Output 新增了多項具體內容（如被保產品具體品項、案件未提供團體供餐或供應鏈資訊、行業水準下營業額通常高於1萬元等），這些在 Golden Answer 與 WEB_REFERENCE 中均未出現，屬新增客觀事實，需人工確認，但尚未形成大量或關鍵的捏造結論，因此給予 4 分。Critical rules 未見明顯違反，營業額並未被單獨用來判定暴險程度主體，只是用於合理性推論。"
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
@@ -8816,58 +8886,6 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
-                                      },
-                                      {
-                                          "name":  "標的",
-                                          "version":  "小量v3",
-                                          "deliveryDate":  "2026-07-28",
-                                          "tokens":  {
-                                                         "input":  10709,
-                                                         "output":  1155,
-                                                         "total":  11864
-                                                     },
-                                          "SCORE":  9.0,
-                                          "IS_MASK":  false,
-                                          "NO_RISK":  false,
-                                          "IS_BLOCK":  false,
-                                          "MASK_RAIL":  null,
-                                          "BLOCK_RAIL":  null,
-                                          "INPUT_TOKENS":  10709,
-                                          "TOTAL_TOKENS":  11864,
-                                          "OUTPUT_TOKENS":  1155,
-                                          "PRODUCT_SCORE":  9.0,
-                                          "SUBJECT_SUMMARY":  "食品飲品可能因保存不當致細菌滋生、加熱不足或接觸生食、不潔器具導致食物中毒，為低風險。",
-                                          "REVENUE_EXPOSURE_SCORE":  10.0,
-                                          "SUBJECT_RISK_REPORT_TABLE":  {
-                                                                            "食品飲品":  {
-                                                                                         "RISK_DESC":  "保存不當致細菌滋生；加熱不足或接觸生食、不潔器具。",
-                                                                                         "RISK_SUGGESTION":  "低風險"
-                                                                                     }
-                                                                        },
-                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
-                                                                               "continuous_use":  {
-                                                                                                      "label":  "持續使用型",
-                                                                                                      "level":  "有限"
-                                                                                                  },
-                                                                               "large_catering":  {
-                                                                                                      "label":  "大型供餐型",
-                                                                                                      "level":  "有限"
-                                                                                                  },
-                                                                               "multi_channel_supply":  {
-                                                                                                            "label":  "多通路/供應型",
-                                                                                                            "level":  "有限"
-                                                                                                        }
-                                                                           },
-                                          "REVENUE_EXPOSURE_DESCRIPTION":  "本次被保產品為奶酥醬、吐司、白木耳、飲品、米蛋糕及各類西點、麵包、餅乾、蛋糕、月餅與饅頭等食品，依該類型的一般營運模式推估，主要屬單次購買及短期食用，尚無資訊顯示有大量同步供餐或供應多個據點、品牌及通路的安排，因此單一事故的同時影響人數與市場擴散範圍有限。",
-                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
-                                          "REVENUE_SCORE_COMPARISON_RESULT":  "EQUAL",
-                                          "REVENUE_REASONABILITY_DESCRIPTION":  "本次被保產品涵蓋多類烘焙食品、飲品及相關食品，年度預估營業額新臺幣10,000元，與小規模、接單量有限或試營運型態的食品銷售額相符。由於未有公開資訊顯示其具較大門市、批發或供應規模，現有金額可依產品類型及可能的微型營運模式解釋。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null
                                       }
                                   ]
                   },
@@ -10119,6 +10137,61 @@ window.validationReviewData = {
                                           "final_summary":  "主要關注批次食品經便利商店多門市流通所形成的群聚及市場擴散暴險，AOA承接壓力較高。營業額達23.3億元但保費較既往報價大幅下降，且涉及承接標的縮小、放棄代位對象未填及附加被保險人等條件，費率與責任範圍需重估。核保應優先確認產品範圍、條款對象及刑事訴訟費用限額，並查核攤販營運與裁罰改善情形。"
                                       },
                                       {
+                                          "name":  "標的",
+                                          "version":  "小量v3",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  null,
+                                                         "output":  null,
+                                                         "total":  null
+                                                     },
+                                          "SCORE":  4.75,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  14094,
+                                          "TOTAL_TOKENS":  15065,
+                                          "OUTPUT_TOKENS":  971,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "米食餐點可能因保存不當致細菌滋生、加熱不足或接觸生食及不潔器具引發食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  4.75,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "米食餐點":  {
+                                                                                         "RISK_DESC":  "保存不當、加熱不足或接觸生食及不潔器具，可能造成細菌滋生。",
+                                                                                         "RISK_SUGGESTION":  "低風險"
+                                                                                     }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "中度"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "本次被保產品為御便當、御飯團，公開資訊顯示晉欣食品以工廠製造鮮食，並供應便利商店通路；此類連鎖通路可使產品進入多個門市及較廣泛的消費市場。若單一產品發生事故，可能同時影響不同門市的銷售產品與消費者，擴大事件接觸範圍。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
+                                          "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "本案年度預估營業額為新臺幣23.3億元，與具食品製造工廠、供應便利商店鮮食及具一定生產規模的營運樣態大致相符。公開資訊顯示其產品涵蓋便當、飯糰等鮮食，並具有連鎖通路供應線索，因此該營業額在此類食品製造及供應業態下可予解釋。",
+                                          "overall_decision":  "pass",
+                                          "correctness":  5,
+                                          "completeness":  5,
+                                          "hallucination_control":  5,
+                                          "overall_score":  5.0,
+                                          "violated_critical_rules":  [
+
+                                                                      ],
+                                          "reason":  "Correctness: Model Output完全沿用Golden的核心結論：營業額合理性為「可解釋」，並說明其具食品製造工廠、供應便利商店鮮食、產品為便當/飯糰、透過便利商店通路供應，多門市配送、同批事故擴散至多門市並影響多數消費者等，皆與Golden敘述相符，未改變風險方向與事故擴散機制，因此給5分。\nCompleteness: Golden中關鍵要素如：年度預估營業額23.3億元、可解釋判斷、為全家便利商店鮮食/供應體系之一、產品為御便當與御飯團、每日大量配送多門市、同批事故透過全家通路擴散並短時間影響大量消費者等，在Model Output中皆有涵蓋或等值表述，未見關鍵資訊遺漏，因此給5分。\nHallucination Control: Model Output未新增Golden未提及且無法支持的具體營運事實（如門市數、OEM、特定供應鏈結構等），僅為同義改寫與合理摘要，例如將『全家便利商店鮮食製造/供應體系之一』概括為『供應便利商店通路』『連鎖通路』，屬合理概括，未改變核心判斷，也未違反任何Critical Rules，因此幻覺控制給5分。"
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
@@ -10445,58 +10518,6 @@ window.validationReviewData = {
                                                                 "url":  "https://www.104.com.tw/company/1a2x6bjw43?utm_source=openai"
                                                             }
                                                         ]
-                                      },
-                                      {
-                                          "name":  "標的",
-                                          "version":  "小量v3",
-                                          "deliveryDate":  "2026-07-28",
-                                          "tokens":  {
-                                                         "input":  12902,
-                                                         "output":  844,
-                                                         "total":  13746
-                                                     },
-                                          "SCORE":  4.5,
-                                          "IS_MASK":  false,
-                                          "NO_RISK":  false,
-                                          "IS_BLOCK":  false,
-                                          "MASK_RAIL":  null,
-                                          "BLOCK_RAIL":  null,
-                                          "INPUT_TOKENS":  12902,
-                                          "TOTAL_TOKENS":  13746,
-                                          "OUTPUT_TOKENS":  844,
-                                          "PRODUCT_SCORE":  9.0,
-                                          "SUBJECT_SUMMARY":  "便當飯糰可能因保存不當致細菌滋生、加熱不足或接觸生食及不潔器具引發食物中毒，為低風險。",
-                                          "REVENUE_EXPOSURE_SCORE":  4.5,
-                                          "SUBJECT_RISK_REPORT_TABLE":  {
-                                                                            "便當飯糰":  {
-                                                                                         "RISK_DESC":  "保存不當、加熱不足或接觸生食及不潔器具，可能造成細菌滋生與食物中毒。",
-                                                                                         "RISK_SUGGESTION":  "低風險"
-                                                                                     }
-                                                                        },
-                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
-                                                                               "continuous_use":  {
-                                                                                                      "label":  "持續使用型",
-                                                                                                      "level":  "有限"
-                                                                                                  },
-                                                                               "large_catering":  {
-                                                                                                      "label":  "大型供餐型",
-                                                                                                      "level":  "有限"
-                                                                                                  },
-                                                                               "multi_channel_supply":  {
-                                                                                                            "label":  "多通路/供應型",
-                                                                                                            "level":  "顯著"
-                                                                                                        }
-                                                                           },
-                                          "REVENUE_EXPOSURE_DESCRIPTION":  "本次被保的御便當、御飯團屬即食餐食，主要透過便利商店鮮食供應關係進入多個門市據點及終端市場，事故可能沿供應鏈擴大影響範圍。產品以短期、即時食用為主，且公開資訊未顯示其以婚宴、Buffet或其他大量同步供餐服務為主要營業模式，因此持續使用及單次大量共同食用所形成的暴險有限。",
-                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
-                                          "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
-                                          "REVENUE_REASONABILITY_DESCRIPTION":  "本案預估年度營業額為新臺幣23.3億元，與食品工廠從事即食餐食製造、並透過便利商店通路供應的營運規模大致相符。公開資訊顯示晉欣食品具工廠及鮮食製造角色，產品可透過企業通路接觸多個門市據點，足以支持此營業額屬可解釋範圍。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null
                                       }
                                   ]
                   },
@@ -11740,6 +11761,65 @@ window.validationReviewData = {
                                           "final_summary":  "主要關注酒類產品之食品安全責任及多通路流通所致群聚與跨通路擴散暴險。雖近五年無理賠且保額承接壓力較低，仍須留意承接標的是否由特定通路擴大至一般進口食品銷售，以及附加條款口徑變更。核保應優先確認酒類除外、經銷商條款是否加貼及照片不足之營運條件。"
                                       },
                                       {
+                                          "name":  "標的",
+                                          "version":  "小量v3",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  null,
+                                                         "output":  null,
+                                                         "total":  null
+                                                     },
+                                          "SCORE":  5.75,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  14790,
+                                          "TOTAL_TOKENS":  16336,
+                                          "OUTPUT_TOKENS":  1546,
+                                          "PRODUCT_SCORE":  7.0,
+                                          "SUBJECT_SUMMARY":  "酒可能因未符合酒類衛生標準或保存不當變質致食物中毒，建議加貼國泰產物產品責任保險特別除外附加條款-酒類產品適用，降低產品風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  5.75,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "酒":  {
+                                                                                      "RISK_DESC":  "未符合酒類衛生標準或保存不當變質。",
+                                                                                      "RISK_SUGGESTION":  "加貼國泰產物產品責任保險特別除外附加條款-酒類產品適用。"
+                                                                                  },
+                                                                            "食品飲品":  {
+                                                                                         "RISK_DESC":  "保存不當或處理不潔可能導致細菌滋生及食物中毒。",
+                                                                                         "RISK_SUGGESTION":  "低風險"
+                                                                                     }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "中度"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "本次被保產品為進口餅乾、果醬、水、咖啡、果汁及酒類，公開資訊顯示其透過連鎖超市、百貨公司、飯店及多個電商或零售平台銷售，形成跨不同通路與終端市場的產品流通。多通路接觸使單一產品或批次發生事故時，可能同時影響不同通路的消費者與下游銷售據點，擴大回收及損害影響範圍。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
+                                          "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "本次被保產品年度預估營業額為新臺幣6,000萬元，與食品、飲料及酒類進口代理及批發業者的營運型態大致相符。公開資訊顯示該公司將產品供應至連鎖超市、百貨公司、飯店及電商或零售平台，具多通路市場接觸，足以支持此營業額屬於可解釋的批發及代理業務規模。",
+                                          "overall_decision":  "pass",
+                                          "correctness":  5,
+                                          "completeness":  5,
+                                          "hallucination_control":  5,
+                                          "overall_score":  5.0,
+                                          "violated_critical_rules":  [
+
+                                                                      ],
+                                          "reason":  "Model Output 完整且正確反映 Golden Answer 的核心結論與邏輯：\n1) 營業額合理性：Golden 判定 6,000 萬元屬「可解釋」，理由為進口食品飲料代理與批發，產品於 Costco、電商平台、連鎖超市、百貨及飯店等多通路銷售，足以支持數千萬級規模。Model Output 同樣將營業額分類為「可解釋」，並以進口食品、飲料及酒類代理批發、多通路供應為主要依據，與 Golden 在方向與邏輯上完全一致，僅為同義改寫與合理摘要，故 correctness 為 5。\n2) 曝險特性與擴散機制：Golden 指出為進口食品飲料代理／批發，產品銷往連鎖超市、超商、百貨、飯店及電商，同批或同系列產品事故可擴散至不同地區消費者，且果醬、飲料、罐頭、餅乾等為具保存期限之消費品，有一定市場累積風險。Model Output 說明多通路（連鎖超市、百貨、飯店及多個電商或零售平台）銷售，單一產品或批次事故可同時影響不同通路消費者與下游據點，擴大回收與損害，與 Golden 所強調的多通路、批次事故擴散機制和累積風險方向一致，且未改變事故擴散邏輯，因此 correctness 保持 5。\n3) 完整性：Golden 的關鍵資訊——營業額合理性結論與其依據、多通路銷售型態、產品為保存期限之消費品、同批產品可跨地區及通路擴散的風險——皆在 Model Output 中被涵蓋或等值呈現，未有重要要點遺漏，因此 completeness 為 5。\n4) 幻覺控制：Model Output 中的產品品項（餅乾、果醬、水、咖啡、果汁及酒類）、多通路銷售描述、批次事故擴大回收與損害範圍等，皆屬於對 Golden 既有『果醬、飲料、罐頭、餅乾等食品飲料』與多通路銷售的合理細化與改寫，未新增無法由 Golden 支持的具體營運事實（如門市數、工廠數、特定品牌合作等），亦未與任何已知資訊矛盾，故 hallucination_control 評為 5。\n5) 關於 critical rules：Model Output 並未以營業額作為暴險程度的唯一依據，而是依多通路供應與產品性質說明暴險；也未憑空新增門市數、工廠數、OEM/ODM 或其他具體營運事實；亦未將不確定描述改寫為確定事實，故無違反任何 critical rules。"
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
@@ -11939,62 +12019,6 @@ window.validationReviewData = {
                                                                 "url":  "https://www.518.com.tw/company-G8ZAxz.html?utm_source=openai"
                                                             }
                                                         ]
-                                      },
-                                      {
-                                          "name":  "標的",
-                                          "version":  "小量v3",
-                                          "deliveryDate":  "2026-07-28",
-                                          "tokens":  {
-                                                         "input":  14126,
-                                                         "output":  1150,
-                                                         "total":  15276
-                                                     },
-                                          "SCORE":  5.5,
-                                          "IS_MASK":  false,
-                                          "NO_RISK":  false,
-                                          "IS_BLOCK":  false,
-                                          "MASK_RAIL":  null,
-                                          "BLOCK_RAIL":  null,
-                                          "INPUT_TOKENS":  14126,
-                                          "TOTAL_TOKENS":  15276,
-                                          "OUTPUT_TOKENS":  1150,
-                                          "PRODUCT_SCORE":  7.0,
-                                          "SUBJECT_SUMMARY":  "酒未符合酒類衛生標準或保存不當變質，建議加貼國泰產物產品責任保險特別除外附加條款-酒類產品適用，以降低主要產品風險。",
-                                          "REVENUE_EXPOSURE_SCORE":  5.5,
-                                          "SUBJECT_RISK_REPORT_TABLE":  {
-                                                                            "酒":  {
-                                                                                      "RISK_DESC":  "未符合酒類衛生標準或保存不當變質。",
-                                                                                      "RISK_SUGGESTION":  "加貼酒類產品責任保險特別除外附加條款。"
-                                                                                  },
-                                                                            "食品飲品":  {
-                                                                                         "RISK_DESC":  "保存不當或製程、器具不潔，可能造成細菌滋生與食物中毒。",
-                                                                                         "RISK_SUGGESTION":  "加強保存、加熱及器具衛生管理；目前屬低風險。"
-                                                                                     }
-                                                                        },
-                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
-                                                                               "continuous_use":  {
-                                                                                                      "label":  "持續使用型",
-                                                                                                      "level":  "有限"
-                                                                                                  },
-                                                                               "large_catering":  {
-                                                                                                      "label":  "大型供餐型",
-                                                                                                      "level":  "有限"
-                                                                                                  },
-                                                                               "multi_channel_supply":  {
-                                                                                                            "label":  "多通路/供應型",
-                                                                                                            "level":  "顯著"
-                                                                                                        }
-                                                                           },
-                                          "REVENUE_EXPOSURE_DESCRIPTION":  "本次被保產品為進口餅乾、果醬、水、咖啡、果汁及酒類，屬短期消費食品與飲料，通常於購買後即食用或飲用，不易形成長期使用或持續攝取的市場存量。現有資訊未顯示本次產品用於婚宴、Buffet、團膳或其他大量同步供餐；但其進口代理及批發供應模式，並有產品進入連鎖零售、百貨、飯店及網路通路的資訊，單一產品問題可能沿多個通路擴散至不同據點與消費者。",
-                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
-                                          "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
-                                          "REVENUE_REASONABILITY_DESCRIPTION":  "本次被保產品年度預估營業額為新臺幣6,000萬元，與進口食品、飲料及酒類代理批發的業態相符。公開資訊顯示該公司自2003年起營運，具有進口資格，並有供應連鎖超市、超商、百貨、飯店及網路通路的經營線索；以此類多品項進口代理及批發業務的常見營運規模推估，該營業額屬可解釋範圍。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null
                                       }
                                   ]
                   },
@@ -13240,6 +13264,61 @@ window.validationReviewData = {
                                           "final_summary":  "主要關注營業額申報與實際多通路營運不一致，且攤販型態涉及生鮮及加工食品之群聚、批次與市場擴散暴險。過往保額約倍增而保費僅小幅增加，並有承保標的轉換及期間重疊可能，AOA承接壓力偏高。應優先確認營業額、投保通路與產品範圍、保額費率合理性及食品相關條款適用性。"
                                       },
                                       {
+                                          "name":  "標的",
+                                          "version":  "小量v3",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  null,
+                                                         "output":  null,
+                                                         "total":  null
+                                                     },
+                                          "SCORE":  7.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  13171,
+                                          "TOTAL_TOKENS":  13899,
+                                          "OUTPUT_TOKENS":  728,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "生鮮食品可能因保存不當致細菌滋生、加熱不足或烹煮後接觸生食及不潔器具導致食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  7.0,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "生鮮食品":  {
+                                                                                         "RISK_DESC":  "保存不當、加熱不足或交叉污染可能導致食物中毒。",
+                                                                                         "RISK_SUGGESTION":  "低風險"
+                                                                                     }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "中度"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "本次被保的生鮮食品除現場銷售外，亦透過官方線上商城及外部電商平台接單並宅配，商品可接觸較廣地域的消費市場，故單一銷售據點發生事故時，影響範圍可能擴大至不同收貨地點與消費者。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "偏低且需確認",
+                                          "REVENUE_SCORE_COMPARISON_RESULT":  "REASONABILITY_LOWER",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "本次被保產品為生鮮食品，公開資訊顯示新福農場自2012年起經營畜肉零售，並具現場銷售及線上商城宅配等營業接觸方式；以此業態及持續營運規模推估，年度營業額通常應高於新臺幣100元。該金額亦與公開資訊所列新臺幣100,000元資本額及既有電商銷售樣態差距明顯，應確認預估金額的單位、期間或填報範圍。",
+                                          "overall_decision":  "pass",
+                                          "correctness":  5,
+                                          "completeness":  5,
+                                          "hallucination_control":  5,
+                                          "overall_score":  5.0,
+                                          "violated_critical_rules":  [
+
+                                                                      ],
+                                          "reason":  "Model Output 在營業額合理性與曝險特性兩部分均與 Golden Answer 保持一致。\n\n1) Correctness：\n- 營業額合理性分類為「偏低且需確認」，與 Golden Answer 完全相同，且說明中指出以業態與持續營運規模推估，100 元顯著偏低，需要確認金額單位、期間或填報範圍，充分對應 Golden Answer 所述「明顯低於目前可見的營運樣態」以及需確認是否為部分產品/通路或保守申報的精神，屬同義改寫與合理延伸。\n- 曝險特性部分，Golden Answer 強調：生鮮雞肉可透過官方商城與多個電商平台及低溫宅配，造成同批產品跨地區流通，單一事故影響範圍由門市客群擴大至電商購買者。Model Output 指出：除現場銷售外，亦透過官方線上商城及外部電商平台接單並宅配，可接觸較廣地域的消費市場，單一銷售據點事故時影響範圍可能擴大至不同收貨地點與消費者，與 Golden Answer 的主要事故擴散機制保持一致。多通路/供應型列為「中度」也符合「多平台＋宅配」帶來較大擴散風險的方向，未改變風險方向或機制。\n因此在核心事實、判斷與結論上無實質差異，給予 correctness=5。\n\n2) Completeness：\n- 營業額合理性部分，Golden Answer 的關鍵要點包括：預估營業額100、相對於可見營運樣態偏低、多通路（官方商城、多個電商、批發/餐飲）暗示規模較大、需要確認是否為部分產品/部分通路或保守申報。Model Output 雖未逐字提及 PChome、momo 或批發/餐飲，但已概括為「線上商城宅配等營業接觸方式」及「既有電商銷售樣態」，並同樣指出金額偏低且需確認單位、期間或填報範圍，足以支撐相同結論，無關鍵依據缺漏。\n- 曝險特性部分，Golden Answer 的核心在於：生鮮雞肉透過官方商城與多個電商平台及低溫宅配→同批產品跨地區流通→單一事故影響範圍由門市客群擴大至電商購買者。Model Output 已明確說明「官方線上商城及外部電商平台接單並宅配」、「商品可接觸較廣地域的消費市場」、「事故時影響可能擴大至不同收貨地點與消費者」，完整保留關鍵擴散機制及風險方向。\n因此重要內容無實質遺漏，給予 completeness=5。\n\n3) Hallucination Control：\n- 新增內容如「自2012年起經營畜肉零售」及「資本額100,000元」屬具體客觀公司資訊，但在本題中 WEB_REFERENCE 空白，無法判定其是否來自外部搜尋；然而根據規則，WEB_REFERENCE 不完整不等於該事實不存在，且這些補充並未改變 Golden Answer 的營業額合理性分類或暴險方向與機制，而只是用來強化營運持續性與規模偏高的推論，屬合理補充，不視為 hallucination 扣分來源。\n- 曝險描述及營業額說明未出現與 Golden Answer 相矛盾的事實，也未將不確定資訊改寫為確定事實，且未依 REVENUE 單獨決定暴險程度。\n因此在幻覺控制上無明顯問題，給予 hallucination_control=5。\n\n4) Critical Rules：\n- REVENUE 僅作為背景，暴險程度「多通路/供應型為中度」係依通路型態與宅配跨區擴散機制判斷，未違反「不得以營業額單獨決定暴險程度」。\n- 未將不確定或僅為線索的描述改寫成確定事實於本案提供的資料中。\n- 未新增門市數、工廠數、OEM/ODM、供應鏈、品牌合作或通路細節的無依據具體內容。\n- 並未因 WEB_REFERENCE 缺乏資訊而將營業額合理性判為「無法評估」。\n故無違反任何 critical rules，violated_critical_rules 為空陣列。"
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
@@ -13598,58 +13677,6 @@ window.validationReviewData = {
                                                                 "url":  "https://xinfu.cyberbiz.co/contact"
                                                             }
                                                         ]
-                                      },
-                                      {
-                                          "name":  "標的",
-                                          "version":  "小量v3",
-                                          "deliveryDate":  "2026-07-28",
-                                          "tokens":  {
-                                                         "input":  12712,
-                                                         "output":  919,
-                                                         "total":  13631
-                                                     },
-                                          "SCORE":  7.0,
-                                          "IS_MASK":  false,
-                                          "NO_RISK":  false,
-                                          "IS_BLOCK":  false,
-                                          "MASK_RAIL":  null,
-                                          "BLOCK_RAIL":  null,
-                                          "INPUT_TOKENS":  12712,
-                                          "TOTAL_TOKENS":  13631,
-                                          "OUTPUT_TOKENS":  919,
-                                          "PRODUCT_SCORE":  9.0,
-                                          "SUBJECT_SUMMARY":  "生鮮食品可能因保存不當致細菌滋生、加熱不足或烹煮後接觸生食及不潔器具造成食物中毒，為低風險。",
-                                          "REVENUE_EXPOSURE_SCORE":  7.0,
-                                          "SUBJECT_RISK_REPORT_TABLE":  {
-                                                                            "生鮮食品":  {
-                                                                                         "RISK_DESC":  "保存不當、加熱不足或接觸生食及不潔器具，可能造成細菌滋生與食物中毒。",
-                                                                                         "RISK_SUGGESTION":  "低風險"
-                                                                                     }
-                                                                        },
-                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
-                                                                               "continuous_use":  {
-                                                                                                      "label":  "持續使用型",
-                                                                                                      "level":  "有限"
-                                                                                                  },
-                                                                               "large_catering":  {
-                                                                                                      "label":  "大型供餐型",
-                                                                                                      "level":  "有限"
-                                                                                                  },
-                                                                               "multi_channel_supply":  {
-                                                                                                            "label":  "多通路/供應型",
-                                                                                                            "level":  "中度"
-                                                                                                        }
-                                                                           },
-                                          "REVENUE_EXPOSURE_DESCRIPTION":  "本次被保產品為生鮮食品，依其即時或短期食用的一般消費模式，市場存量及跨年度持續使用效果有限。公開資訊可確認該類產品透過實體營業據點及自營購物網站接觸消費者，形成多通路銷售；但未確認其透過中央廚房、團膳或大規模供應鏈進入多個下游據點，且目前沒有大型同步供餐的資訊，因此大型供餐型暴險有限。",
-                                          "REVENUE_REASONABILITY_CATEGORY":  "偏低且需確認",
-                                          "REVENUE_SCORE_COMPARISON_RESULT":  "REASONABILITY_LOWER",
-                                          "REVENUE_REASONABILITY_DESCRIPTION":  "本次被保產品年度預估營業額為新臺幣100元，與公開資訊所呈現之新福農場具有實體營業據點、線上購物及生鮮食品銷售等營運樣態明顯不相稱，較難視為完整產品銷售規模。若僅投保特定少量品項、特定通路或試營運業務，該金額仍可能有其範圍限制，建議確認被保生鮮食品的實際品項、銷售通路及預估計算基礎。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null
                                       }
                                   ]
                   },
@@ -14899,6 +14926,61 @@ window.validationReviewData = {
                                           "final_summary":  "主要關注食品多通路供應所致之群聚及累積暴險、附加被保險人責任，以及營運場址為非合法建築臨時攤販。產品本身風險較低且近五年無理賠，惟續保條件延續前期保額保費，通路擴散與條款適配仍須檢視。核保應優先確認追溯日不一致、NPD004附加被保險人及其關係、保費調整與流通責任範圍。"
                                       },
                                       {
+                                          "name":  "標的",
+                                          "version":  "小量v3",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  null,
+                                                         "output":  null,
+                                                         "total":  null
+                                                     },
+                                          "SCORE":  4.5,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  15114,
+                                          "TOTAL_TOKENS":  16106,
+                                          "OUTPUT_TOKENS":  992,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "調理食品可能因保存不當、加熱不足或接觸生食及不潔器具導致食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  4.5,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "調理食品":  {
+                                                                                         "RISK_DESC":  "保存不當、加熱不足或接觸生食及不潔器具恐致細菌滋生",
+                                                                                         "RISK_SUGGESTION":  "低風險"
+                                                                                     }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "顯著"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "本次被保產品為常溫調理食品、火鍋湯底、牛肉及鴨血調理包、調理醬包與覆熱即食品，公開資訊顯示其可透過量販及零售通路、官方網路產品頁面，以及餐飲品牌商品化與客製化供應方式進入多個據點及終端市場。此類多通路及品牌供應模式會擴大產品流通範圍，使單一產品品質或標示事故可能同時影響不同通路、合作品牌及多地消費者。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
+                                          "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "新臺幣3億元年度預估營業額，與公司具食品製造業態、食品批發及無店面零售業務，並設有兩處生產中食品工廠的營運規模大致相符。公開資訊亦顯示其產品透過量販、零售及餐飲品牌商品化等方式銷售，具備支撐該營業額的市場接觸與供應模式，因此本次金額可解釋。",
+                                          "overall_decision":  "pass",
+                                          "correctness":  5,
+                                          "completeness":  5,
+                                          "hallucination_control":  5,
+                                          "overall_score":  5.0,
+                                          "violated_critical_rules":  [
+
+                                                                      ],
+                                          "reason":  "Correctness: Model Output將營業額合理性分類為「可解釋」，與Golden一致，並正確引用3億元營業額、兩處生產中食品工廠、食品製造/批發/零售及量販通路銷售等關鍵依據；曝險方向亦聚焦在多通路、品牌合作供應導致事故可擴散至多平台與多終端客戶，符合Golden對多通路/品牌合作擴散機制的描述，故核心判斷與機制皆一致，給5分。\nCompleteness: Golden中的重要要素如：3億元規模與公開資訊相符、兩處食品工廠、食品製造批發零售業態、量販/電商/超市電商及品牌合作/代工等多通路供應、產品為短中期食用食品且有市場累積風險等，皆在Model Output中被涵蓋或等值表達（例如「量販及零售通路、官方網路產品頁面，以及餐飲品牌商品化與客製化供應」對應Golden的多通路與品牌合作/代工），未有關鍵資訊缺漏，因此給5分。\nHallucination Control: Model Output新增的產品型態說明（常溫調理食品、火鍋湯底、調理包等）屬於合理細化，與Golden中『多為短中期食用食品』相容，未引入新的通路類型、供應鏈結構或事故機制，也未改變風險結論；多通路/供應型曝險評為「顯著」亦與Golden強調的多平台、多終端擴散機制一致。無新增未被Golden或可合理推論支持的重要客觀事實，故給5分。\nCritical Rules: 未以營業額作為暴險程度唯一依據，亦未捏造門市數、工廠數或特定OEM/通路等具體營運事實，且未將不確定資訊敘述為確定事實，故無違反任何critical rule。"
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
@@ -15173,58 +15255,6 @@ window.validationReviewData = {
                                                                 "url":  "https://findbiz.nat.gov.tw/fts/factory/31/10865000600472"
                                                             }
                                                         ]
-                                      },
-                                      {
-                                          "name":  "標的",
-                                          "version":  "小量v3",
-                                          "deliveryDate":  "2026-07-28",
-                                          "tokens":  {
-                                                         "input":  15185,
-                                                         "output":  1044,
-                                                         "total":  16229
-                                                     },
-                                          "SCORE":  4.5,
-                                          "IS_MASK":  false,
-                                          "NO_RISK":  false,
-                                          "IS_BLOCK":  false,
-                                          "MASK_RAIL":  null,
-                                          "BLOCK_RAIL":  null,
-                                          "INPUT_TOKENS":  15185,
-                                          "TOTAL_TOKENS":  16229,
-                                          "OUTPUT_TOKENS":  1044,
-                                          "PRODUCT_SCORE":  9.0,
-                                          "SUBJECT_SUMMARY":  "調理食品可能因保存不當、加熱不足或接觸生食及不潔器具導致食物中毒，為低風險。",
-                                          "REVENUE_EXPOSURE_SCORE":  4.5,
-                                          "SUBJECT_RISK_REPORT_TABLE":  {
-                                                                            "調理食品":  {
-                                                                                         "RISK_DESC":  "保存不當或加熱不足，可能造成細菌滋生及食物中毒。",
-                                                                                         "RISK_SUGGESTION":  "依規範保存並充分加熱，避免接觸生食或不潔器具。"
-                                                                                     }
-                                                                        },
-                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
-                                                                               "continuous_use":  {
-                                                                                                      "label":  "持續使用型",
-                                                                                                      "level":  "有限"
-                                                                                                  },
-                                                                               "large_catering":  {
-                                                                                                      "label":  "大型供餐型",
-                                                                                                      "level":  "有限"
-                                                                                                  },
-                                                                               "multi_channel_supply":  {
-                                                                                                            "label":  "多通路/供應型",
-                                                                                                            "level":  "顯著"
-                                                                                                        }
-                                                                           },
-                                          "REVENUE_EXPOSURE_DESCRIPTION":  "本次被保產品為火鍋湯底、各類調理包及覆熱即食品，屬包裝食品，主要於加熱或食用時使用，雖有常溫保存期間，仍非長期使用型產品，市場累積使用期間有限。公開資訊顯示相關產品具食品製造、批發、網路銷售及企業供應線索，可能經由多個品牌、零售或其他銷售據點進入終端市場；一旦產品發生共通性事故，影響範圍可能隨供應通路擴大，但本案並非以婚宴、Buffet或其他大量同步供餐服務為主。",
-                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
-                                          "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
-                                          "REVENUE_REASONABILITY_DESCRIPTION":  "本次被保產品年度預估營業額為新臺幣3億元，與公司從事常溫調理食品及即食食品製造、食品批發、網路銷售，並有兩處生產中食品工廠的營運樣態大致相符。公開資訊亦顯示其產品具企業供應及零售通路接觸線索，依製造與批發型食品業者的一般營運模式推估，該營業額屬可合理解釋範圍。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null
                                       }
                                   ]
                   },
@@ -16476,6 +16506,61 @@ window.validationReviewData = {
                                           "final_summary":  "主要關注海鮮食品保存、加工及流通所致之群聚求償，且批發、零售及進出口通路可能擴大事故影響範圍。既往無理賠但本次價格與條款重新協商，應留意經銷商條款、懲罰性賠償金之再保除外及保額對AOA/AGG承接能力。核保請優先確認產品流向、附加條款內容、自負額與保費充足性，並回看前次報價是否成單。"
                                       },
                                       {
+                                          "name":  "標的",
+                                          "version":  "小量v3",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  null,
+                                                         "output":  null,
+                                                         "total":  null
+                                                     },
+                                          "SCORE":  5.75,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  13425,
+                                          "TOTAL_TOKENS":  14492,
+                                          "OUTPUT_TOKENS":  1067,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "海鮮可能因保存不當致細菌滋生、加熱不足或接觸生食及不潔器具導致食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  5.75,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "海鮮":  {
+                                                                                       "RISK_DESC":  "保存不當、加熱不足或接觸生食及不潔器具，可能導致細菌滋生。",
+                                                                                       "RISK_SUGGESTION":  "低風險"
+                                                                                   }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "中度"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "本次被保的活體海鮮及冷凍海鮮具有水產品批發與零售商品性質，公開資訊亦支持該公司具國際貿易及進出口業態，產品可能經由批發交易接觸不同下游客戶與市場。相較單一終端銷售，批發及跨市場流通會擴大產品接觸據點，使同一產品相關事故的影響範圍可能延伸至多個交易或終端對象。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
+                                          "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "本次被保產品為活體海鮮及冷凍海鮮，公開資訊顯示該公司登記從事水產品批發、零售、食品批發及國際貿易，並具進出口資格，營運樣態以水產品交易及流通為主。以水產品批發及進出口業務的常見營運規模推估，年度預估營業額新臺幣7,000萬元屬可由其產品與業態解釋的範圍。",
+                                          "overall_decision":  "pass",
+                                          "correctness":  5,
+                                          "completeness":  5,
+                                          "hallucination_control":  5,
+                                          "overall_score":  5.0,
+                                          "violated_critical_rules":  [
+
+                                                                      ],
+                                          "reason":  "Model Output 完整維持 Golden Answer 的核心結論與邏輯。\n\n1) Correctness：\n- 營業額合理性分類為「可解釋」，與 Golden Answer 一致，且說明同樣以水產品批發、食品批發、進出口等業態的常見週轉/營運規模作為依據，沒有改變判斷方向或條件。\n- 曝險特性方面，同樣描述為活體及冷凍海鮮以批發及進出口為主、產品經由批發交易流向不同下游客戶與市場，事故可自同批貨品擴散至多個交易或終端對象，與 Golden Answer「同批貨可分散至餐廳、零售端等下游客戶並擴散」的事故擴散機制一致。\n- 沒有改變 Golden Answer 的暴險方向、程度判斷邏輯或主要擴散機制，屬語意展開與同義改寫，因此給予 correctness 5 分。\n\n2) Completeness：\n- Golden Answer 的關鍵點（批發及進出口型態、可形成高於資本額的週轉規模、公開營運樣態不顯偏高偏低、同批貨品可經多通路分散並擴散事故）皆有在 Model Output 中以等價概念呈現。\n- 沒有遺漏任何會影響營業額合理性或曝險判斷的關鍵依據或限制條件，故 completeness 為 5 分。\n\n3) Hallucination Control：\n- Model Output 僅補充「公開資訊顯示登記從事水產品批發、零售、食品批發及國際貿易，具進出口資格」等，屬對 Golden Answer 中「水產品與食品批發、零售及進出口貿易型態」的合理敘述與細化，並未新增具體門市數、工廠數、特定通路等無依據事實。\n- 未引入與 Golden Answer 或外部參考相衝突的新結論或關鍵事實，亦未將不確定內容當作確定敘述。\n- 因此 hallucination_control 評為 5 分。\n\n4) Critical Rules 檢查：\n- 未以營業額本身作為暴險程度的唯一或主要判斷依據，而是以批發/多通路流通與進出口等營運型態說明風險，符合規則。\n- 未引用 WEB_REFERENCE 的不確定描述，也未新增無依據的具體營運事實。\n- 故 violated_critical_rules 為空陣列。"
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
@@ -16682,58 +16767,6 @@ window.validationReviewData = {
                                                                 "url":  "https://alltwcompany.com/nd-C-50919883-%E9%A9%8A%E4%BA%9E%E5%9C%8B%E9%9A%9B%E8%B2%BF%E6%98%93%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8.html"
                                                             }
                                                         ]
-                                      },
-                                      {
-                                          "name":  "標的",
-                                          "version":  "小量v3",
-                                          "deliveryDate":  "2026-07-28",
-                                          "tokens":  {
-                                                         "input":  13801,
-                                                         "output":  887,
-                                                         "total":  14688
-                                                     },
-                                          "SCORE":  5.75,
-                                          "IS_MASK":  false,
-                                          "NO_RISK":  false,
-                                          "IS_BLOCK":  false,
-                                          "MASK_RAIL":  null,
-                                          "BLOCK_RAIL":  null,
-                                          "INPUT_TOKENS":  13801,
-                                          "TOTAL_TOKENS":  14688,
-                                          "OUTPUT_TOKENS":  887,
-                                          "PRODUCT_SCORE":  9.0,
-                                          "SUBJECT_SUMMARY":  "海鮮產品可能因保存不當致細菌滋生、加熱不足或烹煮後接觸生食及不潔器具引發食物中毒，為低風險。",
-                                          "REVENUE_EXPOSURE_SCORE":  5.75,
-                                          "SUBJECT_RISK_REPORT_TABLE":  {
-                                                                            "海鮮產品":  {
-                                                                                         "RISK_DESC":  "保存不當、加熱不足或生熟食及器具交叉污染，可能導致細菌滋生。",
-                                                                                         "RISK_SUGGESTION":  "低風險"
-                                                                                     }
-                                                                        },
-                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
-                                                                               "continuous_use":  {
-                                                                                                      "label":  "持續使用型",
-                                                                                                      "level":  "有限"
-                                                                                                  },
-                                                                               "large_catering":  {
-                                                                                                      "label":  "大型供餐型",
-                                                                                                      "level":  "有限"
-                                                                                                  },
-                                                                               "multi_channel_supply":  {
-                                                                                                            "label":  "多通路/供應型",
-                                                                                                            "level":  "中度"
-                                                                                                        }
-                                                                           },
-                                          "REVENUE_EXPOSURE_DESCRIPTION":  "本次被保產品為活體海鮮及冷凍海鮮，公開資訊顯示其業態涵蓋水產品批發、零售及無店面零售，產品可能透過批發與非實體銷售接觸不同客戶或市場，因此市場接觸範圍較單一門市為廣。惟目前未確認本次產品涉及團膳、中央廚房、連鎖餐飲或其他可同時影響大量據點的供應模式，且海鮮通常於購買後短期食用，事故影響主要受單批交易與配送範圍限制。",
-                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
-                                          "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
-                                          "REVENUE_REASONABILITY_DESCRIPTION":  "本次被保產品為活體海鮮及冷凍海鮮，年度預估營業額新臺幣7,000萬元，與公開資訊所示水產品批發兼零售、無店面零售及國際貿易業態相符。海鮮批發交易可透過多筆採購及周轉形成較高年度營業額，因此該金額在此類營運模式與規模下可合理解釋。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null
                                       }
                                   ]
                   },
@@ -17927,6 +17960,61 @@ window.validationReviewData = {
                                           "final_summary":  "主要關注攤販型態之營運條件及餐飲食品責任，並留意同時段或同批供餐引發群聚求償及年度累積損失。營業額屬單一據點且具合理性，近五年無理賠紀錄，但缺乏既往承保基準，現有保額對AOA、AGG事故承接壓力仍需評估。核保前應確認實際營業型態、外送及通路範圍，並檢視食品相關條款、保額與自負額是否適配。"
                                       },
                                       {
+                                          "name":  "標的",
+                                          "version":  "小量v3",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  null,
+                                                         "output":  null,
+                                                         "total":  null
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  9915,
+                                          "TOTAL_TOKENS":  10673,
+                                          "OUTPUT_TOKENS":  758,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "中式餐點可能因保存不當致細菌滋生、加熱不足或接觸生食及不潔器具引發食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  10.0,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "中式餐點":  {
+                                                                                         "RISK_DESC":  "保存不當致細菌滋生、加熱不足或接觸生食及不潔器具。",
+                                                                                         "RISK_SUGGESTION":  "低風險"
+                                                                                     }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "有限"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "本案被保產品為鍋貼、蒸餃、盒餐及便當，依該類型的一般營運模式推估，主要為單次購買後即食的餐飲商品，使用週期短，市場累積存量及持續攝取暴露有限。產品通常由店面提供予個別消費者，單次交易的服務人數與影響範圍有限。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
+                                          "REVENUE_SCORE_COMPARISON_RESULT":  "EQUAL",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "新臺幣500萬元的年度預估營業額，與鍋貼、蒸餃及便當類餐飲店以單店日常銷售為主的常見營運規模大致相符。現有公開資訊雖有限，但產品型態明確，該金額落在一般小型餐飲業可合理推估的營業額範圍內。",
+                                          "overall_decision":  "pass",
+                                          "correctness":  5,
+                                          "completeness":  5,
+                                          "hallucination_control":  5,
+                                          "overall_score":  5.0,
+                                          "violated_critical_rules":  [
+
+                                                                      ],
+                                          "reason":  "Model Output 完整且正確反映 Golden Answer：\n- 營業額合理性：皆判定為「可解釋」，金額 500 萬元與小型鍋貼、蒸餃等餐飲單店規模相符，說明邏輯與 Golden 一致。\n- 曝險特性：Golden 指出為單店經營、單次服務人數有限、事故影響範圍相對較小、整體風險有限；Model Output 描述為即食、單次交易、由店面提供個別消費者、單次服務人數與影響範圍有限，且三項暴險分類皆為「有限」，與 Golden 的風險方向與事故擴散機制一致。\n- 未遺漏 Golden 中任何關鍵判斷，亦未新增無依據的營運事實、通路或規模資訊，屬合理推論及同義改寫，無違反 critical rules。"
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
@@ -17963,58 +18051,6 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
-                                      },
-                                      {
-                                          "name":  "標的",
-                                          "version":  "小量v3",
-                                          "deliveryDate":  "2026-07-28",
-                                          "tokens":  {
-                                                         "input":  9528,
-                                                         "output":  673,
-                                                         "total":  10201
-                                                     },
-                                          "SCORE":  9.0,
-                                          "IS_MASK":  false,
-                                          "NO_RISK":  false,
-                                          "IS_BLOCK":  false,
-                                          "MASK_RAIL":  null,
-                                          "BLOCK_RAIL":  null,
-                                          "INPUT_TOKENS":  9528,
-                                          "TOTAL_TOKENS":  10201,
-                                          "OUTPUT_TOKENS":  673,
-                                          "PRODUCT_SCORE":  9.0,
-                                          "SUBJECT_SUMMARY":  "中式餐點可能因保存不當致細菌滋生、加熱不足或接觸生食及不潔器具引發食物中毒，為低風險。",
-                                          "REVENUE_EXPOSURE_SCORE":  10.0,
-                                          "SUBJECT_RISK_REPORT_TABLE":  {
-                                                                            "中式餐點":  {
-                                                                                         "RISK_DESC":  "保存不當、加熱不足或接觸生食及不潔器具，可能導致細菌滋生。",
-                                                                                         "RISK_SUGGESTION":  "低風險"
-                                                                                     }
-                                                                        },
-                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
-                                                                               "continuous_use":  {
-                                                                                                      "label":  "持續使用型",
-                                                                                                      "level":  "有限"
-                                                                                                  },
-                                                                               "large_catering":  {
-                                                                                                      "label":  "大型供餐型",
-                                                                                                      "level":  "有限"
-                                                                                                  },
-                                                                               "multi_channel_supply":  {
-                                                                                                            "label":  "多通路/供應型",
-                                                                                                            "level":  "有限"
-                                                                                                        }
-                                                                           },
-                                          "REVENUE_EXPOSURE_DESCRIPTION":  "本次被保產品為鍋貼、蒸餃、盒餐及便當，依該類型一般營運模式推估，主要屬單店即時製作與消費，單次服務人數及影響範圍通常有限，未見大型同步供餐或供應多個據點的資訊。產品以即時餐食為主，消費後不形成長期市場存量，事故影響通常集中於單次交易及有限顧客範圍。",
-                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
-                                          "REVENUE_SCORE_COMPARISON_RESULT":  "EQUAL",
-                                          "REVENUE_REASONABILITY_DESCRIPTION":  "本案年度預估營業額為新臺幣500萬元，與鍋貼、蒸餃、盒餐及便當等單店餐飲業態的一般營運規模大致相符。雖無公開資訊可進一步確認店面數量或營運規模，但依產品型態及一般餐飲店的銷售模式，該營業額尚屬可合理解釋範圍。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null
                                       }
                                   ]
                   },
@@ -19577,6 +19613,61 @@ window.validationReviewData = {
                                           "reason":  null
                                       },
                                       {
+                                          "name":  "標的",
+                                          "version":  "小量v3",
+                                          "deliveryDate":  "2026-07-28",
+                                          "tokens":  {
+                                                         "input":  13452,
+                                                         "output":  1334,
+                                                         "total":  14786
+                                                     },
+                                          "violated_critical_rules":  [
+
+                                                                      ],
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "INPUT_TOKENS":  13452,
+                                          "TOTAL_TOKENS":  14786,
+                                          "OUTPUT_TOKENS":  1334,
+                                          "PRODUCT_SCORE":  9.0,
+                                          "SUBJECT_SUMMARY":  "店內餐飲可能因保存不當致細菌滋生、加熱不足或烹煮後接觸生食及不潔器具而引發食物中毒，為低風險。",
+                                          "REVENUE_EXPOSURE_SCORE":  9.5,
+                                          "SUBJECT_RISK_REPORT_TABLE":  {
+                                                                            "店內餐飲":  {
+                                                                                         "RISK_DESC":  "保存不當、加熱不足或生熟食及器具接觸，可能造成細菌滋生。",
+                                                                                         "RISK_SUGGESTION":  "加強保存與加熱管理，落實生熟食及器具分流。"
+                                                                                     }
+                                                                        },
+                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
+                                                                               "continuous_use":  {
+                                                                                                      "label":  "持續使用型",
+                                                                                                      "level":  "有限"
+                                                                                                  },
+                                                                               "large_catering":  {
+                                                                                                      "label":  "大型供餐型",
+                                                                                                      "level":  "中度"
+                                                                                                  },
+                                                                               "multi_channel_supply":  {
+                                                                                                            "label":  "多通路/供應型",
+                                                                                                            "level":  "有限"
+                                                                                                        }
+                                                                           },
+                                          "REVENUE_EXPOSURE_DESCRIPTION":  "本次被保產品為店內銷售的台式料理、血藤雞湯、三杯雞、半天花及其他餐飲，公開資訊顯示提供團體用餐；若以合菜形式集中供餐，單次服務可能同時影響較多共同用餐者，使單一餐飲事件的受影響人數與範圍擴大。",
+                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
+                                          "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
+                                          "REVENUE_REASONABILITY_DESCRIPTION":  "本案年度預估營業額為新臺幣500萬元，公開資訊呈現為以店內用餐及外帶自取為主的單一土雞城／台式餐廳，並具團體用餐服務樣態。依此類餐廳的一般營運模式推估，該營業額與單一餐飲據點的產品組合及市場接觸程度大致相符，具合理性。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
@@ -19621,58 +19712,6 @@ window.validationReviewData = {
                                                                 "url":  "https://spot.line.me/detail/486257322574747117?utm_source=openai"
                                                             }
                                                         ]
-                                      },
-                                      {
-                                          "name":  "標的",
-                                          "version":  "小量v3",
-                                          "deliveryDate":  "2026-07-28",
-                                          "tokens":  {
-                                                         "input":  12253,
-                                                         "output":  1153,
-                                                         "total":  13406
-                                                     },
-                                          "SCORE":  9.0,
-                                          "IS_MASK":  false,
-                                          "NO_RISK":  false,
-                                          "IS_BLOCK":  false,
-                                          "MASK_RAIL":  null,
-                                          "BLOCK_RAIL":  null,
-                                          "INPUT_TOKENS":  12253,
-                                          "TOTAL_TOKENS":  13406,
-                                          "OUTPUT_TOKENS":  1153,
-                                          "PRODUCT_SCORE":  9.0,
-                                          "SUBJECT_SUMMARY":  "店內餐飲可能因保存不當、加熱不足或烹煮後接觸生食及不潔器具導致食物中毒，為低風險。",
-                                          "REVENUE_EXPOSURE_SCORE":  9.5,
-                                          "SUBJECT_RISK_REPORT_TABLE":  {
-                                                                            "店內餐飲":  {
-                                                                                         "RISK_DESC":  "保存不當、加熱不足或接觸生食及不潔器具，可能造成食物中毒。",
-                                                                                         "RISK_SUGGESTION":  "妥善保存並充分加熱，避免熟食接觸生食及不潔器具。"
-                                                                                     }
-                                                                        },
-                                          "REVENUE_EXPOSURE_ASSESSMENTS":  {
-                                                                               "continuous_use":  {
-                                                                                                      "label":  "持續使用型",
-                                                                                                      "level":  "有限"
-                                                                                                  },
-                                                                               "large_catering":  {
-                                                                                                      "label":  "大型供餐型",
-                                                                                                      "level":  "中度"
-                                                                                                  },
-                                                                               "multi_channel_supply":  {
-                                                                                                            "label":  "多通路/供應型",
-                                                                                                            "level":  "有限"
-                                                                                                        }
-                                                                           },
-                                          "REVENUE_EXPOSURE_DESCRIPTION":  "本次被保的台式料理、血藤雞湯、三杯雞、半天花及店內餐飲，主要於單一餐飲據點現點現做，供內用或外帶後短時間食用，跨年度累積使用或攝取的產品存量有限。公開資訊顯示該店提供合菜及團體用餐，單次可能服務較多人數，事故影響範圍較一般單桌用餐擴大；但目前未見本次產品透過多門市、網路獨立銷售、團膳或中央廚房供應的資訊。",
-                                          "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
-                                          "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
-                                          "REVENUE_REASONABILITY_DESCRIPTION":  "本次被保產品為台式料理及土雞餐飲，公開資訊呈現為單一餐飲據點、以內用及部分外帶自取為主，並提供家庭或團體用餐服務。依此類餐廳的一般營運模式推估，年度預估營業額新臺幣500萬元與單店餐飲的產品型態及營運規模大致相符。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null
                                       }
                                   ]
                   },
