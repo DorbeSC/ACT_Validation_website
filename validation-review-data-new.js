@@ -1,5 +1,5 @@
 window.validationReviewData = {
-    "generatedAt":  "2026-07-29 11:46:49",
+    "generatedAt":  "2026-07-29 17:46:48",
     "sourceFile":  "驗測資料.xlsx",
     "sourceSheet":  "input / 各模組資料",
     "header":  [
@@ -1323,6 +1323,39 @@ window.validationReviewData = {
                                           "reason":  "正確性：Model Output 將營業額合理性評為「偏低且需確認」，並以小吃店現製餐飲、需持續營業且10萬元/年明顯偏低為理由，與 Golden Answer 的結論與主要判斷依據一致；曝險部分也維持單店、小吃店、即時食用、單次事故影響範圍有限、整體風險有限的方向，故 correctness 給 5。\n\n完整性：Golden Answer 有兩個重點略為淡化或未明說：一是「單次服務人數有限」作為事故影響範圍小的具體原因，Model Output僅以「單一餐飲服務情境、範圍受限」概括說明；二是 Golden Answer 提及「設立多年、登記營業項目含餐館業與飲料店業的小吃店」，Model Output 只寫成麵店、小吃店，未完整還原背景。這些為次要細節，主要判斷仍可理解，因此 completeness 給 4。\n\n幻覺控制：Model Output 未新增與 Golden Answer 或合理推論相矛盾的具體營運事實，也沒有捏造門市數、供應鏈、OEM 等資訊，新增描述僅為對小吃店現製即食、單一餐飲情境等合理推論與概括，因此 hallucination_control 給 5。\n\nCritical Rules：未以營業額單獨作為風險程度判斷依據，亦未將不確定資訊寫成確定事實，且未新增無根據的具體營運資訊，故無違反 critical rules。"
                                       },
                                       {
+                                          "name":  "客戶",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  6341,
+                                                         "output":  997,
+                                                         "total":  7338
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "店面位於非建築物內且為臨時搭建之組合式攤位，外牆材質不固定且無明確出入口，判定為攤販。",
+                                          "INPUT_TOKENS":  6341,
+                                          "TOTAL_TOKENS":  7338,
+                                          "OUTPUT_TOKENS":  997,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  15938
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
@@ -1465,37 +1498,95 @@ window.validationReviewData = {
                                                         ]
                                       },
                                       {
-                                          "name":  "客戶",
+                                          "name":  "歷史",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  6341,
-                                                         "output":  997,
-                                                         "total":  7338
+                                                         "input":  12073,
+                                                         "output":  2271,
+                                                         "total":  14344
                                                      },
-                                          "SCORE":  6.0,
-                                          "IS_MASK":  false,
-                                          "NO_RISK":  false,
+                                          "SCORE":  10.0,
+                                          "INPUT_TOKENS":  12073,
+                                          "OUTPUT_TOKENS":  2271,
+                                          "TOTAL_TOKENS":  14344,
+                                          "NO_RISK":  true,
                                           "IS_BLOCK":  false,
-                                          "SP_SCORE":  6.0,
-                                          "MASK_RAIL":  null,
+                                          "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
-                                          "SP_SUMMARY":  "店面位於非建築物內且為臨時搭建之組合式攤位，外牆材質不固定且無明確出入口，判定為攤販。",
-                                          "INPUT_TOKENS":  6341,
-                                          "TOTAL_TOKENS":  7338,
-                                          "OUTPUT_TOKENS":  997,
-                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
-                                          "ESG_PENALTY_SCORE":  10.0,
-                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
-                                          "ESG_PENALTY_IS_RELATED":  null,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "MASK_RAIL":  null,
+                                          "LOSS_PATTERN":  "近五年無理賠紀錄。",
+                                          "CLAIM_SUMMARY":  "近五年無理賠紀錄。",
+                                          "HISTORY_RESULT":  {
+                                                                 "continue":  {
+                                                                                  "aggregate":  [
+                                                                                                    {
+                                                                                                        "claim_count_continue_last":  0.0,
+                                                                                                        "policy_count_continue_last":  0,
+                                                                                                        "claim_amount_continue_last":  0.0,
+                                                                                                        "discount_premium_continue_last":  0.0,
+                                                                                                        "loss_ratio_continue_last":  0.0,
+                                                                                                        "claim_count_continue_5y":  0.0,
+                                                                                                        "policy_count_continue_5y":  0,
+                                                                                                        "claim_amount_continue_5y":  0.0,
+                                                                                                        "discount_premium_continue_5y":  0.0,
+                                                                                                        "loss_ratio_continue_5y":  0.0,
+                                                                                                        "is_claimed":  "Y"
+                                                                                                    }
+                                                                                                ]
+                                                                              },
+                                                                 "insured":  {
+                                                                                 "aggregate":  [
+                                                                                                   {
+                                                                                                       "claim_count_insured_1y":  0.0,
+                                                                                                       "policy_count_insured_1y":  0,
+                                                                                                       "claim_amount_insured_1y":  0.0,
+                                                                                                       "discount_premium_insured_1y":  0.0,
+                                                                                                       "loss_ratio_insured_1y":  0.0,
+                                                                                                       "claim_count_insured_5y":  0.0,
+                                                                                                       "policy_count_insured_5y":  1,
+                                                                                                       "claim_amount_insured_5y":  0.0,
+                                                                                                       "discount_premium_insured_5y":  2273.0,
+                                                                                                       "loss_ratio_insured_5y":  0.0,
+                                                                                                       "is_claimed":  "Y"
+                                                                                                   }
+                                                                                               ]
+                                                                             }
+                                                             },
+                                          "OVERALL_ASSESSMENT":  "過往已有同一被保險人 ID 的產品責任保險案件，承保額度、自負額及附加條款架構具延續性，並曾完成報價通過與出單。本案主要差異為\u003cstrong\u003e營業額降至不同量級、佣金率與經手安排變動\u003c/strong\u003e，另被保險人名稱比對結果不同且追溯日改變。核保上宜確認申報資料量級、通路與承保對象延續性、佣金條件及追溯日適用依據。",
+                                          "KEY_FACTS":  {
+                                                            "baseline":  [
+                                                                             "過往已有同一被保險人 ID、同一產品責任保險類別案件，於 2024 年完成報價審核並出單，保險期間一年，保費為 2,273 元。",
+                                                                             "歷史承保條件具延續性：承接比例 100%，每一人身體傷害保額 100 萬元、每一事故身體傷害保額 400 萬元、每一事故財物損失保額 0 元、保險期間累計保額 1,000 萬元，並適用 2,000 元自負額及相同附加條款架構。"
+                                                                         ],
+                                                            "change_trajectory":  [
+                                                                                      "本案營業額為 10 萬元，較前期 100 萬元下降至不同量級，申報期間、計算單位及資料正確性仍待確認。",
+                                                                                      "本案佣金率為 12%，與前期已出單資料的 0% 不同，但與前期報價資料相同，應核對本次適用佣金率及報價至出單間的條件差異。",
+                                                                                      "本案經手人 ID 與前期不同、保經代代號留白，且被保險人名稱比對結果不同；追溯日由前期 2024 年 5 月 13 日改為 2025 年 6 月 5 日，應確認通路與經手安排、被保險人及實際承保對象延續性，以及追溯日適用依據。"
+                                                                                  ]
+                                                        },
+                                          "RECOMMENDED_REVIEW_CASES":  [
+                                                                           {
+                                                                               "appllte_no":  "2404000292508545",
+                                                                               "quote_no_version":  "NPD240016491-1",
+                                                                               "policy_no":  "150113PD60093",
+                                                                               "verification":  "確認本案營業額由 100 萬元變為 10 萬元是否源於申報期間或單位差異；並核對佣金率由前期出單資料的 0% 調整為 12%、保經代代號留白及經手安排變更的實際原因。",
+                                                                               "fields_to_review":  "比較本案與前期案件的營業額、佣金率、保經代代號、經手人 ID 比對結果及承接標的／產品名稱；開啟案件後優先查看報價需求說明、核保留言、承保條件與出單資料，確認保障額度、自負額及附加條款是否延續。"
+                                                                           }
+                                                                       ],
+                                          "ATTENTION_TAGS":  [
+                                                                 "通路",
+                                                                 "承保對象",
+                                                                 "決策",
+                                                                 "追溯日"
+                                                             ],
                                           "overall_decision":  null,
                                           "correctness":  null,
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
                                           "reason":  null,
-                                          "latency_ms":  15938
+                                          "latency_ms":  20206
                                       }
                                   ]
                   },
@@ -2812,6 +2903,39 @@ window.validationReviewData = {
                                           "reason":  "Model Output 完整且正確反映 Golden Answer：\n\n1) Correctness：\n- 營業額合理性：皆判定為「可解釋」，並同樣以單一大型中式餐廳/婚宴會館、約400席、多廳房/包廂的大型宴席營運型態作為主要依據，與 Golden 完全一致。\n- 曝險特性：皆強調婚宴或大型宴會供餐，單次供餐人數眾多，若食品衛生問題導致食物中毒，短時間內影響大量消費者、事故擴散範圍明顯放大，與 Golden 的主要暴險方向與事故擴散機制一致。大型供餐型被標為「顯著」，亦符合 Golden 指出其群聚事故暴險程度明顯高於一般餐廳的描述。故給 5 分。\n\n2) Completeness：\n- Golden 的關鍵要素：多年營運之中華料理與婚宴會館、單一大型宴會餐飲場所、約400席規模、多廳房/包廂、婚宴/大型宴席型態、食品衛生事件導致短時間群聚食物中毒、暴險高於一般餐廳等，皆在 Model Output 中有對應呈現或同義改寫，未見重要依據遺漏，給 5 分。\n\n3) Hallucination Control：\n- Model Output 僅補充「單一營業據點的中式餐廳」等屬合理同義改寫，與 Golden 的單一大型餐飲宴會場地相符；未新增門市數、供應鏈、OEM/ODM 等具體營運事實，也未更動暴險方向或主因，且未引用任何與 Golden 矛盾的新事實，屬合理推論，給 5 分。\n\n4) Critical Rules：\n- REVENUE 僅作為與座位容量、營運模式及市場接觸程度相符的背景說明，未作為暴險程度的唯一依據。\n- 未將未確定資訊寫成確定事實，亦未新增無依據的具體營運資訊。\n- 未以缺乏外部資料作為『無法評估』判斷依據。故無違反 critical rules。"
                                       },
                                       {
+                                          "name":  "客戶",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  6341,
+                                                         "output":  991,
+                                                         "total":  7332
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "該店面外觀為臨時搭建之開放式攤位，非永久性建築結構且無明確出入口，判定為攤販。",
+                                          "INPUT_TOKENS":  6341,
+                                          "TOTAL_TOKENS":  7332,
+                                          "OUTPUT_TOKENS":  991,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  15134
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
@@ -3110,37 +3234,96 @@ window.validationReviewData = {
                                                         ]
                                       },
                                       {
-                                          "name":  "客戶",
+                                          "name":  "歷史",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  6341,
-                                                         "output":  991,
-                                                         "total":  7332
+                                                         "input":  14328,
+                                                         "output":  2237,
+                                                         "total":  16565
                                                      },
-                                          "SCORE":  6.0,
-                                          "IS_MASK":  false,
-                                          "NO_RISK":  false,
+                                          "SCORE":  10.0,
+                                          "INPUT_TOKENS":  14328,
+                                          "OUTPUT_TOKENS":  2237,
+                                          "TOTAL_TOKENS":  16565,
+                                          "NO_RISK":  true,
                                           "IS_BLOCK":  false,
-                                          "SP_SCORE":  6.0,
-                                          "MASK_RAIL":  null,
+                                          "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
-                                          "SP_SUMMARY":  "該店面外觀為臨時搭建之開放式攤位，非永久性建築結構且無明確出入口，判定為攤販。",
-                                          "INPUT_TOKENS":  6341,
-                                          "TOTAL_TOKENS":  7332,
-                                          "OUTPUT_TOKENS":  991,
-                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
-                                          "ESG_PENALTY_SCORE":  10.0,
-                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
-                                          "ESG_PENALTY_IS_RELATED":  null,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "MASK_RAIL":  null,
+                                          "LOSS_PATTERN":  "近五年無理賠紀錄。",
+                                          "CLAIM_SUMMARY":  "近五年無理賠紀錄。",
+                                          "HISTORY_RESULT":  {
+                                                                 "continue":  {
+                                                                                  "aggregate":  [
+                                                                                                    {
+                                                                                                        "claim_count_continue_last":  0.0,
+                                                                                                        "policy_count_continue_last":  0,
+                                                                                                        "claim_amount_continue_last":  0.0,
+                                                                                                        "discount_premium_continue_last":  0.0,
+                                                                                                        "loss_ratio_continue_last":  0.0,
+                                                                                                        "claim_count_continue_5y":  0.0,
+                                                                                                        "policy_count_continue_5y":  0,
+                                                                                                        "claim_amount_continue_5y":  0.0,
+                                                                                                        "discount_premium_continue_5y":  0.0,
+                                                                                                        "loss_ratio_continue_5y":  0.0,
+                                                                                                        "is_claimed":  "Y"
+                                                                                                    }
+                                                                                                ]
+                                                                              },
+                                                                 "insured":  {
+                                                                                 "aggregate":  [
+                                                                                                   {
+                                                                                                       "claim_count_insured_1y":  0.0,
+                                                                                                       "policy_count_insured_1y":  0,
+                                                                                                       "claim_amount_insured_1y":  0.0,
+                                                                                                       "discount_premium_insured_1y":  0.0,
+                                                                                                       "loss_ratio_insured_1y":  0.0,
+                                                                                                       "claim_count_insured_5y":  0.0,
+                                                                                                       "policy_count_insured_5y":  1,
+                                                                                                       "claim_amount_insured_5y":  0.0,
+                                                                                                       "discount_premium_insured_5y":  6000.0,
+                                                                                                       "loss_ratio_insured_5y":  0.0,
+                                                                                                       "is_claimed":  "Y"
+                                                                                                   }
+                                                                                               ]
+                                                                             }
+                                                             },
+                                          "OVERALL_ASSESSMENT":  "本案延續過往產品責任保險交易脈絡，歷史參考案件以中餐廳為承保對象，營業額3,000萬元，採100%承接、合約再保及12%佣金率。\u003cstrong\u003e本案承保對象、經手人、保費、保額及附加條款均有變動\u003c/strong\u003e，其中保費與責任保額下調，宜確認通路、業務內容及條件調整的承接依據。追溯日改為2025年5月13日並與保險起期相同，應再核對日期設定及責任範圍。",
+                                          "KEY_FACTS":  {
+                                                            "baseline":  [
+                                                                             "過往參考案件為中餐廳產品責任保險，營業額3,000萬元，採100%承接、合約再保及12%佣金率，保費6,000元；主要保額為每一人身體傷害100萬元、每一事故身體傷害1,000萬元、每一事故財物損失200萬元及保險期間累計2,400萬元。",
+                                                                             "歷史參考案件由北區承作，附加條款包含產品責任、食品、食品中毒、訴訟及理賠費用與自負額等責任安排。"
+                                                                         ],
+                                                            "change_trajectory":  [
+                                                                                      "本案承保對象由歷史參考案件的餐廳改為零售商，經手人亦不同，應確認通路、承保對象及其業務內容的承接依據。",
+                                                                                      "本案保費由6,000元降至5,000元，且每一事故身體傷害保額降為400萬元、每一事故財物損失保額降為0元、保險期間累計保額降為1,000萬元；自負額改以2,000元金額明列，應核對保費與承保條件的對應關係。",
+                                                                                      "附加條款組合與歷史參考案件有差異，追溯日由2024年3月19日改為2025年5月13日，且與本案保險起期相同，宜確認責任範圍及日期設定依據。"
+                                                                                  ]
+                                                        },
+                                          "RECOMMENDED_REVIEW_CASES":  [
+                                                                           {
+                                                                               "appllte_no":  "2403000203572165",
+                                                                               "quote_no_version":  "NPD240002242-2",
+                                                                               "policy_no":  "151613PD60256",
+                                                                               "verification":  "確認本案責任保額縮減、每一事故財物損失保額取消及保費調整是否經需求或核保條件支持，並核對追溯日與保險起期設定。",
+                                                                               "fields_to_review":  "對照本案保費、每一事故身體傷害保額、每一事故財物損失保額、保險期間累計保額及附加條款組合，並查看前次核保留言與自負額記載方式。"
+                                                                           }
+                                                                       ],
+                                          "ATTENTION_TAGS":  [
+                                                                 "通路",
+                                                                 "附加條款",
+                                                                 "承保對象",
+                                                                 "費率水準",
+                                                                 "追溯日"
+                                                             ],
                                           "overall_decision":  null,
                                           "correctness":  null,
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
                                           "reason":  null,
-                                          "latency_ms":  15134
+                                          "latency_ms":  20975
                                       }
                                   ]
                   },
@@ -4449,6 +4632,39 @@ window.validationReviewData = {
                                           "reason":  "Model Output 在營業額合理性部分與 Golden Answer 一致：皆判定為「可解釋」，且以單一中和區鐵板燒餐廳、現場料理與套餐服務推估 1,000 萬元營收，核心結論正確。\n\n主要問題在曝險特性：Golden Answer 明確指出有『長照中心餐食製備與分送給長輩』，形成『供應固定場域多人用餐』的情境，這是關鍵曝險方向與事故擴散機制。但 Model Output 將曝險描述為一般單一據點現場餐飲、即時食用、無固定大量同步供餐，事故僅集中於當次用餐顧客，實質改變並弱化了 Golden Answer 的主要曝險方向。這屬於對既有內容的錯誤改寫與相反判斷，因此 Correctness 降至 2 分。\n\nCompleteness 方面，Golden Answer 唯一點出且相當關鍵的『長照中心固定多人用餐』曝險完全未被提及，也沒有反映任何機構供餐情境，構成多項重要資訊遺漏，評為 2 分。\n\nHallucination 控制部分，Model Output 雖新增「未見固定大量同步供餐」、「未見多據點、供應鏈進入多終端市場」等描述，這與 Golden Answer 所載的長照中心固定供餐情境有偏離，但屬於對營運型態的推測性描述，並無新增具體數量、通路或供應鏈細節，尚屬少量延伸且不涉及具體客觀事實，故給 4 分而非更低。\n\nCritical rules 檢查：\n- 未以營業額作為唯一風險判斷依據，符合規則。\n- 未將 web 搜尋不確定性改寫為確定事實（此案無 WEB_REFERENCE）。\n- 未新增門市數、工廠數、OEM/ODM、品牌合作等具體營運事實。\n- 未因缺少 WEB_REFERENCE 而將營業額合理性判為無法評估。\n因此 violated_critical_rules 為空陣列。"
                                       },
                                       {
+                                          "name":  "客戶",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  8947,
+                                                         "output":  1128,
+                                                         "total":  10075
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "店面位於非建築物內且為臨時搭建結構，外牆材質非固定且無明確出入口，判定為攤販。",
+                                          "INPUT_TOKENS":  8947,
+                                          "TOTAL_TOKENS":  10075,
+                                          "OUTPUT_TOKENS":  1128,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積金額為新臺幣1,379元，事由為雇主未按時繳納勞工退休金致加徵滯納金。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "依目前裁罰資料未見與本次產品責任保險直接相關，該案屬勞工退休金繳納事項，與產品責任承保風險的關聯較低。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  16046
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
@@ -4679,37 +4895,107 @@ window.validationReviewData = {
                                                         ]
                                       },
                                       {
-                                          "name":  "客戶",
+                                          "name":  "歷史",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  8947,
-                                                         "output":  1128,
-                                                         "total":  10075
+                                                         "input":  51608,
+                                                         "output":  1978,
+                                                         "total":  53586
                                                      },
-                                          "SCORE":  6.0,
-                                          "IS_MASK":  false,
-                                          "NO_RISK":  false,
+                                          "SCORE":  10.0,
+                                          "INPUT_TOKENS":  51608,
+                                          "OUTPUT_TOKENS":  1978,
+                                          "TOTAL_TOKENS":  53586,
+                                          "NO_RISK":  true,
                                           "IS_BLOCK":  false,
-                                          "SP_SCORE":  6.0,
-                                          "MASK_RAIL":  null,
+                                          "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
-                                          "SP_SUMMARY":  "店面位於非建築物內且為臨時搭建結構，外牆材質非固定且無明確出入口，判定為攤販。",
-                                          "INPUT_TOKENS":  8947,
-                                          "TOTAL_TOKENS":  10075,
-                                          "OUTPUT_TOKENS":  1128,
-                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
-                                          "ESG_PENALTY_SCORE":  9.0,
-                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積金額為新臺幣1,379元，事由為雇主未按時繳納勞工退休金致加徵滯納金。",
-                                          "ESG_PENALTY_IS_RELATED":  false,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "依目前裁罰資料未見與本次產品責任保險直接相關，該案屬勞工退休金繳納事項，與產品責任承保風險的關聯較低。",
+                                          "MASK_RAIL":  null,
+                                          "LOSS_PATTERN":  "近五年無理賠紀錄。",
+                                          "CLAIM_SUMMARY":  "近五年無理賠紀錄。",
+                                          "HISTORY_RESULT":  {
+                                                                 "continue":  {
+                                                                                  "aggregate":  [
+                                                                                                    {
+                                                                                                        "claim_count_continue_last":  0.0,
+                                                                                                        "policy_count_continue_last":  0,
+                                                                                                        "claim_amount_continue_last":  0.0,
+                                                                                                        "discount_premium_continue_last":  0.0,
+                                                                                                        "loss_ratio_continue_last":  0.0,
+                                                                                                        "claim_count_continue_5y":  0.0,
+                                                                                                        "policy_count_continue_5y":  0,
+                                                                                                        "claim_amount_continue_5y":  0.0,
+                                                                                                        "discount_premium_continue_5y":  0.0,
+                                                                                                        "loss_ratio_continue_5y":  0.0,
+                                                                                                        "is_claimed":  "Y"
+                                                                                                    }
+                                                                                                ]
+                                                                              },
+                                                                 "insured":  {
+                                                                                 "aggregate":  [
+                                                                                                   {
+                                                                                                       "claim_count_insured_1y":  0.0,
+                                                                                                       "policy_count_insured_1y":  0,
+                                                                                                       "claim_amount_insured_1y":  0.0,
+                                                                                                       "discount_premium_insured_1y":  0.0,
+                                                                                                       "loss_ratio_insured_1y":  0.0,
+                                                                                                       "claim_count_insured_5y":  0.0,
+                                                                                                       "policy_count_insured_5y":  0,
+                                                                                                       "claim_amount_insured_5y":  0.0,
+                                                                                                       "discount_premium_insured_5y":  0.0,
+                                                                                                       "loss_ratio_insured_5y":  0.0,
+                                                                                                       "is_claimed":  "Y"
+                                                                                                   }
+                                                                                               ]
+                                                                             }
+                                                             },
+                                          "OVERALL_ASSESSMENT":  "歷年案件以食品及餐飲產品責任承保為主，常見承保規模為每一人100萬元、每一事故400萬元、累計1,000萬元，保費約2,500至3,500元並搭配2,000元自負額，另有少數較高保障案件。\u003cstrong\u003e本案營業額、保障額度、保費及自負額均較常見案件上移\u003c/strong\u003e，其中保障額度達類似案件分布上緣，與過往少數高額承保案件較接近。核保宜優先確認鐵板燒料理的實際產品範圍、零售商承保角色、附加條款適用性，以及以同業報價為依據設定4,500元保費的條件。",
+                                          "KEY_FACTS":  {
+                                                            "baseline":  [
+                                                                             "歷年已出單案件集中於食品、餐飲及相關產品責任承保，主要承保對象類型為製造商與零售商；保費多落在2,500至3,500元，自負額多為2,000元，常見保障結構為每一人身體傷害保額100萬元、每一事故身體傷害保額400萬元及保險期間累計保額1,000萬元。",
+                                                                             "歷史上已有少數較高承保規模案件，保障提高至每一人200萬元、每一事故800萬元及累計2,000萬元，保費約5,000元；部分案件另以自負額備註記載2,000元。",
+                                                                             "歷史報價案件審核結果均為通過，報價需求多為食品或餐飲業務，附加條款組合依案件內容有所差異。"
+                                                                         ],
+                                                            "change_trajectory":  [
+                                                                                      "本案營業額為1,000萬元，高於過往最常見的500萬元，位於類似案件分布的中高段，仍低於該群體最高2,000萬元，建議確認營業額與實際承保範圍的一致性。",
+                                                                                      "本案每一人身體傷害保額1,000萬元、每一事故身體傷害保額1,000萬元及累計保額2,000萬元，整體保障量級高於過往常見結構，並接近類似案件分布上緣；每一事故財物損失保額為0元，與多數案件相同。",
+                                                                                      "本案保費4,500元及自負額2,500元均高於過往常見值，且承保標的為鐵板燒料理、承保對象類型為零售商；目前特別約定事項未填列，附加條款則較歷史已出單明細豐富，建議核對條件組合與同業報價調整依據。"
+                                                                                  ]
+                                                        },
+                                          "RECOMMENDED_REVIEW_CASES":  [
+                                                                           {
+                                                                               "appllte_no":  "2505000312857783",
+                                                                               "quote_no_version":  "",
+                                                                               "policy_no":  "151614PD51287",
+                                                                               "verification":  "建議確認本案4,500元保費及2,500元自負額，是否可依循此類高額保障案件的承保條件調整。",
+                                                                               "fields_to_review":  "比較每一人身體傷害保額、每一事故身體傷害保額及保險期間累計保額的高額承保結構，並查看5,000元保費、2,000元自負額備註、食品類承接標的與零售商承保對象類型。"
+                                                                           },
+                                                                           {
+                                                                               "appllte_no":  "2504000253013229",
+                                                                               "quote_no_version":  "",
+                                                                               "policy_no":  "151614PD02606",
+                                                                               "verification":  "建議確認本案自負額提高至2,500元的適用依據，以及鐵板燒料理與該案件承接標的在條件設定上的可比性。",
+                                                                               "fields_to_review":  "查看2,500元自負額、4,000元保費與每一人100萬元／每一事故400萬元／累計1,000萬元保障的搭配，並核對承接標的、營業額及承保對象類型的差異。"
+                                                                           },
+                                                                           {
+                                                                               "appllte_no":  "2504000303849143",
+                                                                               "quote_no_version":  "NPD250008956-1",
+                                                                               "policy_no":  "",
+                                                                               "verification":  "建議確認本案營業額相同但保障與保費均提高的必要性，並核對報價需求說明及附加條款是否支持該差異。",
+                                                                               "fields_to_review":  "查看營業額1,000萬元下採每一人100萬元、每一事故400萬元及累計1,000萬元保障的設定，並比對3,500元保費、2,000元自負額、製造商承保對象類型及附加條款內容。"
+                                                                           }
+                                                                       ],
+                                          "ATTENTION_TAGS":  [
+
+                                                             ],
                                           "overall_decision":  null,
                                           "correctness":  null,
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
                                           "reason":  null,
-                                          "latency_ms":  16046
+                                          "latency_ms":  15682
                                       }
                                   ]
                   },
@@ -6024,6 +6310,39 @@ window.validationReviewData = {
                                           "reason":  "Model Output 對營業額合理性判定為「可解釋」，說明與 Golden Answer 一致，並未改變金額、規模或判斷方向；對曝險特性也抓到保健食品透過社區（會員）藥局、多據點供應、同批產品出問題會擴散至多地區消費者等核心機制，屬同義改寫，因此 correctness 給 5 分。\n\nCompleteness 方面，雖有提及重複食用及市場暴露，但未明確重申 Golden Answer 中「多項品牌／產品線」以及「長期、持續性食用使暴露期間較一般食品為長、累積風險相對高於一般即食食品」這兩點，因此略有重要依據被弱化，給 4 分。\n\nModel Output 未新增 Golden Answer 或外部資料無法支持的具體營運事實或通路資訊，對保健食品重複食用與多藥局供應的描述屬合理推論與同義改寫，無明顯 hallucination，故 hallucination_control 給 5 分。Critical Rules 無違反。"
                                       },
                                       {
+                                          "name":  "客戶",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  6341,
+                                                         "output":  990,
+                                                         "total":  7331
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "由於店面並非位於合法建築內、結構為臨時搭建且外牆材質不符合固定要求，判定為攤販。",
+                                          "INPUT_TOKENS":  6341,
+                                          "TOTAL_TOKENS":  7331,
+                                          "OUTPUT_TOKENS":  990,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  14886
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
@@ -6282,37 +6601,100 @@ window.validationReviewData = {
                                                         ]
                                       },
                                       {
-                                          "name":  "客戶",
+                                          "name":  "歷史",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  6341,
-                                                         "output":  990,
-                                                         "total":  7331
+                                                         "input":  39798,
+                                                         "output":  3105,
+                                                         "total":  42903
                                                      },
-                                          "SCORE":  6.0,
-                                          "IS_MASK":  false,
-                                          "NO_RISK":  false,
+                                          "SCORE":  10.0,
+                                          "INPUT_TOKENS":  39798,
+                                          "OUTPUT_TOKENS":  3105,
+                                          "TOTAL_TOKENS":  42903,
+                                          "NO_RISK":  true,
                                           "IS_BLOCK":  false,
-                                          "SP_SCORE":  6.0,
-                                          "MASK_RAIL":  null,
+                                          "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
-                                          "SP_SUMMARY":  "由於店面並非位於合法建築內、結構為臨時搭建且外牆材質不符合固定要求，判定為攤販。",
-                                          "INPUT_TOKENS":  6341,
-                                          "TOTAL_TOKENS":  7331,
-                                          "OUTPUT_TOKENS":  990,
-                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
-                                          "ESG_PENALTY_SCORE":  10.0,
-                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
-                                          "ESG_PENALTY_IS_RELATED":  null,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "MASK_RAIL":  null,
+                                          "LOSS_PATTERN":  "近五年無理賠紀錄。",
+                                          "CLAIM_SUMMARY":  "近五年無理賠紀錄。",
+                                          "HISTORY_RESULT":  {
+                                                                 "continue":  {
+                                                                                  "aggregate":  [
+                                                                                                    {
+                                                                                                        "claim_count_continue_last":  0.0,
+                                                                                                        "policy_count_continue_last":  0,
+                                                                                                        "claim_amount_continue_last":  0.0,
+                                                                                                        "discount_premium_continue_last":  0.0,
+                                                                                                        "loss_ratio_continue_last":  0.0,
+                                                                                                        "claim_count_continue_5y":  0.0,
+                                                                                                        "policy_count_continue_5y":  0,
+                                                                                                        "claim_amount_continue_5y":  0.0,
+                                                                                                        "discount_premium_continue_5y":  0.0,
+                                                                                                        "loss_ratio_continue_5y":  0.0,
+                                                                                                        "is_claimed":  "Y"
+                                                                                                    }
+                                                                                                ]
+                                                                              },
+                                                                 "insured":  {
+                                                                                 "aggregate":  [
+                                                                                                   {
+                                                                                                       "claim_count_insured_1y":  0.0,
+                                                                                                       "policy_count_insured_1y":  0,
+                                                                                                       "claim_amount_insured_1y":  0.0,
+                                                                                                       "discount_premium_insured_1y":  0.0,
+                                                                                                       "loss_ratio_insured_1y":  0.0,
+                                                                                                       "claim_count_insured_5y":  0.0,
+                                                                                                       "policy_count_insured_5y":  0,
+                                                                                                       "claim_amount_insured_5y":  0.0,
+                                                                                                       "discount_premium_insured_5y":  0.0,
+                                                                                                       "loss_ratio_insured_5y":  0.0,
+                                                                                                       "is_claimed":  "Y"
+                                                                                                   }
+                                                                                               ]
+                                                                             }
+                                                             },
+                                          "OVERALL_ASSESSMENT":  "歷史報價主要沿續北區、F112、經銷商及合約全額承接的處理脈絡，保費曾由9,000元提高至10,000元及15,000元。本案保費10,000元位於歷史報價範圍內，但\u003cstrong\u003e營業額與保額組合較過往案件明顯提高\u003c/strong\u003e，應確認申報資料、產品範圍及條件承接依據。另與一筆15,000元比對案件的被保險人名稱不同，應確認承保對象關係及報價差異的核保依據。",
+                                          "KEY_FACTS":  {
+                                                            "baseline":  [
+                                                                             "歷史報價於2024年曾以保費9,000元承作，2025年同一延續脈絡多次以保費10,000元處理，另有15,000元報價版本；承保對象類型為經銷商，案件多集中於北區、產品代號F112，並延續合約及全額承接的處理脈絡。",
+                                                                             "過往29件案件的營業額中位數為200萬元、保費中位數為4,000元，常見條件包括自負額2,000元、每一人身體傷害保額100萬元、每一事故身體傷害保額400萬元、每一事故財物損失保額0元及保險期間累計保額1,000萬元，承保對象類型以零售商及製造商較多。"
+                                                                         ],
+                                                            "change_trajectory":  [
+                                                                                      "本案營業額5,000萬元，高於過往案件最大值2,500萬元；每一人及每一事故身體傷害保額均為1,000萬元，每一事故財物損失保額亦為1,000萬元，均較過往常見條件提高，其中財物損失保額高於過往最大值200萬元，應確認申報營業額、產品範圍及保額設定的對應依據。",
+                                                                                      "本案保費10,000元，高於過往案件中位數4,000元且位於歷史報價範圍內；相較一筆保費15,000元的案件有所差異，應核對本次保額、營業額、自負額與保費之間的承接依據。",
+                                                                                      "與比對案件的被保險人名稱不同，應確認本案與該案件的承保對象關係及歷史條件是否具可比性。"
+                                                                                  ]
+                                                        },
+                                          "RECOMMENDED_REVIEW_CASES":  [
+                                                                           {
+                                                                               "appllte_no":  "2505000343406068",
+                                                                               "quote_no_version":  "NPD250007093-4",
+                                                                               "policy_no":  "",
+                                                                               "verification":  "建議確認本案是否沿用該次報價條件，以及前次保費15,000元版本調整至10,000元的核定依據。",
+                                                                               "fields_to_review":  "與本案同為保健食品、經銷商、營業額5,000萬元及保費10,000元，且保額、自負額金額及附加條款結構高度接近；開啟案件後優先查看報價需求說明、產品明細附件及保期修改內容。"
+                                                                           },
+                                                                           {
+                                                                               "appllte_no":  "2502000095257726",
+                                                                               "quote_no_version":  "",
+                                                                               "policy_no":  "151614PD02322",
+                                                                               "verification":  "建議確認本案在營業額更高且每一事故財物損失保額擴大至1,000萬元時，保費10,000元及自負額金額2,500元的適用依據。",
+                                                                               "fields_to_review":  "該案營業額2,000萬元、保費9,000元，並採較高的每一人及每一事故身體傷害保額，但每一事故財物損失保額為200萬元、保險期間累計保額3,400萬元；優先比較保額配置、自負額金額及承保對象類型。"
+                                                                           }
+                                                                       ],
+                                          "ATTENTION_TAGS":  [
+                                                                 "承保對象",
+                                                                 "費率水準"
+                                                             ],
                                           "overall_decision":  null,
                                           "correctness":  null,
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
                                           "reason":  null,
-                                          "latency_ms":  14886
+                                          "latency_ms":  23424
                                       }
                                   ]
                   },
@@ -7621,6 +8003,39 @@ window.validationReviewData = {
                                           "reason":  "營業額合理性部分，Model Output 判定為「可解釋」，並以單店火鍋、自助吧、吃到飽與外送平台等為依據，與 Golden Answer 整體判斷一致，因此在營業額合理性上是正確的。曝險特性部分出現明顯偏差：Golden Answer 認為單店經營、無婚宴宴席或大型活動供餐，整體風險尚屬有限；而 Model Output 將「大型供餐型」標為顯著，且未說明婚宴、Buffet、大型活動供餐為不存在，實質提高了核心暴險程度評價，與 Golden 的『整體有限』判斷不符，因此 correctness 降為 2。Completeness 方面，營業額合理性的關鍵依據大致都有呈現，但漏掉『無婚宴/宴席/Buffet 或大型活動供餐』這一重要限制，以及『整體風險尚屬有限』與『單店經營』在曝險層面的總結性表述，因此評為 3。Hallucination 方面，Model Output 主要是把既有內容改判為顯著風險，而非捏造全新事實；雖然「大型供餐型：顯著」與 Golden 的有限風險不符，但屬於判斷偏差而非新增具體營運事實，故記為 unsupported_information 一項，整體仍給 4 分。無明顯違反 Critical Rules 的情況。"
                                       },
                                       {
+                                          "name":  "客戶",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  2604,
+                                                         "output":  161,
+                                                         "total":  2765
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "照片資訊不足,無法判讀關鍵外觀條件",
+                                          "INPUT_TOKENS":  2604,
+                                          "TOTAL_TOKENS":  2765,
+                                          "OUTPUT_TOKENS":  161,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A03",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積金額為新臺幣19,109元，事由為雇主未按時繳納勞工退休金而加徵滯納金。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "依目前裁罰資料未見與本次產品責任保險直接相關，因本案為勞工退休金繳納時效事項，與產品責任承保的產品相關損害風險關聯較低。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  65715
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
@@ -7796,37 +8211,107 @@ window.validationReviewData = {
                                                         ]
                                       },
                                       {
-                                          "name":  "客戶",
+                                          "name":  "歷史",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  2604,
-                                                         "output":  161,
-                                                         "total":  2765
+                                                         "input":  27833,
+                                                         "output":  1472,
+                                                         "total":  29305
                                                      },
-                                          "SCORE":  6.0,
-                                          "IS_MASK":  false,
-                                          "NO_RISK":  false,
+                                          "SCORE":  10.0,
+                                          "INPUT_TOKENS":  27833,
+                                          "OUTPUT_TOKENS":  1472,
+                                          "TOTAL_TOKENS":  29305,
+                                          "NO_RISK":  true,
                                           "IS_BLOCK":  false,
-                                          "SP_SCORE":  6.0,
-                                          "MASK_RAIL":  null,
+                                          "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
-                                          "SP_SUMMARY":  "照片資訊不足,無法判讀關鍵外觀條件",
-                                          "INPUT_TOKENS":  2604,
-                                          "TOTAL_TOKENS":  2765,
-                                          "OUTPUT_TOKENS":  161,
-                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A03",
-                                          "ESG_PENALTY_SCORE":  9.0,
-                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積金額為新臺幣19,109元，事由為雇主未按時繳納勞工退休金而加徵滯納金。",
-                                          "ESG_PENALTY_IS_RELATED":  false,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "依目前裁罰資料未見與本次產品責任保險直接相關，因本案為勞工退休金繳納時效事項，與產品責任承保的產品相關損害風險關聯較低。",
+                                          "MASK_RAIL":  null,
+                                          "LOSS_PATTERN":  "近五年無理賠紀錄。",
+                                          "CLAIM_SUMMARY":  "近五年無理賠紀錄。",
+                                          "HISTORY_RESULT":  {
+                                                                 "continue":  {
+                                                                                  "aggregate":  [
+                                                                                                    {
+                                                                                                        "claim_count_continue_last":  0.0,
+                                                                                                        "policy_count_continue_last":  0,
+                                                                                                        "claim_amount_continue_last":  0.0,
+                                                                                                        "discount_premium_continue_last":  0.0,
+                                                                                                        "loss_ratio_continue_last":  0.0,
+                                                                                                        "claim_count_continue_5y":  0.0,
+                                                                                                        "policy_count_continue_5y":  0,
+                                                                                                        "claim_amount_continue_5y":  0.0,
+                                                                                                        "discount_premium_continue_5y":  0.0,
+                                                                                                        "loss_ratio_continue_5y":  0.0,
+                                                                                                        "is_claimed":  "Y"
+                                                                                                    }
+                                                                                                ]
+                                                                              },
+                                                                 "insured":  {
+                                                                                 "aggregate":  [
+                                                                                                   {
+                                                                                                       "claim_count_insured_1y":  0.0,
+                                                                                                       "policy_count_insured_1y":  0,
+                                                                                                       "claim_amount_insured_1y":  0.0,
+                                                                                                       "discount_premium_insured_1y":  0.0,
+                                                                                                       "loss_ratio_insured_1y":  0.0,
+                                                                                                       "claim_count_insured_5y":  0.0,
+                                                                                                       "policy_count_insured_5y":  0,
+                                                                                                       "claim_amount_insured_5y":  0.0,
+                                                                                                       "discount_premium_insured_5y":  0.0,
+                                                                                                       "loss_ratio_insured_5y":  0.0,
+                                                                                                       "is_claimed":  "Y"
+                                                                                                   }
+                                                                                               ]
+                                                                             }
+                                                             },
+                                          "OVERALL_ASSESSMENT":  "過往相似案件以南區食品及餐飲業務為主，承保規模多為中小額度、保費約3,500元且自負額多為2,000元。本案營業額2,000萬元、標的涵蓋食品生產販售全品項，並採\u003cstrong\u003e2億元累計保額及各項2,000萬元保額\u003c/strong\u003e，相較既有案件位於明顯高位。保費15,000元亦高於過往分布上緣，核保宜優先確認實際營運型態、額度需求、附加條款及報價條件間的對應關係。",
+                                          "KEY_FACTS":  {
+                                                            "baseline":  [
+                                                                             "既有相似案件共39件，包含30件保單與9件報價；承作型態以食品相關製造商為主，零售商次之，保費常見值為3,500元，自負額金額多為2,000元。",
+                                                                             "過往案件的承保規模多落在每一人身體傷害保額100萬元、每一事故身體傷害保額400萬元、每一事故財物損失保額0元及保險期間累計保額1,000萬元，部分較高案件延伸至每一事故身體傷害保額1,200萬元及累計保額3,000萬元。",
+                                                                             "營業額常見值為500萬元，中位數為500萬元；既有案件多採食品或餐飲品項描述，承保對象以製造商或零售商為主，並有少數兼具製造、經銷及零售型態的案件。"
+                                                                         ],
+                                                            "change_trajectory":  [
+                                                                                      "本案營業額2,000萬元，高於過往常見值及中位數，接近群體分布上緣；承保標的涵蓋食品生產販售全品項，承保對象為零售商，與多數製造商案件的型態不同，建議確認實際營運及銷售範圍。",
+                                                                                      "本案每一人、每一事故身體傷害及每一事故財物損失保額均為2,000萬元，保險期間累計保額為2億元，均高於既有案件最大值，屬承保規模的明顯變動，需確認額度設定依據及適用範圍。",
+                                                                                      "本案保費15,000元，高於既有案件2,000至8,000元的分布；自負額金額2,000元接近常見值，另附加條款組合較完整，建議回看保費與承保條件是否相互配合。"
+                                                                                  ]
+                                                        },
+                                          "RECOMMENDED_REVIEW_CASES":  [
+                                                                           {
+                                                                               "appllte_no":  "2501000053465821",
+                                                                               "quote_no_version":  "NPD250001249-1",
+                                                                               "policy_no":  "",
+                                                                               "verification":  "建議確認同等營業額及零售商型態下，本案提高至各項2,000萬元及累計2億元的額度是否有具體業務需求及核定依據。",
+                                                                               "fields_to_review":  "營業額2,000萬元與本案相同，承保對象同為零售商；請優先查看簡餐、飲品的承保標的描述、每一人及每一事故保額、累計保額、附加條款與保費設定，並比較本案全品項食品範圍的差異。"
+                                                                           },
+                                                                           {
+                                                                               "appllte_no":  "2501000029993167",
+                                                                               "quote_no_version":  "NPD250000559-1",
+                                                                               "policy_no":  "",
+                                                                               "verification":  "建議確認高營業額零售商案件的額度與保費調整邏輯，是否足以支持本案的承保規模設定。",
+                                                                               "fields_to_review":  "此案營業額3,000萬元且為零售商，屬高營業額參考；請查看餐飲食品的承保範圍、每一人及每一事故保額、累計保額、保費與附加條款內容，作為本案高額度與高保費的比較基準。"
+                                                                           },
+                                                                           {
+                                                                               "appllte_no":  "2501000053326861",
+                                                                               "quote_no_version":  "",
+                                                                               "policy_no":  "150314PD01446",
+                                                                               "verification":  "建議確認本案由製造及批發型態轉為零售商全品項食品後，營運角色與承保責任範圍是否已有充分文件支持。",
+                                                                               "fields_to_review":  "既有保單營業額1,200萬元、承保對象為製造商及批發商，保費5,000元且累計保額2,000萬元；請優先查看食品麵食及早餐類的標的範圍、承保對象、額度、自負額與保費條件。"
+                                                                           }
+                                                                       ],
+                                          "ATTENTION_TAGS":  [
+
+                                                             ],
                                           "overall_decision":  null,
                                           "correctness":  null,
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
                                           "reason":  null,
-                                          "latency_ms":  65715
+                                          "latency_ms":  10425
                                       }
                                   ]
                   },
@@ -9085,6 +9570,39 @@ window.validationReviewData = {
                                           "reason":  "Golden Answer 認為：申報營業額僅1萬元，若為個人接單或小量直售烘焙，年度接觸消費者與批次低，整體風險有限，且未對營業額合理性提出偏高或偏低的質疑。Model Output 則將營業額合理性分類為「偏低且需確認」，表示營業額明顯偏低並需確認，已改變 Golden Answer 對營業額合理性與其背後假設（個人接單、小量直售可解釋）的核心判斷，故 Correctness 顯著降低。\n\nCompleteness 方面，Model Output 未明確提及「申報營業額僅1萬元」這一關鍵數字，也未保留 Golden Answer 關於「若為個人接單或小量直售、年度接觸量低、整體風險有限」的明確前提與結論，只概括描述為單次購買、事故影響範圍受限，與原本對營業規模及型態的關鍵條件不完全對應，因此評為 3 分。\n\nHallucination Control 方面，Model Output 新增了多項具體內容（如被保產品具體品項、案件未提供團體供餐或供應鏈資訊、行業水準下營業額通常高於1萬元等），這些在 Golden Answer 與 WEB_REFERENCE 中均未出現，屬新增客觀事實，需人工確認，但尚未形成大量或關鍵的捏造結論，因此給予 4 分。Critical rules 未見明顯違反，營業額並未被單獨用來判定暴險程度主體，只是用於合理性推論。"
                                       },
                                       {
+                                          "name":  "客戶",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  6341,
+                                                         "output":  974,
+                                                         "total":  7315
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "因外觀為臨時搭建結構、外牆非固定材質且無明確出入口，判定為攤販。",
+                                          "INPUT_TOKENS":  6341,
+                                          "TOTAL_TOKENS":  7315,
+                                          "OUTPUT_TOKENS":  974,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  35252
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
@@ -9125,37 +9643,106 @@ window.validationReviewData = {
                                                         ]
                                       },
                                       {
-                                          "name":  "客戶",
+                                          "name":  "歷史",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  6341,
-                                                         "output":  974,
-                                                         "total":  7315
+                                                         "input":  31638,
+                                                         "output":  1224,
+                                                         "total":  32862
                                                      },
-                                          "SCORE":  6.0,
-                                          "IS_MASK":  false,
-                                          "NO_RISK":  false,
+                                          "SCORE":  10.0,
+                                          "INPUT_TOKENS":  31638,
+                                          "OUTPUT_TOKENS":  1224,
+                                          "TOTAL_TOKENS":  32862,
+                                          "NO_RISK":  true,
                                           "IS_BLOCK":  false,
-                                          "SP_SCORE":  6.0,
-                                          "MASK_RAIL":  null,
+                                          "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
-                                          "SP_SUMMARY":  "因外觀為臨時搭建結構、外牆非固定材質且無明確出入口，判定為攤販。",
-                                          "INPUT_TOKENS":  6341,
-                                          "TOTAL_TOKENS":  7315,
-                                          "OUTPUT_TOKENS":  974,
-                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
-                                          "ESG_PENALTY_SCORE":  10.0,
-                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
-                                          "ESG_PENALTY_IS_RELATED":  null,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "MASK_RAIL":  null,
+                                          "LOSS_PATTERN":  "近五年無理賠紀錄。",
+                                          "CLAIM_SUMMARY":  "近五年無理賠紀錄。",
+                                          "HISTORY_RESULT":  {
+                                                                 "continue":  {
+                                                                                  "aggregate":  [
+                                                                                                    {
+                                                                                                        "claim_count_continue_last":  0.0,
+                                                                                                        "policy_count_continue_last":  0,
+                                                                                                        "claim_amount_continue_last":  0.0,
+                                                                                                        "discount_premium_continue_last":  0.0,
+                                                                                                        "loss_ratio_continue_last":  0.0,
+                                                                                                        "claim_count_continue_5y":  0.0,
+                                                                                                        "policy_count_continue_5y":  0,
+                                                                                                        "claim_amount_continue_5y":  0.0,
+                                                                                                        "discount_premium_continue_5y":  0.0,
+                                                                                                        "loss_ratio_continue_5y":  0.0,
+                                                                                                        "is_claimed":  "Y"
+                                                                                                    }
+                                                                                                ]
+                                                                              },
+                                                                 "insured":  {
+                                                                                 "aggregate":  [
+                                                                                                   {
+                                                                                                       "claim_count_insured_1y":  0.0,
+                                                                                                       "policy_count_insured_1y":  0,
+                                                                                                       "claim_amount_insured_1y":  0.0,
+                                                                                                       "discount_premium_insured_1y":  0.0,
+                                                                                                       "loss_ratio_insured_1y":  0.0,
+                                                                                                       "claim_count_insured_5y":  0.0,
+                                                                                                       "policy_count_insured_5y":  0,
+                                                                                                       "claim_amount_insured_5y":  0.0,
+                                                                                                       "discount_premium_insured_5y":  0.0,
+                                                                                                       "loss_ratio_insured_5y":  0.0,
+                                                                                                       "is_claimed":  "Y"
+                                                                                                   }
+                                                                                               ]
+                                                                             }
+                                                             },
+                                          "OVERALL_ASSESSMENT":  "過往同類案件以食品相關承保為主，常見條件為保費3,500元、自負額金額2,000元及100萬元／400萬元／1,000萬元的主要保額配置。本案主要變動在於\u003cstrong\u003e營業額僅申報1萬元，低於既有案件分布\u003c/strong\u003e，以及承接標的範圍較廣、承保對象類型改為零售商。建議優先確認營業額口徑與產品實際銷售範圍，再核對附加條款及條件適用性。",
+                                          "KEY_FACTS":  {
+                                                            "baseline":  [
+                                                                             "過往同類案件集中於食品及餐飲相關產品，承保對象以製造商為主（22/30件），常見承接標的為販售之炸雞等炸物；保費多為3,500元，自負額金額多為2,000元，每一人身體傷害保額、每一事故身體傷害保額及保險期間累計保額多分別為100萬元、400萬元及1,000萬元。",
+                                                                             "同類案件營業額分布為18萬元至500萬元，中位數及常見值為120萬元；承接標的、承保對象類型與附加條款組合依個案有所調整，少數案件曾採用較高保額、較高保費或不同自負額金額。"
+                                                                         ],
+                                                            "change_trajectory":  [
+                                                                                      "本案營業額申報為1萬元，低於同類案件既有分布下緣18萬元，且相較常見值120萬元落差明顯，建議確認營業額的計算期間、單位及申報依據。",
+                                                                                      "本案承接標的涵蓋多項烘焙、飲品及食品，承保對象類型為零售商，與同類案件以單一或較明確食品項目及製造商為主的型態不同，應回看實際營業流程、產品來源及銷售範圍。",
+                                                                                      "本案保費3,500元、自負額金額2,000元及主要保額配置均落在同類案件常見值，現有條件結構相對一致；附加條款組合較完整，應確認各條款是否與廣泛產品範圍及零售商身分相符。"
+                                                                                  ]
+                                                        },
+                                          "RECOMMENDED_REVIEW_CASES":  [
+                                                                           {
+                                                                               "appllte_no":  "2504000272174341",
+                                                                               "quote_no_version":  "",
+                                                                               "policy_no":  "150414PD01744",
+                                                                               "verification":  "確認本案零售商承保型態及廣泛食品銷售內容，是否可依循此案的承保判斷。",
+                                                                               "fields_to_review":  "查看營業額300萬元、零售商身分及西點麵包承接標的的佐證，並比對其附加條款與本案多項食品標的的適用差異。"
+                                                                           },
+                                                                           {
+                                                                               "appllte_no":  "2504000279285060",
+                                                                               "quote_no_version":  "",
+                                                                               "policy_no":  "150414PD01798",
+                                                                               "verification":  "確認低營業額案件的申報口徑與條件調整原則，供本案核對。",
+                                                                               "fields_to_review":  "查看營業額18萬元、保費3,000元、自負額金額2,500元及濃糖果漿承接標的的核定依據，特別比對本案1萬元營業額的合理性。"
+                                                                           },
+                                                                           {
+                                                                               "appllte_no":  "2504000262576087",
+                                                                               "quote_no_version":  "",
+                                                                               "policy_no":  "150414PD61475",
+                                                                               "verification":  "確認產品範圍擴大時，主要保額與保費是否仍採本案現行配置。",
+                                                                               "fields_to_review":  "查看較高主要保額配置（每一人身體傷害保額200萬元、每一事故身體傷害保額800萬元、保險期間累計保額2,000萬元）及保費6,000元的承保依據，並比對本案產品範圍是否需要相應條件。"
+                                                                           }
+                                                                       ],
+                                          "ATTENTION_TAGS":  [
+
+                                                             ],
                                           "overall_decision":  null,
                                           "correctness":  null,
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
                                           "reason":  null,
-                                          "latency_ms":  35252
+                                          "latency_ms":  9363
                                       }
                                   ]
                   },
@@ -10472,6 +11059,39 @@ window.validationReviewData = {
                                           "reason":  "Correctness: Model Output完全沿用Golden的核心結論：營業額合理性為「可解釋」，並說明其具食品製造工廠、供應便利商店鮮食、產品為便當/飯糰、透過便利商店通路供應，多門市配送、同批事故擴散至多門市並影響多數消費者等，皆與Golden敘述相符，未改變風險方向與事故擴散機制，因此給5分。\nCompleteness: Golden中關鍵要素如：年度預估營業額23.3億元、可解釋判斷、為全家便利商店鮮食/供應體系之一、產品為御便當與御飯團、每日大量配送多門市、同批事故透過全家通路擴散並短時間影響大量消費者等，在Model Output中皆有涵蓋或等值表述，未見關鍵資訊遺漏，因此給5分。\nHallucination Control: Model Output未新增Golden未提及且無法支持的具體營運事實（如門市數、OEM、特定供應鏈結構等），僅為同義改寫與合理摘要，例如將『全家便利商店鮮食製造/供應體系之一』概括為『供應便利商店通路』『連鎖通路』，屬合理概括，未改變核心判斷，也未違反任何Critical Rules，因此幻覺控制給5分。"
                                       },
                                       {
+                                          "name":  "客戶",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  9121,
+                                                         "output":  1299,
+                                                         "total":  10420
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "因店面外觀為臨時搭建之攤棚構造、外牆非固定材質且無明確出入口，判定為攤販。",
+                                          "INPUT_TOKENS":  9121,
+                                          "TOTAL_TOKENS":  10420,
+                                          "OUTPUT_TOKENS":  1299,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共2筆裁罰紀錄，已知累積裁罰金額為新臺幣10萬4,000元；主要涉及放流水檢驗未符合標準及勞工職業災害保險投保薪資或異動申報事項。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "依目前裁罰資料未見與本次產品責任保險直接相關，因裁罰內容分別涉及水污染排放管理及勞工職業災害保險申報，並非產品責任承保事故。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  16885
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
@@ -10802,37 +11422,109 @@ window.validationReviewData = {
                                                         ]
                                       },
                                       {
-                                          "name":  "客戶",
+                                          "name":  "歷史",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  9121,
-                                                         "output":  1299,
-                                                         "total":  10420
+                                                         "input":  39962,
+                                                         "output":  3237,
+                                                         "total":  43199
                                                      },
-                                          "SCORE":  6.0,
-                                          "IS_MASK":  false,
-                                          "NO_RISK":  false,
+                                          "SCORE":  10.0,
+                                          "INPUT_TOKENS":  39962,
+                                          "OUTPUT_TOKENS":  3237,
+                                          "TOTAL_TOKENS":  43199,
+                                          "NO_RISK":  true,
                                           "IS_BLOCK":  false,
-                                          "SP_SCORE":  6.0,
-                                          "MASK_RAIL":  null,
+                                          "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
-                                          "SP_SUMMARY":  "因店面外觀為臨時搭建之攤棚構造、外牆非固定材質且無明確出入口，判定為攤販。",
-                                          "INPUT_TOKENS":  9121,
-                                          "TOTAL_TOKENS":  10420,
-                                          "OUTPUT_TOKENS":  1299,
-                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
-                                          "ESG_PENALTY_SCORE":  9.0,
-                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共2筆裁罰紀錄，已知累積裁罰金額為新臺幣10萬4,000元；主要涉及放流水檢驗未符合標準及勞工職業災害保險投保薪資或異動申報事項。",
-                                          "ESG_PENALTY_IS_RELATED":  false,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "依目前裁罰資料未見與本次產品責任保險直接相關，因裁罰內容分別涉及水污染排放管理及勞工職業災害保險申報，並非產品責任承保事故。",
+                                          "MASK_RAIL":  null,
+                                          "LOSS_PATTERN":  "近五年無理賠紀錄。",
+                                          "CLAIM_SUMMARY":  "近五年無理賠紀錄。",
+                                          "HISTORY_RESULT":  {
+                                                                 "continue":  {
+                                                                                  "aggregate":  [
+                                                                                                    {
+                                                                                                        "claim_count_continue_last":  0.0,
+                                                                                                        "policy_count_continue_last":  0,
+                                                                                                        "claim_amount_continue_last":  0.0,
+                                                                                                        "discount_premium_continue_last":  0.0,
+                                                                                                        "loss_ratio_continue_last":  0.0,
+                                                                                                        "claim_count_continue_5y":  0.0,
+                                                                                                        "policy_count_continue_5y":  0,
+                                                                                                        "claim_amount_continue_5y":  0.0,
+                                                                                                        "discount_premium_continue_5y":  0.0,
+                                                                                                        "loss_ratio_continue_5y":  0.0,
+                                                                                                        "is_claimed":  "Y"
+                                                                                                    }
+                                                                                                ]
+                                                                              },
+                                                                 "insured":  {
+                                                                                 "aggregate":  [
+                                                                                                   {
+                                                                                                       "claim_count_insured_1y":  0.0,
+                                                                                                       "policy_count_insured_1y":  0,
+                                                                                                       "claim_amount_insured_1y":  0.0,
+                                                                                                       "discount_premium_insured_1y":  0.0,
+                                                                                                       "loss_ratio_insured_1y":  0.0,
+                                                                                                       "claim_count_insured_5y":  0.0,
+                                                                                                       "policy_count_insured_5y":  0,
+                                                                                                       "claim_amount_insured_5y":  0.0,
+                                                                                                       "discount_premium_insured_5y":  0.0,
+                                                                                                       "loss_ratio_insured_5y":  0.0,
+                                                                                                       "is_claimed":  "Y"
+                                                                                                   }
+                                                                                               ]
+                                                                             }
+                                                             },
+                                          "OVERALL_ASSESSMENT":  "歷年案件以食品製造商整體產品承保為主且報價均曾通過，本案則在承接標的、被保險人名稱、保費及附加條款安排上與過往比對案件有所差異。\u003cstrong\u003e本案營業額23.3億元並維持較高責任保額，承保規模相較相關保單群體的常見水準較高，差異仍待確認\u003c/strong\u003e。核保宜確認承保對象與產品範圍、保費和保額的對應性，以及追溯日、附加條款與放棄代位求償權條件的最終一致性。",
+                                          "KEY_FACTS":  {
+                                                            "baseline":  [
+                                                                             "歷年案件以食品製造商整體產品承保為主，報價審核結果均為通過；2025年曾維持約11.5萬元保費及每一人、每一事故身體傷害與財物損失各1,000萬元、保險期間累計保額1億元。",
+                                                                             "相關保單多以製造商為承保對象，常見保費約3,000元、自負額2,000元及較低的責任保額，過往承保條件具一定穩定性。"
+                                                                         ],
+                                                            "change_trajectory":  [
+                                                                                      "本案承接標的呈現為「御便當、御飯團」，與過往涵蓋被保險人所有產品的承保範圍不同；被保險人名稱與比對案件不同，惟相關身分比對結果仍應確認承保對象及其關聯性。",
+                                                                                      "本案保費為27,000元，較比對案件35,000元降低，且與本案營業額23.3億元及延續的高額責任保額之對應關係，應確認最終費率與承保條件。",
+                                                                                      "本案附加條款組合較比對案件有增減，並包含放棄代位求償權安排；追溯日為保險起期，應確認附加條款、放棄代位求償權對象及不做追溯等條件均已反映於最終內容。"
+                                                                                  ]
+                                                        },
+                                          "RECOMMENDED_REVIEW_CASES":  [
+                                                                           {
+                                                                               "appllte_no":  "2508000591190505",
+                                                                               "quote_no_version":  "NPD250014505-5",
+                                                                               "policy_no":  "",
+                                                                               "verification":  "建議確認本案27,000元保費是否承接此版報價的承保範圍、保額及條件，以及追溯日調整是否已落實。",
+                                                                               "fields_to_review":  "查看報價需求說明、保費由11.5萬元調整至3.5萬元的處理內容、追溯日、營業額23.3億元及附加條款與放棄代位求償權設定。"
+                                                                           },
+                                                                           {
+                                                                               "appllte_no":  "2507000539508521",
+                                                                               "quote_no_version":  "NPD250014505-4",
+                                                                               "policy_no":  "",
+                                                                               "verification":  "建議確認營業額更正後仍採11.5萬元保費的依據，及本案大幅調整保費時是否同步調整承保條件。",
+                                                                               "fields_to_review":  "比對營業額更正為23.3億元後的保費、保額、追溯日、附加條款及放棄代位求償權對象，並檢視與本案27,000元報價的差異。"
+                                                                           },
+                                                                           {
+                                                                               "appllte_no":  "2507000483953602",
+                                                                               "quote_no_version":  "NPD250014505-3",
+                                                                               "policy_no":  "",
+                                                                               "verification":  "建議確認本案現有附加條款與放棄代位求償權對象是否完整承接此版需求，及不做追溯的要求是否已完成條件確認。",
+                                                                               "fields_to_review":  "查看新增放棄代位求償權附加條款、對象、食品中毒及刑事訴訟律師費用相關附加條款，並比對追溯日及目標保費要求。"
+                                                                           }
+                                                                       ],
+                                          "ATTENTION_TAGS":  [
+                                                                 "附加條款",
+                                                                 "承保對象",
+                                                                 "費率水準",
+                                                                 "承接標的"
+                                                             ],
                                           "overall_decision":  null,
                                           "correctness":  null,
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
                                           "reason":  null,
-                                          "latency_ms":  16885
+                                          "latency_ms":  25755
                                       }
                                   ]
                   },
@@ -12145,6 +12837,39 @@ window.validationReviewData = {
                                           "reason":  "Model Output 完整且正確反映 Golden Answer 的核心結論與邏輯：\n1) 營業額合理性：Golden 判定 6,000 萬元屬「可解釋」，理由為進口食品飲料代理與批發，產品於 Costco、電商平台、連鎖超市、百貨及飯店等多通路銷售，足以支持數千萬級規模。Model Output 同樣將營業額分類為「可解釋」，並以進口食品、飲料及酒類代理批發、多通路供應為主要依據，與 Golden 在方向與邏輯上完全一致，僅為同義改寫與合理摘要，故 correctness 為 5。\n2) 曝險特性與擴散機制：Golden 指出為進口食品飲料代理／批發，產品銷往連鎖超市、超商、百貨、飯店及電商，同批或同系列產品事故可擴散至不同地區消費者，且果醬、飲料、罐頭、餅乾等為具保存期限之消費品，有一定市場累積風險。Model Output 說明多通路（連鎖超市、百貨、飯店及多個電商或零售平台）銷售，單一產品或批次事故可同時影響不同通路消費者與下游據點，擴大回收與損害，與 Golden 所強調的多通路、批次事故擴散機制和累積風險方向一致，且未改變事故擴散邏輯，因此 correctness 保持 5。\n3) 完整性：Golden 的關鍵資訊——營業額合理性結論與其依據、多通路銷售型態、產品為保存期限之消費品、同批產品可跨地區及通路擴散的風險——皆在 Model Output 中被涵蓋或等值呈現，未有重要要點遺漏，因此 completeness 為 5。\n4) 幻覺控制：Model Output 中的產品品項（餅乾、果醬、水、咖啡、果汁及酒類）、多通路銷售描述、批次事故擴大回收與損害範圍等，皆屬於對 Golden 既有『果醬、飲料、罐頭、餅乾等食品飲料』與多通路銷售的合理細化與改寫，未新增無法由 Golden 支持的具體營運事實（如門市數、工廠數、特定品牌合作等），亦未與任何已知資訊矛盾，故 hallucination_control 評為 5。\n5) 關於 critical rules：Model Output 並未以營業額作為暴險程度的唯一依據，而是依多通路供應與產品性質說明暴險；也未憑空新增門市數、工廠數、OEM/ODM 或其他具體營運事實；亦未將不確定描述改寫為確定事實，故無違反任何 critical rules。"
                                       },
                                       {
+                                          "name":  "客戶",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  6341,
+                                                         "output":  985,
+                                                         "total":  7326
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "該店面位於開放式區域，外觀為臨時搭建之攤棚且外牆為輕質板材，無明確出入口，判定為攤販。",
+                                          "INPUT_TOKENS":  6341,
+                                          "TOTAL_TOKENS":  7326,
+                                          "OUTPUT_TOKENS":  985,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  19866
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
@@ -12348,37 +13073,95 @@ window.validationReviewData = {
                                                         ]
                                       },
                                       {
-                                          "name":  "客戶",
+                                          "name":  "歷史",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  6341,
-                                                         "output":  985,
-                                                         "total":  7326
+                                                         "input":  11192,
+                                                         "output":  1890,
+                                                         "total":  13082
                                                      },
-                                          "SCORE":  6.0,
-                                          "IS_MASK":  false,
-                                          "NO_RISK":  false,
+                                          "SCORE":  10.0,
+                                          "INPUT_TOKENS":  11192,
+                                          "OUTPUT_TOKENS":  1890,
+                                          "TOTAL_TOKENS":  13082,
+                                          "NO_RISK":  true,
                                           "IS_BLOCK":  false,
-                                          "SP_SCORE":  6.0,
-                                          "MASK_RAIL":  null,
+                                          "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
-                                          "SP_SUMMARY":  "該店面位於開放式區域，外觀為臨時搭建之攤棚且外牆為輕質板材，無明確出入口，判定為攤販。",
-                                          "INPUT_TOKENS":  6341,
-                                          "TOTAL_TOKENS":  7326,
-                                          "OUTPUT_TOKENS":  985,
-                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
-                                          "ESG_PENALTY_SCORE":  10.0,
-                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
-                                          "ESG_PENALTY_IS_RELATED":  null,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "MASK_RAIL":  null,
+                                          "LOSS_PATTERN":  "近五年無理賠紀錄。",
+                                          "CLAIM_SUMMARY":  "近五年無理賠紀錄。",
+                                          "HISTORY_RESULT":  {
+                                                                 "continue":  {
+                                                                                  "aggregate":  [
+                                                                                                    {
+                                                                                                        "claim_count_continue_last":  0.0,
+                                                                                                        "policy_count_continue_last":  0,
+                                                                                                        "claim_amount_continue_last":  0.0,
+                                                                                                        "discount_premium_continue_last":  0.0,
+                                                                                                        "loss_ratio_continue_last":  0.0,
+                                                                                                        "claim_count_continue_5y":  0.0,
+                                                                                                        "policy_count_continue_5y":  0,
+                                                                                                        "claim_amount_continue_5y":  0.0,
+                                                                                                        "discount_premium_continue_5y":  0.0,
+                                                                                                        "loss_ratio_continue_5y":  0.0,
+                                                                                                        "is_claimed":  "Y"
+                                                                                                    }
+                                                                                                ]
+                                                                              },
+                                                                 "insured":  {
+                                                                                 "aggregate":  [
+                                                                                                   {
+                                                                                                       "claim_count_insured_1y":  0.0,
+                                                                                                       "policy_count_insured_1y":  1,
+                                                                                                       "claim_amount_insured_1y":  0.0,
+                                                                                                       "discount_premium_insured_1y":  0.0,
+                                                                                                       "loss_ratio_insured_1y":  0.0,
+                                                                                                       "claim_count_insured_5y":  0.0,
+                                                                                                       "policy_count_insured_5y":  1,
+                                                                                                       "claim_amount_insured_5y":  0.0,
+                                                                                                       "discount_premium_insured_5y":  0.0,
+                                                                                                       "loss_ratio_insured_5y":  0.0,
+                                                                                                       "is_claimed":  "Y"
+                                                                                                   }
+                                                                                               ]
+                                                                             }
+                                                             },
+                                          "OVERALL_ASSESSMENT":  "過往已有通過的進口食品業務報價案件，且本案延續相近的\u003cstrong\u003e承保規模與條件結構\u003c/strong\u003e。本案承接標的擴大、產品代號變更，通路代號由DP變為空白，附加條款組合及被保險人名稱亦與比對案件不同。核保上應確認實際通路與承保範圍、承保對象關係，以及條款調整的適用依據。",
+                                          "KEY_FACTS":  {
+                                                            "baseline":  [
+                                                                             "2024年曾有被保險人 ID、要保人 ID及經手人 ID相同的報價案件，審核結果為通過；營業額為6,000萬元，保費1萬元，承接比例100%，佣金率12%。",
+                                                                             "過往承保對象類型為進口商，承接標的為限特定通路販賣的食品進口業務，保險期間累計保額3,000萬元，每一事故身體傷害保額1,200萬元，每一事故財物損失保額300萬元，自負額2,000元，並採合約再保。"
+                                                                         ],
+                                                            "change_trajectory":  [
+                                                                                      "本案保費、營業額、承接比例、佣金率、主要保額及自負額金額與過往相近，整體承保規模及條件結構延續既有脈絡。",
+                                                                                      "承接標的由限特定通路販賣的食品進口業務，變更為較廣泛的進口食品範圍，產品代號亦由F861變更為F113；通路代號由過往DP變為空白，承保範圍及實際通路仍待確認。",
+                                                                                      "本案被保險人名稱與比對案件不同，附加條款組合亦有調整，應確認承保對象關係及新增、變更條款與本案風險的適用性。"
+                                                                                  ]
+                                                        },
+                                          "RECOMMENDED_REVIEW_CASES":  [
+                                                                           {
+                                                                               "appllte_no":  "2408000560971046",
+                                                                               "quote_no_version":  "NPD240029048-1",
+                                                                               "policy_no":  "",
+                                                                               "verification":  "建議確認本案與前期案件的承保範圍、通路限制及附加條款差異，並核對同業轉保附件是否支持目前條件。",
+                                                                               "fields_to_review":  "對照前期食品進口業務的承接標的／產品名稱、產品代號、附加條款及保經代代號，並查看原報價需求與核保留言，確認本案由特定通路改為較廣泛範圍的依據。"
+                                                                           }
+                                                                       ],
+                                          "ATTENTION_TAGS":  [
+                                                                 "通路",
+                                                                 "附加條款",
+                                                                 "承保對象",
+                                                                 "承接標的"
+                                                             ],
                                           "overall_decision":  null,
                                           "correctness":  null,
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
                                           "reason":  null,
-                                          "latency_ms":  19866
+                                          "latency_ms":  16188
                                       }
                                   ]
                   },
@@ -13689,6 +14472,39 @@ window.validationReviewData = {
                                           "reason":  "Model Output 在營業額合理性與曝險特性兩部分均與 Golden Answer 保持一致。\n\n1) Correctness：\n- 營業額合理性分類為「偏低且需確認」，與 Golden Answer 完全相同，且說明中指出以業態與持續營運規模推估，100 元顯著偏低，需要確認金額單位、期間或填報範圍，充分對應 Golden Answer 所述「明顯低於目前可見的營運樣態」以及需確認是否為部分產品/通路或保守申報的精神，屬同義改寫與合理延伸。\n- 曝險特性部分，Golden Answer 強調：生鮮雞肉可透過官方商城與多個電商平台及低溫宅配，造成同批產品跨地區流通，單一事故影響範圍由門市客群擴大至電商購買者。Model Output 指出：除現場銷售外，亦透過官方線上商城及外部電商平台接單並宅配，可接觸較廣地域的消費市場，單一銷售據點事故時影響範圍可能擴大至不同收貨地點與消費者，與 Golden Answer 的主要事故擴散機制保持一致。多通路/供應型列為「中度」也符合「多平台＋宅配」帶來較大擴散風險的方向，未改變風險方向或機制。\n因此在核心事實、判斷與結論上無實質差異，給予 correctness=5。\n\n2) Completeness：\n- 營業額合理性部分，Golden Answer 的關鍵要點包括：預估營業額100、相對於可見營運樣態偏低、多通路（官方商城、多個電商、批發/餐飲）暗示規模較大、需要確認是否為部分產品/部分通路或保守申報。Model Output 雖未逐字提及 PChome、momo 或批發/餐飲，但已概括為「線上商城宅配等營業接觸方式」及「既有電商銷售樣態」，並同樣指出金額偏低且需確認單位、期間或填報範圍，足以支撐相同結論，無關鍵依據缺漏。\n- 曝險特性部分，Golden Answer 的核心在於：生鮮雞肉透過官方商城與多個電商平台及低溫宅配→同批產品跨地區流通→單一事故影響範圍由門市客群擴大至電商購買者。Model Output 已明確說明「官方線上商城及外部電商平台接單並宅配」、「商品可接觸較廣地域的消費市場」、「事故時影響可能擴大至不同收貨地點與消費者」，完整保留關鍵擴散機制及風險方向。\n因此重要內容無實質遺漏，給予 completeness=5。\n\n3) Hallucination Control：\n- 新增內容如「自2012年起經營畜肉零售」及「資本額100,000元」屬具體客觀公司資訊，但在本題中 WEB_REFERENCE 空白，無法判定其是否來自外部搜尋；然而根據規則，WEB_REFERENCE 不完整不等於該事實不存在，且這些補充並未改變 Golden Answer 的營業額合理性分類或暴險方向與機制，而只是用來強化營運持續性與規模偏高的推論，屬合理補充，不視為 hallucination 扣分來源。\n- 曝險描述及營業額說明未出現與 Golden Answer 相矛盾的事實，也未將不確定資訊改寫為確定事實，且未依 REVENUE 單獨決定暴險程度。\n因此在幻覺控制上無明顯問題，給予 hallucination_control=5。\n\n4) Critical Rules：\n- REVENUE 僅作為背景，暴險程度「多通路/供應型為中度」係依通路型態與宅配跨區擴散機制判斷，未違反「不得以營業額單獨決定暴險程度」。\n- 未將不確定或僅為線索的描述改寫成確定事實於本案提供的資料中。\n- 未新增門市數、工廠數、OEM/ODM、供應鏈、品牌合作或通路細節的無依據具體內容。\n- 並未因 WEB_REFERENCE 缺乏資訊而將營業額合理性判為「無法評估」。\n故無違反任何 critical rules，violated_critical_rules 為空陣列。"
                                       },
                                       {
+                                          "name":  "客戶",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  6341,
+                                                         "output":  990,
+                                                         "total":  7331
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "因店面未位於建築物內且為臨時搭建之組合式結構，外牆材質非永久性且無明確出入口，判定為攤販。",
+                                          "INPUT_TOKENS":  6341,
+                                          "TOTAL_TOKENS":  7331,
+                                          "OUTPUT_TOKENS":  990,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  15289
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
@@ -14051,37 +14867,98 @@ window.validationReviewData = {
                                                         ]
                                       },
                                       {
-                                          "name":  "客戶",
+                                          "name":  "歷史",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  6341,
-                                                         "output":  990,
-                                                         "total":  7331
+                                                         "input":  12594,
+                                                         "output":  2410,
+                                                         "total":  15004
                                                      },
-                                          "SCORE":  6.0,
-                                          "IS_MASK":  false,
-                                          "NO_RISK":  false,
+                                          "SCORE":  10.0,
+                                          "INPUT_TOKENS":  12594,
+                                          "OUTPUT_TOKENS":  2410,
+                                          "TOTAL_TOKENS":  15004,
+                                          "NO_RISK":  true,
                                           "IS_BLOCK":  false,
-                                          "SP_SCORE":  6.0,
-                                          "MASK_RAIL":  null,
+                                          "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
-                                          "SP_SUMMARY":  "因店面未位於建築物內且為臨時搭建之組合式結構，外牆材質非永久性且無明確出入口，判定為攤販。",
-                                          "INPUT_TOKENS":  6341,
-                                          "TOTAL_TOKENS":  7331,
-                                          "OUTPUT_TOKENS":  990,
-                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
-                                          "ESG_PENALTY_SCORE":  10.0,
-                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
-                                          "ESG_PENALTY_IS_RELATED":  null,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "MASK_RAIL":  null,
+                                          "LOSS_PATTERN":  "近五年無理賠紀錄。",
+                                          "CLAIM_SUMMARY":  "近五年無理賠紀錄。",
+                                          "HISTORY_RESULT":  {
+                                                                 "continue":  {
+                                                                                  "aggregate":  [
+                                                                                                    {
+                                                                                                        "claim_count_continue_last":  0.0,
+                                                                                                        "policy_count_continue_last":  0,
+                                                                                                        "claim_amount_continue_last":  0.0,
+                                                                                                        "discount_premium_continue_last":  0.0,
+                                                                                                        "loss_ratio_continue_last":  0.0,
+                                                                                                        "claim_count_continue_5y":  0.0,
+                                                                                                        "policy_count_continue_5y":  0,
+                                                                                                        "claim_amount_continue_5y":  0.0,
+                                                                                                        "discount_premium_continue_5y":  0.0,
+                                                                                                        "loss_ratio_continue_5y":  0.0,
+                                                                                                        "is_claimed":  "Y"
+                                                                                                    }
+                                                                                                ]
+                                                                              },
+                                                                 "insured":  {
+                                                                                 "aggregate":  [
+                                                                                                   {
+                                                                                                       "claim_count_insured_1y":  0.0,
+                                                                                                       "policy_count_insured_1y":  1,
+                                                                                                       "claim_amount_insured_1y":  0.0,
+                                                                                                       "discount_premium_insured_1y":  2273.0,
+                                                                                                       "loss_ratio_insured_1y":  0.0,
+                                                                                                       "claim_count_insured_5y":  0.0,
+                                                                                                       "policy_count_insured_5y":  1,
+                                                                                                       "claim_amount_insured_5y":  0.0,
+                                                                                                       "discount_premium_insured_5y":  2273.0,
+                                                                                                       "loss_ratio_insured_5y":  0.0,
+                                                                                                       "is_claimed":  "Y"
+                                                                                                   }
+                                                                                               ]
+                                                                             }
+                                                             },
+                                          "OVERALL_ASSESSMENT":  "歷史案件具同一被保險人 ID、同一產品代號及總公司承作脈絡，採全額承接與合約再保，附加條款結構相近。\u003cstrong\u003e本案承接標的改為生鮮食品\u003c/strong\u003e，經手人及被保險人名稱與比對案件不同，追溯日亦由 2024-06-13 改為 2025-04-29；同時三項責任保額提高一倍，保費及佣金率均有調整。核保上應確認營業額單位或填列口徑、被保險人關係與追溯日適用性，並核對保額、價格及自負額條件的記錄依據。",
+                                          "KEY_FACTS":  {
+                                                            "baseline":  [
+                                                                             "過往已有同一被保險人 ID、同一產品代號及總公司承作的產品責任保單，採全額承接與合約再保，歷史報價審核結果為通過。",
+                                                                             "歷史承接標的為簡餐，營業額為 990,000 元，每一人身體傷害、每一事故身體傷害及保險期間累計保額分別為 1,000,000 元、4,000,000 元及 10,000,000 元；自負額以 2,000 元記載，附加條款結構與本案大致相近。"
+                                                                         ],
+                                                            "change_trajectory":  [
+                                                                                      "本案承接標的改為生鮮食品，經手人及被保險人名稱均與比對案件不同，但被保險人 ID 相同；追溯日由 2024-06-13 改為 2025-04-29，應確認承保對象關係及追溯日適用性。",
+                                                                                      "本案三項責任保額分別提高至 2,000,000 元、8,000,000 元及 20,000,000 元，保費由 2,273 元調整為 2,717 元，應確認保額及價格調整依據。",
+                                                                                      "本案營業額填列 100，與歷史 990,000 元差異幅度較大，應確認單位或填列口徑；佣金率由 0% 改為 12%，且本案自負額金額明列 2,000 元，應一併核對相關記錄口徑。"
+                                                                                  ]
+                                                        },
+                                          "RECOMMENDED_REVIEW_CASES":  [
+                                                                           {
+                                                                               "appllte_no":  "2405000364966421",
+                                                                               "quote_no_version":  "NPD240021508-1",
+                                                                               "policy_no":  "150113PD60115",
+                                                                               "verification":  "建議確認本案營業額 100 的單位或填列口徑，並核實責任保額提高、佣金率 12% 及自負額 2,000 元的承保依據。",
+                                                                               "fields_to_review":  "比較前期承接標的／產品名稱「簡餐」與本案「生鮮食品」、營業額 990,000 元與 100，以及各項責任保額與保費變化；開啟案件優先查看報價需求說明、核保留言、承保條件及自負額記載。"
+                                                                           }
+                                                                       ],
+                                          "ATTENTION_TAGS":  [
+                                                                 "通路",
+                                                                 "保險金額",
+                                                                 "承保對象",
+                                                                 "決策",
+                                                                 "費率水準",
+                                                                 "承接標的",
+                                                                 "追溯日"
+                                                             ],
                                           "overall_decision":  null,
                                           "correctness":  null,
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
                                           "reason":  null,
-                                          "latency_ms":  15289
+                                          "latency_ms":  18857
                                       }
                                   ]
                   },
@@ -15396,6 +16273,39 @@ window.validationReviewData = {
                                           "reason":  "Correctness: Model Output將營業額合理性分類為「可解釋」，與Golden一致，並正確引用3億元營業額、兩處生產中食品工廠、食品製造/批發/零售及量販通路銷售等關鍵依據；曝險方向亦聚焦在多通路、品牌合作供應導致事故可擴散至多平台與多終端客戶，符合Golden對多通路/品牌合作擴散機制的描述，故核心判斷與機制皆一致，給5分。\nCompleteness: Golden中的重要要素如：3億元規模與公開資訊相符、兩處食品工廠、食品製造批發零售業態、量販/電商/超市電商及品牌合作/代工等多通路供應、產品為短中期食用食品且有市場累積風險等，皆在Model Output中被涵蓋或等值表達（例如「量販及零售通路、官方網路產品頁面，以及餐飲品牌商品化與客製化供應」對應Golden的多通路與品牌合作/代工），未有關鍵資訊缺漏，因此給5分。\nHallucination Control: Model Output新增的產品型態說明（常溫調理食品、火鍋湯底、調理包等）屬於合理細化，與Golden中『多為短中期食用食品』相容，未引入新的通路類型、供應鏈結構或事故機制，也未改變風險結論；多通路/供應型曝險評為「顯著」亦與Golden強調的多平台、多終端擴散機制一致。無新增未被Golden或可合理推論支持的重要客觀事實，故給5分。\nCritical Rules: 未以營業額作為暴險程度唯一依據，亦未捏造門市數、工廠數或特定OEM/通路等具體營運事實，且未將不確定資訊敘述為確定事實，故無違反任何critical rule。"
                                       },
                                       {
+                                          "name":  "客戶",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  9009,
+                                                         "output":  1198,
+                                                         "total":  10207
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "判定為攤販。因外觀為臨時搭建構造且外牆非固定材質，不符合固定店面之條件。",
+                                          "INPUT_TOKENS":  9009,
+                                          "TOTAL_TOKENS":  10207,
+                                          "OUTPUT_TOKENS":  1198,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共2筆裁罰紀錄，已知累積裁罰金額為新臺幣6萬元，主要涉及延長工作時間超過法令規定及未依規定加給延長工時工資，分別依勞動基準法第32條第2項及第24條裁罰。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "依目前裁罰資料未見與本次產品責任保險直接相關，案件內容均屬勞動工時及加班工資管理事項，與產品責任承保風險的直接關聯較低；兩筆裁罰均集中於延長工時相關勞動法遵，反映相關法遵執行及行政管理穩定性需留意。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  16079
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
@@ -15674,37 +16584,108 @@ window.validationReviewData = {
                                                         ]
                                       },
                                       {
-                                          "name":  "客戶",
+                                          "name":  "歷史",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  9009,
-                                                         "output":  1198,
-                                                         "total":  10207
+                                                         "input":  25019,
+                                                         "output":  2182,
+                                                         "total":  27201
                                                      },
-                                          "SCORE":  6.0,
-                                          "IS_MASK":  false,
-                                          "NO_RISK":  false,
+                                          "SCORE":  10.0,
+                                          "INPUT_TOKENS":  25019,
+                                          "OUTPUT_TOKENS":  2182,
+                                          "TOTAL_TOKENS":  27201,
+                                          "NO_RISK":  true,
                                           "IS_BLOCK":  false,
-                                          "SP_SCORE":  6.0,
-                                          "MASK_RAIL":  null,
+                                          "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
-                                          "SP_SUMMARY":  "判定為攤販。因外觀為臨時搭建構造且外牆非固定材質，不符合固定店面之條件。",
-                                          "INPUT_TOKENS":  9009,
-                                          "TOTAL_TOKENS":  10207,
-                                          "OUTPUT_TOKENS":  1198,
-                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
-                                          "ESG_PENALTY_SCORE":  9.0,
-                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共2筆裁罰紀錄，已知累積裁罰金額為新臺幣6萬元，主要涉及延長工作時間超過法令規定及未依規定加給延長工時工資，分別依勞動基準法第32條第2項及第24條裁罰。",
-                                          "ESG_PENALTY_IS_RELATED":  false,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "依目前裁罰資料未見與本次產品責任保險直接相關，案件內容均屬勞動工時及加班工資管理事項，與產品責任承保風險的直接關聯較低；兩筆裁罰均集中於延長工時相關勞動法遵，反映相關法遵執行及行政管理穩定性需留意。",
+                                          "MASK_RAIL":  null,
+                                          "LOSS_PATTERN":  "近五年無理賠紀錄。",
+                                          "CLAIM_SUMMARY":  "近五年無理賠紀錄。",
+                                          "HISTORY_RESULT":  {
+                                                                 "continue":  {
+                                                                                  "aggregate":  [
+                                                                                                    {
+                                                                                                        "claim_count_continue_last":  0.0,
+                                                                                                        "policy_count_continue_last":  1,
+                                                                                                        "claim_amount_continue_last":  0.0,
+                                                                                                        "discount_premium_continue_last":  107500.0,
+                                                                                                        "loss_ratio_continue_last":  0.0,
+                                                                                                        "claim_count_continue_5y":  0.0,
+                                                                                                        "policy_count_continue_5y":  2,
+                                                                                                        "claim_amount_continue_5y":  0.0,
+                                                                                                        "discount_premium_continue_5y":  160000.0,
+                                                                                                        "loss_ratio_continue_5y":  0.0,
+                                                                                                        "is_claimed":  "Y"
+                                                                                                    }
+                                                                                                ]
+                                                                              },
+                                                                 "insured":  {
+                                                                                 "aggregate":  [
+                                                                                                   {
+                                                                                                       "claim_count_insured_1y":  0.0,
+                                                                                                       "policy_count_insured_1y":  1,
+                                                                                                       "claim_amount_insured_1y":  0.0,
+                                                                                                       "discount_premium_insured_1y":  107500.0,
+                                                                                                       "loss_ratio_insured_1y":  0.0,
+                                                                                                       "claim_count_insured_5y":  0.0,
+                                                                                                       "policy_count_insured_5y":  2,
+                                                                                                       "claim_amount_insured_5y":  0.0,
+                                                                                                       "discount_premium_insured_5y":  160000.0,
+                                                                                                       "loss_ratio_insured_5y":  0.0,
+                                                                                                       "is_claimed":  "Y"
+                                                                                                   }
+                                                                                               ]
+                                                                             }
+                                                             },
+                                          "OVERALL_ASSESSMENT":  "歷年案件延續食品產品責任保險脈絡，業務型態、營業額、通路與承接方式大致穩定。本案\u003cstrong\u003e三項主要保額提高至1.5億元\u003c/strong\u003e，保費同步增加，並出現追溯日及被保險人名稱差異。核保宜確認保額提高的業務依據、承保對象延續關係，以及追溯責任、費率與再保條件是否相互匹配。",
+                                          "KEY_FACTS":  {
+                                                            "baseline":  [
+                                                                             "歷年案件延續食品產品責任保險脈絡，承保對象類型為製造商，營業額約為3億元；經手人、所屬分公司、保經代、再保情形及承接比例大致延續，並持續附加好市多股份有限公司為被保險人。",
+                                                                             "過往主要保額由4,000萬元逐步提高至6,600萬元，保險期間多為一年期，固定自負額及主要附加條款組合大致穩定。"
+                                                                         ],
+                                                            "change_trajectory":  [
+                                                                                      "本案每一人、每一事故身體傷害及保險期間累計保額均提高至1.5億元，較比對案件的4,000萬元增加；營業額仍為3億元、承接比例維持100%，保額提高與實際業務需求及附加被保險人安排的相符性待確認。",
+                                                                                      "本案保費為10.75萬元，較比對案件5.25萬元增加；追溯日改為2024年10月1日，且本案被保險人名稱與比對案件不同，應確認承保對象及案件延續關係，並回看費率、追溯責任與再保條件是否同步調整。"
+                                                                                  ]
+                                                        },
+                                          "RECOMMENDED_REVIEW_CASES":  [
+                                                                           {
+                                                                               "appllte_no":  "2407000481626189",
+                                                                               "quote_no_version":  "",
+                                                                               "policy_no":  "150313PD04899",
+                                                                               "verification":  "確認本案是否為前期保單的續保延續，並核實保額大幅提高、保費調整及追溯日改為2024年10月1日是否均已完成核定。",
+                                                                               "fields_to_review":  "對照前期保單的三項主要保額6,600萬元、保費6.5萬元、追溯日及附加條款，優先查看本案提高至1.5億元與保費10.75萬元的核定依據及條件延續情形。"
+                                                                           },
+                                                                           {
+                                                                               "appllte_no":  "2407000444408906",
+                                                                               "quote_no_version":  "NPD240025794-1",
+                                                                               "policy_no":  "",
+                                                                               "verification":  "確認前期報價所載好市多要求200萬美元保額，是否已具體轉化為本案1.5億元保額及相應再保安排。",
+                                                                               "fields_to_review":  "查看前期6,600萬元保額、6.5萬元保費及好市多股份有限公司附加被保險人安排，作為本案提高保額及保費的直接比較依據。"
+                                                                           },
+                                                                           {
+                                                                               "appllte_no":  "2307000343440246",
+                                                                               "quote_no_version":  "NPD230006930-5",
+                                                                               "policy_no":  "150312PD03736",
+                                                                               "verification":  "確認本案與初始出單相比，產品範圍、附加被保險人、自負額及附加條款是否維持一致，並釐清保額逐步提高的承保需求。",
+                                                                               "fields_to_review":  "回看最初出單的4,000萬元保額、5.25萬元保費、營業額3億元、產品範圍及自負額記載，確認後續保額與承保內容的變動軌跡。"
+                                                                           }
+                                                                       ],
+                                          "ATTENTION_TAGS":  [
+                                                                 "保險金額",
+                                                                 "承保對象",
+                                                                 "費率水準",
+                                                                 "追溯日"
+                                                             ],
                                           "overall_decision":  null,
                                           "correctness":  null,
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
                                           "reason":  null,
-                                          "latency_ms":  16079
+                                          "latency_ms":  20645
                                       }
                                   ]
                   },
@@ -17021,6 +18002,39 @@ window.validationReviewData = {
                                           "reason":  "Model Output 完整維持 Golden Answer 的核心結論與邏輯。\n\n1) Correctness：\n- 營業額合理性分類為「可解釋」，與 Golden Answer 一致，且說明同樣以水產品批發、食品批發、進出口等業態的常見週轉/營運規模作為依據，沒有改變判斷方向或條件。\n- 曝險特性方面，同樣描述為活體及冷凍海鮮以批發及進出口為主、產品經由批發交易流向不同下游客戶與市場，事故可自同批貨品擴散至多個交易或終端對象，與 Golden Answer「同批貨可分散至餐廳、零售端等下游客戶並擴散」的事故擴散機制一致。\n- 沒有改變 Golden Answer 的暴險方向、程度判斷邏輯或主要擴散機制，屬語意展開與同義改寫，因此給予 correctness 5 分。\n\n2) Completeness：\n- Golden Answer 的關鍵點（批發及進出口型態、可形成高於資本額的週轉規模、公開營運樣態不顯偏高偏低、同批貨品可經多通路分散並擴散事故）皆有在 Model Output 中以等價概念呈現。\n- 沒有遺漏任何會影響營業額合理性或曝險判斷的關鍵依據或限制條件，故 completeness 為 5 分。\n\n3) Hallucination Control：\n- Model Output 僅補充「公開資訊顯示登記從事水產品批發、零售、食品批發及國際貿易，具進出口資格」等，屬對 Golden Answer 中「水產品與食品批發、零售及進出口貿易型態」的合理敘述與細化，並未新增具體門市數、工廠數、特定通路等無依據事實。\n- 未引入與 Golden Answer 或外部參考相衝突的新結論或關鍵事實，亦未將不確定內容當作確定敘述。\n- 因此 hallucination_control 評為 5 分。\n\n4) Critical Rules 檢查：\n- 未以營業額本身作為暴險程度的唯一或主要判斷依據，而是以批發/多通路流通與進出口等營運型態說明風險，符合規則。\n- 未引用 WEB_REFERENCE 的不確定描述，也未新增無依據的具體營運事實。\n- 故 violated_critical_rules 為空陣列。"
                                       },
                                       {
+                                          "name":  "客戶",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  8982,
+                                                         "output":  1157,
+                                                         "total":  10139
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "因外觀為組合式攤位結構且外牆材質不符，判定為攤販。",
+                                          "INPUT_TOKENS":  8982,
+                                          "TOTAL_TOKENS":  10139,
+                                          "OUTPUT_TOKENS":  1157,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積裁罰金額為1,200元，主要涉及公司所屬車輛人員任意棄置垃圾，違反《廢棄物清理法》第27條第1款。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "依目前裁罰資料未見與本次產品責任保險直接相關，該案屬車輛人員任意棄置垃圾之環境管理事項，與產品責任承保風險的直接關聯較低。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  17277
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
@@ -17231,37 +18245,111 @@ window.validationReviewData = {
                                                         ]
                                       },
                                       {
-                                          "name":  "客戶",
+                                          "name":  "歷史",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  8982,
-                                                         "output":  1157,
-                                                         "total":  10139
+                                                         "input":  26020,
+                                                         "output":  2458,
+                                                         "total":  28478
                                                      },
-                                          "SCORE":  6.0,
-                                          "IS_MASK":  false,
-                                          "NO_RISK":  false,
+                                          "SCORE":  10.0,
+                                          "INPUT_TOKENS":  26020,
+                                          "OUTPUT_TOKENS":  2458,
+                                          "TOTAL_TOKENS":  28478,
+                                          "NO_RISK":  true,
                                           "IS_BLOCK":  false,
-                                          "SP_SCORE":  6.0,
-                                          "MASK_RAIL":  null,
+                                          "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
-                                          "SP_SUMMARY":  "因外觀為組合式攤位結構且外牆材質不符，判定為攤販。",
-                                          "INPUT_TOKENS":  8982,
-                                          "TOTAL_TOKENS":  10139,
-                                          "OUTPUT_TOKENS":  1157,
-                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
-                                          "ESG_PENALTY_SCORE":  9.0,
-                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積裁罰金額為1,200元，主要涉及公司所屬車輛人員任意棄置垃圾，違反《廢棄物清理法》第27條第1款。",
-                                          "ESG_PENALTY_IS_RELATED":  false,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "依目前裁罰資料未見與本次產品責任保險直接相關，該案屬車輛人員任意棄置垃圾之環境管理事項，與產品責任承保風險的直接關聯較低。",
+                                          "MASK_RAIL":  null,
+                                          "LOSS_PATTERN":  "近五年無理賠紀錄。",
+                                          "CLAIM_SUMMARY":  "近五年無理賠紀錄。",
+                                          "HISTORY_RESULT":  {
+                                                                 "continue":  {
+                                                                                  "aggregate":  [
+                                                                                                    {
+                                                                                                        "claim_count_continue_last":  0.0,
+                                                                                                        "policy_count_continue_last":  0,
+                                                                                                        "claim_amount_continue_last":  0.0,
+                                                                                                        "discount_premium_continue_last":  0.0,
+                                                                                                        "loss_ratio_continue_last":  0.0,
+                                                                                                        "claim_count_continue_5y":  0.0,
+                                                                                                        "policy_count_continue_5y":  0,
+                                                                                                        "claim_amount_continue_5y":  0.0,
+                                                                                                        "discount_premium_continue_5y":  0.0,
+                                                                                                        "loss_ratio_continue_5y":  0.0,
+                                                                                                        "is_claimed":  "Y"
+                                                                                                    }
+                                                                                                ]
+                                                                              },
+                                                                 "insured":  {
+                                                                                 "aggregate":  [
+                                                                                                   {
+                                                                                                       "claim_count_insured_1y":  0.0,
+                                                                                                       "policy_count_insured_1y":  0,
+                                                                                                       "claim_amount_insured_1y":  0.0,
+                                                                                                       "discount_premium_insured_1y":  0.0,
+                                                                                                       "loss_ratio_insured_1y":  0.0,
+                                                                                                       "claim_count_insured_5y":  0.0,
+                                                                                                       "policy_count_insured_5y":  0,
+                                                                                                       "claim_amount_insured_5y":  0.0,
+                                                                                                       "discount_premium_insured_5y":  0.0,
+                                                                                                       "loss_ratio_insured_5y":  0.0,
+                                                                                                       "is_claimed":  "Y"
+                                                                                                   }
+                                                                                               ]
+                                                                             }
+                                                             },
+                                          "OVERALL_ASSESSMENT":  "本案延續既有海鮮相關承保脈絡，營業額與主要保障架構仍具可比性；惟經手通路、被保險人名稱及追溯日均與比對案件有所差異，承保對象關聯性需進一步確認。\u003cstrong\u003e附加條款增加、保費降低且自負額為0元\u003c/strong\u003e，同時每一事故身體傷害保額低於過往水準，核保宜確認條款適用、追溯條件及定價承接是否相符。",
+                                          "KEY_FACTS":  {
+                                                            "baseline":  [
+                                                                             "2024年曾有相同被保險人ID、要保人ID及經手人ID的通過報價，承接標的為活體海鮮、冷凍海鮮，營業額7,000萬元，保費13,000元。",
+                                                                             "過往採100%承接比例、合約再保、佣金率12%，每一人身體傷害保額200萬元、每一事故身體傷害保額1,000萬元、每一事故財物損失保額0元及保險期間累計保額2,000萬元。",
+                                                                             "同類食品相關案件多集中於較低營業額、保費、保額及自負額水準，承保對象常見製造商、經銷商及零售商。"
+                                                                         ],
+                                                            "change_trajectory":  [
+                                                                                      "本案經手通路與比對案件不同，且被保險人名稱比對結果不同，承保對象與既有案件的關聯性待確認。",
+                                                                                      "本案追溯日為2025年4月12日，較比對案件2024年1月20日往後；附加條款由既有6項增加至9項，新增食品附加及訴訟理賠等需求，應確認條款適用範圍與承保條件。",
+                                                                                      "本案保費為10,000元，低於比對案件13,000元；每一事故身體傷害保額為800萬元，低於過往1,000萬元，自負額金額為0元，保費、保障調整與本案條件的一致性待確認。"
+                                                                                  ]
+                                                        },
+                                          "RECOMMENDED_REVIEW_CASES":  [
+                                                                           {
+                                                                               "appllte_no":  "2401000015541889",
+                                                                               "quote_no_version":  "NPD240000150-1",
+                                                                               "policy_no":  "",
+                                                                               "verification":  "建議確認本案自負額金額為0及保費下調是否有明確承保條件依據，並核對新增附加條款是否已納入報價審核範圍。",
+                                                                               "fields_to_review":  "前次報價的保費13,000元、每一事故身體傷害保額1,000萬元、自負額備註及附加條款，並與本案保費10,000元、每一事故身體傷害保額800萬元、自負額金額0及新增報價需求說明逐項對照。"
+                                                                           },
+                                                                           {
+                                                                               "appllte_no":  "2502000060858062",
+                                                                               "quote_no_version":  "",
+                                                                               "policy_no":  "151614PD01357",
+                                                                               "verification":  "建議確認本案每一事故財物損失保額為0及自負額金額為0，與相近承保額度案件的差異是否為有意設定。",
+                                                                               "fields_to_review":  "該案每一人身體傷害保額200萬元、每一事故身體傷害保額800萬元、每一事故財物損失保額200萬元、保險期間累計保額2,000萬元、自負額金額2,000元及保費5,200元，作為相近額度結構的條件對照。"
+                                                                           },
+                                                                           {
+                                                                               "appllte_no":  "2502000119223063",
+                                                                               "quote_no_version":  "",
+                                                                               "policy_no":  "151614PD01551",
+                                                                               "verification":  "建議確認本案營業額同屬較高區間時，保費10,000元及保險期間累計保額2,000萬元的定價與額度配置是否合理。",
+                                                                               "fields_to_review":  "該案營業額1億5,000萬元、保費20,000元、每一人身體傷害保額200萬元、每一事故身體傷害保額800萬元及保險期間累計保額1,500萬元，並查看其承保對象類型與承接標的／產品名稱。"
+                                                                           }
+                                                                       ],
+                                          "ATTENTION_TAGS":  [
+                                                                 "通路",
+                                                                 "附加條款",
+                                                                 "承保對象",
+                                                                 "費率水準",
+                                                                 "追溯日"
+                                                             ],
                                           "overall_decision":  null,
                                           "correctness":  null,
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
                                           "reason":  null,
-                                          "latency_ms":  17277
+                                          "latency_ms":  20311
                                       }
                                   ]
                   },
@@ -18520,6 +19608,39 @@ window.validationReviewData = {
                                           "reason":  "Model Output 完整且正確反映 Golden Answer：\n- 營業額合理性：皆判定為「可解釋」，金額 500 萬元與小型鍋貼、蒸餃等餐飲單店規模相符，說明邏輯與 Golden 一致。\n- 曝險特性：Golden 指出為單店經營、單次服務人數有限、事故影響範圍相對較小、整體風險有限；Model Output 描述為即食、單次交易、由店面提供個別消費者、單次服務人數與影響範圍有限，且三項暴險分類皆為「有限」，與 Golden 的風險方向與事故擴散機制一致。\n- 未遺漏 Golden 中任何關鍵判斷，亦未新增無依據的營運事實、通路或規模資訊，屬合理推論及同義改寫，無違反 critical rules。"
                                       },
                                       {
+                                          "name":  "客戶",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  6341,
+                                                         "output":  976,
+                                                         "total":  7317
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "因外觀為臨時搭建之組合式攤棚且外牆非固定材質，判定為攤販。",
+                                          "INPUT_TOKENS":  6341,
+                                          "TOTAL_TOKENS":  7317,
+                                          "OUTPUT_TOKENS":  976,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  14649
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
@@ -18560,37 +19681,106 @@ window.validationReviewData = {
                                                         ]
                                       },
                                       {
-                                          "name":  "客戶",
+                                          "name":  "歷史",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  6341,
-                                                         "output":  976,
-                                                         "total":  7317
+                                                         "input":  31926,
+                                                         "output":  1745,
+                                                         "total":  33671
                                                      },
-                                          "SCORE":  6.0,
-                                          "IS_MASK":  false,
-                                          "NO_RISK":  false,
+                                          "SCORE":  10.0,
+                                          "INPUT_TOKENS":  31926,
+                                          "OUTPUT_TOKENS":  1745,
+                                          "TOTAL_TOKENS":  33671,
+                                          "NO_RISK":  true,
                                           "IS_BLOCK":  false,
-                                          "SP_SCORE":  6.0,
-                                          "MASK_RAIL":  null,
+                                          "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
-                                          "SP_SUMMARY":  "因外觀為臨時搭建之組合式攤棚且外牆非固定材質，判定為攤販。",
-                                          "INPUT_TOKENS":  6341,
-                                          "TOTAL_TOKENS":  7317,
-                                          "OUTPUT_TOKENS":  976,
-                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
-                                          "ESG_PENALTY_SCORE":  10.0,
-                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
-                                          "ESG_PENALTY_IS_RELATED":  null,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "MASK_RAIL":  null,
+                                          "LOSS_PATTERN":  "近五年無理賠紀錄。",
+                                          "CLAIM_SUMMARY":  "近五年無理賠紀錄。",
+                                          "HISTORY_RESULT":  {
+                                                                 "continue":  {
+                                                                                  "aggregate":  [
+                                                                                                    {
+                                                                                                        "claim_count_continue_last":  0.0,
+                                                                                                        "policy_count_continue_last":  0,
+                                                                                                        "claim_amount_continue_last":  0.0,
+                                                                                                        "discount_premium_continue_last":  0.0,
+                                                                                                        "loss_ratio_continue_last":  0.0,
+                                                                                                        "claim_count_continue_5y":  0.0,
+                                                                                                        "policy_count_continue_5y":  0,
+                                                                                                        "claim_amount_continue_5y":  0.0,
+                                                                                                        "discount_premium_continue_5y":  0.0,
+                                                                                                        "loss_ratio_continue_5y":  0.0,
+                                                                                                        "is_claimed":  "Y"
+                                                                                                    }
+                                                                                                ]
+                                                                              },
+                                                                 "insured":  {
+                                                                                 "aggregate":  [
+                                                                                                   {
+                                                                                                       "claim_count_insured_1y":  0.0,
+                                                                                                       "policy_count_insured_1y":  0,
+                                                                                                       "claim_amount_insured_1y":  0.0,
+                                                                                                       "discount_premium_insured_1y":  0.0,
+                                                                                                       "loss_ratio_insured_1y":  0.0,
+                                                                                                       "claim_count_insured_5y":  0.0,
+                                                                                                       "policy_count_insured_5y":  0,
+                                                                                                       "claim_amount_insured_5y":  0.0,
+                                                                                                       "discount_premium_insured_5y":  0.0,
+                                                                                                       "loss_ratio_insured_5y":  0.0,
+                                                                                                       "is_claimed":  "Y"
+                                                                                                   }
+                                                                                               ]
+                                                                             }
+                                                             },
+                                          "OVERALL_ASSESSMENT":  "過往案件以 F111 食品及餐飲業務為主，交易與報價均有持續承作紀錄，常見保費約3,500元、營業額約500萬元，並多採製造商型態及標準保額結構。本案保費與營業額延續常見區間，\u003cstrong\u003e保額明顯低於過往主流設定\u003c/strong\u003e，同時自負額金額及比例高於常見條件。報價需求說明涉及新件、無統編產責另報及保費考量，建議優先確認業務承接範圍、保額下修與自負額條件是否相互一致。",
+                                          "KEY_FACTS":  {
+                                                            "baseline":  [
+                                                                             "過往案件集中於 F111 食品及餐飲相關業務，主要由中區承作，承保對象以製造商為主，亦有零售商及少量批發商；案件多採每一人身體傷害保額 100萬元、每一事故身體傷害保額 400萬元、保險期間累計保額 1,000萬元及自負額金額 2,000元的結構。",
+                                                                             "歷史保單與報價案件均有承作紀錄，報價審核結果皆為通過；保費常見值為3,500元，營業額常見值為500萬元，另有少數案件採較高保額、較高保費或不同承保對象類型。"
+                                                                         ],
+                                                            "change_trajectory":  [
+                                                                                      "本案營業額500萬元、保費3,500元，均貼近過往案件常見值；報價需求說明所提3,000至4,000元的保費區間亦已落在本案設定內。",
+                                                                                      "本案每一人身體傷害保額50萬元、每一事故身體傷害保額100萬元及保險期間累計保額200萬元，均低於過往案件常見的100萬元、400萬元及1,000萬元，承保規模屬待確認的下修變動。",
+                                                                                      "本案自負額金額5,000元、自負額比例10%，相較過往常見的2,000元及0%有差異；承保標的明列鍋貼、蒸餃、盒餐及便當，且承保對象類型為製造商，建議一併確認條件結構與業務內容的對應。"
+                                                                                  ]
+                                                        },
+                                          "RECOMMENDED_REVIEW_CASES":  [
+                                                                           {
+                                                                               "appllte_no":  "2501000040335621",
+                                                                               "quote_no_version":  "NPD250000806-1",
+                                                                               "policy_no":  "150214PD60254",
+                                                                               "verification":  "建議確認本案保額下修至50萬元／100萬元／200萬元及自負額金額5,000元、比例10%的設定依據。",
+                                                                               "fields_to_review":  "本案與該案同為製造商、營業額500萬元、保費3,500元及食品相關標的；請優先查看該案的每一人身體傷害保額、每一事故身體傷害保額、保險期間累計保額及自負額金額，對照本案較低保額與較高自負額。"
+                                                                           },
+                                                                           {
+                                                                               "appllte_no":  "2501000044903042",
+                                                                               "quote_no_version":  "",
+                                                                               "policy_no":  "150214PD01334",
+                                                                               "verification":  "建議確認本案標的由一般食品業務具體化為鍋貼、蒸餃、盒餐及便當後，是否仍適用目前的保額及自負額條件。",
+                                                                               "fields_to_review":  "該案為製造商食品標的，保費同為3,500元，採每一人身體傷害保額100萬元、每一事故身體傷害保額400萬元、保險期間累計保額1,000萬元及自負額金額2,000元；請比較本案保額、自負額與標的描述的差異。"
+                                                                           },
+                                                                           {
+                                                                               "appllte_no":  "2501000045590001",
+                                                                               "quote_no_version":  "",
+                                                                               "policy_no":  "150214PD01335",
+                                                                               "verification":  "建議確認本案較低保額是否為報價需求或業務範圍所需，並核對營業額500萬元與實際承接內容。",
+                                                                               "fields_to_review":  "該案保費3,800元但採較高保額：每一人身體傷害保額300萬元、每一事故身體傷害保額1,500萬元、保險期間累計保額3,000萬元；請查看其承保條件及標的內容，作為本案保額差異的高額參考。"
+                                                                           }
+                                                                       ],
+                                          "ATTENTION_TAGS":  [
+
+                                                             ],
                                           "overall_decision":  null,
                                           "correctness":  null,
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
                                           "reason":  null,
-                                          "latency_ms":  14649
+                                          "latency_ms":  13449
                                       }
                                   ]
                   },
@@ -20221,6 +21411,39 @@ window.validationReviewData = {
                                           "latency_ms":  7402
                                       },
                                       {
+                                          "name":  "客戶",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "照片資訊不足,無法判讀關鍵外觀條件",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A03",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  66078
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
@@ -20266,39 +21489,6 @@ window.validationReviewData = {
                                                                 "url":  "https://spot.line.me/detail/486257322574747117?utm_source=openai"
                                                             }
                                                         ]
-                                      },
-                                      {
-                                          "name":  "客戶",
-                                          "version":  "小量v2",
-                                          "deliveryDate":  "2026-07-29",
-                                          "tokens":  {
-                                                         "input":  0,
-                                                         "output":  0,
-                                                         "total":  0
-                                                     },
-                                          "SCORE":  6.0,
-                                          "IS_MASK":  false,
-                                          "NO_RISK":  false,
-                                          "IS_BLOCK":  false,
-                                          "SP_SCORE":  6.0,
-                                          "MASK_RAIL":  null,
-                                          "BLOCK_RAIL":  null,
-                                          "SP_SUMMARY":  "照片資訊不足,無法判讀關鍵外觀條件",
-                                          "INPUT_TOKENS":  0,
-                                          "TOTAL_TOKENS":  0,
-                                          "OUTPUT_TOKENS":  0,
-                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A03",
-                                          "ESG_PENALTY_SCORE":  10.0,
-                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
-                                          "ESG_PENALTY_IS_RELATED":  null,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
-                                          "latency_ms":  66078
                                       }
                                   ]
                   },
