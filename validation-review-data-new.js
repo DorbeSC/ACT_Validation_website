@@ -1,5 +1,5 @@
 window.validationReviewData = {
-    "generatedAt":  "2026-07-29 11:05:18",
+    "generatedAt":  "2026-07-29 11:46:49",
     "sourceFile":  "驗測資料.xlsx",
     "sourceSheet":  "input / 各模組資料",
     "header":  [
@@ -297,7 +297,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  49318
                                       },
                                       {
                                           "name":  "條件",
@@ -545,7 +546,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
-                                          "CLAUSE_RISK_B_SUM":  null
+                                          "CLAUSE_RISK_B_SUM":  null,
+                                          "latency_ms":  25486
                                       },
                                       {
                                           "name":  "條件",
@@ -793,7 +795,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
-                                          "CLAUSE_RISK_B_SUM":  null
+                                          "CLAUSE_RISK_B_SUM":  null,
+                                          "latency_ms":  16657
                                       },
                                       {
                                           "name":  "標的",
@@ -1023,7 +1026,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  null
                                       },
                                       {
                                           "name":  "標的",
@@ -1069,6 +1073,7 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "目前資訊指向單一實體小吃店的現食餐飲供應，未見團膳、宴席、大型活動供餐、中央廚房、批發、宅配或多通路銷售等放大機制。餐點屬即時或短期消費，通常不形成跨年度市場存量，事故影響範圍主要受限於單店、單批次接觸者。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "偏低且需確認",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "本案產品年度預估銷售額為新臺幣100,000元，約等於單店小吃業每月8,000多元，明顯低於一般持續營業餐飲店可合理推估的營業水準。公開資訊顯示其為設立多年、登記營業項目含餐館業與飲料店業的小吃店，雖資本額僅新臺幣10,000元，但仍需確認是否僅投保部分品項、部分期間、部分通路或為保守申報。",
+                                          "latency_ms":  6685,
                                           "overall_decision":  "fail",
                                           "correctness":  2,
                                           "completeness":  4,
@@ -1131,7 +1136,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  5666
                                       },
                                       {
                                           "name":  "客戶",
@@ -1163,7 +1169,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  66044
                                       },
                                       {
                                           "name":  "條件",
@@ -1227,7 +1234,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  19303
                                       },
                                       {
                                           "name":  "報告",
@@ -1255,7 +1263,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "score":  6.0,
-                                          "final_summary":  "主要需確認營業額大幅下修但保費未變之合理性，並釐清保險期間及追溯日中斷情形。餐飲即食產品具單一門市小型群聚求償可能，現有保額承接壓力較低，惟食品相關條款及核保規則尚未具體適用；另店面照片資訊不足。核保應優先回看前期保單、營業額與費率／最低保費邏輯，確認承保期間、追溯安排及食品條款適用性。"
+                                          "final_summary":  "主要需確認營業額大幅下修但保費未變之合理性，並釐清保險期間及追溯日中斷情形。餐飲即食產品具單一門市小型群聚求償可能，現有保額承接壓力較低，惟食品相關條款及核保規則尚未具體適用；另店面照片資訊不足。核保應優先回看前期保單、營業額與費率／最低保費邏輯，確認承保期間、追溯安排及食品條款適用性。",
+                                          "latency_ms":  3353
                                       },
                                       {
                                           "name":  "標的",
@@ -1302,6 +1311,7 @@ window.validationReviewData = {
                                           "REVENUE_REASONABILITY_CATEGORY":  "偏低且需確認",
                                           "REVENUE_SCORE_COMPARISON_RESULT":  "REASONABILITY_LOWER",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "本次被保產品為雞排、羹麵，公開資訊將元岑小吃店列為麵店、小吃店，屬需持續營業才能形成銷售的現製餐飲型態。年度預估營業額僅新臺幣10萬元，對照一般小吃店即使為小型營運所需的基本銷售規模仍明顯偏低，應確認營業額是否填列正確及計算期間或範圍是否符合本案。",
+                                          "latency_ms":  4337,
                                           "overall_decision":  "pass",
                                           "correctness":  5,
                                           "completeness":  4,
@@ -1316,6 +1326,7 @@ window.validationReviewData = {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
+                                          "latency_ms":  82210,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  69612,
@@ -1418,6 +1429,7 @@ window.validationReviewData = {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  28273,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  30292,
@@ -1451,6 +1463,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.findcompany.com.tw/%E5%85%83%E5%B2%91%E5%B0%8F%E5%90%83%E5%BA%97?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  6341,
+                                                         "output":  997,
+                                                         "total":  7338
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "店面位於非建築物內且為臨時搭建之組合式攤位，外牆材質不固定且無明確出入口，判定為攤販。",
+                                          "INPUT_TOKENS":  6341,
+                                          "TOTAL_TOKENS":  7338,
+                                          "OUTPUT_TOKENS":  997,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  15938
                                       }
                                   ]
                   },
@@ -1741,7 +1786,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  33222
                                       },
                                       {
                                           "name":  "條件",
@@ -1989,7 +2035,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
-                                          "CLAUSE_RISK_B_SUM":  null
+                                          "CLAUSE_RISK_B_SUM":  null,
+                                          "latency_ms":  22804
                                       },
                                       {
                                           "name":  "條件",
@@ -2237,7 +2284,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
-                                          "CLAUSE_RISK_B_SUM":  null
+                                          "CLAUSE_RISK_B_SUM":  null,
+                                          "latency_ms":  34736
                                       },
                                       {
                                           "name":  "標的",
@@ -2467,7 +2515,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  null
                                       },
                                       {
                                           "name":  "標的",
@@ -2513,6 +2562,7 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "主要暴險放大機制來自婚宴、宴席與大型宴會廳服務；公開資訊顯示可容納約 10–320 人、全店約 400 席，單次宴會或團體用餐可能同時影響大量消費者。未見連鎖、多層經銷、實際批發供應、OEM／ODM 或中央廚房下游供應資訊，餐食亦以現場或短期消費為主，較不形成跨通路或跨期累積暴露。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額新臺幣 30,000,000 元可解釋。雖資本額為新臺幣 200,000 元，但公開資訊顯示其為已營運多年的中華料理與婚宴會館，具多廳房、包廂及約 400 席規模，30,000,000 元與單一大型餐飲宴會場地的營運樣態大致相符。",
+                                          "latency_ms":  8678,
                                           "overall_decision":  "pass",
                                           "correctness":  5,
                                           "completeness":  4,
@@ -2575,7 +2625,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  5339
                                       },
                                       {
                                           "name":  "客戶",
@@ -2607,7 +2658,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  34730
                                       },
                                       {
                                           "name":  "條件",
@@ -2671,7 +2723,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  16696
                                       },
                                       {
                                           "name":  "報告",
@@ -2699,7 +2752,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "score":  6.0,
-                                          "final_summary":  "主要關注營運型態與實際承保標的是否一致，以及宴會供餐可能造成群聚食安事故與營業額偏低疑義。店面呈攤販型態，與宴會廳及婚宴規模資訊不一致；既往條件、保額及附加條款亦有變動，且NPD005責任遭再保除外。應優先確認營業額、保障是否中斷、承保範圍及經銷商條款加貼必要性。"
+                                          "final_summary":  "主要關注營運型態與實際承保標的是否一致，以及宴會供餐可能造成群聚食安事故與營業額偏低疑義。店面呈攤販型態，與宴會廳及婚宴規模資訊不一致；既往條件、保額及附加條款亦有變動，且NPD005責任遭再保除外。應優先確認營業額、保障是否中斷、承保範圍及經銷商條款加貼必要性。",
+                                          "latency_ms":  3311
                                       },
                                       {
                                           "name":  "標的",
@@ -2746,6 +2800,7 @@ window.validationReviewData = {
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額為新臺幣3,000萬元；公開資訊顯示本案為單一營業據點的中式餐廳，具大型宴會廳、包廂及約400席的餐飲接待規模。以一般中式餐廳結合宴會及婚宴服務的營運模式推估，該營業額與其座位容量及市場接觸程度大致相符，屬可解釋範圍。",
+                                          "latency_ms":  6030,
                                           "overall_decision":  "pass",
                                           "correctness":  5,
                                           "completeness":  5,
@@ -2760,6 +2815,7 @@ window.validationReviewData = {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
+                                          "latency_ms":  94409,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  82354,
@@ -2910,6 +2966,7 @@ window.validationReviewData = {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  44446,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  33136,
@@ -3051,6 +3108,39 @@ window.validationReviewData = {
                                                                 "url":  "https://serv.gcis.nat.gov.tw/moeadsBF/cmpy/reportAction.do?fileName=379100000Gchange11303.pdf\u0026method=report\u0026reportClass=bmsItem\u0026subPath=11303"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  6341,
+                                                         "output":  991,
+                                                         "total":  7332
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "該店面外觀為臨時搭建之開放式攤位，非永久性建築結構且無明確出入口，判定為攤販。",
+                                          "INPUT_TOKENS":  6341,
+                                          "TOTAL_TOKENS":  7332,
+                                          "OUTPUT_TOKENS":  991,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  15134
                                       }
                                   ]
                   },
@@ -3333,7 +3423,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  25479
                                       },
                                       {
                                           "name":  "條件",
@@ -3581,7 +3672,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
-                                          "CLAUSE_RISK_B_SUM":  null
+                                          "CLAUSE_RISK_B_SUM":  null,
+                                          "latency_ms":  25340
                                       },
                                       {
                                           "name":  "條件",
@@ -3829,7 +3921,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
-                                          "CLAUSE_RISK_B_SUM":  null
+                                          "CLAUSE_RISK_B_SUM":  null,
+                                          "latency_ms":  31835
                                       },
                                       {
                                           "name":  "標的",
@@ -4059,7 +4152,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  null
                                       },
                                       {
                                           "name":  "標的",
@@ -4105,6 +4199,7 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "目前可用資料指向單一地址的鐵板燒餐廳現場餐飲服務，市場接觸以內用及可能外帶為主，未見團膳、婚宴、Buffet、中央廚房、批發、連鎖多店或外送電商等放大機制。餐食屬即時消費，通常不形成跨期市場存量，因此單一事故影響範圍主要受限於該據點與當次消費者。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額新臺幣10,000,000元，約當單店餐廳月營收83萬元，與公開資訊顯示的中和單一鐵板燒餐廳、午晚餐現場服務及外帶線索大致相符。雖資本額為新臺幣1,000,000元且未見分店或工廠資訊，但餐飲業營收可高於資本額，該金額未明顯偏離可觀察營運樣態。",
+                                          "latency_ms":  5984,
                                           "overall_decision":  "fail",
                                           "correctness":  3,
                                           "completeness":  2,
@@ -4167,7 +4262,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  6557
                                       },
                                       {
                                           "name":  "客戶",
@@ -4199,7 +4295,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15957
                                       },
                                       {
                                           "name":  "條件",
@@ -4263,7 +4360,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15486
                                       },
                                       {
                                           "name":  "報告",
@@ -4291,7 +4389,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "score":  5.5,
-                                          "final_summary":  "主要關注攤販型態、食品衛生及多人群聚求償，且非固定店面可能影響承保適配性。條款應確認經銷商責任排除與再保限制，並檢視保額、自負額及目標保費是否足以承接事故；雖近五年無理賠，仍屬缺乏歷史基準的新承接案件。核保應優先回看店面及條款明細，確認營業型態、保障結構與財物損失保額為零之安排。"
+                                          "final_summary":  "主要關注攤販型態、食品衛生及多人群聚求償，且非固定店面可能影響承保適配性。條款應確認經銷商責任排除與再保限制，並檢視保額、自負額及目標保費是否足以承接事故；雖近五年無理賠，仍屬缺乏歷史基準的新承接案件。核保應優先回看店面及條款明細，確認營業型態、保障結構與財物損失保額為零之安排。",
+                                          "latency_ms":  4032
                                       },
                                       {
                                           "name":  "標的",
@@ -4338,6 +4437,7 @@ window.validationReviewData = {
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "本次被保產品為鐵板燒餐飲，公開資訊顯示其以新北市中和區單一地址的餐廳現場料理及套餐服務為主。以單一餐飲據點的常見營運模式推估，年度預估營業額新臺幣1,000萬元落在可理解的餐飲營收寬幅內，與其產品型態及市場接觸方式大致相符。",
+                                          "latency_ms":  6976,
                                           "overall_decision":  "fail",
                                           "correctness":  2,
                                           "completeness":  2,
@@ -4352,6 +4452,7 @@ window.validationReviewData = {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
+                                          "latency_ms":  109740,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  72032,
@@ -4486,6 +4587,7 @@ window.validationReviewData = {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  40416,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  51892,
@@ -4575,6 +4677,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.chickpt.com.tw/job-xzlmp4JkWm9a"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  8947,
+                                                         "output":  1128,
+                                                         "total":  10075
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "店面位於非建築物內且為臨時搭建結構，外牆材質非固定且無明確出入口，判定為攤販。",
+                                          "INPUT_TOKENS":  8947,
+                                          "TOTAL_TOKENS":  10075,
+                                          "OUTPUT_TOKENS":  1128,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積金額為新臺幣1,379元，事由為雇主未按時繳納勞工退休金致加徵滯納金。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "依目前裁罰資料未見與本次產品責任保險直接相關，該案屬勞工退休金繳納事項，與產品責任承保風險的關聯較低。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  16046
                                       }
                                   ]
                   },
@@ -4863,7 +4998,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  35130
                                       },
                                       {
                                           "name":  "條件",
@@ -5111,7 +5247,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
-                                          "CLAUSE_RISK_B_SUM":  null
+                                          "CLAUSE_RISK_B_SUM":  null,
+                                          "latency_ms":  26927
                                       },
                                       {
                                           "name":  "條件",
@@ -5359,7 +5496,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
-                                          "CLAUSE_RISK_B_SUM":  null
+                                          "CLAUSE_RISK_B_SUM":  null,
+                                          "latency_ms":  24832
                                       },
                                       {
                                           "name":  "標的",
@@ -5589,7 +5727,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  null
                                       },
                                       {
                                           "name":  "標的",
@@ -5635,6 +5774,7 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "主要放大機制來自社區藥局與跨區域藥局通路供應，產品若發生問題可能隨批發或經銷批次分散至多個藥局及終端消費者；未見大型同步供餐或團膳型態。因公開產品線包含藥品、保健食品與醫療器材，部分商品可能持續攝取或在市場留存使用，會形成一定跨期暴露，但本案未提供具體被保產品名稱，尚不足以判定為大量市場存量。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "本案年度預估銷售額為新臺幣5,000萬元，對照目前可用資本額約新臺幣1,250萬元，以及公開資訊顯示其服務社區藥局、具採購儲存供應作業、藥品行銷遍及全省並有多項品牌／產品線，屬藥品、醫材與保健食品通路商可解釋的規模。雖未提供單一被保產品名稱，但現有營運樣態未顯示該金額明顯偏高或偏低。",
+                                          "latency_ms":  7181,
                                           "overall_decision":  "pass",
                                           "correctness":  5,
                                           "completeness":  4,
@@ -5697,7 +5837,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  5840
                                       },
                                       {
                                           "name":  "客戶",
@@ -5729,7 +5870,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  13627
                                       },
                                       {
                                           "name":  "條件",
@@ -5793,7 +5935,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  20944
                                       },
                                       {
                                           "name":  "報告",
@@ -5821,7 +5964,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "score":  5.0,
-                                          "final_summary":  "主要關注健康食品成分污染、標示及經銷責任，且經多通路遍及全省，具群聚與累計求償暴險。保額對常見損失尚可承接但群聚及年度累計壓力中高，另近期同條件報價保費回落，應確認定價依據；店面為臨時攤位亦需核實營運型態。核保應優先確認有無健字號、第三方檢驗、建議除外條款適用性及總公司自留或臨分再保安排。"
+                                          "final_summary":  "主要關注健康食品成分污染、標示及經銷責任，且經多通路遍及全省，具群聚與累計求償暴險。保額對常見損失尚可承接但群聚及年度累計壓力中高，另近期同條件報價保費回落，應確認定價依據；店面為臨時攤位亦需核實營運型態。核保應優先確認有無健字號、第三方檢驗、建議除外條款適用性及總公司自留或臨分再保安排。",
+                                          "latency_ms":  3236
                                       },
                                       {
                                           "name":  "標的",
@@ -5868,6 +6012,7 @@ window.validationReviewData = {
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "本次被保產品年度預估營業額為新臺幣5,000萬元，與保健食品之批發／供應型態及公司公開呈現的營運規模大致相符。公司登記業務涵蓋食品批發零售，公開資訊亦顯示主要服務社區藥局及會員藥局、業務遍及全省各地，足以支持該營業額屬於可解釋範圍。",
+                                          "latency_ms":  5121,
                                           "overall_decision":  "pass",
                                           "correctness":  5,
                                           "completeness":  4,
@@ -5882,6 +6027,7 @@ window.validationReviewData = {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
+                                          "latency_ms":  111559,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  82894,
@@ -6028,6 +6174,7 @@ window.validationReviewData = {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  40976,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  48358,
@@ -6133,6 +6280,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.1111.com.tw/corp/73591437"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  6341,
+                                                         "output":  990,
+                                                         "total":  7331
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "由於店面並非位於合法建築內、結構為臨時搭建且外牆材質不符合固定要求，判定為攤販。",
+                                          "INPUT_TOKENS":  6341,
+                                          "TOTAL_TOKENS":  7331,
+                                          "OUTPUT_TOKENS":  990,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  14886
                                       }
                                   ]
                   },
@@ -6415,7 +6595,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  36503
                                       },
                                       {
                                           "name":  "條件",
@@ -6663,7 +6844,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
-                                          "CLAUSE_RISK_B_SUM":  null
+                                          "CLAUSE_RISK_B_SUM":  null,
+                                          "latency_ms":  29409
                                       },
                                       {
                                           "name":  "條件",
@@ -6911,7 +7093,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
-                                          "CLAUSE_RISK_B_SUM":  null
+                                          "CLAUSE_RISK_B_SUM":  null,
+                                          "latency_ms":  52928
                                       },
                                       {
                                           "name":  "標的",
@@ -7141,7 +7324,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  null
                                       },
                                       {
                                           "name":  "標的",
@@ -7187,6 +7371,7 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "主要市場接觸為高雄單一火鍋餐廳之內用餐飲，公開資訊並有自助吧、吃到飽等共同用餐型態線索，單一服務時段可能同時接觸多名消費者。未見連鎖、多據點、批發、代工或中央廚房對外供應資訊，且餐飲品項屬即時消費，事故擴散主要限於門市當次或短期用餐客群。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額為新臺幣20,000,000元，約每月166.7萬元；以火鍋餐廳、內用座位、自助吧／吃到飽及曾有外送平台曝光等營運型態觀察，屬單店餐飲可達成的營收區間。雖資本額為新臺幣200,000元且公開資訊主要支持單一據點，但該金額未明顯高於火鍋餐飲門市可能營運規模。",
+                                          "latency_ms":  6736,
                                           "overall_decision":  "fail",
                                           "correctness":  2,
                                           "completeness":  3,
@@ -7249,7 +7434,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  5200
                                       },
                                       {
                                           "name":  "客戶",
@@ -7281,7 +7467,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15198
                                       },
                                       {
                                           "name":  "條件",
@@ -7345,7 +7532,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15191
                                       },
                                       {
                                           "name":  "報告",
@@ -7373,7 +7561,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "score":  4.5,
-                                          "final_summary":  "主要關注攤販型店面之食品責任及群聚事故暴險，內用、自助吧與外送可能擴大同批食材事故影響。雖近五年無理賠且保額對常見情境承接壓力較低，仍須留意新進件缺乏同客戶承保脈絡、目標保費與承保條件適配性，以及經銷商條款對產品更改、標示及警語責任之排除。核保應優先確認實際營運型態、參考案件可比性、建議條款加貼及相關再保與承保規範。"
+                                          "final_summary":  "主要關注攤販型店面之食品責任及群聚事故暴險，內用、自助吧與外送可能擴大同批食材事故影響。雖近五年無理賠且保額對常見情境承接壓力較低，仍須留意新進件缺乏同客戶承保脈絡、目標保費與承保條件適配性，以及經銷商條款對產品更改、標示及警語責任之排除。核保應優先確認實際營運型態、參考案件可比性、建議條款加貼及相關再保與承保規範。",
+                                          "latency_ms":  4611
                                       },
                                       {
                                           "name":  "標的",
@@ -7420,6 +7609,7 @@ window.validationReviewData = {
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "本次被保產品為火鍋餐飲店的全品項食品，公開資訊顯示主要於高雄單一據點提供現場用餐，並曾透過外送平台銷售餐點。依單店餐飲的一般營運模式推估，新臺幣2,000萬元年度營業額與火鍋店、多品項餐飲及吃到飽服務所需的持續客流大致相符。",
+                                          "latency_ms":  20947,
                                           "overall_decision":  "fail",
                                           "correctness":  2,
                                           "completeness":  3,
@@ -7434,6 +7624,7 @@ window.validationReviewData = {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
+                                          "latency_ms":  106017,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  83490,
@@ -7588,6 +7779,7 @@ window.validationReviewData = {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  34582,
                                           "score":  10,
                                           "tokens":  {
                                                          "input":  27752,
@@ -7602,6 +7794,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  2604,
+                                                         "output":  161,
+                                                         "total":  2765
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "照片資訊不足,無法判讀關鍵外觀條件",
+                                          "INPUT_TOKENS":  2604,
+                                          "TOTAL_TOKENS":  2765,
+                                          "OUTPUT_TOKENS":  161,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A03",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積金額為新臺幣19,109元，事由為雇主未按時繳納勞工退休金而加徵滯納金。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "依目前裁罰資料未見與本次產品責任保險直接相關，因本案為勞工退休金繳納時效事項，與產品責任承保的產品相關損害風險關聯較低。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  65715
                                       }
                                   ]
                   },
@@ -7872,7 +8097,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  23694
                                       },
                                       {
                                           "name":  "條件",
@@ -8108,7 +8334,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
-                                          "CLAUSE_RISK_B_SUM":  null
+                                          "CLAUSE_RISK_B_SUM":  null,
+                                          "latency_ms":  27544
                                       },
                                       {
                                           "name":  "條件",
@@ -8344,7 +8571,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
-                                          "CLAUSE_RISK_B_SUM":  null
+                                          "CLAUSE_RISK_B_SUM":  null,
+                                          "latency_ms":  29268
                                       },
                                       {
                                           "name":  "標的",
@@ -8562,7 +8790,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  null
                                       },
                                       {
                                           "name":  "標的",
@@ -8608,6 +8837,7 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "目前僅能由名稱推知可能為烘焙相關小規模銷售，未見大型同步供餐、多通路供應、代工或跨區域通路資訊。烘焙品通常屬短期消費品，若無長保存期包裝或長期流通販售證據，事故影響較可能限於當次或短期銷售範圍。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "無法評估",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "本案年度預估營業額為 10,000 元，但未提供明確被保產品或服務名稱、公司資本額、公開營運規模、銷售通路、供應範圍或門市資訊，無法建立可比較的合理營業額區間。",
+                                          "latency_ms":  7226,
                                           "overall_decision":  "fail",
                                           "correctness":  2,
                                           "completeness":  3,
@@ -8668,7 +8898,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  6904
                                       },
                                       {
                                           "name":  "客戶",
@@ -8700,7 +8931,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  13428
                                       },
                                       {
                                           "name":  "條件",
@@ -8764,7 +8996,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  20531
                                       },
                                       {
                                           "name":  "報告",
@@ -8792,7 +9025,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "score":  6.0,
-                                          "final_summary":  "主要需確認營業額申報明顯偏低與攤販型態是否涵蓋完整銷售通路。雖近五年無理賠且保額承接壓力較低，仍應注意食品產品範圍、經銷商責任及建議加貼條款。核保請優先確認食品業者登錄涵蓋內容、實際銷售型態與NPD003A、NPD003B適用性。"
+                                          "final_summary":  "主要需確認營業額申報明顯偏低與攤販型態是否涵蓋完整銷售通路。雖近五年無理賠且保額承接壓力較低，仍應注意食品產品範圍、經銷商責任及建議加貼條款。核保請優先確認食品業者登錄涵蓋內容、實際銷售型態與NPD003A、NPD003B適用性。",
+                                          "latency_ms":  3251
                                       },
                                       {
                                           "name":  "標的",
@@ -8839,6 +9073,7 @@ window.validationReviewData = {
                                           "REVENUE_REASONABILITY_CATEGORY":  "偏低且需確認",
                                           "REVENUE_SCORE_COMPARISON_RESULT":  "REASONABILITY_LOWER",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "本次被保產品涵蓋多項烘焙食品、糕點、飲品及食品類別，依該類型的一般營運模式推估，即使為小型營業，年度營業額通常仍應高於新臺幣1萬元。案件未提供可支持特殊營業範圍或計算方式的資訊，故該預估營業額明顯偏低，需確認其是否正確反映本次被保產品的全年銷售額。",
+                                          "latency_ms":  15094,
                                           "overall_decision":  "fail",
                                           "correctness":  2,
                                           "completeness":  3,
@@ -8853,6 +9088,7 @@ window.validationReviewData = {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -8872,6 +9108,7 @@ window.validationReviewData = {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -8886,6 +9123,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  6341,
+                                                         "output":  974,
+                                                         "total":  7315
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "因外觀為臨時搭建結構、外牆非固定材質且無明確出入口，判定為攤販。",
+                                          "INPUT_TOKENS":  6341,
+                                          "TOTAL_TOKENS":  7315,
+                                          "OUTPUT_TOKENS":  974,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  35252
                                       }
                                   ]
                   },
@@ -9176,7 +9446,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  43487
                                       },
                                       {
                                           "name":  "條件",
@@ -9424,7 +9695,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
-                                          "CLAUSE_RISK_B_SUM":  null
+                                          "CLAUSE_RISK_B_SUM":  null,
+                                          "latency_ms":  47247
                                       },
                                       {
                                           "name":  "條件",
@@ -9672,7 +9944,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
-                                          "CLAUSE_RISK_B_SUM":  null
+                                          "CLAUSE_RISK_B_SUM":  null,
+                                          "latency_ms":  26727
                                       },
                                       {
                                           "name":  "標的",
@@ -9902,7 +10175,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  null
                                       },
                                       {
                                           "name":  "標的",
@@ -9948,6 +10222,7 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "主要放大機制來自便利商店鮮食製造／供應鏈：產品透過全家便利商店門市接觸消費者，且涵蓋飯糰、便當、涼麵、湯品等多品項，單一批次或品項可能經由零售通路擴散至多個終端銷售點。其並非以婚宴、團膳或 Buffet 等大量同步供餐為主要公開營業模式，因此大型供餐暴險未達顯著；鮮食多屬短效期即時消費，市場累積存量有限。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估銷售額新臺幣 23.3 億元可解釋。晉欣食品具食品製造工廠及新臺幣 3 億元資本額，公開資訊顯示其為全家便利商店鮮食製造／供應體系之一，產品涵蓋多類即食鮮食與冷凍產品，與大型便利商店通路供應商的營運樣態大致相符。",
+                                          "latency_ms":  9620,
                                           "overall_decision":  "pass",
                                           "correctness":  5,
                                           "completeness":  5,
@@ -10010,7 +10285,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  5341
                                       },
                                       {
                                           "name":  "客戶",
@@ -10042,7 +10318,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  16573
                                       },
                                       {
                                           "name":  "條件",
@@ -10106,7 +10383,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  23028
                                       },
                                       {
                                           "name":  "報告",
@@ -10134,7 +10412,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "score":  4.5,
-                                          "final_summary":  "主要關注批次食品經便利商店多門市流通所形成的群聚及市場擴散暴險，AOA承接壓力較高。營業額達23.3億元但保費較既往報價大幅下降，且涉及承接標的縮小、放棄代位對象未填及附加被保險人等條件，費率與責任範圍需重估。核保應優先確認產品範圍、條款對象及刑事訴訟費用限額，並查核攤販營運與裁罰改善情形。"
+                                          "final_summary":  "主要關注批次食品經便利商店多門市流通所形成的群聚及市場擴散暴險，AOA承接壓力較高。營業額達23.3億元但保費較既往報價大幅下降，且涉及承接標的縮小、放棄代位對象未填及附加被保險人等條件，費率與責任範圍需重估。核保應優先確認產品範圍、條款對象及刑事訴訟費用限額，並查核攤販營運與裁罰改善情形。",
+                                          "latency_ms":  3826
                                       },
                                       {
                                           "name":  "標的",
@@ -10181,6 +10460,7 @@ window.validationReviewData = {
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "本案年度預估營業額為新臺幣23.3億元，與具食品製造工廠、供應便利商店鮮食及具一定生產規模的營運樣態大致相符。公開資訊顯示其產品涵蓋便當、飯糰等鮮食，並具有連鎖通路供應線索，因此該營業額在此類食品製造及供應業態下可予解釋。",
+                                          "latency_ms":  5443,
                                           "overall_decision":  "pass",
                                           "correctness":  5,
                                           "completeness":  5,
@@ -10195,6 +10475,7 @@ window.validationReviewData = {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
+                                          "latency_ms":  102414,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  79676,
@@ -10429,6 +10710,7 @@ window.validationReviewData = {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  37448,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  33871,
@@ -10518,6 +10800,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.104.com.tw/company/1a2x6bjw43?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  9121,
+                                                         "output":  1299,
+                                                         "total":  10420
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "因店面外觀為臨時搭建之攤棚構造、外牆非固定材質且無明確出入口，判定為攤販。",
+                                          "INPUT_TOKENS":  9121,
+                                          "TOTAL_TOKENS":  10420,
+                                          "OUTPUT_TOKENS":  1299,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共2筆裁罰紀錄，已知累積裁罰金額為新臺幣10萬4,000元；主要涉及放流水檢驗未符合標準及勞工職業災害保險投保薪資或異動申報事項。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "依目前裁罰資料未見與本次產品責任保險直接相關，因裁罰內容分別涉及水污染排放管理及勞工職業災害保險申報，並非產品責任承保事故。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  16885
                                       }
                                   ]
                   },
@@ -10800,7 +11115,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  27602
                                       },
                                       {
                                           "name":  "條件",
@@ -11048,7 +11364,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
-                                          "CLAUSE_RISK_B_SUM":  null
+                                          "CLAUSE_RISK_B_SUM":  null,
+                                          "latency_ms":  30146
                                       },
                                       {
                                           "name":  "條件",
@@ -11296,7 +11613,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
-                                          "CLAUSE_RISK_B_SUM":  null
+                                          "CLAUSE_RISK_B_SUM":  null,
+                                          "latency_ms":  25436
                                       },
                                       {
                                           "name":  "標的",
@@ -11526,7 +11844,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  null
                                       },
                                       {
                                           "name":  "標的",
@@ -11572,6 +11891,7 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "主要放大機制來自進口包裝食品飲料透過零售、電商及 B2B 飯店、百貨等多通路流通，同批商品可能分散至多個平台與下游客戶；飯店通路亦可能形成多人同時食用情境，但未見以團膳、中央廚房或大型宴席供餐為主要模式。部分果醬、果汁等包裝食品具數月至約一年保存與流通期間，可能在通路貨架與消費者端形成一定跨期累積，但不屬長期耐用品。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額新臺幣 6,000 萬元屬可解釋：目前可用資料顯示其為進口食品飲料代理與批發商，商品可見於 Costco、電商平台、連鎖超市、百貨及飯店等通路，足以支持數千萬元級銷售規模。資本額新臺幣 500 萬元雖低於年營業額，但批發代理業可透過庫存週轉形成高於資本額的年度銷售額。",
+                                          "latency_ms":  7811,
                                           "overall_decision":  "pass",
                                           "correctness":  5,
                                           "completeness":  4,
@@ -11634,7 +11954,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  6504
                                       },
                                       {
                                           "name":  "客戶",
@@ -11666,7 +11987,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  60765
                                       },
                                       {
                                           "name":  "條件",
@@ -11730,7 +12052,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  19702
                                       },
                                       {
                                           "name":  "報告",
@@ -11758,7 +12081,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "score":  5.5,
-                                          "final_summary":  "主要關注酒類產品之食品安全責任及多通路流通所致群聚與跨通路擴散暴險。雖近五年無理賠且保額承接壓力較低，仍須留意承接標的是否由特定通路擴大至一般進口食品銷售，以及附加條款口徑變更。核保應優先確認酒類除外、經銷商條款是否加貼及照片不足之營運條件。"
+                                          "final_summary":  "主要關注酒類產品之食品安全責任及多通路流通所致群聚與跨通路擴散暴險。雖近五年無理賠且保額承接壓力較低，仍須留意承接標的是否由特定通路擴大至一般進口食品銷售，以及附加條款口徑變更。核保應優先確認酒類除外、經銷商條款是否加貼及照片不足之營運條件。",
+                                          "latency_ms":  3092
                                       },
                                       {
                                           "name":  "標的",
@@ -11809,6 +12133,7 @@ window.validationReviewData = {
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "本次被保產品年度預估營業額為新臺幣6,000萬元，與食品、飲料及酒類進口代理及批發業者的營運型態大致相符。公開資訊顯示該公司將產品供應至連鎖超市、百貨公司、飯店及電商或零售平台，具多通路市場接觸，足以支持此營業額屬於可解釋的批發及代理業務規模。",
+                                          "latency_ms":  9820,
                                           "overall_decision":  "pass",
                                           "correctness":  5,
                                           "completeness":  5,
@@ -11823,6 +12148,7 @@ window.validationReviewData = {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
+                                          "latency_ms":  117747,
                                           "score":  10,
                                           "tokens":  {
                                                          "input":  93431,
@@ -11842,6 +12168,7 @@ window.validationReviewData = {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  41088,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  30200,
@@ -12019,6 +12346,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.518.com.tw/company-G8ZAxz.html?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  6341,
+                                                         "output":  985,
+                                                         "total":  7326
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "該店面位於開放式區域，外觀為臨時搭建之攤棚且外牆為輕質板材，無明確出入口，判定為攤販。",
+                                          "INPUT_TOKENS":  6341,
+                                          "TOTAL_TOKENS":  7326,
+                                          "OUTPUT_TOKENS":  985,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  19866
                                       }
                                   ]
                   },
@@ -12303,7 +12663,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  30476
                                       },
                                       {
                                           "name":  "條件",
@@ -12551,7 +12912,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
-                                          "CLAUSE_RISK_B_SUM":  null
+                                          "CLAUSE_RISK_B_SUM":  null,
+                                          "latency_ms":  14683
                                       },
                                       {
                                           "name":  "條件",
@@ -12799,7 +13161,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
-                                          "CLAUSE_RISK_B_SUM":  null
+                                          "CLAUSE_RISK_B_SUM":  null,
+                                          "latency_ms":  40171
                                       },
                                       {
                                           "name":  "標的",
@@ -13029,7 +13392,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  null
                                       },
                                       {
                                           "name":  "標的",
@@ -13075,6 +13439,7 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "主要放大機制來自多通路銷售：公開資訊可見官方商城、PChome、momo、蝦皮、低溫宅配及批發／餐飲合作線索，使同一類雞肉商品可能接觸跨平台消費者與部分下游餐飲客戶。未見中央廚房、團膳、Buffet、婚宴或大型活動供餐等大量同步供餐模式；產品多為生鮮、熟食、冷凍雞肉、滴雞精等食品，通常在短期至數月內食用，市場長期累積有限。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "偏低且需確認",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "本案預估年度營業額為 100，明顯低於目前可見的營運樣態所暗示的銷售規模。新福農場公開資訊顯示有官方商城、多個電商平台、冷凍宅配、雞肉產品線及批發／餐飲合作線索；若 100 代表全部被保產品年度銷售，需確認是否僅投保部分產品、部分通路或為保守申報。",
+                                          "latency_ms":  7930,
                                           "overall_decision":  "pass",
                                           "correctness":  5,
                                           "completeness":  5,
@@ -13137,7 +13502,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  4788
                                       },
                                       {
                                           "name":  "客戶",
@@ -13169,7 +13535,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  41878
                                       },
                                       {
                                           "name":  "條件",
@@ -13233,7 +13600,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  13608
                                       },
                                       {
                                           "name":  "報告",
@@ -13261,7 +13629,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "score":  6.0,
-                                          "final_summary":  "主要關注營業額申報與實際多通路營運不一致，且攤販型態涉及生鮮及加工食品之群聚、批次與市場擴散暴險。過往保額約倍增而保費僅小幅增加，並有承保標的轉換及期間重疊可能，AOA承接壓力偏高。應優先確認營業額、投保通路與產品範圍、保額費率合理性及食品相關條款適用性。"
+                                          "final_summary":  "主要關注營業額申報與實際多通路營運不一致，且攤販型態涉及生鮮及加工食品之群聚、批次與市場擴散暴險。過往保額約倍增而保費僅小幅增加，並有承保標的轉換及期間重疊可能，AOA承接壓力偏高。應優先確認營業額、投保通路與產品範圍、保額費率合理性及食品相關條款適用性。",
+                                          "latency_ms":  3630
                                       },
                                       {
                                           "name":  "標的",
@@ -13308,6 +13677,7 @@ window.validationReviewData = {
                                           "REVENUE_REASONABILITY_CATEGORY":  "偏低且需確認",
                                           "REVENUE_SCORE_COMPARISON_RESULT":  "REASONABILITY_LOWER",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "本次被保產品為生鮮食品，公開資訊顯示新福農場自2012年起經營畜肉零售，並具現場銷售及線上商城宅配等營業接觸方式；以此業態及持續營運規模推估，年度營業額通常應高於新臺幣100元。該金額亦與公開資訊所列新臺幣100,000元資本額及既有電商銷售樣態差距明顯，應確認預估金額的單位、期間或填報範圍。",
+                                          "latency_ms":  5237,
                                           "overall_decision":  "pass",
                                           "correctness":  5,
                                           "completeness":  5,
@@ -13322,6 +13692,7 @@ window.validationReviewData = {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
+                                          "latency_ms":  116425,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  100344,
@@ -13476,6 +13847,7 @@ window.validationReviewData = {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  42670,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  43640,
@@ -13677,6 +14049,39 @@ window.validationReviewData = {
                                                                 "url":  "https://xinfu.cyberbiz.co/contact"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  6341,
+                                                         "output":  990,
+                                                         "total":  7331
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "因店面未位於建築物內且為臨時搭建之組合式結構，外牆材質非永久性且無明確出入口，判定為攤販。",
+                                          "INPUT_TOKENS":  6341,
+                                          "TOTAL_TOKENS":  7331,
+                                          "OUTPUT_TOKENS":  990,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  15289
                                       }
                                   ]
                   },
@@ -13965,7 +14370,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  43139
                                       },
                                       {
                                           "name":  "條件",
@@ -14213,7 +14619,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
-                                          "CLAUSE_RISK_B_SUM":  null
+                                          "CLAUSE_RISK_B_SUM":  null,
+                                          "latency_ms":  33580
                                       },
                                       {
                                           "name":  "條件",
@@ -14461,7 +14868,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
-                                          "CLAUSE_RISK_B_SUM":  null
+                                          "CLAUSE_RISK_B_SUM":  null,
+                                          "latency_ms":  29865
                                       },
                                       {
                                           "name":  "標的",
@@ -14691,7 +15099,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  null
                                       },
                                       {
                                           "name":  "標的",
@@ -14737,6 +15146,7 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "主要暴險放大機制來自食品工廠製造、品牌商品化、代工代銷、批發及量販通路銷售，產品可能透過多個餐飲品牌或零售通路接觸終端消費者。未見以團膳、婚宴、Buffet或大型活動同步供餐為主要模式，因此單次大量供餐暴險有限；但常溫調理包等食品可保存約1至2年，已售商品可能在市場與家庭端跨期流通並形成一定延續暴露。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額為新臺幣3億元，與目前可用資料顯示的6,500萬元資本額、兩處生產中食品工廠、約95名員工、食品製造批發零售及品牌商品化／量販通路銷售型態大致相符。雖未提供特定被保產品名稱，但若本案係涵蓋公司主要食品製造與通路商品化業務，該營業額具有可解釋性。",
+                                          "latency_ms":  6801,
                                           "overall_decision":  "pass",
                                           "correctness":  5,
                                           "completeness":  5,
@@ -14799,7 +15209,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  6286
                                       },
                                       {
                                           "name":  "客戶",
@@ -14831,7 +15242,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  16514
                                       },
                                       {
                                           "name":  "條件",
@@ -14895,7 +15307,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  16287
                                       },
                                       {
                                           "name":  "報告",
@@ -14923,7 +15336,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "score":  3.5,
-                                          "final_summary":  "主要關注食品多通路供應所致之群聚及累積暴險、附加被保險人責任，以及營運場址為非合法建築臨時攤販。產品本身風險較低且近五年無理賠，惟續保條件延續前期保額保費，通路擴散與條款適配仍須檢視。核保應優先確認追溯日不一致、NPD004附加被保險人及其關係、保費調整與流通責任範圍。"
+                                          "final_summary":  "主要關注食品多通路供應所致之群聚及累積暴險、附加被保險人責任，以及營運場址為非合法建築臨時攤販。產品本身風險較低且近五年無理賠，惟續保條件延續前期保額保費，通路擴散與條款適配仍須檢視。核保應優先確認追溯日不一致、NPD004附加被保險人及其關係、保費調整與流通責任範圍。",
+                                          "latency_ms":  4756
                                       },
                                       {
                                           "name":  "標的",
@@ -14970,6 +15384,7 @@ window.validationReviewData = {
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "新臺幣3億元年度預估營業額，與公司具食品製造業態、食品批發及無店面零售業務，並設有兩處生產中食品工廠的營運規模大致相符。公開資訊亦顯示其產品透過量販、零售及餐飲品牌商品化等方式銷售，具備支撐該營業額的市場接觸與供應模式，因此本次金額可解釋。",
+                                          "latency_ms":  6987,
                                           "overall_decision":  "pass",
                                           "correctness":  5,
                                           "completeness":  5,
@@ -14984,6 +15399,7 @@ window.validationReviewData = {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
+                                          "latency_ms":  107235,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  83753,
@@ -15190,6 +15606,7 @@ window.validationReviewData = {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  50300,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  54323,
@@ -15255,6 +15672,39 @@ window.validationReviewData = {
                                                                 "url":  "https://findbiz.nat.gov.tw/fts/factory/31/10865000600472"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  9009,
+                                                         "output":  1198,
+                                                         "total":  10207
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "判定為攤販。因外觀為臨時搭建構造且外牆非固定材質，不符合固定店面之條件。",
+                                          "INPUT_TOKENS":  9009,
+                                          "TOTAL_TOKENS":  10207,
+                                          "OUTPUT_TOKENS":  1198,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共2筆裁罰紀錄，已知累積裁罰金額為新臺幣6萬元，主要涉及延長工作時間超過法令規定及未依規定加給延長工時工資，分別依勞動基準法第32條第2項及第24條裁罰。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "依目前裁罰資料未見與本次產品責任保險直接相關，案件內容均屬勞動工時及加班工資管理事項，與產品責任承保風險的直接關聯較低；兩筆裁罰均集中於延長工時相關勞動法遵，反映相關法遵執行及行政管理穩定性需留意。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  16079
                                       }
                                   ]
                   },
@@ -15545,7 +15995,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  31895
                                       },
                                       {
                                           "name":  "條件",
@@ -15793,7 +16244,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
-                                          "CLAUSE_RISK_B_SUM":  null
+                                          "CLAUSE_RISK_B_SUM":  null,
+                                          "latency_ms":  32569
                                       },
                                       {
                                           "name":  "條件",
@@ -16041,7 +16493,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
-                                          "CLAUSE_RISK_B_SUM":  null
+                                          "CLAUSE_RISK_B_SUM":  null,
+                                          "latency_ms":  40625
                                       },
                                       {
                                           "name":  "標的",
@@ -16271,7 +16724,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  null
                                       },
                                       {
                                           "name":  "標的",
@@ -16317,6 +16771,7 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "主要放大機制在於水產品、農畜產品與食品批發及進出口型態，商品可能經由下游客戶或零售通路再進入多個終端消費場景。未見中央廚房、團膳、宴席或大型同步供餐資訊，因此單次大量共同用餐暴險有限；相關商品多屬短期消費食品，較不會形成跨年度大量市場存量。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額 70,000,000 元，以其水產品與食品批發、零售及進出口貿易型態觀察，批發貿易本身可形成高於資本額的週轉規模。現有公開營運樣態未顯示該金額明顯高於或低於其可合理推估的批發交易規模，因此可解釋。",
+                                          "latency_ms":  7549,
                                           "overall_decision":  "pass",
                                           "correctness":  5,
                                           "completeness":  5,
@@ -16379,7 +16834,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  5024
                                       },
                                       {
                                           "name":  "客戶",
@@ -16411,7 +16867,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  16045
                                       },
                                       {
                                           "name":  "條件",
@@ -16475,7 +16932,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15633
                                       },
                                       {
                                           "name":  "報告",
@@ -16503,7 +16961,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "score":  5.75,
-                                          "final_summary":  "主要關注海鮮食品保存、加工及流通所致之群聚求償，且批發、零售及進出口通路可能擴大事故影響範圍。既往無理賠但本次價格與條款重新協商，應留意經銷商條款、懲罰性賠償金之再保除外及保額對AOA/AGG承接能力。核保請優先確認產品流向、附加條款內容、自負額與保費充足性，並回看前次報價是否成單。"
+                                          "final_summary":  "主要關注海鮮食品保存、加工及流通所致之群聚求償，且批發、零售及進出口通路可能擴大事故影響範圍。既往無理賠但本次價格與條款重新協商，應留意經銷商條款、懲罰性賠償金之再保除外及保額對AOA/AGG承接能力。核保請優先確認產品流向、附加條款內容、自負額與保費充足性，並回看前次報價是否成單。",
+                                          "latency_ms":  3105
                                       },
                                       {
                                           "name":  "標的",
@@ -16550,6 +17009,7 @@ window.validationReviewData = {
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "本次被保產品為活體海鮮及冷凍海鮮，公開資訊顯示該公司登記從事水產品批發、零售、食品批發及國際貿易，並具進出口資格，營運樣態以水產品交易及流通為主。以水產品批發及進出口業務的常見營運規模推估，年度預估營業額新臺幣7,000萬元屬可由其產品與業態解釋的範圍。",
+                                          "latency_ms":  5361,
                                           "overall_decision":  "pass",
                                           "correctness":  5,
                                           "completeness":  5,
@@ -16564,6 +17024,7 @@ window.validationReviewData = {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
+                                          "latency_ms":  78903,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  59988,
@@ -16686,6 +17147,7 @@ window.validationReviewData = {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  37734,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  36636,
@@ -16767,6 +17229,39 @@ window.validationReviewData = {
                                                                 "url":  "https://alltwcompany.com/nd-C-50919883-%E9%A9%8A%E4%BA%9E%E5%9C%8B%E9%9A%9B%E8%B2%BF%E6%98%93%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8.html"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  8982,
+                                                         "output":  1157,
+                                                         "total":  10139
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "因外觀為組合式攤位結構且外牆材質不符，判定為攤販。",
+                                          "INPUT_TOKENS":  8982,
+                                          "TOTAL_TOKENS":  10139,
+                                          "OUTPUT_TOKENS":  1157,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積裁罰金額為1,200元，主要涉及公司所屬車輛人員任意棄置垃圾，違反《廢棄物清理法》第27條第1款。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "依目前裁罰資料未見與本次產品責任保險直接相關，該案屬車輛人員任意棄置垃圾之環境管理事項，與產品責任承保風險的直接關聯較低。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  17277
                                       }
                                   ]
                   },
@@ -17037,7 +17532,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  25290
                                       },
                                       {
                                           "name":  "條件",
@@ -17273,7 +17769,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
-                                          "CLAUSE_RISK_B_SUM":  null
+                                          "CLAUSE_RISK_B_SUM":  null,
+                                          "latency_ms":  22265
                                       },
                                       {
                                           "name":  "條件",
@@ -17509,7 +18006,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
-                                          "CLAUSE_RISK_B_SUM":  null
+                                          "CLAUSE_RISK_B_SUM":  null,
+                                          "latency_ms":  34603
                                       },
                                       {
                                           "name":  "標的",
@@ -17727,7 +18225,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  null
                                       },
                                       {
                                           "name":  "標的",
@@ -17773,6 +18272,7 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "目前資訊呈現為鍋貼、蒸餃專賣店的現場餐飲零售型態，未見大型活動、團膳、中央廚房、批發或多通路供應等會放大單一事故影響範圍的機制。產品屬短期即時消費食品，通常不形成跨年度市場存量，影響範圍主要受限於單一據點與當期消費者。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額為500萬元，約每月42萬元；以投保名稱所呈現的鍋貼、蒸餃專賣店餐飲零售樣態來看，屬小型餐飲據點可合理解釋的營收量級。目前未見連鎖、多據點、工廠或批發供應等公開營運規模資訊，顯示該金額有明顯偏高或偏低。",
+                                          "latency_ms":  6723,
                                           "overall_decision":  "pass",
                                           "correctness":  5,
                                           "completeness":  5,
@@ -17833,7 +18333,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  6003
                                       },
                                       {
                                           "name":  "客戶",
@@ -17865,7 +18366,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  13550
                                       },
                                       {
                                           "name":  "條件",
@@ -17929,7 +18431,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15498
                                       },
                                       {
                                           "name":  "報告",
@@ -17957,7 +18460,8 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "score":  6.0,
-                                          "final_summary":  "主要關注攤販型態之營運條件及餐飲食品責任，並留意同時段或同批供餐引發群聚求償及年度累積損失。營業額屬單一據點且具合理性，近五年無理賠紀錄，但缺乏既往承保基準，現有保額對AOA、AGG事故承接壓力仍需評估。核保前應確認實際營業型態、外送及通路範圍，並檢視食品相關條款、保額與自負額是否適配。"
+                                          "final_summary":  "主要關注攤販型態之營運條件及餐飲食品責任，並留意同時段或同批供餐引發群聚求償及年度累積損失。營業額屬單一據點且具合理性，近五年無理賠紀錄，但缺乏既往承保基準，現有保額對AOA、AGG事故承接壓力仍需評估。核保前應確認實際營業型態、外送及通路範圍，並檢視食品相關條款、保額與自負額是否適配。",
+                                          "latency_ms":  3321
                                       },
                                       {
                                           "name":  "標的",
@@ -18004,6 +18508,7 @@ window.validationReviewData = {
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_SCORE_COMPARISON_RESULT":  "EQUAL",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "新臺幣500萬元的年度預估營業額，與鍋貼、蒸餃及便當類餐飲店以單店日常銷售為主的常見營運規模大致相符。現有公開資訊雖有限，但產品型態明確，該金額落在一般小型餐飲業可合理推估的營業額範圍內。",
+                                          "latency_ms":  5465,
                                           "overall_decision":  "pass",
                                           "correctness":  5,
                                           "completeness":  5,
@@ -18018,6 +18523,7 @@ window.validationReviewData = {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -18037,6 +18543,7 @@ window.validationReviewData = {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -18051,6 +18558,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  6341,
+                                                         "output":  976,
+                                                         "total":  7317
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "因外觀為臨時搭建之組合式攤棚且外牆非固定材質，判定為攤販。",
+                                          "INPUT_TOKENS":  6341,
+                                          "TOTAL_TOKENS":  7317,
+                                          "OUTPUT_TOKENS":  976,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  14649
                                       }
                                   ]
                   },
@@ -18341,7 +18881,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  39547
                                       },
                                       {
                                           "name":  "客戶",
@@ -18373,7 +18914,8 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  13851
                                       },
                                       {
                                           "name":  "條件",
@@ -18437,12 +18979,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  12952
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  29307,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  25731,
@@ -18689,12 +19233,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  17386
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  46876,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  40174,
@@ -18937,12 +19483,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  18197
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -19042,12 +19590,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15892
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  33396,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  36358,
@@ -19226,12 +19776,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  10628
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  53250,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  64498,
@@ -19486,12 +20038,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  17508
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  33704,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  48167,
@@ -19610,20 +20164,18 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  18435
                                       },
                                       {
                                           "name":  "標的",
                                           "version":  "小量v3",
-                                          "deliveryDate":  "2026-07-28",
+                                          "deliveryDate":  "2026-07-29",
                                           "tokens":  {
                                                          "input":  13452,
                                                          "output":  1334,
                                                          "total":  14786
                                                      },
-                                          "violated_critical_rules":  [
-
-                                                                      ],
                                           "SCORE":  9.0,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -19665,12 +20217,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  7402
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  35496,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  46414,
@@ -19712,6 +20266,39 @@ window.validationReviewData = {
                                                                 "url":  "https://spot.line.me/detail/486257322574747117?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "照片資訊不足,無法判讀關鍵外觀條件",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A03",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  66078
                                       }
                                   ]
                   },
@@ -19797,12 +20384,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  18254
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  26342,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  28738,
@@ -19969,12 +20558,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  12659
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  25789,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  32179,
@@ -20153,12 +20744,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  19159
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  73497,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  50380,
@@ -20437,12 +21030,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  14066
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  27653,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  30528,
@@ -20637,12 +21232,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  19619
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  50317,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  48298,
@@ -20881,12 +21478,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  12714
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  41324,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  49111,
@@ -21085,12 +21684,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  14050
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  48786,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  46456,
@@ -21277,12 +21878,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  12282
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  53745,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  51402,
@@ -21489,12 +22092,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  17216
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  40617,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  45654,
@@ -21713,12 +22318,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15090
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  26582,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  30511,
@@ -21857,12 +22464,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  18578
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  37602,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  42139,
@@ -22053,12 +22662,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  14876
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  40945,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  46540,
@@ -22325,12 +22936,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  9773
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -22430,12 +23043,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  13370
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -22535,12 +23150,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  16680
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -22640,12 +23257,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  12727
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -22745,12 +23364,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  18713
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  27084,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  36251,
@@ -22949,12 +23570,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15525
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  26221,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  37234,
@@ -23081,12 +23704,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  17301
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  20731,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  22176,
@@ -23249,12 +23874,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  13484
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  36372,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  31893,
@@ -23461,12 +24088,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  11621
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  27473,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  29974,
@@ -23665,12 +24294,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  19008
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  44288,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  51916,
@@ -23913,12 +24544,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  11092
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  34775,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  32011,
@@ -24057,12 +24690,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  12353
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  54502,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  52435,
@@ -24205,12 +24840,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  18297
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  37580,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  33541,
@@ -24413,12 +25050,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  16783
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  50496,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  47392,
@@ -24693,12 +25332,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  17675
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  57264,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  43817,
@@ -24953,12 +25594,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  14605
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  55937,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  46035,
@@ -25141,12 +25784,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  16780
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  70371,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  47205,
@@ -25317,12 +25962,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  12737
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  44089,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  45750,
@@ -25521,12 +26168,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  12089
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  28722,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  40484,
@@ -25749,12 +26398,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  9599
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -25854,12 +26505,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  21590
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -25959,12 +26612,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  17580
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -26064,12 +26719,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  14514
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -26169,12 +26826,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  12635
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  38837,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  51798,
@@ -26381,12 +27040,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15865
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  27764,
                                           "score":  10,
                                           "tokens":  {
                                                          "input":  26241,
@@ -26486,12 +27147,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15788
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -26591,12 +27254,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  13465
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -26696,12 +27361,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  20466
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  31977,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  28583,
@@ -26860,12 +27527,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  13098
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  46275,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  52466,
@@ -27040,12 +27709,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  19898
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  26340,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  25655,
@@ -27252,12 +27923,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  17538
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  33821,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  35046,
@@ -27476,12 +28149,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15406
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  47484,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  52761,
@@ -27772,12 +28447,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15804
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  49525,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  46234,
@@ -27924,12 +28601,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15232
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  62238,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  64005,
@@ -28100,12 +28779,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  16900
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  38402,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  49762,
@@ -28244,12 +28925,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  11419
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -28349,12 +29032,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  13328
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  30836,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  48964,
@@ -28501,12 +29186,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  17810
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  47622,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  56767,
@@ -28733,12 +29420,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  14822
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  29061,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  39006,
@@ -28897,12 +29586,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  14116
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  32689,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  35288,
@@ -29129,12 +29820,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  12764
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -29234,12 +29927,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15018
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -29339,12 +30034,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  10803
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -29444,12 +30141,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  18486
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -29549,12 +30248,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  14085
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -29654,12 +30355,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  17407
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -29759,12 +30462,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  10358
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  33991,
                                           "score":  10,
                                           "tokens":  {
                                                          "input":  43510,
@@ -29864,12 +30569,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  12824
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  40676,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  44081,
@@ -30020,12 +30727,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  14721
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -30125,12 +30834,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  10156
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -30230,12 +30941,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  13607
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -30335,12 +31048,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  12577
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -30440,12 +31155,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  12413
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -30545,12 +31262,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  14523
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -30650,12 +31369,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  14253
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -30755,12 +31476,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  18471
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -30860,12 +31583,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15619
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -30965,12 +31690,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  16948
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -31070,12 +31797,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  14801
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -31175,12 +31904,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  20256
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -31280,12 +32011,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  19185
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -31385,12 +32118,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  10672
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -31490,12 +32225,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  16820
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -31595,12 +32332,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15063
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  29595,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  38791,
@@ -31803,12 +32542,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  22339
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -31908,12 +32649,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  10058
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -32013,12 +32756,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  12536
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  42162,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  39135,
@@ -32229,12 +32974,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15704
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  32529,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  34437,
@@ -32381,12 +33128,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  10333
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  23778,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  25842,
@@ -32505,12 +33254,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  12987
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -32610,12 +33361,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15044
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  38439,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  54616,
@@ -32766,12 +33519,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  14281
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  29803,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  30554,
@@ -32890,12 +33645,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  12928
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -32995,12 +33752,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  13710
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -33100,12 +33859,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  13830
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -33205,12 +33966,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  13584
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -33310,12 +34073,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  13797
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  31944,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  33947,
@@ -33490,12 +34255,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  16067
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -33595,12 +34362,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15196
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -33700,12 +34469,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15578
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -33805,12 +34576,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  13951
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -33910,12 +34683,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  17058
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -34015,12 +34790,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  18386
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -34120,12 +34897,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  12139
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  36203,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  37007,
@@ -34324,12 +35103,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15650
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -34429,12 +35210,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  10618
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -34534,12 +35317,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  14277
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -34639,12 +35424,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  14245
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  33463,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  39473,
@@ -34867,12 +35654,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  17166
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  30754,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  36908,
@@ -34983,12 +35772,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  18567
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -35088,12 +35879,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  18318
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -35193,12 +35986,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  13495
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -35298,12 +36093,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15305
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  38919,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  44309,
@@ -35510,12 +36307,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  19306
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -35615,12 +36414,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  12336
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  31429,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  30615,
@@ -35847,12 +36648,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  16306
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -35952,12 +36755,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  12672
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  31815,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  33762,
@@ -36164,12 +36969,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  14085
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -36269,12 +37076,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  23937
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -36374,12 +37183,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  16366
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  25527,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  41849,
@@ -36506,12 +37317,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  16504
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  30926,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  27849,
@@ -36726,12 +37539,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  18693
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -36831,12 +37646,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  13130
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -36936,12 +37753,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15472
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -37041,12 +37860,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  10715
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -37146,12 +37967,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  12791
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  34450,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  36544,
@@ -37290,12 +38113,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  10274
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -37395,12 +38220,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  10806
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -37500,12 +38327,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  17132
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  42286,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  65586,
@@ -37744,12 +38573,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  16976
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -37849,12 +38680,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  9990
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -37954,12 +38787,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  18050
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -38059,12 +38894,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  17476
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -38164,12 +39001,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15416
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -38269,12 +39108,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  17322
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -38374,12 +39215,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  14233
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  45559,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  45905,
@@ -38542,12 +39385,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15211
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  32916,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  37695,
@@ -38726,12 +39571,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  11536
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  41692,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  52147,
@@ -38890,12 +39737,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  16889
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -38995,12 +39844,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  18603
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -39100,12 +39951,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  14691
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -39205,12 +40058,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  23099
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  28281,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  37449,
@@ -39325,12 +40180,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  11509
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -39430,12 +40287,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  20867
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -39535,12 +40394,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  16223
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  36569,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  40236,
@@ -39671,12 +40532,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  18148
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  30533,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  46287,
@@ -39811,12 +40674,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  19170
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -39916,12 +40781,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  18896
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -40021,12 +40888,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  14119
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -40126,12 +40995,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  13759
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  28177,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  29832,
@@ -40310,12 +41181,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  11419
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  47157,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  70901,
@@ -40462,12 +41335,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15962
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  30388,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  35737,
@@ -40634,12 +41509,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  10850
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  27962,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  37952,
@@ -40810,12 +41687,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  18342
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  33174,
                                           "score":  10,
                                           "tokens":  {
                                                          "input":  31537,
@@ -40915,12 +41794,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15777
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  24059,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  28697,
@@ -41079,12 +41960,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  19874
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  37379,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  38767,
@@ -41331,12 +42214,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  22011
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -41436,12 +42321,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  11161
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  29194,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  27893,
@@ -41624,12 +42511,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  19874
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  25344,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  30042,
@@ -41812,12 +42701,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  16892
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  22864,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  22688,
@@ -41976,12 +42867,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  10584
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  37056,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  39040,
@@ -42140,12 +43033,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  14953
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  27549,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  30390,
@@ -42308,12 +43203,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  18898
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  26496,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  28023,
@@ -42428,12 +43325,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  11420
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  44146,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  54817,
@@ -42592,12 +43491,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  11111
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  31561,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  28564,
@@ -42812,12 +43713,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  17596
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  39007,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  39330,
@@ -43056,12 +43959,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  14984
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  53594,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  48287,
@@ -43336,12 +44241,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  18405
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  48859,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  40485,
@@ -43548,12 +44455,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  24375
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  43364,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  48983,
@@ -43784,12 +44693,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15303
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  32457,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  29649,
@@ -43948,12 +44859,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15723
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  27155,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  28742,
@@ -44136,12 +45049,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15980
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  29677,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  38514,
@@ -44312,12 +45227,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  14064
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  0,
@@ -44417,12 +45334,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  16407
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  32532,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  37765,
@@ -44557,12 +45476,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  24020
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  41415,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  47244,
@@ -44745,12 +45666,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15922
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  47826,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  60932,
@@ -44941,12 +45864,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  16156
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  40771,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  50680,
@@ -45193,12 +46118,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  16244
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  41565,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  57800,
@@ -45373,12 +46300,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  18317
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  25647,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  28491,
@@ -45525,12 +46454,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  22253
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  57925,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  49891,
@@ -45697,12 +46628,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  22104
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  30925,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  30953,
@@ -45869,12 +46802,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15747
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  29956,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  30878,
@@ -46089,12 +47024,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  20397
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  32653,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  41935,
@@ -46285,12 +47222,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  14421
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  48588,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  46536,
@@ -46449,12 +47388,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  13683
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  26477,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  28751,
@@ -46585,12 +47526,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  20000
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  31988,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  35107,
@@ -46693,12 +47636,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  16561
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  38044,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  44072,
@@ -46893,12 +47838,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  13279
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  39098,
                                           "score":  10,
                                           "tokens":  {
                                                          "input":  36046,
@@ -46998,12 +47945,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15346
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  35173,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  42459,
@@ -47170,12 +48119,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  18220
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  44985,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  46591,
@@ -47362,12 +48313,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  10708
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  49627,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  57581,
@@ -47522,12 +48475,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  13896
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  48924,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  51432,
@@ -47738,12 +48693,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  17429
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  74525,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  72137,
@@ -48002,12 +48959,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  16095
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  52191,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  56241,
@@ -48250,12 +49209,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  18180
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  31700,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  45466,
@@ -48426,12 +49387,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  12969
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  36068,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  44694,
@@ -48586,12 +49549,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  13418
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  30702,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  30690,
@@ -48766,12 +49731,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  14749
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  32661,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  47991,
@@ -48970,12 +49937,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15685
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  39227,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  47798,
@@ -49150,12 +50119,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  17249
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  42119,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  44616,
@@ -49378,12 +50349,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  13537
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  40413,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  45353,
@@ -49582,12 +50555,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  18916
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  35450,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  41705,
@@ -49822,12 +50797,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  12263
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  22079,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  26002,
@@ -49938,12 +50915,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  12649
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  30406,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  36944,
@@ -50126,12 +51105,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  18803
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  57567,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  56389,
@@ -50398,12 +51379,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15554
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  43332,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  52132,
@@ -50622,12 +51605,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  19983
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  40978,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  43386,
@@ -50854,12 +51839,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  13523
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  49092,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  44545,
@@ -51162,12 +52149,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  13972
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  38378,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  43354,
@@ -51358,12 +52347,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  14799
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  84290,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  76476,
@@ -51630,12 +52621,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  19353
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  38226,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  41806,
@@ -51850,12 +52843,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  25275
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  34254,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  29438,
@@ -51990,12 +52985,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  20252
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  39243,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  43375,
@@ -52122,12 +53119,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  16998
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  30974,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  29722,
@@ -52286,12 +53285,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  16877
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  43286,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  52738,
@@ -52458,12 +53459,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  18531
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  29373,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  31099,
@@ -52630,12 +53633,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  18662
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  46385,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  41437,
@@ -52838,12 +53843,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  14502
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  46790,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  58060,
@@ -53030,12 +54037,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15899
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  66821,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  56598,
@@ -53438,12 +54447,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  14868
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  41146,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  49294,
@@ -53606,12 +54617,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  14828
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  56483,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  79318,
@@ -53758,12 +54771,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15022
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  46609,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  41793,
@@ -54118,12 +55133,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  13879
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  30115,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  29497,
@@ -54314,12 +55331,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  18273
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  34184,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  40553,
@@ -54502,12 +55521,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15057
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  26742,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  30241,
@@ -54654,12 +55675,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  12796
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  36559,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  46482,
@@ -54826,12 +55849,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  19774
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  31199,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  36695,
@@ -55002,12 +56027,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  13123
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  24651,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  22393,
@@ -55182,12 +56209,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  11436
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  24663,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  30538,
@@ -55334,12 +56363,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  14216
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  35797,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  52336,
@@ -55514,12 +56545,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  14081
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  52713,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  63567,
@@ -55758,12 +56791,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  18349
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  46113,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  43768,
@@ -55974,12 +57009,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  12485
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  36353,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  46018,
@@ -56190,12 +57227,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  20389
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  27636,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  22684,
@@ -56354,12 +57393,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  15133
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  31946,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  46408,
@@ -56482,12 +57523,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  14083
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  32721,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  45221,
@@ -56674,12 +57717,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  19190
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  24251,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  19937,
@@ -56794,12 +57839,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  11729
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  33413,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  36528,
@@ -57030,12 +58077,14 @@ window.validationReviewData = {
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null
+                                          "reason":  null,
+                                          "latency_ms":  17036
                                       },
                                       {
                                           "name":  "web search",
                                           "version":  "正式v1",
                                           "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  38019,
                                           "score":  10.0,
                                           "tokens":  {
                                                          "input":  51473,

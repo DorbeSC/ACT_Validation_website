@@ -376,6 +376,7 @@
       .usage-stat { padding: 12px; border: 1px solid var(--line); border-radius: 7px; background: #f8fafc; }
       .usage-stat h3 { margin: 0 0 8px; font-size: 15px; color: var(--accent); }
       .usage-stat .kpi-value { margin: 2px 0 8px; font-size: 28px; font-weight: 800; color: var(--ink); }
+      .usage-duration-count { display: block; margin-top: 2px; color: var(--muted); font-size: 11px; font-weight: 400; line-height: 1.4; }
       .usage-stat .kpi-range { position: relative; height: 31px; padding-top: 8px; }
       .kpi-track { height: 6px; border-radius: 4px; background: #dce7ef; }
       .kpi-marker { position: absolute; top: 3px; width: 15px; height: 15px; transform: translateX(-50%); border: 3px solid #fff; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
@@ -391,6 +392,16 @@
       .cost-marker { position: absolute; top: 1px; width: 17px; height: 17px; transform: translateX(-50%); border: 3px solid #fff; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
       .cost-scale { display: flex; justify-content: space-between; margin-top: 6px; color: var(--muted); font-size: 11px; }
       .usage-saving { margin-top: 9px; color: #23865a; font-size: 13px; font-weight: 700; }
+      .usage-module-latency { margin: 14px 0 20px; padding: 12px; border: 1px solid var(--line); border-radius: 7px; background: #f8fafc; }
+      .usage-module-latency h3 { margin: 0 0 8px; color: var(--accent); font-size: 15px; }
+      .usage-module-latency-cards { display: grid; grid-template-columns: repeat(3, minmax(170px, 1fr)); gap: 8px; }
+      .usage-module-latency-card { min-width: 0; padding: 8px 10px; border: 1px solid var(--line); border-radius: 6px; background: #fff; }
+      .usage-module-latency-card h4 { margin: 0 0 6px; overflow: hidden; color: var(--accent); font-size: 14px; white-space: nowrap; text-overflow: ellipsis; }
+      .usage-module-latency-count { display: block; margin: -2px 0 6px; color: var(--muted); font-size: 11px; font-weight: 400; }
+      .usage-module-latency-metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+      .usage-module-latency-metric { min-width: 0; }
+      .usage-module-latency-metric span { display: block; color: var(--muted); font-size: 11px; }
+      .usage-module-latency-metric strong { display: block; margin-top: 2px; overflow: hidden; color: var(--ink); font-size: 16px; white-space: nowrap; text-overflow: ellipsis; }
       .usage-stat table { width: 100%; border-collapse: collapse; font-size: 12px; }
       .usage-stat td { padding: 3px 0; border: 0; }
       .usage-stat td:last-child { text-align: right; font-weight: 700; }
@@ -403,7 +414,8 @@
       .usage-sort-button.active { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); font-weight: 700; }
       .usage-table .table-sort { margin-left: 4px; padding: 0 2px; border: 0; background: transparent; color: inherit; font-size: 14px; line-height: 1; cursor: pointer; }
       .usage-table .table-sort:hover, .usage-table .table-sort.active { color: var(--accent); }
-      @media (max-width: 900px) { .usage-summary { grid-template-columns: 1fr; } }
+      @media (max-width: 900px) { .usage-summary { grid-template-columns: 1fr; } .usage-module-latency-cards { grid-template-columns: repeat(2, minmax(150px, 1fr)); } }
+      @media (max-width: 620px) { .usage-module-latency-cards { grid-template-columns: 1fr; } }
       @media (max-width: 980px) {
         .topbar, .layout, .module-head, .module-body, .quick-review { grid-template-columns: 1fr; }
         .search { width: 100%; }
@@ -606,6 +618,12 @@
       }
       function renderUsageView() {
         const num = value => Number.isFinite(Number(value)) ? Number(value) : 0;
+        const optionalNum = value => {
+          if (value === null || value === undefined || String(value).trim() === "") return null;
+          const parsed = Number(value);
+          return Number.isFinite(parsed) ? parsed : null;
+        };
+        const formatSeconds = value => value === null || value === undefined || !Number.isFinite(Number(value)) ? "-" : Number(value).toLocaleString("zh-TW", { maximumFractionDigits: 3 });
         const money = value => num(value).toLocaleString("zh-TW", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
         const latest = new Map();
         cases.forEach(item => {
@@ -622,16 +640,22 @@
           const input = num(tokens.input ?? module.INPUT_TOKENS);
           const output = num(tokens.output ?? module.OUTPUT_TOKENS);
           const total = num(tokens.total ?? module.TOTAL_TOKENS) || input + output;
+          const latencyMs = optionalNum(module.latency_ms ?? module.LATENCY_MS);
+          const latency = latencyMs === null ? null : latencyMs / 1000;
           const webSearchApiFee = module.name === "web search" ? 1 : 0;
-          return { item, module, caseNo, deliveryDate, input, output, total, gpt55: input * 0.00016 + output * 0.000960 + webSearchApiFee, luna: input * 0.00003 + output * 0.00018 + webSearchApiFee };
+          return { item, module, caseNo, deliveryDate, input, output, total, latency, gpt55: input * 0.00016 + output * 0.000960 + webSearchApiFee, luna: input * 0.00003 + output * 0.00018 + webSearchApiFee };
         });
         const aggregateByCase = source => {
           const byCase = new Map();
           source.forEach(row => {
-            if (!byCase.has(row.caseNo)) byCase.set(row.caseNo, { ...row, modules: 1, moduleNames: [row.module.name || "未分類"] });
+            if (!byCase.has(row.caseNo)) byCase.set(row.caseNo, { ...row, modules: 1, moduleNames: [row.module.name || "未分類"], latencyModuleNames: row.latency === null ? [] : [row.module.name || "未分類"] });
             else {
               const target = byCase.get(row.caseNo);
               ["input", "output", "total", "gpt55", "luna"].forEach(key => target[key] += row[key]);
+              if (row.latency !== null) {
+                target.latency = (target.latency ?? 0) + row.latency;
+                if (!target.latencyModuleNames.includes(row.module.name || "未分類")) target.latencyModuleNames.push(row.module.name || "未分類");
+              }
               target.modules += 1;
               if (!target.moduleNames.includes(row.module.name || "未分類")) target.moduleNames.push(row.module.name || "未分類");
               if ((Date.parse(row.deliveryDate) || 0) > (Date.parse(target.deliveryDate) || 0)) target.deliveryDate = row.deliveryDate;
@@ -640,12 +664,17 @@
           return [...byCase.values()];
         };
         const caseRows = aggregateByCase(moduleRows);
-        const stat = key => {
-          const values = caseRows.map(row => row[key]);
-          if (!values.length) return { avg: 0, max: 0, min: 0 };
-          return { avg: values.reduce((a, b) => a + b, 0) / values.length, max: Math.max(...values), min: Math.min(...values) };
+        const moduleNames = [...new Set(moduleRows.map(row => row.module.name).filter(Boolean))];
+        const completeCaseRows = caseRows.filter(row => moduleNames.every(name => row.latencyModuleNames.includes(name)));
+        const statsFromValues = values => {
+          const numericValues = values.filter(value => value !== null && value !== undefined && Number.isFinite(Number(value))).map(Number);
+          if (!numericValues.length) return { avg: 0, max: 0, min: 0 };
+          return { avg: numericValues.reduce((a, b) => a + b, 0) / numericValues.length, max: Math.max(...numericValues), min: Math.min(...numericValues) };
         };
+        const stat = key => statsFromValues(caseRows.map(row => row[key]));
+        const durationStat = key => statsFromValues(completeCaseRows.map(row => row[key]));
         const statCard = (title, key, isMoney = false) => { const s = stat(key); const f = isMoney ? money : value => Math.round(value).toLocaleString("zh-TW"); return `<div class="usage-stat"><h3>${title}</h3><table><tr><td>平均</td><td>${f(s.avg)}</td></tr><tr><td>最大</td><td>${f(s.max)}</td></tr><tr><td>最小</td><td>${f(s.min)}</td></tr></table></div>`; };
+        const durationCard = (title, key) => { const s = durationStat(key); const hasValue = completeCaseRows.some(row => row[key] !== null && row[key] !== undefined && Number.isFinite(Number(row[key]))); const f = hasValue ? formatSeconds : () => "-"; const countNote = `<small class="usage-duration-count">驗測時間完整案件數為 ${completeCaseRows.length} 筆（所有模組皆有時長）</small>`; return [`平均${title}`, `最大${title}`, `最小${title}`].map((label, index) => `<div class="usage-stat"><h3>${label}</h3><div class="kpi-value">${f([s.avg, s.max, s.min][index])}</div>${countNote}</div>`).join(""); };
         const tokenCard = (title, key) => { const s = stat(key); const position = s.max === s.min ? 50 : Math.max(0, Math.min(100, ((s.avg - s.min) / (s.max - s.min)) * 100)); return `<div class="usage-stat"><h3>${title}</h3><div class="kpi-value">${Math.round(s.avg).toLocaleString("zh-TW")}</div><div class="kpi-range" title="平均值：${Math.round(s.avg).toLocaleString("zh-TW")}"><div class="kpi-track"></div><div class="kpi-marker" style="left:${position}%"></div><div class="kpi-scale-labels"><span>最小 ${Math.round(s.min).toLocaleString("zh-TW")}</span><span>最大 ${Math.round(s.max).toLocaleString("zh-TW")}</span></div></div></div>`; };
         const gpt55Stat = stat("gpt55");
         const lunaStat = stat("luna");
@@ -653,19 +682,40 @@
         const savingRate = gpt55Stat.avg ? (saving / gpt55Stat.avg) * 100 : 0;
         const costRange = statValue => { const position = statValue.max === statValue.min ? 50 : Math.max(0, Math.min(100, ((statValue.avg - statValue.min) / (statValue.max - statValue.min)) * 100)); return `<div class="usage-cost-range"><div class="cost-track"></div><div class="cost-marker" style="left:${position}%"></div><div class="cost-scale"><span>最小 ${money(statValue.min)}</span><span>最大 ${money(statValue.max)}</span></div></div>`; };
         const costCard = `<div class="usage-stat usage-cost-card"><h3>模型成本比較</h3><div class="usage-cost-row"><span class="usage-cost-name">GPT-5.5</span><span class="usage-cost-average">${money(gpt55Stat.avg)}<small>平均成本</small></span>${costRange(gpt55Stat)}</div><div class="usage-cost-row"><span class="usage-cost-name">GPT-5.6（Luna）</span><span class="usage-cost-average">${money(lunaStat.avg)}<small>平均成本</small></span>${costRange(lunaStat)}</div><div class="usage-saving">Luna 預估節省 ${money(saving)}（約 ${savingRate.toFixed(1)}%）</div></div>`;
-        const moduleNames = [...new Set(moduleRows.map(row => row.module.name).filter(Boolean))];
+        const moduleLatencyCards = moduleNames.map(name => {
+          const values = moduleRows.filter(row => row.module.name === name).map(row => row.latency);
+          const stats = statsFromValues(values);
+          const hasValue = values.some(value => value !== null && value !== undefined && Number.isFinite(Number(value)));
+          const valueCount = values.filter(value => value !== null && value !== undefined && Number.isFinite(Number(value))).length;
+          const format = value => hasValue ? formatSeconds(value) : "-";
+          return `<div class="usage-module-latency-card" title="${esc(moduleLabel(name))}"><h4>${esc(moduleLabel(name))}</h4><small class="usage-module-latency-count">資料筆數：${valueCount} 筆</small><div class="usage-module-latency-metrics"><div class="usage-module-latency-metric"><span>平均</span><strong>${format(stats.avg)}</strong></div><div class="usage-module-latency-metric"><span>最大</span><strong>${format(stats.max)}</strong></div><div class="usage-module-latency-metric"><span>最小</span><strong>${format(stats.min)}</strong></div></div></div>`;
+        }).join("");
+        const moduleLatencySection = `<section class="usage-module-latency"><h3>各模組驗測時間（秒）</h3><div class="usage-module-latency-cards">${moduleLatencyCards}</div></section>`;
         let selectedModule = "全部";
         let sortKey = "total";
         let descending = true;
         els.usageView.innerHTML = `<h2>token＆時間＆成本紀錄</h2><p class="usage-note">每個進件編號的各模組僅取最新交付日期版本計算；成本單位依提供單價計算。GPT-5.5：Input × 0.00016＋Output × 0.000960；GPT-5.6（Luna）：Input × 0.00003＋Output × 0.00018。</p><div class="usage-summary">${tokenCard("平均 Input tokens", "input")}${tokenCard("平均 Output tokens", "output")}${tokenCard("平均 Total tokens", "total")}${costCard}</div><p class="usage-total-note" id="usageTotalNote">總筆數為 ${caseRows.length} 筆，詳細資訊請看下方明細資訊</p><h3 class="usage-section-title">各案件狀況</h3><div class="usage-toolbar"><label for="usageModuleFilter">模組篩選</label><select id="usageModuleFilter"><option value="全部">全部模組</option>${moduleNames.map(name => `<option value="${esc(name)}">${esc(moduleLabel(name))}</option>`).join("")}</select></div><table class="usage-table"><thead><tr><th>客戶</th><th>進件編號</th><th>模組名稱</th><th>Input</th><th>Output</th><th>Total <button type="button" class="table-sort active" data-usage-sort="total" aria-label="排序 Total tokens">↕</button></th><th>GPT-5.5 成本 <button type="button" class="table-sort" data-usage-sort="gpt55" aria-label="排序 GPT-5.5 成本">↕</button></th><th>Luna 成本 <button type="button" class="table-sort" data-usage-sort="luna" aria-label="排序 Luna 成本">↕</button></th><th>最新交付日期</th></tr></thead><tbody id="usageCaseBody"></tbody></table>`;
-        els.usageView.querySelector(".usage-note").textContent += " web search 每筆另加 1 元 API 費用。";
-        els.usageView.querySelector(".usage-table thead tr").insertAdjacentHTML("beforeend", "<th>驗測時間</th>");
+        const costCardNode = els.usageView.querySelector(".usage-cost-card");
+        if (costCardNode) costCardNode.insertAdjacentHTML("beforebegin", durationCard("驗測時間（秒）", "latency"));
+        els.usageView.querySelector(".usage-summary").insertAdjacentHTML("afterend", moduleLatencySection);
+        const usageTotalNote = els.usageView.querySelector("#usageTotalNote");
+        usageTotalNote.textContent = `Token 總筆數為 ${caseRows.length} 筆，詳細資訊請看下方明細資訊`;
+        els.usageView.querySelector(".usage-note").textContent += ` web search 每筆另加 1 元 API 費用；驗測時間以 latency_ms ÷ 1000 換算為秒，項目為 Judge 的資料不列入驗測時間；總時長僅統計所有模組都有時長的完整案件（目前 ${completeCaseRows.length} 筆）。`;
+        els.usageView.querySelector(".usage-table thead tr").insertAdjacentHTML("beforeend", "<th>驗測時間（秒）</th>");
         els.usageView.querySelector(".usage-section-title").textContent = "各案件明細狀況";
         const drawCaseTable = () => {
           const source = selectedModule === "全部" ? moduleRows : moduleRows.filter(row => row.module.name === selectedModule);
           const rows = aggregateByCase(source).sort((a, b) => (descending ? -1 : 1) * (num(a[sortKey]) - num(b[sortKey])));
-          document.getElementById("usageTotalNote").textContent = `總筆數為 ${rows.length} 筆，詳細資訊請看下方明細資訊`;
+          document.getElementById("usageTotalNote").textContent = `Token 總筆數為 ${rows.length} 筆，詳細資訊請看下方明細資訊`;
           document.getElementById("usageCaseBody").innerHTML = rows.length ? rows.map(row => { const customer = customerDisplay(row.item).name; const modulesText = row.moduleNames.map(moduleLabel).join("、"); return `<tr><td title="${esc(customer)}">${esc(customer)}</td><td title="${esc(row.caseNo)}">${esc(row.caseNo)}</td><td title="${esc(modulesText)}">${esc(modulesText)}</td><td title="${row.input.toLocaleString("zh-TW")}">${row.input.toLocaleString("zh-TW")}</td><td title="${row.output.toLocaleString("zh-TW")}">${row.output.toLocaleString("zh-TW")}</td><td title="${row.total.toLocaleString("zh-TW")}">${row.total.toLocaleString("zh-TW")}</td><td title="${money(row.gpt55)}">${money(row.gpt55)}</td><td title="${money(row.luna)}">${money(row.luna)}</td><td title="${esc(row.deliveryDate || "-")}">${esc(row.deliveryDate || "-")}</td><td></td></tr>`; }).join("") : `<tr><td colspan="10">目前沒有紀錄</td></tr>`;
+          rows.forEach((row, index) => {
+            const cell = document.querySelector(`#usageCaseBody tr:nth-child(${index + 1}) td:last-child`);
+            if (cell) {
+              const latencyText = formatSeconds(row.latency);
+              cell.textContent = latencyText;
+              cell.title = latencyText;
+            }
+          });
         };
         document.getElementById("usageModuleFilter").addEventListener("change", event => { selectedModule = event.target.value; drawCaseTable(); });
         els.usageView.querySelectorAll("[data-usage-sort]").forEach(button => button.addEventListener("click", () => { const nextKey = button.dataset.usageSort; if (sortKey === nextKey) descending = !descending; else { sortKey = nextKey; descending = true; } els.usageView.querySelectorAll("[data-usage-sort]").forEach(item => { item.classList.toggle("active", item === button); item.textContent = item === button ? (descending ? "↓" : "↑") : "↕"; }); drawCaseTable(); }));
