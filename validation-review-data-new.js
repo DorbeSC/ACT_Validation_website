@@ -1,5 +1,5 @@
 window.validationReviewData = {
-    "generatedAt":  "2026-07-29 17:46:48",
+    "generatedAt":  "2026-08-04 13:01:58",
     "sourceFile":  "驗測資料.xlsx",
     "sourceSheet":  "input / 各模組資料",
     "header":  [
@@ -1356,6 +1356,97 @@ window.validationReviewData = {
                                           "latency_ms":  15938
                                       },
                                       {
+                                          "name":  "歷史",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  12073,
+                                                         "output":  2271,
+                                                         "total":  14344
+                                                     },
+                                          "SCORE":  10.0,
+                                          "INPUT_TOKENS":  12073,
+                                          "OUTPUT_TOKENS":  2271,
+                                          "TOTAL_TOKENS":  14344,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null,
+                                          "LOSS_PATTERN":  "近五年無理賠紀錄。",
+                                          "CLAIM_SUMMARY":  "近五年無理賠紀錄。",
+                                          "HISTORY_RESULT":  {
+                                                                 "continue":  {
+                                                                                  "aggregate":  [
+                                                                                                    {
+                                                                                                        "claim_count_continue_last":  0.0,
+                                                                                                        "policy_count_continue_last":  0,
+                                                                                                        "claim_amount_continue_last":  0.0,
+                                                                                                        "discount_premium_continue_last":  0.0,
+                                                                                                        "loss_ratio_continue_last":  0.0,
+                                                                                                        "claim_count_continue_5y":  0.0,
+                                                                                                        "policy_count_continue_5y":  0,
+                                                                                                        "claim_amount_continue_5y":  0.0,
+                                                                                                        "discount_premium_continue_5y":  0.0,
+                                                                                                        "loss_ratio_continue_5y":  0.0,
+                                                                                                        "is_claimed":  "Y"
+                                                                                                    }
+                                                                                                ]
+                                                                              },
+                                                                 "insured":  {
+                                                                                 "aggregate":  [
+                                                                                                   {
+                                                                                                       "claim_count_insured_1y":  0.0,
+                                                                                                       "policy_count_insured_1y":  0,
+                                                                                                       "claim_amount_insured_1y":  0.0,
+                                                                                                       "discount_premium_insured_1y":  0.0,
+                                                                                                       "loss_ratio_insured_1y":  0.0,
+                                                                                                       "claim_count_insured_5y":  0.0,
+                                                                                                       "policy_count_insured_5y":  1,
+                                                                                                       "claim_amount_insured_5y":  0.0,
+                                                                                                       "discount_premium_insured_5y":  2273.0,
+                                                                                                       "loss_ratio_insured_5y":  0.0,
+                                                                                                       "is_claimed":  "Y"
+                                                                                                   }
+                                                                                               ]
+                                                                             }
+                                                             },
+                                          "OVERALL_ASSESSMENT":  "過往已有同一被保險人 ID 的產品責任保險案件，承保額度、自負額及附加條款架構具延續性，並曾完成報價通過與出單。本案主要差異為\u003cstrong\u003e營業額降至不同量級、佣金率與經手安排變動\u003c/strong\u003e，另被保險人名稱比對結果不同且追溯日改變。核保上宜確認申報資料量級、通路與承保對象延續性、佣金條件及追溯日適用依據。",
+                                          "KEY_FACTS":  {
+                                                            "baseline":  [
+                                                                             "過往已有同一被保險人 ID、同一產品責任保險類別案件，於 2024 年完成報價審核並出單，保險期間一年，保費為 2,273 元。",
+                                                                             "歷史承保條件具延續性：承接比例 100%，每一人身體傷害保額 100 萬元、每一事故身體傷害保額 400 萬元、每一事故財物損失保額 0 元、保險期間累計保額 1,000 萬元，並適用 2,000 元自負額及相同附加條款架構。"
+                                                                         ],
+                                                            "change_trajectory":  [
+                                                                                      "本案營業額為 10 萬元，較前期 100 萬元下降至不同量級，申報期間、計算單位及資料正確性仍待確認。",
+                                                                                      "本案佣金率為 12%，與前期已出單資料的 0% 不同，但與前期報價資料相同，應核對本次適用佣金率及報價至出單間的條件差異。",
+                                                                                      "本案經手人 ID 與前期不同、保經代代號留白，且被保險人名稱比對結果不同；追溯日由前期 2024 年 5 月 13 日改為 2025 年 6 月 5 日，應確認通路與經手安排、被保險人及實際承保對象延續性，以及追溯日適用依據。"
+                                                                                  ]
+                                                        },
+                                          "RECOMMENDED_REVIEW_CASES":  [
+                                                                           {
+                                                                               "appllte_no":  "2404000292508545",
+                                                                               "quote_no_version":  "NPD240016491-1",
+                                                                               "policy_no":  "150113PD60093",
+                                                                               "verification":  "確認本案營業額由 100 萬元變為 10 萬元是否源於申報期間或單位差異；並核對佣金率由前期出單資料的 0% 調整為 12%、保經代代號留白及經手安排變更的實際原因。",
+                                                                               "fields_to_review":  "比較本案與前期案件的營業額、佣金率、保經代代號、經手人 ID 比對結果及承接標的／產品名稱；開啟案件後優先查看報價需求說明、核保留言、承保條件與出單資料，確認保障額度、自負額及附加條款是否延續。"
+                                                                           }
+                                                                       ],
+                                          "ATTENTION_TAGS":  [
+                                                                 "通路",
+                                                                 "承保對象",
+                                                                 "決策",
+                                                                 "追溯日"
+                                                             ],
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  20206
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
@@ -1498,95 +1589,66 @@ window.validationReviewData = {
                                                         ]
                                       },
                                       {
-                                          "name":  "歷史",
-                                          "version":  "小量v2",
-                                          "deliveryDate":  "2026-07-29",
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
                                           "tokens":  {
-                                                         "input":  12073,
-                                                         "output":  2271,
-                                                         "total":  14344
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
                                                      },
                                           "SCORE":  10.0,
-                                          "INPUT_TOKENS":  12073,
-                                          "OUTPUT_TOKENS":  2271,
-                                          "TOTAL_TOKENS":  14344,
+                                          "IS_MASK":  false,
                                           "NO_RISK":  true,
                                           "IS_BLOCK":  false,
-                                          "IS_MASK":  false,
-                                          "BLOCK_RAIL":  null,
+                                          "SP_SCORE":  10.0,
                                           "MASK_RAIL":  null,
-                                          "LOSS_PATTERN":  "近五年無理賠紀錄。",
-                                          "CLAIM_SUMMARY":  "近五年無理賠紀錄。",
-                                          "HISTORY_RESULT":  {
-                                                                 "continue":  {
-                                                                                  "aggregate":  [
-                                                                                                    {
-                                                                                                        "claim_count_continue_last":  0.0,
-                                                                                                        "policy_count_continue_last":  0,
-                                                                                                        "claim_amount_continue_last":  0.0,
-                                                                                                        "discount_premium_continue_last":  0.0,
-                                                                                                        "loss_ratio_continue_last":  0.0,
-                                                                                                        "claim_count_continue_5y":  0.0,
-                                                                                                        "policy_count_continue_5y":  0,
-                                                                                                        "claim_amount_continue_5y":  0.0,
-                                                                                                        "discount_premium_continue_5y":  0.0,
-                                                                                                        "loss_ratio_continue_5y":  0.0,
-                                                                                                        "is_claimed":  "Y"
-                                                                                                    }
-                                                                                                ]
-                                                                              },
-                                                                 "insured":  {
-                                                                                 "aggregate":  [
-                                                                                                   {
-                                                                                                       "claim_count_insured_1y":  0.0,
-                                                                                                       "policy_count_insured_1y":  0,
-                                                                                                       "claim_amount_insured_1y":  0.0,
-                                                                                                       "discount_premium_insured_1y":  0.0,
-                                                                                                       "loss_ratio_insured_1y":  0.0,
-                                                                                                       "claim_count_insured_5y":  0.0,
-                                                                                                       "policy_count_insured_5y":  1,
-                                                                                                       "claim_amount_insured_5y":  0.0,
-                                                                                                       "discount_premium_insured_5y":  2273.0,
-                                                                                                       "loss_ratio_insured_5y":  0.0,
-                                                                                                       "is_claimed":  "Y"
-                                                                                                   }
-                                                                                               ]
-                                                                             }
-                                                             },
-                                          "OVERALL_ASSESSMENT":  "過往已有同一被保險人 ID 的產品責任保險案件，承保額度、自負額及附加條款架構具延續性，並曾完成報價通過與出單。本案主要差異為\u003cstrong\u003e營業額降至不同量級、佣金率與經手安排變動\u003c/strong\u003e，另被保險人名稱比對結果不同且追溯日改變。核保上宜確認申報資料量級、通路與承保對象延續性、佣金條件及追溯日適用依據。",
-                                          "KEY_FACTS":  {
-                                                            "baseline":  [
-                                                                             "過往已有同一被保險人 ID、同一產品責任保險類別案件，於 2024 年完成報價審核並出單，保險期間一年，保費為 2,273 元。",
-                                                                             "歷史承保條件具延續性：承接比例 100%，每一人身體傷害保額 100 萬元、每一事故身體傷害保額 400 萬元、每一事故財物損失保額 0 元、保險期間累計保額 1,000 萬元，並適用 2,000 元自負額及相同附加條款架構。"
-                                                                         ],
-                                                            "change_trajectory":  [
-                                                                                      "本案營業額為 10 萬元，較前期 100 萬元下降至不同量級，申報期間、計算單位及資料正確性仍待確認。",
-                                                                                      "本案佣金率為 12%，與前期已出單資料的 0% 不同，但與前期報價資料相同，應核對本次適用佣金率及報價至出單間的條件差異。",
-                                                                                      "本案經手人 ID 與前期不同、保經代代號留白，且被保險人名稱比對結果不同；追溯日由前期 2024 年 5 月 13 日改為 2025 年 6 月 5 日，應確認通路與經手安排、被保險人及實際承保對象延續性，以及追溯日適用依據。"
-                                                                                  ]
-                                                        },
-                                          "RECOMMENDED_REVIEW_CASES":  [
-                                                                           {
-                                                                               "appllte_no":  "2404000292508545",
-                                                                               "quote_no_version":  "NPD240016491-1",
-                                                                               "policy_no":  "150113PD60093",
-                                                                               "verification":  "確認本案營業額由 100 萬元變為 10 萬元是否源於申報期間或單位差異；並核對佣金率由前期出單資料的 0% 調整為 12%、保經代代號留白及經手安排變更的實際原因。",
-                                                                               "fields_to_review":  "比較本案與前期案件的營業額、佣金率、保經代代號、經手人 ID 比對結果及承接標的／產品名稱；開啟案件後優先查看報價需求說明、核保留言、承保條件與出單資料，確認保障額度、自負額及附加條款是否延續。"
-                                                                           }
-                                                                       ],
-                                          "ATTENTION_TAGS":  [
-                                                                 "通路",
-                                                                 "承保對象",
-                                                                 "決策",
-                                                                 "追溯日"
-                                                             ],
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
                                           "overall_decision":  null,
                                           "correctness":  null,
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
                                           "reason":  null,
-                                          "latency_ms":  20206
+                                          "latency_ms":  548
+                                      },
+                                      {
+                                          "name":  "報告",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  5991,
+                                                         "output":  1010,
+                                                         "total":  7001
+                                                     },
+                                          "INPUT_TOKENS":  5991,
+                                          "OUTPUT_TOKENS":  1010,
+                                          "TOTAL_TOKENS":  7001,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null,
+                                          "CASE_RISK":  "中風險",
+                                          "CASE_RATE":  "審慎評估",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "score":  6.0,
+                                          "final_summary":  "產品資料記載為糕點及果乾，但AOA／AGG評估以雞排、羹麵之單一據點即時消費型餐飲為基礎，且店面照片資訊不足，營運型態存在落差。現有AOA、AGG承接壓力較低的結論，需以確認後之實際標的與營業型態核對。另營業額大幅下修但保費未變，且保險期間與追溯日中斷，應確認申報、費率／最低保費及續保安排。",
+                                          "latency_ms":  11299
                                       }
                                   ]
                   },
@@ -2936,6 +2998,98 @@ window.validationReviewData = {
                                           "latency_ms":  15134
                                       },
                                       {
+                                          "name":  "歷史",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  14328,
+                                                         "output":  2237,
+                                                         "total":  16565
+                                                     },
+                                          "SCORE":  10.0,
+                                          "INPUT_TOKENS":  14328,
+                                          "OUTPUT_TOKENS":  2237,
+                                          "TOTAL_TOKENS":  16565,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null,
+                                          "LOSS_PATTERN":  "近五年無理賠紀錄。",
+                                          "CLAIM_SUMMARY":  "近五年無理賠紀錄。",
+                                          "HISTORY_RESULT":  {
+                                                                 "continue":  {
+                                                                                  "aggregate":  [
+                                                                                                    {
+                                                                                                        "claim_count_continue_last":  0.0,
+                                                                                                        "policy_count_continue_last":  0,
+                                                                                                        "claim_amount_continue_last":  0.0,
+                                                                                                        "discount_premium_continue_last":  0.0,
+                                                                                                        "loss_ratio_continue_last":  0.0,
+                                                                                                        "claim_count_continue_5y":  0.0,
+                                                                                                        "policy_count_continue_5y":  0,
+                                                                                                        "claim_amount_continue_5y":  0.0,
+                                                                                                        "discount_premium_continue_5y":  0.0,
+                                                                                                        "loss_ratio_continue_5y":  0.0,
+                                                                                                        "is_claimed":  "Y"
+                                                                                                    }
+                                                                                                ]
+                                                                              },
+                                                                 "insured":  {
+                                                                                 "aggregate":  [
+                                                                                                   {
+                                                                                                       "claim_count_insured_1y":  0.0,
+                                                                                                       "policy_count_insured_1y":  0,
+                                                                                                       "claim_amount_insured_1y":  0.0,
+                                                                                                       "discount_premium_insured_1y":  0.0,
+                                                                                                       "loss_ratio_insured_1y":  0.0,
+                                                                                                       "claim_count_insured_5y":  0.0,
+                                                                                                       "policy_count_insured_5y":  1,
+                                                                                                       "claim_amount_insured_5y":  0.0,
+                                                                                                       "discount_premium_insured_5y":  6000.0,
+                                                                                                       "loss_ratio_insured_5y":  0.0,
+                                                                                                       "is_claimed":  "Y"
+                                                                                                   }
+                                                                                               ]
+                                                                             }
+                                                             },
+                                          "OVERALL_ASSESSMENT":  "本案延續過往產品責任保險交易脈絡，歷史參考案件以中餐廳為承保對象，營業額3,000萬元，採100%承接、合約再保及12%佣金率。\u003cstrong\u003e本案承保對象、經手人、保費、保額及附加條款均有變動\u003c/strong\u003e，其中保費與責任保額下調，宜確認通路、業務內容及條件調整的承接依據。追溯日改為2025年5月13日並與保險起期相同，應再核對日期設定及責任範圍。",
+                                          "KEY_FACTS":  {
+                                                            "baseline":  [
+                                                                             "過往參考案件為中餐廳產品責任保險，營業額3,000萬元，採100%承接、合約再保及12%佣金率，保費6,000元；主要保額為每一人身體傷害100萬元、每一事故身體傷害1,000萬元、每一事故財物損失200萬元及保險期間累計2,400萬元。",
+                                                                             "歷史參考案件由北區承作，附加條款包含產品責任、食品、食品中毒、訴訟及理賠費用與自負額等責任安排。"
+                                                                         ],
+                                                            "change_trajectory":  [
+                                                                                      "本案承保對象由歷史參考案件的餐廳改為零售商，經手人亦不同，應確認通路、承保對象及其業務內容的承接依據。",
+                                                                                      "本案保費由6,000元降至5,000元，且每一事故身體傷害保額降為400萬元、每一事故財物損失保額降為0元、保險期間累計保額降為1,000萬元；自負額改以2,000元金額明列，應核對保費與承保條件的對應關係。",
+                                                                                      "附加條款組合與歷史參考案件有差異，追溯日由2024年3月19日改為2025年5月13日，且與本案保險起期相同，宜確認責任範圍及日期設定依據。"
+                                                                                  ]
+                                                        },
+                                          "RECOMMENDED_REVIEW_CASES":  [
+                                                                           {
+                                                                               "appllte_no":  "2403000203572165",
+                                                                               "quote_no_version":  "NPD240002242-2",
+                                                                               "policy_no":  "151613PD60256",
+                                                                               "verification":  "確認本案責任保額縮減、每一事故財物損失保額取消及保費調整是否經需求或核保條件支持，並核對追溯日與保險起期設定。",
+                                                                               "fields_to_review":  "對照本案保費、每一事故身體傷害保額、每一事故財物損失保額、保險期間累計保額及附加條款組合，並查看前次核保留言與自負額記載方式。"
+                                                                           }
+                                                                       ],
+                                          "ATTENTION_TAGS":  [
+                                                                 "通路",
+                                                                 "附加條款",
+                                                                 "承保對象",
+                                                                 "費率水準",
+                                                                 "追溯日"
+                                                             ],
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  20975
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
@@ -3234,96 +3388,66 @@ window.validationReviewData = {
                                                         ]
                                       },
                                       {
-                                          "name":  "歷史",
-                                          "version":  "小量v2",
-                                          "deliveryDate":  "2026-07-29",
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
                                           "tokens":  {
-                                                         "input":  14328,
-                                                         "output":  2237,
-                                                         "total":  16565
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
                                                      },
                                           "SCORE":  10.0,
-                                          "INPUT_TOKENS":  14328,
-                                          "OUTPUT_TOKENS":  2237,
-                                          "TOTAL_TOKENS":  16565,
+                                          "IS_MASK":  false,
                                           "NO_RISK":  true,
                                           "IS_BLOCK":  false,
-                                          "IS_MASK":  false,
-                                          "BLOCK_RAIL":  null,
+                                          "SP_SCORE":  10.0,
                                           "MASK_RAIL":  null,
-                                          "LOSS_PATTERN":  "近五年無理賠紀錄。",
-                                          "CLAIM_SUMMARY":  "近五年無理賠紀錄。",
-                                          "HISTORY_RESULT":  {
-                                                                 "continue":  {
-                                                                                  "aggregate":  [
-                                                                                                    {
-                                                                                                        "claim_count_continue_last":  0.0,
-                                                                                                        "policy_count_continue_last":  0,
-                                                                                                        "claim_amount_continue_last":  0.0,
-                                                                                                        "discount_premium_continue_last":  0.0,
-                                                                                                        "loss_ratio_continue_last":  0.0,
-                                                                                                        "claim_count_continue_5y":  0.0,
-                                                                                                        "policy_count_continue_5y":  0,
-                                                                                                        "claim_amount_continue_5y":  0.0,
-                                                                                                        "discount_premium_continue_5y":  0.0,
-                                                                                                        "loss_ratio_continue_5y":  0.0,
-                                                                                                        "is_claimed":  "Y"
-                                                                                                    }
-                                                                                                ]
-                                                                              },
-                                                                 "insured":  {
-                                                                                 "aggregate":  [
-                                                                                                   {
-                                                                                                       "claim_count_insured_1y":  0.0,
-                                                                                                       "policy_count_insured_1y":  0,
-                                                                                                       "claim_amount_insured_1y":  0.0,
-                                                                                                       "discount_premium_insured_1y":  0.0,
-                                                                                                       "loss_ratio_insured_1y":  0.0,
-                                                                                                       "claim_count_insured_5y":  0.0,
-                                                                                                       "policy_count_insured_5y":  1,
-                                                                                                       "claim_amount_insured_5y":  0.0,
-                                                                                                       "discount_premium_insured_5y":  6000.0,
-                                                                                                       "loss_ratio_insured_5y":  0.0,
-                                                                                                       "is_claimed":  "Y"
-                                                                                                   }
-                                                                                               ]
-                                                                             }
-                                                             },
-                                          "OVERALL_ASSESSMENT":  "本案延續過往產品責任保險交易脈絡，歷史參考案件以中餐廳為承保對象，營業額3,000萬元，採100%承接、合約再保及12%佣金率。\u003cstrong\u003e本案承保對象、經手人、保費、保額及附加條款均有變動\u003c/strong\u003e，其中保費與責任保額下調，宜確認通路、業務內容及條件調整的承接依據。追溯日改為2025年5月13日並與保險起期相同，應再核對日期設定及責任範圍。",
-                                          "KEY_FACTS":  {
-                                                            "baseline":  [
-                                                                             "過往參考案件為中餐廳產品責任保險，營業額3,000萬元，採100%承接、合約再保及12%佣金率，保費6,000元；主要保額為每一人身體傷害100萬元、每一事故身體傷害1,000萬元、每一事故財物損失200萬元及保險期間累計2,400萬元。",
-                                                                             "歷史參考案件由北區承作，附加條款包含產品責任、食品、食品中毒、訴訟及理賠費用與自負額等責任安排。"
-                                                                         ],
-                                                            "change_trajectory":  [
-                                                                                      "本案承保對象由歷史參考案件的餐廳改為零售商，經手人亦不同，應確認通路、承保對象及其業務內容的承接依據。",
-                                                                                      "本案保費由6,000元降至5,000元，且每一事故身體傷害保額降為400萬元、每一事故財物損失保額降為0元、保險期間累計保額降為1,000萬元；自負額改以2,000元金額明列，應核對保費與承保條件的對應關係。",
-                                                                                      "附加條款組合與歷史參考案件有差異，追溯日由2024年3月19日改為2025年5月13日，且與本案保險起期相同，宜確認責任範圍及日期設定依據。"
-                                                                                  ]
-                                                        },
-                                          "RECOMMENDED_REVIEW_CASES":  [
-                                                                           {
-                                                                               "appllte_no":  "2403000203572165",
-                                                                               "quote_no_version":  "NPD240002242-2",
-                                                                               "policy_no":  "151613PD60256",
-                                                                               "verification":  "確認本案責任保額縮減、每一事故財物損失保額取消及保費調整是否經需求或核保條件支持，並核對追溯日與保險起期設定。",
-                                                                               "fields_to_review":  "對照本案保費、每一事故身體傷害保額、每一事故財物損失保額、保險期間累計保額及附加條款組合，並查看前次核保留言與自負額記載方式。"
-                                                                           }
-                                                                       ],
-                                          "ATTENTION_TAGS":  [
-                                                                 "通路",
-                                                                 "附加條款",
-                                                                 "承保對象",
-                                                                 "費率水準",
-                                                                 "追溯日"
-                                                             ],
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
                                           "overall_decision":  null,
                                           "correctness":  null,
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
                                           "reason":  null,
-                                          "latency_ms":  20975
+                                          "latency_ms":  107
+                                      },
+                                      {
+                                          "name":  "報告",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  6366,
+                                                         "output":  693,
+                                                         "total":  7059
+                                                     },
+                                          "INPUT_TOKENS":  6366,
+                                          "OUTPUT_TOKENS":  693,
+                                          "TOTAL_TOKENS":  7059,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null,
+                                          "CASE_RISK":  "中風險",
+                                          "CASE_RATE":  "審慎評估",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "score":  6.0,
+                                          "final_summary":  "店面照片判定為攤販，但保額評估記載為中餐廳並提供現場用餐、包廂及宴客服務，營運型態與供餐範圍存在落差，需確認。若實際包含宴席、年菜及春酒尾牙等重複供餐，同時段或同批食材可能造成群聚食物中毒，AOA及AGG年度累積承接壓力均為中等。另已加貼NPD005但涉及再保合約除外，並建議加貼NPD003A、NPD003B。請確認實際營運型態、供餐場景及上述條款與再保安排。",
+                                          "latency_ms":  7933
                                       }
                                   ]
                   },
@@ -4665,6 +4789,109 @@ window.validationReviewData = {
                                           "latency_ms":  16046
                                       },
                                       {
+                                          "name":  "歷史",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  51608,
+                                                         "output":  1978,
+                                                         "total":  53586
+                                                     },
+                                          "SCORE":  10.0,
+                                          "INPUT_TOKENS":  51608,
+                                          "OUTPUT_TOKENS":  1978,
+                                          "TOTAL_TOKENS":  53586,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null,
+                                          "LOSS_PATTERN":  "近五年無理賠紀錄。",
+                                          "CLAIM_SUMMARY":  "近五年無理賠紀錄。",
+                                          "HISTORY_RESULT":  {
+                                                                 "continue":  {
+                                                                                  "aggregate":  [
+                                                                                                    {
+                                                                                                        "claim_count_continue_last":  0.0,
+                                                                                                        "policy_count_continue_last":  0,
+                                                                                                        "claim_amount_continue_last":  0.0,
+                                                                                                        "discount_premium_continue_last":  0.0,
+                                                                                                        "loss_ratio_continue_last":  0.0,
+                                                                                                        "claim_count_continue_5y":  0.0,
+                                                                                                        "policy_count_continue_5y":  0,
+                                                                                                        "claim_amount_continue_5y":  0.0,
+                                                                                                        "discount_premium_continue_5y":  0.0,
+                                                                                                        "loss_ratio_continue_5y":  0.0,
+                                                                                                        "is_claimed":  "Y"
+                                                                                                    }
+                                                                                                ]
+                                                                              },
+                                                                 "insured":  {
+                                                                                 "aggregate":  [
+                                                                                                   {
+                                                                                                       "claim_count_insured_1y":  0.0,
+                                                                                                       "policy_count_insured_1y":  0,
+                                                                                                       "claim_amount_insured_1y":  0.0,
+                                                                                                       "discount_premium_insured_1y":  0.0,
+                                                                                                       "loss_ratio_insured_1y":  0.0,
+                                                                                                       "claim_count_insured_5y":  0.0,
+                                                                                                       "policy_count_insured_5y":  0,
+                                                                                                       "claim_amount_insured_5y":  0.0,
+                                                                                                       "discount_premium_insured_5y":  0.0,
+                                                                                                       "loss_ratio_insured_5y":  0.0,
+                                                                                                       "is_claimed":  "Y"
+                                                                                                   }
+                                                                                               ]
+                                                                             }
+                                                             },
+                                          "OVERALL_ASSESSMENT":  "歷年案件以食品及餐飲產品責任承保為主，常見承保規模為每一人100萬元、每一事故400萬元、累計1,000萬元，保費約2,500至3,500元並搭配2,000元自負額，另有少數較高保障案件。\u003cstrong\u003e本案營業額、保障額度、保費及自負額均較常見案件上移\u003c/strong\u003e，其中保障額度達類似案件分布上緣，與過往少數高額承保案件較接近。核保宜優先確認鐵板燒料理的實際產品範圍、零售商承保角色、附加條款適用性，以及以同業報價為依據設定4,500元保費的條件。",
+                                          "KEY_FACTS":  {
+                                                            "baseline":  [
+                                                                             "歷年已出單案件集中於食品、餐飲及相關產品責任承保，主要承保對象類型為製造商與零售商；保費多落在2,500至3,500元，自負額多為2,000元，常見保障結構為每一人身體傷害保額100萬元、每一事故身體傷害保額400萬元及保險期間累計保額1,000萬元。",
+                                                                             "歷史上已有少數較高承保規模案件，保障提高至每一人200萬元、每一事故800萬元及累計2,000萬元，保費約5,000元；部分案件另以自負額備註記載2,000元。",
+                                                                             "歷史報價案件審核結果均為通過，報價需求多為食品或餐飲業務，附加條款組合依案件內容有所差異。"
+                                                                         ],
+                                                            "change_trajectory":  [
+                                                                                      "本案營業額為1,000萬元，高於過往最常見的500萬元，位於類似案件分布的中高段，仍低於該群體最高2,000萬元，建議確認營業額與實際承保範圍的一致性。",
+                                                                                      "本案每一人身體傷害保額1,000萬元、每一事故身體傷害保額1,000萬元及累計保額2,000萬元，整體保障量級高於過往常見結構，並接近類似案件分布上緣；每一事故財物損失保額為0元，與多數案件相同。",
+                                                                                      "本案保費4,500元及自負額2,500元均高於過往常見值，且承保標的為鐵板燒料理、承保對象類型為零售商；目前特別約定事項未填列，附加條款則較歷史已出單明細豐富，建議核對條件組合與同業報價調整依據。"
+                                                                                  ]
+                                                        },
+                                          "RECOMMENDED_REVIEW_CASES":  [
+                                                                           {
+                                                                               "appllte_no":  "2505000312857783",
+                                                                               "quote_no_version":  "",
+                                                                               "policy_no":  "151614PD51287",
+                                                                               "verification":  "建議確認本案4,500元保費及2,500元自負額，是否可依循此類高額保障案件的承保條件調整。",
+                                                                               "fields_to_review":  "比較每一人身體傷害保額、每一事故身體傷害保額及保險期間累計保額的高額承保結構，並查看5,000元保費、2,000元自負額備註、食品類承接標的與零售商承保對象類型。"
+                                                                           },
+                                                                           {
+                                                                               "appllte_no":  "2504000253013229",
+                                                                               "quote_no_version":  "",
+                                                                               "policy_no":  "151614PD02606",
+                                                                               "verification":  "建議確認本案自負額提高至2,500元的適用依據，以及鐵板燒料理與該案件承接標的在條件設定上的可比性。",
+                                                                               "fields_to_review":  "查看2,500元自負額、4,000元保費與每一人100萬元／每一事故400萬元／累計1,000萬元保障的搭配，並核對承接標的、營業額及承保對象類型的差異。"
+                                                                           },
+                                                                           {
+                                                                               "appllte_no":  "2504000303849143",
+                                                                               "quote_no_version":  "NPD250008956-1",
+                                                                               "policy_no":  "",
+                                                                               "verification":  "建議確認本案營業額相同但保障與保費均提高的必要性，並核對報價需求說明及附加條款是否支持該差異。",
+                                                                               "fields_to_review":  "查看營業額1,000萬元下採每一人100萬元、每一事故400萬元及累計1,000萬元保障的設定，並比對3,500元保費、2,000元自負額、製造商承保對象類型及附加條款內容。"
+                                                                           }
+                                                                       ],
+                                          "ATTENTION_TAGS":  [
+
+                                                             ],
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  15682
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
@@ -4895,107 +5122,66 @@ window.validationReviewData = {
                                                         ]
                                       },
                                       {
-                                          "name":  "歷史",
-                                          "version":  "小量v2",
-                                          "deliveryDate":  "2026-07-29",
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
                                           "tokens":  {
-                                                         "input":  51608,
-                                                         "output":  1978,
-                                                         "total":  53586
+                                                         "input":  2962,
+                                                         "output":  322,
+                                                         "total":  3284
                                                      },
-                                          "SCORE":  10.0,
-                                          "INPUT_TOKENS":  51608,
-                                          "OUTPUT_TOKENS":  1978,
-                                          "TOTAL_TOKENS":  53586,
-                                          "NO_RISK":  true,
-                                          "IS_BLOCK":  false,
+                                          "SCORE":  9.0,
                                           "IS_MASK":  false,
-                                          "BLOCK_RAIL":  null,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
                                           "MASK_RAIL":  null,
-                                          "LOSS_PATTERN":  "近五年無理賠紀錄。",
-                                          "CLAIM_SUMMARY":  "近五年無理賠紀錄。",
-                                          "HISTORY_RESULT":  {
-                                                                 "continue":  {
-                                                                                  "aggregate":  [
-                                                                                                    {
-                                                                                                        "claim_count_continue_last":  0.0,
-                                                                                                        "policy_count_continue_last":  0,
-                                                                                                        "claim_amount_continue_last":  0.0,
-                                                                                                        "discount_premium_continue_last":  0.0,
-                                                                                                        "loss_ratio_continue_last":  0.0,
-                                                                                                        "claim_count_continue_5y":  0.0,
-                                                                                                        "policy_count_continue_5y":  0,
-                                                                                                        "claim_amount_continue_5y":  0.0,
-                                                                                                        "discount_premium_continue_5y":  0.0,
-                                                                                                        "loss_ratio_continue_5y":  0.0,
-                                                                                                        "is_claimed":  "Y"
-                                                                                                    }
-                                                                                                ]
-                                                                              },
-                                                                 "insured":  {
-                                                                                 "aggregate":  [
-                                                                                                   {
-                                                                                                       "claim_count_insured_1y":  0.0,
-                                                                                                       "policy_count_insured_1y":  0,
-                                                                                                       "claim_amount_insured_1y":  0.0,
-                                                                                                       "discount_premium_insured_1y":  0.0,
-                                                                                                       "loss_ratio_insured_1y":  0.0,
-                                                                                                       "claim_count_insured_5y":  0.0,
-                                                                                                       "policy_count_insured_5y":  0,
-                                                                                                       "claim_amount_insured_5y":  0.0,
-                                                                                                       "discount_premium_insured_5y":  0.0,
-                                                                                                       "loss_ratio_insured_5y":  0.0,
-                                                                                                       "is_claimed":  "Y"
-                                                                                                   }
-                                                                                               ]
-                                                                             }
-                                                             },
-                                          "OVERALL_ASSESSMENT":  "歷年案件以食品及餐飲產品責任承保為主，常見承保規模為每一人100萬元、每一事故400萬元、累計1,000萬元，保費約2,500至3,500元並搭配2,000元自負額，另有少數較高保障案件。\u003cstrong\u003e本案營業額、保障額度、保費及自負額均較常見案件上移\u003c/strong\u003e，其中保障額度達類似案件分布上緣，與過往少數高額承保案件較接近。核保宜優先確認鐵板燒料理的實際產品範圍、零售商承保角色、附加條款適用性，以及以同業報價為依據設定4,500元保費的條件。",
-                                          "KEY_FACTS":  {
-                                                            "baseline":  [
-                                                                             "歷年已出單案件集中於食品、餐飲及相關產品責任承保，主要承保對象類型為製造商與零售商；保費多落在2,500至3,500元，自負額多為2,000元，常見保障結構為每一人身體傷害保額100萬元、每一事故身體傷害保額400萬元及保險期間累計保額1,000萬元。",
-                                                                             "歷史上已有少數較高承保規模案件，保障提高至每一人200萬元、每一事故800萬元及累計2,000萬元，保費約5,000元；部分案件另以自負額備註記載2,000元。",
-                                                                             "歷史報價案件審核結果均為通過，報價需求多為食品或餐飲業務，附加條款組合依案件內容有所差異。"
-                                                                         ],
-                                                            "change_trajectory":  [
-                                                                                      "本案營業額為1,000萬元，高於過往最常見的500萬元，位於類似案件分布的中高段，仍低於該群體最高2,000萬元，建議確認營業額與實際承保範圍的一致性。",
-                                                                                      "本案每一人身體傷害保額1,000萬元、每一事故身體傷害保額1,000萬元及累計保額2,000萬元，整體保障量級高於過往常見結構，並接近類似案件分布上緣；每一事故財物損失保額為0元，與多數案件相同。",
-                                                                                      "本案保費4,500元及自負額2,500元均高於過往常見值，且承保標的為鐵板燒料理、承保對象類型為零售商；目前特別約定事項未填列，附加條款則較歷史已出單明細豐富，建議核對條件組合與同業報價調整依據。"
-                                                                                  ]
-                                                        },
-                                          "RECOMMENDED_REVIEW_CASES":  [
-                                                                           {
-                                                                               "appllte_no":  "2505000312857783",
-                                                                               "quote_no_version":  "",
-                                                                               "policy_no":  "151614PD51287",
-                                                                               "verification":  "建議確認本案4,500元保費及2,500元自負額，是否可依循此類高額保障案件的承保條件調整。",
-                                                                               "fields_to_review":  "比較每一人身體傷害保額、每一事故身體傷害保額及保險期間累計保額的高額承保結構，並查看5,000元保費、2,000元自負額備註、食品類承接標的與零售商承保對象類型。"
-                                                                           },
-                                                                           {
-                                                                               "appllte_no":  "2504000253013229",
-                                                                               "quote_no_version":  "",
-                                                                               "policy_no":  "151614PD02606",
-                                                                               "verification":  "建議確認本案自負額提高至2,500元的適用依據，以及鐵板燒料理與該案件承接標的在條件設定上的可比性。",
-                                                                               "fields_to_review":  "查看2,500元自負額、4,000元保費與每一人100萬元／每一事故400萬元／累計1,000萬元保障的搭配，並核對承接標的、營業額及承保對象類型的差異。"
-                                                                           },
-                                                                           {
-                                                                               "appllte_no":  "2504000303849143",
-                                                                               "quote_no_version":  "NPD250008956-1",
-                                                                               "policy_no":  "",
-                                                                               "verification":  "建議確認本案營業額相同但保障與保費均提高的必要性，並核對報價需求說明及附加條款是否支持該差異。",
-                                                                               "fields_to_review":  "查看營業額1,000萬元下採每一人100萬元、每一事故400萬元及累計1,000萬元保障的設定，並比對3,500元保費、2,000元自負額、製造商承保對象類型及附加條款內容。"
-                                                                           }
-                                                                       ],
-                                          "ATTENTION_TAGS":  [
-
-                                                             ],
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  2962,
+                                          "TOTAL_TOKENS":  3284,
+                                          "OUTPUT_TOKENS":  322,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，累計已知裁罰金額為1,379元，內容為雇主未按時繳納勞工退休金致加徵滯納金。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞工退休金繳納行政事項，與產品責任保險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
                                           "overall_decision":  null,
                                           "correctness":  null,
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
                                           "reason":  null,
-                                          "latency_ms":  15682
+                                          "latency_ms":  4000
+                                      },
+                                      {
+                                          "name":  "報告",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  6363,
+                                                         "output":  674,
+                                                         "total":  7037
+                                                     },
+                                          "INPUT_TOKENS":  6363,
+                                          "OUTPUT_TOKENS":  674,
+                                          "TOTAL_TOKENS":  7037,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null,
+                                          "CASE_RISK":  "中風險",
+                                          "CASE_RATE":  "審慎評估",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "score":  5.5,
+                                          "final_summary":  "本案產品與營運型態存在落差：產品資料為糕點及果乾，AOA評估卻以鐵板燒餐廳為基礎，店面照片並判定為攤販，需確認實際承保標的及營業型態。若以鐵板燒現場料理及共同食材評估，同時段事故可能形成群聚求償，AOA承接壓力中等，AGG年度累積承接壓力較低。請確認實際產品、店面型態及事故情境；建議加貼NPD003A、NPD003B，並確認已加貼NPD005涉及再保合約除外。",
+                                          "latency_ms":  6816
                                       }
                                   ]
                   },
@@ -6343,6 +6529,102 @@ window.validationReviewData = {
                                           "latency_ms":  14886
                                       },
                                       {
+                                          "name":  "歷史",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  39798,
+                                                         "output":  3105,
+                                                         "total":  42903
+                                                     },
+                                          "SCORE":  10.0,
+                                          "INPUT_TOKENS":  39798,
+                                          "OUTPUT_TOKENS":  3105,
+                                          "TOTAL_TOKENS":  42903,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null,
+                                          "LOSS_PATTERN":  "近五年無理賠紀錄。",
+                                          "CLAIM_SUMMARY":  "近五年無理賠紀錄。",
+                                          "HISTORY_RESULT":  {
+                                                                 "continue":  {
+                                                                                  "aggregate":  [
+                                                                                                    {
+                                                                                                        "claim_count_continue_last":  0.0,
+                                                                                                        "policy_count_continue_last":  0,
+                                                                                                        "claim_amount_continue_last":  0.0,
+                                                                                                        "discount_premium_continue_last":  0.0,
+                                                                                                        "loss_ratio_continue_last":  0.0,
+                                                                                                        "claim_count_continue_5y":  0.0,
+                                                                                                        "policy_count_continue_5y":  0,
+                                                                                                        "claim_amount_continue_5y":  0.0,
+                                                                                                        "discount_premium_continue_5y":  0.0,
+                                                                                                        "loss_ratio_continue_5y":  0.0,
+                                                                                                        "is_claimed":  "Y"
+                                                                                                    }
+                                                                                                ]
+                                                                              },
+                                                                 "insured":  {
+                                                                                 "aggregate":  [
+                                                                                                   {
+                                                                                                       "claim_count_insured_1y":  0.0,
+                                                                                                       "policy_count_insured_1y":  0,
+                                                                                                       "claim_amount_insured_1y":  0.0,
+                                                                                                       "discount_premium_insured_1y":  0.0,
+                                                                                                       "loss_ratio_insured_1y":  0.0,
+                                                                                                       "claim_count_insured_5y":  0.0,
+                                                                                                       "policy_count_insured_5y":  0,
+                                                                                                       "claim_amount_insured_5y":  0.0,
+                                                                                                       "discount_premium_insured_5y":  0.0,
+                                                                                                       "loss_ratio_insured_5y":  0.0,
+                                                                                                       "is_claimed":  "Y"
+                                                                                                   }
+                                                                                               ]
+                                                                             }
+                                                             },
+                                          "OVERALL_ASSESSMENT":  "歷史報價主要沿續北區、F112、經銷商及合約全額承接的處理脈絡，保費曾由9,000元提高至10,000元及15,000元。本案保費10,000元位於歷史報價範圍內，但\u003cstrong\u003e營業額與保額組合較過往案件明顯提高\u003c/strong\u003e，應確認申報資料、產品範圍及條件承接依據。另與一筆15,000元比對案件的被保險人名稱不同，應確認承保對象關係及報價差異的核保依據。",
+                                          "KEY_FACTS":  {
+                                                            "baseline":  [
+                                                                             "歷史報價於2024年曾以保費9,000元承作，2025年同一延續脈絡多次以保費10,000元處理，另有15,000元報價版本；承保對象類型為經銷商，案件多集中於北區、產品代號F112，並延續合約及全額承接的處理脈絡。",
+                                                                             "過往29件案件的營業額中位數為200萬元、保費中位數為4,000元，常見條件包括自負額2,000元、每一人身體傷害保額100萬元、每一事故身體傷害保額400萬元、每一事故財物損失保額0元及保險期間累計保額1,000萬元，承保對象類型以零售商及製造商較多。"
+                                                                         ],
+                                                            "change_trajectory":  [
+                                                                                      "本案營業額5,000萬元，高於過往案件最大值2,500萬元；每一人及每一事故身體傷害保額均為1,000萬元，每一事故財物損失保額亦為1,000萬元，均較過往常見條件提高，其中財物損失保額高於過往最大值200萬元，應確認申報營業額、產品範圍及保額設定的對應依據。",
+                                                                                      "本案保費10,000元，高於過往案件中位數4,000元且位於歷史報價範圍內；相較一筆保費15,000元的案件有所差異，應核對本次保額、營業額、自負額與保費之間的承接依據。",
+                                                                                      "與比對案件的被保險人名稱不同，應確認本案與該案件的承保對象關係及歷史條件是否具可比性。"
+                                                                                  ]
+                                                        },
+                                          "RECOMMENDED_REVIEW_CASES":  [
+                                                                           {
+                                                                               "appllte_no":  "2505000343406068",
+                                                                               "quote_no_version":  "NPD250007093-4",
+                                                                               "policy_no":  "",
+                                                                               "verification":  "建議確認本案是否沿用該次報價條件，以及前次保費15,000元版本調整至10,000元的核定依據。",
+                                                                               "fields_to_review":  "與本案同為保健食品、經銷商、營業額5,000萬元及保費10,000元，且保額、自負額金額及附加條款結構高度接近；開啟案件後優先查看報價需求說明、產品明細附件及保期修改內容。"
+                                                                           },
+                                                                           {
+                                                                               "appllte_no":  "2502000095257726",
+                                                                               "quote_no_version":  "",
+                                                                               "policy_no":  "151614PD02322",
+                                                                               "verification":  "建議確認本案在營業額更高且每一事故財物損失保額擴大至1,000萬元時，保費10,000元及自負額金額2,500元的適用依據。",
+                                                                               "fields_to_review":  "該案營業額2,000萬元、保費9,000元，並採較高的每一人及每一事故身體傷害保額，但每一事故財物損失保額為200萬元、保險期間累計保額3,400萬元；優先比較保額配置、自負額金額及承保對象類型。"
+                                                                           }
+                                                                       ],
+                                          "ATTENTION_TAGS":  [
+                                                                 "承保對象",
+                                                                 "費率水準"
+                                                             ],
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  23424
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
@@ -6601,100 +6883,66 @@ window.validationReviewData = {
                                                         ]
                                       },
                                       {
-                                          "name":  "歷史",
-                                          "version":  "小量v2",
-                                          "deliveryDate":  "2026-07-29",
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
                                           "tokens":  {
-                                                         "input":  39798,
-                                                         "output":  3105,
-                                                         "total":  42903
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
                                                      },
                                           "SCORE":  10.0,
-                                          "INPUT_TOKENS":  39798,
-                                          "OUTPUT_TOKENS":  3105,
-                                          "TOTAL_TOKENS":  42903,
+                                          "IS_MASK":  false,
                                           "NO_RISK":  true,
                                           "IS_BLOCK":  false,
-                                          "IS_MASK":  false,
-                                          "BLOCK_RAIL":  null,
+                                          "SP_SCORE":  10.0,
                                           "MASK_RAIL":  null,
-                                          "LOSS_PATTERN":  "近五年無理賠紀錄。",
-                                          "CLAIM_SUMMARY":  "近五年無理賠紀錄。",
-                                          "HISTORY_RESULT":  {
-                                                                 "continue":  {
-                                                                                  "aggregate":  [
-                                                                                                    {
-                                                                                                        "claim_count_continue_last":  0.0,
-                                                                                                        "policy_count_continue_last":  0,
-                                                                                                        "claim_amount_continue_last":  0.0,
-                                                                                                        "discount_premium_continue_last":  0.0,
-                                                                                                        "loss_ratio_continue_last":  0.0,
-                                                                                                        "claim_count_continue_5y":  0.0,
-                                                                                                        "policy_count_continue_5y":  0,
-                                                                                                        "claim_amount_continue_5y":  0.0,
-                                                                                                        "discount_premium_continue_5y":  0.0,
-                                                                                                        "loss_ratio_continue_5y":  0.0,
-                                                                                                        "is_claimed":  "Y"
-                                                                                                    }
-                                                                                                ]
-                                                                              },
-                                                                 "insured":  {
-                                                                                 "aggregate":  [
-                                                                                                   {
-                                                                                                       "claim_count_insured_1y":  0.0,
-                                                                                                       "policy_count_insured_1y":  0,
-                                                                                                       "claim_amount_insured_1y":  0.0,
-                                                                                                       "discount_premium_insured_1y":  0.0,
-                                                                                                       "loss_ratio_insured_1y":  0.0,
-                                                                                                       "claim_count_insured_5y":  0.0,
-                                                                                                       "policy_count_insured_5y":  0,
-                                                                                                       "claim_amount_insured_5y":  0.0,
-                                                                                                       "discount_premium_insured_5y":  0.0,
-                                                                                                       "loss_ratio_insured_5y":  0.0,
-                                                                                                       "is_claimed":  "Y"
-                                                                                                   }
-                                                                                               ]
-                                                                             }
-                                                             },
-                                          "OVERALL_ASSESSMENT":  "歷史報價主要沿續北區、F112、經銷商及合約全額承接的處理脈絡，保費曾由9,000元提高至10,000元及15,000元。本案保費10,000元位於歷史報價範圍內，但\u003cstrong\u003e營業額與保額組合較過往案件明顯提高\u003c/strong\u003e，應確認申報資料、產品範圍及條件承接依據。另與一筆15,000元比對案件的被保險人名稱不同，應確認承保對象關係及報價差異的核保依據。",
-                                          "KEY_FACTS":  {
-                                                            "baseline":  [
-                                                                             "歷史報價於2024年曾以保費9,000元承作，2025年同一延續脈絡多次以保費10,000元處理，另有15,000元報價版本；承保對象類型為經銷商，案件多集中於北區、產品代號F112，並延續合約及全額承接的處理脈絡。",
-                                                                             "過往29件案件的營業額中位數為200萬元、保費中位數為4,000元，常見條件包括自負額2,000元、每一人身體傷害保額100萬元、每一事故身體傷害保額400萬元、每一事故財物損失保額0元及保險期間累計保額1,000萬元，承保對象類型以零售商及製造商較多。"
-                                                                         ],
-                                                            "change_trajectory":  [
-                                                                                      "本案營業額5,000萬元，高於過往案件最大值2,500萬元；每一人及每一事故身體傷害保額均為1,000萬元，每一事故財物損失保額亦為1,000萬元，均較過往常見條件提高，其中財物損失保額高於過往最大值200萬元，應確認申報營業額、產品範圍及保額設定的對應依據。",
-                                                                                      "本案保費10,000元，高於過往案件中位數4,000元且位於歷史報價範圍內；相較一筆保費15,000元的案件有所差異，應核對本次保額、營業額、自負額與保費之間的承接依據。",
-                                                                                      "與比對案件的被保險人名稱不同，應確認本案與該案件的承保對象關係及歷史條件是否具可比性。"
-                                                                                  ]
-                                                        },
-                                          "RECOMMENDED_REVIEW_CASES":  [
-                                                                           {
-                                                                               "appllte_no":  "2505000343406068",
-                                                                               "quote_no_version":  "NPD250007093-4",
-                                                                               "policy_no":  "",
-                                                                               "verification":  "建議確認本案是否沿用該次報價條件，以及前次保費15,000元版本調整至10,000元的核定依據。",
-                                                                               "fields_to_review":  "與本案同為保健食品、經銷商、營業額5,000萬元及保費10,000元，且保額、自負額金額及附加條款結構高度接近；開啟案件後優先查看報價需求說明、產品明細附件及保期修改內容。"
-                                                                           },
-                                                                           {
-                                                                               "appllte_no":  "2502000095257726",
-                                                                               "quote_no_version":  "",
-                                                                               "policy_no":  "151614PD02322",
-                                                                               "verification":  "建議確認本案在營業額更高且每一事故財物損失保額擴大至1,000萬元時，保費10,000元及自負額金額2,500元的適用依據。",
-                                                                               "fields_to_review":  "該案營業額2,000萬元、保費9,000元，並採較高的每一人及每一事故身體傷害保額，但每一事故財物損失保額為200萬元、保險期間累計保額3,400萬元；優先比較保額配置、自負額金額及承保對象類型。"
-                                                                           }
-                                                                       ],
-                                          "ATTENTION_TAGS":  [
-                                                                 "承保對象",
-                                                                 "費率水準"
-                                                             ],
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
                                           "overall_decision":  null,
                                           "correctness":  null,
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
                                           "reason":  null,
-                                          "latency_ms":  23424
+                                          "latency_ms":  88
+                                      },
+                                      {
+                                          "name":  "報告",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  6560,
+                                                         "output":  1641,
+                                                         "total":  8201
+                                                     },
+                                          "INPUT_TOKENS":  6560,
+                                          "OUTPUT_TOKENS":  1641,
+                                          "TOTAL_TOKENS":  8201,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null,
+                                          "CASE_RISK":  "中風險",
+                                          "CASE_RATE":  "審慎評估",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "score":  5.0,
+                                          "final_summary":  "本案存在標的落差：產品資料為糕餅果乾，流程及保額評估卻以健康食品經藥局通路供應為前提，需確認實際產品與通路。若為健康食品，批次供應可能造成多人求償，AOA及AGG年度累積承接壓力均中高；有健字號時屬再保合約除外，請洽總公司評估自留或臨分再保。建議加貼NPD015、NPD003A、NPD003B，已加貼NPD005涉及再保合約除外。",
+                                          "latency_ms":  13861
                                       }
                                   ]
                   },
@@ -8036,6 +8284,109 @@ window.validationReviewData = {
                                           "latency_ms":  65715
                                       },
                                       {
+                                          "name":  "歷史",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  27833,
+                                                         "output":  1472,
+                                                         "total":  29305
+                                                     },
+                                          "SCORE":  10.0,
+                                          "INPUT_TOKENS":  27833,
+                                          "OUTPUT_TOKENS":  1472,
+                                          "TOTAL_TOKENS":  29305,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null,
+                                          "LOSS_PATTERN":  "近五年無理賠紀錄。",
+                                          "CLAIM_SUMMARY":  "近五年無理賠紀錄。",
+                                          "HISTORY_RESULT":  {
+                                                                 "continue":  {
+                                                                                  "aggregate":  [
+                                                                                                    {
+                                                                                                        "claim_count_continue_last":  0.0,
+                                                                                                        "policy_count_continue_last":  0,
+                                                                                                        "claim_amount_continue_last":  0.0,
+                                                                                                        "discount_premium_continue_last":  0.0,
+                                                                                                        "loss_ratio_continue_last":  0.0,
+                                                                                                        "claim_count_continue_5y":  0.0,
+                                                                                                        "policy_count_continue_5y":  0,
+                                                                                                        "claim_amount_continue_5y":  0.0,
+                                                                                                        "discount_premium_continue_5y":  0.0,
+                                                                                                        "loss_ratio_continue_5y":  0.0,
+                                                                                                        "is_claimed":  "Y"
+                                                                                                    }
+                                                                                                ]
+                                                                              },
+                                                                 "insured":  {
+                                                                                 "aggregate":  [
+                                                                                                   {
+                                                                                                       "claim_count_insured_1y":  0.0,
+                                                                                                       "policy_count_insured_1y":  0,
+                                                                                                       "claim_amount_insured_1y":  0.0,
+                                                                                                       "discount_premium_insured_1y":  0.0,
+                                                                                                       "loss_ratio_insured_1y":  0.0,
+                                                                                                       "claim_count_insured_5y":  0.0,
+                                                                                                       "policy_count_insured_5y":  0,
+                                                                                                       "claim_amount_insured_5y":  0.0,
+                                                                                                       "discount_premium_insured_5y":  0.0,
+                                                                                                       "loss_ratio_insured_5y":  0.0,
+                                                                                                       "is_claimed":  "Y"
+                                                                                                   }
+                                                                                               ]
+                                                                             }
+                                                             },
+                                          "OVERALL_ASSESSMENT":  "過往相似案件以南區食品及餐飲業務為主，承保規模多為中小額度、保費約3,500元且自負額多為2,000元。本案營業額2,000萬元、標的涵蓋食品生產販售全品項，並採\u003cstrong\u003e2億元累計保額及各項2,000萬元保額\u003c/strong\u003e，相較既有案件位於明顯高位。保費15,000元亦高於過往分布上緣，核保宜優先確認實際營運型態、額度需求、附加條款及報價條件間的對應關係。",
+                                          "KEY_FACTS":  {
+                                                            "baseline":  [
+                                                                             "既有相似案件共39件，包含30件保單與9件報價；承作型態以食品相關製造商為主，零售商次之，保費常見值為3,500元，自負額金額多為2,000元。",
+                                                                             "過往案件的承保規模多落在每一人身體傷害保額100萬元、每一事故身體傷害保額400萬元、每一事故財物損失保額0元及保險期間累計保額1,000萬元，部分較高案件延伸至每一事故身體傷害保額1,200萬元及累計保額3,000萬元。",
+                                                                             "營業額常見值為500萬元，中位數為500萬元；既有案件多採食品或餐飲品項描述，承保對象以製造商或零售商為主，並有少數兼具製造、經銷及零售型態的案件。"
+                                                                         ],
+                                                            "change_trajectory":  [
+                                                                                      "本案營業額2,000萬元，高於過往常見值及中位數，接近群體分布上緣；承保標的涵蓋食品生產販售全品項，承保對象為零售商，與多數製造商案件的型態不同，建議確認實際營運及銷售範圍。",
+                                                                                      "本案每一人、每一事故身體傷害及每一事故財物損失保額均為2,000萬元，保險期間累計保額為2億元，均高於既有案件最大值，屬承保規模的明顯變動，需確認額度設定依據及適用範圍。",
+                                                                                      "本案保費15,000元，高於既有案件2,000至8,000元的分布；自負額金額2,000元接近常見值，另附加條款組合較完整，建議回看保費與承保條件是否相互配合。"
+                                                                                  ]
+                                                        },
+                                          "RECOMMENDED_REVIEW_CASES":  [
+                                                                           {
+                                                                               "appllte_no":  "2501000053465821",
+                                                                               "quote_no_version":  "NPD250001249-1",
+                                                                               "policy_no":  "",
+                                                                               "verification":  "建議確認同等營業額及零售商型態下，本案提高至各項2,000萬元及累計2億元的額度是否有具體業務需求及核定依據。",
+                                                                               "fields_to_review":  "營業額2,000萬元與本案相同，承保對象同為零售商；請優先查看簡餐、飲品的承保標的描述、每一人及每一事故保額、累計保額、附加條款與保費設定，並比較本案全品項食品範圍的差異。"
+                                                                           },
+                                                                           {
+                                                                               "appllte_no":  "2501000029993167",
+                                                                               "quote_no_version":  "NPD250000559-1",
+                                                                               "policy_no":  "",
+                                                                               "verification":  "建議確認高營業額零售商案件的額度與保費調整邏輯，是否足以支持本案的承保規模設定。",
+                                                                               "fields_to_review":  "此案營業額3,000萬元且為零售商，屬高營業額參考；請查看餐飲食品的承保範圍、每一人及每一事故保額、累計保額、保費與附加條款內容，作為本案高額度與高保費的比較基準。"
+                                                                           },
+                                                                           {
+                                                                               "appllte_no":  "2501000053326861",
+                                                                               "quote_no_version":  "",
+                                                                               "policy_no":  "150314PD01446",
+                                                                               "verification":  "建議確認本案由製造及批發型態轉為零售商全品項食品後，營運角色與承保責任範圍是否已有充分文件支持。",
+                                                                               "fields_to_review":  "既有保單營業額1,200萬元、承保對象為製造商及批發商，保費5,000元且累計保額2,000萬元；請優先查看食品麵食及早餐類的標的範圍、承保對象、額度、自負額與保費條件。"
+                                                                           }
+                                                                       ],
+                                          "ATTENTION_TAGS":  [
+
+                                                             ],
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  10425
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
@@ -8211,107 +8562,66 @@ window.validationReviewData = {
                                                         ]
                                       },
                                       {
-                                          "name":  "歷史",
-                                          "version":  "小量v2",
-                                          "deliveryDate":  "2026-07-29",
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
                                           "tokens":  {
-                                                         "input":  27833,
-                                                         "output":  1472,
-                                                         "total":  29305
+                                                         "input":  3049,
+                                                         "output":  407,
+                                                         "total":  3456
                                                      },
-                                          "SCORE":  10.0,
-                                          "INPUT_TOKENS":  27833,
-                                          "OUTPUT_TOKENS":  1472,
-                                          "TOTAL_TOKENS":  29305,
-                                          "NO_RISK":  true,
-                                          "IS_BLOCK":  false,
+                                          "SCORE":  9.0,
                                           "IS_MASK":  false,
-                                          "BLOCK_RAIL":  null,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
                                           "MASK_RAIL":  null,
-                                          "LOSS_PATTERN":  "近五年無理賠紀錄。",
-                                          "CLAIM_SUMMARY":  "近五年無理賠紀錄。",
-                                          "HISTORY_RESULT":  {
-                                                                 "continue":  {
-                                                                                  "aggregate":  [
-                                                                                                    {
-                                                                                                        "claim_count_continue_last":  0.0,
-                                                                                                        "policy_count_continue_last":  0,
-                                                                                                        "claim_amount_continue_last":  0.0,
-                                                                                                        "discount_premium_continue_last":  0.0,
-                                                                                                        "loss_ratio_continue_last":  0.0,
-                                                                                                        "claim_count_continue_5y":  0.0,
-                                                                                                        "policy_count_continue_5y":  0,
-                                                                                                        "claim_amount_continue_5y":  0.0,
-                                                                                                        "discount_premium_continue_5y":  0.0,
-                                                                                                        "loss_ratio_continue_5y":  0.0,
-                                                                                                        "is_claimed":  "Y"
-                                                                                                    }
-                                                                                                ]
-                                                                              },
-                                                                 "insured":  {
-                                                                                 "aggregate":  [
-                                                                                                   {
-                                                                                                       "claim_count_insured_1y":  0.0,
-                                                                                                       "policy_count_insured_1y":  0,
-                                                                                                       "claim_amount_insured_1y":  0.0,
-                                                                                                       "discount_premium_insured_1y":  0.0,
-                                                                                                       "loss_ratio_insured_1y":  0.0,
-                                                                                                       "claim_count_insured_5y":  0.0,
-                                                                                                       "policy_count_insured_5y":  0,
-                                                                                                       "claim_amount_insured_5y":  0.0,
-                                                                                                       "discount_premium_insured_5y":  0.0,
-                                                                                                       "loss_ratio_insured_5y":  0.0,
-                                                                                                       "is_claimed":  "Y"
-                                                                                                   }
-                                                                                               ]
-                                                                             }
-                                                             },
-                                          "OVERALL_ASSESSMENT":  "過往相似案件以南區食品及餐飲業務為主，承保規模多為中小額度、保費約3,500元且自負額多為2,000元。本案營業額2,000萬元、標的涵蓋食品生產販售全品項，並採\u003cstrong\u003e2億元累計保額及各項2,000萬元保額\u003c/strong\u003e，相較既有案件位於明顯高位。保費15,000元亦高於過往分布上緣，核保宜優先確認實際營運型態、額度需求、附加條款及報價條件間的對應關係。",
-                                          "KEY_FACTS":  {
-                                                            "baseline":  [
-                                                                             "既有相似案件共39件，包含30件保單與9件報價；承作型態以食品相關製造商為主，零售商次之，保費常見值為3,500元，自負額金額多為2,000元。",
-                                                                             "過往案件的承保規模多落在每一人身體傷害保額100萬元、每一事故身體傷害保額400萬元、每一事故財物損失保額0元及保險期間累計保額1,000萬元，部分較高案件延伸至每一事故身體傷害保額1,200萬元及累計保額3,000萬元。",
-                                                                             "營業額常見值為500萬元，中位數為500萬元；既有案件多採食品或餐飲品項描述，承保對象以製造商或零售商為主，並有少數兼具製造、經銷及零售型態的案件。"
-                                                                         ],
-                                                            "change_trajectory":  [
-                                                                                      "本案營業額2,000萬元，高於過往常見值及中位數，接近群體分布上緣；承保標的涵蓋食品生產販售全品項，承保對象為零售商，與多數製造商案件的型態不同，建議確認實際營運及銷售範圍。",
-                                                                                      "本案每一人、每一事故身體傷害及每一事故財物損失保額均為2,000萬元，保險期間累計保額為2億元，均高於既有案件最大值，屬承保規模的明顯變動，需確認額度設定依據及適用範圍。",
-                                                                                      "本案保費15,000元，高於既有案件2,000至8,000元的分布；自負額金額2,000元接近常見值，另附加條款組合較完整，建議回看保費與承保條件是否相互配合。"
-                                                                                  ]
-                                                        },
-                                          "RECOMMENDED_REVIEW_CASES":  [
-                                                                           {
-                                                                               "appllte_no":  "2501000053465821",
-                                                                               "quote_no_version":  "NPD250001249-1",
-                                                                               "policy_no":  "",
-                                                                               "verification":  "建議確認同等營業額及零售商型態下，本案提高至各項2,000萬元及累計2億元的額度是否有具體業務需求及核定依據。",
-                                                                               "fields_to_review":  "營業額2,000萬元與本案相同，承保對象同為零售商；請優先查看簡餐、飲品的承保標的描述、每一人及每一事故保額、累計保額、附加條款與保費設定，並比較本案全品項食品範圍的差異。"
-                                                                           },
-                                                                           {
-                                                                               "appllte_no":  "2501000029993167",
-                                                                               "quote_no_version":  "NPD250000559-1",
-                                                                               "policy_no":  "",
-                                                                               "verification":  "建議確認高營業額零售商案件的額度與保費調整邏輯，是否足以支持本案的承保規模設定。",
-                                                                               "fields_to_review":  "此案營業額3,000萬元且為零售商，屬高營業額參考；請查看餐飲食品的承保範圍、每一人及每一事故保額、累計保額、保費與附加條款內容，作為本案高額度與高保費的比較基準。"
-                                                                           },
-                                                                           {
-                                                                               "appllte_no":  "2501000053326861",
-                                                                               "quote_no_version":  "",
-                                                                               "policy_no":  "150314PD01446",
-                                                                               "verification":  "建議確認本案由製造及批發型態轉為零售商全品項食品後，營運角色與承保責任範圍是否已有充分文件支持。",
-                                                                               "fields_to_review":  "既有保單營業額1,200萬元、承保對象為製造商及批發商，保費5,000元且累計保額2,000萬元；請優先查看食品麵食及早餐類的標的範圍、承保對象、額度、自負額與保費條件。"
-                                                                           }
-                                                                       ],
-                                          "ATTENTION_TAGS":  [
-
-                                                             ],
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  3049,
+                                          "TOTAL_TOKENS":  3456,
+                                          "OUTPUT_TOKENS":  407,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共2筆裁罰紀錄，已知累積裁罰金額為83,327元；主要涉及雇主未按時繳納勞工退休金而加徵滯納金，且均依勞工退休金條例第19條第1項裁處。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞工退休金繳納管理，與產品責任保險所承保的產品責任風險關聯性較低。裁罰事由集中於勞工退休金繳納管理，反映相關法遵執行及行政管理穩定性需留意。",
                                           "overall_decision":  null,
                                           "correctness":  null,
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
                                           "reason":  null,
-                                          "latency_ms":  10425
+                                          "latency_ms":  4653
+                                      },
+                                      {
+                                          "name":  "報告",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  6295,
+                                                         "output":  623,
+                                                         "total":  6918
+                                                     },
+                                          "INPUT_TOKENS":  6295,
+                                          "OUTPUT_TOKENS":  623,
+                                          "TOTAL_TOKENS":  6918,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null,
+                                          "CASE_RISK":  "中風險",
+                                          "CASE_RATE":  "審慎評估",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "score":  4.5,
+                                          "final_summary":  "本案營運型態與食品責任範圍存在落差：店面判定為攤販，過往評估則提及水產／食品營運及全品項食品生產販售範圍。若實際包含經銷責任，建議加貼 NPD003A、NPD003B；現有 AOA、AGG 對常見情境承接壓力較低。請確認實際營運及食品品項範圍、經銷責任、參考案件可比性與目標保費是否足以支撐現有條件。",
+                                          "latency_ms":  6865
                                       }
                                   ]
                   },
@@ -9603,46 +9913,6 @@ window.validationReviewData = {
                                           "latency_ms":  35252
                                       },
                                       {
-                                          "name":  "web search",
-                                          "version":  "小量v2",
-                                          "deliveryDate":  "2026-07-13",
-                                          "latency_ms":  0,
-                                          "score":  10.0,
-                                          "tokens":  {
-                                                         "input":  0,
-                                                         "output":  0,
-                                                         "total":  0
-                                                     },
-                                          "INPUT_TOKENS":  0,
-                                          "OUTPUT_TOKENS":  0,
-                                          "TOTAL_TOKENS":  0,
-                                          "IS_WEB_SEARCH":  false,
-                                          "WEB_SEARCH_RESULT":  "此案非法人件，無進行 web search 查詢公開資料",
-                                          "CITATIONS":  [
-
-                                                        ]
-                                      },
-                                      {
-                                          "name":  "web search",
-                                          "version":  "正式v1",
-                                          "deliveryDate":  "2026-07-23",
-                                          "latency_ms":  0,
-                                          "score":  10.0,
-                                          "tokens":  {
-                                                         "input":  0,
-                                                         "output":  0,
-                                                         "total":  0
-                                                     },
-                                          "INPUT_TOKENS":  0,
-                                          "OUTPUT_TOKENS":  0,
-                                          "TOTAL_TOKENS":  0,
-                                          "IS_WEB_SEARCH":  false,
-                                          "WEB_SEARCH_RESULT":  "此案非法人件，無進行 web search 查詢公開資料",
-                                          "CITATIONS":  [
-
-                                                        ]
-                                      },
-                                      {
                                           "name":  "歷史",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-29",
@@ -9743,6 +10013,108 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "latency_ms":  9363
+                                      },
+                                      {
+                                          "name":  "web search",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-13",
+                                          "latency_ms":  0,
+                                          "score":  10.0,
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "INPUT_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "IS_WEB_SEARCH":  false,
+                                          "WEB_SEARCH_RESULT":  "此案非法人件，無進行 web search 查詢公開資料",
+                                          "CITATIONS":  [
+
+                                                        ]
+                                      },
+                                      {
+                                          "name":  "web search",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
+                                          "score":  10.0,
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "INPUT_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "IS_WEB_SEARCH":  false,
+                                          "WEB_SEARCH_RESULT":  "此案非法人件，無進行 web search 查詢公開資料",
+                                          "CITATIONS":  [
+
+                                                        ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  4
+                                      },
+                                      {
+                                          "name":  "報告",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  6120,
+                                                         "output":  1004,
+                                                         "total":  7124
+                                                     },
+                                          "INPUT_TOKENS":  6120,
+                                          "OUTPUT_TOKENS":  1004,
+                                          "TOTAL_TOKENS":  7124,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null,
+                                          "CASE_RISK":  "中風險",
+                                          "CASE_RATE":  "審慎評估",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "score":  6.0,
+                                          "final_summary":  "店面照片判定為攤販，但案件評估為新承接小規模食品零售，營運型態存在落差，需確認實際銷售型態及食品範圍。鳳梨酥及果乾可能因保存不當、加熱不足或接觸生食及不潔器具造成食物中毒；現有AOA、AGG對常見理賠情境承接壓力較低。請確認實際銷售型態、食品範圍及建議加貼NPD003A、NPD003B的相關報告內容。",
+                                          "latency_ms":  9033
                                       }
                                   ]
                   },
@@ -11092,6 +11464,111 @@ window.validationReviewData = {
                                           "latency_ms":  16885
                                       },
                                       {
+                                          "name":  "歷史",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  39962,
+                                                         "output":  3237,
+                                                         "total":  43199
+                                                     },
+                                          "SCORE":  10.0,
+                                          "INPUT_TOKENS":  39962,
+                                          "OUTPUT_TOKENS":  3237,
+                                          "TOTAL_TOKENS":  43199,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null,
+                                          "LOSS_PATTERN":  "近五年無理賠紀錄。",
+                                          "CLAIM_SUMMARY":  "近五年無理賠紀錄。",
+                                          "HISTORY_RESULT":  {
+                                                                 "continue":  {
+                                                                                  "aggregate":  [
+                                                                                                    {
+                                                                                                        "claim_count_continue_last":  0.0,
+                                                                                                        "policy_count_continue_last":  0,
+                                                                                                        "claim_amount_continue_last":  0.0,
+                                                                                                        "discount_premium_continue_last":  0.0,
+                                                                                                        "loss_ratio_continue_last":  0.0,
+                                                                                                        "claim_count_continue_5y":  0.0,
+                                                                                                        "policy_count_continue_5y":  0,
+                                                                                                        "claim_amount_continue_5y":  0.0,
+                                                                                                        "discount_premium_continue_5y":  0.0,
+                                                                                                        "loss_ratio_continue_5y":  0.0,
+                                                                                                        "is_claimed":  "Y"
+                                                                                                    }
+                                                                                                ]
+                                                                              },
+                                                                 "insured":  {
+                                                                                 "aggregate":  [
+                                                                                                   {
+                                                                                                       "claim_count_insured_1y":  0.0,
+                                                                                                       "policy_count_insured_1y":  0,
+                                                                                                       "claim_amount_insured_1y":  0.0,
+                                                                                                       "discount_premium_insured_1y":  0.0,
+                                                                                                       "loss_ratio_insured_1y":  0.0,
+                                                                                                       "claim_count_insured_5y":  0.0,
+                                                                                                       "policy_count_insured_5y":  0,
+                                                                                                       "claim_amount_insured_5y":  0.0,
+                                                                                                       "discount_premium_insured_5y":  0.0,
+                                                                                                       "loss_ratio_insured_5y":  0.0,
+                                                                                                       "is_claimed":  "Y"
+                                                                                                   }
+                                                                                               ]
+                                                                             }
+                                                             },
+                                          "OVERALL_ASSESSMENT":  "歷年案件以食品製造商整體產品承保為主且報價均曾通過，本案則在承接標的、被保險人名稱、保費及附加條款安排上與過往比對案件有所差異。\u003cstrong\u003e本案營業額23.3億元並維持較高責任保額，承保規模相較相關保單群體的常見水準較高，差異仍待確認\u003c/strong\u003e。核保宜確認承保對象與產品範圍、保費和保額的對應性，以及追溯日、附加條款與放棄代位求償權條件的最終一致性。",
+                                          "KEY_FACTS":  {
+                                                            "baseline":  [
+                                                                             "歷年案件以食品製造商整體產品承保為主，報價審核結果均為通過；2025年曾維持約11.5萬元保費及每一人、每一事故身體傷害與財物損失各1,000萬元、保險期間累計保額1億元。",
+                                                                             "相關保單多以製造商為承保對象，常見保費約3,000元、自負額2,000元及較低的責任保額，過往承保條件具一定穩定性。"
+                                                                         ],
+                                                            "change_trajectory":  [
+                                                                                      "本案承接標的呈現為「御便當、御飯團」，與過往涵蓋被保險人所有產品的承保範圍不同；被保險人名稱與比對案件不同，惟相關身分比對結果仍應確認承保對象及其關聯性。",
+                                                                                      "本案保費為27,000元，較比對案件35,000元降低，且與本案營業額23.3億元及延續的高額責任保額之對應關係，應確認最終費率與承保條件。",
+                                                                                      "本案附加條款組合較比對案件有增減，並包含放棄代位求償權安排；追溯日為保險起期，應確認附加條款、放棄代位求償權對象及不做追溯等條件均已反映於最終內容。"
+                                                                                  ]
+                                                        },
+                                          "RECOMMENDED_REVIEW_CASES":  [
+                                                                           {
+                                                                               "appllte_no":  "2508000591190505",
+                                                                               "quote_no_version":  "NPD250014505-5",
+                                                                               "policy_no":  "",
+                                                                               "verification":  "建議確認本案27,000元保費是否承接此版報價的承保範圍、保額及條件，以及追溯日調整是否已落實。",
+                                                                               "fields_to_review":  "查看報價需求說明、保費由11.5萬元調整至3.5萬元的處理內容、追溯日、營業額23.3億元及附加條款與放棄代位求償權設定。"
+                                                                           },
+                                                                           {
+                                                                               "appllte_no":  "2507000539508521",
+                                                                               "quote_no_version":  "NPD250014505-4",
+                                                                               "policy_no":  "",
+                                                                               "verification":  "建議確認營業額更正後仍採11.5萬元保費的依據，及本案大幅調整保費時是否同步調整承保條件。",
+                                                                               "fields_to_review":  "比對營業額更正為23.3億元後的保費、保額、追溯日、附加條款及放棄代位求償權對象，並檢視與本案27,000元報價的差異。"
+                                                                           },
+                                                                           {
+                                                                               "appllte_no":  "2507000483953602",
+                                                                               "quote_no_version":  "NPD250014505-3",
+                                                                               "policy_no":  "",
+                                                                               "verification":  "建議確認本案現有附加條款與放棄代位求償權對象是否完整承接此版需求，及不做追溯的要求是否已完成條件確認。",
+                                                                               "fields_to_review":  "查看新增放棄代位求償權附加條款、對象、食品中毒及刑事訴訟律師費用相關附加條款，並比對追溯日及目標保費要求。"
+                                                                           }
+                                                                       ],
+                                          "ATTENTION_TAGS":  [
+                                                                 "附加條款",
+                                                                 "承保對象",
+                                                                 "費率水準",
+                                                                 "承接標的"
+                                                             ],
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  25755
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
@@ -11422,109 +11899,66 @@ window.validationReviewData = {
                                                         ]
                                       },
                                       {
-                                          "name":  "歷史",
-                                          "version":  "小量v2",
-                                          "deliveryDate":  "2026-07-29",
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
                                           "tokens":  {
-                                                         "input":  39962,
-                                                         "output":  3237,
-                                                         "total":  43199
+                                                         "input":  3136,
+                                                         "output":  444,
+                                                         "total":  3580
                                                      },
-                                          "SCORE":  10.0,
-                                          "INPUT_TOKENS":  39962,
-                                          "OUTPUT_TOKENS":  3237,
-                                          "TOTAL_TOKENS":  43199,
-                                          "NO_RISK":  true,
-                                          "IS_BLOCK":  false,
+                                          "SCORE":  9.0,
                                           "IS_MASK":  false,
-                                          "BLOCK_RAIL":  null,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
                                           "MASK_RAIL":  null,
-                                          "LOSS_PATTERN":  "近五年無理賠紀錄。",
-                                          "CLAIM_SUMMARY":  "近五年無理賠紀錄。",
-                                          "HISTORY_RESULT":  {
-                                                                 "continue":  {
-                                                                                  "aggregate":  [
-                                                                                                    {
-                                                                                                        "claim_count_continue_last":  0.0,
-                                                                                                        "policy_count_continue_last":  0,
-                                                                                                        "claim_amount_continue_last":  0.0,
-                                                                                                        "discount_premium_continue_last":  0.0,
-                                                                                                        "loss_ratio_continue_last":  0.0,
-                                                                                                        "claim_count_continue_5y":  0.0,
-                                                                                                        "policy_count_continue_5y":  0,
-                                                                                                        "claim_amount_continue_5y":  0.0,
-                                                                                                        "discount_premium_continue_5y":  0.0,
-                                                                                                        "loss_ratio_continue_5y":  0.0,
-                                                                                                        "is_claimed":  "Y"
-                                                                                                    }
-                                                                                                ]
-                                                                              },
-                                                                 "insured":  {
-                                                                                 "aggregate":  [
-                                                                                                   {
-                                                                                                       "claim_count_insured_1y":  0.0,
-                                                                                                       "policy_count_insured_1y":  0,
-                                                                                                       "claim_amount_insured_1y":  0.0,
-                                                                                                       "discount_premium_insured_1y":  0.0,
-                                                                                                       "loss_ratio_insured_1y":  0.0,
-                                                                                                       "claim_count_insured_5y":  0.0,
-                                                                                                       "policy_count_insured_5y":  0,
-                                                                                                       "claim_amount_insured_5y":  0.0,
-                                                                                                       "discount_premium_insured_5y":  0.0,
-                                                                                                       "loss_ratio_insured_5y":  0.0,
-                                                                                                       "is_claimed":  "Y"
-                                                                                                   }
-                                                                                               ]
-                                                                             }
-                                                             },
-                                          "OVERALL_ASSESSMENT":  "歷年案件以食品製造商整體產品承保為主且報價均曾通過，本案則在承接標的、被保險人名稱、保費及附加條款安排上與過往比對案件有所差異。\u003cstrong\u003e本案營業額23.3億元並維持較高責任保額，承保規模相較相關保單群體的常見水準較高，差異仍待確認\u003c/strong\u003e。核保宜確認承保對象與產品範圍、保費和保額的對應性，以及追溯日、附加條款與放棄代位求償權條件的最終一致性。",
-                                          "KEY_FACTS":  {
-                                                            "baseline":  [
-                                                                             "歷年案件以食品製造商整體產品承保為主，報價審核結果均為通過；2025年曾維持約11.5萬元保費及每一人、每一事故身體傷害與財物損失各1,000萬元、保險期間累計保額1億元。",
-                                                                             "相關保單多以製造商為承保對象，常見保費約3,000元、自負額2,000元及較低的責任保額，過往承保條件具一定穩定性。"
-                                                                         ],
-                                                            "change_trajectory":  [
-                                                                                      "本案承接標的呈現為「御便當、御飯團」，與過往涵蓋被保險人所有產品的承保範圍不同；被保險人名稱與比對案件不同，惟相關身分比對結果仍應確認承保對象及其關聯性。",
-                                                                                      "本案保費為27,000元，較比對案件35,000元降低，且與本案營業額23.3億元及延續的高額責任保額之對應關係，應確認最終費率與承保條件。",
-                                                                                      "本案附加條款組合較比對案件有增減，並包含放棄代位求償權安排；追溯日為保險起期，應確認附加條款、放棄代位求償權對象及不做追溯等條件均已反映於最終內容。"
-                                                                                  ]
-                                                        },
-                                          "RECOMMENDED_REVIEW_CASES":  [
-                                                                           {
-                                                                               "appllte_no":  "2508000591190505",
-                                                                               "quote_no_version":  "NPD250014505-5",
-                                                                               "policy_no":  "",
-                                                                               "verification":  "建議確認本案27,000元保費是否承接此版報價的承保範圍、保額及條件，以及追溯日調整是否已落實。",
-                                                                               "fields_to_review":  "查看報價需求說明、保費由11.5萬元調整至3.5萬元的處理內容、追溯日、營業額23.3億元及附加條款與放棄代位求償權設定。"
-                                                                           },
-                                                                           {
-                                                                               "appllte_no":  "2507000539508521",
-                                                                               "quote_no_version":  "NPD250014505-4",
-                                                                               "policy_no":  "",
-                                                                               "verification":  "建議確認營業額更正後仍採11.5萬元保費的依據，及本案大幅調整保費時是否同步調整承保條件。",
-                                                                               "fields_to_review":  "比對營業額更正為23.3億元後的保費、保額、追溯日、附加條款及放棄代位求償權對象，並檢視與本案27,000元報價的差異。"
-                                                                           },
-                                                                           {
-                                                                               "appllte_no":  "2507000483953602",
-                                                                               "quote_no_version":  "NPD250014505-3",
-                                                                               "policy_no":  "",
-                                                                               "verification":  "建議確認本案現有附加條款與放棄代位求償權對象是否完整承接此版需求，及不做追溯的要求是否已完成條件確認。",
-                                                                               "fields_to_review":  "查看新增放棄代位求償權附加條款、對象、食品中毒及刑事訴訟律師費用相關附加條款，並比對追溯日及目標保費要求。"
-                                                                           }
-                                                                       ],
-                                          "ATTENTION_TAGS":  [
-                                                                 "附加條款",
-                                                                 "承保對象",
-                                                                 "費率水準",
-                                                                 "承接標的"
-                                                             ],
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  3136,
+                                          "TOTAL_TOKENS":  3580,
+                                          "OUTPUT_TOKENS":  444,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共2筆裁罰紀錄，已知累積裁罰金額為104,000元，主要涉及放流水水質未符合標準及勞工職業災害保險投保薪資申報或調整通知不符規定。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬水污染排放及勞工職業災害保險申報管理，與產品責任保險關聯性較低。裁罰類型分散於水污染排放與勞工職業災害保險申報管理，未見同類型跨年度反覆發生。",
                                           "overall_decision":  null,
                                           "correctness":  null,
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
                                           "reason":  null,
-                                          "latency_ms":  25755
+                                          "latency_ms":  4248
+                                      },
+                                      {
+                                          "name":  "報告",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  6461,
+                                                         "output":  593,
+                                                         "total":  7054
+                                                     },
+                                          "INPUT_TOKENS":  6461,
+                                          "OUTPUT_TOKENS":  593,
+                                          "TOTAL_TOKENS":  7054,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null,
+                                          "CASE_RISK":  "中風險",
+                                          "CASE_RATE":  "審慎評估",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "score":  4.5,
+                                          "final_summary":  "本案主要落差為營業額提高至23.3億元後，保費由既往11.5萬元降至3.5萬元、此次再降至2.7萬元，且承接標的由「所有產品」縮窄，需確認範圍及定價基礎。御便當、御飯團由工廠批次製造並經便利商店流通，同批事故可能造成多人求償，AOA承接壓力偏高；AGG年度累積承接壓力較低。另已加貼NL12、NPD022及NPD004，應確認NL12放棄代位對象、NPD004附加被保險人名稱及關係，並評估NPD022限額與保費適足性。",
+                                          "latency_ms":  6124
                                       }
                                   ]
                   },
@@ -12870,6 +13304,97 @@ window.validationReviewData = {
                                           "latency_ms":  19866
                                       },
                                       {
+                                          "name":  "歷史",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  11192,
+                                                         "output":  1890,
+                                                         "total":  13082
+                                                     },
+                                          "SCORE":  10.0,
+                                          "INPUT_TOKENS":  11192,
+                                          "OUTPUT_TOKENS":  1890,
+                                          "TOTAL_TOKENS":  13082,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null,
+                                          "LOSS_PATTERN":  "近五年無理賠紀錄。",
+                                          "CLAIM_SUMMARY":  "近五年無理賠紀錄。",
+                                          "HISTORY_RESULT":  {
+                                                                 "continue":  {
+                                                                                  "aggregate":  [
+                                                                                                    {
+                                                                                                        "claim_count_continue_last":  0.0,
+                                                                                                        "policy_count_continue_last":  0,
+                                                                                                        "claim_amount_continue_last":  0.0,
+                                                                                                        "discount_premium_continue_last":  0.0,
+                                                                                                        "loss_ratio_continue_last":  0.0,
+                                                                                                        "claim_count_continue_5y":  0.0,
+                                                                                                        "policy_count_continue_5y":  0,
+                                                                                                        "claim_amount_continue_5y":  0.0,
+                                                                                                        "discount_premium_continue_5y":  0.0,
+                                                                                                        "loss_ratio_continue_5y":  0.0,
+                                                                                                        "is_claimed":  "Y"
+                                                                                                    }
+                                                                                                ]
+                                                                              },
+                                                                 "insured":  {
+                                                                                 "aggregate":  [
+                                                                                                   {
+                                                                                                       "claim_count_insured_1y":  0.0,
+                                                                                                       "policy_count_insured_1y":  1,
+                                                                                                       "claim_amount_insured_1y":  0.0,
+                                                                                                       "discount_premium_insured_1y":  0.0,
+                                                                                                       "loss_ratio_insured_1y":  0.0,
+                                                                                                       "claim_count_insured_5y":  0.0,
+                                                                                                       "policy_count_insured_5y":  1,
+                                                                                                       "claim_amount_insured_5y":  0.0,
+                                                                                                       "discount_premium_insured_5y":  0.0,
+                                                                                                       "loss_ratio_insured_5y":  0.0,
+                                                                                                       "is_claimed":  "Y"
+                                                                                                   }
+                                                                                               ]
+                                                                             }
+                                                             },
+                                          "OVERALL_ASSESSMENT":  "過往已有通過的進口食品業務報價案件，且本案延續相近的\u003cstrong\u003e承保規模與條件結構\u003c/strong\u003e。本案承接標的擴大、產品代號變更，通路代號由DP變為空白，附加條款組合及被保險人名稱亦與比對案件不同。核保上應確認實際通路與承保範圍、承保對象關係，以及條款調整的適用依據。",
+                                          "KEY_FACTS":  {
+                                                            "baseline":  [
+                                                                             "2024年曾有被保險人 ID、要保人 ID及經手人 ID相同的報價案件，審核結果為通過；營業額為6,000萬元，保費1萬元，承接比例100%，佣金率12%。",
+                                                                             "過往承保對象類型為進口商，承接標的為限特定通路販賣的食品進口業務，保險期間累計保額3,000萬元，每一事故身體傷害保額1,200萬元，每一事故財物損失保額300萬元，自負額2,000元，並採合約再保。"
+                                                                         ],
+                                                            "change_trajectory":  [
+                                                                                      "本案保費、營業額、承接比例、佣金率、主要保額及自負額金額與過往相近，整體承保規模及條件結構延續既有脈絡。",
+                                                                                      "承接標的由限特定通路販賣的食品進口業務，變更為較廣泛的進口食品範圍，產品代號亦由F861變更為F113；通路代號由過往DP變為空白，承保範圍及實際通路仍待確認。",
+                                                                                      "本案被保險人名稱與比對案件不同，附加條款組合亦有調整，應確認承保對象關係及新增、變更條款與本案風險的適用性。"
+                                                                                  ]
+                                                        },
+                                          "RECOMMENDED_REVIEW_CASES":  [
+                                                                           {
+                                                                               "appllte_no":  "2408000560971046",
+                                                                               "quote_no_version":  "NPD240029048-1",
+                                                                               "policy_no":  "",
+                                                                               "verification":  "建議確認本案與前期案件的承保範圍、通路限制及附加條款差異，並核對同業轉保附件是否支持目前條件。",
+                                                                               "fields_to_review":  "對照前期食品進口業務的承接標的／產品名稱、產品代號、附加條款及保經代代號，並查看原報價需求與核保留言，確認本案由特定通路改為較廣泛範圍的依據。"
+                                                                           }
+                                                                       ],
+                                          "ATTENTION_TAGS":  [
+                                                                 "通路",
+                                                                 "附加條款",
+                                                                 "承保對象",
+                                                                 "承接標的"
+                                                             ],
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  16188
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
@@ -13073,95 +13598,66 @@ window.validationReviewData = {
                                                         ]
                                       },
                                       {
-                                          "name":  "歷史",
-                                          "version":  "小量v2",
-                                          "deliveryDate":  "2026-07-29",
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
                                           "tokens":  {
-                                                         "input":  11192,
-                                                         "output":  1890,
-                                                         "total":  13082
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
                                                      },
                                           "SCORE":  10.0,
-                                          "INPUT_TOKENS":  11192,
-                                          "OUTPUT_TOKENS":  1890,
-                                          "TOTAL_TOKENS":  13082,
+                                          "IS_MASK":  false,
                                           "NO_RISK":  true,
                                           "IS_BLOCK":  false,
-                                          "IS_MASK":  false,
-                                          "BLOCK_RAIL":  null,
+                                          "SP_SCORE":  10.0,
                                           "MASK_RAIL":  null,
-                                          "LOSS_PATTERN":  "近五年無理賠紀錄。",
-                                          "CLAIM_SUMMARY":  "近五年無理賠紀錄。",
-                                          "HISTORY_RESULT":  {
-                                                                 "continue":  {
-                                                                                  "aggregate":  [
-                                                                                                    {
-                                                                                                        "claim_count_continue_last":  0.0,
-                                                                                                        "policy_count_continue_last":  0,
-                                                                                                        "claim_amount_continue_last":  0.0,
-                                                                                                        "discount_premium_continue_last":  0.0,
-                                                                                                        "loss_ratio_continue_last":  0.0,
-                                                                                                        "claim_count_continue_5y":  0.0,
-                                                                                                        "policy_count_continue_5y":  0,
-                                                                                                        "claim_amount_continue_5y":  0.0,
-                                                                                                        "discount_premium_continue_5y":  0.0,
-                                                                                                        "loss_ratio_continue_5y":  0.0,
-                                                                                                        "is_claimed":  "Y"
-                                                                                                    }
-                                                                                                ]
-                                                                              },
-                                                                 "insured":  {
-                                                                                 "aggregate":  [
-                                                                                                   {
-                                                                                                       "claim_count_insured_1y":  0.0,
-                                                                                                       "policy_count_insured_1y":  1,
-                                                                                                       "claim_amount_insured_1y":  0.0,
-                                                                                                       "discount_premium_insured_1y":  0.0,
-                                                                                                       "loss_ratio_insured_1y":  0.0,
-                                                                                                       "claim_count_insured_5y":  0.0,
-                                                                                                       "policy_count_insured_5y":  1,
-                                                                                                       "claim_amount_insured_5y":  0.0,
-                                                                                                       "discount_premium_insured_5y":  0.0,
-                                                                                                       "loss_ratio_insured_5y":  0.0,
-                                                                                                       "is_claimed":  "Y"
-                                                                                                   }
-                                                                                               ]
-                                                                             }
-                                                             },
-                                          "OVERALL_ASSESSMENT":  "過往已有通過的進口食品業務報價案件，且本案延續相近的\u003cstrong\u003e承保規模與條件結構\u003c/strong\u003e。本案承接標的擴大、產品代號變更，通路代號由DP變為空白，附加條款組合及被保險人名稱亦與比對案件不同。核保上應確認實際通路與承保範圍、承保對象關係，以及條款調整的適用依據。",
-                                          "KEY_FACTS":  {
-                                                            "baseline":  [
-                                                                             "2024年曾有被保險人 ID、要保人 ID及經手人 ID相同的報價案件，審核結果為通過；營業額為6,000萬元，保費1萬元，承接比例100%，佣金率12%。",
-                                                                             "過往承保對象類型為進口商，承接標的為限特定通路販賣的食品進口業務，保險期間累計保額3,000萬元，每一事故身體傷害保額1,200萬元，每一事故財物損失保額300萬元，自負額2,000元，並採合約再保。"
-                                                                         ],
-                                                            "change_trajectory":  [
-                                                                                      "本案保費、營業額、承接比例、佣金率、主要保額及自負額金額與過往相近，整體承保規模及條件結構延續既有脈絡。",
-                                                                                      "承接標的由限特定通路販賣的食品進口業務，變更為較廣泛的進口食品範圍，產品代號亦由F861變更為F113；通路代號由過往DP變為空白，承保範圍及實際通路仍待確認。",
-                                                                                      "本案被保險人名稱與比對案件不同，附加條款組合亦有調整，應確認承保對象關係及新增、變更條款與本案風險的適用性。"
-                                                                                  ]
-                                                        },
-                                          "RECOMMENDED_REVIEW_CASES":  [
-                                                                           {
-                                                                               "appllte_no":  "2408000560971046",
-                                                                               "quote_no_version":  "NPD240029048-1",
-                                                                               "policy_no":  "",
-                                                                               "verification":  "建議確認本案與前期案件的承保範圍、通路限制及附加條款差異，並核對同業轉保附件是否支持目前條件。",
-                                                                               "fields_to_review":  "對照前期食品進口業務的承接標的／產品名稱、產品代號、附加條款及保經代代號，並查看原報價需求與核保留言，確認本案由特定通路改為較廣泛範圍的依據。"
-                                                                           }
-                                                                       ],
-                                          "ATTENTION_TAGS":  [
-                                                                 "通路",
-                                                                 "附加條款",
-                                                                 "承保對象",
-                                                                 "承接標的"
-                                                             ],
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
                                           "overall_decision":  null,
                                           "correctness":  null,
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
                                           "reason":  null,
-                                          "latency_ms":  16188
+                                          "latency_ms":  111
+                                      },
+                                      {
+                                          "name":  "報告",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  6271,
+                                                         "output":  526,
+                                                         "total":  6797
+                                                     },
+                                          "INPUT_TOKENS":  6271,
+                                          "OUTPUT_TOKENS":  526,
+                                          "TOTAL_TOKENS":  6797,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null,
+                                          "CASE_RISK":  "中風險",
+                                          "CASE_RATE":  "審慎評估",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "score":  5.5,
+                                          "final_summary":  "本案存在承接標的由限特定通路擴大為一般進口食品銷售的落差，且附加條款組合有所變動。進口食品經批次及多通路流通，同批食品安全問題可能造成跨通路多人求償；惟現有AOA、AGG對常見情境承接壓力較低。另照片資訊不足，需確認營業型態。應確認實際通路及承保範圍，並評估建議加貼NPD013、NPD003A、NPD003B。",
+                                          "latency_ms":  5950
                                       }
                                   ]
                   },
@@ -14505,6 +15001,100 @@ window.validationReviewData = {
                                           "latency_ms":  15289
                                       },
                                       {
+                                          "name":  "歷史",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  12594,
+                                                         "output":  2410,
+                                                         "total":  15004
+                                                     },
+                                          "SCORE":  10.0,
+                                          "INPUT_TOKENS":  12594,
+                                          "OUTPUT_TOKENS":  2410,
+                                          "TOTAL_TOKENS":  15004,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null,
+                                          "LOSS_PATTERN":  "近五年無理賠紀錄。",
+                                          "CLAIM_SUMMARY":  "近五年無理賠紀錄。",
+                                          "HISTORY_RESULT":  {
+                                                                 "continue":  {
+                                                                                  "aggregate":  [
+                                                                                                    {
+                                                                                                        "claim_count_continue_last":  0.0,
+                                                                                                        "policy_count_continue_last":  0,
+                                                                                                        "claim_amount_continue_last":  0.0,
+                                                                                                        "discount_premium_continue_last":  0.0,
+                                                                                                        "loss_ratio_continue_last":  0.0,
+                                                                                                        "claim_count_continue_5y":  0.0,
+                                                                                                        "policy_count_continue_5y":  0,
+                                                                                                        "claim_amount_continue_5y":  0.0,
+                                                                                                        "discount_premium_continue_5y":  0.0,
+                                                                                                        "loss_ratio_continue_5y":  0.0,
+                                                                                                        "is_claimed":  "Y"
+                                                                                                    }
+                                                                                                ]
+                                                                              },
+                                                                 "insured":  {
+                                                                                 "aggregate":  [
+                                                                                                   {
+                                                                                                       "claim_count_insured_1y":  0.0,
+                                                                                                       "policy_count_insured_1y":  1,
+                                                                                                       "claim_amount_insured_1y":  0.0,
+                                                                                                       "discount_premium_insured_1y":  2273.0,
+                                                                                                       "loss_ratio_insured_1y":  0.0,
+                                                                                                       "claim_count_insured_5y":  0.0,
+                                                                                                       "policy_count_insured_5y":  1,
+                                                                                                       "claim_amount_insured_5y":  0.0,
+                                                                                                       "discount_premium_insured_5y":  2273.0,
+                                                                                                       "loss_ratio_insured_5y":  0.0,
+                                                                                                       "is_claimed":  "Y"
+                                                                                                   }
+                                                                                               ]
+                                                                             }
+                                                             },
+                                          "OVERALL_ASSESSMENT":  "歷史案件具同一被保險人 ID、同一產品代號及總公司承作脈絡，採全額承接與合約再保，附加條款結構相近。\u003cstrong\u003e本案承接標的改為生鮮食品\u003c/strong\u003e，經手人及被保險人名稱與比對案件不同，追溯日亦由 2024-06-13 改為 2025-04-29；同時三項責任保額提高一倍，保費及佣金率均有調整。核保上應確認營業額單位或填列口徑、被保險人關係與追溯日適用性，並核對保額、價格及自負額條件的記錄依據。",
+                                          "KEY_FACTS":  {
+                                                            "baseline":  [
+                                                                             "過往已有同一被保險人 ID、同一產品代號及總公司承作的產品責任保單，採全額承接與合約再保，歷史報價審核結果為通過。",
+                                                                             "歷史承接標的為簡餐，營業額為 990,000 元，每一人身體傷害、每一事故身體傷害及保險期間累計保額分別為 1,000,000 元、4,000,000 元及 10,000,000 元；自負額以 2,000 元記載，附加條款結構與本案大致相近。"
+                                                                         ],
+                                                            "change_trajectory":  [
+                                                                                      "本案承接標的改為生鮮食品，經手人及被保險人名稱均與比對案件不同，但被保險人 ID 相同；追溯日由 2024-06-13 改為 2025-04-29，應確認承保對象關係及追溯日適用性。",
+                                                                                      "本案三項責任保額分別提高至 2,000,000 元、8,000,000 元及 20,000,000 元，保費由 2,273 元調整為 2,717 元，應確認保額及價格調整依據。",
+                                                                                      "本案營業額填列 100，與歷史 990,000 元差異幅度較大，應確認單位或填列口徑；佣金率由 0% 改為 12%，且本案自負額金額明列 2,000 元，應一併核對相關記錄口徑。"
+                                                                                  ]
+                                                        },
+                                          "RECOMMENDED_REVIEW_CASES":  [
+                                                                           {
+                                                                               "appllte_no":  "2405000364966421",
+                                                                               "quote_no_version":  "NPD240021508-1",
+                                                                               "policy_no":  "150113PD60115",
+                                                                               "verification":  "建議確認本案營業額 100 的單位或填列口徑，並核實責任保額提高、佣金率 12% 及自負額 2,000 元的承保依據。",
+                                                                               "fields_to_review":  "比較前期承接標的／產品名稱「簡餐」與本案「生鮮食品」、營業額 990,000 元與 100，以及各項責任保額與保費變化；開啟案件優先查看報價需求說明、核保留言、承保條件及自負額記載。"
+                                                                           }
+                                                                       ],
+                                          "ATTENTION_TAGS":  [
+                                                                 "通路",
+                                                                 "保險金額",
+                                                                 "承保對象",
+                                                                 "決策",
+                                                                 "費率水準",
+                                                                 "承接標的",
+                                                                 "追溯日"
+                                                             ],
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  18857
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
@@ -14867,98 +15457,66 @@ window.validationReviewData = {
                                                         ]
                                       },
                                       {
-                                          "name":  "歷史",
-                                          "version":  "小量v2",
-                                          "deliveryDate":  "2026-07-29",
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
                                           "tokens":  {
-                                                         "input":  12594,
-                                                         "output":  2410,
-                                                         "total":  15004
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
                                                      },
                                           "SCORE":  10.0,
-                                          "INPUT_TOKENS":  12594,
-                                          "OUTPUT_TOKENS":  2410,
-                                          "TOTAL_TOKENS":  15004,
+                                          "IS_MASK":  false,
                                           "NO_RISK":  true,
                                           "IS_BLOCK":  false,
-                                          "IS_MASK":  false,
-                                          "BLOCK_RAIL":  null,
+                                          "SP_SCORE":  10.0,
                                           "MASK_RAIL":  null,
-                                          "LOSS_PATTERN":  "近五年無理賠紀錄。",
-                                          "CLAIM_SUMMARY":  "近五年無理賠紀錄。",
-                                          "HISTORY_RESULT":  {
-                                                                 "continue":  {
-                                                                                  "aggregate":  [
-                                                                                                    {
-                                                                                                        "claim_count_continue_last":  0.0,
-                                                                                                        "policy_count_continue_last":  0,
-                                                                                                        "claim_amount_continue_last":  0.0,
-                                                                                                        "discount_premium_continue_last":  0.0,
-                                                                                                        "loss_ratio_continue_last":  0.0,
-                                                                                                        "claim_count_continue_5y":  0.0,
-                                                                                                        "policy_count_continue_5y":  0,
-                                                                                                        "claim_amount_continue_5y":  0.0,
-                                                                                                        "discount_premium_continue_5y":  0.0,
-                                                                                                        "loss_ratio_continue_5y":  0.0,
-                                                                                                        "is_claimed":  "Y"
-                                                                                                    }
-                                                                                                ]
-                                                                              },
-                                                                 "insured":  {
-                                                                                 "aggregate":  [
-                                                                                                   {
-                                                                                                       "claim_count_insured_1y":  0.0,
-                                                                                                       "policy_count_insured_1y":  1,
-                                                                                                       "claim_amount_insured_1y":  0.0,
-                                                                                                       "discount_premium_insured_1y":  2273.0,
-                                                                                                       "loss_ratio_insured_1y":  0.0,
-                                                                                                       "claim_count_insured_5y":  0.0,
-                                                                                                       "policy_count_insured_5y":  1,
-                                                                                                       "claim_amount_insured_5y":  0.0,
-                                                                                                       "discount_premium_insured_5y":  2273.0,
-                                                                                                       "loss_ratio_insured_5y":  0.0,
-                                                                                                       "is_claimed":  "Y"
-                                                                                                   }
-                                                                                               ]
-                                                                             }
-                                                             },
-                                          "OVERALL_ASSESSMENT":  "歷史案件具同一被保險人 ID、同一產品代號及總公司承作脈絡，採全額承接與合約再保，附加條款結構相近。\u003cstrong\u003e本案承接標的改為生鮮食品\u003c/strong\u003e，經手人及被保險人名稱與比對案件不同，追溯日亦由 2024-06-13 改為 2025-04-29；同時三項責任保額提高一倍，保費及佣金率均有調整。核保上應確認營業額單位或填列口徑、被保險人關係與追溯日適用性，並核對保額、價格及自負額條件的記錄依據。",
-                                          "KEY_FACTS":  {
-                                                            "baseline":  [
-                                                                             "過往已有同一被保險人 ID、同一產品代號及總公司承作的產品責任保單，採全額承接與合約再保，歷史報價審核結果為通過。",
-                                                                             "歷史承接標的為簡餐，營業額為 990,000 元，每一人身體傷害、每一事故身體傷害及保險期間累計保額分別為 1,000,000 元、4,000,000 元及 10,000,000 元；自負額以 2,000 元記載，附加條款結構與本案大致相近。"
-                                                                         ],
-                                                            "change_trajectory":  [
-                                                                                      "本案承接標的改為生鮮食品，經手人及被保險人名稱均與比對案件不同，但被保險人 ID 相同；追溯日由 2024-06-13 改為 2025-04-29，應確認承保對象關係及追溯日適用性。",
-                                                                                      "本案三項責任保額分別提高至 2,000,000 元、8,000,000 元及 20,000,000 元，保費由 2,273 元調整為 2,717 元，應確認保額及價格調整依據。",
-                                                                                      "本案營業額填列 100，與歷史 990,000 元差異幅度較大，應確認單位或填列口徑；佣金率由 0% 改為 12%，且本案自負額金額明列 2,000 元，應一併核對相關記錄口徑。"
-                                                                                  ]
-                                                        },
-                                          "RECOMMENDED_REVIEW_CASES":  [
-                                                                           {
-                                                                               "appllte_no":  "2405000364966421",
-                                                                               "quote_no_version":  "NPD240021508-1",
-                                                                               "policy_no":  "150113PD60115",
-                                                                               "verification":  "建議確認本案營業額 100 的單位或填列口徑，並核實責任保額提高、佣金率 12% 及自負額 2,000 元的承保依據。",
-                                                                               "fields_to_review":  "比較前期承接標的／產品名稱「簡餐」與本案「生鮮食品」、營業額 990,000 元與 100，以及各項責任保額與保費變化；開啟案件優先查看報價需求說明、核保留言、承保條件及自負額記載。"
-                                                                           }
-                                                                       ],
-                                          "ATTENTION_TAGS":  [
-                                                                 "通路",
-                                                                 "保險金額",
-                                                                 "承保對象",
-                                                                 "決策",
-                                                                 "費率水準",
-                                                                 "承接標的",
-                                                                 "追溯日"
-                                                             ],
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
                                           "overall_decision":  null,
                                           "correctness":  null,
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
                                           "reason":  null,
-                                          "latency_ms":  18857
+                                          "latency_ms":  68
+                                      },
+                                      {
+                                          "name":  "報告",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  6029,
+                                                         "output":  646,
+                                                         "total":  6675
+                                                     },
+                                          "INPUT_TOKENS":  6029,
+                                          "OUTPUT_TOKENS":  646,
+                                          "TOTAL_TOKENS":  6675,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null,
+                                          "CASE_RISK":  "中風險",
+                                          "CASE_RATE":  "審慎評估",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "score":  6.0,
+                                          "final_summary":  "本案產品與營運型態存在落差：既往簡餐轉為生鮮食品，產品摘要為鳳梨酥果乾，店面判定為攤販，另有生鮮雞肉經門市、電商、低溫宅配及餐飲合作流通。若實際為後者，同批食材可能造成多人求償，AOA承接壓力較高；AGG年度累積承接壓力較低。另保額約倍增但保費僅小幅增加，並有營業額顯著下降或單位異常，需確認實際產品、營運通路、保險期間重疊情形及保額保費設定依據。",
+                                          "latency_ms":  6852
                                       }
                                   ]
                   },
@@ -16306,6 +16864,110 @@ window.validationReviewData = {
                                           "latency_ms":  16079
                                       },
                                       {
+                                          "name":  "歷史",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  25019,
+                                                         "output":  2182,
+                                                         "total":  27201
+                                                     },
+                                          "SCORE":  10.0,
+                                          "INPUT_TOKENS":  25019,
+                                          "OUTPUT_TOKENS":  2182,
+                                          "TOTAL_TOKENS":  27201,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null,
+                                          "LOSS_PATTERN":  "近五年無理賠紀錄。",
+                                          "CLAIM_SUMMARY":  "近五年無理賠紀錄。",
+                                          "HISTORY_RESULT":  {
+                                                                 "continue":  {
+                                                                                  "aggregate":  [
+                                                                                                    {
+                                                                                                        "claim_count_continue_last":  0.0,
+                                                                                                        "policy_count_continue_last":  1,
+                                                                                                        "claim_amount_continue_last":  0.0,
+                                                                                                        "discount_premium_continue_last":  107500.0,
+                                                                                                        "loss_ratio_continue_last":  0.0,
+                                                                                                        "claim_count_continue_5y":  0.0,
+                                                                                                        "policy_count_continue_5y":  2,
+                                                                                                        "claim_amount_continue_5y":  0.0,
+                                                                                                        "discount_premium_continue_5y":  160000.0,
+                                                                                                        "loss_ratio_continue_5y":  0.0,
+                                                                                                        "is_claimed":  "Y"
+                                                                                                    }
+                                                                                                ]
+                                                                              },
+                                                                 "insured":  {
+                                                                                 "aggregate":  [
+                                                                                                   {
+                                                                                                       "claim_count_insured_1y":  0.0,
+                                                                                                       "policy_count_insured_1y":  1,
+                                                                                                       "claim_amount_insured_1y":  0.0,
+                                                                                                       "discount_premium_insured_1y":  107500.0,
+                                                                                                       "loss_ratio_insured_1y":  0.0,
+                                                                                                       "claim_count_insured_5y":  0.0,
+                                                                                                       "policy_count_insured_5y":  2,
+                                                                                                       "claim_amount_insured_5y":  0.0,
+                                                                                                       "discount_premium_insured_5y":  160000.0,
+                                                                                                       "loss_ratio_insured_5y":  0.0,
+                                                                                                       "is_claimed":  "Y"
+                                                                                                   }
+                                                                                               ]
+                                                                             }
+                                                             },
+                                          "OVERALL_ASSESSMENT":  "歷年案件延續食品產品責任保險脈絡，業務型態、營業額、通路與承接方式大致穩定。本案\u003cstrong\u003e三項主要保額提高至1.5億元\u003c/strong\u003e，保費同步增加，並出現追溯日及被保險人名稱差異。核保宜確認保額提高的業務依據、承保對象延續關係，以及追溯責任、費率與再保條件是否相互匹配。",
+                                          "KEY_FACTS":  {
+                                                            "baseline":  [
+                                                                             "歷年案件延續食品產品責任保險脈絡，承保對象類型為製造商，營業額約為3億元；經手人、所屬分公司、保經代、再保情形及承接比例大致延續，並持續附加好市多股份有限公司為被保險人。",
+                                                                             "過往主要保額由4,000萬元逐步提高至6,600萬元，保險期間多為一年期，固定自負額及主要附加條款組合大致穩定。"
+                                                                         ],
+                                                            "change_trajectory":  [
+                                                                                      "本案每一人、每一事故身體傷害及保險期間累計保額均提高至1.5億元，較比對案件的4,000萬元增加；營業額仍為3億元、承接比例維持100%，保額提高與實際業務需求及附加被保險人安排的相符性待確認。",
+                                                                                      "本案保費為10.75萬元，較比對案件5.25萬元增加；追溯日改為2024年10月1日，且本案被保險人名稱與比對案件不同，應確認承保對象及案件延續關係，並回看費率、追溯責任與再保條件是否同步調整。"
+                                                                                  ]
+                                                        },
+                                          "RECOMMENDED_REVIEW_CASES":  [
+                                                                           {
+                                                                               "appllte_no":  "2407000481626189",
+                                                                               "quote_no_version":  "",
+                                                                               "policy_no":  "150313PD04899",
+                                                                               "verification":  "確認本案是否為前期保單的續保延續，並核實保額大幅提高、保費調整及追溯日改為2024年10月1日是否均已完成核定。",
+                                                                               "fields_to_review":  "對照前期保單的三項主要保額6,600萬元、保費6.5萬元、追溯日及附加條款，優先查看本案提高至1.5億元與保費10.75萬元的核定依據及條件延續情形。"
+                                                                           },
+                                                                           {
+                                                                               "appllte_no":  "2407000444408906",
+                                                                               "quote_no_version":  "NPD240025794-1",
+                                                                               "policy_no":  "",
+                                                                               "verification":  "確認前期報價所載好市多要求200萬美元保額，是否已具體轉化為本案1.5億元保額及相應再保安排。",
+                                                                               "fields_to_review":  "查看前期6,600萬元保額、6.5萬元保費及好市多股份有限公司附加被保險人安排，作為本案提高保額及保費的直接比較依據。"
+                                                                           },
+                                                                           {
+                                                                               "appllte_no":  "2307000343440246",
+                                                                               "quote_no_version":  "NPD230006930-5",
+                                                                               "policy_no":  "150312PD03736",
+                                                                               "verification":  "確認本案與初始出單相比，產品範圍、附加被保險人、自負額及附加條款是否維持一致，並釐清保額逐步提高的承保需求。",
+                                                                               "fields_to_review":  "回看最初出單的4,000萬元保額、5.25萬元保費、營業額3億元、產品範圍及自負額記載，確認後續保額與承保內容的變動軌跡。"
+                                                                           }
+                                                                       ],
+                                          "ATTENTION_TAGS":  [
+                                                                 "保險金額",
+                                                                 "承保對象",
+                                                                 "費率水準",
+                                                                 "追溯日"
+                                                             ],
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  20645
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
@@ -16584,108 +17246,66 @@ window.validationReviewData = {
                                                         ]
                                       },
                                       {
-                                          "name":  "歷史",
-                                          "version":  "小量v2",
-                                          "deliveryDate":  "2026-07-29",
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
                                           "tokens":  {
-                                                         "input":  25019,
-                                                         "output":  2182,
-                                                         "total":  27201
+                                                         "input":  3024,
+                                                         "output":  505,
+                                                         "total":  3529
                                                      },
-                                          "SCORE":  10.0,
-                                          "INPUT_TOKENS":  25019,
-                                          "OUTPUT_TOKENS":  2182,
-                                          "TOTAL_TOKENS":  27201,
-                                          "NO_RISK":  true,
-                                          "IS_BLOCK":  false,
+                                          "SCORE":  9.0,
                                           "IS_MASK":  false,
-                                          "BLOCK_RAIL":  null,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
                                           "MASK_RAIL":  null,
-                                          "LOSS_PATTERN":  "近五年無理賠紀錄。",
-                                          "CLAIM_SUMMARY":  "近五年無理賠紀錄。",
-                                          "HISTORY_RESULT":  {
-                                                                 "continue":  {
-                                                                                  "aggregate":  [
-                                                                                                    {
-                                                                                                        "claim_count_continue_last":  0.0,
-                                                                                                        "policy_count_continue_last":  1,
-                                                                                                        "claim_amount_continue_last":  0.0,
-                                                                                                        "discount_premium_continue_last":  107500.0,
-                                                                                                        "loss_ratio_continue_last":  0.0,
-                                                                                                        "claim_count_continue_5y":  0.0,
-                                                                                                        "policy_count_continue_5y":  2,
-                                                                                                        "claim_amount_continue_5y":  0.0,
-                                                                                                        "discount_premium_continue_5y":  160000.0,
-                                                                                                        "loss_ratio_continue_5y":  0.0,
-                                                                                                        "is_claimed":  "Y"
-                                                                                                    }
-                                                                                                ]
-                                                                              },
-                                                                 "insured":  {
-                                                                                 "aggregate":  [
-                                                                                                   {
-                                                                                                       "claim_count_insured_1y":  0.0,
-                                                                                                       "policy_count_insured_1y":  1,
-                                                                                                       "claim_amount_insured_1y":  0.0,
-                                                                                                       "discount_premium_insured_1y":  107500.0,
-                                                                                                       "loss_ratio_insured_1y":  0.0,
-                                                                                                       "claim_count_insured_5y":  0.0,
-                                                                                                       "policy_count_insured_5y":  2,
-                                                                                                       "claim_amount_insured_5y":  0.0,
-                                                                                                       "discount_premium_insured_5y":  160000.0,
-                                                                                                       "loss_ratio_insured_5y":  0.0,
-                                                                                                       "is_claimed":  "Y"
-                                                                                                   }
-                                                                                               ]
-                                                                             }
-                                                             },
-                                          "OVERALL_ASSESSMENT":  "歷年案件延續食品產品責任保險脈絡，業務型態、營業額、通路與承接方式大致穩定。本案\u003cstrong\u003e三項主要保額提高至1.5億元\u003c/strong\u003e，保費同步增加，並出現追溯日及被保險人名稱差異。核保宜確認保額提高的業務依據、承保對象延續關係，以及追溯責任、費率與再保條件是否相互匹配。",
-                                          "KEY_FACTS":  {
-                                                            "baseline":  [
-                                                                             "歷年案件延續食品產品責任保險脈絡，承保對象類型為製造商，營業額約為3億元；經手人、所屬分公司、保經代、再保情形及承接比例大致延續，並持續附加好市多股份有限公司為被保險人。",
-                                                                             "過往主要保額由4,000萬元逐步提高至6,600萬元，保險期間多為一年期，固定自負額及主要附加條款組合大致穩定。"
-                                                                         ],
-                                                            "change_trajectory":  [
-                                                                                      "本案每一人、每一事故身體傷害及保險期間累計保額均提高至1.5億元，較比對案件的4,000萬元增加；營業額仍為3億元、承接比例維持100%，保額提高與實際業務需求及附加被保險人安排的相符性待確認。",
-                                                                                      "本案保費為10.75萬元，較比對案件5.25萬元增加；追溯日改為2024年10月1日，且本案被保險人名稱與比對案件不同，應確認承保對象及案件延續關係，並回看費率、追溯責任與再保條件是否同步調整。"
-                                                                                  ]
-                                                        },
-                                          "RECOMMENDED_REVIEW_CASES":  [
-                                                                           {
-                                                                               "appllte_no":  "2407000481626189",
-                                                                               "quote_no_version":  "",
-                                                                               "policy_no":  "150313PD04899",
-                                                                               "verification":  "確認本案是否為前期保單的續保延續，並核實保額大幅提高、保費調整及追溯日改為2024年10月1日是否均已完成核定。",
-                                                                               "fields_to_review":  "對照前期保單的三項主要保額6,600萬元、保費6.5萬元、追溯日及附加條款，優先查看本案提高至1.5億元與保費10.75萬元的核定依據及條件延續情形。"
-                                                                           },
-                                                                           {
-                                                                               "appllte_no":  "2407000444408906",
-                                                                               "quote_no_version":  "NPD240025794-1",
-                                                                               "policy_no":  "",
-                                                                               "verification":  "確認前期報價所載好市多要求200萬美元保額，是否已具體轉化為本案1.5億元保額及相應再保安排。",
-                                                                               "fields_to_review":  "查看前期6,600萬元保額、6.5萬元保費及好市多股份有限公司附加被保險人安排，作為本案提高保額及保費的直接比較依據。"
-                                                                           },
-                                                                           {
-                                                                               "appllte_no":  "2307000343440246",
-                                                                               "quote_no_version":  "NPD230006930-5",
-                                                                               "policy_no":  "150312PD03736",
-                                                                               "verification":  "確認本案與初始出單相比，產品範圍、附加被保險人、自負額及附加條款是否維持一致，並釐清保額逐步提高的承保需求。",
-                                                                               "fields_to_review":  "回看最初出單的4,000萬元保額、5.25萬元保費、營業額3億元、產品範圍及自負額記載，確認後續保額與承保內容的變動軌跡。"
-                                                                           }
-                                                                       ],
-                                          "ATTENTION_TAGS":  [
-                                                                 "保險金額",
-                                                                 "承保對象",
-                                                                 "費率水準",
-                                                                 "追溯日"
-                                                             ],
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  3024,
+                                          "TOTAL_TOKENS":  3529,
+                                          "OUTPUT_TOKENS":  505,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共2筆裁罰紀錄，已知累積裁罰金額為60,000元，主要涉及延長工作時間超過法令規定及未依規定加給工資。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬延長工時及加班工資之勞動法遵事項，與產品責任保險承保之產品使用後損害風險關聯性較低。兩筆紀錄均集中於延長工時與加班工資管理，且跨2024年至2025年出現，反映相關法遵執行及行政管理穩定性需留意。",
                                           "overall_decision":  null,
                                           "correctness":  null,
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
                                           "reason":  null,
-                                          "latency_ms":  20645
+                                          "latency_ms":  4346
+                                      },
+                                      {
+                                          "name":  "報告",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  6373,
+                                                         "output":  686,
+                                                         "total":  7059
+                                                     },
+                                          "INPUT_TOKENS":  6373,
+                                          "OUTPUT_TOKENS":  686,
+                                          "TOTAL_TOKENS":  7059,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null,
+                                          "CASE_RISK":  "中高風險",
+                                          "CASE_RATE":  "向上送簽",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "score":  3.5,
+                                          "final_summary":  "產品資料存在落差：標的摘要為糕點果乾，但AOA／AGG評估卻以常溫調理包、肉類調理食品及火鍋湯底，並經批發、量販、網路及餐飲品牌通路供應為基礎，需確認實際承保產品與通路。前述製造及多通路批次事故可能造成多人求償；現有AOA、AGG對評估情境承接壓力較低，但不能取代產品資料確認。另追溯日與報價需求說明存在不一致，應確認實際追溯日及責任期間連續性。",
+                                          "latency_ms":  6964
                                       }
                                   ]
                   },
@@ -18035,6 +18655,113 @@ window.validationReviewData = {
                                           "latency_ms":  17277
                                       },
                                       {
+                                          "name":  "歷史",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-29",
+                                          "tokens":  {
+                                                         "input":  26020,
+                                                         "output":  2458,
+                                                         "total":  28478
+                                                     },
+                                          "SCORE":  10.0,
+                                          "INPUT_TOKENS":  26020,
+                                          "OUTPUT_TOKENS":  2458,
+                                          "TOTAL_TOKENS":  28478,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null,
+                                          "LOSS_PATTERN":  "近五年無理賠紀錄。",
+                                          "CLAIM_SUMMARY":  "近五年無理賠紀錄。",
+                                          "HISTORY_RESULT":  {
+                                                                 "continue":  {
+                                                                                  "aggregate":  [
+                                                                                                    {
+                                                                                                        "claim_count_continue_last":  0.0,
+                                                                                                        "policy_count_continue_last":  0,
+                                                                                                        "claim_amount_continue_last":  0.0,
+                                                                                                        "discount_premium_continue_last":  0.0,
+                                                                                                        "loss_ratio_continue_last":  0.0,
+                                                                                                        "claim_count_continue_5y":  0.0,
+                                                                                                        "policy_count_continue_5y":  0,
+                                                                                                        "claim_amount_continue_5y":  0.0,
+                                                                                                        "discount_premium_continue_5y":  0.0,
+                                                                                                        "loss_ratio_continue_5y":  0.0,
+                                                                                                        "is_claimed":  "Y"
+                                                                                                    }
+                                                                                                ]
+                                                                              },
+                                                                 "insured":  {
+                                                                                 "aggregate":  [
+                                                                                                   {
+                                                                                                       "claim_count_insured_1y":  0.0,
+                                                                                                       "policy_count_insured_1y":  0,
+                                                                                                       "claim_amount_insured_1y":  0.0,
+                                                                                                       "discount_premium_insured_1y":  0.0,
+                                                                                                       "loss_ratio_insured_1y":  0.0,
+                                                                                                       "claim_count_insured_5y":  0.0,
+                                                                                                       "policy_count_insured_5y":  0,
+                                                                                                       "claim_amount_insured_5y":  0.0,
+                                                                                                       "discount_premium_insured_5y":  0.0,
+                                                                                                       "loss_ratio_insured_5y":  0.0,
+                                                                                                       "is_claimed":  "Y"
+                                                                                                   }
+                                                                                               ]
+                                                                             }
+                                                             },
+                                          "OVERALL_ASSESSMENT":  "本案延續既有海鮮相關承保脈絡，營業額與主要保障架構仍具可比性；惟經手通路、被保險人名稱及追溯日均與比對案件有所差異，承保對象關聯性需進一步確認。\u003cstrong\u003e附加條款增加、保費降低且自負額為0元\u003c/strong\u003e，同時每一事故身體傷害保額低於過往水準，核保宜確認條款適用、追溯條件及定價承接是否相符。",
+                                          "KEY_FACTS":  {
+                                                            "baseline":  [
+                                                                             "2024年曾有相同被保險人ID、要保人ID及經手人ID的通過報價，承接標的為活體海鮮、冷凍海鮮，營業額7,000萬元，保費13,000元。",
+                                                                             "過往採100%承接比例、合約再保、佣金率12%，每一人身體傷害保額200萬元、每一事故身體傷害保額1,000萬元、每一事故財物損失保額0元及保險期間累計保額2,000萬元。",
+                                                                             "同類食品相關案件多集中於較低營業額、保費、保額及自負額水準，承保對象常見製造商、經銷商及零售商。"
+                                                                         ],
+                                                            "change_trajectory":  [
+                                                                                      "本案經手通路與比對案件不同，且被保險人名稱比對結果不同，承保對象與既有案件的關聯性待確認。",
+                                                                                      "本案追溯日為2025年4月12日，較比對案件2024年1月20日往後；附加條款由既有6項增加至9項，新增食品附加及訴訟理賠等需求，應確認條款適用範圍與承保條件。",
+                                                                                      "本案保費為10,000元，低於比對案件13,000元；每一事故身體傷害保額為800萬元，低於過往1,000萬元，自負額金額為0元，保費、保障調整與本案條件的一致性待確認。"
+                                                                                  ]
+                                                        },
+                                          "RECOMMENDED_REVIEW_CASES":  [
+                                                                           {
+                                                                               "appllte_no":  "2401000015541889",
+                                                                               "quote_no_version":  "NPD240000150-1",
+                                                                               "policy_no":  "",
+                                                                               "verification":  "建議確認本案自負額金額為0及保費下調是否有明確承保條件依據，並核對新增附加條款是否已納入報價審核範圍。",
+                                                                               "fields_to_review":  "前次報價的保費13,000元、每一事故身體傷害保額1,000萬元、自負額備註及附加條款，並與本案保費10,000元、每一事故身體傷害保額800萬元、自負額金額0及新增報價需求說明逐項對照。"
+                                                                           },
+                                                                           {
+                                                                               "appllte_no":  "2502000060858062",
+                                                                               "quote_no_version":  "",
+                                                                               "policy_no":  "151614PD01357",
+                                                                               "verification":  "建議確認本案每一事故財物損失保額為0及自負額金額為0，與相近承保額度案件的差異是否為有意設定。",
+                                                                               "fields_to_review":  "該案每一人身體傷害保額200萬元、每一事故身體傷害保額800萬元、每一事故財物損失保額200萬元、保險期間累計保額2,000萬元、自負額金額2,000元及保費5,200元，作為相近額度結構的條件對照。"
+                                                                           },
+                                                                           {
+                                                                               "appllte_no":  "2502000119223063",
+                                                                               "quote_no_version":  "",
+                                                                               "policy_no":  "151614PD01551",
+                                                                               "verification":  "建議確認本案營業額同屬較高區間時，保費10,000元及保險期間累計保額2,000萬元的定價與額度配置是否合理。",
+                                                                               "fields_to_review":  "該案營業額1億5,000萬元、保費20,000元、每一人身體傷害保額200萬元、每一事故身體傷害保額800萬元及保險期間累計保額1,500萬元，並查看其承保對象類型與承接標的／產品名稱。"
+                                                                           }
+                                                                       ],
+                                          "ATTENTION_TAGS":  [
+                                                                 "通路",
+                                                                 "附加條款",
+                                                                 "承保對象",
+                                                                 "費率水準",
+                                                                 "追溯日"
+                                                             ],
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  20311
+                                      },
+                                      {
                                           "name":  "web search",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-13",
@@ -18245,111 +18972,66 @@ window.validationReviewData = {
                                                         ]
                                       },
                                       {
-                                          "name":  "歷史",
-                                          "version":  "小量v2",
-                                          "deliveryDate":  "2026-07-29",
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
                                           "tokens":  {
-                                                         "input":  26020,
-                                                         "output":  2458,
-                                                         "total":  28478
+                                                         "input":  2997,
+                                                         "output":  167,
+                                                         "total":  3164
                                                      },
-                                          "SCORE":  10.0,
-                                          "INPUT_TOKENS":  26020,
-                                          "OUTPUT_TOKENS":  2458,
-                                          "TOTAL_TOKENS":  28478,
-                                          "NO_RISK":  true,
-                                          "IS_BLOCK":  false,
+                                          "SCORE":  9.0,
                                           "IS_MASK":  false,
-                                          "BLOCK_RAIL":  null,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
                                           "MASK_RAIL":  null,
-                                          "LOSS_PATTERN":  "近五年無理賠紀錄。",
-                                          "CLAIM_SUMMARY":  "近五年無理賠紀錄。",
-                                          "HISTORY_RESULT":  {
-                                                                 "continue":  {
-                                                                                  "aggregate":  [
-                                                                                                    {
-                                                                                                        "claim_count_continue_last":  0.0,
-                                                                                                        "policy_count_continue_last":  0,
-                                                                                                        "claim_amount_continue_last":  0.0,
-                                                                                                        "discount_premium_continue_last":  0.0,
-                                                                                                        "loss_ratio_continue_last":  0.0,
-                                                                                                        "claim_count_continue_5y":  0.0,
-                                                                                                        "policy_count_continue_5y":  0,
-                                                                                                        "claim_amount_continue_5y":  0.0,
-                                                                                                        "discount_premium_continue_5y":  0.0,
-                                                                                                        "loss_ratio_continue_5y":  0.0,
-                                                                                                        "is_claimed":  "Y"
-                                                                                                    }
-                                                                                                ]
-                                                                              },
-                                                                 "insured":  {
-                                                                                 "aggregate":  [
-                                                                                                   {
-                                                                                                       "claim_count_insured_1y":  0.0,
-                                                                                                       "policy_count_insured_1y":  0,
-                                                                                                       "claim_amount_insured_1y":  0.0,
-                                                                                                       "discount_premium_insured_1y":  0.0,
-                                                                                                       "loss_ratio_insured_1y":  0.0,
-                                                                                                       "claim_count_insured_5y":  0.0,
-                                                                                                       "policy_count_insured_5y":  0,
-                                                                                                       "claim_amount_insured_5y":  0.0,
-                                                                                                       "discount_premium_insured_5y":  0.0,
-                                                                                                       "loss_ratio_insured_5y":  0.0,
-                                                                                                       "is_claimed":  "Y"
-                                                                                                   }
-                                                                                               ]
-                                                                             }
-                                                             },
-                                          "OVERALL_ASSESSMENT":  "本案延續既有海鮮相關承保脈絡，營業額與主要保障架構仍具可比性；惟經手通路、被保險人名稱及追溯日均與比對案件有所差異，承保對象關聯性需進一步確認。\u003cstrong\u003e附加條款增加、保費降低且自負額為0元\u003c/strong\u003e，同時每一事故身體傷害保額低於過往水準，核保宜確認條款適用、追溯條件及定價承接是否相符。",
-                                          "KEY_FACTS":  {
-                                                            "baseline":  [
-                                                                             "2024年曾有相同被保險人ID、要保人ID及經手人ID的通過報價，承接標的為活體海鮮、冷凍海鮮，營業額7,000萬元，保費13,000元。",
-                                                                             "過往採100%承接比例、合約再保、佣金率12%，每一人身體傷害保額200萬元、每一事故身體傷害保額1,000萬元、每一事故財物損失保額0元及保險期間累計保額2,000萬元。",
-                                                                             "同類食品相關案件多集中於較低營業額、保費、保額及自負額水準，承保對象常見製造商、經銷商及零售商。"
-                                                                         ],
-                                                            "change_trajectory":  [
-                                                                                      "本案經手通路與比對案件不同，且被保險人名稱比對結果不同，承保對象與既有案件的關聯性待確認。",
-                                                                                      "本案追溯日為2025年4月12日，較比對案件2024年1月20日往後；附加條款由既有6項增加至9項，新增食品附加及訴訟理賠等需求，應確認條款適用範圍與承保條件。",
-                                                                                      "本案保費為10,000元，低於比對案件13,000元；每一事故身體傷害保額為800萬元，低於過往1,000萬元，自負額金額為0元，保費、保障調整與本案條件的一致性待確認。"
-                                                                                  ]
-                                                        },
-                                          "RECOMMENDED_REVIEW_CASES":  [
-                                                                           {
-                                                                               "appllte_no":  "2401000015541889",
-                                                                               "quote_no_version":  "NPD240000150-1",
-                                                                               "policy_no":  "",
-                                                                               "verification":  "建議確認本案自負額金額為0及保費下調是否有明確承保條件依據，並核對新增附加條款是否已納入報價審核範圍。",
-                                                                               "fields_to_review":  "前次報價的保費13,000元、每一事故身體傷害保額1,000萬元、自負額備註及附加條款，並與本案保費10,000元、每一事故身體傷害保額800萬元、自負額金額0及新增報價需求說明逐項對照。"
-                                                                           },
-                                                                           {
-                                                                               "appllte_no":  "2502000060858062",
-                                                                               "quote_no_version":  "",
-                                                                               "policy_no":  "151614PD01357",
-                                                                               "verification":  "建議確認本案每一事故財物損失保額為0及自負額金額為0，與相近承保額度案件的差異是否為有意設定。",
-                                                                               "fields_to_review":  "該案每一人身體傷害保額200萬元、每一事故身體傷害保額800萬元、每一事故財物損失保額200萬元、保險期間累計保額2,000萬元、自負額金額2,000元及保費5,200元，作為相近額度結構的條件對照。"
-                                                                           },
-                                                                           {
-                                                                               "appllte_no":  "2502000119223063",
-                                                                               "quote_no_version":  "",
-                                                                               "policy_no":  "151614PD01551",
-                                                                               "verification":  "建議確認本案營業額同屬較高區間時，保費10,000元及保險期間累計保額2,000萬元的定價與額度配置是否合理。",
-                                                                               "fields_to_review":  "該案營業額1億5,000萬元、保費20,000元、每一人身體傷害保額200萬元、每一事故身體傷害保額800萬元及保險期間累計保額1,500萬元，並查看其承保對象類型與承接標的／產品名稱。"
-                                                                           }
-                                                                       ],
-                                          "ATTENTION_TAGS":  [
-                                                                 "通路",
-                                                                 "附加條款",
-                                                                 "承保對象",
-                                                                 "費率水準",
-                                                                 "追溯日"
-                                                             ],
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  2997,
+                                          "TOTAL_TOKENS":  3164,
+                                          "OUTPUT_TOKENS":  167,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積金額為1,200元；主要事項為所屬車輛人員任意棄置垃圾，違反《廢棄物清理法》第27條第1款。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬車輛人員任意棄置垃圾的環境管理事項，與產品責任保險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
                                           "overall_decision":  null,
                                           "correctness":  null,
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
                                           "reason":  null,
-                                          "latency_ms":  20311
+                                          "latency_ms":  1895
+                                      },
+                                      {
+                                          "name":  "報告",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  6541,
+                                                         "output":  656,
+                                                         "total":  7197
+                                                     },
+                                          "INPUT_TOKENS":  6541,
+                                          "OUTPUT_TOKENS":  656,
+                                          "TOTAL_TOKENS":  7197,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null,
+                                          "CASE_RISK":  "中風險",
+                                          "CASE_RATE":  "審慎評估",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "score":  5.75,
+                                          "final_summary":  "本案存在承保標的落差：產品分析為糕點與果乾，AOA／AGG評估卻以活體及冷凍海鮮批發零售為基礎，需確認實際承保產品及通路。若以海鮮流通為準，同批污染可能造成群聚求償，AOA與AGG年度累積承接壓力均為中等。另已加貼NPD005且再保合約排除該風險，並建議加貼NPD003A、NPD003B。應確認實際承保標的、流通型態、AOA／AGG評估基礎及上述條款與再保安排。",
+                                          "latency_ms":  7307
                                       }
                                   ]
                   },
@@ -19641,46 +20323,6 @@ window.validationReviewData = {
                                           "latency_ms":  14649
                                       },
                                       {
-                                          "name":  "web search",
-                                          "version":  "小量v2",
-                                          "deliveryDate":  "2026-07-13",
-                                          "latency_ms":  0,
-                                          "score":  10.0,
-                                          "tokens":  {
-                                                         "input":  0,
-                                                         "output":  0,
-                                                         "total":  0
-                                                     },
-                                          "INPUT_TOKENS":  0,
-                                          "OUTPUT_TOKENS":  0,
-                                          "TOTAL_TOKENS":  0,
-                                          "IS_WEB_SEARCH":  false,
-                                          "WEB_SEARCH_RESULT":  "此案非法人件，無進行 web search 查詢公開資料",
-                                          "CITATIONS":  [
-
-                                                        ]
-                                      },
-                                      {
-                                          "name":  "web search",
-                                          "version":  "正式v1",
-                                          "deliveryDate":  "2026-07-23",
-                                          "latency_ms":  0,
-                                          "score":  10.0,
-                                          "tokens":  {
-                                                         "input":  0,
-                                                         "output":  0,
-                                                         "total":  0
-                                                     },
-                                          "INPUT_TOKENS":  0,
-                                          "OUTPUT_TOKENS":  0,
-                                          "TOTAL_TOKENS":  0,
-                                          "IS_WEB_SEARCH":  false,
-                                          "WEB_SEARCH_RESULT":  "此案非法人件，無進行 web search 查詢公開資料",
-                                          "CITATIONS":  [
-
-                                                        ]
-                                      },
-                                      {
                                           "name":  "歷史",
                                           "version":  "小量v2",
                                           "deliveryDate":  "2026-07-29",
@@ -19781,6 +20423,108 @@ window.validationReviewData = {
                                           "overall_score":  null,
                                           "reason":  null,
                                           "latency_ms":  13449
+                                      },
+                                      {
+                                          "name":  "web search",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-07-13",
+                                          "latency_ms":  0,
+                                          "score":  10.0,
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "INPUT_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "IS_WEB_SEARCH":  false,
+                                          "WEB_SEARCH_RESULT":  "此案非法人件，無進行 web search 查詢公開資料",
+                                          "CITATIONS":  [
+
+                                                        ]
+                                      },
+                                      {
+                                          "name":  "web search",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-07-23",
+                                          "latency_ms":  0,
+                                          "score":  10.0,
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "INPUT_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "IS_WEB_SEARCH":  false,
+                                          "WEB_SEARCH_RESULT":  "此案非法人件，無進行 web search 查詢公開資料",
+                                          "CITATIONS":  [
+
+                                                        ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  4
+                                      },
+                                      {
+                                          "name":  "報告",
+                                          "version":  "小量v2",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  5976,
+                                                         "output":  635,
+                                                         "total":  6611
+                                                     },
+                                          "INPUT_TOKENS":  5976,
+                                          "OUTPUT_TOKENS":  635,
+                                          "TOTAL_TOKENS":  6611,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "IS_MASK":  false,
+                                          "BLOCK_RAIL":  null,
+                                          "MASK_RAIL":  null,
+                                          "CASE_RISK":  "中風險",
+                                          "CASE_RATE":  "審慎評估",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "score":  6.0,
+                                          "final_summary":  "營運型態存在落差：店面判定為攤販，但案件以食品製造商為承保對象，需確認實際營業型態及責任範圍。若涉及同批製作或同時段供餐，多人食用後求償可能使單一事故及年度累積損失達中等承接壓力。建議確認是否含外送／通路銷售，並核實保額、自負額及附加條款是否符合實際營運。",
+                                          "latency_ms":  6746
                                       }
                                   ]
                   },
@@ -20338,6 +21082,39 @@ window.validationReviewData = {
                                                                 "url":  "https://howlife.cna.com.tw/life/20150308s003.aspx?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  88
                                       }
                                   ]
                   },
@@ -20588,6 +21365,39 @@ window.validationReviewData = {
                                                                 "url":  "https://shop.showba.com.tw/page/Home?lang=zh-TW"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  77
                                       }
                                   ]
                   },
@@ -20695,6 +21505,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  6
                                       }
                                   ]
                   },
@@ -20881,6 +21724,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.pharma-tw.com/pharmacy/08405/c002625.html?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  89
                                       }
                                   ]
                   },
@@ -21143,6 +22019,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.findcompany.com.tw/%E5%B0%8F%E5%8D%9A%E5%A3%AB%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  89
                                       }
                                   ]
                   },
@@ -21269,6 +22178,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.findcompany.com.tw/index.php/%E7%A6%BE%E5%9F%95%E4%BC%81%E6%A5%AD%E7%A4%BE/92732586?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  87
                                       }
                                   ]
                   },
@@ -21489,6 +22431,39 @@ window.validationReviewData = {
                                                                 "url":  "https://spot.line.me/detail/486257322574747117?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  80
                                       }
                                   ]
                   },
@@ -21663,6 +22638,39 @@ window.validationReviewData = {
                                                                 "url":  "https://data.zhupiter.com/oddt/14973744/%E8%8A%8B%E5%9C%93%E6%94%A4/?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  78
                                       }
                                   ]
                   },
@@ -21849,6 +22857,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.dcard.tw/f/hk/p/229410201?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  88
                                       }
                                   ]
                   },
@@ -22135,6 +23176,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.foodpanda.com.tw/chain/cc9pd/hai-di-lao-huo-guo-cc9pd"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  2973,
+                                                         "output":  267,
+                                                         "total":  3240
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  2973,
+                                          "TOTAL_TOKENS":  3240,
+                                          "OUTPUT_TOKENS":  267,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積裁罰金額為5,000元，主要涉及雇主未依規定覈實申報調整勞工退休金提繳工資。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞工退休金提繳工資申報事項，與產品責任保險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  3207
                                       }
                                   ]
                   },
@@ -22337,6 +23411,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.findcompany.com.tw/%E7%91%AA%E4%BF%90%E5%9B%BA%E5%95%86%E8%A1%8C"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  155
                                       }
                                   ]
                   },
@@ -22583,6 +23690,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=t397649\u0026utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  2973,
+                                                         "output":  155,
+                                                         "total":  3128
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  2973,
+                                          "TOTAL_TOKENS":  3128,
+                                          "OUTPUT_TOKENS":  155,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積金額為5,000元，裁罰事項為未依規定覈實申報調整勞工退休金提繳工資。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞工退休金提繳工資申報事項，與產品責任保險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  1760
                                       }
                                   ]
                   },
@@ -22789,6 +23929,39 @@ window.validationReviewData = {
                                                                 "url":  "https://findbiz.nat.gov.tw/fts/company/94053330?fhl=en"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  73
                                       }
                                   ]
                   },
@@ -22983,6 +24156,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.foodpanda.com.tw/chain/cc9pd/hai-di-lao-huo-guo-cc9pd?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  2973,
+                                                         "output":  283,
+                                                         "total":  3256
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  2973,
+                                          "TOTAL_TOKENS":  3256,
+                                          "OUTPUT_TOKENS":  283,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積裁罰金額為5,000元，主要事項為未依規定覈實申報調整勞工退休金提繳工資。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞工退休金提繳工資申報事項，與產品責任保險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  3025
                                       }
                                   ]
                   },
@@ -23197,6 +24403,39 @@ window.validationReviewData = {
                                                                 "url":  "https://findbiz.nat.gov.tw/fts/company/58493538"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  86
                                       }
                                   ]
                   },
@@ -23423,6 +24662,39 @@ window.validationReviewData = {
                                                                 "url":  "https://findbiz.nat.gov.tw/fts/company/58493538"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  78
                                       }
                                   ]
                   },
@@ -23569,6 +24841,39 @@ window.validationReviewData = {
                                                                 "url":  "https://serv.gcis.nat.gov.tw/moeadsBF/cmpy/reportAction.do?fileName=376610000Asetup11009.pdf\u0026method=report\u0026reportClass=bmsItem\u0026subPath=11009\u0026utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  84
                                       }
                                   ]
                   },
@@ -23767,6 +25072,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.ubereats.com/tw/store/50%E5%B5%90-%E6%96%B0%E7%AB%B9%E9%A3%9F%E5%93%81%E5%BA%97/1bcMPW34QVCvu_fBfPNn0g?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  86
                                       }
                                   ]
                   },
@@ -24041,6 +25379,39 @@ window.validationReviewData = {
                                                                 "url":  "https://peetatake.oddle.me/zh_TW/"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  74
                                       }
                                   ]
                   },
@@ -24148,6 +25519,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  5799,
+                                                         "output":  986,
+                                                         "total":  6785
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "該店面位於戶外空地且為可隨時移動之臨時搭建攤車，外牆材質為木板且無明確出入口，判定為攤販。",
+                                          "INPUT_TOKENS":  5799,
+                                          "TOTAL_TOKENS":  6785,
+                                          "OUTPUT_TOKENS":  986,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  14560
                                       }
                                   ]
                   },
@@ -24255,6 +25659,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  6601,
+                                                         "output":  971,
+                                                         "total":  7572
+                                                     },
+                                          "SCORE":  8.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  8.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "店面位於合法建築物內，為永久結構且外牆材質固定，具有明確出入口，符合固定店面判定條件。",
+                                          "INPUT_TOKENS":  6601,
+                                          "TOTAL_TOKENS":  7572,
+                                          "OUTPUT_TOKENS":  971,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A05",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  14478
                                       }
                                   ]
                   },
@@ -24362,6 +25799,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  6341,
+                                                         "output":  980,
+                                                         "total":  7321
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "無法判斷，因提供的照片僅包含產品包裝與室內設備，完全未拍攝店面外觀，導致無法辨識營業場所。",
+                                          "INPUT_TOKENS":  6341,
+                                          "TOTAL_TOKENS":  7321,
+                                          "OUTPUT_TOKENS":  980,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A02",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  15808
                                       }
                                   ]
                   },
@@ -24469,6 +25939,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  6609,
+                                                         "output":  977,
+                                                         "total":  7586
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "無法判斷，原因為僅收到室內廚房照片，無法確認店面外觀。",
+                                          "INPUT_TOKENS":  6609,
+                                          "TOTAL_TOKENS":  7586,
+                                          "OUTPUT_TOKENS":  977,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A02",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  15317
                                       }
                                   ]
                   },
@@ -24675,6 +26178,39 @@ window.validationReviewData = {
                                                                 "url":  "https://twinc.com.tw/%E9%A6%A5%E9%8E%82%E5%95%86%E8%A1%8C/19857779/"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  109
                                       }
                                   ]
                   },
@@ -24809,6 +26345,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.findcompany.com.tw/%E9%9B%9E%E5%A4%A7%E8%A1%9B%E5%81%A5%E5%BA%B7%E9%A4%90%E5%B7%A5%E4%BD%9C%E5%AE%A4"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  90
                                       }
                                   ]
                   },
@@ -24979,6 +26548,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.foodpanda.com.tw/restaurant/e02x/yi-xin-ya-rou-geng?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  88
                                       }
                                   ]
                   },
@@ -25193,6 +26795,39 @@ window.validationReviewData = {
                                                                 "url":  "https://info.technews.tw/company/96879028-%E6%AD%90%E6%BE%A7%E5%9C%8B%E9%9A%9B%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  96
                                       }
                                   ]
                   },
@@ -25399,6 +27034,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.fonfood.com/store/262345/branch?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  2962,
+                                                         "output":  277,
+                                                         "total":  3239
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  2962,
+                                          "TOTAL_TOKENS":  3239,
+                                          "OUTPUT_TOKENS":  277,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積裁罰金額為4,320元，主要涉及雇主未按時繳納勞工退休金而加徵滯納金。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞工退休金未按時繳納致加徵滯納金，與產品責任保險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  4024
                                       }
                                   ]
                   },
@@ -25649,6 +27317,39 @@ window.validationReviewData = {
                                                                 "url":  "https://findbiz.nat.gov.tw/fts/company/59112564"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  3020,
+                                                         "output":  309,
+                                                         "total":  3329
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  3020,
+                                          "TOTAL_TOKENS":  3329,
+                                          "OUTPUT_TOKENS":  309,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積裁罰金額為0元，主要涉及勞工操作減容機時未停止機械運轉及送料，且捲夾危險處未設置護罩或護圍，違反職業安全衛生相關規定。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬職業安全衛生管理事項，與產品責任保險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  3982
                                       }
                                   ]
                   },
@@ -25795,6 +27496,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.chickpt.com.tw/job-Wy3mKOqkgm9a"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  112
                                       }
                                   ]
                   },
@@ -25945,6 +27679,39 @@ window.validationReviewData = {
                                                                 "url":  "https://poi.zhupiter.com/taxid-%E7%B5%B1%E4%B8%80%E7%B7%A8%E8%99%9F-85455678.html?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  95
                                       }
                                   ]
                   },
@@ -26155,6 +27922,39 @@ window.validationReviewData = {
                                                                 "url":  "https://info.technews.tw/company/10146102-%E7%BE%A9%E6%B0%91%E8%A1%8C?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  129
                                       }
                                   ]
                   },
@@ -26437,6 +28237,39 @@ window.validationReviewData = {
                                                                 "url":  "https://data.bznk.com/10729388?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  89
                                       }
                                   ]
                   },
@@ -26699,6 +28532,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.foodpanda.com.tw/chain/ch8pl/hai-di-lao-xiao-huo-guo?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  3085,
+                                                         "output":  540,
+                                                         "total":  3625
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  3085,
+                                          "TOTAL_TOKENS":  3625,
+                                          "OUTPUT_TOKENS":  540,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共2筆裁罰紀錄，已知累積裁罰金額為100,000元，主要涉及延長工時超過法令規定及工作場所防滑安全措施未符規定。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬延長工時及工作場所安全管理等勞動法遵事項，與產品責任保險承保的產品責任風險關聯性較低。兩筆紀錄均集中於勞動法遵管理，且分別發生於2022年及2023年，反映相關法遵執行與行政管理穩定性仍需留意。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  6417
                                       }
                                   ]
                   },
@@ -26889,6 +28755,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.findcompany.com.tw/%E6%96%B0%E5%8A%A0%E5%9D%A1%E5%95%86%E6%B5%B7%E5%BA%95%E6%92%88%E4%BA%8B%E6%A5%AD%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%8F%B0%E7%81%A3%E7%AC%AC%E4%B8%80%E5%88%86%E5%85%AC%E5%8F%B8"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  3085,
+                                                         "output":  472,
+                                                         "total":  3557
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  3085,
+                                          "TOTAL_TOKENS":  3557,
+                                          "OUTPUT_TOKENS":  472,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共2筆裁罰紀錄，已知累積裁罰金額為100,000元，主要涉及延長工作時間超過法令規定，以及工作場所踩踏場所未保持防滑安全狀態或採取必要預防措施。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞動工時及職業安全衛生管理事項，與產品責任保險關聯性較低。兩筆紀錄均集中於勞動法遵與職業安全衛生管理範疇，反映相關法遵執行與作業安全管理仍需留意。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  4510
                                       }
                                   ]
                   },
@@ -27067,6 +28966,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.findcompany.com.tw/%E6%96%B0%E5%8A%A0%E5%9D%A1%E5%95%86%E6%B5%B7%E5%BA%95%E6%92%88%E4%BA%8B%E6%A5%AD%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%8F%B0%E7%81%A3%E7%AC%AC%E4%B8%80%E5%88%86%E5%85%AC%E5%8F%B8"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  3085,
+                                                         "output":  507,
+                                                         "total":  3592
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  3085,
+                                          "TOTAL_TOKENS":  3592,
+                                          "OUTPUT_TOKENS":  507,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共2筆裁罰紀錄，已知累積裁罰金額為100,000元，分別涉及延長工作時間超過法令規定，以及工作場所未維持防止勞工滑倒的安全狀態或採取必要預防措施。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬延長工時及工作場所職業安全衛生管理事項，與產品責任保險關聯性較低。兩筆紀錄分屬不同事由，未見相同事由跨年度反覆發生，但均集中於勞動與職業安全衛生管理，反映相關法遵及作業安全控管狀況需留意。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  5730
                                       }
                                   ]
                   },
@@ -27273,6 +29205,39 @@ window.validationReviewData = {
                                                                 "url":  "https://findbiz.nat.gov.tw/fts/company/56022006"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  114
                                       }
                                   ]
                   },
@@ -27503,6 +29468,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.ubereats.com/tw-en/store/%E7%90%B4%E5%A7%90%E5%BB%9A%E6%88%BF%E6%B9%96%E5%8D%97%E5%AE%B6%E5%B8%B8%E8%8F%9C/HNwJG0zcVSOc_3xdFQinIQ"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  78
                                       }
                                   ]
                   },
@@ -27610,6 +29608,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  5
                                       }
                                   ]
                   },
@@ -27717,6 +29748,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  8
                                       }
                                   ]
                   },
@@ -27824,6 +29888,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  6
                                       }
                                   ]
                   },
@@ -27931,6 +30028,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  5799,
+                                                         "output":  964,
+                                                         "total":  6763
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "無法判斷，因提供的照片為產品菜單，缺乏店面外觀照片以確認營業場所。",
+                                          "INPUT_TOKENS":  5799,
+                                          "TOTAL_TOKENS":  6763,
+                                          "OUTPUT_TOKENS":  964,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A02",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  13372
                                       }
                                   ]
                   },
@@ -28145,6 +30275,39 @@ window.validationReviewData = {
                                                                 "url":  "https://findbiz.nat.gov.tw/fts/company/82992513"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  92
                                       }
                                   ]
                   },
@@ -28252,6 +30415,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  3048,
+                                                         "output":  385,
+                                                         "total":  3433
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  3048,
+                                          "TOTAL_TOKENS":  3433,
+                                          "OUTPUT_TOKENS":  385,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共2筆裁罰紀錄，已知累積裁罰金額為2,938元，均涉及雇主未按時繳納勞工退休金致加徵滯納金，分別發生於2025年及2026年。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞工退休金未按時繳納致加徵滯納金，與產品責任保險關聯性較低。相同法規及事由跨2025年與2026年反覆發生，反映勞動法遵執行及行政管理穩定性需留意。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  3650
                                       }
                                   ]
                   },
@@ -28359,6 +30555,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  6
                                       }
                                   ]
                   },
@@ -28466,6 +30695,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  5
                                       }
                                   ]
                   },
@@ -28632,6 +30894,39 @@ window.validationReviewData = {
                                                                 "url":  "https://chiasin.tw/shop/?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  78
                                       }
                                   ]
                   },
@@ -28814,6 +31109,39 @@ window.validationReviewData = {
                                                                 "url":  "https://findbiz.nat.gov.tw/fts/business/31464790/01200000000000088036"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  71
                                       }
                                   ]
                   },
@@ -29028,6 +31356,39 @@ window.validationReviewData = {
                                                                 "url":  "https://mygov.tw/city/%E8%87%BA%E5%8D%97%E5%B8%82/industry/932414?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  99
                                       }
                                   ]
                   },
@@ -29254,6 +31615,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.104.com.tw/company/1a2x6bme8o"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  84
                                       }
                                   ]
                   },
@@ -29552,6 +31946,39 @@ window.validationReviewData = {
                                                                 "url":  "https://thaubing.gcaa.org.tw/corp/80130808"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  2966,
+                                                         "output":  311,
+                                                         "total":  3277
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  2966,
+                                          "TOTAL_TOKENS":  3277,
+                                          "OUTPUT_TOKENS":  311,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積裁罰金額為1,000元，主要涉及柴油車未取得有效期限之優級或同等級以上自主管理標章而進入空氣品質維護區。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬車輛排放與空氣污染管理事項，與產品責任保險承保的產品使用後損害風險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  3267
                                       }
                                   ]
                   },
@@ -29706,6 +32133,39 @@ window.validationReviewData = {
                                                                 "url":  "https://findbiz.nat.gov.tw/fts/company/90460840"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  3264,
+                                                         "output":  600,
+                                                         "total":  3864
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  3264,
+                                          "TOTAL_TOKENS":  3864,
+                                          "OUTPUT_TOKENS":  600,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共3筆裁罰紀錄，已知累積裁罰金額為50,000元，主要涉及延長工作時間未依法加給工資、堆高機駕駛安全帶及倒車管制引導，以及高溫熱表面灼燙防護措施不足。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬加班工資及職業安全衛生管理事項，與產品責任保險承保的產品使用後損害風險關聯性較低。三筆紀錄集中於勞動與職業安全衛生法遵管理，且職業安全衛生事項於2025年有兩筆，反映相關作業控管狀況需留意。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  5808
                                       }
                                   ]
                   },
@@ -29884,6 +32344,39 @@ window.validationReviewData = {
                                                                 "url":  "https://lawplayer.com/company/56700498"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  78
                                       }
                                   ]
                   },
@@ -30030,6 +32523,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.findcompany.com.tw/%E5%8F%A4%E5%8E%9D%E5%B0%8F%E5%90%83%E5%BA%97/72732193"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  86
                                       }
                                   ]
                   },
@@ -30137,6 +32663,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  4
                                       }
                                   ]
                   },
@@ -30291,6 +32850,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.findcompany.com.tw/trademark/00498560_079008294"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  73
                                       }
                                   ]
                   },
@@ -30525,6 +33117,39 @@ window.validationReviewData = {
                                                                 "url":  "https://bid.twincn.com/c.aspx?sn=21077\u0026utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  96
                                       }
                                   ]
                   },
@@ -30691,6 +33316,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.ubereats.com/tw-en/store/%E5%B7%9D%E9%83%BD-%E9%BA%BB%E8%BE%A3%E9%AD%AF%E5%91%B3/tDZfFiiTUOq-54OjRfzC5A?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  97
                                       }
                                   ]
                   },
@@ -30925,6 +33583,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.ubereats.com/tw/store/%E9%A3%AF%E9%A3%AF%E5%A0%82-%E6%98%82%E6%98%9F%E7%82%B8%E7%89%A9/FFiJUL3uV26cBeUZ7BtDDQ"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  83
                                       }
                                   ]
                   },
@@ -31032,6 +33723,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "檔案無法開啟或解析,無法分析",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A02",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  2815
                                       }
                                   ]
                   },
@@ -31139,6 +33863,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "照片資訊不足,無法判讀關鍵外觀條件",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A03",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  61920
                                       }
                                   ]
                   },
@@ -31246,6 +34003,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  3
                                       }
                                   ]
                   },
@@ -31353,6 +34143,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  5805,
+                                                         "output":  968,
+                                                         "total":  6773
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "無法判斷，因照片僅呈現室內環境，無法看見店面外觀以進行後續分析。",
+                                          "INPUT_TOKENS":  5805,
+                                          "TOTAL_TOKENS":  6773,
+                                          "OUTPUT_TOKENS":  968,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A02",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  40528
                                       }
                                   ]
                   },
@@ -31460,6 +34283,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  5805,
+                                                         "output":  983,
+                                                         "total":  6788
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "店面位於戶外且為可移動之臨時搭建攤位，外牆非固定材質且無明確出入口，判定為攤販。",
+                                          "INPUT_TOKENS":  5805,
+                                          "TOTAL_TOKENS":  6788,
+                                          "OUTPUT_TOKENS":  983,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  13496
                                       }
                                   ]
                   },
@@ -31567,6 +34423,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  6065,
+                                                         "output":  982,
+                                                         "total":  7047
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "該店家雖位於騎樓內，但外觀為臨時搭建之折疊桌攤位且無固定材質外牆，判定為攤販。",
+                                          "INPUT_TOKENS":  6065,
+                                          "TOTAL_TOKENS":  7047,
+                                          "OUTPUT_TOKENS":  982,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  13571
                                       }
                                   ]
                   },
@@ -31674,6 +34563,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  109
                                       }
                                   ]
                   },
@@ -31832,6 +34754,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.ubereats.com/tw-en/store/%E5%93%87-%E9%AC%86%E9%A4%85%E5%B1%8B/PBWXjLL4WV-KJgD-QqN8GQ"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  80
                                       }
                                   ]
                   },
@@ -31939,6 +34894,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  5
                                       }
                                   ]
                   },
@@ -32046,6 +35034,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  6947,
+                                                         "output":  974,
+                                                         "total":  7921
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "無法判斷，原因為僅提供室內設備與座位照片，完全缺乏店面外觀照片，無法確認目標標的之唯一性及其建築構造。",
+                                          "INPUT_TOKENS":  6947,
+                                          "TOTAL_TOKENS":  7921,
+                                          "OUTPUT_TOKENS":  974,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A02",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  16445
                                       }
                                   ]
                   },
@@ -32153,6 +35174,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  5
                                       }
                                   ]
                   },
@@ -32260,6 +35314,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  5805,
+                                                         "output":  988,
+                                                         "total":  6793
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "店面雖位於建築物內，但外觀為臨時搭建結構且外牆材質非永久性，判定為攤販。",
+                                          "INPUT_TOKENS":  5805,
+                                          "TOTAL_TOKENS":  6793,
+                                          "OUTPUT_TOKENS":  988,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  13319
                                       }
                                   ]
                   },
@@ -32367,6 +35454,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  3
                                       }
                                   ]
                   },
@@ -32474,6 +35594,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  3
                                       }
                                   ]
                   },
@@ -32581,6 +35734,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  4
                                       }
                                   ]
                   },
@@ -32688,6 +35874,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  4
                                       }
                                   ]
                   },
@@ -32795,6 +36014,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  4
                                       }
                                   ]
                   },
@@ -32902,6 +36154,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  10
                                       }
                                   ]
                   },
@@ -33009,6 +36294,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  3
                                       }
                                   ]
                   },
@@ -33116,6 +36434,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  7
                                       }
                                   ]
                   },
@@ -33223,6 +36574,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  4
                                       }
                                   ]
                   },
@@ -33330,6 +36714,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  6073,
+                                                         "output":  973,
+                                                         "total":  7046
+                                                     },
+                                          "SCORE":  8.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  8.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "店面位於合法建築物騎樓內，結構為永久性建築且外牆為水泥材質，並有明確出入口，符合固定店面條件。",
+                                          "INPUT_TOKENS":  6073,
+                                          "TOTAL_TOKENS":  7046,
+                                          "OUTPUT_TOKENS":  973,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A05",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  13471
                                       }
                                   ]
                   },
@@ -33437,6 +36854,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  5
                                       }
                                   ]
                   },
@@ -33647,6 +37097,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.ubereats.com/tw-en/store/a-bao-%E9%AB%98%E9%86%AB%E5%BA%97/wzj-3MEoS7CEdhV63wd_zA"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  93
                                       }
                                   ]
                   },
@@ -33754,6 +37237,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  6341,
+                                                         "output":  982,
+                                                         "total":  7323
+                                                     },
+                                          "SCORE":  8.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  8.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "店面位於合法建築物騎樓內，為永久性固定結構且外牆材質固定，具有明確出入口，符合固定店面判定條件。",
+                                          "INPUT_TOKENS":  6341,
+                                          "TOTAL_TOKENS":  7323,
+                                          "OUTPUT_TOKENS":  982,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A05",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  14972
                                       }
                                   ]
                   },
@@ -33861,6 +37377,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  6609,
+                                                         "output":  979,
+                                                         "total":  7588
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "店家位於戶外且外觀為木製臨時搭建結構，外牆非固定材質且無明確出入口，判定為攤販。",
+                                          "INPUT_TOKENS":  6609,
+                                          "TOTAL_TOKENS":  7588,
+                                          "OUTPUT_TOKENS":  979,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  14432
                                       }
                                   ]
                   },
@@ -34079,6 +37628,39 @@ window.validationReviewData = {
                                                                 "url":  "https://menupapa.com/menu/12971"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  107
                                       }
                                   ]
                   },
@@ -34233,6 +37815,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.ubereats.com/tw/store/%E6%A3%AE%E9%B1%BB%E7%94%9F%E7%8C%9B%E6%B4%BB%E6%B5%B7%E9%AE%AE%E7%86%B1%E7%82%92/2Qr6523KVK6KL-BB4WT3Ow"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  73
                                       }
                                   ]
                   },
@@ -34359,6 +37974,39 @@ window.validationReviewData = {
                                                                 "url":  "https://alltwcompany.com/nd-B-92128692-%E7%A6%8F%E4%B8%8A%E6%B5%B7%E8%87%AD%E8%87%AD%E9%8D%8B.html?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  76
                                       }
                                   ]
                   },
@@ -34466,6 +38114,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  3
                                       }
                                   ]
                   },
@@ -34624,6 +38305,39 @@ window.validationReviewData = {
                                                                 "url":  "https://alltwcompany.com/nd-B-26713073-%E6%97%A9%E5%AE%89%E5%AE%A2%E6%A3%A7.html"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  70
                                       }
                                   ]
                   },
@@ -34750,6 +38464,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.findcompany.com.tw/en/%E9%98%BF%E7%A5%A5%E5%B9%B3%E5%83%B9%E7%86%B1%E7%82%92?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  86
                                       }
                                   ]
                   },
@@ -34857,6 +38604,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  7145,
+                                                         "output":  985,
+                                                         "total":  8130
+                                                     },
+                                          "SCORE":  8.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  8.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "店面位於合法建築物內，為永久性固定結構且外牆材質固定，具有明確出入口，綜合判定為固定店面。",
+                                          "INPUT_TOKENS":  7145,
+                                          "TOTAL_TOKENS":  8130,
+                                          "OUTPUT_TOKENS":  985,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A05",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  15696
                                       }
                                   ]
                   },
@@ -34964,6 +38744,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  4
                                       }
                                   ]
                   },
@@ -35071,6 +38884,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  5
                                       }
                                   ]
                   },
@@ -35178,6 +39024,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  6073,
+                                                         "output":  969,
+                                                         "total":  7042
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "無法判斷，因提供的照片僅包含室內設備與菜單，完全看不到店面外觀，無法確認標的唯一性。",
+                                          "INPUT_TOKENS":  6073,
+                                          "TOTAL_TOKENS":  7042,
+                                          "OUTPUT_TOKENS":  969,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A02",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  12964
                                       }
                                   ]
                   },
@@ -35360,6 +39239,39 @@ window.validationReviewData = {
                                                                 "url":  "https://info.technews.tw/company/72372227-%E7%B2%98%E9%9B%85%E8%98%AD"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  93
                                       }
                                   ]
                   },
@@ -35467,6 +39379,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  3
                                       }
                                   ]
                   },
@@ -35574,6 +39519,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  3
                                       }
                                   ]
                   },
@@ -35681,6 +39659,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  5805,
+                                                         "output":  985,
+                                                         "total":  6790
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "店家位於臨時攤位且後方為貨櫃車，非合法建築物內，且無固定牆材與明確出入口，判定為攤販。",
+                                          "INPUT_TOKENS":  5805,
+                                          "TOTAL_TOKENS":  6790,
+                                          "OUTPUT_TOKENS":  985,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  13225
                                       }
                                   ]
                   },
@@ -35788,6 +39799,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  4
                                       }
                                   ]
                   },
@@ -35895,6 +39939,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  6069,
+                                                         "output":  985,
+                                                         "total":  7054
+                                                     },
+                                          "SCORE":  8.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  8.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "店面位於建築物內，為永久性固定結構且外牆材質固定，屬室內商場櫃位故出入口條件豁免，判定為固定店面。",
+                                          "INPUT_TOKENS":  6069,
+                                          "TOTAL_TOKENS":  7054,
+                                          "OUTPUT_TOKENS":  985,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A06",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  14017
                                       }
                                   ]
                   },
@@ -36002,6 +40079,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "照片資訊不足,無法判讀關鍵外觀條件",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A03",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  60607
                                       }
                                   ]
                   },
@@ -36208,6 +40318,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.asiafm.com.tw/lifereport/%E4%B8%8D%E8%83%BD%E5%87%BA%E5%9C%8B%E4%B9%9F%E8%83%BD%E5%90%83%E5%88%B0%E6%9C%80%E9%81%93%E5%9C%B0%E7%9A%84%E6%97%A5%E5%BC%8F%E7%BE%8E%E9%A3%9F-%E6%96%B0%E7%AB%B9%E5%A4%A7%E9%81%A0%E7%99%BE/"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  71
                                       }
                                   ]
                   },
@@ -36315,6 +40458,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  2
                                       }
                                   ]
                   },
@@ -36422,6 +40598,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  6341,
+                                                         "output":  972,
+                                                         "total":  7313
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "店面位於建築物內，但結構非永久性且無固定材質外牆，判定為攤販。",
+                                          "INPUT_TOKENS":  6341,
+                                          "TOTAL_TOKENS":  7313,
+                                          "OUTPUT_TOKENS":  972,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  38618
                                       }
                                   ]
                   },
@@ -36529,6 +40738,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  6877,
+                                                         "output":  982,
+                                                         "total":  7859
+                                                     },
+                                          "SCORE":  8.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  8.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "店家位於合法建築物內且為永久結構，外牆材質固定且有明確出入口，符合固定店面判定條件。",
+                                          "INPUT_TOKENS":  6877,
+                                          "TOTAL_TOKENS":  7859,
+                                          "OUTPUT_TOKENS":  982,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A05",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  13933
                                       }
                                   ]
                   },
@@ -36759,6 +41001,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.ubereats.com/tw/store/%E5%89%89%E5%86%B0%E5%A5%B3%E7%8E%8B/t7Q8bhmGQrqlzh7UxlOWdg"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  80
                                       }
                                   ]
                   },
@@ -36877,6 +41152,39 @@ window.validationReviewData = {
                                                                 "url":  "https://serv.gcis.nat.gov.tw/moeadsBF/cmpy/reportAction.do?fileName=376580000Achange11503.pdf\u0026method=report\u0026reportClass=bmsItem\u0026subPath=11503\u0026utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  7133,
+                                                         "output":  977,
+                                                         "total":  8110
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "無法判斷，因提供的照片僅包含室內設備、產品及局部牆面，完全缺乏店面外觀照片，無法確認營業場所之整體狀態。",
+                                          "INPUT_TOKENS":  7133,
+                                          "TOTAL_TOKENS":  8110,
+                                          "OUTPUT_TOKENS":  977,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A02",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  16066
                                       }
                                   ]
                   },
@@ -36984,6 +41292,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  6609,
+                                                         "output":  971,
+                                                         "total":  7580
+                                                     },
+                                          "SCORE":  8.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  8.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "店家位於合法建築物內，為永久結構且外牆材質固定，並有明確出入口，符合固定店面之判定條件。",
+                                          "INPUT_TOKENS":  6609,
+                                          "TOTAL_TOKENS":  7580,
+                                          "OUTPUT_TOKENS":  971,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A05",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  14384
                                       }
                                   ]
                   },
@@ -37091,6 +41432,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  3
                                       }
                                   ]
                   },
@@ -37198,6 +41572,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  7413,
+                                                         "output":  984,
+                                                         "total":  8397
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "無法判斷，因僅提供菜單及廚房室內照片，缺乏店面外觀照片以供辨識。\n【※註:模型僅辨識前7張影像;PDF僅辨識前7頁,超過部分不納入辨識】",
+                                          "INPUT_TOKENS":  7413,
+                                          "TOTAL_TOKENS":  8397,
+                                          "OUTPUT_TOKENS":  984,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A02",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  16226
                                       }
                                   ]
                   },
@@ -37412,6 +41819,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.104.com.tw/company/1a2x6bmpt1"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  108
                                       }
                                   ]
                   },
@@ -37519,6 +41959,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  4
                                       }
                                   ]
                   },
@@ -37753,6 +42226,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.ubereats.com/tw-en/store/%E5%A4%9C%E5%B8%82%E7%8E%8B-%E5%8E%9F%E9%A6%99%E5%98%9F%E8%AB%96%E7%AB%B9%E7%AD%92%E9%A3%AF-%E5%90%89%E5%AE%89%E5%BA%97/kFIM_WxzU_es93pl-SL6zA?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  68
                                       }
                                   ]
                   },
@@ -37860,6 +42366,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  6877,
+                                                         "output":  984,
+                                                         "total":  7861
+                                                     },
+                                          "SCORE":  8.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  8.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "店面位於合法建築物內，結構為永久性建築且外牆為固定材質，並有明確的出入口，符合固定店面之判定條件。",
+                                          "INPUT_TOKENS":  6877,
+                                          "TOTAL_TOKENS":  7861,
+                                          "OUTPUT_TOKENS":  984,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A05",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  14523
                                       }
                                   ]
                   },
@@ -38074,6 +42613,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.104.com.tw/company/1a2x6bmtpd"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  76
                                       }
                                   ]
                   },
@@ -38181,6 +42753,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  4
                                       }
                                   ]
                   },
@@ -38288,6 +42893,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  4
                                       }
                                   ]
                   },
@@ -38422,6 +43060,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.foodpanda.com.tw/restaurant/bknp/ma-ke-zao-wu-can-bknp"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  79
                                       }
                                   ]
                   },
@@ -38644,6 +43315,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.chickpt.com.tw/company/OB31xKZ7ym9l?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  80
                                       }
                                   ]
                   },
@@ -38751,6 +43455,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  3
                                       }
                                   ]
                   },
@@ -38858,6 +43595,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  6073,
+                                                         "output":  974,
+                                                         "total":  7047
+                                                     },
+                                          "SCORE":  8.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  8.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "店面位於合法建築物內，結構為永久性且外牆材質固定，並有明確的出入口，符合固定店面判定條件。",
+                                          "INPUT_TOKENS":  6073,
+                                          "TOTAL_TOKENS":  7047,
+                                          "OUTPUT_TOKENS":  974,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A05",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  13604
                                       }
                                   ]
                   },
@@ -38965,6 +43735,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  5787,
+                                                         "output":  972,
+                                                         "total":  6759
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "無法判斷，原因為僅提供菜單影像，無法確認店面外觀之可用性。",
+                                          "INPUT_TOKENS":  5787,
+                                          "TOTAL_TOKENS":  6759,
+                                          "OUTPUT_TOKENS":  972,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A02",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  12816
                                       }
                                   ]
                   },
@@ -39072,6 +43875,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  6073,
+                                                         "output":  979,
+                                                         "total":  7052
+                                                     },
+                                          "SCORE":  8.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  8.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "店面位於建築物內，結構為永久性且外牆為固定材質，並有明確的出入口，符合固定店面之判斷條件。",
+                                          "INPUT_TOKENS":  6073,
+                                          "TOTAL_TOKENS":  7052,
+                                          "OUTPUT_TOKENS":  979,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A05",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  13614
                                       }
                                   ]
                   },
@@ -39218,6 +44054,39 @@ window.validationReviewData = {
                                                                 "url":  "https://mygov.tw/city/%E6%96%B0%E7%AB%B9%E7%B8%A3/%E7%AB%B9%E5%8C%97%E5%B8%82/%E5%8D%9A%E6%84%9B%E8%A1%97?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  89
                                       }
                                   ]
                   },
@@ -39325,6 +44194,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  2
                                       }
                                   ]
                   },
@@ -39432,6 +44334,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  5795,
+                                                         "output":  984,
+                                                         "total":  6779
+                                                     },
+                                          "SCORE":  8.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  8.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "店面位於合法建築物內且為永久結構，外牆材質固定並有明確出入口，符合固定店面之判斷條件。",
+                                          "INPUT_TOKENS":  5795,
+                                          "TOTAL_TOKENS":  6779,
+                                          "OUTPUT_TOKENS":  984,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A05",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  12733
                                       }
                                   ]
                   },
@@ -39678,6 +44613,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.creation.com.tw/tw/partner/show.php?num=160"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  77
                                       }
                                   ]
                   },
@@ -39785,6 +44753,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  6073,
+                                                         "output":  978,
+                                                         "total":  7051
+                                                     },
+                                          "SCORE":  8.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  8.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "店面位於建築物騎樓內，結構為永久性且外牆材質固定，具有明確出入口，符合固定店面之判定條件。",
+                                          "INPUT_TOKENS":  6073,
+                                          "TOTAL_TOKENS":  7051,
+                                          "OUTPUT_TOKENS":  978,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A05",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  14624
                                       }
                                   ]
                   },
@@ -39892,6 +44893,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  5803,
+                                                         "output":  961,
+                                                         "total":  6764
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "無法判斷，原因為提供的照片僅包含室內設備與環境，完全未拍到店面外觀。",
+                                          "INPUT_TOKENS":  5803,
+                                          "TOTAL_TOKENS":  6764,
+                                          "OUTPUT_TOKENS":  961,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A02",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  12323
                                       }
                                   ]
                   },
@@ -39999,6 +45033,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  3
                                       }
                                   ]
                   },
@@ -40106,6 +45173,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  6071,
+                                                         "output":  978,
+                                                         "total":  7049
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "店家位於戶外空地，外觀為臨時搭建之攤棚且外牆非固定材質，判定為攤販。",
+                                          "INPUT_TOKENS":  6071,
+                                          "TOTAL_TOKENS":  7049,
+                                          "OUTPUT_TOKENS":  978,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  14001
                                       }
                                   ]
                   },
@@ -40213,6 +45313,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  5803,
+                                                         "output":  970,
+                                                         "total":  6773
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "無法判斷，原因為僅提供室內設備照片，無法確認店面外觀。",
+                                          "INPUT_TOKENS":  5803,
+                                          "TOTAL_TOKENS":  6773,
+                                          "OUTPUT_TOKENS":  970,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A02",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  12345
                                       }
                                   ]
                   },
@@ -40320,6 +45453,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  3
                                       }
                                   ]
                   },
@@ -40490,6 +45656,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.104.com.tw/company/1a2x6blbwp"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  3149,
+                                                         "output":  210,
+                                                         "total":  3359
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  3149,
+                                          "TOTAL_TOKENS":  3359,
+                                          "OUTPUT_TOKENS":  210,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共3筆裁罰紀錄，已知累積裁罰金額為253,282元，均為雇主未按時繳納勞工退休金致加徵滯納金，且均依勞工退休金條例第19條第1項裁處。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞工退休金未按時繳納及滯納金事項，與產品責任保險關聯性較低。三筆裁罰均於2025年以相同法規及事由發生，反映勞工退休金繳納作業的法遵執行與行政管理穩定性需留意。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  3016
                                       }
                                   ]
                   },
@@ -40676,6 +45875,39 @@ window.validationReviewData = {
                                                                 "url":  "https://blog.footinder.app/%E9%AB%98%E9%9B%84%E5%B8%82%E9%B3%B3%E5%B1%B1%E5%8D%80-2/%E9%AB%98%E9%9B%84%E5%B8%82-%E9%B3%B3%E5%B1%B1%E5%8D%80-%E7%AC%AC%E4%B8%80%E5%90%8D%E7%81%AB%E7%83%A4%E5%85%A9%E5%90%83-%E9%B3%B3%E5%8D%97%E5%BA%97/"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  2960,
+                                                         "output":  245,
+                                                         "total":  3205
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  2960,
+                                          "TOTAL_TOKENS":  3205,
+                                          "OUTPUT_TOKENS":  245,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積裁罰金額為549元，主要涉及雇主未按時繳納勞工退休金致加徵滯納金。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞工退休金繳納及滯納金事項，與產品責任保險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  3024
                                       }
                                   ]
                   },
@@ -40842,6 +46074,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.fonfood.com/store/636076"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  2960,
+                                                         "output":  259,
+                                                         "total":  3219
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  2960,
+                                          "TOTAL_TOKENS":  3219,
+                                          "OUTPUT_TOKENS":  259,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積裁罰金額為549元，主要涉及雇主未按時繳納勞工退休金而加徵滯納金。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞工退休金繳納及滯納金事項，與產品責任保險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  2629
                                       }
                                   ]
                   },
@@ -40949,6 +46214,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "照片資訊不足,無法判讀關鍵外觀條件",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A03",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  63953
                                       }
                                   ]
                   },
@@ -41056,6 +46354,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  5805,
+                                                         "output":  983,
+                                                         "total":  6788
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "店家外觀位於戶外且為臨時搭建之攤棚，外牆材質非永久性結構，且無明確出入口，判定為攤販。",
+                                          "INPUT_TOKENS":  5805,
+                                          "TOTAL_TOKENS":  6788,
+                                          "OUTPUT_TOKENS":  983,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  36934
                                       }
                                   ]
                   },
@@ -41163,6 +46494,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  5805,
+                                                         "output":  975,
+                                                         "total":  6780
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "無法判斷，原因為僅收到室內冰箱照片，完全看不到店面外觀，無法辨識目標標的。",
+                                          "INPUT_TOKENS":  5805,
+                                          "TOTAL_TOKENS":  6780,
+                                          "OUTPUT_TOKENS":  975,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A02",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  12481
                                       }
                                   ]
                   },
@@ -41285,6 +46649,39 @@ window.validationReviewData = {
                                                                 "url":  "https://serv.gcis.nat.gov.tw/moeadsBF/cmpy/reportAction.do?fileName=376570000Asetup11306.pdf\u0026method=report\u0026reportClass=bms\u0026subPath=11306"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  84
                                       }
                                   ]
                   },
@@ -41392,6 +46789,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  6073,
+                                                         "output":  982,
+                                                         "total":  7055
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "無法判斷，原因為僅提供室內設備照片，無法看見店面外觀以確認目標標的。",
+                                          "INPUT_TOKENS":  6073,
+                                          "TOTAL_TOKENS":  7055,
+                                          "OUTPUT_TOKENS":  982,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A02",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  12970
                                       }
                                   ]
                   },
@@ -41499,6 +46929,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  5803,
+                                                         "output":  975,
+                                                         "total":  6778
+                                                     },
+                                          "SCORE":  8.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  8.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "店面位於建築物騎樓內，結構為永久性且外牆材質固定，並有明確出入口，符合固定店面之判斷條件。",
+                                          "INPUT_TOKENS":  5803,
+                                          "TOTAL_TOKENS":  6778,
+                                          "OUTPUT_TOKENS":  975,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A05",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  13200
                                       }
                                   ]
                   },
@@ -41637,6 +47100,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.ubereats.com/tw-en/store/%E5%8C%97%E4%BA%AC%E7%B4%A0%E9%A3%9F%E5%BA%97/P7MNAchiTj6K-hr4oXx8Pg"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  113
                                       }
                                   ]
                   },
@@ -41779,6 +47275,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.ubereats.com/tw/store/%E4%BD%9C%E4%BC%B4%E4%B9%BE%E6%8B%8C%E9%BA%B5/bzPl9nnsXmCqVopfFgYJ1g"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  117
                                       }
                                   ]
                   },
@@ -41886,6 +47415,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  6339,
+                                                         "output":  985,
+                                                         "total":  7324
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "店面未位於合法建築物內，且外觀為臨時搭建之攤棚，外牆材質非固定材質，判定為攤販。",
+                                          "INPUT_TOKENS":  6339,
+                                          "TOTAL_TOKENS":  7324,
+                                          "OUTPUT_TOKENS":  985,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  14591
                                       }
                                   ]
                   },
@@ -41993,6 +47555,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  4
                                       }
                                   ]
                   },
@@ -42100,6 +47695,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  5
                                       }
                                   ]
                   },
@@ -42286,6 +47914,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.chickpt.com.tw/company/QJlmXEJ4z1XZ?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  79
                                       }
                                   ]
                   },
@@ -42440,6 +48101,39 @@ window.validationReviewData = {
                                                                 "url":  "https://ifoodie.tw/restaurant/68ad77e8eb74c4df02c763b7-%E6%9E%9C%E9%AD%82%E9%9B%AA%E5%86%B0Fruit-Soul"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  83
                                       }
                                   ]
                   },
@@ -42614,6 +48308,39 @@ window.validationReviewData = {
                                                                 "url":  "https://melodysu911.pixnet.net/blog/posts/16104999356?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  79
                                       }
                                   ]
                   },
@@ -42792,6 +48519,39 @@ window.validationReviewData = {
                                                                 "url":  "https://info.technews.tw/company/98928171-%E8%80%81%E5%9C%B0%E6%96%B9%E9%A4%90%E9%A3%B2%E5%BA%97"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  93
                                       }
                                   ]
                   },
@@ -42899,6 +48659,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  61
                                       }
                                   ]
                   },
@@ -43065,6 +48858,39 @@ window.validationReviewData = {
                                                                 "url":  "https://findbiz.nat.gov.tw/fts/business/95397924/23900000000025808144?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  126
                                       }
                                   ]
                   },
@@ -43319,6 +49145,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.chickpt.com.tw/company/PE70eQ9Kb08v"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  115
                                       }
                                   ]
                   },
@@ -43426,6 +49285,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "檔案無法開啟或解析,無法分析",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A02",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  1735
                                       }
                                   ]
                   },
@@ -43616,6 +49508,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.hkfce.org.tw/tw/magazine/%E6%96%B0%E6%B8%AF%E8%AA%A0%E5%93%81-%E6%AD%A1%E5%96%9C%E9%96%8B%E5%B9%95/391%E6%9C%9F%E9%A3%9B%E5%9B%9E%E5%B7%A2%E7%9A%84%E6%96%B0%E6%B8%AF%E5%9B%9D%E4%BB%94%E5%B1%B1%E9%B3%A9%E5%92%96%E5%95%A1?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  73
                                       }
                                   ]
                   },
@@ -43806,6 +49731,39 @@ window.validationReviewData = {
                                                                 "url":  "https://poi.zhupiter.com/taxid-%E7%B5%B1%E4%B8%80%E7%B7%A8%E8%99%9F-93290996.html?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  80
                                       }
                                   ]
                   },
@@ -43972,6 +49930,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.ubereats.com/tw-en/store/%E9%98%BF%E5%BF%97%E7%94%9F%E7%82%92%E7%BE%8A%E8%82%89/_SXk8HElWSKynRgRNJ--GA?pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMjIlMjBGeWZmZSUyMFN0JTIyJTJDJTIycmVmZXJlbmNlJTIyJTNBJTIyQ2hJSko1MC1Pc2xjaGtnUkh4WWlnMFZWZjdZJTIyJTJDJTIycmVmZXJlbmNlVHlwZSUyMiUzQSUyMmdvb2dsZV9wbGFjZXMlMjIlMkMlMjJsYXRpdHVkZSUyMiUzQTU2LjQ2MjcwMzElMkMlMjJsb25naXR1ZGUlMjIlM0EtMi45OTI3MTY3OTk5OTk5OTk3JTdE\u0026utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  92
                                       }
                                   ]
                   },
@@ -44138,6 +50129,39 @@ window.validationReviewData = {
                                                                 "url":  "https://blog.footinder.app/%E5%98%89%E7%BE%A9%E7%B8%A3%E6%B0%91%E9%9B%84%E9%84%89-2/66456227bf36ee6cb6abd8b0/?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  82
                                       }
                                   ]
                   },
@@ -44308,6 +50332,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.ubereats.com/tw/store/%E8%B1%90%E9%87%8C%E9%A3%9F%E5%A0%82/C9RMCV3HU--7xIghZut1SQ?pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMkhvdXN0b24lMjBNYXJyaW90dCUyMFdlc3RjaGFzZSUyMiUyQyUyMnJlZmVyZW5jZSUyMiUzQSUyMmJjOGM0NzE4LTZjZjMtN2M1ZS02OGRmLTdiOWMxMGE5YTkxYiUyMiUyQyUyMnJlZmVyZW5jZVR5cGUlMjIlM0ElMjJ1YmVyX3BsYWNlcyUyMiUyQyUyMmxhdGl0dWRlJTIyJTNBMjkuNzM0MzYyOCUyQyUyMmxvbmdpdHVkZSUyMiUzQS05NS41NTA0Nzk5JTdE\u0026utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  102
                                       }
                                   ]
                   },
@@ -44430,6 +50487,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.foodpanda.com.tw/restaurant/z6fc/ya-jia-shan-yu-yi-mian?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  83
                                       }
                                   ]
                   },
@@ -44596,6 +50686,39 @@ window.validationReviewData = {
                                                                 "url":  "https://serv.gcis.nat.gov.tw/moeadsBF/cmpy/reportAction.do?fileName=383100000Gsetup11106.pdf\u0026method=report\u0026reportClass=bmsItem\u0026subPath=11106"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  75
                                       }
                                   ]
                   },
@@ -44818,6 +50941,39 @@ window.validationReviewData = {
                                                                 "url":  "https://serv.gcis.nat.gov.tw/moeadsBF/cmpy/reportAction.do?fileName=376430000Asetup11107.pdf\u0026method=report\u0026reportClass=bmsItem\u0026subPath=11107\u0026utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  86
                                       }
                                   ]
                   },
@@ -45064,6 +51220,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.ubereats.com/tw-en/store/%E7%89%9B%E4%B8%81%E6%AC%A1%E9%83%8E%E5%9D%8Ax%E4%B8%89%E9%87%8D%E6%94%AF%E5%BA%97-%E7%87%92%E8%82%89%E4%B8%BC%E5%B0%88%E7%A7%91/PVxKKIU9QK6JTVfbzRNs2w?pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMk5vLiUyMDUxMSUyQyUyMFNlY3Rpb24lMjAyJTJDJTIwWmhvbmdzaGFuJTIwUmQlMjIlMkMlMjJyZWZlcmVuY2UlMjIlM0ElMjJDaElKd3lQakFUZW9RalFSeGJBdGRUcERCWUklMjIlMkMlMjJyZWZlcmVuY2VUeXBlJTIyJTNBJTIyZ29vZ2xlX3BsYWNlcyUyMiUyQyUyMmxhdGl0dWRlJTIyJTNBMjUuMDIxMjQzNSUyQyUyMmxvbmdpdHVkZSUyMiUzQTEyMS40ODI5MTI2JTdE"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  2961,
+                                                         "output":  286,
+                                                         "total":  3247
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  2961,
+                                          "TOTAL_TOKENS":  3247,
+                                          "OUTPUT_TOKENS":  286,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積裁罰金額為4,968元，主要涉及雇主未按時繳納勞工退休金致加徵滯納金。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞工退休金繳納事項，與產品責任保險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  3209
                                       }
                                   ]
                   },
@@ -45346,6 +51535,39 @@ window.validationReviewData = {
                                                                 "url":  "https://findbiz.nat.gov.tw/fts/company/90460840"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  3264,
+                                                         "output":  555,
+                                                         "total":  3819
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  3264,
+                                          "TOTAL_TOKENS":  3819,
+                                          "OUTPUT_TOKENS":  555,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共3筆裁罰紀錄，已知累積裁罰金額為50,000元，主要涉及延長工時未依法給付加班工資、堆高機作業安全措施不足及高溫熱表面灼燙防護措施不足。2025年有兩筆裁罰涉及職業安全衛生管理，另有一筆於2024年涉及勞動工時工資事項。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞動工時工資及職業安全衛生管理事項，與產品責任保險關聯性較低。裁罰有兩筆集中於職業安全衛生管理，反映作業安全控管仍需留意；另有一筆勞動工時工資裁罰，未見同一事由跨年度反覆發生。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  5186
                                       }
                                   ]
                   },
@@ -45560,6 +51782,39 @@ window.validationReviewData = {
                                                                 "url":  "https://findbiz.nat.gov.tw/fts/factory/10/10781100070"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  3258,
+                                                         "output":  540,
+                                                         "total":  3798
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  3258,
+                                          "TOTAL_TOKENS":  3798,
+                                          "OUTPUT_TOKENS":  540,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共3筆裁罰紀錄，已知累積裁罰金額為50,000元，主要涉及延長工時加班工資、堆高機操作安全及高溫表面防護。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬加班工資及職業安全衛生管理事項，與產品責任保險承保的產品使用後損害風險關聯性較低。其中兩筆集中於職業安全衛生管理，分別涉及堆高機操作防護與高溫表面防護，反映作業安全控管狀況需留意。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  4667
                                       }
                                   ]
                   },
@@ -45798,6 +52053,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.fong-gwo.com/channel.html"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  100
                                       }
                                   ]
                   },
@@ -45964,6 +52252,39 @@ window.validationReviewData = {
                                                                 "url":  "https://mall.iopenmall.tw/017333/index.php?action=product_detail\u0026prod_no=P1733301818458"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  80
                                       }
                                   ]
                   },
@@ -46154,6 +52475,39 @@ window.validationReviewData = {
                                                                 "url":  "https://serv.gcis.nat.gov.tw/moeadsBF/cmpy/reportAction.do?fileName=376610000Asetup11108.pdf\u0026method=report\u0026reportClass=bms\u0026subPath=11108\u0026utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  88
                                       }
                                   ]
                   },
@@ -46332,6 +52686,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.findglocal.com/TW/Miaoli/112200804932290/%E7%9B%8A%E7%BE%A4%E9%87%A3%E8%9D%A6%E5%A0%B4?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  82
                                       }
                                   ]
                   },
@@ -46439,6 +52826,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  5
                                       }
                                   ]
                   },
@@ -46581,6 +53001,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.ubereats.com/tw-en/store/%E6%99%82%E5%85%89%E5%B0%8F%E9%A4%A8/oBdLA9U8Ry2-ofP4CrswYA"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  71
                                       }
                                   ]
                   },
@@ -46771,6 +53224,39 @@ window.validationReviewData = {
                                                                 "url":  "https://tw.chickpt.com.tw/job-QjnmzGYRq1p9?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  93
                                       }
                                   ]
                   },
@@ -46969,6 +53455,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.iyp.com.tw/tax/85761607?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  3222,
+                                                         "output":  418,
+                                                         "total":  3640
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  3222,
+                                          "TOTAL_TOKENS":  3640,
+                                          "OUTPUT_TOKENS":  418,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共4筆裁罰紀錄，已知累積裁罰金額為122,278元，主要涉及未按時繳納勞工退休金致加徵滯納金，以及假日工資未給或未依法加給工資。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞工退休金繳納及假日工資給付等一般勞動法遵事項，與產品責任保險關聯性較低。勞工退休金未按時繳納同一事由於2024年及2025年反覆出現，反映勞動法遵執行或行政管理穩定性需留意。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  8559
                                       }
                                   ]
                   },
@@ -47223,6 +53742,39 @@ window.validationReviewData = {
                                                                 "url":  "https://pteat.disabled.org.tw/restaurant/detail?c=0\u0026id=238\u0026t=district"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  3222,
+                                                         "output":  432,
+                                                         "total":  3654
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  3222,
+                                          "TOTAL_TOKENS":  3654,
+                                          "OUTPUT_TOKENS":  432,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共4筆裁罰紀錄，已知累積裁罰金額為122,278元，主要涉及3筆未按時繳納勞工退休金及1筆假日工資未依規定給付。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞工退休金繳納及假日工資給付等一般勞動法遵事項，與產品責任保險所承保的產品責任風險關聯性較低。勞工退休金未按時繳納事由於2024年及2025年跨年度重複發生，反映勞動法遵執行及行政管理穩定性需留意。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  3682
                                       }
                                   ]
                   },
@@ -47405,6 +53957,39 @@ window.validationReviewData = {
                                                                 "url":  "https://fumtravel.pixnet.net/blog/posts/16073380058"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  90
                                       }
                                   ]
                   },
@@ -47559,6 +54144,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.chickpt.com.tw/job-Qkz1GOELp18v?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  90
                                       }
                                   ]
                   },
@@ -47733,6 +54351,39 @@ window.validationReviewData = {
                                                                 "url":  "https://findbiz.nat.gov.tw/fts/company/80352343"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  3579,
+                                                         "output":  589,
+                                                         "total":  4168
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  3579,
+                                          "TOTAL_TOKENS":  4168,
+                                          "OUTPUT_TOKENS":  589,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共6筆裁罰紀錄，已知累積裁罰金額為320,000元；主要涉及勞動基準法下工資、延長工時及休息日規定，以及職業安全衛生通報、安全措施與教育訓練事項。工資、工時及休息日管理相關裁罰跨2023年至2026年持續出現。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬職業安全衛生通報與勞動基準法工資、工時及休息日管理事項，與產品責任保險關聯性較低。工資、工時及休息日管理事項跨2023年至2026年反覆出現，反映法遵執行與行政管理穩定性需留意。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  5076
                                       }
                                   ]
                   },
@@ -47907,6 +54558,39 @@ window.validationReviewData = {
                                                                 "url":  "https://opendatatw.com/company/77851725/"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  87
                                       }
                                   ]
                   },
@@ -48129,6 +54813,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.ubereats.com/tw-en/store/%E5%B0%8F%E8%81%B7%E4%BA%BA/1sqp6DJGRdiKVRHR4oC2WA?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  139
                                       }
                                   ]
                   },
@@ -48327,6 +55044,39 @@ window.validationReviewData = {
                                                                 "url":  "https://ifoodie.tw/post/65f8e7f958fdbedf336f18da?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  79
                                       }
                                   ]
                   },
@@ -48493,6 +55243,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.ubereats.com/tw/store/%E9%A3%9F%E7%82%BA%E5%A4%A7%E6%B8%AF%E5%BC%8F%E7%87%92%E8%87%98-%E9%80%B2%E5%8C%96%E5%BA%97/K2ApEsMuVi6YSPiwPFECjA?pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMlN1cGVyJTIwSG90ZWwlMjBIYWtvZGF0ZSUyMiUyQyUyMnJlZmVyZW5jZSUyMiUzQSUyMkNoSUo3YjItYjNYem5sOFJWSHEyc2kyU0RsayUyMiUyQyUyMnJlZmVyZW5jZVR5cGUlMjIlM0ElMjJnb29nbGVfcGxhY2VzJTIyJTJDJTIybGF0aXR1ZGUlMjIlM0E0MS43NzAzMTEyOTk5OTk5OTYlMkMlMjJsb25naXR1ZGUlMjIlM0ExNDAuNzMzNDAxMDk5OTk5OTglN0Q%3D"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  3132,
+                                                         "output":  538,
+                                                         "total":  3670
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  3132,
+                                          "TOTAL_TOKENS":  3670,
+                                          "OUTPUT_TOKENS":  538,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共3筆裁罰紀錄，已知累積裁罰金額為25,000元，主要涉及職業安全衛生設備及措施、勞工保險投保與退保，以及勞工退休金提繳工資申報事項。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬職業安全衛生、勞工保險及勞工退休金申報等一般勞動行政事項，與產品責任保險關聯性較低。三筆紀錄均集中於勞動法遵管理，顯示相關法遵執行與行政管理穩定性需留意。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  5085
                                       }
                                   ]
                   },
@@ -48631,6 +55414,39 @@ window.validationReviewData = {
                                                                 "url":  "https://serv.gcis.nat.gov.tw/moeadsBF/cmpy/reportAction.do?fileName=376430000Asetup11412.pdf\u0026method=report\u0026reportClass=bmsItem\u0026subPath=11412\u0026utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  76
                                       }
                                   ]
                   },
@@ -48741,6 +55557,39 @@ window.validationReviewData = {
                                                                 "url":  "https://serv.gcis.nat.gov.tw/moeadsBF/cmpy/reportAction.do?fileName=376410000Asetup11411.pdf\u0026method=report\u0026reportClass=bmsItem\u0026subPath=11411"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  6603,
+                                                         "output":  970,
+                                                         "total":  7573
+                                                     },
+                                          "SCORE":  6.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  6.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "無法判斷，原因為僅提供室內環境照片，無法確認店面外觀。",
+                                          "INPUT_TOKENS":  6603,
+                                          "TOTAL_TOKENS":  7573,
+                                          "OUTPUT_TOKENS":  970,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A02",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  14049
                                       }
                                   ]
                   },
@@ -48943,6 +55792,39 @@ window.validationReviewData = {
                                                                 "url":  "https://serv.gcis.nat.gov.tw/moeadsBF/cmpy/reportAction.do?fileName=376480000Achange11502.pdf\u0026method=report\u0026reportClass=bmsItem\u0026subPath=11502\u0026utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  76
                                       }
                                   ]
                   },
@@ -49050,6 +55932,39 @@ window.validationReviewData = {
                                           "CITATIONS":  [
 
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  94
                                       }
                                   ]
                   },
@@ -49224,6 +56139,39 @@ window.validationReviewData = {
                                                                 "url":  "https://findbiz.nat.gov.tw/fts/company/60624770"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  84
                                       }
                                   ]
                   },
@@ -49418,6 +56366,39 @@ window.validationReviewData = {
                                                                 "url":  "https://findbiz.nat.gov.tw/fts/company/59112564"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  3020,
+                                                         "output":  328,
+                                                         "total":  3348
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  3020,
+                                          "TOTAL_TOKENS":  3348,
+                                          "OUTPUT_TOKENS":  328,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積裁罰金額為0元，主要涉及減容機運轉測試作業未停止機械運轉及送料，以及捲夾危險處未設置護罩、護圍等職業安全衛生防護措施。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬職業安全衛生設施與機械作業防護事項，與產品責任保險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  3350
                                       }
                                   ]
                   },
@@ -49580,6 +56561,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.518.com.tw/company-y3zk09.html"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  151
                                       }
                                   ]
                   },
@@ -49798,6 +56812,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.findcompany.com.tw/%E6%9D%BE%E8%B1%90%E5%AF%A6%E6%A5%AD%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  113
                                       }
                                   ]
                   },
@@ -50064,6 +57111,39 @@ window.validationReviewData = {
                                                                 "url":  "https://trade.1111.com.tw/web/company/denwell/?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  100
                                       }
                                   ]
                   },
@@ -50314,6 +57394,39 @@ window.validationReviewData = {
                                                                 "url":  "https://info.technews.tw/company/53093338-%E6%9D%B1%E7%BF%94%E7%94%9F%E6%8A%80%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  125
                                       }
                                   ]
                   },
@@ -50492,6 +57605,39 @@ window.validationReviewData = {
                                                                 "url":  "https://food-safetyws.tycg.gov.tw/Download.ashx?n=5qGD5ZyS5biC5pS%2F5bqc6KGb55Sf5bGAMTE05bm0MTHmnIjku73po5%2Flk4Hmir3pqZflkIjmoLzlkI3llq4ucGRm\u0026u=LzAwMS9VcGxvYWQvMS9yZWxmaWxlLzEwMTQ1LzYwODIvZmI0Njk5NGYtNTFhNC00NzIyLTljZmYtYTNhZjNmM2QxM2Q5LnBkZg%3D%3D\u0026utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  115
                                       }
                                   ]
                   },
@@ -50654,6 +57800,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.ubereats.com/tw-en/store/%E7%83%8F%E5%BC%84-%E5%8F%B0%E5%8D%97%E5%85%AC%E5%9C%92%E5%BA%97/Idvd33QaRCyUgCKAkljXUw"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  93
                                       }
                                   ]
                   },
@@ -50836,6 +58015,39 @@ window.validationReviewData = {
                                                                 "url":  "https://ji.zhupiter.com/p-155916-%E9%96%8B%E5%8D%B7%E6%9C%89%E7%9B%8A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8.html?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  89
                                       }
                                   ]
                   },
@@ -51042,6 +58254,39 @@ window.validationReviewData = {
                                                                 "url":  "https://opendatatw.com/company/40886666/?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  80
                                       }
                                   ]
                   },
@@ -51224,6 +58469,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.yes123.com.tw/wk_index/comp_info.asp?p_id=20130718151832_39860029\u0026utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  81
                                       }
                                   ]
                   },
@@ -51454,6 +58732,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.findcompany.com.tw/index.php/%E9%A2%A8%E4%BE%91%E4%BA%BA%E6%96%87%E5%92%96%E5%95%A1%E9%A4%A8"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  100
                                       }
                                   ]
                   },
@@ -51660,6 +58971,39 @@ window.validationReviewData = {
                                                                 "url":  "https://poi.zhupiter.com/taxid-%E7%B5%B1%E4%B8%80%E7%B7%A8%E8%99%9F-31738623.html?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  86
                                       }
                                   ]
                   },
@@ -51902,6 +59246,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.ubereats.com/tw/store/%E7%81%AB%E8%BB%8A%E9%A0%AD%E9%A4%90%E5%BB%B3/PfQlW0DNR1OlMv-3SdHaOg?pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMjE2MjUlMjBUcmVtb250JTIwU3QlMjIlMkMlMjJyZWZlcmVuY2UlMjIlM0ElMjIyMWM5NzQ4Yy1hYzZhLWIzY2ItZWI2ZS0wODZiMDZmNjc5ZmElMjIlMkMlMjJyZWZlcmVuY2VUeXBlJTIyJTNBJTIydWJlcl9wbGFjZXMlMjIlMkMlMjJsYXRpdHVkZSUyMiUzQTQyLjMzMzkyMzglMkMlMjJsb25naXR1ZGUlMjIlM0EtNzEuMTAzNTMzMyU3RA%3D%3D"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  115
                                       }
                                   ]
                   },
@@ -52020,6 +59397,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.findcompany.com.tw/%E9%95%B7%E5%AE%89%E5%B0%8F%E5%90%83%E5%BA%97/40533087?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  99
                                       }
                                   ]
                   },
@@ -52210,6 +59620,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.findcompany.com.tw/%E5%A8%81%E6%96%AF%E7%99%BB%E9%A3%9F%E5%93%81%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  87
                                       }
                                   ]
                   },
@@ -52484,6 +59927,39 @@ window.validationReviewData = {
                                                                 "url":  "https://info.technews.tw/company/28210689-%E9%A6%99%E5%91%B3%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  2948,
+                                                         "output":  159,
+                                                         "total":  3107
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  2948,
+                                          "TOTAL_TOKENS":  3107,
+                                          "OUTPUT_TOKENS":  159,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積裁罰金額為20,000元，主要涉及延長工作時間未依規定加給工資，違反勞動基準法第24條第1項。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞動基準法工資給付事項，與產品責任保險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  1930
                                       }
                                   ]
                   },
@@ -52710,6 +60186,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.ubereats.com/tw/store/50%E5%B5%90-%E6%96%B0%E7%AB%B9%E9%A3%9F%E5%93%81%E5%BA%97/1bcMPW34QVCvu_fBfPNn0g"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  76
                                       }
                                   ]
                   },
@@ -52944,6 +60453,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.ubereats.com/tw/store/50%E5%B5%90-%E6%96%B0%E7%AB%B9%E9%A3%9F%E5%93%81%E5%BA%97/1bcMPW34QVCvu_fBfPNn0g"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  75
                                       }
                                   ]
                   },
@@ -53254,6 +60796,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.104.com.tw/company/1a2x6bj5y3"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  3103,
+                                                         "output":  427,
+                                                         "total":  3530
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  3103,
+                                          "TOTAL_TOKENS":  3530,
+                                          "OUTPUT_TOKENS":  427,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共2筆裁罰紀錄，已知累積裁罰金額為45,000元，事項包括未依規定辦理勞工職業災害保險投保、退保及投保薪資申報，以及未覈實申報調整勞工退休金提繳工資。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞工職業災害保險、勞工退休金申報及提繳管理事項，與產品責任保險關聯性較低。兩筆紀錄均集中於勞工保險及退休金申報管理，反映勞動法遵與行政管理穩定性需留意。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  3875
                                       }
                                   ]
                   },
@@ -53452,6 +61027,39 @@ window.validationReviewData = {
                                                                 "url":  "https://ws.tycg.gov.tw/Download.ashx?n=MTEx5bm05bqm5Zyw5pa55Z6LU0JJUuaIkOaenOaJi%2BWGii5wZGY%3D\u0026u=LzAwMS9VcGxvYWQvMTgvcmVsZmlsZS84MTU4LzE1My8yMDYwZDEzZi0xOTZhLTQ0OWMtYTE1Ny1jMjU2N2U1MzI0MmQucGRm\u0026utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  3103,
+                                                         "output":  355,
+                                                         "total":  3458
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  3103,
+                                          "TOTAL_TOKENS":  3458,
+                                          "OUTPUT_TOKENS":  355,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共2筆裁罰紀錄，已知累積裁罰金額為45,000元，主要涉及勞工職業災害保險投保及投保薪資申報、勞工退休金提繳工資申報等事項。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞動保險及勞工退休金申報管理事項，與產品責任保險的承保風險關聯性較低。兩筆裁罰均集中於勞動法遵管理，反映相關法遵執行穩定性需留意。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  3655
                                       }
                                   ]
                   },
@@ -53726,6 +61334,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.85cafe.com/Product.php?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  3095,
+                                                         "output":  414,
+                                                         "total":  3509
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  3095,
+                                          "TOTAL_TOKENS":  3509,
+                                          "OUTPUT_TOKENS":  414,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共2筆裁罰紀錄，累計2,500元，主要涉及柴油車於空氣品質維護區未取得期限內排煙檢驗合格紀錄，違反空氣污染防制法第40條第3項。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬柴油車排煙檢驗及空氣污染防制管理事項，與產品責任保險承保的產品使用後損害風險關聯性較低。同一空氣污染防制法規事由於2024年及2025年跨年度重複發生，反映相關車輛排放管理的法遵執行穩定性需留意。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  3813
                                       }
                                   ]
                   },
@@ -53948,6 +61589,39 @@ window.validationReviewData = {
                                                                 "url":  "https://serv.gcis.nat.gov.tw/moeadsBF/cmpy/reportAction.do?fileName=376470000Achange10706.pdf\u0026method=report\u0026reportClass=bmsItem\u0026subPath=10706"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  74
                                       }
                                   ]
                   },
@@ -54090,6 +61764,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.findcompany.com.tw/%E5%B9%B8%E7%A6%8F%E5%BC%8F%E5%92%96%E5%95%A1?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  80
                                       }
                                   ]
                   },
@@ -54224,6 +61931,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.chientu.com.tw/page/store/"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  124
                                       }
                                   ]
                   },
@@ -54390,6 +62130,39 @@ window.validationReviewData = {
                                                                 "url":  "https://opengovtw.com/ban/26546651?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  123
                                       }
                                   ]
                   },
@@ -54564,6 +62337,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.foodpanda.com.tw/restaurant/st28/qian-du-ri-shi-shuan-shuan-guo-xin-dian-min-quan-dian"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  72
                                       }
                                   ]
                   },
@@ -54738,6 +62544,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.ubereats.com/tw/store/%E9%8C%A2%E9%83%BD%E6%B6%AE%E6%B6%AE%E9%8D%8B-%E9%A4%A8%E5%89%8D%E5%BA%97/WFpoTsCqQIyWk1kJbz0Q1Q?pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMjExLTI3JTIwTmFuYmFzZW5uaWNoaW1hZSUyMiUyQyUyMnJlZmVyZW5jZSUyMiUzQSUyMkNoSUpMOUsycW12bkFHQVJhMmlKbmxuYkxmZyUyMiUyQyUyMnJlZmVyZW5jZVR5cGUlMjIlM0ElMjJnb29nbGVfcGxhY2VzJTIyJTJDJTIybGF0aXR1ZGUlMjIlM0EzNC42NjUzNzg3JTJDJTIybG9uZ2l0dWRlJTIyJTNBMTM1LjUwMzk2MzclN0Q%3D\u0026utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  78
                                       }
                                   ]
                   },
@@ -54948,6 +62787,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.findcompany.com.tw/en/%E8%89%BE%E7%BE%8E%E5%B0%8F%E5%90%83%E5%BA%97/26353838?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  3276,
+                                                         "output":  213,
+                                                         "total":  3489
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  3276,
+                                          "TOTAL_TOKENS":  3489,
+                                          "OUTPUT_TOKENS":  213,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共5筆裁罰紀錄，已知累積裁罰金額為70,000元；裁罰事項包括勞工退休金提繳工資申報與通知、例假、特別休假及延長工時工資等勞動法遵事項，均發生於2024年。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞工退休金及一般勞動法遵事項，與產品責任保險所承保的產品責任風險關聯性較低。多筆裁罰集中於勞動法遵管理，且部分紀錄同日發生，反映相關法遵執行及行政管理狀況需留意。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  2431
                                       }
                                   ]
                   },
@@ -55142,6 +63014,39 @@ window.validationReviewData = {
                                                                 "url":  "https://cbcspace.com/zh-tw/news/display/47"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  72
                                       }
                                   ]
                   },
@@ -55552,6 +63457,39 @@ window.validationReviewData = {
                                                                 "url":  "https://findbiz.nat.gov.tw/fts/company/84309586?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  2973,
+                                                         "output":  405,
+                                                         "total":  3378
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  2973,
+                                          "TOTAL_TOKENS":  3378,
+                                          "OUTPUT_TOKENS":  405,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積裁罰金額為1,200元，涉及油脂、殘渣淤積於水溝並產生異味，違反廢棄物清理法第27條第2款。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬廢棄物清理及環境衛生管理事項，與產品責任保險承保的產品使用後損害風險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  3605
                                       }
                                   ]
                   },
@@ -55722,6 +63660,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.findcompany.com.tw/%E9%87%91%E7%A6%BE%E9%BA%A5%E9%A3%9F%E5%93%81%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  2973,
+                                                         "output":  304,
+                                                         "total":  3277
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  2973,
+                                          "TOTAL_TOKENS":  3277,
+                                          "OUTPUT_TOKENS":  304,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積裁罰金額為1,200元，事由為油脂及殘渣淤積於水溝並產生異味，涉及廢棄物清理法第27條第2款。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬廢棄物清理法違規，與產品責任保險承保的產品使用後損害風險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  3018
                                       }
                                   ]
                   },
@@ -55876,6 +63847,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.chuto.com.tw/?lg=T"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  2964,
+                                                         "output":  385,
+                                                         "total":  3349
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  2964,
+                                          "TOTAL_TOKENS":  3349,
+                                          "OUTPUT_TOKENS":  385,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積裁罰金額為20,000元，主要涉及勞基法第39條所定例假、休息日、休假日及特別休假出勤未依法加給工資。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞動法遵事項，與產品責任保險所承保的產品責任風險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  3383
                                       }
                                   ]
                   },
@@ -56238,6 +64242,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.costco.com.tw/Food-Dining/Frozen-Fresh-Food/Frozen-Meals/Jin-Yu-Yuan-Frozen-Mix-Flavor-Pie-120-g-X-12-Piece/p/154433"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  3169,
+                                                         "output":  394,
+                                                         "total":  3563
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  3169,
+                                          "TOTAL_TOKENS":  3563,
+                                          "OUTPUT_TOKENS":  394,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共3筆裁罰紀錄，已知累積裁罰金額為21,200元，主要涉及延長工作時間超過法令規定、積水容器管理不當致孳生病媒蚊孑孓，以及機械設備作業未停止運轉及送料等事項。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞動工時、環境衛生及職業安全管理事項，與產品責任保險所承保的產品責任風險關聯性較低。紀錄類型分散，未見同類型跨年度反覆發生。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  4627
                                       }
                                   ]
                   },
@@ -56436,6 +64473,39 @@ window.validationReviewData = {
                                                                 "url":  "https://ws.tycg.gov.tw/001/Upload/74/relfile/11908/684816/c167859a-c392-43c9-8f23-841989be7e9e.pdf?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  83
                                       }
                                   ]
                   },
@@ -56626,6 +64696,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.dcard.tw/f/food/p/242469177?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  75
                                       }
                                   ]
                   },
@@ -56780,6 +64883,39 @@ window.validationReviewData = {
                                                                 "url":  "https://serv.gcis.nat.gov.tw/moeadsBF/cmpy/reportAction.do?fileName=383100000Gsetup11408.pdf\u0026method=report\u0026reportClass=bmsItem\u0026subPath=11408\u0026utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  70
                                       }
                                   ]
                   },
@@ -56954,6 +65090,39 @@ window.validationReviewData = {
                                                                 "url":  "https://opendatatw.com/company/00848950/?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  68
                                       }
                                   ]
                   },
@@ -57132,6 +65301,39 @@ window.validationReviewData = {
                                                                 "url":  "https://serv.gcis.nat.gov.tw/moeadsBF/cmpy/reportAction.do?fileName=383100000Gsetup11405.pdf\u0026method=report\u0026reportClass=bmsItem\u0026subPath=11405"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  78
                                       }
                                   ]
                   },
@@ -57314,6 +65516,39 @@ window.validationReviewData = {
                                                                 "url":  "https://serv.gcis.nat.gov.tw/moeadsBF/cmpy/reportAction.do?fileName=383100000Gsetup11404.pdf\u0026method=report\u0026reportClass=bmsItem\u0026subPath=11404\u0026utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  94
                                       }
                                   ]
                   },
@@ -57468,6 +65703,39 @@ window.validationReviewData = {
                                                                 "url":  "https://opendatatw.com/company/93224899/?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  70
                                       }
                                   ]
                   },
@@ -57650,6 +65918,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.chickpt.com.tw/company/kE80LqqP2mqJ"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  80
                                       }
                                   ]
                   },
@@ -57896,6 +66197,39 @@ window.validationReviewData = {
                                                                 "url":  "https://serv.gcis.nat.gov.tw/pub/cmpy/reportAction.do?fileName=379100000Gsetup11007.pdf\u0026method=report\u0026reportClass=cmpyCityItem\u0026subPath=11007\u0026utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  72
                                       }
                                   ]
                   },
@@ -58114,6 +66448,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.findcompany.com.tw/%E9%B4%BB%E9%8C%A6%E9%A4%90%E9%A3%B2%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  84
                                       }
                                   ]
                   },
@@ -58332,6 +66699,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.ubereats.com/tw-en/store/%E5%9B%9E%E6%86%B6%E5%B0%8F%E6%99%82%E5%80%99%E7%B4%85%E8%8C%B6%E5%86%B0-%E5%8F%B0%E5%8D%97%E5%BE%B7%E6%9D%B1%E5%BA%97/ViykLojKXXiBC6sjHc0L1A"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  100
                                       }
                                   ]
                   },
@@ -58498,6 +66898,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.findcompany.com.tw/%E9%84%AD%E5%AE%B6%E6%A3%AE%E5%B1%B1%E7%89%9B%E8%82%89%E6%B9%AF?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  100
                                       }
                                   ]
                   },
@@ -58628,6 +67061,39 @@ window.validationReviewData = {
                                                                 "url":  "https://serv.gcis.nat.gov.tw/moeadsBF/cmpy/reportAction.do?fileName=376530000Asetup11409.pdf\u0026method=report\u0026reportClass=bmsItem\u0026subPath=11409"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  81
                                       }
                                   ]
                   },
@@ -58822,6 +67288,39 @@ window.validationReviewData = {
                                                                 "url":  "https://mygov.tw/city/%E5%B1%8F%E6%9D%B1%E7%B8%A3/%E8%90%AC%E5%B7%92%E9%84%89/%E8%90%AC%E5%B7%92%E6%9D%91%E4%B8%AD%E6%AD%A3%E8%B7%AF?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  2959,
+                                                         "output":  287,
+                                                         "total":  3246
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  2959,
+                                          "TOTAL_TOKENS":  3246,
+                                          "OUTPUT_TOKENS":  287,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積裁罰金額為20,000元，主要涉及未為所屬勞工辦理勞工職業災害保險投保、退保手續，違反勞工職業災害保險及保護法第12條。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞工職業災害保險投保、退保手續管理事項，與產品責任保險承保的產品責任風險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  3493
                                       }
                                   ]
                   },
@@ -58944,6 +67443,39 @@ window.validationReviewData = {
                                                                 "url":  "https://mygov.tw/person/%E6%9D%8E%E4%BF%8A%E7%A9%8E?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  73
                                       }
                                   ]
                   },
@@ -59182,6 +67714,39 @@ window.validationReviewData = {
                                                                 "url":  "https://chienshiang.com/location/"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
+                                                     },
+                                          "SCORE":  10.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  true,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  0,
+                                          "TOTAL_TOKENS":  0,
+                                          "OUTPUT_TOKENS":  0,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
+                                          "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  88
                                       }
                                   ]
                   },
@@ -59404,6 +67969,39 @@ window.validationReviewData = {
                                                                 "url":  "https://www.ubereats.com/tw-en/store/%E9%BB%9E%E5%BF%83%E5%8C%AF-%E6%B8%AF%E5%BC%8F%E9%BB%9E%E5%BF%83%E7%99%BE%E8%80%81%E5%8C%AF/wOcMD6StRbGLemN-cexugA?utm_source=openai"
                                                             }
                                                         ]
+                                      },
+                                      {
+                                          "name":  "客戶",
+                                          "version":  "正式v1",
+                                          "deliveryDate":  "2026-08-03",
+                                          "tokens":  {
+                                                         "input":  2960,
+                                                         "output":  165,
+                                                         "total":  3125
+                                                     },
+                                          "SCORE":  9.0,
+                                          "IS_MASK":  false,
+                                          "NO_RISK":  false,
+                                          "IS_BLOCK":  false,
+                                          "SP_SCORE":  10.0,
+                                          "MASK_RAIL":  null,
+                                          "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "依規定不須檢視店面照片",
+                                          "INPUT_TOKENS":  2960,
+                                          "TOTAL_TOKENS":  3125,
+                                          "OUTPUT_TOKENS":  165,
+                                          "RESULT_SP_RULE":  "Result_SP_NL01008_A01",
+                                          "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積金額為20,000元，主要事項為未依規定為所屬勞工辦理職業災害保險投保及退保手續。",
+                                          "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞工職業災害保險投保及退保行政事項，與產品責任保險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
+                                          "overall_decision":  null,
+                                          "correctness":  null,
+                                          "completeness":  null,
+                                          "hallucination_control":  null,
+                                          "overall_score":  null,
+                                          "reason":  null,
+                                          "latency_ms":  1942
                                       }
                                   ]
                   }
