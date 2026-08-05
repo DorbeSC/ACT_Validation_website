@@ -292,12 +292,6 @@ window.validationReviewData = {
                                                                  "決策",
                                                                  "條件"
                                                              ],
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  49318
                                       },
                                       {
@@ -539,12 +533,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
                                           "CLAUSE_RISK_B_SUM":  null,
                                           "latency_ms":  25486
@@ -788,12 +776,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
                                           "CLAUSE_RISK_B_SUM":  null,
                                           "latency_ms":  16657
@@ -1021,23 +1003,20 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "公開資訊顯示其為單一地址之麵店／小吃店，主要為現場販售、外帶餐飲，未見婚宴、Buffet、團膳或大型活動供餐，因此大型供餐型為有限。亦未見加盟、批發、中央廚房、電商或多通路供應資訊，多通路／供應型為有限；餐點屬即時消費，無長期使用或攝取週期，持續使用型為有限。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "偏低且需確認",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "元岑小吃店登記資本額僅新臺幣1萬元，組織型態為獨資，公開資訊顯示為單一據點之麵店／小吃店，整體屬小型餐飲業態。惟申報年營業額僅新臺幣10萬元，與一般持續營業之小吃店、餐館常見營運規模相較明顯偏低。建議確認是否僅投保部分產品、部分通路、短期營業期間，或是否為保守申報。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  null
                                       },
                                       {
                                           "name":  "標的",
                                           "version":  "小量v2_gpt5.5",
-                                          "deliveryDate":  "2026-07-22",
+                                          "deliveryDate":  "2026-07-17",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  11610,
+                                                         "output":  570,
+                                                         "total":  12180
                                                      },
+                                          "violated_critical_rules":  [
+
+                                                                      ],
                                           "SCORE":  7.0,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -1074,15 +1053,20 @@ window.validationReviewData = {
                                           "REVENUE_REASONABILITY_CATEGORY":  "偏低且需確認",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "本案產品年度預估銷售額為新臺幣100,000元，約等於單店小吃業每月8,000多元，明顯低於一般持續營業餐飲店可合理推估的營業水準。公開資訊顯示其為設立多年、登記營業項目含餐館業與飲料店業的小吃店，雖資本額僅新臺幣10,000元，但仍需確認是否僅投保部分品項、部分期間、部分通路或為保守申報。",
                                           "latency_ms":  6685,
-                                          "overall_decision":  "fail",
-                                          "correctness":  2,
-                                          "completeness":  4,
-                                          "hallucination_control":  5,
-                                          "overall_score":  3.67,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v2_gpt5.5",
+                                                           "deliveryDate":  "2026-07-22",
+                                                           "overall_decision":  "fail",
+                                                           "correctness":  2,
+                                                           "completeness":  4,
+                                                           "hallucination_control":  5,
+                                                           "overall_score":  3.67,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "1. 一致部分：Model Output 在暴險特性上判定三項暴險（持續使用、大型供餐、多通路供應）皆為「有限」，並說明為單一實體小吃／麵店、現做即食、未見團膳／中央廚房／大量供餐／批發經銷等放大機制，產品短時間內消費、市場不易形成跨期累積暴露，與 Golden Answer 所述「單次服務人數有限、事故影響範圍相對較小、整體風險尚屬有限」在風險方向與擴散機制上基本一致，屬合理改寫與補充。\n2. 主要差異：\n   - 營業額合理性分類：Golden Answer 明示為「單店經營且營業額規模較低」，語境為可接受的低規模並未指出需特別質疑；Model Output 則將 REVENUE_REASONABILITY_CATEGORY 判為「偏低且需確認」，並以「年度預估銷售額 100,000 元、每月 8,333 元，相較長期經營實體小吃店明顯偏低」為依據，改變了 Golden Answer 對營業額合理性的評價方向。此屬於對既有判斷的改寫，影響核心營業額合理性結論，故 Correctness 需大幅扣分至 2 分。\n   - 事故擴散機制：Golden Answer 的重點在「單店經營、消費型態及來客規模 → 單次服務人數有限 → 事故影響範圍小、風險有限」。Model Output 雖未逐字重述來客規模與單次服務人數，但以「單一據點、未見大量供餐與批發經銷、產品即時消費、不易跨期累積」來支持風險有限，整體風險方向一致，差異屬合理推論而非錯誤。\n3. Completeness：Golden Answer 的關鍵訊息有二：(1) 單店且營業額規模較低；(2) 依小吃店消費型態與來客規模，單次服務人數有限、事故影響範圍小、整體風險有限。Model Output明確保留並擴充了第二點的風險有限與未形成放大機制的說明，但未直接點出 Golden Answer 對「營業額規模較低」的接受性描述，而是改成「偏低且需確認」。因此在風險面內容大致完整，但對營業額合理性的原始描述略有落差，評為 4 分較合適。\n4. Hallucination Control：Model Output 新增的客觀資訊包括「年度預估銷售額 100,000 元、每月 8,333 元」及「長期經營的小吃／麵店、多項餐飲品項」等。其中年度預估營業額屬本案保單內給定數值，並非由網路推導；其餘關於單一實體店面、餐飲品項、未見團膳／中央廚房／批發經銷、產品為現做即食等，皆可在 WEB_REFERENCE 中找到明確支持或為合理整合說明，未見與來源矛盾或無依據的新公司／通路／供應鏈事實。因此不構成 hallucination，給予 5 分。\n5. Critical Rules：\n   - Model Output 未以 REVENUE 高低作為暴險程度的唯一依據，而是從單店、無大量供餐與供應鏈放大機制、產品即時消費等角度論述風險有限，未違反「REVENUE 不得作為唯一風險依據」規則。\n   - 亦未將 WEB_REFERENCE 的不確定描述改寫為確定事實，未虛構分店、工廠、OEM、供應鏈或通路。因此本案無違反列示的 critical rules。"
+                                                                                       ],
+                                                           "reason":  "1. 一致部分：Model Output 在暴險特性上判定三項暴險（持續使用、大型供餐、多通路供應）皆為「有限」，並說明為單一實體小吃／麵店、現做即食、未見團膳／中央廚房／大量供餐／批發經銷等放大機制，產品短時間內消費、市場不易形成跨期累積暴露，與 Golden Answer 所述「單次服務人數有限、事故影響範圍相對較小、整體風險尚屬有限」在風險方向與擴散機制上基本一致，屬合理改寫與補充。\n2. 主要差異：\n   - 營業額合理性分類：Golden Answer 明示為「單店經營且營業額規模較低」，語境為可接受的低規模並未指出需特別質疑；Model Output 則將 REVENUE_REASONABILITY_CATEGORY 判為「偏低且需確認」，並以「年度預估銷售額 100,000 元、每月 8,333 元，相較長期經營實體小吃店明顯偏低」為依據，改變了 Golden Answer 對營業額合理性的評價方向。此屬於對既有判斷的改寫，影響核心營業額合理性結論，故 Correctness 需大幅扣分至 2 分。\n   - 事故擴散機制：Golden Answer 的重點在「單店經營、消費型態及來客規模 → 單次服務人數有限 → 事故影響範圍小、風險有限」。Model Output 雖未逐字重述來客規模與單次服務人數，但以「單一據點、未見大量供餐與批發經銷、產品即時消費、不易跨期累積」來支持風險有限，整體風險方向一致，差異屬合理推論而非錯誤。\n3. Completeness：Golden Answer 的關鍵訊息有二：(1) 單店且營業額規模較低；(2) 依小吃店消費型態與來客規模，單次服務人數有限、事故影響範圍小、整體風險有限。Model Output明確保留並擴充了第二點的風險有限與未形成放大機制的說明，但未直接點出 Golden Answer 對「營業額規模較低」的接受性描述，而是改成「偏低且需確認」。因此在風險面內容大致完整，但對營業額合理性的原始描述略有落差，評為 4 分較合適。\n4. Hallucination Control：Model Output 新增的客觀資訊包括「年度預估銷售額 100,000 元、每月 8,333 元」及「長期經營的小吃／麵店、多項餐飲品項」等。其中年度預估營業額屬本案保單內給定數值，並非由網路推導；其餘關於單一實體店面、餐飲品項、未見團膳／中央廚房／批發經銷、產品為現做即食等，皆可在 WEB_REFERENCE 中找到明確支持或為合理整合說明，未見與來源矛盾或無依據的新公司／通路／供應鏈事實。因此不構成 hallucination，給予 5 分。\n5. Critical Rules：\n   - Model Output 未以 REVENUE 高低作為暴險程度的唯一依據，而是從單店、無大量供餐與供應鏈放大機制、產品即時消費等角度論述風險有限，未違反「REVENUE 不得作為唯一風險依據」規則。\n   - 亦未將 WEB_REFERENCE 的不確定描述改寫為確定事實，未虛構分店、工廠、OEM、供應鏈或通路。因此本案無違反列示的 critical rules。"
+                                                       }
                                       },
                                       {
                                           "name":  "標的",
@@ -1131,12 +1115,6 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "目前可用資訊顯示其為單一據點的小吃店，餐飲產品通常屬現場製作、即時消費，未見大型同步供餐、跨區供應或可形成長期市場存量的營運模式。因此事故影響主要受限於單一店址及當次消費者，尚未形成大量同步或跨年度累積的放大機制。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "偏低且需確認",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額為新臺幣100,000元，約每月8,333元；相較於已登記經營的小吃店型態，金額明顯偏低。由於目前未能確認實際營業狀況、營業時間及銷售範圍，需確認是否僅投保部分產品或通路、保守申報，或目前已非持續營業。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  5666
                                       },
                                       {
@@ -1164,12 +1142,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  66044
                                       },
                                       {
@@ -1229,12 +1201,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  19303
                                       },
                                       {
@@ -1256,12 +1222,6 @@ window.validationReviewData = {
                                           "MASK_RAIL":  null,
                                           "CASE_RISK":  "中風險",
                                           "CASE_RATE":  "審慎評估",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "score":  6.0,
                                           "final_summary":  "主要需確認營業額大幅下修但保費未變之合理性，並釐清保險期間及追溯日中斷情形。餐飲即食產品具單一門市小型群聚求償可能，現有保額承接壓力較低，惟食品相關條款及核保規則尚未具體適用；另店面照片資訊不足。核保應優先回看前期保單、營業額與費率／最低保費邏輯，確認承保期間、追溯安排及食品條款適用性。",
                                           "latency_ms":  3353
@@ -1271,10 +1231,13 @@ window.validationReviewData = {
                                           "version":  "小量v3",
                                           "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  12030,
+                                                         "output":  776,
+                                                         "total":  12806
                                                      },
+                                          "violated_critical_rules":  [
+
+                                                                      ],
                                           "SCORE":  7.0,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -1312,25 +1275,33 @@ window.validationReviewData = {
                                           "REVENUE_SCORE_COMPARISON_RESULT":  "REASONABILITY_LOWER",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "本次被保產品為雞排、羹麵，公開資訊將元岑小吃店列為麵店、小吃店，屬需持續營業才能形成銷售的現製餐飲型態。年度預估營業額僅新臺幣10萬元，對照一般小吃店即使為小型營運所需的基本銷售規模仍明顯偏低，應確認營業額是否填列正確及計算期間或範圍是否符合本案。",
                                           "latency_ms":  4337,
-                                          "overall_decision":  "pass",
-                                          "correctness":  5,
-                                          "completeness":  4,
-                                          "hallucination_control":  5,
-                                          "overall_score":  4.67,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v3",
+                                                           "deliveryDate":  "2026-07-29",
+                                                           "overall_decision":  "pass",
+                                                           "correctness":  5,
+                                                           "completeness":  4,
+                                                           "hallucination_control":  5,
+                                                           "overall_score":  4.67,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "正確性：Model Output 將營業額合理性評為「偏低且需確認」，並以小吃店現製餐飲、需持續營業且10萬元/年明顯偏低為理由，與 Golden Answer 的結論與主要判斷依據一致；曝險部分也維持單店、小吃店、即時食用、單次事故影響範圍有限、整體風險有限的方向，故 correctness 給 5。\n\n完整性：Golden Answer 有兩個重點略為淡化或未明說：一是「單次服務人數有限」作為事故影響範圍小的具體原因，Model Output僅以「單一餐飲服務情境、範圍受限」概括說明；二是 Golden Answer 提及「設立多年、登記營業項目含餐館業與飲料店業的小吃店」，Model Output 只寫成麵店、小吃店，未完整還原背景。這些為次要細節，主要判斷仍可理解，因此 completeness 給 4。\n\n幻覺控制：Model Output 未新增與 Golden Answer 或合理推論相矛盾的具體營運事實，也沒有捏造門市數、供應鏈、OEM 等資訊，新增描述僅為對小吃店現製即食、單一餐飲情境等合理推論與概括，因此 hallucination_control 給 5。\n\nCritical Rules：未以營業額單獨作為風險程度判斷依據，亦未將不確定資訊寫成確定事實，且未新增無根據的具體營運資訊，故無違反 critical rules。"
+                                                                                       ],
+                                                           "reason":  "正確性：Model Output 將營業額合理性評為「偏低且需確認」，並以小吃店現製餐飲、需持續營業且10萬元/年明顯偏低為理由，與 Golden Answer 的結論與主要判斷依據一致；曝險部分也維持單店、小吃店、即時食用、單次事故影響範圍有限、整體風險有限的方向，故 correctness 給 5。\n\n完整性：Golden Answer 有兩個重點略為淡化或未明說：一是「單次服務人數有限」作為事故影響範圍小的具體原因，Model Output僅以「單一餐飲服務情境、範圍受限」概括說明；二是 Golden Answer 提及「設立多年、登記營業項目含餐館業與飲料店業的小吃店」，Model Output 只寫成麵店、小吃店，未完整還原背景。這些為次要細節，主要判斷仍可理解，因此 completeness 給 4。\n\n幻覺控制：Model Output 未新增與 Golden Answer 或合理推論相矛盾的具體營運事實，也沒有捏造門市數、供應鏈、OEM 等資訊，新增描述僅為對小吃店現製即食、單一餐飲情境等合理推論與概括，因此 hallucination_control 給 5。\n\nCritical Rules：未以營業額單獨作為風險程度判斷依據，亦未將不確定資訊寫成確定事實，且未新增無根據的具體營運資訊，故無違反 critical rules。"
+                                                       }
                                       },
                                       {
                                           "name":  "客戶",
                                           "version":  "小量v2",
-                                          "deliveryDate":  "2026-08-05",
+                                          "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  6341,
+                                                         "output":  997,
+                                                         "total":  7338
                                                      },
+                                          "violated_critical_rules":  [
+
+                                                                      ],
                                           "SCORE":  6.0,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -1338,25 +1309,30 @@ window.validationReviewData = {
                                           "SP_SCORE":  6.0,
                                           "MASK_RAIL":  null,
                                           "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "店面位於非建築物內且為臨時搭建之組合式攤位，外牆材質不固定且無明確出入口，判定為攤販。",
                                           "INPUT_TOKENS":  6341,
                                           "TOTAL_TOKENS":  7338,
                                           "OUTPUT_TOKENS":  997,
                                           "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
                                           "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
                                           "latency_ms":  15938,
-                                          "overall_decision":  "pass",
-                                          "correctness":  5,
-                                          "completeness":  5,
-                                          "hallucination_control":  5,
-                                          "overall_score":  5.0,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v2",
+                                                           "deliveryDate":  "2026-08-05",
+                                                           "overall_decision":  "pass",
+                                                           "correctness":  5,
+                                                           "completeness":  5,
+                                                           "hallucination_control":  5,
+                                                           "overall_score":  5.0,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "Model Output 正確重述 Golden Answer：裁罰概況為「公司內部裁罰資料未提供與該客戶相符之裁罰紀錄」，摘要判斷為「無」，與 Golden 完全一致，無錯誤改寫，故 correctness=5。Golden Answer 中的重要資訊（無相符裁罰紀錄、無摘要判斷）皆有呈現，故 completeness=5。未新增任何 Golden 未支持的裁罰事實、金額或關聯結論，僅多出「裁罰分數：10.0」屬模組外額外欄位，與裁罰事實及關聯判斷無關，不影響評估，因此 hallucination_control=5。無遺漏或未支持的重要資訊，也未違反中文輸出及關聯判定的 critical rules。",
-                                          "SP_SUMMARY":  null,
-                                          "ESG_PENALTY_OVERVIEW":  null,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  null
+                                                                                       ],
+                                                           "reason":  "Model Output 正確重述 Golden Answer：裁罰概況為「公司內部裁罰資料未提供與該客戶相符之裁罰紀錄」，摘要判斷為「無」，與 Golden 完全一致，無錯誤改寫，故 correctness=5。Golden Answer 中的重要資訊（無相符裁罰紀錄、無摘要判斷）皆有呈現，故 completeness=5。未新增任何 Golden 未支持的裁罰事實、金額或關聯結論，僅多出「裁罰分數：10.0」屬模組外額外欄位，與裁罰事實及關聯判斷無關，不影響評估，因此 hallucination_control=5。無遺漏或未支持的重要資訊，也未違反中文輸出及關聯判定的 critical rules。"
+                                                       }
                                       },
                                       {
                                           "name":  "歷史",
@@ -1441,12 +1417,6 @@ window.validationReviewData = {
                                                                  "決策",
                                                                  "追溯日"
                                                              ],
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  20206
                                       },
                                       {
@@ -1474,12 +1444,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  548
                                       },
                                       {
@@ -1501,12 +1465,6 @@ window.validationReviewData = {
                                           "MASK_RAIL":  null,
                                           "CASE_RISK":  "中風險",
                                           "CASE_RATE":  "審慎評估",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "score":  6.0,
                                           "final_summary":  "營業額合理性為「偏低且需確認」，與固定店面、現場餐飲及外送營運規模及「多通路/供應型」中度暴險存在落差。過往紀錄顯示營業額大幅下修但保費未變，且保險期間與追溯日出現中斷，需確認申報及承保安排。現有AOA、AGG承接壓力較低，但店面照片資訊不足，需確認營業型態。請確認營業額是否涵蓋全部產品／通路、費率／最低保費邏輯、保險期間與追溯日中斷原因，並補充店面照片。",
                                           "latency_ms":  7768
@@ -1937,12 +1895,6 @@ window.validationReviewData = {
                                                                  "費率水準",
                                                                  "條件"
                                                              ],
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  33222
                                       },
                                       {
@@ -2184,12 +2136,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
                                           "CLAUSE_RISK_B_SUM":  null,
                                           "latency_ms":  22804
@@ -2433,12 +2379,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
                                           "CLAUSE_RISK_B_SUM":  null,
                                           "latency_ms":  34736
@@ -2666,23 +2606,20 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "公開資訊顯示其為婚宴會館型中華料理餐廳，具大型宴會廳、包廂及約400席，故大型供餐暴險顯著。市場接觸主要為單一實體據點，未見多分店、中央廚房、團膳、OEM或經銷體系，故多通路/供應型有限；餐食、湯品、點心及盒餐屬短期即時消費，持續使用型有限。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "申報年營業額3,000萬元雖高於登記資本額20萬元所直觀呈現的小型獨資規模，但公開資訊顯示其並非一般單點小吃店，而是營運多年之中華料理／婚宴會館型餐廳。104與官網資訊顯示其有大型宴會廳、包廂及約400席，並具婚宴、尾牙春酒、年菜及聚餐等市場接觸情境，足以支撐較高餐飲營收規模。因此該營業額可由宴席會館型營業模式合理解釋。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  null
                                       },
                                       {
                                           "name":  "標的",
                                           "version":  "小量v2_gpt5.5",
-                                          "deliveryDate":  "2026-07-22",
+                                          "deliveryDate":  "2026-07-17",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  12415,
+                                                         "output":  1061,
+                                                         "total":  13476
                                                      },
+                                          "violated_critical_rules":  [
+
+                                                                      ],
                                           "SCORE":  7.0,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -2719,15 +2656,20 @@ window.validationReviewData = {
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額新臺幣 30,000,000 元可解釋。雖資本額為新臺幣 200,000 元，但公開資訊顯示其為已營運多年的中華料理與婚宴會館，具多廳房、包廂及約 400 席規模，30,000,000 元與單一大型餐飲宴會場地的營運樣態大致相符。",
                                           "latency_ms":  8678,
-                                          "overall_decision":  "pass",
-                                          "correctness":  5,
-                                          "completeness":  4,
-                                          "hallucination_control":  5,
-                                          "overall_score":  4.67,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v2_gpt5.5",
+                                                           "deliveryDate":  "2026-07-22",
+                                                           "overall_decision":  "pass",
+                                                           "correctness":  5,
+                                                           "completeness":  4,
+                                                           "hallucination_control":  5,
+                                                           "overall_score":  4.67,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "Model Output 正確抓住 Golden Answer 的核心：主要暴險來自婚宴或大型宴會等餐飲服務，單次活動用餐人數眾多，一旦發生食品衛生問題會在短時間內影響大量用餐者，屬於大型供餐型顯著暴險，事故擴散機制以單一宴席/聚餐群聚中毒為主，方向與 Golden 完全一致，因此 correctness 給 5 分。\n\nCompleteness 方面，Model Output 已描述婚宴會館、宴客型餐廳、大型宴會廳與高座位數等因素，但未明確重申 Golden Answer 中「其群聚事故暴險程度明顯高於一般餐廳之桌次規模及用餐人數」這一對比性的結論，只能從『大型宴會廳、單一宴席可能同時影響大量用餐者』間接推知，因此略有資訊壓縮，給 4 分。\n\nHallucination Control 方面，Model Output 新增的具體營運資訊（單一大型中式餐廳／婚宴會館、約 400 坪、約 400 席位、30 名員工、宴席聚餐盒餐等）皆可在 WEB_REFERENCE 的官方網站、104、518 等公開資料中直接找到對應，屬來源直接支持，且未改變 Golden 的營業額合理性或暴險方向，沒有未被支持或與來源矛盾的新增事實，因此給 5 分。\n\nCritical Rules 方面，Model Output 並未以營業額作為暴險判斷的唯一依據，而是以婚宴/大型宴會、大量同時用餐者作為主要擴散機制，且未將僅為可能性的外部線索改寫為確定事實，也沒有捏造門市數、工廠數、通路或供應鏈等具體營運事實，故無違規項目。"
+                                                                                       ],
+                                                           "reason":  "Model Output 正確抓住 Golden Answer 的核心：主要暴險來自婚宴或大型宴會等餐飲服務，單次活動用餐人數眾多，一旦發生食品衛生問題會在短時間內影響大量用餐者，屬於大型供餐型顯著暴險，事故擴散機制以單一宴席/聚餐群聚中毒為主，方向與 Golden 完全一致，因此 correctness 給 5 分。\n\nCompleteness 方面，Model Output 已描述婚宴會館、宴客型餐廳、大型宴會廳與高座位數等因素，但未明確重申 Golden Answer 中「其群聚事故暴險程度明顯高於一般餐廳之桌次規模及用餐人數」這一對比性的結論，只能從『大型宴會廳、單一宴席可能同時影響大量用餐者』間接推知，因此略有資訊壓縮，給 4 分。\n\nHallucination Control 方面，Model Output 新增的具體營運資訊（單一大型中式餐廳／婚宴會館、約 400 坪、約 400 席位、30 名員工、宴席聚餐盒餐等）皆可在 WEB_REFERENCE 的官方網站、104、518 等公開資料中直接找到對應，屬來源直接支持，且未改變 Golden 的營業額合理性或暴險方向，沒有未被支持或與來源矛盾的新增事實，因此給 5 分。\n\nCritical Rules 方面，Model Output 並未以營業額作為暴險判斷的唯一依據，而是以婚宴/大型宴會、大量同時用餐者作為主要擴散機制，且未將僅為可能性的外部線索改寫為確定事實，也沒有捏造門市數、工廠數、通路或供應鏈等具體營運事實，故無違規項目。"
+                                                       }
                                       },
                                       {
                                           "name":  "標的",
@@ -2776,12 +2718,6 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "主要為單一餐飲據點現場供應熟食、煨湯及中式料理，產品以即時消費為主，未形成大量跨期市場存量或持續攝取暴露。婚宴、宴會、包廂及團體用餐可能使單次事件影響多人，但目前未見其主要經營大型同步供餐、團膳、Buffet或中央廚房供應；雖登記有食品及飲料批發項目，尚未確認實際多通路或供應鏈規模，因此事故擴散範圍主要受單一據點及有限市場接觸限制。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額為新臺幣3,000萬元，約每月250萬元。雖資本額為20萬元，但公開資訊顯示業者已經營多年，具固定餐廳據點並承接婚宴、宴會及團體用餐，該營運樣態足以合理支持此營業額，未見明顯不相稱情形。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  5339
                                       },
                                       {
@@ -2809,12 +2745,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  34730
                                       },
                                       {
@@ -2874,12 +2804,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  16696
                                       },
                                       {
@@ -2901,12 +2825,6 @@ window.validationReviewData = {
                                           "MASK_RAIL":  null,
                                           "CASE_RISK":  "中風險",
                                           "CASE_RATE":  "審慎評估",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "score":  6.0,
                                           "final_summary":  "主要關注營運型態與實際承保標的是否一致，以及宴會供餐可能造成群聚食安事故與營業額偏低疑義。店面呈攤販型態，與宴會廳及婚宴規模資訊不一致；既往條件、保額及附加條款亦有變動，且NPD005責任遭再保除外。應優先確認營業額、保障是否中斷、承保範圍及經銷商條款加貼必要性。",
                                           "latency_ms":  3311
@@ -2916,10 +2834,13 @@ window.validationReviewData = {
                                           "version":  "小量v3",
                                           "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  13871,
+                                                         "output":  901,
+                                                         "total":  14772
                                                      },
+                                          "violated_critical_rules":  [
+
+                                                                      ],
                                           "SCORE":  7.0,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -2957,25 +2878,33 @@ window.validationReviewData = {
                                           "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額為新臺幣3,000萬元；公開資訊顯示本案為單一營業據點的中式餐廳，具大型宴會廳、包廂及約400席的餐飲接待規模。以一般中式餐廳結合宴會及婚宴服務的營運模式推估，該營業額與其座位容量及市場接觸程度大致相符，屬可解釋範圍。",
                                           "latency_ms":  6030,
-                                          "overall_decision":  "pass",
-                                          "correctness":  5,
-                                          "completeness":  5,
-                                          "hallucination_control":  5,
-                                          "overall_score":  5.0,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v3",
+                                                           "deliveryDate":  "2026-07-29",
+                                                           "overall_decision":  "pass",
+                                                           "correctness":  5,
+                                                           "completeness":  5,
+                                                           "hallucination_control":  5,
+                                                           "overall_score":  5.0,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "Model Output 完整且正確反映 Golden Answer：\n\n1) Correctness：\n- 營業額合理性：皆判定為「可解釋」，並同樣以單一大型中式餐廳/婚宴會館、約400席、多廳房/包廂的大型宴席營運型態作為主要依據，與 Golden 完全一致。\n- 曝險特性：皆強調婚宴或大型宴會供餐，單次供餐人數眾多，若食品衛生問題導致食物中毒，短時間內影響大量消費者、事故擴散範圍明顯放大，與 Golden 的主要暴險方向與事故擴散機制一致。大型供餐型被標為「顯著」，亦符合 Golden 指出其群聚事故暴險程度明顯高於一般餐廳的描述。故給 5 分。\n\n2) Completeness：\n- Golden 的關鍵要素：多年營運之中華料理與婚宴會館、單一大型宴會餐飲場所、約400席規模、多廳房/包廂、婚宴/大型宴席型態、食品衛生事件導致短時間群聚食物中毒、暴險高於一般餐廳等，皆在 Model Output 中有對應呈現或同義改寫，未見重要依據遺漏，給 5 分。\n\n3) Hallucination Control：\n- Model Output 僅補充「單一營業據點的中式餐廳」等屬合理同義改寫，與 Golden 的單一大型餐飲宴會場地相符；未新增門市數、供應鏈、OEM/ODM 等具體營運事實，也未更動暴險方向或主因，且未引用任何與 Golden 矛盾的新事實，屬合理推論，給 5 分。\n\n4) Critical Rules：\n- REVENUE 僅作為與座位容量、營運模式及市場接觸程度相符的背景說明，未作為暴險程度的唯一依據。\n- 未將未確定資訊寫成確定事實，亦未新增無依據的具體營運資訊。\n- 未以缺乏外部資料作為『無法評估』判斷依據。故無違反 critical rules。"
+                                                                                       ],
+                                                           "reason":  "Model Output 完整且正確反映 Golden Answer：\n\n1) Correctness：\n- 營業額合理性：皆判定為「可解釋」，並同樣以單一大型中式餐廳/婚宴會館、約400席、多廳房/包廂的大型宴席營運型態作為主要依據，與 Golden 完全一致。\n- 曝險特性：皆強調婚宴或大型宴會供餐，單次供餐人數眾多，若食品衛生問題導致食物中毒，短時間內影響大量消費者、事故擴散範圍明顯放大，與 Golden 的主要暴險方向與事故擴散機制一致。大型供餐型被標為「顯著」，亦符合 Golden 指出其群聚事故暴險程度明顯高於一般餐廳的描述。故給 5 分。\n\n2) Completeness：\n- Golden 的關鍵要素：多年營運之中華料理與婚宴會館、單一大型宴會餐飲場所、約400席規模、多廳房/包廂、婚宴/大型宴席型態、食品衛生事件導致短時間群聚食物中毒、暴險高於一般餐廳等，皆在 Model Output 中有對應呈現或同義改寫，未見重要依據遺漏，給 5 分。\n\n3) Hallucination Control：\n- Model Output 僅補充「單一營業據點的中式餐廳」等屬合理同義改寫，與 Golden 的單一大型餐飲宴會場地相符；未新增門市數、供應鏈、OEM/ODM 等具體營運事實，也未更動暴險方向或主因，且未引用任何與 Golden 矛盾的新事實，屬合理推論，給 5 分。\n\n4) Critical Rules：\n- REVENUE 僅作為與座位容量、營運模式及市場接觸程度相符的背景說明，未作為暴險程度的唯一依據。\n- 未將未確定資訊寫成確定事實，亦未新增無依據的具體營運資訊。\n- 未以缺乏外部資料作為『無法評估』判斷依據。故無違反 critical rules。"
+                                                       }
                                       },
                                       {
                                           "name":  "客戶",
                                           "version":  "小量v2",
-                                          "deliveryDate":  "2026-08-05",
+                                          "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  6341,
+                                                         "output":  991,
+                                                         "total":  7332
                                                      },
+                                          "violated_critical_rules":  [
+
+                                                                      ],
                                           "SCORE":  6.0,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -2983,25 +2912,30 @@ window.validationReviewData = {
                                           "SP_SCORE":  6.0,
                                           "MASK_RAIL":  null,
                                           "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "該店面外觀為臨時搭建之開放式攤位，非永久性建築結構且無明確出入口，判定為攤販。",
                                           "INPUT_TOKENS":  6341,
                                           "TOTAL_TOKENS":  7332,
                                           "OUTPUT_TOKENS":  991,
                                           "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
                                           "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
                                           "latency_ms":  15134,
-                                          "overall_decision":  "pass",
-                                          "correctness":  5,
-                                          "completeness":  5,
-                                          "hallucination_control":  5,
-                                          "overall_score":  5.0,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v2",
+                                                           "deliveryDate":  "2026-08-05",
+                                                           "overall_decision":  "pass",
+                                                           "correctness":  5,
+                                                           "completeness":  5,
+                                                           "hallucination_control":  5,
+                                                           "overall_score":  5.0,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "Correctness：模型正確重述了裁罰概況為「公司內部裁罰資料未提供與該客戶相符之裁罰紀錄」，並將摘要判斷寫為「無」，與 Golden Answer 一致，僅多一個『關聯判定：null』但不改變結論，因此給 5 分。\nCompleteness：Golden Answer 僅包含裁罰概況與摘要判斷兩項關鍵資訊，模型都有完整呈現，未遺漏重要內容，因此給 5 分。\nHallucination Control：模型未新增任何裁罰事件、金額、期間或關聯性結論，僅增加「裁罰分數：10.0」與「關聯判定：null」，屬非關鍵延伸資訊且不影響主要判斷，視為無實質 hallucination，給 5 分。\nCritical Rules：輸出為中文，且未將明確不相關的裁罰判定為相關，也未反向判定，無違反 critical rules。",
-                                          "SP_SUMMARY":  null,
-                                          "ESG_PENALTY_OVERVIEW":  null,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  null
+                                                                                       ],
+                                                           "reason":  "Correctness：模型正確重述了裁罰概況為「公司內部裁罰資料未提供與該客戶相符之裁罰紀錄」，並將摘要判斷寫為「無」，與 Golden Answer 一致，僅多一個『關聯判定：null』但不改變結論，因此給 5 分。\nCompleteness：Golden Answer 僅包含裁罰概況與摘要判斷兩項關鍵資訊，模型都有完整呈現，未遺漏重要內容，因此給 5 分。\nHallucination Control：模型未新增任何裁罰事件、金額、期間或關聯性結論，僅增加「裁罰分數：10.0」與「關聯判定：null」，屬非關鍵延伸資訊且不影響主要判斷，視為無實質 hallucination，給 5 分。\nCritical Rules：輸出為中文，且未將明確不相關的裁罰判定為相關，也未反向判定，無違反 critical rules。"
+                                                       }
                                       },
                                       {
                                           "name":  "歷史",
@@ -3087,12 +3021,6 @@ window.validationReviewData = {
                                                                  "費率水準",
                                                                  "追溯日"
                                                              ],
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  20975
                                       },
                                       {
@@ -3120,12 +3048,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  107
                                       },
                                       {
@@ -3147,12 +3069,6 @@ window.validationReviewData = {
                                           "MASK_RAIL":  null,
                                           "CASE_RISK":  "中風險",
                                           "CASE_RATE":  "審慎評估",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "score":  6.0,
                                           "final_summary":  "營運型態存在落差：案件資料為中餐廳並提供約320至400席宴會婚宴，店面照片卻判定為攤販，需確認實際營業型態及承保範圍。若以宴會婚宴為實際營運，大型供餐型為顯著，同場供餐可能同時影響大量用餐者，AOA及AGG承接壓力均為中等。另建議加貼NPD003A、NPD003B；已加貼NPD005涉及再保合約除外。核保時應確認實際營業型態、營業額是否僅涵蓋部分產品或通路、宴會供餐範圍及再保除外安排。",
                                           "latency_ms":  6302
@@ -3731,12 +3647,6 @@ window.validationReviewData = {
                                           "ATTENTION_TAGS":  [
 
                                                              ],
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  25479
                                       },
                                       {
@@ -3978,12 +3888,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
                                           "CLAUSE_RISK_B_SUM":  null,
                                           "latency_ms":  25340
@@ -4227,12 +4131,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
                                           "CLAUSE_RISK_B_SUM":  null,
                                           "latency_ms":  31835
@@ -4460,23 +4358,20 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "公開徵才顯示有長照中心餐食製備與分送給長輩，屬固定場域多人用餐情境，故大型供餐型為中度。未見分公司、電商、批發、OEM或中央廚房供應資訊，多通路/供應型有限；餐食屬即時消費，持續使用型有限。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "超淘氣餐飲股份有限公司資本額100萬元，登記項目以餐館、食品飲料零售及食品顧問為主，公開徵才資訊並顯示涉及長照中心餐食製備與分送。申報年營業額1,000萬元雖高於資本額，但若包含固定機構供餐或餐飲服務收入，與小型餐飲公司及長照場域每日供餐模式仍大致可解釋。惟公開資訊未確認實際供餐契約、服務據點數或是否僅單一場域，核保時可再確認收入來源範圍。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  null
                                       },
                                       {
                                           "name":  "標的",
                                           "version":  "小量v2_gpt5.5",
-                                          "deliveryDate":  "2026-07-22",
+                                          "deliveryDate":  "2026-07-17",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  13560,
+                                                         "output":  784,
+                                                         "total":  14344
                                                      },
+                                          "violated_critical_rules":  [
+
+                                                                      ],
                                           "SCORE":  9.0,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -4513,15 +4408,20 @@ window.validationReviewData = {
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額新臺幣10,000,000元，約當單店餐廳月營收83萬元，與公開資訊顯示的中和單一鐵板燒餐廳、午晚餐現場服務及外帶線索大致相符。雖資本額為新臺幣1,000,000元且未見分店或工廠資訊，但餐飲業營收可高於資本額，該金額未明顯偏離可觀察營運樣態。",
                                           "latency_ms":  5984,
-                                          "overall_decision":  "fail",
-                                          "correctness":  3,
-                                          "completeness":  2,
-                                          "hallucination_control":  4,
-                                          "overall_score":  3.0,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v2_gpt5.5",
+                                                           "deliveryDate":  "2026-07-22",
+                                                           "overall_decision":  "fail",
+                                                           "correctness":  3,
+                                                           "completeness":  2,
+                                                           "hallucination_control":  4,
+                                                           "overall_score":  3.0,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "1. 一致部分：Golden Answer僅指出「長照中心餐食製備與分送給長輩，具有供應固定場域多人用餐情境」，屬大型固定場域多人用餐的供餐暴險線索。Model Output在暴險三類都評為「有限」，並描述為單一實體鐵板燒餐廳、以現場內用與少量外帶為主、無團膳或中央廚房等放大機制，營業額合理性則判為「可解釋」。Golden未提供營業額合理性分類，故此部分無直接衝突，但也無法從Golden得到支持。\n\n2. 主要差異：\n- 暴險方向與擴散機制差異：Golden明確強調「長照中心餐食製備與分送給長輩」及「固定場域多人用餐」，顯示存在對特定弱勢族群（長輩）及團膳型供應的潛在暴險；Model Output則完全未提長照中心與固定場域多人用餐情境，反而將其描述為僅為一般單一鐵板燒門市、以即時內用為主且事故侷限於到店客層。這改變了Golden指向的主要事故擴散機制與暴險方向，屬Correctness問題（既有內容被改寫），因此Correctness降為3分。\n- 重要資訊遺漏：Golden唯一關鍵結論就是長照中心餐食製備與分送、及固定場域多人用餐這兩個暴險重點，Model Output完全未提，造成暴險評估與敘述無法反映此關鍵情境，構成嚴重缺漏，因此Completeness給2分。\n\n3. 新增／未被支持的內容判定：\n- 將被保險人描述為「本案公開資訊主要支持其為單一實體鐵板燒餐廳，以店內現場製作、內用及少量外帶為主要市場接觸方式。未見團膳、宴席、Buffet、中央廚房、批發、外送平台、電商或代工供應等放大機制」：這些描述有相當程度可由WEB_REFERENCE中鐵板燒單一據點、未查得團膳、中央廚房、工廠等資訊合理推論，屬「來源直接支持」或「合理推論」，不列為hallucination。\n- 「年度預估營業額 10,000,000 元，約相當於月營業額 83 萬元」：案件本身的營業額數字可能來自投保資料，並非Golden或WEB_REFERENCE；以年額換算月額雖是簡單數學，但此營業額本身並未出現在Golden Answer或WEB_REFERENCE中，屬新增的客觀數字且來源未明，判為「未被支持」。不過此推算未明顯顛覆暴險方向或合理性結論，影響較小，故Hallucination Control給4分。\n\n4. Critical Rules 檢查：\n- REVENUE被用於說明市場接觸量背景與一般餐廳營運可解釋區間，並未作為暴險程度唯一或主要依據，未違反第一條。\n- 未見將WEB_REFERENCE中的不確定線索改寫為確定事實的明顯情況；對「未見團膳、中央廚房等」大多以否定查得方式呈現，風險相對可接受。\n- 未新增門市數、工廠數、OEM/ODM或明確供應鏈結構等具體營運事實；相關資訊多為合理概括。\n- 也未僅因WEB_REFERENCE缺資料就判為「無法評估」。\n因此violated_critical_rules為空陣列。"
+                                                                                       ],
+                                                           "reason":  "1. 一致部分：Golden Answer僅指出「長照中心餐食製備與分送給長輩，具有供應固定場域多人用餐情境」，屬大型固定場域多人用餐的供餐暴險線索。Model Output在暴險三類都評為「有限」，並描述為單一實體鐵板燒餐廳、以現場內用與少量外帶為主、無團膳或中央廚房等放大機制，營業額合理性則判為「可解釋」。Golden未提供營業額合理性分類，故此部分無直接衝突，但也無法從Golden得到支持。\n\n2. 主要差異：\n- 暴險方向與擴散機制差異：Golden明確強調「長照中心餐食製備與分送給長輩」及「固定場域多人用餐」，顯示存在對特定弱勢族群（長輩）及團膳型供應的潛在暴險；Model Output則完全未提長照中心與固定場域多人用餐情境，反而將其描述為僅為一般單一鐵板燒門市、以即時內用為主且事故侷限於到店客層。這改變了Golden指向的主要事故擴散機制與暴險方向，屬Correctness問題（既有內容被改寫），因此Correctness降為3分。\n- 重要資訊遺漏：Golden唯一關鍵結論就是長照中心餐食製備與分送、及固定場域多人用餐這兩個暴險重點，Model Output完全未提，造成暴險評估與敘述無法反映此關鍵情境，構成嚴重缺漏，因此Completeness給2分。\n\n3. 新增／未被支持的內容判定：\n- 將被保險人描述為「本案公開資訊主要支持其為單一實體鐵板燒餐廳，以店內現場製作、內用及少量外帶為主要市場接觸方式。未見團膳、宴席、Buffet、中央廚房、批發、外送平台、電商或代工供應等放大機制」：這些描述有相當程度可由WEB_REFERENCE中鐵板燒單一據點、未查得團膳、中央廚房、工廠等資訊合理推論，屬「來源直接支持」或「合理推論」，不列為hallucination。\n- 「年度預估營業額 10,000,000 元，約相當於月營業額 83 萬元」：案件本身的營業額數字可能來自投保資料，並非Golden或WEB_REFERENCE；以年額換算月額雖是簡單數學，但此營業額本身並未出現在Golden Answer或WEB_REFERENCE中，屬新增的客觀數字且來源未明，判為「未被支持」。不過此推算未明顯顛覆暴險方向或合理性結論，影響較小，故Hallucination Control給4分。\n\n4. Critical Rules 檢查：\n- REVENUE被用於說明市場接觸量背景與一般餐廳營運可解釋區間，並未作為暴險程度唯一或主要依據，未違反第一條。\n- 未見將WEB_REFERENCE中的不確定線索改寫為確定事實的明顯情況；對「未見團膳、中央廚房等」大多以否定查得方式呈現，風險相對可接受。\n- 未新增門市數、工廠數、OEM/ODM或明確供應鏈結構等具體營運事實；相關資訊多為合理概括。\n- 也未僅因WEB_REFERENCE缺資料就判為「無法評估」。\n因此violated_critical_rules為空陣列。"
+                                                       }
                                       },
                                       {
                                           "name":  "標的",
@@ -4570,12 +4470,6 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "整體以單一地址的鐵板燒餐飲內用及外帶服務為主要可觀察模式，餐點屬即時消費，未見婚宴、團膳、Buffet、中央廚房、代工、批發或跨區供應等放大機制。市場接觸及事故影響範圍主要受單一餐飲據點與當次消費人數限制，尚不足以形成大量同步供餐、廣泛供應鏈擴散或跨年度產品存量暴露。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額為新臺幣1,000萬元。以目前可觀察的餐館業及食品飲料零售項目、單一地址餐飲門市線索及新臺幣100萬元資本額而言，該營業額可由持續門市交易及外帶服務支持，未顯著超出可觀察的營運樣態。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  6557
                                       },
                                       {
@@ -4603,12 +4497,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2024年10月28日共1筆裁罰，已知累積裁罰金額為新臺幣1,379元，主要涉及未按時繳納勞工退休金而加徵滯納金。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "依目前裁罰資料，該勞工退休金繳納事項與本次產品責任保險承保的產品瑕疵、商品安全或消費者使用後損害未見直接相關。現有紀錄僅有單筆、單一年度案件，未見同類型跨年度反覆發生；管理面上需留意勞工退休金繳納時效控管。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15957
                                       },
                                       {
@@ -4668,12 +4556,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15486
                                       },
                                       {
@@ -4695,12 +4577,6 @@ window.validationReviewData = {
                                           "MASK_RAIL":  null,
                                           "CASE_RISK":  "中風險",
                                           "CASE_RATE":  "審慎評估",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "score":  5.5,
                                           "final_summary":  "主要關注攤販型態、食品衛生及多人群聚求償，且非固定店面可能影響承保適配性。條款應確認經銷商責任排除與再保限制，並檢視保額、自負額及目標保費是否足以承接事故；雖近五年無理賠，仍屬缺乏歷史基準的新承接案件。核保應優先回看店面及條款明細，確認營業型態、保障結構與財物損失保額為零之安排。",
                                           "latency_ms":  4032
@@ -4710,10 +4586,13 @@ window.validationReviewData = {
                                           "version":  "小量v3",
                                           "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  12891,
+                                                         "output":  651,
+                                                         "total":  13542
                                                      },
+                                          "violated_critical_rules":  [
+
+                                                                      ],
                                           "SCORE":  9.0,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -4751,25 +4630,33 @@ window.validationReviewData = {
                                           "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "本次被保產品為鐵板燒餐飲，公開資訊顯示其以新北市中和區單一地址的餐廳現場料理及套餐服務為主。以單一餐飲據點的常見營運模式推估，年度預估營業額新臺幣1,000萬元落在可理解的餐飲營收寬幅內，與其產品型態及市場接觸方式大致相符。",
                                           "latency_ms":  6976,
-                                          "overall_decision":  "fail",
-                                          "correctness":  2,
-                                          "completeness":  2,
-                                          "hallucination_control":  4,
-                                          "overall_score":  2.67,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v3",
+                                                           "deliveryDate":  "2026-07-29",
+                                                           "overall_decision":  "fail",
+                                                           "correctness":  2,
+                                                           "completeness":  2,
+                                                           "hallucination_control":  4,
+                                                           "overall_score":  2.67,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "Model Output 在營業額合理性部分與 Golden Answer 一致：皆判定為「可解釋」，且以單一中和區鐵板燒餐廳、現場料理與套餐服務推估 1,000 萬元營收，核心結論正確。\n\n主要問題在曝險特性：Golden Answer 明確指出有『長照中心餐食製備與分送給長輩』，形成『供應固定場域多人用餐』的情境，這是關鍵曝險方向與事故擴散機制。但 Model Output 將曝險描述為一般單一據點現場餐飲、即時食用、無固定大量同步供餐，事故僅集中於當次用餐顧客，實質改變並弱化了 Golden Answer 的主要曝險方向。這屬於對既有內容的錯誤改寫與相反判斷，因此 Correctness 降至 2 分。\n\nCompleteness 方面，Golden Answer 唯一點出且相當關鍵的『長照中心固定多人用餐』曝險完全未被提及，也沒有反映任何機構供餐情境，構成多項重要資訊遺漏，評為 2 分。\n\nHallucination 控制部分，Model Output 雖新增「未見固定大量同步供餐」、「未見多據點、供應鏈進入多終端市場」等描述，這與 Golden Answer 所載的長照中心固定供餐情境有偏離，但屬於對營運型態的推測性描述，並無新增具體數量、通路或供應鏈細節，尚屬少量延伸且不涉及具體客觀事實，故給 4 分而非更低。\n\nCritical rules 檢查：\n- 未以營業額作為唯一風險判斷依據，符合規則。\n- 未將 web 搜尋不確定性改寫為確定事實（此案無 WEB_REFERENCE）。\n- 未新增門市數、工廠數、OEM/ODM、品牌合作等具體營運事實。\n- 未因缺少 WEB_REFERENCE 而將營業額合理性判為無法評估。\n因此 violated_critical_rules 為空陣列。"
+                                                                                       ],
+                                                           "reason":  "Model Output 在營業額合理性部分與 Golden Answer 一致：皆判定為「可解釋」，且以單一中和區鐵板燒餐廳、現場料理與套餐服務推估 1,000 萬元營收，核心結論正確。\n\n主要問題在曝險特性：Golden Answer 明確指出有『長照中心餐食製備與分送給長輩』，形成『供應固定場域多人用餐』的情境，這是關鍵曝險方向與事故擴散機制。但 Model Output 將曝險描述為一般單一據點現場餐飲、即時食用、無固定大量同步供餐，事故僅集中於當次用餐顧客，實質改變並弱化了 Golden Answer 的主要曝險方向。這屬於對既有內容的錯誤改寫與相反判斷，因此 Correctness 降至 2 分。\n\nCompleteness 方面，Golden Answer 唯一點出且相當關鍵的『長照中心固定多人用餐』曝險完全未被提及，也沒有反映任何機構供餐情境，構成多項重要資訊遺漏，評為 2 分。\n\nHallucination 控制部分，Model Output 雖新增「未見固定大量同步供餐」、「未見多據點、供應鏈進入多終端市場」等描述，這與 Golden Answer 所載的長照中心固定供餐情境有偏離，但屬於對營運型態的推測性描述，並無新增具體數量、通路或供應鏈細節，尚屬少量延伸且不涉及具體客觀事實，故給 4 分而非更低。\n\nCritical rules 檢查：\n- 未以營業額作為唯一風險判斷依據，符合規則。\n- 未將 web 搜尋不確定性改寫為確定事實（此案無 WEB_REFERENCE）。\n- 未新增門市數、工廠數、OEM/ODM、品牌合作等具體營運事實。\n- 未因缺少 WEB_REFERENCE 而將營業額合理性判為無法評估。\n因此 violated_critical_rules 為空陣列。"
+                                                       }
                                       },
                                       {
                                           "name":  "客戶",
                                           "version":  "小量v2",
-                                          "deliveryDate":  "2026-08-05",
+                                          "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  8947,
+                                                         "output":  1128,
+                                                         "total":  10075
                                                      },
+                                          "violated_critical_rules":  [
+
+                                                                      ],
                                           "SCORE":  6.0,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -4777,25 +4664,30 @@ window.validationReviewData = {
                                           "SP_SCORE":  6.0,
                                           "MASK_RAIL":  null,
                                           "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "店面位於非建築物內且為臨時搭建結構，外牆材質非固定且無明確出入口，判定為攤販。",
                                           "INPUT_TOKENS":  8947,
                                           "TOTAL_TOKENS":  10075,
                                           "OUTPUT_TOKENS":  1128,
                                           "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
                                           "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積金額為新臺幣1,379元，事由為雇主未按時繳納勞工退休金致加徵滯納金。",
                                           "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "依目前裁罰資料未見與本次產品責任保險直接相關，該案屬勞工退休金繳納事項，與產品責任承保風險的關聯較低。",
                                           "latency_ms":  16046,
-                                          "overall_decision":  "pass",
-                                          "correctness":  5,
-                                          "completeness":  5,
-                                          "hallucination_control":  4,
-                                          "overall_score":  4.67,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v2",
+                                                           "deliveryDate":  "2026-08-05",
+                                                           "overall_decision":  "pass",
+                                                           "correctness":  5,
+                                                           "completeness":  5,
+                                                           "hallucination_control":  4,
+                                                           "overall_score":  4.67,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "Correctness：裁罰期間、筆數、金額及違規事由皆與 Golden Answer 一致；摘要判斷亦同樣認定為勞工退休金繳納時效事項，與產品責任保險承保風險關聯度低，且未將不相關裁罰誤判為相關，因此給 5 分。\nCompleteness：Golden Answer 中的核心資訊（1 筆裁罰、2021–2026 年間、金額 1,379 元、雇主未按時繳納勞工退休金致加徵滯納金、與產品責任保險關聯較低）皆有涵蓋，雖未重述「未見跨年度反覆發生」，但該點為可有可無的補充，非關鍵，故給 5 分，missing_information 留空。\nHallucination Control：多新增「裁罰分數：9.0」，Golden Answer 未提及此評分，屬額外資訊，雖不影響主要判斷，但無依據，因此給 4 分，並將其列為 unsupported_information。\nCritical Rules：輸出為中文，且未將明確不相關裁罰判為與案件直接相關，亦無反向誤判，故 violated_critical_rules 為空。",
-                                          "SP_SUMMARY":  null,
-                                          "ESG_PENALTY_OVERVIEW":  null,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  null
+                                                                                       ],
+                                                           "reason":  "Correctness：裁罰期間、筆數、金額及違規事由皆與 Golden Answer 一致；摘要判斷亦同樣認定為勞工退休金繳納時效事項，與產品責任保險承保風險關聯度低，且未將不相關裁罰誤判為相關，因此給 5 分。\nCompleteness：Golden Answer 中的核心資訊（1 筆裁罰、2021–2026 年間、金額 1,379 元、雇主未按時繳納勞工退休金致加徵滯納金、與產品責任保險關聯較低）皆有涵蓋，雖未重述「未見跨年度反覆發生」，但該點為可有可無的補充，非關鍵，故給 5 分，missing_information 留空。\nHallucination Control：多新增「裁罰分數：9.0」，Golden Answer 未提及此評分，屬額外資訊，雖不影響主要判斷，但無依據，因此給 4 分，並將其列為 unsupported_information。\nCritical Rules：輸出為中文，且未將明確不相關裁罰判為與案件直接相關，亦無反向誤判，故 violated_critical_rules 為空。"
+                                                       }
                                       },
                                       {
                                           "name":  "歷史",
@@ -4892,12 +4784,6 @@ window.validationReviewData = {
                                           "ATTENTION_TAGS":  [
 
                                                              ],
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15682
                                       },
                                       {
@@ -4925,12 +4811,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，累計已知裁罰金額為1,379元，內容為雇主未按時繳納勞工退休金致加徵滯納金。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞工退休金繳納行政事項，與產品責任保險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  4000
                                       },
                                       {
@@ -4952,12 +4832,6 @@ window.validationReviewData = {
                                           "MASK_RAIL":  null,
                                           "CASE_RISK":  "中風險",
                                           "CASE_RATE":  "審慎評估",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "score":  5.5,
                                           "final_summary":  "本案營運型態存在落差：店面判定為攤販，但公開資訊顯示以餐館及食品飲料零售為主，需確認實際營業型態。鐵板燒同時段用餐或共同食材事故可能形成群聚求償，AOA承接壓力中等；AGG年度累積承接壓力較低。另已加貼NPD005且涉及再保合約除外，並建議加貼NPD003A、NPD003B。請確認實際營運及供餐情形、保額與營業暴險是否一致，並確認NPD003A、NPD003B加貼及NPD005再保除外安排。",
                                           "latency_ms":  6410
@@ -5474,12 +5348,6 @@ window.validationReviewData = {
                                                                  "承保對象",
                                                                  "費率水準"
                                                              ],
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  35130
                                       },
                                       {
@@ -5721,12 +5589,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
                                           "CLAUSE_RISK_B_SUM":  null,
                                           "latency_ms":  26927
@@ -5970,12 +5832,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
                                           "CLAUSE_RISK_B_SUM":  null,
                                           "latency_ms":  24832
@@ -6203,23 +6059,20 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "公開資訊顯示其為藥品、醫療器材、保健食品批發供應商，服務社區藥局且業務遍及全省，並有採購、儲存、供應及委託製造線索，故多通路/供應型顯著。未見婚宴、團膳或大量同步供餐型態，大型供餐有限；產品含藥品、保健食品與醫療護具，具長期攝取或長期使用特性且公司已營運多年，持續使用型顯著。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "本案申報年營業額 5,000 萬元，與資料庫資本額 1,250 萬元及藥品、醫療器材、保健食品批發供應商的營業型態大致相符。公開資訊顯示其服務對象為社區藥局，藥品行銷業務遍及全省各地，並列於 PIC/S GDP 藥商名單，具採購、儲存、供應角色，因此具備支撐較高年銷售額的 B2B 通路基礎。惟被保產品名稱未提供，仍建議確認 5,000 萬元是否涵蓋全部品項或僅部分產品線。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  null
                                       },
                                       {
                                           "name":  "標的",
                                           "version":  "小量v2_gpt5.5",
-                                          "deliveryDate":  "2026-07-22",
+                                          "deliveryDate":  "2026-07-17",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  13693,
+                                                         "output":  1653,
+                                                         "total":  15346
                                                      },
+                                          "violated_critical_rules":  [
+
+                                                                      ],
                                           "SCORE":  6.25,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -6256,15 +6109,20 @@ window.validationReviewData = {
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "本案年度預估銷售額為新臺幣5,000萬元，對照目前可用資本額約新臺幣1,250萬元，以及公開資訊顯示其服務社區藥局、具採購儲存供應作業、藥品行銷遍及全省並有多項品牌／產品線，屬藥品、醫材與保健食品通路商可解釋的規模。雖未提供單一被保產品名稱，但現有營運樣態未顯示該金額明顯偏高或偏低。",
                                           "latency_ms":  7181,
-                                          "overall_decision":  "pass",
-                                          "correctness":  5,
-                                          "completeness":  4,
-                                          "hallucination_control":  5,
-                                          "overall_score":  4.67,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v2_gpt5.5",
+                                                           "deliveryDate":  "2026-07-22",
+                                                           "overall_decision":  "pass",
+                                                           "correctness":  5,
+                                                           "completeness":  4,
+                                                           "hallucination_control":  5,
+                                                           "overall_score":  4.67,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "Model Output 在核心暴險方向上與 Golden 一致：都指出保健食品等屬於持續使用／重複攝取、暴露期間較長，並透過社區藥局等多通路在全台多區域擴散，因此將 continuous_use、多通路供應標為中度風險，且說明 B2B 藥局通路及全省行銷為主要放大機制，與 Golden 的暴險特性描述相符。營業額合理性部分，Golden 未給分類，Model 單獨評為「可解釋」，但因題目本模組側重暴險特性、Golden 亦未提供相反結論，故不影響與 Golden 的一致性，給予 correctness 5 分。\n\nCompleteness 方面，Model 已概括：保健食品/藥品等為長期使用，可能形成重複攝取與跨期暴露，且藉多家藥局在多地區接觸消費者，但省略了 Golden 中三項較具體而重要的說明：(1) 「近百家藥局」這一數量級擴散描述；(2) 將保健食品暴露期間明確與「一般食品／即食性食品」做對比；(3) 明說長期重複食用一旦出問題，會導致較長期間及較廣範圍、累積風險高於一般即食食品的結論。這些有助於凸顯風險放大效果，因此 completeness 評為 4 分。\n\nHallucination 控制方面，Model 新增的內容如：被保產品未提供、公開品類含藥品／保健食品／部分醫療器材、未見 OEM／ODM、未見大量供餐場景等，皆可由 WEB_REFERENCE 直接或間接支持，或屬合理推論，且未用 REVENUE 作為唯一或主要暴險判斷依據，故無未被支持的重大捏造，給予 5 分。Critical rules 未見違反。"
+                                                                                       ],
+                                                           "reason":  "Model Output 在核心暴險方向上與 Golden 一致：都指出保健食品等屬於持續使用／重複攝取、暴露期間較長，並透過社區藥局等多通路在全台多區域擴散，因此將 continuous_use、多通路供應標為中度風險，且說明 B2B 藥局通路及全省行銷為主要放大機制，與 Golden 的暴險特性描述相符。營業額合理性部分，Golden 未給分類，Model 單獨評為「可解釋」，但因題目本模組側重暴險特性、Golden 亦未提供相反結論，故不影響與 Golden 的一致性，給予 correctness 5 分。\n\nCompleteness 方面，Model 已概括：保健食品/藥品等為長期使用，可能形成重複攝取與跨期暴露，且藉多家藥局在多地區接觸消費者，但省略了 Golden 中三項較具體而重要的說明：(1) 「近百家藥局」這一數量級擴散描述；(2) 將保健食品暴露期間明確與「一般食品／即食性食品」做對比；(3) 明說長期重複食用一旦出問題，會導致較長期間及較廣範圍、累積風險高於一般即食食品的結論。這些有助於凸顯風險放大效果，因此 completeness 評為 4 分。\n\nHallucination 控制方面，Model 新增的內容如：被保產品未提供、公開品類含藥品／保健食品／部分醫療器材、未見 OEM／ODM、未見大量供餐場景等，皆可由 WEB_REFERENCE 直接或間接支持，或屬合理推論，且未用 REVENUE 作為唯一或主要暴險判斷依據，故無未被支持的重大捏造，給予 5 分。Critical rules 未見違反。"
+                                                       }
                                       },
                                       {
                                           "name":  "標的",
@@ -6313,12 +6171,6 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "主要透過社區及會員藥局進行跨區域批發供應，產品可能分散進入多個終端市場，形成一定的通路擴散與事故傳遞範圍，但目前未見代工、中央廚房或大型同步使用情境。產品涵蓋藥品、醫療器材、保健食品等，部分可能於市場持續使用或攝取並形成跨期累積暴露；惟被保產品及實際產品存量尚不明確，尚不足以支持顯著程度。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額為新臺幣5,000萬元，約為可用實收資本額1,250萬元的4倍。考量公司以藥品、醫療器材及健康相關產品批發供應社區與會員藥局，並有全省行銷及多項批發、零售與國際貿易項目，該營業額與其B2B供應及跨區域經營樣態大致相符。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  5840
                                       },
                                       {
@@ -6346,12 +6198,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13627
                                       },
                                       {
@@ -6411,12 +6257,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  20944
                                       },
                                       {
@@ -6438,12 +6278,6 @@ window.validationReviewData = {
                                           "MASK_RAIL":  null,
                                           "CASE_RISK":  "中風險",
                                           "CASE_RATE":  "審慎評估",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "score":  5.0,
                                           "final_summary":  "主要關注健康食品成分污染、標示及經銷責任，且經多通路遍及全省，具群聚與累計求償暴險。保額對常見損失尚可承接但群聚及年度累計壓力中高，另近期同條件報價保費回落，應確認定價依據；店面為臨時攤位亦需核實營運型態。核保應優先確認有無健字號、第三方檢驗、建議除外條款適用性及總公司自留或臨分再保安排。",
                                           "latency_ms":  3236
@@ -6453,10 +6287,13 @@ window.validationReviewData = {
                                           "version":  "小量v3",
                                           "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  13485,
+                                                         "output":  923,
+                                                         "total":  14408
                                                      },
+                                          "violated_critical_rules":  [
+
+                                                                      ],
                                           "SCORE":  6.0,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -6494,25 +6331,33 @@ window.validationReviewData = {
                                           "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "本次被保產品年度預估營業額為新臺幣5,000萬元，與保健食品之批發／供應型態及公司公開呈現的營運規模大致相符。公司登記業務涵蓋食品批發零售，公開資訊亦顯示主要服務社區藥局及會員藥局、業務遍及全省各地，足以支持該營業額屬於可解釋範圍。",
                                           "latency_ms":  5121,
-                                          "overall_decision":  "pass",
-                                          "correctness":  5,
-                                          "completeness":  4,
-                                          "hallucination_control":  5,
-                                          "overall_score":  4.67,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v3",
+                                                           "deliveryDate":  "2026-07-29",
+                                                           "overall_decision":  "pass",
+                                                           "correctness":  5,
+                                                           "completeness":  4,
+                                                           "hallucination_control":  5,
+                                                           "overall_score":  4.67,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "Model Output 對營業額合理性判定為「可解釋」，說明與 Golden Answer 一致，並未改變金額、規模或判斷方向；對曝險特性也抓到保健食品透過社區（會員）藥局、多據點供應、同批產品出問題會擴散至多地區消費者等核心機制，屬同義改寫，因此 correctness 給 5 分。\n\nCompleteness 方面，雖有提及重複食用及市場暴露，但未明確重申 Golden Answer 中「多項品牌／產品線」以及「長期、持續性食用使暴露期間較一般食品為長、累積風險相對高於一般即食食品」這兩點，因此略有重要依據被弱化，給 4 分。\n\nModel Output 未新增 Golden Answer 或外部資料無法支持的具體營運事實或通路資訊，對保健食品重複食用與多藥局供應的描述屬合理推論與同義改寫，無明顯 hallucination，故 hallucination_control 給 5 分。Critical Rules 無違反。"
+                                                                                       ],
+                                                           "reason":  "Model Output 對營業額合理性判定為「可解釋」，說明與 Golden Answer 一致，並未改變金額、規模或判斷方向；對曝險特性也抓到保健食品透過社區（會員）藥局、多據點供應、同批產品出問題會擴散至多地區消費者等核心機制，屬同義改寫，因此 correctness 給 5 分。\n\nCompleteness 方面，雖有提及重複食用及市場暴露，但未明確重申 Golden Answer 中「多項品牌／產品線」以及「長期、持續性食用使暴露期間較一般食品為長、累積風險相對高於一般即食食品」這兩點，因此略有重要依據被弱化，給 4 分。\n\nModel Output 未新增 Golden Answer 或外部資料無法支持的具體營運事實或通路資訊，對保健食品重複食用與多藥局供應的描述屬合理推論與同義改寫，無明顯 hallucination，故 hallucination_control 給 5 分。Critical Rules 無違反。"
+                                                       }
                                       },
                                       {
                                           "name":  "客戶",
                                           "version":  "小量v2",
-                                          "deliveryDate":  "2026-08-05",
+                                          "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  6341,
+                                                         "output":  990,
+                                                         "total":  7331
                                                      },
+                                          "violated_critical_rules":  [
+
+                                                                      ],
                                           "SCORE":  6.0,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -6520,25 +6365,30 @@ window.validationReviewData = {
                                           "SP_SCORE":  6.0,
                                           "MASK_RAIL":  null,
                                           "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "由於店面並非位於合法建築內、結構為臨時搭建且外牆材質不符合固定要求，判定為攤販。",
                                           "INPUT_TOKENS":  6341,
                                           "TOTAL_TOKENS":  7331,
                                           "OUTPUT_TOKENS":  990,
                                           "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
                                           "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
                                           "latency_ms":  14886,
-                                          "overall_decision":  "pass",
-                                          "correctness":  5,
-                                          "completeness":  5,
-                                          "hallucination_control":  5,
-                                          "overall_score":  5.0,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v2",
+                                                           "deliveryDate":  "2026-08-05",
+                                                           "overall_decision":  "pass",
+                                                           "correctness":  5,
+                                                           "completeness":  5,
+                                                           "hallucination_control":  5,
+                                                           "overall_score":  5.0,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "Correctness：模型輸出「公司內部裁罰資料未提供與該客戶相符之裁罰紀錄」與 Golden Answer 完全一致，「摘要判斷：無」也正確反映 GA，沒有錯誤改寫，故給 5 分。\nCompleteness：Golden Answer 僅包含裁罰概況與「摘要判斷：無」，模型皆有覆蓋，未缺漏任何重要資訊，故為 5 分。\nHallucination Control：模型僅多了一個「裁罰分數：10.0」欄位，與 GA 內容無衝突，也未新增任何裁罰事實、金額、期間或關聯判斷；其他關鍵資訊均與 GA 一致，故視為無重要幻覺，給 5 分。\nCritical Rules：輸出全為中文，且未將不相關裁罰判為相關或反向判定，故無違反任何 critical rule。",
-                                          "SP_SUMMARY":  null,
-                                          "ESG_PENALTY_OVERVIEW":  null,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  null
+                                                                                       ],
+                                                           "reason":  "Correctness：模型輸出「公司內部裁罰資料未提供與該客戶相符之裁罰紀錄」與 Golden Answer 完全一致，「摘要判斷：無」也正確反映 GA，沒有錯誤改寫，故給 5 分。\nCompleteness：Golden Answer 僅包含裁罰概況與「摘要判斷：無」，模型皆有覆蓋，未缺漏任何重要資訊，故為 5 分。\nHallucination Control：模型僅多了一個「裁罰分數：10.0」欄位，與 GA 內容無衝突，也未新增任何裁罰事實、金額、期間或關聯判斷；其他關鍵資訊均與 GA 一致，故視為無重要幻覺，給 5 分。\nCritical Rules：輸出全為中文，且未將不相關裁罰判為相關或反向判定，故無違反任何 critical rule。"
+                                                       }
                                       },
                                       {
                                           "name":  "歷史",
@@ -6628,12 +6478,6 @@ window.validationReviewData = {
                                                                  "承保對象",
                                                                  "費率水準"
                                                              ],
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  23424
                                       },
                                       {
@@ -6661,12 +6505,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  88
                                       },
                                       {
@@ -6688,12 +6526,6 @@ window.validationReviewData = {
                                           "MASK_RAIL":  null,
                                           "CASE_RISK":  "中風險",
                                           "CASE_RATE":  "審慎評估",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "score":  5.0,
                                           "final_summary":  "本案主要風險為保健食品之多通路／供應型暴險顯著，成分異常、污染或長期食用爭議可能擴大責任。主要供應社區藥局且遍及全省，可能形成同批多人求償及不同批次持續求償，AOA與AGG年度累積承接壓力均為中高。建議加貼NPD015、NPD003A、NPD003B；如屬有健字號，為再保合約除外，請洽總公司評估自留或臨分再保。請確認有健字號資格、第三方檢驗及檢驗項目，並確認條款與再保安排。",
                                           "latency_ms":  7346
@@ -7232,12 +7064,6 @@ window.validationReviewData = {
                                           "ATTENTION_TAGS":  [
 
                                                              ],
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  36503
                                       },
                                       {
@@ -7479,12 +7305,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
                                           "CLAUSE_RISK_B_SUM":  null,
                                           "latency_ms":  29409
@@ -7728,12 +7548,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
                                           "CLAUSE_RISK_B_SUM":  null,
                                           "latency_ms":  52928
@@ -7961,23 +7775,20 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "公開資訊顯示為高雄鼓山單一火鍋餐飲門市，未見婚宴、宴席、Buffet、團膳或大型活動供餐，故大型供餐型為有限。未查得多店、加盟、批發、中央廚房或供應鏈角色，外送平台亦顯示停止或不可用，多通路/供應型為有限。產品為現場或短時間內食用之鍋物餐點，持續使用型為有限。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "偏高且需確認",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "申報年度預估銷售額為新臺幣2,000萬元，相當於月均約167萬元。公開資訊顯示繽鮮有限公司資本額20萬元、員工數1–10人，營業型態主要為高雄鼓山區單一火鍋門市，未見多店、加盟或大型供餐通路可支撐較大規模營收。另公開資訊對實際營運狀態存在不一致，故此營業額相對偏高，建議確認是否包含其他未揭露通路、期間收入或關係品牌收入。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  null
                                       },
                                       {
                                           "name":  "標的",
                                           "version":  "小量v2_gpt5.5",
-                                          "deliveryDate":  "2026-07-22",
+                                          "deliveryDate":  "2026-07-17",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  12615,
+                                                         "output":  1645,
+                                                         "total":  14260
                                                      },
+                                          "violated_critical_rules":  [
+
+                                                                      ],
                                           "SCORE":  7.0,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -8014,15 +7825,20 @@ window.validationReviewData = {
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額為新臺幣20,000,000元，約每月166.7萬元；以火鍋餐廳、內用座位、自助吧／吃到飽及曾有外送平台曝光等營運型態觀察，屬單店餐飲可達成的營收區間。雖資本額為新臺幣200,000元且公開資訊主要支持單一據點，但該金額未明顯高於火鍋餐飲門市可能營運規模。",
                                           "latency_ms":  6736,
-                                          "overall_decision":  "fail",
-                                          "correctness":  2,
-                                          "completeness":  3,
-                                          "hallucination_control":  5,
-                                          "overall_score":  3.33,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v2_gpt5.5",
+                                                           "deliveryDate":  "2026-07-22",
+                                                           "overall_decision":  "fail",
+                                                           "correctness":  2,
+                                                           "completeness":  3,
+                                                           "hallucination_control":  5,
+                                                           "overall_score":  3.33,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "Model Output 與 Golden Answer 一致之處在於：皆認定為單一火鍋餐飲門市，無婚宴、團膳、中央廚房或大型活動供餐情形，營業型態為現場即時消費，外送、多通路、批發等擴散機制有限，故整體事故擴散規模不大。營業額部分也維持在『可解釋』方向，未主張偏高或偏低。 \n\n主要差異：\n1) 暴險分類上，Golden Answer 明確表示「整體風險尚屬有限」，主要依據是單店經營且無婚宴、宴席、Buffet 或大型活動供餐；而 Model Output 雖在敘述中同樣說明未見團膳、婚宴、中央廚房或大型活動供餐，但卻將 REVENUE_EXPOSURE_ASSESSMENTS 中的「大型供餐型」標為中度。此處等於改變整體風險方向（從有限提升為中度），與 Golden Answer 核心結論不符，屬於既有判斷被改寫，影響 Correctness。\n2) 營業額合理性方面，Golden Answer 只說明「單店經營且營業額規模雖高……整體風險尚屬有限」，並未具體拆解均消與來客量；Model Output 以公開均消約 500 元推估每日約百人上下消費，作為「可解釋」的量化說明，屬合理推論且不改變營業額合理性結論，因此不影響 Correctness，且有助於補充說明。\n3) Model Output 沒有明確重申 Golden Answer 中「營業額規模雖高，但依火鍋店消費型態評估仍合理」這個關鍵判斷依據，只以『可解釋』與來客量推估呈現，對 Golden Answer 的主要理由略有省略，因此 Completeness 降為 3 分。\n\n對差異的標示：\n- 將大型供餐型暴險評為中度：屬於「與 Golden Answer 結論不同」，為既有內容被改寫，影響風險方向，歸類為 Correctness 問題，而非 hallucination。\n- 以均消 500 元推估每日百人消費：可由 WEB_REFERENCE 愛食記均消資料與單店火鍋型態合理推出，屬合理推論，且未改變 Golden Answer 的營業額合理性分類與主要風險方向，不列為 hallucination。\n- 關於未全年營業需校正營業期間：WEB_REFERENCE 中有營業狀態不一致之線索，此為依線索提出的合理提醒，且未改變核心判斷，亦不屬 hallucination。\n\n因此：Correctness 因將整體有限風險中的大型供餐型誤列為中度而顯著偏離，評為 2；Completeness 因未完整重述「營業額雖高但依火鍋消費型態仍合理」及「整體風險尚屬有限」之關鍵語意，評為 3；Model Output 新增的事實與推論皆可由 WEB_REFERENCE 支持或合理推出，且未新增無依據的營運事實，也未違反 critical rules，故 hallucination_control 評為 5，violated_critical_rules 為空。"
+                                                                                       ],
+                                                           "reason":  "Model Output 與 Golden Answer 一致之處在於：皆認定為單一火鍋餐飲門市，無婚宴、團膳、中央廚房或大型活動供餐情形，營業型態為現場即時消費，外送、多通路、批發等擴散機制有限，故整體事故擴散規模不大。營業額部分也維持在『可解釋』方向，未主張偏高或偏低。 \n\n主要差異：\n1) 暴險分類上，Golden Answer 明確表示「整體風險尚屬有限」，主要依據是單店經營且無婚宴、宴席、Buffet 或大型活動供餐；而 Model Output 雖在敘述中同樣說明未見團膳、婚宴、中央廚房或大型活動供餐，但卻將 REVENUE_EXPOSURE_ASSESSMENTS 中的「大型供餐型」標為中度。此處等於改變整體風險方向（從有限提升為中度），與 Golden Answer 核心結論不符，屬於既有判斷被改寫，影響 Correctness。\n2) 營業額合理性方面，Golden Answer 只說明「單店經營且營業額規模雖高……整體風險尚屬有限」，並未具體拆解均消與來客量；Model Output 以公開均消約 500 元推估每日約百人上下消費，作為「可解釋」的量化說明，屬合理推論且不改變營業額合理性結論，因此不影響 Correctness，且有助於補充說明。\n3) Model Output 沒有明確重申 Golden Answer 中「營業額規模雖高，但依火鍋店消費型態評估仍合理」這個關鍵判斷依據，只以『可解釋』與來客量推估呈現，對 Golden Answer 的主要理由略有省略，因此 Completeness 降為 3 分。\n\n對差異的標示：\n- 將大型供餐型暴險評為中度：屬於「與 Golden Answer 結論不同」，為既有內容被改寫，影響風險方向，歸類為 Correctness 問題，而非 hallucination。\n- 以均消 500 元推估每日百人消費：可由 WEB_REFERENCE 愛食記均消資料與單店火鍋型態合理推出，屬合理推論，且未改變 Golden Answer 的營業額合理性分類與主要風險方向，不列為 hallucination。\n- 關於未全年營業需校正營業期間：WEB_REFERENCE 中有營業狀態不一致之線索，此為依線索提出的合理提醒，且未改變核心判斷，亦不屬 hallucination。\n\n因此：Correctness 因將整體有限風險中的大型供餐型誤列為中度而顯著偏離，評為 2；Completeness 因未完整重述「營業額雖高但依火鍋消費型態仍合理」及「整體風險尚屬有限」之關鍵語意，評為 3；Model Output 新增的事實與推論皆可由 WEB_REFERENCE 支持或合理推出，且未新增無依據的營運事實，也未違反 critical rules，故 hallucination_control 評為 5，violated_critical_rules 為空。"
+                                                       }
                                       },
                                       {
                                           "name":  "標的",
@@ -8071,12 +7887,6 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "主要為單一實體餐廳提供火鍋及吃到飽、自助餐飲服務，顧客可能在同一時段集中用餐，單一事件的影響可同時擴及現場多名消費者。未見多據點、團膳、中央廚房、代工或跨區域供應鏈，市場接觸與事故擴散主要受限於單一門市；餐飲屬即時消費，未形成長期流通或跨年度累積使用的主要機制。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額為新臺幣2,000萬元。以單一火鍋餐廳、含吃到飽及自助餐飲、具較大用餐空間與聚餐包廂的營運樣態推估，該金額尚屬可由門市客流與餐飲消費解釋的範圍，未見明顯高於目前可觀察的營運規模。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  5200
                                       },
                                       {
@@ -8104,12 +7914,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2026年4月24日共1筆裁罰，已知累積裁罰金額為19,109元，主要事由為雇主未按時繳納勞工退休金並加徵滯納金。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "依目前裁罰資料未見與產品責任保險承保之產品瑕疵、商品安全、標示或消費者使用後損害直接相關；目前僅有單筆勞工退休金繳納事項，未見跨年度或同類型重複裁罰，惟勞動法令遵循與相關行政管理狀況仍需留意。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15198
                                       },
                                       {
@@ -8169,12 +7973,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15191
                                       },
                                       {
@@ -8196,12 +7994,6 @@ window.validationReviewData = {
                                           "MASK_RAIL":  null,
                                           "CASE_RISK":  "中風險",
                                           "CASE_RATE":  "審慎評估",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "score":  4.5,
                                           "final_summary":  "主要關注攤販型店面之食品責任及群聚事故暴險，內用、自助吧與外送可能擴大同批食材事故影響。雖近五年無理賠且保額對常見情境承接壓力較低，仍須留意新進件缺乏同客戶承保脈絡、目標保費與承保條件適配性，以及經銷商條款對產品更改、標示及警語責任之排除。核保應優先確認實際營運型態、參考案件可比性、建議條款加貼及相關再保與承保規範。",
                                           "latency_ms":  4611
@@ -8211,10 +8003,13 @@ window.validationReviewData = {
                                           "version":  "小量v3",
                                           "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  13205,
+                                                         "output":  944,
+                                                         "total":  14149
                                                      },
+                                          "violated_critical_rules":  [
+
+                                                                      ],
                                           "SCORE":  7.0,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -8252,25 +8047,33 @@ window.validationReviewData = {
                                           "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "本次被保產品為火鍋餐飲店的全品項食品，公開資訊顯示主要於高雄單一據點提供現場用餐，並曾透過外送平台銷售餐點。依單店餐飲的一般營運模式推估，新臺幣2,000萬元年度營業額與火鍋店、多品項餐飲及吃到飽服務所需的持續客流大致相符。",
                                           "latency_ms":  20947,
-                                          "overall_decision":  "fail",
-                                          "correctness":  2,
-                                          "completeness":  3,
-                                          "hallucination_control":  4,
-                                          "overall_score":  3.0,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v3",
+                                                           "deliveryDate":  "2026-07-29",
+                                                           "overall_decision":  "fail",
+                                                           "correctness":  2,
+                                                           "completeness":  3,
+                                                           "hallucination_control":  4,
+                                                           "overall_score":  3.0,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "營業額合理性部分，Model Output 判定為「可解釋」，並以單店火鍋、自助吧、吃到飽與外送平台等為依據，與 Golden Answer 整體判斷一致，因此在營業額合理性上是正確的。曝險特性部分出現明顯偏差：Golden Answer 認為單店經營、無婚宴宴席或大型活動供餐，整體風險尚屬有限；而 Model Output 將「大型供餐型」標為顯著，且未說明婚宴、Buffet、大型活動供餐為不存在，實質提高了核心暴險程度評價，與 Golden 的『整體有限』判斷不符，因此 correctness 降為 2。Completeness 方面，營業額合理性的關鍵依據大致都有呈現，但漏掉『無婚宴/宴席/Buffet 或大型活動供餐』這一重要限制，以及『整體風險尚屬有限』與『單店經營』在曝險層面的總結性表述，因此評為 3。Hallucination 方面，Model Output 主要是把既有內容改判為顯著風險，而非捏造全新事實；雖然「大型供餐型：顯著」與 Golden 的有限風險不符，但屬於判斷偏差而非新增具體營運事實，故記為 unsupported_information 一項，整體仍給 4 分。無明顯違反 Critical Rules 的情況。"
+                                                                                       ],
+                                                           "reason":  "營業額合理性部分，Model Output 判定為「可解釋」，並以單店火鍋、自助吧、吃到飽與外送平台等為依據，與 Golden Answer 整體判斷一致，因此在營業額合理性上是正確的。曝險特性部分出現明顯偏差：Golden Answer 認為單店經營、無婚宴宴席或大型活動供餐，整體風險尚屬有限；而 Model Output 將「大型供餐型」標為顯著，且未說明婚宴、Buffet、大型活動供餐為不存在，實質提高了核心暴險程度評價，與 Golden 的『整體有限』判斷不符，因此 correctness 降為 2。Completeness 方面，營業額合理性的關鍵依據大致都有呈現，但漏掉『無婚宴/宴席/Buffet 或大型活動供餐』這一重要限制，以及『整體風險尚屬有限』與『單店經營』在曝險層面的總結性表述，因此評為 3。Hallucination 方面，Model Output 主要是把既有內容改判為顯著風險，而非捏造全新事實；雖然「大型供餐型：顯著」與 Golden 的有限風險不符，但屬於判斷偏差而非新增具體營運事實，故記為 unsupported_information 一項，整體仍給 4 分。無明顯違反 Critical Rules 的情況。"
+                                                       }
                                       },
                                       {
                                           "name":  "客戶",
                                           "version":  "小量v2",
-                                          "deliveryDate":  "2026-08-05",
+                                          "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  2604,
+                                                         "output":  161,
+                                                         "total":  2765
                                                      },
+                                          "violated_critical_rules":  [
+
+                                                                      ],
                                           "SCORE":  6.0,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -8278,25 +8081,30 @@ window.validationReviewData = {
                                           "SP_SCORE":  6.0,
                                           "MASK_RAIL":  null,
                                           "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "照片資訊不足,無法判讀關鍵外觀條件",
                                           "INPUT_TOKENS":  2604,
                                           "TOTAL_TOKENS":  2765,
                                           "OUTPUT_TOKENS":  161,
                                           "RESULT_SP_RULE":  "Result_SP_NL01008_A03",
                                           "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積金額為新臺幣19,109元，事由為雇主未按時繳納勞工退休金而加徵滯納金。",
                                           "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "依目前裁罰資料未見與本次產品責任保險直接相關，因本案為勞工退休金繳納時效事項，與產品責任承保的產品相關損害風險關聯較低。",
                                           "latency_ms":  65715,
-                                          "overall_decision":  "pass",
-                                          "correctness":  5,
-                                          "completeness":  5,
-                                          "hallucination_control":  5,
-                                          "overall_score":  5.0,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v2",
+                                                           "deliveryDate":  "2026-08-05",
+                                                           "overall_decision":  "pass",
+                                                           "correctness":  5,
+                                                           "completeness":  5,
+                                                           "hallucination_control":  5,
+                                                           "overall_score":  5.0,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "Correctness：裁罰期間（2021–2026）、件數（1筆）、金額（19,109元）、事由（未按時繳納勞工退休金加徵滯納金）皆與 Golden Answer 一致；關聯性也判定為與產品責任保險關聯較低，無相反結論，故給 5 分。\nCompleteness：完整提及裁罰概況的關鍵元素（期間、件數、金額、事由），也明確說明屬勞工退休金繳納時效事項、與產品責任保險直接關聯性低；雖未重述「未見同類型跨年度反覆發生」，該點屬可有可無的補充，且 Golden 說明已標註為可有可無，故視為非關鍵，給 5 分。\nHallucination Control：未新增任何額外裁罰、金額、法規或關聯事實，僅將關聯性結論以布林值與文字說明重述，屬於合理表達，給 5 分。\nCritical Rules：輸出使用中文，且未將明確不相關裁罰判為直接相關或反向判定，無違反。",
-                                          "SP_SUMMARY":  null,
-                                          "ESG_PENALTY_OVERVIEW":  null,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  null
+                                                                                       ],
+                                                           "reason":  "Correctness：裁罰期間（2021–2026）、件數（1筆）、金額（19,109元）、事由（未按時繳納勞工退休金加徵滯納金）皆與 Golden Answer 一致；關聯性也判定為與產品責任保險關聯較低，無相反結論，故給 5 分。\nCompleteness：完整提及裁罰概況的關鍵元素（期間、件數、金額、事由），也明確說明屬勞工退休金繳納時效事項、與產品責任保險直接關聯性低；雖未重述「未見同類型跨年度反覆發生」，該點屬可有可無的補充，且 Golden 說明已標註為可有可無，故視為非關鍵，給 5 分。\nHallucination Control：未新增任何額外裁罰、金額、法規或關聯事實，僅將關聯性結論以布林值與文字說明重述，屬於合理表達，給 5 分。\nCritical Rules：輸出使用中文，且未將明確不相關裁罰判為直接相關或反向判定，無違反。"
+                                                       }
                                       },
                                       {
                                           "name":  "歷史",
@@ -8393,12 +8201,6 @@ window.validationReviewData = {
                                           "ATTENTION_TAGS":  [
 
                                                              ],
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  10425
                                       },
                                       {
@@ -8426,12 +8228,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共2筆裁罰紀錄，已知累積裁罰金額為83,327元；主要涉及雇主未按時繳納勞工退休金而加徵滯納金，且均依勞工退休金條例第19條第1項裁處。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞工退休金繳納管理，與產品責任保險所承保的產品責任風險關聯性較低。裁罰事由集中於勞工退休金繳納管理，反映相關法遵執行及行政管理穩定性需留意。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  4653
                                       },
                                       {
@@ -8453,12 +8249,6 @@ window.validationReviewData = {
                                           "MASK_RAIL":  null,
                                           "CASE_RISK":  "中風險",
                                           "CASE_RATE":  "審慎評估",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "score":  4.5,
                                           "final_summary":  "店面營運型態存在落差：營業額資料稱固定門市，照片則判定為攤販。內用、自助吧及外送可能因同時段用餐或同批食材造成多人求償；大型供餐型及多通路／供應型為中度，但現有AOA、AGG對常見情境承接壓力較低。請確認實際營業型態、供餐及外送範圍，並建議加貼NPD003A、NPD003B。",
                                           "latency_ms":  6982
@@ -8902,12 +8692,6 @@ window.validationReviewData = {
                                           "ATTENTION_TAGS":  [
 
                                                              ],
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  23694
                                       },
                                       {
@@ -9137,12 +8921,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
                                           "CLAUSE_RISK_B_SUM":  null,
                                           "latency_ms":  27544
@@ -9374,12 +9152,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
                                           "CLAUSE_RISK_B_SUM":  null,
                                           "latency_ms":  29268
@@ -9595,23 +9367,18 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "公開資訊未提供 Doris 烘焙之門市、宴席、團體供餐或大型活動服務資訊，故大型供餐型判為有限。亦未見多門市、多通路、代工或供應下游情形；烘焙品通常屬短週期即時消費產品，持續使用型亦為有限。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "無法評估",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "本案為自然人或個人名義投保，無資料庫法人名稱及資本額，且未取得公開營運資訊。申報年營業額 1 萬元偏向小規模或兼職型烘焙銷售可見的低額水準，但目前無法確認是否僅投保部分產品、試營運或實際通路規模。建議補充銷售模式、主要通路及年銷售量後再判斷合理性。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  null
                                       },
                                       {
                                           "name":  "標的",
                                           "version":  "小量v2_gpt5.5",
-                                          "deliveryDate":  "2026-07-22",
+                                          "deliveryDate":  "2026-07-17",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  8071,
+                                                         "output":  552,
+                                                         "total":  8623
                                                      },
+                                          "violated_critical_rules":  "不得僅因 WEB_REFERENCE 缺少資訊而判定「無法評估」。",
                                           "SCORE":  7.0,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -9648,15 +9415,20 @@ window.validationReviewData = {
                                           "REVENUE_REASONABILITY_CATEGORY":  "無法評估",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "本案年度預估營業額為 10,000 元，但未提供明確被保產品或服務名稱、公司資本額、公開營運規模、銷售通路、供應範圍或門市資訊，無法建立可比較的合理營業額區間。",
                                           "latency_ms":  7226,
-                                          "overall_decision":  "fail",
-                                          "correctness":  2,
-                                          "completeness":  3,
-                                          "hallucination_control":  5,
-                                          "overall_score":  3.33,
-                                          "violated_critical_rules":  [
-                                                                          "不得僅因 WEB_REFERENCE 缺少資訊而判定「無法評估」。"
-                                                                      ],
-                                          "reason":  "1. 一致之處：\n- Model Output 對暴險特性方向與程度的描述（各項暴險皆為「有限」，未見大型同步供餐、多通路供應、事故擴散放大機制）與 Golden Answer「年度接觸消費者與批次低，整體風險有限」在風險方向上基本一致，皆指向整體風險有限。\n\n2. 主要差異：\n- 營業額合理性分類：Golden Answer 明確指出「申報營業額僅1萬元，若為個人接單或小量直售烘焙，年度接觸消費者與批次低，整體風險有限」，可理解為對 1 萬元營業額給出可解釋且與小量直售／個人接單模式相符的判斷；而 Model Output 將 REVENUE_REASONABILITY_CATEGORY 標為「無法評估」，理由是欠缺產品、通路、門市等資訊。此舉改變了 Golden Answer 已給出的合理性結論，屬於核心判斷被改寫，影響 Correctness。\n- Golden Answer 也隱含了對營業模式的假設情境（個人接單或小量直售烘焙）作為判斷基礎，Model Output 並未提及此一關鍵前提，而是直接以資訊不足為由判定無法評估，導致對 Golden 的主要判斷依據呈現不足，影響 Completeness。\n\n3. 差異性質標示：\n- 將營業額合理性由可解釋／可接受改寫為「無法評估」：屬於既有內容被改寫，影響營業額合理性分類與主要判斷依據，屬 Correctness 問題，而非 hallucination。\n- 省略「若為個人接單或小量直售烘焙」及「年度接觸消費者與批次低，整體風險有限」這兩個關鍵判斷依據：屬於 Golden Answer 重要內容的遺漏，為 Completeness 問題。\n- Model Output 對「未見大型同步供餐、多通路銷售、代工供應或跨區域供應鏈資訊」等，只是說明未見相關跡象，且未新增具體營運事實，屬合理推論與中性描述，非未被支持的具體事實，因此 unsupported_information 保持為空；也未與任何來源明確矛盾，故 hallucination_control 給 5 分。\n\n4. 分數說明：\n- Correctness = 2：因營業額合理性被改寫為「無法評估」，與 Golden Answer 已給出的可解釋結論相反，屬實質改變核心判斷。\n- Completeness = 3：主要風險方向仍被表達為有限，但遺漏了「個人接單或小量直售」、「年度接觸消費者與批次低」等重要依據，仍可大致理解風險有限方向，但信息不完整。\n- Hallucination Control = 5：未新增無依據的具體公司營運事實或與來源矛盾內容，對缺乏資訊部分僅作為限制性說明，無幻覺問題。\n\n5. Critical Rules 檢查：\n- Model Output 將營業額合理性標為「無法評估」的主要理由，是缺少產品名稱、公開營運規模、通路、門市或訂單量等資訊，實務上 Golden Answer 已能在現有有限資訊下給出可解釋結論，且 WEB_REFERENCE 僅說明因非法人件未查 web，並非證據不足。因此，此處屬於僅因缺少更多公開資訊即判定無法評估，違反了「不得僅因 WEB_REFERENCE 缺少資訊而判定『無法評估』」的 critical rule。"
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v2_gpt5.5",
+                                                           "deliveryDate":  "2026-07-22",
+                                                           "overall_decision":  "fail",
+                                                           "correctness":  2,
+                                                           "completeness":  3,
+                                                           "hallucination_control":  5,
+                                                           "overall_score":  3.33,
+                                                           "violated_critical_rules":  [
+                                                                                           "不得僅因 WEB_REFERENCE 缺少資訊而判定「無法評估」。"
+                                                                                       ],
+                                                           "reason":  "1. 一致之處：\n- Model Output 對暴險特性方向與程度的描述（各項暴險皆為「有限」，未見大型同步供餐、多通路供應、事故擴散放大機制）與 Golden Answer「年度接觸消費者與批次低，整體風險有限」在風險方向上基本一致，皆指向整體風險有限。\n\n2. 主要差異：\n- 營業額合理性分類：Golden Answer 明確指出「申報營業額僅1萬元，若為個人接單或小量直售烘焙，年度接觸消費者與批次低，整體風險有限」，可理解為對 1 萬元營業額給出可解釋且與小量直售／個人接單模式相符的判斷；而 Model Output 將 REVENUE_REASONABILITY_CATEGORY 標為「無法評估」，理由是欠缺產品、通路、門市等資訊。此舉改變了 Golden Answer 已給出的合理性結論，屬於核心判斷被改寫，影響 Correctness。\n- Golden Answer 也隱含了對營業模式的假設情境（個人接單或小量直售烘焙）作為判斷基礎，Model Output 並未提及此一關鍵前提，而是直接以資訊不足為由判定無法評估，導致對 Golden 的主要判斷依據呈現不足，影響 Completeness。\n\n3. 差異性質標示：\n- 將營業額合理性由可解釋／可接受改寫為「無法評估」：屬於既有內容被改寫，影響營業額合理性分類與主要判斷依據，屬 Correctness 問題，而非 hallucination。\n- 省略「若為個人接單或小量直售烘焙」及「年度接觸消費者與批次低，整體風險有限」這兩個關鍵判斷依據：屬於 Golden Answer 重要內容的遺漏，為 Completeness 問題。\n- Model Output 對「未見大型同步供餐、多通路銷售、代工供應或跨區域供應鏈資訊」等，只是說明未見相關跡象，且未新增具體營運事實，屬合理推論與中性描述，非未被支持的具體事實，因此 unsupported_information 保持為空；也未與任何來源明確矛盾，故 hallucination_control 給 5 分。\n\n4. 分數說明：\n- Correctness = 2：因營業額合理性被改寫為「無法評估」，與 Golden Answer 已給出的可解釋結論相反，屬實質改變核心判斷。\n- Completeness = 3：主要風險方向仍被表達為有限，但遺漏了「個人接單或小量直售」、「年度接觸消費者與批次低」等重要依據，仍可大致理解風險有限方向，但信息不完整。\n- Hallucination Control = 5：未新增無依據的具體公司營運事實或與來源矛盾內容，對缺乏資訊部分僅作為限制性說明，無幻覺問題。\n\n5. Critical Rules 檢查：\n- Model Output 將營業額合理性標為「無法評估」的主要理由，是缺少產品名稱、公開營運規模、通路、門市或訂單量等資訊，實務上 Golden Answer 已能在現有有限資訊下給出可解釋結論，且 WEB_REFERENCE 僅說明因非法人件未查 web，並非證據不足。因此，此處屬於僅因缺少更多公開資訊即判定無法評估，違反了「不得僅因 WEB_REFERENCE 缺少資訊而判定『無法評估』」的 critical rule。"
+                                                       }
                                       },
                                       {
                                           "name":  "標的",
@@ -9703,12 +9475,6 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "目前未提供被保產品或服務名稱、銷售模式及通路資訊，未見足以支持大量同步供餐、多通路供應或長期市場存量的資料，因此三項暴險暫評為有限；惟此結論係基於現有資訊，實際影響範圍仍取決於產品型態與營運方式。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "無法評估",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額為10,000元，但目前缺少被保產品或服務、營運規模、銷售通路、供應範圍及公司資本額等資訊，無法建立合理的營業額參考區間。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  6904
                                       },
                                       {
@@ -9736,12 +9502,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13428
                                       },
                                       {
@@ -9801,12 +9561,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  20531
                                       },
                                       {
@@ -9828,12 +9582,6 @@ window.validationReviewData = {
                                           "MASK_RAIL":  null,
                                           "CASE_RISK":  "中風險",
                                           "CASE_RATE":  "審慎評估",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "score":  6.0,
                                           "final_summary":  "主要需確認營業額申報明顯偏低與攤販型態是否涵蓋完整銷售通路。雖近五年無理賠且保額承接壓力較低，仍應注意食品產品範圍、經銷商責任及建議加貼條款。核保請優先確認食品業者登錄涵蓋內容、實際銷售型態與NPD003A、NPD003B適用性。",
                                           "latency_ms":  3251
@@ -9843,10 +9591,11 @@ window.validationReviewData = {
                                           "version":  "小量v3",
                                           "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  11097,
+                                                         "output":  1176,
+                                                         "total":  12273
                                                      },
+                                          "violated_critical_rules":  null,
                                           "SCORE":  7.0,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -9884,25 +9633,31 @@ window.validationReviewData = {
                                           "REVENUE_SCORE_COMPARISON_RESULT":  "REASONABILITY_LOWER",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "本次被保產品涵蓋多項烘焙食品、糕點、飲品及食品類別，依該類型的一般營運模式推估，即使為小型營業，年度營業額通常仍應高於新臺幣1萬元。案件未提供可支持特殊營業範圍或計算方式的資訊，故該預估營業額明顯偏低，需確認其是否正確反映本次被保產品的全年銷售額。",
                                           "latency_ms":  15094,
-                                          "overall_decision":  "fail",
-                                          "correctness":  2,
-                                          "completeness":  3,
-                                          "hallucination_control":  4,
-                                          "overall_score":  3.0,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v3",
+                                                           "deliveryDate":  "2026-07-29",
+                                                           "overall_decision":  "fail",
+                                                           "correctness":  2,
+                                                           "completeness":  3,
+                                                           "hallucination_control":  4,
+                                                           "overall_score":  3.0,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "Golden Answer 認為：申報營業額僅1萬元，若為個人接單或小量直售烘焙，年度接觸消費者與批次低，整體風險有限，且未對營業額合理性提出偏高或偏低的質疑。Model Output 則將營業額合理性分類為「偏低且需確認」，表示營業額明顯偏低並需確認，已改變 Golden Answer 對營業額合理性與其背後假設（個人接單、小量直售可解釋）的核心判斷，故 Correctness 顯著降低。\n\nCompleteness 方面，Model Output 未明確提及「申報營業額僅1萬元」這一關鍵數字，也未保留 Golden Answer 關於「若為個人接單或小量直售、年度接觸量低、整體風險有限」的明確前提與結論，只概括描述為單次購買、事故影響範圍受限，與原本對營業規模及型態的關鍵條件不完全對應，因此評為 3 分。\n\nHallucination Control 方面，Model Output 新增了多項具體內容（如被保產品具體品項、案件未提供團體供餐或供應鏈資訊、行業水準下營業額通常高於1萬元等），這些在 Golden Answer 與 WEB_REFERENCE 中均未出現，屬新增客觀事實，需人工確認，但尚未形成大量或關鍵的捏造結論，因此給予 4 分。Critical rules 未見明顯違反，營業額並未被單獨用來判定暴險程度主體，只是用於合理性推論。"
+                                                                                       ],
+                                                           "reason":  "Golden Answer 認為：申報營業額僅1萬元，若為個人接單或小量直售烘焙，年度接觸消費者與批次低，整體風險有限，且未對營業額合理性提出偏高或偏低的質疑。Model Output 則將營業額合理性分類為「偏低且需確認」，表示營業額明顯偏低並需確認，已改變 Golden Answer 對營業額合理性與其背後假設（個人接單、小量直售可解釋）的核心判斷，故 Correctness 顯著降低。\n\nCompleteness 方面，Model Output 未明確提及「申報營業額僅1萬元」這一關鍵數字，也未保留 Golden Answer 關於「若為個人接單或小量直售、年度接觸量低、整體風險有限」的明確前提與結論，只概括描述為單次購買、事故影響範圍受限，與原本對營業規模及型態的關鍵條件不完全對應，因此評為 3 分。\n\nHallucination Control 方面，Model Output 新增了多項具體內容（如被保產品具體品項、案件未提供團體供餐或供應鏈資訊、行業水準下營業額通常高於1萬元等），這些在 Golden Answer 與 WEB_REFERENCE 中均未出現，屬新增客觀事實，需人工確認，但尚未形成大量或關鍵的捏造結論，因此給予 4 分。Critical rules 未見明顯違反，營業額並未被單獨用來判定暴險程度主體，只是用於合理性推論。"
+                                                       }
                                       },
                                       {
                                           "name":  "客戶",
                                           "version":  "小量v2",
-                                          "deliveryDate":  "2026-08-05",
+                                          "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  6341,
+                                                         "output":  974,
+                                                         "total":  7315
                                                      },
+                                          "violated_critical_rules":  null,
                                           "SCORE":  6.0,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -9910,25 +9665,30 @@ window.validationReviewData = {
                                           "SP_SCORE":  6.0,
                                           "MASK_RAIL":  null,
                                           "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "因外觀為臨時搭建結構、外牆非固定材質且無明確出入口，判定為攤販。",
                                           "INPUT_TOKENS":  6341,
                                           "TOTAL_TOKENS":  7315,
                                           "OUTPUT_TOKENS":  974,
                                           "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
                                           "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
                                           "latency_ms":  35252,
-                                          "overall_decision":  "pass",
-                                          "correctness":  5,
-                                          "completeness":  5,
-                                          "hallucination_control":  5,
-                                          "overall_score":  5.0,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v2",
+                                                           "deliveryDate":  "2026-08-05",
+                                                           "overall_decision":  "pass",
+                                                           "correctness":  5,
+                                                           "completeness":  5,
+                                                           "hallucination_control":  5,
+                                                           "overall_score":  5.0,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "Correctness：Model Output 指出「公司內部裁罰資料未提供與該客戶相符之裁罰紀錄」，且摘要判斷為「無」，與 Golden Answer 完全一致，無錯誤改寫，因此給 5 分。\nCompleteness：Golden Answer 僅包含一項重點：無相符裁罰紀錄，且 ESG 摘要判斷為無；Model Output 全數覆蓋，無任何遺漏，故給 5 分。\nHallucination Control：Model Output 未新增任何 Golden Answer 未支持的裁罰事件、金額、期間或關聯結論，額外出現的「裁罰分數：10.0」不影響 ESG 裁罰事實與關聯判斷，視為非關鍵，故給 5 分。\nCritical Rules：輸出為中文，且未將不相關裁罰誤判為相關，亦無反向情形，故 violated_critical_rules 為空陣列。",
-                                          "SP_SUMMARY":  null,
-                                          "ESG_PENALTY_OVERVIEW":  null,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  null
+                                                                                       ],
+                                                           "reason":  "Correctness：Model Output 指出「公司內部裁罰資料未提供與該客戶相符之裁罰紀錄」，且摘要判斷為「無」，與 Golden Answer 完全一致，無錯誤改寫，因此給 5 分。\nCompleteness：Golden Answer 僅包含一項重點：無相符裁罰紀錄，且 ESG 摘要判斷為無；Model Output 全數覆蓋，無任何遺漏，故給 5 分。\nHallucination Control：Model Output 未新增任何 Golden Answer 未支持的裁罰事件、金額、期間或關聯結論，額外出現的「裁罰分數：10.0」不影響 ESG 裁罰事實與關聯判斷，視為非關鍵，故給 5 分。\nCritical Rules：輸出為中文，且未將不相關裁罰誤判為相關，亦無反向情形，故 violated_critical_rules 為空陣列。"
+                                                       }
                                       },
                                       {
                                           "name":  "歷史",
@@ -10024,12 +9784,6 @@ window.validationReviewData = {
                                           "ATTENTION_TAGS":  [
 
                                                              ],
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  9363
                                       },
                                       {
@@ -10057,12 +9811,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  4
                                       },
                                       {
@@ -10084,12 +9832,6 @@ window.validationReviewData = {
                                           "MASK_RAIL":  null,
                                           "CASE_RISK":  "中風險",
                                           "CASE_RATE":  "審慎評估",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "score":  6.0,
                                           "final_summary":  "本案營業額分類為偏低且需確認，且店面判定為攤販，申報營運規模與烘焙業一般規模存在落差。年度預估營業額僅1萬元，需確認是否僅申報部分產品或通路，以及攤販營業型態是否與申報內容一致；現有保額對常見AOA、AGG情境承接壓力較低。請確認產品範圍、銷售通路及條款適用性，並建議加貼NPD003A、NPD003B。",
                                           "latency_ms":  7078
@@ -10418,12 +10160,6 @@ window.validationReviewData = {
                                                                  "費率水準",
                                                                  "承接標的"
                                                              ],
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  43487
                                       },
                                       {
@@ -10665,12 +10401,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
                                           "CLAUSE_RISK_B_SUM":  null,
                                           "latency_ms":  47247
@@ -10914,12 +10644,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
                                           "CLAUSE_RISK_B_SUM":  null,
                                           "latency_ms":  26727
@@ -11147,23 +10871,20 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "公開資料顯示其為食品製造廠及全家便利商店鮮食供應商，產品透過便利商店供應鏈進入多個終端門市，多通路/供應型暴險顯著。未見婚宴、Buffet、團膳或大型活動同步供餐資訊，大型供餐型有限；產品多為便當、飯糰、涼麵等短期食用鮮食，持續使用型有限。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "申報年營業額新臺幣23.3億元，雖屬高額，但與其資本總額3億元、實收資本額9,600萬元、約510名員工、食品工廠登記及便利商店鮮食供應商角色大致相符。公開資訊顯示其供應全家便利商店鮮食，產品包含便當、飯糰、壽司、涼麵、調理包等，具相當市場接觸與生產規模，因此營業額可解釋。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  null
                                       },
                                       {
                                           "name":  "標的",
                                           "version":  "小量v2_gpt5.5",
-                                          "deliveryDate":  "2026-07-22",
+                                          "deliveryDate":  "2026-07-17",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  13906,
+                                                         "output":  1697,
+                                                         "total":  15603
                                                      },
+                                          "violated_critical_rules":  [
+
+                                                                      ],
                                           "SCORE":  4.1,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -11200,15 +10921,20 @@ window.validationReviewData = {
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估銷售額新臺幣 23.3 億元可解釋。晉欣食品具食品製造工廠及新臺幣 3 億元資本額，公開資訊顯示其為全家便利商店鮮食製造／供應體系之一，產品涵蓋多類即食鮮食與冷凍產品，與大型便利商店通路供應商的營運樣態大致相符。",
                                           "latency_ms":  9620,
-                                          "overall_decision":  "pass",
-                                          "correctness":  5,
-                                          "completeness":  5,
-                                          "hallucination_control":  5,
-                                          "overall_score":  5.0,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v2_gpt5.5",
+                                                           "deliveryDate":  "2026-07-22",
+                                                           "overall_decision":  "pass",
+                                                           "correctness":  5,
+                                                           "completeness":  5,
+                                                           "hallucination_control":  5,
+                                                           "overall_score":  5.0,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "Model Output 的核心暴險說明與 Golden Answer 完全一致：均指出御便當、御飯團屬便利商店鮮食，由鮮食工廠大量生產，透過全家便利商店連鎖門市每日大量配送至多門市，由終端消費者即時購買，若同批產品發生事故，會經由全家通路在短時間內擴散至多地門市並影響大量消費者。Golden 中只涉及暴險與事故擴散機制，未談營業額合理性分類；Model Output 另行給出 REVENUE_REASONABILITY_CATEGORY「可解釋」與相關理由，屬新增評估面向，不與 Golden 有矛盾，也未改寫 Golden 的任何結論，因此不影響 correctness。\n\nCompleteness 方面，Golden 的關鍵點包括：1) 產品屬便利商店鮮食；2) 每日大量單品配送至多門市；3) 由終端消費者即時購買；4) 同批產品出問題時，可透過全家通路快速分散到多地門市並在短時間內影響大量消費者。這些要點在 Model Output 中皆被保留與整合成「作為全家鮮食製造/供應商，產品透過連鎖門市零售接觸跨區域消費者」及鮮食短期消費特性，沒有遺漏 Golden 已有的重要結論或必要限制，因此給 5 分，missing_information 為空。\n\nHallucination Control 方面，Model Output 新增的客觀事實，如「為全家便利商店鮮食製造/供應商之一」、「產品類型為飯糰、涼麵、便當等鮮食並有冷凍產品線索」、「無團膳、宴席或大型活動供餐模式線索」、「具食品製造工廠、資本額與通路供應角色」等，皆可由 WEB_REFERENCE 直接支持，未出現與 Golden 或 WEB_REFERENCE 明確矛盾的營運事實，也未把不確定線索寫成確定事實，也沒有用營業額本身作為唯一暴險判斷依據，因此 hallucination_control 給 5 分，unsupported_information 為空。\n\n檢視 Critical Rules：\n- REVENUE 僅在暴險段落作為背景，暴險程度主要仍來自通路型態與鮮食特性，未違反「不得僅以營業額推論暴險」。\n- 未把 WEB_REFERENCE 的『可能』或『未確認』改寫成確定事實；對團膳、大型活動等是以『未支持』方式表述，符合規則。\n- 未新增門市數、工廠數或未被支持的 OEM/ODM、供應鏈、品牌合作等具體事實。\n- 亦未因資訊缺少而主張『無法評估』。故無違反 critical rules。"
+                                                                                       ],
+                                                           "reason":  "Model Output 的核心暴險說明與 Golden Answer 完全一致：均指出御便當、御飯團屬便利商店鮮食，由鮮食工廠大量生產，透過全家便利商店連鎖門市每日大量配送至多門市，由終端消費者即時購買，若同批產品發生事故，會經由全家通路在短時間內擴散至多地門市並影響大量消費者。Golden 中只涉及暴險與事故擴散機制，未談營業額合理性分類；Model Output 另行給出 REVENUE_REASONABILITY_CATEGORY「可解釋」與相關理由，屬新增評估面向，不與 Golden 有矛盾，也未改寫 Golden 的任何結論，因此不影響 correctness。\n\nCompleteness 方面，Golden 的關鍵點包括：1) 產品屬便利商店鮮食；2) 每日大量單品配送至多門市；3) 由終端消費者即時購買；4) 同批產品出問題時，可透過全家通路快速分散到多地門市並在短時間內影響大量消費者。這些要點在 Model Output 中皆被保留與整合成「作為全家鮮食製造/供應商，產品透過連鎖門市零售接觸跨區域消費者」及鮮食短期消費特性，沒有遺漏 Golden 已有的重要結論或必要限制，因此給 5 分，missing_information 為空。\n\nHallucination Control 方面，Model Output 新增的客觀事實，如「為全家便利商店鮮食製造/供應商之一」、「產品類型為飯糰、涼麵、便當等鮮食並有冷凍產品線索」、「無團膳、宴席或大型活動供餐模式線索」、「具食品製造工廠、資本額與通路供應角色」等，皆可由 WEB_REFERENCE 直接支持，未出現與 Golden 或 WEB_REFERENCE 明確矛盾的營運事實，也未把不確定線索寫成確定事實，也沒有用營業額本身作為唯一暴險判斷依據，因此 hallucination_control 給 5 分，unsupported_information 為空。\n\n檢視 Critical Rules：\n- REVENUE 僅在暴險段落作為背景，暴險程度主要仍來自通路型態與鮮食特性，未違反「不得僅以營業額推論暴險」。\n- 未把 WEB_REFERENCE 的『可能』或『未確認』改寫成確定事實；對團膳、大型活動等是以『未支持』方式表述，符合規則。\n- 未新增門市數、工廠數或未被支持的 OEM/ODM、供應鏈、品牌合作等具體事實。\n- 亦未因資訊缺少而主張『無法評估』。故無違反 critical rules。"
+                                                       }
                                       },
                                       {
                                           "name":  "標的",
@@ -11257,12 +10983,6 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "主要以飯糰、便當、壽司、麵類等即食或短期消費食品，透過便利商店及其他品牌合作通路供應市場；產品多於短期內食用，難形成大量跨期流通存量，且未見婚宴、團膳或大型同步供餐模式。惟具食品製造工廠並供應便利商店及聯名品牌，產品可經單一供應鏈進入多門市與多種終端商品，具有較明顯的市場擴散及事故連鎖影響機制。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額為新臺幣23.3億元，與可用資本額3億元，以及具生產中食品工廠、即食餐食製造及便利商店鮮食供應等營運樣態大致相符。公開資訊顯示其具工廠生產及通路供應基礎，該營業額尚屬可解釋。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  5341
                                       },
                                       {
@@ -11290,12 +11010,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2023年5月22日至11月9日共2筆裁罰，已知累積裁罰金額為新臺幣104,000元。主要涉及放流水未符合標準之水污染防治事項，以及投保薪資申報或調整通知不符規定之勞工職業災害保險事項。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "依目前裁罰資料未見與本次產品責任保險所涵蓋之產品瑕疵、商品安全、標示或消費者使用後損害直接相關。兩筆裁罰發生於同一年度但屬不同管理面向，顯示環境排放及勞工保險申報控管均需留意，未見同類型事項跨年度反覆發生。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  16573
                                       },
                                       {
@@ -11355,12 +11069,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  23028
                                       },
                                       {
@@ -11382,12 +11090,6 @@ window.validationReviewData = {
                                           "MASK_RAIL":  null,
                                           "CASE_RISK":  "中風險",
                                           "CASE_RATE":  "審慎評估",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "score":  4.5,
                                           "final_summary":  "主要關注批次食品經便利商店多門市流通所形成的群聚及市場擴散暴險，AOA承接壓力較高。營業額達23.3億元但保費較既往報價大幅下降，且涉及承接標的縮小、放棄代位對象未填及附加被保險人等條件，費率與責任範圍需重估。核保應優先確認產品範圍、條款對象及刑事訴訟費用限額，並查核攤販營運與裁罰改善情形。",
                                           "latency_ms":  3826
@@ -11397,10 +11099,13 @@ window.validationReviewData = {
                                           "version":  "小量v3",
                                           "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  14094,
+                                                         "output":  971,
+                                                         "total":  15065
                                                      },
+                                          "violated_critical_rules":  [
+
+                                                                      ],
                                           "SCORE":  4.75,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -11438,25 +11143,33 @@ window.validationReviewData = {
                                           "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "本案年度預估營業額為新臺幣23.3億元，與具食品製造工廠、供應便利商店鮮食及具一定生產規模的營運樣態大致相符。公開資訊顯示其產品涵蓋便當、飯糰等鮮食，並具有連鎖通路供應線索，因此該營業額在此類食品製造及供應業態下可予解釋。",
                                           "latency_ms":  5443,
-                                          "overall_decision":  "pass",
-                                          "correctness":  5,
-                                          "completeness":  5,
-                                          "hallucination_control":  5,
-                                          "overall_score":  5.0,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v3",
+                                                           "deliveryDate":  "2026-07-29",
+                                                           "overall_decision":  "pass",
+                                                           "correctness":  5,
+                                                           "completeness":  5,
+                                                           "hallucination_control":  5,
+                                                           "overall_score":  5.0,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "Correctness: Model Output完全沿用Golden的核心結論：營業額合理性為「可解釋」，並說明其具食品製造工廠、供應便利商店鮮食、產品為便當/飯糰、透過便利商店通路供應，多門市配送、同批事故擴散至多門市並影響多數消費者等，皆與Golden敘述相符，未改變風險方向與事故擴散機制，因此給5分。\nCompleteness: Golden中關鍵要素如：年度預估營業額23.3億元、可解釋判斷、為全家便利商店鮮食/供應體系之一、產品為御便當與御飯團、每日大量配送多門市、同批事故透過全家通路擴散並短時間影響大量消費者等，在Model Output中皆有涵蓋或等值表述，未見關鍵資訊遺漏，因此給5分。\nHallucination Control: Model Output未新增Golden未提及且無法支持的具體營運事實（如門市數、OEM、特定供應鏈結構等），僅為同義改寫與合理摘要，例如將『全家便利商店鮮食製造/供應體系之一』概括為『供應便利商店通路』『連鎖通路』，屬合理概括，未改變核心判斷，也未違反任何Critical Rules，因此幻覺控制給5分。"
+                                                                                       ],
+                                                           "reason":  "Correctness: Model Output完全沿用Golden的核心結論：營業額合理性為「可解釋」，並說明其具食品製造工廠、供應便利商店鮮食、產品為便當/飯糰、透過便利商店通路供應，多門市配送、同批事故擴散至多門市並影響多數消費者等，皆與Golden敘述相符，未改變風險方向與事故擴散機制，因此給5分。\nCompleteness: Golden中關鍵要素如：年度預估營業額23.3億元、可解釋判斷、為全家便利商店鮮食/供應體系之一、產品為御便當與御飯團、每日大量配送多門市、同批事故透過全家通路擴散並短時間影響大量消費者等，在Model Output中皆有涵蓋或等值表述，未見關鍵資訊遺漏，因此給5分。\nHallucination Control: Model Output未新增Golden未提及且無法支持的具體營運事實（如門市數、OEM、特定供應鏈結構等），僅為同義改寫與合理摘要，例如將『全家便利商店鮮食製造/供應體系之一』概括為『供應便利商店通路』『連鎖通路』，屬合理概括，未改變核心判斷，也未違反任何Critical Rules，因此幻覺控制給5分。"
+                                                       }
                                       },
                                       {
                                           "name":  "客戶",
                                           "version":  "小量v2",
-                                          "deliveryDate":  "2026-08-05",
+                                          "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  9121,
+                                                         "output":  1299,
+                                                         "total":  10420
                                                      },
+                                          "violated_critical_rules":  [
+
+                                                                      ],
                                           "SCORE":  6.0,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -11464,25 +11177,30 @@ window.validationReviewData = {
                                           "SP_SCORE":  6.0,
                                           "MASK_RAIL":  null,
                                           "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "因店面外觀為臨時搭建之攤棚構造、外牆非固定材質且無明確出入口，判定為攤販。",
                                           "INPUT_TOKENS":  9121,
                                           "TOTAL_TOKENS":  10420,
                                           "OUTPUT_TOKENS":  1299,
                                           "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
                                           "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共2筆裁罰紀錄，已知累積裁罰金額為新臺幣10萬4,000元；主要涉及放流水檢驗未符合標準及勞工職業災害保險投保薪資或異動申報事項。",
                                           "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "依目前裁罰資料未見與本次產品責任保險直接相關，因裁罰內容分別涉及水污染排放管理及勞工職業災害保險申報，並非產品責任承保事故。",
                                           "latency_ms":  16885,
-                                          "overall_decision":  "pass",
-                                          "correctness":  5,
-                                          "completeness":  5,
-                                          "hallucination_control":  5,
-                                          "overall_score":  5.0,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v2",
+                                                           "deliveryDate":  "2026-08-05",
+                                                           "overall_decision":  "pass",
+                                                           "correctness":  5,
+                                                           "completeness":  5,
+                                                           "hallucination_control":  5,
+                                                           "overall_score":  5.0,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "Correctness：模型正確重述了裁罰期間（2021–2026年間共2筆）、累積金額（新臺幣104,000元）、違規內容（放流水檢驗未符合標準及勞工職業災害保險投保薪資或異動申報），且關於與產品責任保險關聯性低/未直接相關的結論與 Golden Answer 一致，故給 5 分。\nCompleteness：Golden Answer 中的重要資訊（裁罰筆數、期間、金額、違規性質，以及「與產品責任保險關聯性較低 / 未直接相關」的摘要判斷與管理面向說明）皆有呈現，雖模型以「水污染排放管理」作同義改寫，未造成資訊缺漏，故給 5 分。\nHallucination Control：模型僅新增「裁罰分數：9.0」此主觀評分，屬非關鍵延伸，未捏造新的裁罰事實、法規、金額或關聯判斷；其他內容皆可由 Golden Answer 支持，故給 5 分。\nCritical Rules：輸出為中文，且未將明確不相關裁罰判為直接相關或反向判定，因此無違反 critical rules。",
-                                          "SP_SUMMARY":  null,
-                                          "ESG_PENALTY_OVERVIEW":  null,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  null
+                                                                                       ],
+                                                           "reason":  "Correctness：模型正確重述了裁罰期間（2021–2026年間共2筆）、累積金額（新臺幣104,000元）、違規內容（放流水檢驗未符合標準及勞工職業災害保險投保薪資或異動申報），且關於與產品責任保險關聯性低/未直接相關的結論與 Golden Answer 一致，故給 5 分。\nCompleteness：Golden Answer 中的重要資訊（裁罰筆數、期間、金額、違規性質，以及「與產品責任保險關聯性較低 / 未直接相關」的摘要判斷與管理面向說明）皆有呈現，雖模型以「水污染排放管理」作同義改寫，未造成資訊缺漏，故給 5 分。\nHallucination Control：模型僅新增「裁罰分數：9.0」此主觀評分，屬非關鍵延伸，未捏造新的裁罰事實、法規、金額或關聯判斷；其他內容皆可由 Golden Answer 支持，故給 5 分。\nCritical Rules：輸出為中文，且未將明確不相關裁罰判為直接相關或反向判定，因此無違反 critical rules。"
+                                                       }
                                       },
                                       {
                                           "name":  "歷史",
@@ -11581,12 +11299,6 @@ window.validationReviewData = {
                                                                  "費率水準",
                                                                  "承接標的"
                                                              ],
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  25755
                                       },
                                       {
@@ -11614,12 +11326,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共2筆裁罰紀錄，已知累積裁罰金額為104,000元，主要涉及放流水水質未符合標準及勞工職業災害保險投保薪資申報或調整通知不符規定。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬水污染排放及勞工職業災害保險申報管理，與產品責任保險關聯性較低。裁罰類型分散於水污染排放與勞工職業災害保險申報管理，未見同類型跨年度反覆發生。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  4248
                                       },
                                       {
@@ -11641,12 +11347,6 @@ window.validationReviewData = {
                                           "MASK_RAIL":  null,
                                           "CASE_RISK":  "中風險",
                                           "CASE_RATE":  "審慎評估",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "score":  4.5,
                                           "final_summary":  "本案主要需確認營業額提高至23.3億元後，保費由既往11.5萬元降至3.5萬元、此次再要求2.7萬元，且承保標的由「所有產品」縮窄，存在定價與承保範圍落差。工廠批次製造便當、飯糰並經便利商店多門市供應，屬多通路／供應型中度；同批事故可能造成多人求償，AOA承接壓力較高，但AGG年度累積承接壓力較低。應確認承保範圍、NL12放棄代位對象、NPD004附加被保險人名稱及關係，並檢視已加貼NPD022之限額與保費適足。",
                                           "latency_ms":  7953
@@ -12257,12 +11957,6 @@ window.validationReviewData = {
                                                                  "承保對象",
                                                                  "承接標的"
                                                              ],
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  27602
                                       },
                                       {
@@ -12504,12 +12198,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
                                           "CLAUSE_RISK_B_SUM":  null,
                                           "latency_ms":  30146
@@ -12753,12 +12441,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
                                           "CLAUSE_RISK_B_SUM":  null,
                                           "latency_ms":  25436
@@ -12986,23 +12668,20 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "公開資訊顯示其為進口食品飲料代理／批發商，銷售至連鎖超市、超商、百貨、飯店及電商，故多通路為中度；未見婚宴、團膳、Buffet或大量同步供餐，故大型供餐有限。產品為果醬、飲料、罐頭、餅乾等具保存期限之消費品，非耐久財但可跨月銷售與攝取，持續使用判為中度。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "斯伯登寶翠有限公司資本額為新臺幣500萬元，公開資訊顯示其成立多年，主要從事歐美食品飲料進口代理與批發，並供應連鎖超市／超商、百貨、飯店及電商平台。申報產品年度預估銷售額新臺幣6,000萬元，雖高於資本額倍數不少，但與進口代理、批發及多通路銷售型態相較仍屬可解釋範圍。案件未提供特定被保產品名稱，若僅投保部分品牌或部分商品線，仍建議確認該6,000萬元是否為被保產品範圍內銷售額。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  null
                                       },
                                       {
                                           "name":  "標的",
                                           "version":  "小量v2_gpt5.5",
-                                          "deliveryDate":  "2026-07-22",
+                                          "deliveryDate":  "2026-07-17",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  11722,
+                                                         "output":  2244,
+                                                         "total":  13966
                                                      },
+                                          "violated_critical_rules":  [
+
+                                                                      ],
                                           "SCORE":  4.75,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -13039,15 +12718,20 @@ window.validationReviewData = {
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額新臺幣 6,000 萬元屬可解釋：目前可用資料顯示其為進口食品飲料代理與批發商，商品可見於 Costco、電商平台、連鎖超市、百貨及飯店等通路，足以支持數千萬元級銷售規模。資本額新臺幣 500 萬元雖低於年營業額，但批發代理業可透過庫存週轉形成高於資本額的年度銷售額。",
                                           "latency_ms":  7811,
-                                          "overall_decision":  "pass",
-                                          "correctness":  5,
-                                          "completeness":  4,
-                                          "hallucination_control":  5,
-                                          "overall_score":  4.67,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v2_gpt5.5",
+                                                           "deliveryDate":  "2026-07-22",
+                                                           "overall_decision":  "pass",
+                                                           "correctness":  5,
+                                                           "completeness":  4,
+                                                           "hallucination_control":  5,
+                                                           "overall_score":  4.67,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "1. 一致的核心結論：\n- Golden Answer 指出其為進口食品飲料代理／批發商，銷售至連鎖超市、超商、百貨、飯店及電商；Model Output 亦描述為進口代理與批發模式，商品經連鎖超市、百貨、飯店及多個電商平台分散流通，方向一致。\n- Golden Answer 強調產品為果醬、飲料、罐頭、餅乾等具保存期限之消費品，存在一定市場累積風險；Model Output 也指出產品多為包裝食品飲料、保存期限可達 1–2 年，會在通路庫存與消費者端形成跨期流通暴露，風險方向與主要事故擴散機制（多通路銷售＋保存期長導致累積暴露）相符。\n- Golden Answer雖未給出營業額合理性分類，Model Output 將營業額列為「可解釋」，且理由（進口代理／批發、多通路銷售）與 Golden Answer 和 WEB_REFERENCE 所示營運型態一致，屬合理推論，未違反既有判斷。\n- 暴險特性方面，Golden Answer 指出同批或同系列產品一旦出事會擴散至不同地區消費者，Model Output 透過「多通路/供應型、中度」及多通路流通描述，延續相同暴險方向。\n\n2. 主要差異：\n- Model Output 將三項暴險皆標為「中度」，Golden Answer 只定性說「仍有一定市場累積風險」，未具體分級；此屬在既有描述上的量化與細分，並未改變風險方向，視為合理詮釋，不扣 Correctness。\n- Golden Answer 明確寫出「同批或同系列產品若發生事故，可能擴散至不同地區消費者」這句，Model Output 雖透過多通路與多人餐飲場景隱含類似意涵，但未直接點明「不同地區消費者」的區域性擴散描述，屬輕微資訊缺口。\n- Golden Answer 特別列舉產品類別（果醬、飲料、罐頭、餅乾）與為具保存期限的消費品造成「市場累積風險」，Model Output 以「包裝食品飲料，保存期限 1–2 年，跨期流通暴露」概括，未逐一重述品項和「市場累積風險」字眼，屬輕微省略。\n\n3. 差異類型判定：\n- 小包裝果醬供餐廳商業使用線索、未見其本身以團膳或中央廚房為主等描述，皆可由 WEB_REFERENCE（Costco 小包裝果醬商品頁、公開資訊未見中央廚房/團膳模式）直接或間接支持，屬「來源直接支持」或「合理推論」，非未支持資訊。\n- 對保存期限「1 至 2 年」的說明可由 PChome 商品頁保存期限 365 日與 730 日合理推論，屬「來源直接支持＋合理推論」。\n- REVENUE 合理性「可解釋」為新的核保判斷，Golden Answer 並未給出相反結論，也未提供與之衝突的依據，屬合理核保判斷，不視為 hallucination。\n\n4. 對各指標的影響：\n- Correctness：Model Output 準確反映了進口食品飲料代理／批發、多通路（連鎖超市、百貨、飯店與電商）、具保存期限之消費品造成累積風險的核心方向，且未改變 Golden Answer 的暴險方向或主要事故擴散機制，給 5 分。\n- Completeness：未完全重述「同批或同系列產品事故可擴散至不同地區消費者」與列舉的具體品項與『市場累積風險』原文，屬輕微遺漏，但整體仍可理解主要風險與模式，給 4 分。\n- Hallucination Control：新增內容如小包裝果醬商業使用、保存期限範圍、非團膳模式等皆有 WEB_REFERENCE 或合理推論支持，未見與來源矛盾或無依據捏造，給 5 分。\n\n5. Critical Rules 檢查：\n- Model Output 雖提到營業額合理性，但未將 REVENUE 作為風險程度判斷的唯一或主要依據；風險判斷主要依營業模式、多通路、保存期限與產品型態，符合規則。\n- 未將 WEB_REFERENCE 的可能性改寫為確定事實，亦未新增門市數、工廠數、OEM/ODM 等無依據具體營運事實；也沒有因 web 缺資訊而判定無法評估。因此無違反 critical rules。"
+                                                                                       ],
+                                                           "reason":  "1. 一致的核心結論：\n- Golden Answer 指出其為進口食品飲料代理／批發商，銷售至連鎖超市、超商、百貨、飯店及電商；Model Output 亦描述為進口代理與批發模式，商品經連鎖超市、百貨、飯店及多個電商平台分散流通，方向一致。\n- Golden Answer 強調產品為果醬、飲料、罐頭、餅乾等具保存期限之消費品，存在一定市場累積風險；Model Output 也指出產品多為包裝食品飲料、保存期限可達 1–2 年，會在通路庫存與消費者端形成跨期流通暴露，風險方向與主要事故擴散機制（多通路銷售＋保存期長導致累積暴露）相符。\n- Golden Answer雖未給出營業額合理性分類，Model Output 將營業額列為「可解釋」，且理由（進口代理／批發、多通路銷售）與 Golden Answer 和 WEB_REFERENCE 所示營運型態一致，屬合理推論，未違反既有判斷。\n- 暴險特性方面，Golden Answer 指出同批或同系列產品一旦出事會擴散至不同地區消費者，Model Output 透過「多通路/供應型、中度」及多通路流通描述，延續相同暴險方向。\n\n2. 主要差異：\n- Model Output 將三項暴險皆標為「中度」，Golden Answer 只定性說「仍有一定市場累積風險」，未具體分級；此屬在既有描述上的量化與細分，並未改變風險方向，視為合理詮釋，不扣 Correctness。\n- Golden Answer 明確寫出「同批或同系列產品若發生事故，可能擴散至不同地區消費者」這句，Model Output 雖透過多通路與多人餐飲場景隱含類似意涵，但未直接點明「不同地區消費者」的區域性擴散描述，屬輕微資訊缺口。\n- Golden Answer 特別列舉產品類別（果醬、飲料、罐頭、餅乾）與為具保存期限的消費品造成「市場累積風險」，Model Output 以「包裝食品飲料，保存期限 1–2 年，跨期流通暴露」概括，未逐一重述品項和「市場累積風險」字眼，屬輕微省略。\n\n3. 差異類型判定：\n- 小包裝果醬供餐廳商業使用線索、未見其本身以團膳或中央廚房為主等描述，皆可由 WEB_REFERENCE（Costco 小包裝果醬商品頁、公開資訊未見中央廚房/團膳模式）直接或間接支持，屬「來源直接支持」或「合理推論」，非未支持資訊。\n- 對保存期限「1 至 2 年」的說明可由 PChome 商品頁保存期限 365 日與 730 日合理推論，屬「來源直接支持＋合理推論」。\n- REVENUE 合理性「可解釋」為新的核保判斷，Golden Answer 並未給出相反結論，也未提供與之衝突的依據，屬合理核保判斷，不視為 hallucination。\n\n4. 對各指標的影響：\n- Correctness：Model Output 準確反映了進口食品飲料代理／批發、多通路（連鎖超市、百貨、飯店與電商）、具保存期限之消費品造成累積風險的核心方向，且未改變 Golden Answer 的暴險方向或主要事故擴散機制，給 5 分。\n- Completeness：未完全重述「同批或同系列產品事故可擴散至不同地區消費者」與列舉的具體品項與『市場累積風險』原文，屬輕微遺漏，但整體仍可理解主要風險與模式，給 4 分。\n- Hallucination Control：新增內容如小包裝果醬商業使用、保存期限範圍、非團膳模式等皆有 WEB_REFERENCE 或合理推論支持，未見與來源矛盾或無依據捏造，給 5 分。\n\n5. Critical Rules 檢查：\n- Model Output 雖提到營業額合理性，但未將 REVENUE 作為風險程度判斷的唯一或主要依據；風險判斷主要依營業模式、多通路、保存期限與產品型態，符合規則。\n- 未將 WEB_REFERENCE 的可能性改寫為確定事實，亦未新增門市數、工廠數、OEM/ODM 等無依據具體營運事實；也沒有因 web 缺資訊而判定無法評估。因此無違反 critical rules。"
+                                                       }
                                       },
                                       {
                                           "name":  "標的",
@@ -13096,12 +12780,6 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "產品以進口食品、飲料及批發商品為主，已見連鎖超市、百貨、飯店及多個電商平台等多通路銷售，單一產品發生問題時可能透過不同下游通路擴散至多類消費者。未見團膳、中央廚房或大型同步供餐情境；產品屬即時或短期消費，暴露主要集中於當期流通與消費，未形成長期使用型市場存量。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額為新臺幣6,000萬元。公司資本額為500萬元，且公開資訊顯示其從事進口食品飲料代理、批發及多通路銷售，營運模式具商品流通與通路放大的特性，該營業額尚與可觀察的經營樣態相符。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  6504
                                       },
                                       {
@@ -13129,12 +12807,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  60765
                                       },
                                       {
@@ -13194,12 +12866,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  19702
                                       },
                                       {
@@ -13221,12 +12887,6 @@ window.validationReviewData = {
                                           "MASK_RAIL":  null,
                                           "CASE_RISK":  "中風險",
                                           "CASE_RATE":  "審慎評估",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "score":  5.5,
                                           "final_summary":  "主要關注酒類產品之食品安全責任及多通路流通所致群聚與跨通路擴散暴險。雖近五年無理賠且保額承接壓力較低，仍須留意承接標的是否由特定通路擴大至一般進口食品銷售，以及附加條款口徑變更。核保應優先確認酒類除外、經銷商條款是否加貼及照片不足之營運條件。",
                                           "latency_ms":  3092
@@ -13236,10 +12896,13 @@ window.validationReviewData = {
                                           "version":  "小量v3",
                                           "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  14790,
+                                                         "output":  1546,
+                                                         "total":  16336
                                                      },
+                                          "violated_critical_rules":  [
+
+                                                                      ],
                                           "SCORE":  5.75,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -13281,25 +12944,33 @@ window.validationReviewData = {
                                           "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "本次被保產品年度預估營業額為新臺幣6,000萬元，與食品、飲料及酒類進口代理及批發業者的營運型態大致相符。公開資訊顯示該公司將產品供應至連鎖超市、百貨公司、飯店及電商或零售平台，具多通路市場接觸，足以支持此營業額屬於可解釋的批發及代理業務規模。",
                                           "latency_ms":  9820,
-                                          "overall_decision":  "pass",
-                                          "correctness":  5,
-                                          "completeness":  5,
-                                          "hallucination_control":  5,
-                                          "overall_score":  5.0,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v3",
+                                                           "deliveryDate":  "2026-07-29",
+                                                           "overall_decision":  "pass",
+                                                           "correctness":  5,
+                                                           "completeness":  5,
+                                                           "hallucination_control":  5,
+                                                           "overall_score":  5.0,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "Model Output 完整且正確反映 Golden Answer 的核心結論與邏輯：\n1) 營業額合理性：Golden 判定 6,000 萬元屬「可解釋」，理由為進口食品飲料代理與批發，產品於 Costco、電商平台、連鎖超市、百貨及飯店等多通路銷售，足以支持數千萬級規模。Model Output 同樣將營業額分類為「可解釋」，並以進口食品、飲料及酒類代理批發、多通路供應為主要依據，與 Golden 在方向與邏輯上完全一致，僅為同義改寫與合理摘要，故 correctness 為 5。\n2) 曝險特性與擴散機制：Golden 指出為進口食品飲料代理／批發，產品銷往連鎖超市、超商、百貨、飯店及電商，同批或同系列產品事故可擴散至不同地區消費者，且果醬、飲料、罐頭、餅乾等為具保存期限之消費品，有一定市場累積風險。Model Output 說明多通路（連鎖超市、百貨、飯店及多個電商或零售平台）銷售，單一產品或批次事故可同時影響不同通路消費者與下游據點，擴大回收與損害，與 Golden 所強調的多通路、批次事故擴散機制和累積風險方向一致，且未改變事故擴散邏輯，因此 correctness 保持 5。\n3) 完整性：Golden 的關鍵資訊——營業額合理性結論與其依據、多通路銷售型態、產品為保存期限之消費品、同批產品可跨地區及通路擴散的風險——皆在 Model Output 中被涵蓋或等值呈現，未有重要要點遺漏，因此 completeness 為 5。\n4) 幻覺控制：Model Output 中的產品品項（餅乾、果醬、水、咖啡、果汁及酒類）、多通路銷售描述、批次事故擴大回收與損害範圍等，皆屬於對 Golden 既有『果醬、飲料、罐頭、餅乾等食品飲料』與多通路銷售的合理細化與改寫，未新增無法由 Golden 支持的具體營運事實（如門市數、工廠數、特定品牌合作等），亦未與任何已知資訊矛盾，故 hallucination_control 評為 5。\n5) 關於 critical rules：Model Output 並未以營業額作為暴險程度的唯一依據，而是依多通路供應與產品性質說明暴險；也未憑空新增門市數、工廠數、OEM/ODM 或其他具體營運事實；亦未將不確定描述改寫為確定事實，故無違反任何 critical rules。"
+                                                                                       ],
+                                                           "reason":  "Model Output 完整且正確反映 Golden Answer 的核心結論與邏輯：\n1) 營業額合理性：Golden 判定 6,000 萬元屬「可解釋」，理由為進口食品飲料代理與批發，產品於 Costco、電商平台、連鎖超市、百貨及飯店等多通路銷售，足以支持數千萬級規模。Model Output 同樣將營業額分類為「可解釋」，並以進口食品、飲料及酒類代理批發、多通路供應為主要依據，與 Golden 在方向與邏輯上完全一致，僅為同義改寫與合理摘要，故 correctness 為 5。\n2) 曝險特性與擴散機制：Golden 指出為進口食品飲料代理／批發，產品銷往連鎖超市、超商、百貨、飯店及電商，同批或同系列產品事故可擴散至不同地區消費者，且果醬、飲料、罐頭、餅乾等為具保存期限之消費品，有一定市場累積風險。Model Output 說明多通路（連鎖超市、百貨、飯店及多個電商或零售平台）銷售，單一產品或批次事故可同時影響不同通路消費者與下游據點，擴大回收與損害，與 Golden 所強調的多通路、批次事故擴散機制和累積風險方向一致，且未改變事故擴散邏輯，因此 correctness 保持 5。\n3) 完整性：Golden 的關鍵資訊——營業額合理性結論與其依據、多通路銷售型態、產品為保存期限之消費品、同批產品可跨地區及通路擴散的風險——皆在 Model Output 中被涵蓋或等值呈現，未有重要要點遺漏，因此 completeness 為 5。\n4) 幻覺控制：Model Output 中的產品品項（餅乾、果醬、水、咖啡、果汁及酒類）、多通路銷售描述、批次事故擴大回收與損害範圍等，皆屬於對 Golden 既有『果醬、飲料、罐頭、餅乾等食品飲料』與多通路銷售的合理細化與改寫，未新增無法由 Golden 支持的具體營運事實（如門市數、工廠數、特定品牌合作等），亦未與任何已知資訊矛盾，故 hallucination_control 評為 5。\n5) 關於 critical rules：Model Output 並未以營業額作為暴險程度的唯一依據，而是依多通路供應與產品性質說明暴險；也未憑空新增門市數、工廠數、OEM/ODM 或其他具體營運事實；亦未將不確定描述改寫為確定事實，故無違反任何 critical rules。"
+                                                       }
                                       },
                                       {
                                           "name":  "客戶",
                                           "version":  "小量v2",
-                                          "deliveryDate":  "2026-08-05",
+                                          "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  6341,
+                                                         "output":  985,
+                                                         "total":  7326
                                                      },
+                                          "violated_critical_rules":  [
+
+                                                                      ],
                                           "SCORE":  6.0,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -13307,25 +12978,30 @@ window.validationReviewData = {
                                           "SP_SCORE":  6.0,
                                           "MASK_RAIL":  null,
                                           "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "該店面位於開放式區域，外觀為臨時搭建之攤棚且外牆為輕質板材，無明確出入口，判定為攤販。",
                                           "INPUT_TOKENS":  6341,
                                           "TOTAL_TOKENS":  7326,
                                           "OUTPUT_TOKENS":  985,
                                           "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
                                           "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
                                           "latency_ms":  19866,
-                                          "overall_decision":  "pass",
-                                          "correctness":  5,
-                                          "completeness":  5,
-                                          "hallucination_control":  5,
-                                          "overall_score":  5.0,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v2",
+                                                           "deliveryDate":  "2026-08-05",
+                                                           "overall_decision":  "pass",
+                                                           "correctness":  5,
+                                                           "completeness":  5,
+                                                           "hallucination_control":  5,
+                                                           "overall_score":  5.0,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "Model Output 與 Golden Answer 在裁罰概況皆表述為「公司內部裁罰資料未提供與該客戶相符之裁罰紀錄」，在摘要判斷部分同樣為「無」/null，未改變任何事實或結論，故正確性為 5。Golden Answer 僅包含該裁罰概況與無摘要判斷兩點，Model 已完整覆蓋，無遺漏，完整性為 5。新增的「裁罰分數：10.0」不影響 ESG 裁罰事實與關聯結論，亦未虛構任何裁罰、金額或法規，屬非關鍵延伸，可視為無實質 hallucination，給予 5。輸出全為中文，且未將不相關裁罰誤判為相關，故無違反 critical rules。",
-                                          "SP_SUMMARY":  null,
-                                          "ESG_PENALTY_OVERVIEW":  null,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  null
+                                                                                       ],
+                                                           "reason":  "Model Output 與 Golden Answer 在裁罰概況皆表述為「公司內部裁罰資料未提供與該客戶相符之裁罰紀錄」，在摘要判斷部分同樣為「無」/null，未改變任何事實或結論，故正確性為 5。Golden Answer 僅包含該裁罰概況與無摘要判斷兩點，Model 已完整覆蓋，無遺漏，完整性為 5。新增的「裁罰分數：10.0」不影響 ESG 裁罰事實與關聯結論，亦未虛構任何裁罰、金額或法規，屬非關鍵延伸，可視為無實質 hallucination，給予 5。輸出全為中文，且未將不相關裁罰誤判為相關，故無違反 critical rules。"
+                                                       }
                                       },
                                       {
                                           "name":  "歷史",
@@ -13410,12 +13086,6 @@ window.validationReviewData = {
                                                                  "承保對象",
                                                                  "承接標的"
                                                              ],
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  16188
                                       },
                                       {
@@ -13443,12 +13113,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  111
                                       },
                                       {
@@ -13470,12 +13134,6 @@ window.validationReviewData = {
                                           "MASK_RAIL":  null,
                                           "CASE_RISK":  "中風險",
                                           "CASE_RATE":  "審慎評估",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "score":  5.5,
                                           "final_summary":  "本案主要需確認承接標的／產品名稱是否由前案限特定通路擴大為一般進口食品銷售，造成通路範圍落差。進口食品經超市、百貨、飯店及電商等多通路流通，同批食品異常可能引發跨通路多人求償；惟現有AOA及AGG對常見及偏高情境承接壓力較低。另酒類產品建議加貼NPD013、NPD003A、NPD003B，應確認通路責任及附加條款異動是否為實質調整。核保請確認實際通路、承保範圍及上述條款適用性。",
                                           "latency_ms":  6221
@@ -13961,12 +13619,6 @@ window.validationReviewData = {
                                                                  "承接標的",
                                                                  "條件"
                                                              ],
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  30476
                                       },
                                       {
@@ -14208,12 +13860,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
                                           "CLAUSE_RISK_B_SUM":  null,
                                           "latency_ms":  14683
@@ -14457,12 +14103,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
                                           "CLAUSE_RISK_B_SUM":  null,
                                           "latency_ms":  40171
@@ -14690,23 +14330,20 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "公開資訊顯示為單一門市／餐廳、官方商城及PChome、momo等平台銷售，未見婚宴、團膳、Buffet或大量同步供餐，故大型供餐有限。因已有門市、官網與第三方電商，通路暴險為中度；產品多為餐飲、雞肉熟食、冷凍食品及雞湯包等短期消費品，持續使用暴險有限。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "偏低且需確認",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "新福農場資本額為10萬元，登記為畜產品零售，公開資訊顯示其同時經營現場餐飲、門市、官方商城及第三方電商平台冷凍／低溫食品銷售。申報年營業額100若代表全體營業額，與其餐廳營業時間、商品品項及多通路市場接觸相較偏低。因被保產品名稱未提供，仍需確認是否僅投保部分產品、部分通路或為保守申報。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  null
                                       },
                                       {
                                           "name":  "標的",
                                           "version":  "小量v2_gpt5.5",
-                                          "deliveryDate":  "2026-07-22",
+                                          "deliveryDate":  "2026-07-17",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  12588,
+                                                         "output":  1926,
+                                                         "total":  14514
                                                      },
+                                          "violated_critical_rules":  [
+
+                                                                      ],
                                           "SCORE":  7.0,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -14743,15 +14380,20 @@ window.validationReviewData = {
                                           "REVENUE_REASONABILITY_CATEGORY":  "偏低且需確認",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "本案預估年度營業額為 100，明顯低於目前可見的營運樣態所暗示的銷售規模。新福農場公開資訊顯示有官方商城、多個電商平台、冷凍宅配、雞肉產品線及批發／餐飲合作線索；若 100 代表全部被保產品年度銷售，需確認是否僅投保部分產品、部分通路或為保守申報。",
                                           "latency_ms":  7930,
-                                          "overall_decision":  "pass",
-                                          "correctness":  5,
-                                          "completeness":  5,
-                                          "hallucination_control":  5,
-                                          "overall_score":  5.0,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v2_gpt5.5",
+                                                           "deliveryDate":  "2026-07-22",
+                                                           "overall_decision":  "pass",
+                                                           "correctness":  5,
+                                                           "completeness":  5,
+                                                           "hallucination_control":  5,
+                                                           "overall_score":  5.0,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "1. 一致的核心結論：\n- Golden Answer 指出生鮮雞肉及相關食品除現場零售／餐飲外，亦可透過官方商城、PChome、momo等平台及低溫宅配接觸分散消費者，同批產品可跨地區流通，使單一事故影響範圍從門市客群擴大到電商購買者。\n- Model Output 說明主要市場接觸來自嘉義餐廳／專賣店、官方商城、PChome／蝦皮等平台露出及冷凍宅配，事故可隨線上與平台銷售分散至不同消費者，強調多通路擴散性，與 Golden 的暴險方向及擴散機制（多通路、低溫宅配、跨地區流通擴大影響範圍）一致。\n- Golden Answer 未直接給出營業額合理性結論，但其描述明確呈現多通路且可跨地區流通之情境。Model Output 將此轉化為「多通路/供應型 中度」並將營業額歸類為「偏低且需確認」，仍是沿用多通路、跨區流通的核心風險邏輯，符合要求。\n\n2. 主要差異說明與分類：\n- Model Output 將暴險三類分別標為「持續使用型：有限」「大型供餐型：有限」「多通路/供應型：中度」，Golden 只明確強調多通路擴散，未對三類作等級分類。這屬於在 Golden 暴險方向基礎上的細化與結構化表述，而非改變方向，且核心中度風險放在多通路擴散上，與 Golden 完全一致，故屬合理推論，不影響 Correctness。\n- Model Output 新增「未見中央廚房、團膳、婚宴或大型同步供餐資訊」與「產品多為現場餐飲、生鮮／冷凍熟食與滴雞精等短期消費品，市場長期累積有限」。這些內容可從 WEB_REFERENCE 直接或間接支持：公開資訊明確列出產品型態與缺乏團膳、大型供餐等資訊；屬合理整理與推論，不是無來源捏造。\n- Model Output 的營業額合理性分類為「偏低且需確認」，並說明因多通路（餐廳／專賣店＋官方商城＋PChome＋蝦皮＋宅配）、產品線豐富，而申報額僅100且產品名稱空白，需確認是否僅投保部分品項／通路或保守申報。這與 Golden 的多通路、多產品線、跨地區流通邏輯相符，為合理延伸，未違反任何 Golden 明示結論。\n\n3. 支持度標記：\n- 多通路（官方商城、PChome、蝦皮、冷凍宅配）、現場餐飲／專賣店、短期消費品等描述：來源直接支持（WEB_REFERENCE 詳列）。\n- 未見中央廚房、團膳、婚宴、大型供餐：來源直接支持為「未查得」與資訊缺口，由此推論為風險有限是合理推論，未被誇大為有或無特定事實。\n- 營業額「偏低且需確認」及需確認僅投保部分品項／通路或保守申報：屬合理推論，符合模組對偏低情境的標準解釋，未創造具體營運事實。\n\n4. 各項分數理由：\n- Correctness = 5：Model Output 完整保留 Golden 的核心：生鮮雞肉及相關食品不僅現場零售／餐飲，亦透過官方商城與平台配合低溫宅配銷售，導致同批產品可跨地區流通、擴大單一事故影響範圍；暴險方向聚焦在多通路/供應擴散，並未改變核心機制。\n- Completeness = 5：Golden 的關鍵點（多通路：現場＋官方商城＋平台、低溫宅配、同批產品跨地區流通、事故影響擴大至電商購買者）皆在 Model Output 中以同義方式體現，無重要缺漏。\n- Hallucination Control = 5：新增的具體資訊（餐廳／專賣店、PChome／蝦皮、冷凍宅配、產品類型）均由 WEB_REFERENCE 直接支持；對無查得大型供餐型態的描述符合「資訊缺口」情境下的合理推論，未將可能性或不確定資訊改寫為確定事實，亦未新增無依據的門市數、工廠數、OEM／通路結構等。\n\n5. Critical rules 檢查：\n- REVENUE 僅作為營業額偏低的說明背景，暴險程度評估主要依通路多寡、配送方式與產品型態判斷，未違反「不得以營業額高低作為暴險程度唯一或主要依據」。\n- 未將 WEB_REFERENCE 的不確定描述改寫為確定事實。\n- 未新增無來源支持的具體營運事實，如門市數、工廠數、OEM／供應鏈結構等。\n- 也未因 WEB_REFERENCE 缺少資訊而判定「無法評估」。\n因此 violated_critical_rules 為空。"
+                                                                                       ],
+                                                           "reason":  "1. 一致的核心結論：\n- Golden Answer 指出生鮮雞肉及相關食品除現場零售／餐飲外，亦可透過官方商城、PChome、momo等平台及低溫宅配接觸分散消費者，同批產品可跨地區流通，使單一事故影響範圍從門市客群擴大到電商購買者。\n- Model Output 說明主要市場接觸來自嘉義餐廳／專賣店、官方商城、PChome／蝦皮等平台露出及冷凍宅配，事故可隨線上與平台銷售分散至不同消費者，強調多通路擴散性，與 Golden 的暴險方向及擴散機制（多通路、低溫宅配、跨地區流通擴大影響範圍）一致。\n- Golden Answer 未直接給出營業額合理性結論，但其描述明確呈現多通路且可跨地區流通之情境。Model Output 將此轉化為「多通路/供應型 中度」並將營業額歸類為「偏低且需確認」，仍是沿用多通路、跨區流通的核心風險邏輯，符合要求。\n\n2. 主要差異說明與分類：\n- Model Output 將暴險三類分別標為「持續使用型：有限」「大型供餐型：有限」「多通路/供應型：中度」，Golden 只明確強調多通路擴散，未對三類作等級分類。這屬於在 Golden 暴險方向基礎上的細化與結構化表述，而非改變方向，且核心中度風險放在多通路擴散上，與 Golden 完全一致，故屬合理推論，不影響 Correctness。\n- Model Output 新增「未見中央廚房、團膳、婚宴或大型同步供餐資訊」與「產品多為現場餐飲、生鮮／冷凍熟食與滴雞精等短期消費品，市場長期累積有限」。這些內容可從 WEB_REFERENCE 直接或間接支持：公開資訊明確列出產品型態與缺乏團膳、大型供餐等資訊；屬合理整理與推論，不是無來源捏造。\n- Model Output 的營業額合理性分類為「偏低且需確認」，並說明因多通路（餐廳／專賣店＋官方商城＋PChome＋蝦皮＋宅配）、產品線豐富，而申報額僅100且產品名稱空白，需確認是否僅投保部分品項／通路或保守申報。這與 Golden 的多通路、多產品線、跨地區流通邏輯相符，為合理延伸，未違反任何 Golden 明示結論。\n\n3. 支持度標記：\n- 多通路（官方商城、PChome、蝦皮、冷凍宅配）、現場餐飲／專賣店、短期消費品等描述：來源直接支持（WEB_REFERENCE 詳列）。\n- 未見中央廚房、團膳、婚宴、大型供餐：來源直接支持為「未查得」與資訊缺口，由此推論為風險有限是合理推論，未被誇大為有或無特定事實。\n- 營業額「偏低且需確認」及需確認僅投保部分品項／通路或保守申報：屬合理推論，符合模組對偏低情境的標準解釋，未創造具體營運事實。\n\n4. 各項分數理由：\n- Correctness = 5：Model Output 完整保留 Golden 的核心：生鮮雞肉及相關食品不僅現場零售／餐飲，亦透過官方商城與平台配合低溫宅配銷售，導致同批產品可跨地區流通、擴大單一事故影響範圍；暴險方向聚焦在多通路/供應擴散，並未改變核心機制。\n- Completeness = 5：Golden 的關鍵點（多通路：現場＋官方商城＋平台、低溫宅配、同批產品跨地區流通、事故影響擴大至電商購買者）皆在 Model Output 中以同義方式體現，無重要缺漏。\n- Hallucination Control = 5：新增的具體資訊（餐廳／專賣店、PChome／蝦皮、冷凍宅配、產品類型）均由 WEB_REFERENCE 直接支持；對無查得大型供餐型態的描述符合「資訊缺口」情境下的合理推論，未將可能性或不確定資訊改寫為確定事實，亦未新增無依據的門市數、工廠數、OEM／通路結構等。\n\n5. Critical rules 檢查：\n- REVENUE 僅作為營業額偏低的說明背景，暴險程度評估主要依通路多寡、配送方式與產品型態判斷，未違反「不得以營業額高低作為暴險程度唯一或主要依據」。\n- 未將 WEB_REFERENCE 的不確定描述改寫為確定事實。\n- 未新增無來源支持的具體營運事實，如門市數、工廠數、OEM／供應鏈結構等。\n- 也未因 WEB_REFERENCE 缺少資訊而判定「無法評估」。\n因此 violated_critical_rules 為空。"
+                                                       }
                                       },
                                       {
                                           "name":  "標的",
@@ -14800,12 +14442,6 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "主要透過農場餐飲據點、官方電商及至少一個餐飲合作通路接觸消費者，具一定跨通路擴散可能，但未見團膳、婚宴、Buffet、OEM／ODM或大宗供應等大量同步影響機制。產品同時包含即時消費的生鮮與熟食，以及滴雞精、雞湯包等包裝食品；加上品牌已經營多年，市場可能形成一定跨期流通與持續食用暴露，但目前不足以推論已有大量市場存量。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "無法評估",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額為100，但未提供金額單位，且目前未取得實際養殖與加工產能、產品年產量、門市及供應範圍等營運規模資訊；因此無法建立可比較的營業額合理參考區間。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  4788
                                       },
                                       {
@@ -14833,12 +14469,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  41878
                                       },
                                       {
@@ -14898,12 +14528,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13608
                                       },
                                       {
@@ -14925,12 +14549,6 @@ window.validationReviewData = {
                                           "MASK_RAIL":  null,
                                           "CASE_RISK":  "中風險",
                                           "CASE_RATE":  "審慎評估",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "score":  6.0,
                                           "final_summary":  "主要關注營業額申報與實際多通路營運不一致，且攤販型態涉及生鮮及加工食品之群聚、批次與市場擴散暴險。過往保額約倍增而保費僅小幅增加，並有承保標的轉換及期間重疊可能，AOA承接壓力偏高。應優先確認營業額、投保通路與產品範圍、保額費率合理性及食品相關條款適用性。",
                                           "latency_ms":  3630
@@ -14940,10 +14558,13 @@ window.validationReviewData = {
                                           "version":  "小量v3",
                                           "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  13171,
+                                                         "output":  728,
+                                                         "total":  13899
                                                      },
+                                          "violated_critical_rules":  [
+
+                                                                      ],
                                           "SCORE":  7.0,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -14981,25 +14602,33 @@ window.validationReviewData = {
                                           "REVENUE_SCORE_COMPARISON_RESULT":  "REASONABILITY_LOWER",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "本次被保產品為生鮮食品，公開資訊顯示新福農場自2012年起經營畜肉零售，並具現場銷售及線上商城宅配等營業接觸方式；以此業態及持續營運規模推估，年度營業額通常應高於新臺幣100元。該金額亦與公開資訊所列新臺幣100,000元資本額及既有電商銷售樣態差距明顯，應確認預估金額的單位、期間或填報範圍。",
                                           "latency_ms":  5237,
-                                          "overall_decision":  "pass",
-                                          "correctness":  5,
-                                          "completeness":  5,
-                                          "hallucination_control":  5,
-                                          "overall_score":  5.0,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v3",
+                                                           "deliveryDate":  "2026-07-29",
+                                                           "overall_decision":  "pass",
+                                                           "correctness":  5,
+                                                           "completeness":  5,
+                                                           "hallucination_control":  5,
+                                                           "overall_score":  5.0,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "Model Output 在營業額合理性與曝險特性兩部分均與 Golden Answer 保持一致。\n\n1) Correctness：\n- 營業額合理性分類為「偏低且需確認」，與 Golden Answer 完全相同，且說明中指出以業態與持續營運規模推估，100 元顯著偏低，需要確認金額單位、期間或填報範圍，充分對應 Golden Answer 所述「明顯低於目前可見的營運樣態」以及需確認是否為部分產品/通路或保守申報的精神，屬同義改寫與合理延伸。\n- 曝險特性部分，Golden Answer 強調：生鮮雞肉可透過官方商城與多個電商平台及低溫宅配，造成同批產品跨地區流通，單一事故影響範圍由門市客群擴大至電商購買者。Model Output 指出：除現場銷售外，亦透過官方線上商城及外部電商平台接單並宅配，可接觸較廣地域的消費市場，單一銷售據點事故時影響範圍可能擴大至不同收貨地點與消費者，與 Golden Answer 的主要事故擴散機制保持一致。多通路/供應型列為「中度」也符合「多平台＋宅配」帶來較大擴散風險的方向，未改變風險方向或機制。\n因此在核心事實、判斷與結論上無實質差異，給予 correctness=5。\n\n2) Completeness：\n- 營業額合理性部分，Golden Answer 的關鍵要點包括：預估營業額100、相對於可見營運樣態偏低、多通路（官方商城、多個電商、批發/餐飲）暗示規模較大、需要確認是否為部分產品/部分通路或保守申報。Model Output 雖未逐字提及 PChome、momo 或批發/餐飲，但已概括為「線上商城宅配等營業接觸方式」及「既有電商銷售樣態」，並同樣指出金額偏低且需確認單位、期間或填報範圍，足以支撐相同結論，無關鍵依據缺漏。\n- 曝險特性部分，Golden Answer 的核心在於：生鮮雞肉透過官方商城與多個電商平台及低溫宅配→同批產品跨地區流通→單一事故影響範圍由門市客群擴大至電商購買者。Model Output 已明確說明「官方線上商城及外部電商平台接單並宅配」、「商品可接觸較廣地域的消費市場」、「事故時影響可能擴大至不同收貨地點與消費者」，完整保留關鍵擴散機制及風險方向。\n因此重要內容無實質遺漏，給予 completeness=5。\n\n3) Hallucination Control：\n- 新增內容如「自2012年起經營畜肉零售」及「資本額100,000元」屬具體客觀公司資訊，但在本題中 WEB_REFERENCE 空白，無法判定其是否來自外部搜尋；然而根據規則，WEB_REFERENCE 不完整不等於該事實不存在，且這些補充並未改變 Golden Answer 的營業額合理性分類或暴險方向與機制，而只是用來強化營運持續性與規模偏高的推論，屬合理補充，不視為 hallucination 扣分來源。\n- 曝險描述及營業額說明未出現與 Golden Answer 相矛盾的事實，也未將不確定資訊改寫為確定事實，且未依 REVENUE 單獨決定暴險程度。\n因此在幻覺控制上無明顯問題，給予 hallucination_control=5。\n\n4) Critical Rules：\n- REVENUE 僅作為背景，暴險程度「多通路/供應型為中度」係依通路型態與宅配跨區擴散機制判斷，未違反「不得以營業額單獨決定暴險程度」。\n- 未將不確定或僅為線索的描述改寫成確定事實於本案提供的資料中。\n- 未新增門市數、工廠數、OEM/ODM、供應鏈、品牌合作或通路細節的無依據具體內容。\n- 並未因 WEB_REFERENCE 缺乏資訊而將營業額合理性判為「無法評估」。\n故無違反任何 critical rules，violated_critical_rules 為空陣列。"
+                                                                                       ],
+                                                           "reason":  "Model Output 在營業額合理性與曝險特性兩部分均與 Golden Answer 保持一致。\n\n1) Correctness：\n- 營業額合理性分類為「偏低且需確認」，與 Golden Answer 完全相同，且說明中指出以業態與持續營運規模推估，100 元顯著偏低，需要確認金額單位、期間或填報範圍，充分對應 Golden Answer 所述「明顯低於目前可見的營運樣態」以及需確認是否為部分產品/通路或保守申報的精神，屬同義改寫與合理延伸。\n- 曝險特性部分，Golden Answer 強調：生鮮雞肉可透過官方商城與多個電商平台及低溫宅配，造成同批產品跨地區流通，單一事故影響範圍由門市客群擴大至電商購買者。Model Output 指出：除現場銷售外，亦透過官方線上商城及外部電商平台接單並宅配，可接觸較廣地域的消費市場，單一銷售據點事故時影響範圍可能擴大至不同收貨地點與消費者，與 Golden Answer 的主要事故擴散機制保持一致。多通路/供應型列為「中度」也符合「多平台＋宅配」帶來較大擴散風險的方向，未改變風險方向或機制。\n因此在核心事實、判斷與結論上無實質差異，給予 correctness=5。\n\n2) Completeness：\n- 營業額合理性部分，Golden Answer 的關鍵要點包括：預估營業額100、相對於可見營運樣態偏低、多通路（官方商城、多個電商、批發/餐飲）暗示規模較大、需要確認是否為部分產品/部分通路或保守申報。Model Output 雖未逐字提及 PChome、momo 或批發/餐飲，但已概括為「線上商城宅配等營業接觸方式」及「既有電商銷售樣態」，並同樣指出金額偏低且需確認單位、期間或填報範圍，足以支撐相同結論，無關鍵依據缺漏。\n- 曝險特性部分，Golden Answer 的核心在於：生鮮雞肉透過官方商城與多個電商平台及低溫宅配→同批產品跨地區流通→單一事故影響範圍由門市客群擴大至電商購買者。Model Output 已明確說明「官方線上商城及外部電商平台接單並宅配」、「商品可接觸較廣地域的消費市場」、「事故時影響可能擴大至不同收貨地點與消費者」，完整保留關鍵擴散機制及風險方向。\n因此重要內容無實質遺漏，給予 completeness=5。\n\n3) Hallucination Control：\n- 新增內容如「自2012年起經營畜肉零售」及「資本額100,000元」屬具體客觀公司資訊，但在本題中 WEB_REFERENCE 空白，無法判定其是否來自外部搜尋；然而根據規則，WEB_REFERENCE 不完整不等於該事實不存在，且這些補充並未改變 Golden Answer 的營業額合理性分類或暴險方向與機制，而只是用來強化營運持續性與規模偏高的推論，屬合理補充，不視為 hallucination 扣分來源。\n- 曝險描述及營業額說明未出現與 Golden Answer 相矛盾的事實，也未將不確定資訊改寫為確定事實，且未依 REVENUE 單獨決定暴險程度。\n因此在幻覺控制上無明顯問題，給予 hallucination_control=5。\n\n4) Critical Rules：\n- REVENUE 僅作為背景，暴險程度「多通路/供應型為中度」係依通路型態與宅配跨區擴散機制判斷，未違反「不得以營業額單獨決定暴險程度」。\n- 未將不確定或僅為線索的描述改寫成確定事實於本案提供的資料中。\n- 未新增門市數、工廠數、OEM/ODM、供應鏈、品牌合作或通路細節的無依據具體內容。\n- 並未因 WEB_REFERENCE 缺乏資訊而將營業額合理性判為「無法評估」。\n故無違反任何 critical rules，violated_critical_rules 為空陣列。"
+                                                       }
                                       },
                                       {
                                           "name":  "客戶",
                                           "version":  "小量v2",
-                                          "deliveryDate":  "2026-08-05",
+                                          "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  6341,
+                                                         "output":  990,
+                                                         "total":  7331
                                                      },
+                                          "violated_critical_rules":  [
+
+                                                                      ],
                                           "SCORE":  6.0,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -15007,25 +14636,30 @@ window.validationReviewData = {
                                           "SP_SCORE":  6.0,
                                           "MASK_RAIL":  null,
                                           "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "因店面未位於建築物內且為臨時搭建之組合式結構，外牆材質非永久性且無明確出入口，判定為攤販。",
                                           "INPUT_TOKENS":  6341,
                                           "TOTAL_TOKENS":  7331,
                                           "OUTPUT_TOKENS":  990,
                                           "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
                                           "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
                                           "latency_ms":  15289,
-                                          "overall_decision":  "pass",
-                                          "correctness":  5,
-                                          "completeness":  5,
-                                          "hallucination_control":  5,
-                                          "overall_score":  5.0,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v2",
+                                                           "deliveryDate":  "2026-08-05",
+                                                           "overall_decision":  "pass",
+                                                           "correctness":  5,
+                                                           "completeness":  5,
+                                                           "hallucination_control":  5,
+                                                           "overall_score":  5.0,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "Correctness：模型輸出正確重述了 Golden Answer 的裁罰概況「公司內部裁罰資料未提供與該客戶相符之裁罰紀錄」，摘要判斷為「無」，與基準完全一致，未改變結論或方向，故給 5 分。\nCompleteness：Golden Answer 僅包含裁罰概況與摘要判斷兩項關鍵資訊，模型均有呈現，無任何重要內容遺漏，故給 5 分。\nHallucination Control：模型僅多了一個「裁罰分數：10.0」欄位，這與裁罰事實與關聯判斷無衝突，亦未新增未被支持的裁罰、法規、金額或關聯事實，其餘內容皆受 Golden 支持，故給 5 分。\nCritical Rules：輸出為中文，且未將明確為「無相符裁罰紀錄」的情形誤判為與案件有直接關聯，無違反任何 critical rules。",
-                                          "SP_SUMMARY":  null,
-                                          "ESG_PENALTY_OVERVIEW":  null,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  null
+                                                                                       ],
+                                                           "reason":  "Correctness：模型輸出正確重述了 Golden Answer 的裁罰概況「公司內部裁罰資料未提供與該客戶相符之裁罰紀錄」，摘要判斷為「無」，與基準完全一致，未改變結論或方向，故給 5 分。\nCompleteness：Golden Answer 僅包含裁罰概況與摘要判斷兩項關鍵資訊，模型均有呈現，無任何重要內容遺漏，故給 5 分。\nHallucination Control：模型僅多了一個「裁罰分數：10.0」欄位，這與裁罰事實與關聯判斷無衝突，亦未新增未被支持的裁罰、法規、金額或關聯事實，其餘內容皆受 Golden 支持，故給 5 分。\nCritical Rules：輸出為中文，且未將明確為「無相符裁罰紀錄」的情形誤判為與案件有直接關聯，無違反任何 critical rules。"
+                                                       }
                                       },
                                       {
                                           "name":  "歷史",
@@ -15113,12 +14747,6 @@ window.validationReviewData = {
                                                                  "承接標的",
                                                                  "追溯日"
                                                              ],
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  18857
                                       },
                                       {
@@ -15146,12 +14774,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  68
                                       },
                                       {
@@ -15173,12 +14795,6 @@ window.validationReviewData = {
                                           "MASK_RAIL":  null,
                                           "CASE_RISK":  "中風險",
                                           "CASE_RATE":  "審慎評估",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "score":  6.0,
                                           "final_summary":  "本案存在營業額與實際營運資料落差：申報年營業額100元，與餐飲、線上銷售及雞肉產品營運樣態不符，且承保標的由既往簡餐轉為生鮮食品。生鮮及加工雞肉經門市、電商、低溫宅配及餐飲合作流通，屬多通路／供應型顯著；同批問題可能造成多人求償，AOA承接壓力較高，AGG年度累積承接壓力較低。店面判定為攤販，與上述營運型態存在落差，近五年無理賠可供參考。建議確認營業額、承保產品與通路範圍、營運型態，以及保額約倍增但保費僅小幅增加之原因。",
                                           "latency_ms":  9687
@@ -15827,12 +15443,6 @@ window.validationReviewData = {
                                                                  "承保對象",
                                                                  "條件"
                                                              ],
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  43139
                                       },
                                       {
@@ -16074,12 +15684,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
                                           "CLAUSE_RISK_B_SUM":  null,
                                           "latency_ms":  33580
@@ -16323,12 +15927,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
                                           "CLAUSE_RISK_B_SUM":  null,
                                           "latency_ms":  29865
@@ -16556,23 +16154,20 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "未見婚宴、團膳、Buffet或大型同步供餐資訊，故大型供餐型為有限。公開資訊顯示有食品工廠、批發零售、量販通路、電商及辛香料代工代銷，且與多個餐飲品牌合作，多通路/供應型顯著。產品多為常溫調理包、火鍋湯底等短中期食用食品，保存期可達1至2年，故持續使用型為中度。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "申報預估年營業額3億元，相對於資本額6,500萬元、兩處生產中食品工廠、約95名員工及食品製造批發零售模式，具一定規模基礎。公開資訊顯示其有自有品牌、量販通路銷售、電商元素、B2B餐飲品牌商品化及辛香料代工代銷等市場接觸方式，足以支持較高營收規模。雖未查得公開財報或實際銷售金額，但以其製造商兼品牌/代工/通路供應商型態，該營業額大致可解釋。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  null
                                       },
                                       {
                                           "name":  "標的",
                                           "version":  "小量v2_gpt5.5",
-                                          "deliveryDate":  "2026-07-22",
+                                          "deliveryDate":  "2026-07-17",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  12703,
+                                                         "output":  660,
+                                                         "total":  13363
                                                      },
+                                          "violated_critical_rules":  [
+
+                                                                      ],
                                           "SCORE":  4.1,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -16609,15 +16204,20 @@ window.validationReviewData = {
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額為新臺幣3億元，與目前可用資料顯示的6,500萬元資本額、兩處生產中食品工廠、約95名員工、食品製造批發零售及品牌商品化／量販通路銷售型態大致相符。雖未提供特定被保產品名稱，但若本案係涵蓋公司主要食品製造與通路商品化業務，該營業額具有可解釋性。",
                                           "latency_ms":  6801,
-                                          "overall_decision":  "pass",
-                                          "correctness":  5,
-                                          "completeness":  5,
-                                          "hallucination_control":  5,
-                                          "overall_score":  5.0,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v2_gpt5.5",
+                                                           "deliveryDate":  "2026-07-22",
+                                                           "overall_decision":  "pass",
+                                                           "correctness":  5,
+                                                           "completeness":  5,
+                                                           "hallucination_control":  5,
+                                                           "overall_score":  5.0,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "1. 一致的核心結論：\n- 營業額合理性：Golden 認為 3 億元營業額在其產品單價有限且為大量包裝單位流入市場的背景下屬可解釋範圍；Model Output 明確將 REVENUE_REASONABILITY_CATEGORY 標為「可解釋」，並以資本額、兩座工廠、員工規模、常溫調理食品研發生產與量販/多品牌代工合作等作為支撐，方向一致，未改變分類或結論。\n- 暴險方向與擴散機制：Golden 指出產品透過量販、電商、超市電商及品牌合作/代工接觸消費者與餐飲品牌，事故批次可能擴散至多平台與多終端客戶，且因保存期 1–2 年形成一定市場累積風險。Model Output 則以「多通路/供應型 顯著」為主要暴險，說明來自食品製造、品牌商品化、代工代銷與量販/零售流通，單一批次透過多品牌、B2B 客戶與零售端分散至消費者，並強調常溫調理食品可室溫保存約 1–2 年、形成跨期流通與攝取暴露。這些均直接對應 Golden 的多通路、多平台、多終端與 1–2 年保存期累積風險，暴險方向與主要事故擴散機制一致。\n\n2. 主要差異說明與分類：\n- 暴險三項分類具體標籤（持續使用型中度、大型供餐型有限、多通路/供應型顯著）：Golden 只描述風險特性，未給出三軸量化標籤；Model Output 給出具體分類屬於對 Golden 內容的結構化呈現與合理詮釋，且與描述的多通路長保存期情境相符，未與 Golden 相衝突，視為合理推論，不影響 Correctness。\n- 「未見其以婚宴、團膳、Buffet 或大型同步供餐為主要模式」：Golden 僅說明有多通路與品牌合作，未提大型供餐；WEB_REFERENCE 亦明確指出未查得團膳、婚宴、Buffet、大型活動供餐等資訊，且提醒不可逕自解讀為中央廚房或團膳供應商。Model Output 以「未見其以…為主要模式」的否定線索方式描述，與 WEB_REFERENCE 一致，屬來源直接支持。\n- 營業額合理性依據中提到「兩座生產中食品工廠、約 95 人規模、量販通路與多品牌/代工合作」：這些均可由 WEB_REFERENCE 直接支持（經濟部工廠登記與 104 公司頁資訊）且與 Golden 的多通路、品牌合作/代工描述一致，屬來源直接支持的補充說明。\n\n3. 對三個評分維度的影響：\n- Correctness：Model Output 完整維持 Golden 的營業額合理性分類「可解釋」、透過多通路及品牌合作/代工導致單一批次事故可擴散至多平台多終端的暴險方向，且保留產品為可保存 1–2 年的短中期食品、存在市場累積風險的核心機制，無數字或結論被改寫，故給予 5 分。\n- Completeness：Golden 中支撐判斷的重要點——產品單價有限但營業額代表大量包裝單位、多通路/品牌合作/代工帶來的批次擴散、保存期 1–2 年造成累積風險——皆被 Model Output 以摘要方式涵蓋，且無遺漏需特別確認的重點，因此給予 5 分，missing_information 為空。\n- Hallucination Control：Model Output 新增的客觀事實（兩座工廠、約 95 人、多品牌/代工合作、量販通路線索、常溫調理食品保存 1–2 年等）皆可由 WEB_REFERENCE 直接支持；未出現與來源矛盾或將「線索」誇大成確定事實的情形，且未新增門市數、具體通路完整名單等無據細節，因此 hallucination_control 給 5 分，unsupported_information 為空。\n\n4. Critical Rules 檢查：\n- REVENUE 僅被用於說明與資本額、工廠及通路規模大致相符，且暴險程度主要依多通路供應與產品保存期等判斷，未將營業額作為唯一或主要風險依據，符合第一條 Critical Rule。\n- 沒有將 WEB_REFERENCE 的可能性敘述改寫為確定事實；例如對外送平台、海外市場等都未在 Model Output 中被擴寫。\n- 未新增門市數、工廠數（只使用已公開的兩座工廠）、特定 OEM/ODM 合作對象或完整通路清單等無據事實。\n- 也未因 WEB_REFERENCE 缺少財報等資訊而判定「無法評估」。\n因此 violated_critical_rules 為空陣列。"
+                                                                                       ],
+                                                           "reason":  "1. 一致的核心結論：\n- 營業額合理性：Golden 認為 3 億元營業額在其產品單價有限且為大量包裝單位流入市場的背景下屬可解釋範圍；Model Output 明確將 REVENUE_REASONABILITY_CATEGORY 標為「可解釋」，並以資本額、兩座工廠、員工規模、常溫調理食品研發生產與量販/多品牌代工合作等作為支撐，方向一致，未改變分類或結論。\n- 暴險方向與擴散機制：Golden 指出產品透過量販、電商、超市電商及品牌合作/代工接觸消費者與餐飲品牌，事故批次可能擴散至多平台與多終端客戶，且因保存期 1–2 年形成一定市場累積風險。Model Output 則以「多通路/供應型 顯著」為主要暴險，說明來自食品製造、品牌商品化、代工代銷與量販/零售流通，單一批次透過多品牌、B2B 客戶與零售端分散至消費者，並強調常溫調理食品可室溫保存約 1–2 年、形成跨期流通與攝取暴露。這些均直接對應 Golden 的多通路、多平台、多終端與 1–2 年保存期累積風險，暴險方向與主要事故擴散機制一致。\n\n2. 主要差異說明與分類：\n- 暴險三項分類具體標籤（持續使用型中度、大型供餐型有限、多通路/供應型顯著）：Golden 只描述風險特性，未給出三軸量化標籤；Model Output 給出具體分類屬於對 Golden 內容的結構化呈現與合理詮釋，且與描述的多通路長保存期情境相符，未與 Golden 相衝突，視為合理推論，不影響 Correctness。\n- 「未見其以婚宴、團膳、Buffet 或大型同步供餐為主要模式」：Golden 僅說明有多通路與品牌合作，未提大型供餐；WEB_REFERENCE 亦明確指出未查得團膳、婚宴、Buffet、大型活動供餐等資訊，且提醒不可逕自解讀為中央廚房或團膳供應商。Model Output 以「未見其以…為主要模式」的否定線索方式描述，與 WEB_REFERENCE 一致，屬來源直接支持。\n- 營業額合理性依據中提到「兩座生產中食品工廠、約 95 人規模、量販通路與多品牌/代工合作」：這些均可由 WEB_REFERENCE 直接支持（經濟部工廠登記與 104 公司頁資訊）且與 Golden 的多通路、品牌合作/代工描述一致，屬來源直接支持的補充說明。\n\n3. 對三個評分維度的影響：\n- Correctness：Model Output 完整維持 Golden 的營業額合理性分類「可解釋」、透過多通路及品牌合作/代工導致單一批次事故可擴散至多平台多終端的暴險方向，且保留產品為可保存 1–2 年的短中期食品、存在市場累積風險的核心機制，無數字或結論被改寫，故給予 5 分。\n- Completeness：Golden 中支撐判斷的重要點——產品單價有限但營業額代表大量包裝單位、多通路/品牌合作/代工帶來的批次擴散、保存期 1–2 年造成累積風險——皆被 Model Output 以摘要方式涵蓋，且無遺漏需特別確認的重點，因此給予 5 分，missing_information 為空。\n- Hallucination Control：Model Output 新增的客觀事實（兩座工廠、約 95 人、多品牌/代工合作、量販通路線索、常溫調理食品保存 1–2 年等）皆可由 WEB_REFERENCE 直接支持；未出現與來源矛盾或將「線索」誇大成確定事實的情形，且未新增門市數、具體通路完整名單等無據細節，因此 hallucination_control 給 5 分，unsupported_information 為空。\n\n4. Critical Rules 檢查：\n- REVENUE 僅被用於說明與資本額、工廠及通路規模大致相符，且暴險程度主要依多通路供應與產品保存期等判斷，未將營業額作為唯一或主要風險依據，符合第一條 Critical Rule。\n- 沒有將 WEB_REFERENCE 的可能性敘述改寫為確定事實；例如對外送平台、海外市場等都未在 Model Output 中被擴寫。\n- 未新增門市數、工廠數（只使用已公開的兩座工廠）、特定 OEM/ODM 合作對象或完整通路清單等無據事實。\n- 也未因 WEB_REFERENCE 缺少財報等資訊而判定「無法評估」。\n因此 violated_critical_rules 為空陣列。"
+                                                       }
                                       },
                                       {
                                           "name":  "標的",
@@ -16666,12 +16266,6 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "產品以常溫調理食品、火鍋湯底及即食料理包等短期食用商品為主，未見婚宴、團膳或大型同步供餐模式，單次事件影響大量共同使用者的情境有限，且不形成長期使用型市場存量暴露。但公司具兩座生產中工廠，並透過官方電商、量販、超市、便利商店及餐飲品牌合作等方式流通，產品一旦發生共通性問題，可能沿多通路或合作品牌擴散至不同終端市場。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額為新臺幣3億元。公司資本額6,500萬元，具兩座生產中食品工廠，並同時從事食品製造、批發、無店面零售及餐飲品牌商品化，另有量販、超市、便利商店與電商等市場接觸，營業額與可觀察的製造及多通路經營樣態大致相符。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  6286
                                       },
                                       {
@@ -16699,12 +16293,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "裁罰期間為2024年12月16日至2025年11月26日，共2筆，已知累積裁罰金額為新臺幣6萬元。主要裁罰事項均涉及延長工時管理，包括超過法定工時及未依規定給付延長工時工資。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "依目前裁罰資料，內容屬一般勞動行政事項，未見與產品瑕疵、商品安全、標示或消費者使用後損害直接相關，因此與本次產品責任保險的直接關聯性較低。2024年至2025年均有延長工時相關裁罰，顯示工時及加班工資控管狀況需持續留意。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  16514
                                       },
                                       {
@@ -16764,12 +16352,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  16287
                                       },
                                       {
@@ -16791,12 +16373,6 @@ window.validationReviewData = {
                                           "MASK_RAIL":  null,
                                           "CASE_RISK":  "中高風險",
                                           "CASE_RATE":  "向上送簽",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "score":  3.5,
                                           "final_summary":  "主要關注食品多通路供應所致之群聚及累積暴險、附加被保險人責任，以及營運場址為非合法建築臨時攤販。產品本身風險較低且近五年無理賠，惟續保條件延續前期保額保費，通路擴散與條款適配仍須檢視。核保應優先確認追溯日不一致、NPD004附加被保險人及其關係、保費調整與流通責任範圍。",
                                           "latency_ms":  4756
@@ -16806,10 +16382,13 @@ window.validationReviewData = {
                                           "version":  "小量v3",
                                           "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  15114,
+                                                         "output":  992,
+                                                         "total":  16106
                                                      },
+                                          "violated_critical_rules":  [
+
+                                                                      ],
                                           "SCORE":  4.5,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -16847,25 +16426,33 @@ window.validationReviewData = {
                                           "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "新臺幣3億元年度預估營業額，與公司具食品製造業態、食品批發及無店面零售業務，並設有兩處生產中食品工廠的營運規模大致相符。公開資訊亦顯示其產品透過量販、零售及餐飲品牌商品化等方式銷售，具備支撐該營業額的市場接觸與供應模式，因此本次金額可解釋。",
                                           "latency_ms":  6987,
-                                          "overall_decision":  "pass",
-                                          "correctness":  5,
-                                          "completeness":  5,
-                                          "hallucination_control":  5,
-                                          "overall_score":  5.0,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v3",
+                                                           "deliveryDate":  "2026-07-29",
+                                                           "overall_decision":  "pass",
+                                                           "correctness":  5,
+                                                           "completeness":  5,
+                                                           "hallucination_control":  5,
+                                                           "overall_score":  5.0,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "Correctness: Model Output將營業額合理性分類為「可解釋」，與Golden一致，並正確引用3億元營業額、兩處生產中食品工廠、食品製造/批發/零售及量販通路銷售等關鍵依據；曝險方向亦聚焦在多通路、品牌合作供應導致事故可擴散至多平台與多終端客戶，符合Golden對多通路/品牌合作擴散機制的描述，故核心判斷與機制皆一致，給5分。\nCompleteness: Golden中的重要要素如：3億元規模與公開資訊相符、兩處食品工廠、食品製造批發零售業態、量販/電商/超市電商及品牌合作/代工等多通路供應、產品為短中期食用食品且有市場累積風險等，皆在Model Output中被涵蓋或等值表達（例如「量販及零售通路、官方網路產品頁面，以及餐飲品牌商品化與客製化供應」對應Golden的多通路與品牌合作/代工），未有關鍵資訊缺漏，因此給5分。\nHallucination Control: Model Output新增的產品型態說明（常溫調理食品、火鍋湯底、調理包等）屬於合理細化，與Golden中『多為短中期食用食品』相容，未引入新的通路類型、供應鏈結構或事故機制，也未改變風險結論；多通路/供應型曝險評為「顯著」亦與Golden強調的多平台、多終端擴散機制一致。無新增未被Golden或可合理推論支持的重要客觀事實，故給5分。\nCritical Rules: 未以營業額作為暴險程度唯一依據，亦未捏造門市數、工廠數或特定OEM/通路等具體營運事實，且未將不確定資訊敘述為確定事實，故無違反任何critical rule。"
+                                                                                       ],
+                                                           "reason":  "Correctness: Model Output將營業額合理性分類為「可解釋」，與Golden一致，並正確引用3億元營業額、兩處生產中食品工廠、食品製造/批發/零售及量販通路銷售等關鍵依據；曝險方向亦聚焦在多通路、品牌合作供應導致事故可擴散至多平台與多終端客戶，符合Golden對多通路/品牌合作擴散機制的描述，故核心判斷與機制皆一致，給5分。\nCompleteness: Golden中的重要要素如：3億元規模與公開資訊相符、兩處食品工廠、食品製造批發零售業態、量販/電商/超市電商及品牌合作/代工等多通路供應、產品為短中期食用食品且有市場累積風險等，皆在Model Output中被涵蓋或等值表達（例如「量販及零售通路、官方網路產品頁面，以及餐飲品牌商品化與客製化供應」對應Golden的多通路與品牌合作/代工），未有關鍵資訊缺漏，因此給5分。\nHallucination Control: Model Output新增的產品型態說明（常溫調理食品、火鍋湯底、調理包等）屬於合理細化，與Golden中『多為短中期食用食品』相容，未引入新的通路類型、供應鏈結構或事故機制，也未改變風險結論；多通路/供應型曝險評為「顯著」亦與Golden強調的多平台、多終端擴散機制一致。無新增未被Golden或可合理推論支持的重要客觀事實，故給5分。\nCritical Rules: 未以營業額作為暴險程度唯一依據，亦未捏造門市數、工廠數或特定OEM/通路等具體營運事實，且未將不確定資訊敘述為確定事實，故無違反任何critical rule。"
+                                                       }
                                       },
                                       {
                                           "name":  "客戶",
                                           "version":  "小量v2",
-                                          "deliveryDate":  "2026-08-05",
+                                          "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  9009,
+                                                         "output":  1198,
+                                                         "total":  10207
                                                      },
+                                          "violated_critical_rules":  [
+
+                                                                      ],
                                           "SCORE":  6.0,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -16873,25 +16460,30 @@ window.validationReviewData = {
                                           "SP_SCORE":  6.0,
                                           "MASK_RAIL":  null,
                                           "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "判定為攤販。因外觀為臨時搭建構造且外牆非固定材質，不符合固定店面之條件。",
                                           "INPUT_TOKENS":  9009,
                                           "TOTAL_TOKENS":  10207,
                                           "OUTPUT_TOKENS":  1198,
                                           "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
                                           "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共2筆裁罰紀錄，已知累積裁罰金額為新臺幣6萬元，主要涉及延長工作時間超過法令規定及未依規定加給延長工時工資，分別依勞動基準法第32條第2項及第24條裁罰。",
                                           "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "依目前裁罰資料未見與本次產品責任保險直接相關，案件內容均屬勞動工時及加班工資管理事項，與產品責任承保風險的直接關聯較低；兩筆裁罰均集中於延長工時相關勞動法遵，反映相關法遵執行及行政管理穩定性需留意。",
                                           "latency_ms":  16079,
-                                          "overall_decision":  "fail",
-                                          "correctness":  4,
-                                          "completeness":  5,
-                                          "hallucination_control":  3,
-                                          "overall_score":  4.0,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v2",
+                                                           "deliveryDate":  "2026-08-05",
+                                                           "overall_decision":  "fail",
+                                                           "correctness":  4,
+                                                           "completeness":  5,
+                                                           "hallucination_control":  3,
+                                                           "overall_score":  4.0,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "Correctness：模型正確反映有2筆裁罰、累計金額6萬元、主要為延長工時及未依規定加給工資，且與產品責任保險直接關聯性較低，方向一致。但將裁罰期間由2021–2025改為2021–2026，屬輕微事實差異，因此給4分。Completeness：Golden中的關鍵資訊（裁罰筆數、金額、工時管理性質、與產品責任關聯性低、顯示勞動法遵需留意）都有涵蓋且有同義改寫，故為5分。Hallucination：新增具體法條依據及將期間延伸至2026，且強調兩筆裁罰均集中於延長工時，這些在Golden未被支持，屬新增需人工確認的重要客觀事實，影響有限但存在，故給3分。Critical rules：輸出為中文，且未將不相關裁罰誤判為相關或反向，無違規。",
-                                          "SP_SUMMARY":  null,
-                                          "ESG_PENALTY_OVERVIEW":  null,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  null
+                                                                                       ],
+                                                           "reason":  "Correctness：模型正確反映有2筆裁罰、累計金額6萬元、主要為延長工時及未依規定加給工資，且與產品責任保險直接關聯性較低，方向一致。但將裁罰期間由2021–2025改為2021–2026，屬輕微事實差異，因此給4分。Completeness：Golden中的關鍵資訊（裁罰筆數、金額、工時管理性質、與產品責任關聯性低、顯示勞動法遵需留意）都有涵蓋且有同義改寫，故為5分。Hallucination：新增具體法條依據及將期間延伸至2026，且強調兩筆裁罰均集中於延長工時，這些在Golden未被支持，屬新增需人工確認的重要客觀事實，影響有限但存在，故給3分。Critical rules：輸出為中文，且未將不相關裁罰誤判為相關或反向，無違規。"
+                                                       }
                                       },
                                       {
                                           "name":  "歷史",
@@ -16989,12 +16581,6 @@ window.validationReviewData = {
                                                                  "費率水準",
                                                                  "追溯日"
                                                              ],
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  20645
                                       },
                                       {
@@ -17022,12 +16608,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共2筆裁罰紀錄，已知累積裁罰金額為60,000元，主要涉及延長工作時間超過法令規定及未依規定加給工資。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬延長工時及加班工資之勞動法遵事項，與產品責任保險承保之產品使用後損害風險關聯性較低。兩筆紀錄均集中於延長工時與加班工資管理，且跨2024年至2025年出現，反映相關法遵執行及行政管理穩定性需留意。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  4346
                                       },
                                       {
@@ -17049,12 +16629,6 @@ window.validationReviewData = {
                                           "MASK_RAIL":  null,
                                           "CASE_RISK":  "中高風險",
                                           "CASE_RATE":  "向上送簽",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "score":  3.5,
                                           "final_summary":  "本案追溯日與報價需求所述「追溯一年」存在落差，且應確認是否延續前期1.5億元保額及10.75萬元保費的定價邏輯。調理食品經製造、批發、量販／零售、電商及餐飲品牌等多通路供應，同批產品異常可能擴大多人求償及流通範圍。現有AOA、AGG對常見及偏高理賠情境的承接壓力較低，但已加貼NPD004，應確認附加被保險人名稱、與主被保險人關係及保費調整。請人工覆核追溯日、保額保費延續性、流通責任範圍及NPD004內容。",
                                           "latency_ms":  6130
@@ -17621,12 +17195,6 @@ window.validationReviewData = {
                                                                  "費率水準",
                                                                  "條件"
                                                              ],
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  31895
                                       },
                                       {
@@ -17868,12 +17436,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
                                           "CLAUSE_RISK_B_SUM":  null,
                                           "latency_ms":  32569
@@ -18117,12 +17679,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
                                           "CLAUSE_RISK_B_SUM":  null,
                                           "latency_ms":  40625
@@ -18350,23 +17906,20 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "公開資訊顯示主業為水產品及農畜水產品批發、零售、無店面零售與國際貿易，未見婚宴、團膳、中央廚房或大型同步供餐，故大型供餐為有限。其具批發、零售及進出口資格等多通路線索，但未見具名下游客戶或原料供應角色，判為中度；水產及農產品多屬短期消費，持續使用為有限。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "驊亞國際貿易有限公司資本額為新臺幣500萬元，公開登記及財稅資料顯示主要為水產品、農畜水產品、食品什貨等批發，並具無店面零售及進出口資格。申報年營業額7,000萬元雖高於資本額倍數較大，但批發與貿易業本身周轉金額可顯著高於資本額，與其登記業態大致可相互解釋。惟公開資訊未揭露實際客戶、品項與通路規模，仍可於核保時確認是否為全公司或特定產品線營收。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  null
                                       },
                                       {
                                           "name":  "標的",
                                           "version":  "小量v2_gpt5.5",
-                                          "deliveryDate":  "2026-07-22",
+                                          "deliveryDate":  "2026-07-17",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  13740,
+                                                         "output":  1561,
+                                                         "total":  15301
                                                      },
+                                          "violated_critical_rules":  [
+
+                                                                      ],
                                           "SCORE":  5.5,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -18403,15 +17956,20 @@ window.validationReviewData = {
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額 70,000,000 元，以其水產品與食品批發、零售及進出口貿易型態觀察，批發貿易本身可形成高於資本額的週轉規模。現有公開營運樣態未顯示該金額明顯高於或低於其可合理推估的批發交易規模，因此可解釋。",
                                           "latency_ms":  7549,
-                                          "overall_decision":  "pass",
-                                          "correctness":  5,
-                                          "completeness":  5,
-                                          "hallucination_control":  5,
-                                          "overall_score":  5.0,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v2_gpt5.5",
+                                                           "deliveryDate":  "2026-07-22",
+                                                           "overall_decision":  "pass",
+                                                           "correctness":  5,
+                                                           "completeness":  5,
+                                                           "hallucination_control":  5,
+                                                           "overall_score":  5.0,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "1. 一致的核心結論與方向：\n- Golden 認為：活體及冷凍海鮮以批發、可能進出口流通為主，同批貨品可分散至餐廳、零售端或其他通路，再接觸終端消費者；單批事故會隨下游客戶與配送批次擴散，不限於單一門市。\n- Model Output 說明：主要放大機制來自水產品／食品批發及進出口資格支持的 B2B 流通，商品經由下游客戶再接觸不同終端消費者；多通路/供應型風險為中度，連結了同批貨品經多通路分散的擴散機制；並說明未見大型同步供餐、OEM/ODM、中央廚房或團膳資料，因此大型供餐型為有限，與 Golden 僅強調批發多通路擴散而未提大型供餐一致且為合理補充。\n- 暴險方向與主要事故擴散機制（批發、多通路向下游客戶擴散）完全吻合，未被改寫為其他機制。\n\n2. 營業額合理性：\n- Golden 未直接給出合理性分類，但 WEB_REFERENCE顯示為水產品等批發/貿易的小型資本額公司，Model Output 以「可解釋」分類，並以批發貿易、高周轉特性及進出口資格作為主要依據，未見與 Golden 或 WEB_REFERENCE 矛盾之處，屬合理延伸而非改變核心判斷。\n- Model Output 並未將營業額高低作為暴險程度唯一依據，僅在 REVENUE_REASONABILITY_DESCRIPTION 中說明營收規模合理，未影響風險評估邏輯，符合 Critical Rule。\n\n3. Completeness（5 分）：\n- Golden 關鍵重點只有：以批發與可能進出口為主、多通路（餐廳、零售端等）分散、同批事故可隨下游客戶與配送批次擴散且不侷限單一門市。Model Output 已完整覆蓋：批發 + 進出口 + B2B 流通 + 商品由下游客戶再接觸不同終端消費者 + 多通路/供應型中度風險，即完整重現並結構化 Golden 的核心暴險機制，沒有遺漏重要結論或必要限制，因此 missing_information 為空。\n\n4. Hallucination Control（5 分）：\n- Model Output 新增內容如：\n  * \"進出口資格\"、\"B2B 流通\"、\"未見具名大型通路、OEM/ODM、中央廚房或團膳供應資訊\"、\"未見大型同步供餐情境\"、\"產品型態以水產與食品流通為主，通常屬短期消費\"，均可由 WEB_REFERENCE 中的登記業態（其他水產品批發、國際貿易、無店面零售等）、進出口資格、「海鮮」徵才內容及產品生命週期線索直接或間接支持，屬來源支持或合理推論。\n  * 對營業額的判斷採用「批發業高周轉」與「公開規模資訊有限」等一般性描述，沒有捏造具體門市數、工廠數、通路結構或特定客戶名單，也未將任何 web 上的「線索/可能」改寫成具體確定事實。\n- 因此不存在新增且無來源支持的重要客觀事實，unsupported_information 為空，Hallucination Control 給 5 分。\n\n5. Critical Rules 檢查：\n- 未以 REVENUE 作為暴險程度的唯一或主要依據，暴險判斷主要來自批發/進出口與多通路 B2B 擴散機制，符合規則。\n- 未將 web 的可能性敘述改寫為確定事實；\n- 未新增門市數、工廠數、OEM/ODM、具體供應鏈或品牌合作等細節；\n- 亦未因 web 缺少資訊而宣稱「無法評估」。\n- 故 violated_critical_rules 為空陣列。"
+                                                                                       ],
+                                                           "reason":  "1. 一致的核心結論與方向：\n- Golden 認為：活體及冷凍海鮮以批發、可能進出口流通為主，同批貨品可分散至餐廳、零售端或其他通路，再接觸終端消費者；單批事故會隨下游客戶與配送批次擴散，不限於單一門市。\n- Model Output 說明：主要放大機制來自水產品／食品批發及進出口資格支持的 B2B 流通，商品經由下游客戶再接觸不同終端消費者；多通路/供應型風險為中度，連結了同批貨品經多通路分散的擴散機制；並說明未見大型同步供餐、OEM/ODM、中央廚房或團膳資料，因此大型供餐型為有限，與 Golden 僅強調批發多通路擴散而未提大型供餐一致且為合理補充。\n- 暴險方向與主要事故擴散機制（批發、多通路向下游客戶擴散）完全吻合，未被改寫為其他機制。\n\n2. 營業額合理性：\n- Golden 未直接給出合理性分類，但 WEB_REFERENCE顯示為水產品等批發/貿易的小型資本額公司，Model Output 以「可解釋」分類，並以批發貿易、高周轉特性及進出口資格作為主要依據，未見與 Golden 或 WEB_REFERENCE 矛盾之處，屬合理延伸而非改變核心判斷。\n- Model Output 並未將營業額高低作為暴險程度唯一依據，僅在 REVENUE_REASONABILITY_DESCRIPTION 中說明營收規模合理，未影響風險評估邏輯，符合 Critical Rule。\n\n3. Completeness（5 分）：\n- Golden 關鍵重點只有：以批發與可能進出口為主、多通路（餐廳、零售端等）分散、同批事故可隨下游客戶與配送批次擴散且不侷限單一門市。Model Output 已完整覆蓋：批發 + 進出口 + B2B 流通 + 商品由下游客戶再接觸不同終端消費者 + 多通路/供應型中度風險，即完整重現並結構化 Golden 的核心暴險機制，沒有遺漏重要結論或必要限制，因此 missing_information 為空。\n\n4. Hallucination Control（5 分）：\n- Model Output 新增內容如：\n  * \"進出口資格\"、\"B2B 流通\"、\"未見具名大型通路、OEM/ODM、中央廚房或團膳供應資訊\"、\"未見大型同步供餐情境\"、\"產品型態以水產與食品流通為主，通常屬短期消費\"，均可由 WEB_REFERENCE 中的登記業態（其他水產品批發、國際貿易、無店面零售等）、進出口資格、「海鮮」徵才內容及產品生命週期線索直接或間接支持，屬來源支持或合理推論。\n  * 對營業額的判斷採用「批發業高周轉」與「公開規模資訊有限」等一般性描述，沒有捏造具體門市數、工廠數、通路結構或特定客戶名單，也未將任何 web 上的「線索/可能」改寫成具體確定事實。\n- 因此不存在新增且無來源支持的重要客觀事實，unsupported_information 為空，Hallucination Control 給 5 分。\n\n5. Critical Rules 檢查：\n- 未以 REVENUE 作為暴險程度的唯一或主要依據，暴險判斷主要來自批發/進出口與多通路 B2B 擴散機制，符合規則。\n- 未將 web 的可能性敘述改寫為確定事實；\n- 未新增門市數、工廠數、OEM/ODM、具體供應鏈或品牌合作等細節；\n- 亦未因 web 缺少資訊而宣稱「無法評估」。\n- 故 violated_critical_rules 為空陣列。"
+                                                       }
                                       },
                                       {
                                           "name":  "標的",
@@ -18460,12 +18018,6 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "預估營業額7,000萬元主要對應水產品及食品相關批發、零售與進出口型態，產品多屬即時或短期消費，未形成長期市場存量。批發、無店面零售及國際貿易可能使產品接觸多類客戶與跨區域通路，但未見團膳、中央廚房、婚宴或大量同步供餐資訊，因此尚無大型供餐造成單次集中影響的明確放大機制。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "預估產品年度營業額為新臺幣7,000萬元；以資本額500萬元及公開呈現的水產品、食品什貨批發、零售、無店面零售與國際貿易型態觀察，該營業額可由批發及進出口交易的周轉特性解釋，未見明顯偏離目前可觀察的經營樣態。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  5024
                                       },
                                       {
@@ -18493,12 +18045,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2024年5月17日共1筆裁罰，已知累積裁罰金額為1,200元；事由為公司所屬車輛人員任意棄置垃圾，違反《廢棄物清理法》第27條第1款。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "依目前裁罰資料未見與本次產品責任保險所承保之產品瑕疵、商品安全或產品使用後損害直接相關。本案僅有單筆、單一年度裁罰，未見同類型跨年度反覆發生；惟車輛及廢棄物處理管理仍需留意。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  16045
                                       },
                                       {
@@ -18558,12 +18104,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15633
                                       },
                                       {
@@ -18585,12 +18125,6 @@ window.validationReviewData = {
                                           "MASK_RAIL":  null,
                                           "CASE_RISK":  "中風險",
                                           "CASE_RATE":  "審慎評估",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "score":  5.75,
                                           "final_summary":  "主要關注海鮮食品保存、加工及流通所致之群聚求償，且批發、零售及進出口通路可能擴大事故影響範圍。既往無理賠但本次價格與條款重新協商，應留意經銷商條款、懲罰性賠償金之再保除外及保額對AOA/AGG承接能力。核保請優先確認產品流向、附加條款內容、自負額與保費充足性，並回看前次報價是否成單。",
                                           "latency_ms":  3105
@@ -18600,10 +18134,13 @@ window.validationReviewData = {
                                           "version":  "小量v3",
                                           "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  13425,
+                                                         "output":  1067,
+                                                         "total":  14492
                                                      },
+                                          "violated_critical_rules":  [
+
+                                                                      ],
                                           "SCORE":  5.75,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -18641,25 +18178,33 @@ window.validationReviewData = {
                                           "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "本次被保產品為活體海鮮及冷凍海鮮，公開資訊顯示該公司登記從事水產品批發、零售、食品批發及國際貿易，並具進出口資格，營運樣態以水產品交易及流通為主。以水產品批發及進出口業務的常見營運規模推估，年度預估營業額新臺幣7,000萬元屬可由其產品與業態解釋的範圍。",
                                           "latency_ms":  5361,
-                                          "overall_decision":  "pass",
-                                          "correctness":  5,
-                                          "completeness":  5,
-                                          "hallucination_control":  5,
-                                          "overall_score":  5.0,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v3",
+                                                           "deliveryDate":  "2026-07-29",
+                                                           "overall_decision":  "pass",
+                                                           "correctness":  5,
+                                                           "completeness":  5,
+                                                           "hallucination_control":  5,
+                                                           "overall_score":  5.0,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "Model Output 完整維持 Golden Answer 的核心結論與邏輯。\n\n1) Correctness：\n- 營業額合理性分類為「可解釋」，與 Golden Answer 一致，且說明同樣以水產品批發、食品批發、進出口等業態的常見週轉/營運規模作為依據，沒有改變判斷方向或條件。\n- 曝險特性方面，同樣描述為活體及冷凍海鮮以批發及進出口為主、產品經由批發交易流向不同下游客戶與市場，事故可自同批貨品擴散至多個交易或終端對象，與 Golden Answer「同批貨可分散至餐廳、零售端等下游客戶並擴散」的事故擴散機制一致。\n- 沒有改變 Golden Answer 的暴險方向、程度判斷邏輯或主要擴散機制，屬語意展開與同義改寫，因此給予 correctness 5 分。\n\n2) Completeness：\n- Golden Answer 的關鍵點（批發及進出口型態、可形成高於資本額的週轉規模、公開營運樣態不顯偏高偏低、同批貨品可經多通路分散並擴散事故）皆有在 Model Output 中以等價概念呈現。\n- 沒有遺漏任何會影響營業額合理性或曝險判斷的關鍵依據或限制條件，故 completeness 為 5 分。\n\n3) Hallucination Control：\n- Model Output 僅補充「公開資訊顯示登記從事水產品批發、零售、食品批發及國際貿易，具進出口資格」等，屬對 Golden Answer 中「水產品與食品批發、零售及進出口貿易型態」的合理敘述與細化，並未新增具體門市數、工廠數、特定通路等無依據事實。\n- 未引入與 Golden Answer 或外部參考相衝突的新結論或關鍵事實，亦未將不確定內容當作確定敘述。\n- 因此 hallucination_control 評為 5 分。\n\n4) Critical Rules 檢查：\n- 未以營業額本身作為暴險程度的唯一或主要判斷依據，而是以批發/多通路流通與進出口等營運型態說明風險，符合規則。\n- 未引用 WEB_REFERENCE 的不確定描述，也未新增無依據的具體營運事實。\n- 故 violated_critical_rules 為空陣列。"
+                                                                                       ],
+                                                           "reason":  "Model Output 完整維持 Golden Answer 的核心結論與邏輯。\n\n1) Correctness：\n- 營業額合理性分類為「可解釋」，與 Golden Answer 一致，且說明同樣以水產品批發、食品批發、進出口等業態的常見週轉/營運規模作為依據，沒有改變判斷方向或條件。\n- 曝險特性方面，同樣描述為活體及冷凍海鮮以批發及進出口為主、產品經由批發交易流向不同下游客戶與市場，事故可自同批貨品擴散至多個交易或終端對象，與 Golden Answer「同批貨可分散至餐廳、零售端等下游客戶並擴散」的事故擴散機制一致。\n- 沒有改變 Golden Answer 的暴險方向、程度判斷邏輯或主要擴散機制，屬語意展開與同義改寫，因此給予 correctness 5 分。\n\n2) Completeness：\n- Golden Answer 的關鍵點（批發及進出口型態、可形成高於資本額的週轉規模、公開營運樣態不顯偏高偏低、同批貨品可經多通路分散並擴散事故）皆有在 Model Output 中以等價概念呈現。\n- 沒有遺漏任何會影響營業額合理性或曝險判斷的關鍵依據或限制條件，故 completeness 為 5 分。\n\n3) Hallucination Control：\n- Model Output 僅補充「公開資訊顯示登記從事水產品批發、零售、食品批發及國際貿易，具進出口資格」等，屬對 Golden Answer 中「水產品與食品批發、零售及進出口貿易型態」的合理敘述與細化，並未新增具體門市數、工廠數、特定通路等無依據事實。\n- 未引入與 Golden Answer 或外部參考相衝突的新結論或關鍵事實，亦未將不確定內容當作確定敘述。\n- 因此 hallucination_control 評為 5 分。\n\n4) Critical Rules 檢查：\n- 未以營業額本身作為暴險程度的唯一或主要判斷依據，而是以批發/多通路流通與進出口等營運型態說明風險，符合規則。\n- 未引用 WEB_REFERENCE 的不確定描述，也未新增無依據的具體營運事實。\n- 故 violated_critical_rules 為空陣列。"
+                                                       }
                                       },
                                       {
                                           "name":  "客戶",
                                           "version":  "小量v2",
-                                          "deliveryDate":  "2026-08-05",
+                                          "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  8982,
+                                                         "output":  1157,
+                                                         "total":  10139
                                                      },
+                                          "violated_critical_rules":  [
+
+                                                                      ],
                                           "SCORE":  6.0,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -18667,25 +18212,30 @@ window.validationReviewData = {
                                           "SP_SCORE":  6.0,
                                           "MASK_RAIL":  null,
                                           "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "因外觀為組合式攤位結構且外牆材質不符，判定為攤販。",
                                           "INPUT_TOKENS":  8982,
                                           "TOTAL_TOKENS":  10139,
                                           "OUTPUT_TOKENS":  1157,
                                           "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
                                           "ESG_PENALTY_SCORE":  9.0,
+                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積裁罰金額為1,200元，主要涉及公司所屬車輛人員任意棄置垃圾，違反《廢棄物清理法》第27條第1款。",
                                           "ESG_PENALTY_IS_RELATED":  false,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "依目前裁罰資料未見與本次產品責任保險直接相關，該案屬車輛人員任意棄置垃圾之環境管理事項，與產品責任承保風險的直接關聯較低。",
                                           "latency_ms":  17277,
-                                          "overall_decision":  "pass",
-                                          "correctness":  5,
-                                          "completeness":  5,
-                                          "hallucination_control":  5,
-                                          "overall_score":  5.0,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v2",
+                                                           "deliveryDate":  "2026-08-05",
+                                                           "overall_decision":  "pass",
+                                                           "correctness":  5,
+                                                           "completeness":  5,
+                                                           "hallucination_control":  5,
+                                                           "overall_score":  5.0,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "Correctness：裁罰期間（2021-2026年間）、筆數（1筆）、金額（1,200元）、違規事項（車輛人員任意棄置垃圾）、違反法規條文（《廢棄物清理法》第27條第1款）皆與 Golden Answer 一致；關聯性結論也同為與產品責任保險直接關聯性較低，因此給 5 分。\nCompleteness：Golden Answer 中的重要資訊，包括裁罰概況、違規法規、僅單筆紀錄、與產品責任保險關聯性較低等，Model Output 均有呈現，無關鍵遺漏，因此給 5 分。\nHallucination Control：未新增任何 Golden Answer 未支持的裁罰、法規、金額或關聯事實；新增的「關聯判定：false」僅是對『關聯性較低/未見直接相關』的結論結構化表達，未改變含義，因此給 5 分。\nCritical Rules：使用中文作答，且未將不相關裁罰誤判為直接相關，無違反。",
-                                          "SP_SUMMARY":  null,
-                                          "ESG_PENALTY_OVERVIEW":  null,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  null
+                                                                                       ],
+                                                           "reason":  "Correctness：裁罰期間（2021-2026年間）、筆數（1筆）、金額（1,200元）、違規事項（車輛人員任意棄置垃圾）、違反法規條文（《廢棄物清理法》第27條第1款）皆與 Golden Answer 一致；關聯性結論也同為與產品責任保險直接關聯性較低，因此給 5 分。\nCompleteness：Golden Answer 中的重要資訊，包括裁罰概況、違規法規、僅單筆紀錄、與產品責任保險關聯性較低等，Model Output 均有呈現，無關鍵遺漏，因此給 5 分。\nHallucination Control：未新增任何 Golden Answer 未支持的裁罰、法規、金額或關聯事實；新增的「關聯判定：false」僅是對『關聯性較低/未見直接相關』的結論結構化表達，未改變含義，因此給 5 分。\nCritical Rules：使用中文作答，且未將不相關裁罰誤判為直接相關，無違反。"
+                                                       }
                                       },
                                       {
                                           "name":  "歷史",
@@ -18786,12 +18336,6 @@ window.validationReviewData = {
                                                                  "費率水準",
                                                                  "追溯日"
                                                              ],
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  20311
                                       },
                                       {
@@ -18819,12 +18363,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積金額為1,200元；主要事項為所屬車輛人員任意棄置垃圾，違反《廢棄物清理法》第27條第1款。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬車輛人員任意棄置垃圾的環境管理事項，與產品責任保險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  1895
                                       },
                                       {
@@ -18846,12 +18384,6 @@ window.validationReviewData = {
                                           "MASK_RAIL":  null,
                                           "CASE_RISK":  "中風險",
                                           "CASE_RATE":  "審慎評估",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "score":  5.75,
                                           "final_summary":  "店面判定為臨時搭建攤販，與案件所示水產品及食品什貨批發、零售及進出口營運型態存在落差，需確認實際營業型態及流通範圍。若包含批發、零售及進出口，多通路／供應型為中度，同批污染或品質異常可能造成多人求償，AOA與AGG承接壓力均為中等。另已加貼NPD005且涉及再保合約除外，建議加貼NPD003A、NPD003B；應確認附加條款、自負額、保額下修及保費是否足以反映條件變動。",
                                           "latency_ms":  7841
@@ -19330,12 +18862,6 @@ window.validationReviewData = {
                                           "ATTENTION_TAGS":  [
 
                                                              ],
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  25290
                                       },
                                       {
@@ -19565,12 +19091,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
                                           "CLAUSE_RISK_B_SUM":  null,
                                           "latency_ms":  22265
@@ -19802,12 +19322,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "CLAUSE_RISK_A_SUM":  null,
                                           "CLAUSE_RISK_B_SUM":  null,
                                           "latency_ms":  34603
@@ -20023,23 +19537,18 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "被保險名稱顯示為鍋貼、蒸餃專賣店，屬即食餐飲型態；未見婚宴、宴席、buffet或大量同步供餐資訊，故大型供餐暴險有限。亦未見多門市、批發、中央廚房或供應下游通路資訊，多通路/供應型有限；產品屬短期即食，持續使用型有限。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "本案未查得資料庫法人名稱及資本額，且無公開資訊可佐證實際店面規模；依被保險名稱判斷，營業型態應為鍋貼、蒸餃等小型餐飲專賣店。申報年營業額新臺幣500萬元，約合每月40餘萬元，與一般單點式小型餐飲店可能營運規模大致相符，尚屬可解釋。建議仍可確認是否僅單一據點營業及是否含外送或團體訂單收入。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  null
                                       },
                                       {
                                           "name":  "標的",
                                           "version":  "小量v2_gpt5.5",
-                                          "deliveryDate":  "2026-07-22",
+                                          "deliveryDate":  "2026-07-17",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  8081,
+                                                         "output":  1119,
+                                                         "total":  9200
                                                      },
+                                          "violated_critical_rules":  null,
                                           "SCORE":  9.0,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -20076,15 +19585,20 @@ window.validationReviewData = {
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "年度預估營業額為500萬元，約每月42萬元；以投保名稱所呈現的鍋貼、蒸餃專賣店餐飲零售樣態來看，屬小型餐飲據點可合理解釋的營收量級。目前未見連鎖、多據點、工廠或批發供應等公開營運規模資訊，顯示該金額有明顯偏高或偏低。",
                                           "latency_ms":  6723,
-                                          "overall_decision":  "pass",
-                                          "correctness":  5,
-                                          "completeness":  5,
-                                          "hallucination_control":  5,
-                                          "overall_score":  5.0,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v2_gpt5.5",
+                                                           "deliveryDate":  "2026-07-22",
+                                                           "overall_decision":  "pass",
+                                                           "correctness":  5,
+                                                           "completeness":  5,
+                                                           "hallucination_control":  5,
+                                                           "overall_score":  5.0,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "1. 一致的核心結論：\n- Golden Answer 認定為單店經營、營業額規模較低，營業額合理且整體風險屬有限，事故影響多侷限於單次服務/單一據點，未形成放大機制。\n- Model Output 將營業額合理性分類為「可解釋」，說明年度營收約 500 萬、月均 41.7 萬，與單一鍋貼蒸餃小型門市量級相符；暴險三項皆為「有限」，且描述為門市型態、單一據點、單次批次，未有多通路/多門市或大型供餐放大機制，與 Golden Answer 的風險方向與事故擴散機制完全一致。\n\n2. 主要差異說明：\n- Model Output 對營業額給出具體數字（年度 500 萬、月均 41.7 萬），Golden Answer 未列明數字，但此為合理背景補充，未改變合理性分類或風險結論（屬合理推論/補充）。\n- Model Output 明確指出「未見大型同步供餐、多門市、多通路供應或下游供應鏈資訊」，Golden Answer 雖未逐項列出，但其單店、影響範圍相對小的描述可合理推出此點；且 web search 無資料可供反證，屬合理推論而非捏造。\n\n3. 差異標示：\n- 營收具體數字及月均換算：合理推論（未被 Golden 直接明示，但不影響任何分類與結論）。\n- 「未見大型同步供餐、多門市、多通路供應或下游供應鏈」：合理推論，符合單店小型門市、影響範圍小的設定。\n- 其餘敘述（即食餐飲門市、產品短時間內消費、事故限於單一據點及當次批次）：屬同義改寫與細化 Golden Answer 的「單次服務人數有限、影響範圍相對較小」，為合理推論。\n\n4. 對三個指標的影響：\n- Correctness：Model Output 完整保留並準確反映 Golden Answer 的營業額合理性（可解釋）、風險方向（有限）、事故擴散機制（單店單次批次、無放大機制），無任何關鍵判斷被改寫，給 5 分。\n- Completeness：Golden Answer 中的關鍵依據（單店經營、規模較低、單次服務人數有限、影響範圍小、風險有限）皆有涵蓋且被更具體化，未見重要資訊遺漏，給 5 分。\n- Hallucination Control：新增內容僅為合理量級說明與細化營運型態，未新增無來源支持的具體營運事實（如門市數、供應鏈結構、品牌合作等），也未與任何來源矛盾，給 5 分。\n\n5. Critical Rules 檢查：\n- REVENUE 僅作為門市量級與市場接觸背景，未被當成風險程度唯一或主要依據；風險判斷仍基於單店門市、來客規模、無多通路或大型供餐等營運特性，未違反。\n- 未將任何不確定或可能性描述改寫為確定事實。\n- 未新增 Golden Answer/Web reference 均無法支持的具體營運事實（如門市數、OEM/ODM、供應鏈結構等）。\n- 亦未因缺少 web 資訊而判定「無法評估」。因此 violated_critical_rules 為空陣列。"
+                                                                                       ],
+                                                           "reason":  "1. 一致的核心結論：\n- Golden Answer 認定為單店經營、營業額規模較低，營業額合理且整體風險屬有限，事故影響多侷限於單次服務/單一據點，未形成放大機制。\n- Model Output 將營業額合理性分類為「可解釋」，說明年度營收約 500 萬、月均 41.7 萬，與單一鍋貼蒸餃小型門市量級相符；暴險三項皆為「有限」，且描述為門市型態、單一據點、單次批次，未有多通路/多門市或大型供餐放大機制，與 Golden Answer 的風險方向與事故擴散機制完全一致。\n\n2. 主要差異說明：\n- Model Output 對營業額給出具體數字（年度 500 萬、月均 41.7 萬），Golden Answer 未列明數字，但此為合理背景補充，未改變合理性分類或風險結論（屬合理推論/補充）。\n- Model Output 明確指出「未見大型同步供餐、多門市、多通路供應或下游供應鏈資訊」，Golden Answer 雖未逐項列出，但其單店、影響範圍相對小的描述可合理推出此點；且 web search 無資料可供反證，屬合理推論而非捏造。\n\n3. 差異標示：\n- 營收具體數字及月均換算：合理推論（未被 Golden 直接明示，但不影響任何分類與結論）。\n- 「未見大型同步供餐、多門市、多通路供應或下游供應鏈」：合理推論，符合單店小型門市、影響範圍小的設定。\n- 其餘敘述（即食餐飲門市、產品短時間內消費、事故限於單一據點及當次批次）：屬同義改寫與細化 Golden Answer 的「單次服務人數有限、影響範圍相對較小」，為合理推論。\n\n4. 對三個指標的影響：\n- Correctness：Model Output 完整保留並準確反映 Golden Answer 的營業額合理性（可解釋）、風險方向（有限）、事故擴散機制（單店單次批次、無放大機制），無任何關鍵判斷被改寫，給 5 分。\n- Completeness：Golden Answer 中的關鍵依據（單店經營、規模較低、單次服務人數有限、影響範圍小、風險有限）皆有涵蓋且被更具體化，未見重要資訊遺漏，給 5 分。\n- Hallucination Control：新增內容僅為合理量級說明與細化營運型態，未新增無來源支持的具體營運事實（如門市數、供應鏈結構、品牌合作等），也未與任何來源矛盾，給 5 分。\n\n5. Critical Rules 檢查：\n- REVENUE 僅作為門市量級與市場接觸背景，未被當成風險程度唯一或主要依據；風險判斷仍基於單店門市、來客規模、無多通路或大型供餐等營運特性，未違反。\n- 未將任何不確定或可能性描述改寫為確定事實。\n- 未新增 Golden Answer/Web reference 均無法支持的具體營運事實（如門市數、OEM/ODM、供應鏈結構等）。\n- 亦未因缺少 web 資訊而判定「無法評估」。因此 violated_critical_rules 為空陣列。"
+                                                       }
                                       },
                                       {
                                           "name":  "標的",
@@ -20131,12 +19645,6 @@ window.validationReviewData = {
                                           "REVENUE_EXPOSURE_DESCRIPTION":  "目前名稱顯示為鍋貼蒸餃專賣店，未見婚宴、團膳、中央廚房、代工或多據點供應等資訊，尚無足以支持大量同步供餐或多市場擴散的機制。產品以即時消費為主，未見長期使用或持續攝取形成跨年度市場存量的情形，因此整體影響範圍較受限。",
                                           "REVENUE_REASONABILITY_CATEGORY":  "無法評估",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "產品年度預估營業額為新臺幣500萬元，但目前未取得公司資本額、門市規模、實際銷售通路或供應範圍等資訊，無法建立足夠的營運規模參考區間以判斷其合理性。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  6003
                                       },
                                       {
@@ -20164,12 +19672,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13550
                                       },
                                       {
@@ -20229,12 +19731,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15498
                                       },
                                       {
@@ -20256,12 +19752,6 @@ window.validationReviewData = {
                                           "MASK_RAIL":  null,
                                           "CASE_RISK":  "中風險",
                                           "CASE_RATE":  "審慎評估",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "score":  6.0,
                                           "final_summary":  "主要關注攤販型態之營運條件及餐飲食品責任，並留意同時段或同批供餐引發群聚求償及年度累積損失。營業額屬單一據點且具合理性，近五年無理賠紀錄，但缺乏既往承保基準，現有保額對AOA、AGG事故承接壓力仍需評估。核保前應確認實際營業型態、外送及通路範圍，並檢視食品相關條款、保額與自負額是否適配。",
                                           "latency_ms":  3321
@@ -20271,10 +19761,11 @@ window.validationReviewData = {
                                           "version":  "小量v3",
                                           "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  9915,
+                                                         "output":  758,
+                                                         "total":  10673
                                                      },
+                                          "violated_critical_rules":  null,
                                           "SCORE":  9.0,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -20312,25 +19803,31 @@ window.validationReviewData = {
                                           "REVENUE_SCORE_COMPARISON_RESULT":  "EQUAL",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "新臺幣500萬元的年度預估營業額，與鍋貼、蒸餃及便當類餐飲店以單店日常銷售為主的常見營運規模大致相符。現有公開資訊雖有限，但產品型態明確，該金額落在一般小型餐飲業可合理推估的營業額範圍內。",
                                           "latency_ms":  5465,
-                                          "overall_decision":  "pass",
-                                          "correctness":  5,
-                                          "completeness":  5,
-                                          "hallucination_control":  5,
-                                          "overall_score":  5.0,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v3",
+                                                           "deliveryDate":  "2026-07-29",
+                                                           "overall_decision":  "pass",
+                                                           "correctness":  5,
+                                                           "completeness":  5,
+                                                           "hallucination_control":  5,
+                                                           "overall_score":  5.0,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "Model Output 完整且正確反映 Golden Answer：\n- 營業額合理性：皆判定為「可解釋」，金額 500 萬元與小型鍋貼、蒸餃等餐飲單店規模相符，說明邏輯與 Golden 一致。\n- 曝險特性：Golden 指出為單店經營、單次服務人數有限、事故影響範圍相對較小、整體風險有限；Model Output 描述為即食、單次交易、由店面提供個別消費者、單次服務人數與影響範圍有限，且三項暴險分類皆為「有限」，與 Golden 的風險方向與事故擴散機制一致。\n- 未遺漏 Golden 中任何關鍵判斷，亦未新增無依據的營運事實、通路或規模資訊，屬合理推論及同義改寫，無違反 critical rules。"
+                                                                                       ],
+                                                           "reason":  "Model Output 完整且正確反映 Golden Answer：\n- 營業額合理性：皆判定為「可解釋」，金額 500 萬元與小型鍋貼、蒸餃等餐飲單店規模相符，說明邏輯與 Golden 一致。\n- 曝險特性：Golden 指出為單店經營、單次服務人數有限、事故影響範圍相對較小、整體風險有限；Model Output 描述為即食、單次交易、由店面提供個別消費者、單次服務人數與影響範圍有限，且三項暴險分類皆為「有限」，與 Golden 的風險方向與事故擴散機制一致。\n- 未遺漏 Golden 中任何關鍵判斷，亦未新增無依據的營運事實、通路或規模資訊，屬合理推論及同義改寫，無違反 critical rules。"
+                                                       }
                                       },
                                       {
                                           "name":  "客戶",
                                           "version":  "小量v2",
-                                          "deliveryDate":  "2026-08-05",
+                                          "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  6341,
+                                                         "output":  976,
+                                                         "total":  7317
                                                      },
+                                          "violated_critical_rules":  null,
                                           "SCORE":  6.0,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -20338,25 +19835,30 @@ window.validationReviewData = {
                                           "SP_SCORE":  6.0,
                                           "MASK_RAIL":  null,
                                           "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "因外觀為臨時搭建之組合式攤棚且外牆非固定材質，判定為攤販。",
                                           "INPUT_TOKENS":  6341,
                                           "TOTAL_TOKENS":  7317,
                                           "OUTPUT_TOKENS":  976,
                                           "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
                                           "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
                                           "latency_ms":  14649,
-                                          "overall_decision":  "pass",
-                                          "correctness":  5,
-                                          "completeness":  5,
-                                          "hallucination_control":  5,
-                                          "overall_score":  5.0,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v2",
+                                                           "deliveryDate":  "2026-08-05",
+                                                           "overall_decision":  "pass",
+                                                           "correctness":  5,
+                                                           "completeness":  5,
+                                                           "hallucination_control":  5,
+                                                           "overall_score":  5.0,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "Correctness：模型輸出「公司內部裁罰資料未提供與該客戶相符之裁罰紀錄」與 Golden Answer 完全一致，摘要判斷為「無」，與 Golden 的「無。」相符，未改變任何事實或結論，因此給 5 分。Completeness：Golden Answer 只有兩個重點：1) 未有相符裁罰紀錄；2) 摘要判斷為無，模型皆有覆蓋，未遺漏重要資訊，給 5 分。Hallucination Control：模型僅多了一個「裁罰分數：10.0」，此為額外的內部評分欄位，未涉及新裁罰事件、金額、法規或關聯判斷，亦未改變主要結論，視為無實質幻覺，給 5 分。Critical Rules：輸出為中文，且未將不相關裁罰誤判為相關或反向判定，故無違規。",
-                                          "SP_SUMMARY":  null,
-                                          "ESG_PENALTY_OVERVIEW":  null,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  null
+                                                                                       ],
+                                                           "reason":  "Correctness：模型輸出「公司內部裁罰資料未提供與該客戶相符之裁罰紀錄」與 Golden Answer 完全一致，摘要判斷為「無」，與 Golden 的「無。」相符，未改變任何事實或結論，因此給 5 分。Completeness：Golden Answer 只有兩個重點：1) 未有相符裁罰紀錄；2) 摘要判斷為無，模型皆有覆蓋，未遺漏重要資訊，給 5 分。Hallucination Control：模型僅多了一個「裁罰分數：10.0」，此為額外的內部評分欄位，未涉及新裁罰事件、金額、法規或關聯判斷，亦未改變主要結論，視為無實質幻覺，給 5 分。Critical Rules：輸出為中文，且未將不相關裁罰誤判為相關或反向判定，故無違規。"
+                                                       }
                                       },
                                       {
                                           "name":  "歷史",
@@ -20452,12 +19954,6 @@ window.validationReviewData = {
                                           "ATTENTION_TAGS":  [
 
                                                              ],
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13449
                                       },
                                       {
@@ -20485,12 +19981,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  4
                                       },
                                       {
@@ -20512,12 +20002,6 @@ window.validationReviewData = {
                                           "MASK_RAIL":  null,
                                           "CASE_RISK":  "中風險",
                                           "CASE_RATE":  "審慎評估",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "score":  6.0,
                                           "final_summary":  "案件資料顯示承保對象為食品製造商，但店面依外觀判定為攤販，營運型態存在落差，需確認實際營業型態及是否含外送／通路銷售。即食餐飲若因同時段用餐或同批製作造成多人求償，AOA及AGG承接壓力均為中等，應釐清食品製造商產品責任的實際範圍。建議確認營業型態、外送／通路銷售及附加條款與特別約定是否足以支撐該責任邊界。",
                                           "latency_ms":  7713
@@ -20846,12 +20330,6 @@ window.validationReviewData = {
                                                                  "費率水準",
                                                                  "條件"
                                                              ],
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  39547
                                       },
                                       {
@@ -20879,12 +20357,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13851
                                       },
                                       {
@@ -20944,12 +20416,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  12952
                                       },
                                       {
@@ -20977,12 +20443,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  88
                                       },
                                       {
@@ -21231,12 +20691,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  17386
                                       },
                                       {
@@ -21264,12 +20718,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  77
                                       },
                                       {
@@ -21514,12 +20962,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  18197
                                       },
                                       {
@@ -21547,12 +20989,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  6
                                       },
                                       {
@@ -21654,12 +21090,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15892
                                       },
                                       {
@@ -21687,12 +21117,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  89
                                       },
                                       {
@@ -21873,12 +21297,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  10628
                                       },
                                       {
@@ -21906,12 +21324,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  89
                                       },
                                       {
@@ -22168,12 +21580,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  17508
                                       },
                                       {
@@ -22201,12 +21607,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  87
                                       },
                                       {
@@ -22327,12 +21727,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  18435
                                       },
                                       {
@@ -22380,23 +21774,20 @@ window.validationReviewData = {
                                           "REVENUE_REASONABILITY_CATEGORY":  "可解釋",
                                           "REVENUE_SCORE_COMPARISON_RESULT":  "EXPOSURE_LOWER",
                                           "REVENUE_REASONABILITY_DESCRIPTION":  "本案年度預估營業額為新臺幣500萬元，公開資訊呈現為以店內用餐及外帶自取為主的單一土雞城／台式餐廳，並具團體用餐服務樣態。依此類餐廳的一般營運模式推估，該營業額與單一餐飲據點的產品組合及市場接觸程度大致相符，具合理性。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  7402
                                       },
                                       {
                                           "name":  "客戶",
                                           "version":  "小量v2",
-                                          "deliveryDate":  "2026-08-05",
+                                          "deliveryDate":  "2026-07-29",
                                           "tokens":  {
-                                                         "input":  null,
-                                                         "output":  null,
-                                                         "total":  null
+                                                         "input":  0,
+                                                         "output":  0,
+                                                         "total":  0
                                                      },
+                                          "violated_critical_rules":  [
+
+                                                                      ],
                                           "SCORE":  6.0,
                                           "IS_MASK":  false,
                                           "NO_RISK":  false,
@@ -22404,25 +21795,30 @@ window.validationReviewData = {
                                           "SP_SCORE":  6.0,
                                           "MASK_RAIL":  null,
                                           "BLOCK_RAIL":  null,
+                                          "SP_SUMMARY":  "照片資訊不足,無法判讀關鍵外觀條件",
                                           "INPUT_TOKENS":  0,
                                           "TOTAL_TOKENS":  0,
                                           "OUTPUT_TOKENS":  0,
                                           "RESULT_SP_RULE":  "Result_SP_NL01008_A03",
                                           "ESG_PENALTY_SCORE":  10.0,
+                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
                                           "latency_ms":  66078,
-                                          "overall_decision":  "NO_GD",
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "violated_critical_rules":  [
+                                          "AI_JUDGE":  {
+                                                           "item":  "Judge",
+                                                           "version":  "小量v2",
+                                                           "deliveryDate":  "2026-08-05",
+                                                           "overall_decision":  "NO_GD",
+                                                           "correctness":  null,
+                                                           "completeness":  null,
+                                                           "hallucination_control":  null,
+                                                           "overall_score":  null,
+                                                           "violated_critical_rules":  [
 
-                                                                      ],
-                                          "reason":  "NO_GD: no substantive Golden Answer was found for this case; the model output was not evaluated.",
-                                          "SP_SUMMARY":  null,
-                                          "ESG_PENALTY_OVERVIEW":  null,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  null
+                                                                                       ],
+                                                           "reason":  "NO_GD: no substantive Golden Answer was found for this case; the model output was not evaluated."
+                                                       }
                                       },
                                       {
                                           "name":  "客戶",
@@ -22449,12 +21845,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  80
                                       },
                                       {
@@ -22583,12 +21973,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  18254
                                       },
                                       {
@@ -22616,12 +22000,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  78
                                       },
                                       {
@@ -22790,12 +22168,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  12659
                                       },
                                       {
@@ -22823,12 +22195,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  88
                                       },
                                       {
@@ -23009,12 +22375,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  19159
                                       },
                                       {
@@ -23042,12 +22402,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積裁罰金額為5,000元，主要涉及雇主未依規定覈實申報調整勞工退休金提繳工資。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞工退休金提繳工資申報事項，與產品責任保險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  3207
                                       },
                                       {
@@ -23328,12 +22682,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14066
                                       },
                                       {
@@ -23361,12 +22709,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  155
                                       },
                                       {
@@ -23563,12 +22905,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  19619
                                       },
                                       {
@@ -23596,12 +22932,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積金額為5,000元，裁罰事項為未依規定覈實申報調整勞工退休金提繳工資。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞工退休金提繳工資申報事項，與產品責任保險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  1760
                                       },
                                       {
@@ -23842,12 +23172,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  12714
                                       },
                                       {
@@ -23875,12 +23199,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  73
                                       },
                                       {
@@ -24081,12 +23399,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14050
                                       },
                                       {
@@ -24114,12 +23426,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積裁罰金額為5,000元，主要事項為未依規定覈實申報調整勞工退休金提繳工資。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞工退休金提繳工資申報事項，與產品責任保險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  3025
                                       },
                                       {
@@ -24308,12 +23614,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  12282
                                       },
                                       {
@@ -24341,12 +23641,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  86
                                       },
                                       {
@@ -24555,12 +23849,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  17216
                                       },
                                       {
@@ -24588,12 +23876,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  78
                                       },
                                       {
@@ -24814,12 +24096,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15090
                                       },
                                       {
@@ -24847,12 +24123,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  84
                                       },
                                       {
@@ -24993,12 +24263,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  18578
                                       },
                                       {
@@ -25026,12 +24290,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  86
                                       },
                                       {
@@ -25224,12 +24482,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14876
                                       },
                                       {
@@ -25257,12 +24509,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  74
                                       },
                                       {
@@ -25531,12 +24777,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  9773
                                       },
                                       {
@@ -25564,12 +24804,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14560
                                       },
                                       {
@@ -25671,12 +24905,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13370
                                       },
                                       {
@@ -25704,12 +24932,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14478
                                       },
                                       {
@@ -25811,12 +25033,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  16680
                                       },
                                       {
@@ -25844,12 +25060,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15808
                                       },
                                       {
@@ -25951,12 +25161,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  12727
                                       },
                                       {
@@ -25984,12 +25188,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15317
                                       },
                                       {
@@ -26091,12 +25289,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  18713
                                       },
                                       {
@@ -26124,12 +25316,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  109
                                       },
                                       {
@@ -26330,12 +25516,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15525
                                       },
                                       {
@@ -26363,12 +25543,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  90
                                       },
                                       {
@@ -26497,12 +25671,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  17301
                                       },
                                       {
@@ -26530,12 +25698,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  88
                                       },
                                       {
@@ -26700,12 +25862,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13484
                                       },
                                       {
@@ -26733,12 +25889,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  96
                                       },
                                       {
@@ -26947,12 +26097,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  11621
                                       },
                                       {
@@ -26980,12 +26124,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積裁罰金額為4,320元，主要涉及雇主未按時繳納勞工退休金而加徵滯納金。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞工退休金未按時繳納致加徵滯納金，與產品責任保險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  4024
                                       },
                                       {
@@ -27186,12 +26324,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  19008
                                       },
                                       {
@@ -27219,12 +26351,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積裁罰金額為0元，主要涉及勞工操作減容機時未停止機械運轉及送料，且捲夾危險處未設置護罩或護圍，違反職業安全衛生相關規定。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬職業安全衛生管理事項，與產品責任保險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  3982
                                       },
                                       {
@@ -27469,12 +26595,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  11092
                                       },
                                       {
@@ -27502,12 +26622,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  112
                                       },
                                       {
@@ -27648,12 +26762,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  12353
                                       },
                                       {
@@ -27681,12 +26789,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  95
                                       },
                                       {
@@ -27831,12 +26933,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  18297
                                       },
                                       {
@@ -27864,12 +26960,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  129
                                       },
                                       {
@@ -28074,12 +27164,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  16783
                                       },
                                       {
@@ -28107,12 +27191,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  89
                                       },
                                       {
@@ -28389,12 +27467,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  17675
                                       },
                                       {
@@ -28422,12 +27494,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共2筆裁罰紀錄，已知累積裁罰金額為100,000元，主要涉及延長工時超過法令規定及工作場所防滑安全措施未符規定。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬延長工時及工作場所安全管理等勞動法遵事項，與產品責任保險承保的產品責任風險關聯性較低。兩筆紀錄均集中於勞動法遵管理，且分別發生於2022年及2023年，反映相關法遵執行與行政管理穩定性仍需留意。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  6417
                                       },
                                       {
@@ -28684,12 +27750,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14605
                                       },
                                       {
@@ -28717,12 +27777,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共2筆裁罰紀錄，已知累積裁罰金額為100,000元，主要涉及延長工作時間超過法令規定，以及工作場所踩踏場所未保持防滑安全狀態或採取必要預防措施。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞動工時及職業安全衛生管理事項，與產品責任保險關聯性較低。兩筆紀錄均集中於勞動法遵與職業安全衛生管理範疇，反映相關法遵執行與作業安全管理仍需留意。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  4510
                                       },
                                       {
@@ -28907,12 +27961,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  16780
                                       },
                                       {
@@ -28940,12 +27988,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共2筆裁罰紀錄，已知累積裁罰金額為100,000元，分別涉及延長工作時間超過法令規定，以及工作場所未維持防止勞工滑倒的安全狀態或採取必要預防措施。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬延長工時及工作場所職業安全衛生管理事項，與產品責任保險關聯性較低。兩筆紀錄分屬不同事由，未見相同事由跨年度反覆發生，但均集中於勞動與職業安全衛生管理，反映相關法遵及作業安全控管狀況需留意。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  5730
                                       },
                                       {
@@ -29118,12 +28160,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  12737
                                       },
                                       {
@@ -29151,12 +28187,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  114
                                       },
                                       {
@@ -29357,12 +28387,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  12089
                                       },
                                       {
@@ -29390,12 +28414,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  78
                                       },
                                       {
@@ -29620,12 +28638,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  9599
                                       },
                                       {
@@ -29653,12 +28665,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  5
                                       },
                                       {
@@ -29760,12 +28766,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  21590
                                       },
                                       {
@@ -29793,12 +28793,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  8
                                       },
                                       {
@@ -29900,12 +28894,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  17580
                                       },
                                       {
@@ -29933,12 +28921,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  6
                                       },
                                       {
@@ -30040,12 +29022,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14514
                                       },
                                       {
@@ -30073,12 +29049,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13372
                                       },
                                       {
@@ -30180,12 +29150,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  12635
                                       },
                                       {
@@ -30213,12 +29177,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  92
                                       },
                                       {
@@ -30427,12 +29385,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15865
                                       },
                                       {
@@ -30460,12 +29412,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共2筆裁罰紀錄，已知累積裁罰金額為2,938元，均涉及雇主未按時繳納勞工退休金致加徵滯納金，分別發生於2025年及2026年。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞工退休金未按時繳納致加徵滯納金，與產品責任保險關聯性較低。相同法規及事由跨2025年與2026年反覆發生，反映勞動法遵執行及行政管理穩定性需留意。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  3650
                                       },
                                       {
@@ -30567,12 +29513,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15788
                                       },
                                       {
@@ -30600,12 +29540,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  6
                                       },
                                       {
@@ -30707,12 +29641,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13465
                                       },
                                       {
@@ -30740,12 +29668,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  5
                                       },
                                       {
@@ -30847,12 +29769,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  20466
                                       },
                                       {
@@ -30880,12 +29796,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  78
                                       },
                                       {
@@ -31046,12 +29956,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13098
                                       },
                                       {
@@ -31079,12 +29983,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  71
                                       },
                                       {
@@ -31261,12 +30159,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  19898
                                       },
                                       {
@@ -31294,12 +30186,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  99
                                       },
                                       {
@@ -31508,12 +30394,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  17538
                                       },
                                       {
@@ -31541,12 +30421,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  84
                                       },
                                       {
@@ -31767,12 +30641,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15406
                                       },
                                       {
@@ -31800,12 +30668,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積裁罰金額為1,000元，主要涉及柴油車未取得有效期限之優級或同等級以上自主管理標章而進入空氣品質維護區。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬車輛排放與空氣污染管理事項，與產品責任保險承保的產品使用後損害風險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  3267
                                       },
                                       {
@@ -32098,12 +30960,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15804
                                       },
                                       {
@@ -32131,12 +30987,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共3筆裁罰紀錄，已知累積裁罰金額為50,000元，主要涉及延長工作時間未依法加給工資、堆高機駕駛安全帶及倒車管制引導，以及高溫熱表面灼燙防護措施不足。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬加班工資及職業安全衛生管理事項，與產品責任保險承保的產品使用後損害風險關聯性較低。三筆紀錄集中於勞動與職業安全衛生法遵管理，且職業安全衛生事項於2025年有兩筆，反映相關作業控管狀況需留意。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  5808
                                       },
                                       {
@@ -32285,12 +31135,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15232
                                       },
                                       {
@@ -32318,12 +31162,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  78
                                       },
                                       {
@@ -32496,12 +31334,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  16900
                                       },
                                       {
@@ -32529,12 +31361,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  86
                                       },
                                       {
@@ -32675,12 +31501,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  11419
                                       },
                                       {
@@ -32708,12 +31528,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  4
                                       },
                                       {
@@ -32815,12 +31629,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13328
                                       },
                                       {
@@ -32848,12 +31656,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  73
                                       },
                                       {
@@ -33002,12 +31804,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  17810
                                       },
                                       {
@@ -33035,12 +31831,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  96
                                       },
                                       {
@@ -33269,12 +32059,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14822
                                       },
                                       {
@@ -33302,12 +32086,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  97
                                       },
                                       {
@@ -33468,12 +32246,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14116
                                       },
                                       {
@@ -33501,12 +32273,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  83
                                       },
                                       {
@@ -33735,12 +32501,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  12764
                                       },
                                       {
@@ -33768,12 +32528,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  2815
                                       },
                                       {
@@ -33875,12 +32629,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15018
                                       },
                                       {
@@ -33908,12 +32656,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  61920
                                       },
                                       {
@@ -34015,12 +32757,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  10803
                                       },
                                       {
@@ -34048,12 +32784,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  3
                                       },
                                       {
@@ -34155,12 +32885,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  18486
                                       },
                                       {
@@ -34188,12 +32912,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  40528
                                       },
                                       {
@@ -34295,12 +33013,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14085
                                       },
                                       {
@@ -34328,12 +33040,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13496
                                       },
                                       {
@@ -34435,12 +33141,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  17407
                                       },
                                       {
@@ -34468,12 +33168,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13571
                                       },
                                       {
@@ -34575,12 +33269,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  10358
                                       },
                                       {
@@ -34608,12 +33296,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  109
                                       },
                                       {
@@ -34715,12 +33397,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  12824
                                       },
                                       {
@@ -34748,12 +33424,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  80
                                       },
                                       {
@@ -34906,12 +33576,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14721
                                       },
                                       {
@@ -34939,12 +33603,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  5
                                       },
                                       {
@@ -35046,12 +33704,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  10156
                                       },
                                       {
@@ -35079,12 +33731,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  16445
                                       },
                                       {
@@ -35186,12 +33832,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13607
                                       },
                                       {
@@ -35219,12 +33859,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  5
                                       },
                                       {
@@ -35326,12 +33960,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  12577
                                       },
                                       {
@@ -35359,12 +33987,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13319
                                       },
                                       {
@@ -35466,12 +34088,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  12413
                                       },
                                       {
@@ -35499,12 +34115,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  3
                                       },
                                       {
@@ -35606,12 +34216,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14523
                                       },
                                       {
@@ -35639,12 +34243,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  3
                                       },
                                       {
@@ -35746,12 +34344,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14253
                                       },
                                       {
@@ -35779,12 +34371,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  4
                                       },
                                       {
@@ -35886,12 +34472,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  18471
                                       },
                                       {
@@ -35919,12 +34499,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  4
                                       },
                                       {
@@ -36026,12 +34600,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15619
                                       },
                                       {
@@ -36059,12 +34627,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  4
                                       },
                                       {
@@ -36166,12 +34728,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  16948
                                       },
                                       {
@@ -36199,12 +34755,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  10
                                       },
                                       {
@@ -36306,12 +34856,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14801
                                       },
                                       {
@@ -36339,12 +34883,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  3
                                       },
                                       {
@@ -36446,12 +34984,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  20256
                                       },
                                       {
@@ -36479,12 +35011,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  7
                                       },
                                       {
@@ -36586,12 +35112,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  19185
                                       },
                                       {
@@ -36619,12 +35139,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  4
                                       },
                                       {
@@ -36726,12 +35240,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  10672
                                       },
                                       {
@@ -36759,12 +35267,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13471
                                       },
                                       {
@@ -36866,12 +35368,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  16820
                                       },
                                       {
@@ -36899,12 +35395,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  5
                                       },
                                       {
@@ -37006,12 +35496,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15063
                                       },
                                       {
@@ -37039,12 +35523,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  93
                                       },
                                       {
@@ -37249,12 +35727,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  22339
                                       },
                                       {
@@ -37282,12 +35754,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14972
                                       },
                                       {
@@ -37389,12 +35855,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  10058
                                       },
                                       {
@@ -37422,12 +35882,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14432
                                       },
                                       {
@@ -37529,12 +35983,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  12536
                                       },
                                       {
@@ -37562,12 +36010,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  107
                                       },
                                       {
@@ -37780,12 +36222,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15704
                                       },
                                       {
@@ -37813,12 +36249,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  73
                                       },
                                       {
@@ -37967,12 +36397,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  10333
                                       },
                                       {
@@ -38000,12 +36424,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  76
                                       },
                                       {
@@ -38126,12 +36544,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  12987
                                       },
                                       {
@@ -38159,12 +36571,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  3
                                       },
                                       {
@@ -38266,12 +36672,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15044
                                       },
                                       {
@@ -38299,12 +36699,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  70
                                       },
                                       {
@@ -38457,12 +36851,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14281
                                       },
                                       {
@@ -38490,12 +36878,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  86
                                       },
                                       {
@@ -38616,12 +36998,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  12928
                                       },
                                       {
@@ -38649,12 +37025,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15696
                                       },
                                       {
@@ -38756,12 +37126,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13710
                                       },
                                       {
@@ -38789,12 +37153,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  4
                                       },
                                       {
@@ -38896,12 +37254,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13830
                                       },
                                       {
@@ -38929,12 +37281,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  5
                                       },
                                       {
@@ -39036,12 +37382,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13584
                                       },
                                       {
@@ -39069,12 +37409,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  12964
                                       },
                                       {
@@ -39176,12 +37510,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13797
                                       },
                                       {
@@ -39209,12 +37537,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  93
                                       },
                                       {
@@ -39391,12 +37713,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  16067
                                       },
                                       {
@@ -39424,12 +37740,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  3
                                       },
                                       {
@@ -39531,12 +37841,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15196
                                       },
                                       {
@@ -39564,12 +37868,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  3
                                       },
                                       {
@@ -39671,12 +37969,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15578
                                       },
                                       {
@@ -39704,12 +37996,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13225
                                       },
                                       {
@@ -39811,12 +38097,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13951
                                       },
                                       {
@@ -39844,12 +38124,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  4
                                       },
                                       {
@@ -39951,12 +38225,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  17058
                                       },
                                       {
@@ -39984,12 +38252,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14017
                                       },
                                       {
@@ -40091,12 +38353,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  18386
                                       },
                                       {
@@ -40124,12 +38380,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  60607
                                       },
                                       {
@@ -40231,12 +38481,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  12139
                                       },
                                       {
@@ -40264,12 +38508,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  71
                                       },
                                       {
@@ -40470,12 +38708,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15650
                                       },
                                       {
@@ -40503,12 +38735,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  2
                                       },
                                       {
@@ -40610,12 +38836,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  10618
                                       },
                                       {
@@ -40643,12 +38863,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  38618
                                       },
                                       {
@@ -40750,12 +38964,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14277
                                       },
                                       {
@@ -40783,12 +38991,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13933
                                       },
                                       {
@@ -40890,12 +39092,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14245
                                       },
                                       {
@@ -40923,12 +39119,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  80
                                       },
                                       {
@@ -41153,12 +39343,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  17166
                                       },
                                       {
@@ -41186,12 +39370,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  16066
                                       },
                                       {
@@ -41304,12 +39482,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  18567
                                       },
                                       {
@@ -41337,12 +39509,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14384
                                       },
                                       {
@@ -41444,12 +39610,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  18318
                                       },
                                       {
@@ -41477,12 +39637,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  3
                                       },
                                       {
@@ -41584,12 +39738,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13495
                                       },
                                       {
@@ -41617,12 +39765,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  16226
                                       },
                                       {
@@ -41724,12 +39866,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15305
                                       },
                                       {
@@ -41757,12 +39893,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  108
                                       },
                                       {
@@ -41971,12 +40101,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  19306
                                       },
                                       {
@@ -42004,12 +40128,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  4
                                       },
                                       {
@@ -42111,12 +40229,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  12336
                                       },
                                       {
@@ -42144,12 +40256,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  68
                                       },
                                       {
@@ -42378,12 +40484,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  16306
                                       },
                                       {
@@ -42411,12 +40511,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14523
                                       },
                                       {
@@ -42518,12 +40612,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  12672
                                       },
                                       {
@@ -42551,12 +40639,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  76
                                       },
                                       {
@@ -42765,12 +40847,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14085
                                       },
                                       {
@@ -42798,12 +40874,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  4
                                       },
                                       {
@@ -42905,12 +40975,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  23937
                                       },
                                       {
@@ -42938,12 +41002,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  4
                                       },
                                       {
@@ -43045,12 +41103,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  16366
                                       },
                                       {
@@ -43078,12 +41130,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  79
                                       },
                                       {
@@ -43212,12 +41258,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  16504
                                       },
                                       {
@@ -43245,12 +41285,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  80
                                       },
                                       {
@@ -43467,12 +41501,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  18693
                                       },
                                       {
@@ -43500,12 +41528,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  3
                                       },
                                       {
@@ -43607,12 +41629,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13130
                                       },
                                       {
@@ -43640,12 +41656,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13604
                                       },
                                       {
@@ -43747,12 +41757,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15472
                                       },
                                       {
@@ -43780,12 +41784,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  12816
                                       },
                                       {
@@ -43887,12 +41885,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  10715
                                       },
                                       {
@@ -43920,12 +41912,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13614
                                       },
                                       {
@@ -44027,12 +42013,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  12791
                                       },
                                       {
@@ -44060,12 +42040,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  89
                                       },
                                       {
@@ -44206,12 +42180,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  10274
                                       },
                                       {
@@ -44239,12 +42207,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  2
                                       },
                                       {
@@ -44346,12 +42308,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  10806
                                       },
                                       {
@@ -44379,12 +42335,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  12733
                                       },
                                       {
@@ -44486,12 +42436,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  17132
                                       },
                                       {
@@ -44519,12 +42463,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  77
                                       },
                                       {
@@ -44765,12 +42703,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  16976
                                       },
                                       {
@@ -44798,12 +42730,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14624
                                       },
                                       {
@@ -44905,12 +42831,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  9990
                                       },
                                       {
@@ -44938,12 +42858,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  12323
                                       },
                                       {
@@ -45045,12 +42959,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  18050
                                       },
                                       {
@@ -45078,12 +42986,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  3
                                       },
                                       {
@@ -45185,12 +43087,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  17476
                                       },
                                       {
@@ -45218,12 +43114,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14001
                                       },
                                       {
@@ -45325,12 +43215,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15416
                                       },
                                       {
@@ -45358,12 +43242,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  12345
                                       },
                                       {
@@ -45465,12 +43343,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  17322
                                       },
                                       {
@@ -45498,12 +43370,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  3
                                       },
                                       {
@@ -45605,12 +43471,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14233
                                       },
                                       {
@@ -45638,12 +43498,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共3筆裁罰紀錄，已知累積裁罰金額為253,282元，均為雇主未按時繳納勞工退休金致加徵滯納金，且均依勞工退休金條例第19條第1項裁處。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞工退休金未按時繳納及滯納金事項，與產品責任保險關聯性較低。三筆裁罰均於2025年以相同法規及事由發生，反映勞工退休金繳納作業的法遵執行與行政管理穩定性需留意。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  3016
                                       },
                                       {
@@ -45808,12 +43662,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15211
                                       },
                                       {
@@ -45841,12 +43689,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積裁罰金額為549元，主要涉及雇主未按時繳納勞工退休金致加徵滯納金。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞工退休金繳納及滯納金事項，與產品責任保險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  3024
                                       },
                                       {
@@ -46027,12 +43869,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  11536
                                       },
                                       {
@@ -46060,12 +43896,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積裁罰金額為549元，主要涉及雇主未按時繳納勞工退休金而加徵滯納金。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞工退休金繳納及滯納金事項，與產品責任保險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  2629
                                       },
                                       {
@@ -46226,12 +44056,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  16889
                                       },
                                       {
@@ -46259,12 +44083,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  63953
                                       },
                                       {
@@ -46366,12 +44184,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  18603
                                       },
                                       {
@@ -46399,12 +44211,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  36934
                                       },
                                       {
@@ -46506,12 +44312,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14691
                                       },
                                       {
@@ -46539,12 +44339,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  12481
                                       },
                                       {
@@ -46646,12 +44440,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  23099
                                       },
                                       {
@@ -46679,12 +44467,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  84
                                       },
                                       {
@@ -46801,12 +44583,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  11509
                                       },
                                       {
@@ -46834,12 +44610,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  12970
                                       },
                                       {
@@ -46941,12 +44711,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  20867
                                       },
                                       {
@@ -46974,12 +44738,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13200
                                       },
                                       {
@@ -47081,12 +44839,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  16223
                                       },
                                       {
@@ -47114,12 +44866,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  113
                                       },
                                       {
@@ -47252,12 +44998,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  18148
                                       },
                                       {
@@ -47285,12 +45025,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  117
                                       },
                                       {
@@ -47427,12 +45161,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  19170
                                       },
                                       {
@@ -47460,12 +45188,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14591
                                       },
                                       {
@@ -47567,12 +45289,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  18896
                                       },
                                       {
@@ -47600,12 +45316,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  4
                                       },
                                       {
@@ -47707,12 +45417,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14119
                                       },
                                       {
@@ -47740,12 +45444,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  5
                                       },
                                       {
@@ -47847,12 +45545,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13759
                                       },
                                       {
@@ -47880,12 +45572,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  79
                                       },
                                       {
@@ -48066,12 +45752,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  11419
                                       },
                                       {
@@ -48099,12 +45779,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  83
                                       },
                                       {
@@ -48253,12 +45927,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15962
                                       },
                                       {
@@ -48286,12 +45954,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  79
                                       },
                                       {
@@ -48460,12 +46122,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  10850
                                       },
                                       {
@@ -48493,12 +46149,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  93
                                       },
                                       {
@@ -48671,12 +46321,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  18342
                                       },
                                       {
@@ -48704,12 +46348,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  61
                                       },
                                       {
@@ -48811,12 +46449,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15777
                                       },
                                       {
@@ -48844,12 +46476,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  126
                                       },
                                       {
@@ -49010,12 +46636,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  19874
                                       },
                                       {
@@ -49043,12 +46663,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  115
                                       },
                                       {
@@ -49297,12 +46911,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  22011
                                       },
                                       {
@@ -49330,12 +46938,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  1735
                                       },
                                       {
@@ -49437,12 +47039,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  11161
                                       },
                                       {
@@ -49470,12 +47066,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  73
                                       },
                                       {
@@ -49660,12 +47250,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  19874
                                       },
                                       {
@@ -49693,12 +47277,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  80
                                       },
                                       {
@@ -49883,12 +47461,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  16892
                                       },
                                       {
@@ -49916,12 +47488,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  92
                                       },
                                       {
@@ -50082,12 +47648,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  10584
                                       },
                                       {
@@ -50115,12 +47675,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  82
                                       },
                                       {
@@ -50281,12 +47835,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14953
                                       },
                                       {
@@ -50314,12 +47862,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  102
                                       },
                                       {
@@ -50484,12 +48026,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  18898
                                       },
                                       {
@@ -50517,12 +48053,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  83
                                       },
                                       {
@@ -50639,12 +48169,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  11420
                                       },
                                       {
@@ -50672,12 +48196,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  75
                                       },
                                       {
@@ -50838,12 +48356,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  11111
                                       },
                                       {
@@ -50871,12 +48383,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  86
                                       },
                                       {
@@ -51093,12 +48599,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  17596
                                       },
                                       {
@@ -51126,12 +48626,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積裁罰金額為4,968元，主要涉及雇主未按時繳納勞工退休金致加徵滯納金。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞工退休金繳納事項，與產品責任保險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  3209
                                       },
                                       {
@@ -51372,12 +48866,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14984
                                       },
                                       {
@@ -51405,12 +48893,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共3筆裁罰紀錄，已知累積裁罰金額為50,000元，主要涉及延長工時未依法給付加班工資、堆高機作業安全措施不足及高溫熱表面灼燙防護措施不足。2025年有兩筆裁罰涉及職業安全衛生管理，另有一筆於2024年涉及勞動工時工資事項。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞動工時工資及職業安全衛生管理事項，與產品責任保險關聯性較低。裁罰有兩筆集中於職業安全衛生管理，反映作業安全控管仍需留意；另有一筆勞動工時工資裁罰，未見同一事由跨年度反覆發生。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  5186
                                       },
                                       {
@@ -51687,12 +49169,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  18405
                                       },
                                       {
@@ -51720,12 +49196,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共3筆裁罰紀錄，已知累積裁罰金額為50,000元，主要涉及延長工時加班工資、堆高機操作安全及高溫表面防護。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬加班工資及職業安全衛生管理事項，與產品責任保險承保的產品使用後損害風險關聯性較低。其中兩筆集中於職業安全衛生管理，分別涉及堆高機操作防護與高溫表面防護，反映作業安全控管狀況需留意。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  4667
                                       },
                                       {
@@ -51934,12 +49404,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  24375
                                       },
                                       {
@@ -51967,12 +49431,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  100
                                       },
                                       {
@@ -52205,12 +49663,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15303
                                       },
                                       {
@@ -52238,12 +49690,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  80
                                       },
                                       {
@@ -52404,12 +49850,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15723
                                       },
                                       {
@@ -52437,12 +49877,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  88
                                       },
                                       {
@@ -52627,12 +50061,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15980
                                       },
                                       {
@@ -52660,12 +50088,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  82
                                       },
                                       {
@@ -52838,12 +50260,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14064
                                       },
                                       {
@@ -52871,12 +50287,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  5
                                       },
                                       {
@@ -52978,12 +50388,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  16407
                                       },
                                       {
@@ -53011,12 +50415,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  71
                                       },
                                       {
@@ -53153,12 +50551,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  24020
                                       },
                                       {
@@ -53186,12 +50578,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  93
                                       },
                                       {
@@ -53376,12 +50762,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15922
                                       },
                                       {
@@ -53409,12 +50789,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共4筆裁罰紀錄，已知累積裁罰金額為122,278元，主要涉及未按時繳納勞工退休金致加徵滯納金，以及假日工資未給或未依法加給工資。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞工退休金繳納及假日工資給付等一般勞動法遵事項，與產品責任保險關聯性較低。勞工退休金未按時繳納同一事由於2024年及2025年反覆出現，反映勞動法遵執行或行政管理穩定性需留意。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  8559
                                       },
                                       {
@@ -53607,12 +50981,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  16156
                                       },
                                       {
@@ -53640,12 +51008,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共4筆裁罰紀錄，已知累積裁罰金額為122,278元，主要涉及3筆未按時繳納勞工退休金及1筆假日工資未依規定給付。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞工退休金繳納及假日工資給付等一般勞動法遵事項，與產品責任保險所承保的產品責任風險關聯性較低。勞工退休金未按時繳納事由於2024年及2025年跨年度重複發生，反映勞動法遵執行及行政管理穩定性需留意。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  3682
                                       },
                                       {
@@ -53894,12 +51256,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  16244
                                       },
                                       {
@@ -53927,12 +51283,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  90
                                       },
                                       {
@@ -54109,12 +51459,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  18317
                                       },
                                       {
@@ -54142,12 +51486,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  90
                                       },
                                       {
@@ -54296,12 +51634,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  22253
                                       },
                                       {
@@ -54329,12 +51661,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共6筆裁罰紀錄，已知累積裁罰金額為320,000元；主要涉及勞動基準法下工資、延長工時及休息日規定，以及職業安全衛生通報、安全措施與教育訓練事項。工資、工時及休息日管理相關裁罰跨2023年至2026年持續出現。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬職業安全衛生通報與勞動基準法工資、工時及休息日管理事項，與產品責任保險關聯性較低。工資、工時及休息日管理事項跨2023年至2026年反覆出現，反映法遵執行與行政管理穩定性需留意。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  5076
                                       },
                                       {
@@ -54503,12 +51829,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  22104
                                       },
                                       {
@@ -54536,12 +51856,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  87
                                       },
                                       {
@@ -54710,12 +52024,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15747
                                       },
                                       {
@@ -54743,12 +52051,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  139
                                       },
                                       {
@@ -54965,12 +52267,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  20397
                                       },
                                       {
@@ -54998,12 +52294,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  79
                                       },
                                       {
@@ -55196,12 +52486,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14421
                                       },
                                       {
@@ -55229,12 +52513,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共3筆裁罰紀錄，已知累積裁罰金額為25,000元，主要涉及職業安全衛生設備及措施、勞工保險投保與退保，以及勞工退休金提繳工資申報事項。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬職業安全衛生、勞工保險及勞工退休金申報等一般勞動行政事項，與產品責任保險關聯性較低。三筆紀錄均集中於勞動法遵管理，顯示相關法遵執行與行政管理穩定性需留意。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  5085
                                       },
                                       {
@@ -55395,12 +52673,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13683
                                       },
                                       {
@@ -55428,12 +52700,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  76
                                       },
                                       {
@@ -55566,12 +52832,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  20000
                                       },
                                       {
@@ -55599,12 +52859,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14049
                                       },
                                       {
@@ -55709,12 +52963,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  16561
                                       },
                                       {
@@ -55742,12 +52990,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  76
                                       },
                                       {
@@ -55944,12 +53186,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13279
                                       },
                                       {
@@ -55977,12 +53213,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  94
                                       },
                                       {
@@ -56084,12 +53314,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15346
                                       },
                                       {
@@ -56117,12 +53341,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  84
                                       },
                                       {
@@ -56291,12 +53509,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  18220
                                       },
                                       {
@@ -56324,12 +53536,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積裁罰金額為0元，主要涉及減容機運轉測試作業未停止機械運轉及送料，以及捲夾危險處未設置護罩、護圍等職業安全衛生防護措施。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬職業安全衛生設施與機械作業防護事項，與產品責任保險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  3350
                                       },
                                       {
@@ -56518,12 +53724,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  10708
                                       },
                                       {
@@ -56551,12 +53751,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  151
                                       },
                                       {
@@ -56713,12 +53907,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13896
                                       },
                                       {
@@ -56746,12 +53934,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  113
                                       },
                                       {
@@ -56964,12 +54146,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  17429
                                       },
                                       {
@@ -56997,12 +54173,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  100
                                       },
                                       {
@@ -57263,12 +54433,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  16095
                                       },
                                       {
@@ -57296,12 +54460,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  125
                                       },
                                       {
@@ -57546,12 +54704,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  18180
                                       },
                                       {
@@ -57579,12 +54731,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  115
                                       },
                                       {
@@ -57757,12 +54903,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  12969
                                       },
                                       {
@@ -57790,12 +54930,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  93
                                       },
                                       {
@@ -57952,12 +55086,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13418
                                       },
                                       {
@@ -57985,12 +55113,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  89
                                       },
                                       {
@@ -58167,12 +55289,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14749
                                       },
                                       {
@@ -58200,12 +55316,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  80
                                       },
                                       {
@@ -58406,12 +55516,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15685
                                       },
                                       {
@@ -58439,12 +55543,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  81
                                       },
                                       {
@@ -58621,12 +55719,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  17249
                                       },
                                       {
@@ -58654,12 +55746,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  100
                                       },
                                       {
@@ -58884,12 +55970,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13537
                                       },
                                       {
@@ -58917,12 +55997,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  86
                                       },
                                       {
@@ -59123,12 +56197,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  18916
                                       },
                                       {
@@ -59156,12 +56224,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  115
                                       },
                                       {
@@ -59398,12 +56460,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  12263
                                       },
                                       {
@@ -59431,12 +56487,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  99
                                       },
                                       {
@@ -59549,12 +56599,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  12649
                                       },
                                       {
@@ -59582,12 +56626,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  87
                                       },
                                       {
@@ -59772,12 +56810,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  18803
                                       },
                                       {
@@ -59805,12 +56837,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積裁罰金額為20,000元，主要涉及延長工作時間未依規定加給工資，違反勞動基準法第24條第1項。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞動基準法工資給付事項，與產品責任保險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  1930
                                       },
                                       {
@@ -60079,12 +57105,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15554
                                       },
                                       {
@@ -60112,12 +57132,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  76
                                       },
                                       {
@@ -60338,12 +57352,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  19983
                                       },
                                       {
@@ -60371,12 +57379,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  75
                                       },
                                       {
@@ -60605,12 +57607,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13523
                                       },
                                       {
@@ -60638,12 +57634,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共2筆裁罰紀錄，已知累積裁罰金額為45,000元，事項包括未依規定辦理勞工職業災害保險投保、退保及投保薪資申報，以及未覈實申報調整勞工退休金提繳工資。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞工職業災害保險、勞工退休金申報及提繳管理事項，與產品責任保險關聯性較低。兩筆紀錄均集中於勞工保險及退休金申報管理，反映勞動法遵與行政管理穩定性需留意。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  3875
                                       },
                                       {
@@ -60948,12 +57938,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13972
                                       },
                                       {
@@ -60981,12 +57965,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共2筆裁罰紀錄，已知累積裁罰金額為45,000元，主要涉及勞工職業災害保險投保及投保薪資申報、勞工退休金提繳工資申報等事項。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞動保險及勞工退休金申報管理事項，與產品責任保險的承保風險關聯性較低。兩筆裁罰均集中於勞動法遵管理，反映相關法遵執行穩定性需留意。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  3655
                                       },
                                       {
@@ -61179,12 +58157,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14799
                                       },
                                       {
@@ -61212,12 +58184,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共2筆裁罰紀錄，累計2,500元，主要涉及柴油車於空氣品質維護區未取得期限內排煙檢驗合格紀錄，違反空氣污染防制法第40條第3項。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬柴油車排煙檢驗及空氣污染防制管理事項，與產品責任保險承保的產品使用後損害風險關聯性較低。同一空氣污染防制法規事由於2024年及2025年跨年度重複發生，反映相關車輛排放管理的法遵執行穩定性需留意。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  3813
                                       },
                                       {
@@ -61486,12 +58452,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  19353
                                       },
                                       {
@@ -61519,12 +58479,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  74
                                       },
                                       {
@@ -61741,12 +58695,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  25275
                                       },
                                       {
@@ -61774,12 +58722,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  80
                                       },
                                       {
@@ -61916,12 +58858,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  20252
                                       },
                                       {
@@ -61949,12 +58885,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  124
                                       },
                                       {
@@ -62083,12 +59013,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  16998
                                       },
                                       {
@@ -62116,12 +59040,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  123
                                       },
                                       {
@@ -62282,12 +59200,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  16877
                                       },
                                       {
@@ -62315,12 +59227,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  72
                                       },
                                       {
@@ -62489,12 +59395,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  18531
                                       },
                                       {
@@ -62522,12 +59422,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  78
                                       },
                                       {
@@ -62696,12 +59590,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  18662
                                       },
                                       {
@@ -62729,12 +59617,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共5筆裁罰紀錄，已知累積裁罰金額為70,000元；裁罰事項包括勞工退休金提繳工資申報與通知、例假、特別休假及延長工時工資等勞動法遵事項，均發生於2024年。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞工退休金及一般勞動法遵事項，與產品責任保險所承保的產品責任風險關聯性較低。多筆裁罰集中於勞動法遵管理，且部分紀錄同日發生，反映相關法遵執行及行政管理狀況需留意。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  2431
                                       },
                                       {
@@ -62939,12 +59821,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14502
                                       },
                                       {
@@ -62972,12 +59848,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  72
                                       },
                                       {
@@ -63166,12 +60036,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15899
                                       },
                                       {
@@ -63199,12 +60063,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積裁罰金額為1,200元，涉及油脂、殘渣淤積於水溝並產生異味，違反廢棄物清理法第27條第2款。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬廢棄物清理及環境衛生管理事項，與產品責任保險承保的產品使用後損害風險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  3605
                                       },
                                       {
@@ -63609,12 +60467,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14868
                                       },
                                       {
@@ -63642,12 +60494,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積裁罰金額為1,200元，事由為油脂及殘渣淤積於水溝並產生異味，涉及廢棄物清理法第27條第2款。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬廢棄物清理法違規，與產品責任保險承保的產品使用後損害風險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  3018
                                       },
                                       {
@@ -63812,12 +60658,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14828
                                       },
                                       {
@@ -63845,12 +60685,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積裁罰金額為20,000元，主要涉及勞基法第39條所定例假、休息日、休假日及特別休假出勤未依法加給工資。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞動法遵事項，與產品責任保險所承保的產品責任風險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  3383
                                       },
                                       {
@@ -63999,12 +60833,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15022
                                       },
                                       {
@@ -64032,12 +60860,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共3筆裁罰紀錄，已知累積裁罰金額為21,200元，主要涉及延長工作時間超過法令規定、積水容器管理不當致孳生病媒蚊孑孓，以及機械設備作業未停止運轉及送料等事項。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞動工時、環境衛生及職業安全管理事項，與產品責任保險所承保的產品責任風險關聯性較低。紀錄類型分散，未見同類型跨年度反覆發生。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  4627
                                       },
                                       {
@@ -64394,12 +61216,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13879
                                       },
                                       {
@@ -64427,12 +61243,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  83
                                       },
                                       {
@@ -64625,12 +61435,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  18273
                                       },
                                       {
@@ -64658,12 +61462,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  75
                                       },
                                       {
@@ -64848,12 +61646,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15057
                                       },
                                       {
@@ -64881,12 +61673,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  70
                                       },
                                       {
@@ -65035,12 +61821,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  12796
                                       },
                                       {
@@ -65068,12 +61848,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  68
                                       },
                                       {
@@ -65242,12 +62016,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  19774
                                       },
                                       {
@@ -65275,12 +62043,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  78
                                       },
                                       {
@@ -65453,12 +62215,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  13123
                                       },
                                       {
@@ -65486,12 +62242,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  94
                                       },
                                       {
@@ -65668,12 +62418,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  11436
                                       },
                                       {
@@ -65701,12 +62445,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  70
                                       },
                                       {
@@ -65855,12 +62593,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14216
                                       },
                                       {
@@ -65888,12 +62620,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  80
                                       },
                                       {
@@ -66070,12 +62796,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14081
                                       },
                                       {
@@ -66103,12 +62823,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  72
                                       },
                                       {
@@ -66349,12 +63063,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  18349
                                       },
                                       {
@@ -66382,12 +63090,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  84
                                       },
                                       {
@@ -66600,12 +63302,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  12485
                                       },
                                       {
@@ -66633,12 +63329,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  100
                                       },
                                       {
@@ -66851,12 +63541,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  20389
                                       },
                                       {
@@ -66884,12 +63568,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  100
                                       },
                                       {
@@ -67050,12 +63728,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  15133
                                       },
                                       {
@@ -67083,12 +63755,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  81
                                       },
                                       {
@@ -67213,12 +63879,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  14083
                                       },
                                       {
@@ -67246,12 +63906,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積裁罰金額為20,000元，主要涉及未為所屬勞工辦理勞工職業災害保險投保、退保手續，違反勞工職業災害保險及保護法第12條。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞工職業災害保險投保、退保手續管理事項，與產品責任保險承保的產品責任風險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  3493
                                       },
                                       {
@@ -67440,12 +64094,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  19190
                                       },
                                       {
@@ -67473,12 +64121,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  73
                                       },
                                       {
@@ -67595,12 +64237,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  11729
                                       },
                                       {
@@ -67628,12 +64264,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  88
                                       },
                                       {
@@ -67866,12 +64496,6 @@ window.validationReviewData = {
                                           "IS_MASK":  false,
                                           "BLOCK_RAIL":  null,
                                           "MASK_RAIL":  null,
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  17036
                                       },
                                       {
@@ -67899,12 +64523,6 @@ window.validationReviewData = {
                                           "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積金額為20,000元，主要事項為未依規定為所屬勞工辦理職業災害保險投保及退保手續。",
                                           "ESG_PENALTY_IS_RELATED":  false,
                                           "ESG_PENALTY_RELEVANCE_SUMMARY":  "目前裁罰資料屬勞工職業災害保險投保及退保行政事項，與產品責任保險關聯性較低。紀錄僅單筆，未見同類型跨年度反覆發生。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
                                           "latency_ms":  1942
                                       },
                                       {
