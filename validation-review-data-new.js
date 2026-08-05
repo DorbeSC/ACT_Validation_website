@@ -1,5 +1,5 @@
 window.validationReviewData = {
-    "generatedAt":  "2026-08-04 16:45:24",
+    "generatedAt":  "2026-08-05 15:28:17",
     "sourceFile":  "驗測資料.xlsx",
     "sourceSheet":  "input / 各模組資料",
     "header":  [
@@ -1325,11 +1325,11 @@ window.validationReviewData = {
                                       {
                                           "name":  "客戶",
                                           "version":  "小量v2",
-                                          "deliveryDate":  "2026-07-29",
+                                          "deliveryDate":  "2026-08-05",
                                           "tokens":  {
-                                                         "input":  6341,
-                                                         "output":  997,
-                                                         "total":  7338
+                                                         "input":  null,
+                                                         "output":  null,
+                                                         "total":  null
                                                      },
                                           "SCORE":  6.0,
                                           "IS_MASK":  false,
@@ -1338,22 +1338,25 @@ window.validationReviewData = {
                                           "SP_SCORE":  6.0,
                                           "MASK_RAIL":  null,
                                           "BLOCK_RAIL":  null,
-                                          "SP_SUMMARY":  "店面位於非建築物內且為臨時搭建之組合式攤位，外牆材質不固定且無明確出入口，判定為攤販。",
                                           "INPUT_TOKENS":  6341,
                                           "TOTAL_TOKENS":  7338,
                                           "OUTPUT_TOKENS":  997,
                                           "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
                                           "ESG_PENALTY_SCORE":  10.0,
-                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
-                                          "latency_ms":  15938
+                                          "latency_ms":  15938,
+                                          "overall_decision":  "pass",
+                                          "correctness":  5,
+                                          "completeness":  5,
+                                          "hallucination_control":  5,
+                                          "overall_score":  5.0,
+                                          "violated_critical_rules":  [
+
+                                                                      ],
+                                          "reason":  "Model Output 正確重述 Golden Answer：裁罰概況為「公司內部裁罰資料未提供與該客戶相符之裁罰紀錄」，摘要判斷為「無」，與 Golden 完全一致，無錯誤改寫，故 correctness=5。Golden Answer 中的重要資訊（無相符裁罰紀錄、無摘要判斷）皆有呈現，故 completeness=5。未新增任何 Golden 未支持的裁罰事實、金額或關聯結論，僅多出「裁罰分數：10.0」屬模組外額外欄位，與裁罰事實及關聯判斷無關，不影響評估，因此 hallucination_control=5。無遺漏或未支持的重要資訊，也未違反中文輸出及關聯判定的 critical rules。",
+                                          "SP_SUMMARY":  null,
+                                          "ESG_PENALTY_OVERVIEW":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  null
                                       },
                                       {
                                           "name":  "歷史",
@@ -2967,11 +2970,11 @@ window.validationReviewData = {
                                       {
                                           "name":  "客戶",
                                           "version":  "小量v2",
-                                          "deliveryDate":  "2026-07-29",
+                                          "deliveryDate":  "2026-08-05",
                                           "tokens":  {
-                                                         "input":  6341,
-                                                         "output":  991,
-                                                         "total":  7332
+                                                         "input":  null,
+                                                         "output":  null,
+                                                         "total":  null
                                                      },
                                           "SCORE":  6.0,
                                           "IS_MASK":  false,
@@ -2980,22 +2983,25 @@ window.validationReviewData = {
                                           "SP_SCORE":  6.0,
                                           "MASK_RAIL":  null,
                                           "BLOCK_RAIL":  null,
-                                          "SP_SUMMARY":  "該店面外觀為臨時搭建之開放式攤位，非永久性建築結構且無明確出入口，判定為攤販。",
                                           "INPUT_TOKENS":  6341,
                                           "TOTAL_TOKENS":  7332,
                                           "OUTPUT_TOKENS":  991,
                                           "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
                                           "ESG_PENALTY_SCORE":  10.0,
-                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
-                                          "latency_ms":  15134
+                                          "latency_ms":  15134,
+                                          "overall_decision":  "pass",
+                                          "correctness":  5,
+                                          "completeness":  5,
+                                          "hallucination_control":  5,
+                                          "overall_score":  5.0,
+                                          "violated_critical_rules":  [
+
+                                                                      ],
+                                          "reason":  "Correctness：模型正確重述了裁罰概況為「公司內部裁罰資料未提供與該客戶相符之裁罰紀錄」，並將摘要判斷寫為「無」，與 Golden Answer 一致，僅多一個『關聯判定：null』但不改變結論，因此給 5 分。\nCompleteness：Golden Answer 僅包含裁罰概況與摘要判斷兩項關鍵資訊，模型都有完整呈現，未遺漏重要內容，因此給 5 分。\nHallucination Control：模型未新增任何裁罰事件、金額、期間或關聯性結論，僅增加「裁罰分數：10.0」與「關聯判定：null」，屬非關鍵延伸資訊且不影響主要判斷，視為無實質 hallucination，給 5 分。\nCritical Rules：輸出為中文，且未將明確不相關的裁罰判定為相關，也未反向判定，無違反 critical rules。",
+                                          "SP_SUMMARY":  null,
+                                          "ESG_PENALTY_OVERVIEW":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  null
                                       },
                                       {
                                           "name":  "歷史",
@@ -4758,11 +4764,11 @@ window.validationReviewData = {
                                       {
                                           "name":  "客戶",
                                           "version":  "小量v2",
-                                          "deliveryDate":  "2026-07-29",
+                                          "deliveryDate":  "2026-08-05",
                                           "tokens":  {
-                                                         "input":  8947,
-                                                         "output":  1128,
-                                                         "total":  10075
+                                                         "input":  null,
+                                                         "output":  null,
+                                                         "total":  null
                                                      },
                                           "SCORE":  6.0,
                                           "IS_MASK":  false,
@@ -4771,22 +4777,25 @@ window.validationReviewData = {
                                           "SP_SCORE":  6.0,
                                           "MASK_RAIL":  null,
                                           "BLOCK_RAIL":  null,
-                                          "SP_SUMMARY":  "店面位於非建築物內且為臨時搭建結構，外牆材質非固定且無明確出入口，判定為攤販。",
                                           "INPUT_TOKENS":  8947,
                                           "TOTAL_TOKENS":  10075,
                                           "OUTPUT_TOKENS":  1128,
                                           "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
                                           "ESG_PENALTY_SCORE":  9.0,
-                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積金額為新臺幣1,379元，事由為雇主未按時繳納勞工退休金致加徵滯納金。",
                                           "ESG_PENALTY_IS_RELATED":  false,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "依目前裁罰資料未見與本次產品責任保險直接相關，該案屬勞工退休金繳納事項，與產品責任承保風險的關聯較低。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
-                                          "latency_ms":  16046
+                                          "latency_ms":  16046,
+                                          "overall_decision":  "pass",
+                                          "correctness":  5,
+                                          "completeness":  5,
+                                          "hallucination_control":  4,
+                                          "overall_score":  4.67,
+                                          "violated_critical_rules":  [
+
+                                                                      ],
+                                          "reason":  "Correctness：裁罰期間、筆數、金額及違規事由皆與 Golden Answer 一致；摘要判斷亦同樣認定為勞工退休金繳納時效事項，與產品責任保險承保風險關聯度低，且未將不相關裁罰誤判為相關，因此給 5 分。\nCompleteness：Golden Answer 中的核心資訊（1 筆裁罰、2021–2026 年間、金額 1,379 元、雇主未按時繳納勞工退休金致加徵滯納金、與產品責任保險關聯較低）皆有涵蓋，雖未重述「未見跨年度反覆發生」，但該點為可有可無的補充，非關鍵，故給 5 分，missing_information 留空。\nHallucination Control：多新增「裁罰分數：9.0」，Golden Answer 未提及此評分，屬額外資訊，雖不影響主要判斷，但無依據，因此給 4 分，並將其列為 unsupported_information。\nCritical Rules：輸出為中文，且未將明確不相關裁罰判為與案件直接相關，亦無反向誤判，故 violated_critical_rules 為空。",
+                                          "SP_SUMMARY":  null,
+                                          "ESG_PENALTY_OVERVIEW":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  null
                                       },
                                       {
                                           "name":  "歷史",
@@ -6498,11 +6507,11 @@ window.validationReviewData = {
                                       {
                                           "name":  "客戶",
                                           "version":  "小量v2",
-                                          "deliveryDate":  "2026-07-29",
+                                          "deliveryDate":  "2026-08-05",
                                           "tokens":  {
-                                                         "input":  6341,
-                                                         "output":  990,
-                                                         "total":  7331
+                                                         "input":  null,
+                                                         "output":  null,
+                                                         "total":  null
                                                      },
                                           "SCORE":  6.0,
                                           "IS_MASK":  false,
@@ -6511,22 +6520,25 @@ window.validationReviewData = {
                                           "SP_SCORE":  6.0,
                                           "MASK_RAIL":  null,
                                           "BLOCK_RAIL":  null,
-                                          "SP_SUMMARY":  "由於店面並非位於合法建築內、結構為臨時搭建且外牆材質不符合固定要求，判定為攤販。",
                                           "INPUT_TOKENS":  6341,
                                           "TOTAL_TOKENS":  7331,
                                           "OUTPUT_TOKENS":  990,
                                           "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
                                           "ESG_PENALTY_SCORE":  10.0,
-                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
-                                          "latency_ms":  14886
+                                          "latency_ms":  14886,
+                                          "overall_decision":  "pass",
+                                          "correctness":  5,
+                                          "completeness":  5,
+                                          "hallucination_control":  5,
+                                          "overall_score":  5.0,
+                                          "violated_critical_rules":  [
+
+                                                                      ],
+                                          "reason":  "Correctness：模型輸出「公司內部裁罰資料未提供與該客戶相符之裁罰紀錄」與 Golden Answer 完全一致，「摘要判斷：無」也正確反映 GA，沒有錯誤改寫，故給 5 分。\nCompleteness：Golden Answer 僅包含裁罰概況與「摘要判斷：無」，模型皆有覆蓋，未缺漏任何重要資訊，故為 5 分。\nHallucination Control：模型僅多了一個「裁罰分數：10.0」欄位，與 GA 內容無衝突，也未新增任何裁罰事實、金額、期間或關聯判斷；其他關鍵資訊均與 GA 一致，故視為無重要幻覺，給 5 分。\nCritical Rules：輸出全為中文，且未將不相關裁罰判為相關或反向判定，故無違反任何 critical rule。",
+                                          "SP_SUMMARY":  null,
+                                          "ESG_PENALTY_OVERVIEW":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  null
                                       },
                                       {
                                           "name":  "歷史",
@@ -8253,11 +8265,11 @@ window.validationReviewData = {
                                       {
                                           "name":  "客戶",
                                           "version":  "小量v2",
-                                          "deliveryDate":  "2026-07-29",
+                                          "deliveryDate":  "2026-08-05",
                                           "tokens":  {
-                                                         "input":  2604,
-                                                         "output":  161,
-                                                         "total":  2765
+                                                         "input":  null,
+                                                         "output":  null,
+                                                         "total":  null
                                                      },
                                           "SCORE":  6.0,
                                           "IS_MASK":  false,
@@ -8266,22 +8278,25 @@ window.validationReviewData = {
                                           "SP_SCORE":  6.0,
                                           "MASK_RAIL":  null,
                                           "BLOCK_RAIL":  null,
-                                          "SP_SUMMARY":  "照片資訊不足,無法判讀關鍵外觀條件",
                                           "INPUT_TOKENS":  2604,
                                           "TOTAL_TOKENS":  2765,
                                           "OUTPUT_TOKENS":  161,
                                           "RESULT_SP_RULE":  "Result_SP_NL01008_A03",
                                           "ESG_PENALTY_SCORE":  9.0,
-                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積金額為新臺幣19,109元，事由為雇主未按時繳納勞工退休金而加徵滯納金。",
                                           "ESG_PENALTY_IS_RELATED":  false,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "依目前裁罰資料未見與本次產品責任保險直接相關，因本案為勞工退休金繳納時效事項，與產品責任承保的產品相關損害風險關聯較低。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
-                                          "latency_ms":  65715
+                                          "latency_ms":  65715,
+                                          "overall_decision":  "pass",
+                                          "correctness":  5,
+                                          "completeness":  5,
+                                          "hallucination_control":  5,
+                                          "overall_score":  5.0,
+                                          "violated_critical_rules":  [
+
+                                                                      ],
+                                          "reason":  "Correctness：裁罰期間（2021–2026）、件數（1筆）、金額（19,109元）、事由（未按時繳納勞工退休金加徵滯納金）皆與 Golden Answer 一致；關聯性也判定為與產品責任保險關聯較低，無相反結論，故給 5 分。\nCompleteness：完整提及裁罰概況的關鍵元素（期間、件數、金額、事由），也明確說明屬勞工退休金繳納時效事項、與產品責任保險直接關聯性低；雖未重述「未見同類型跨年度反覆發生」，該點屬可有可無的補充，且 Golden 說明已標註為可有可無，故視為非關鍵，給 5 分。\nHallucination Control：未新增任何額外裁罰、金額、法規或關聯事實，僅將關聯性結論以布林值與文字說明重述，屬於合理表達，給 5 分。\nCritical Rules：輸出使用中文，且未將明確不相關裁罰判為直接相關或反向判定，無違反。",
+                                          "SP_SUMMARY":  null,
+                                          "ESG_PENALTY_OVERVIEW":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  null
                                       },
                                       {
                                           "name":  "歷史",
@@ -9882,11 +9897,11 @@ window.validationReviewData = {
                                       {
                                           "name":  "客戶",
                                           "version":  "小量v2",
-                                          "deliveryDate":  "2026-07-29",
+                                          "deliveryDate":  "2026-08-05",
                                           "tokens":  {
-                                                         "input":  6341,
-                                                         "output":  974,
-                                                         "total":  7315
+                                                         "input":  null,
+                                                         "output":  null,
+                                                         "total":  null
                                                      },
                                           "SCORE":  6.0,
                                           "IS_MASK":  false,
@@ -9895,22 +9910,25 @@ window.validationReviewData = {
                                           "SP_SCORE":  6.0,
                                           "MASK_RAIL":  null,
                                           "BLOCK_RAIL":  null,
-                                          "SP_SUMMARY":  "因外觀為臨時搭建結構、外牆非固定材質且無明確出入口，判定為攤販。",
                                           "INPUT_TOKENS":  6341,
                                           "TOTAL_TOKENS":  7315,
                                           "OUTPUT_TOKENS":  974,
                                           "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
                                           "ESG_PENALTY_SCORE":  10.0,
-                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
-                                          "latency_ms":  35252
+                                          "latency_ms":  35252,
+                                          "overall_decision":  "pass",
+                                          "correctness":  5,
+                                          "completeness":  5,
+                                          "hallucination_control":  5,
+                                          "overall_score":  5.0,
+                                          "violated_critical_rules":  [
+
+                                                                      ],
+                                          "reason":  "Correctness：Model Output 指出「公司內部裁罰資料未提供與該客戶相符之裁罰紀錄」，且摘要判斷為「無」，與 Golden Answer 完全一致，無錯誤改寫，因此給 5 分。\nCompleteness：Golden Answer 僅包含一項重點：無相符裁罰紀錄，且 ESG 摘要判斷為無；Model Output 全數覆蓋，無任何遺漏，故給 5 分。\nHallucination Control：Model Output 未新增任何 Golden Answer 未支持的裁罰事件、金額、期間或關聯結論，額外出現的「裁罰分數：10.0」不影響 ESG 裁罰事實與關聯判斷，視為非關鍵，故給 5 分。\nCritical Rules：輸出為中文，且未將不相關裁罰誤判為相關，亦無反向情形，故 violated_critical_rules 為空陣列。",
+                                          "SP_SUMMARY":  null,
+                                          "ESG_PENALTY_OVERVIEW":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  null
                                       },
                                       {
                                           "name":  "歷史",
@@ -11433,11 +11451,11 @@ window.validationReviewData = {
                                       {
                                           "name":  "客戶",
                                           "version":  "小量v2",
-                                          "deliveryDate":  "2026-07-29",
+                                          "deliveryDate":  "2026-08-05",
                                           "tokens":  {
-                                                         "input":  9121,
-                                                         "output":  1299,
-                                                         "total":  10420
+                                                         "input":  null,
+                                                         "output":  null,
+                                                         "total":  null
                                                      },
                                           "SCORE":  6.0,
                                           "IS_MASK":  false,
@@ -11446,22 +11464,25 @@ window.validationReviewData = {
                                           "SP_SCORE":  6.0,
                                           "MASK_RAIL":  null,
                                           "BLOCK_RAIL":  null,
-                                          "SP_SUMMARY":  "因店面外觀為臨時搭建之攤棚構造、外牆非固定材質且無明確出入口，判定為攤販。",
                                           "INPUT_TOKENS":  9121,
                                           "TOTAL_TOKENS":  10420,
                                           "OUTPUT_TOKENS":  1299,
                                           "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
                                           "ESG_PENALTY_SCORE":  9.0,
-                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共2筆裁罰紀錄，已知累積裁罰金額為新臺幣10萬4,000元；主要涉及放流水檢驗未符合標準及勞工職業災害保險投保薪資或異動申報事項。",
                                           "ESG_PENALTY_IS_RELATED":  false,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "依目前裁罰資料未見與本次產品責任保險直接相關，因裁罰內容分別涉及水污染排放管理及勞工職業災害保險申報，並非產品責任承保事故。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
-                                          "latency_ms":  16885
+                                          "latency_ms":  16885,
+                                          "overall_decision":  "pass",
+                                          "correctness":  5,
+                                          "completeness":  5,
+                                          "hallucination_control":  5,
+                                          "overall_score":  5.0,
+                                          "violated_critical_rules":  [
+
+                                                                      ],
+                                          "reason":  "Correctness：模型正確重述了裁罰期間（2021–2026年間共2筆）、累積金額（新臺幣104,000元）、違規內容（放流水檢驗未符合標準及勞工職業災害保險投保薪資或異動申報），且關於與產品責任保險關聯性低/未直接相關的結論與 Golden Answer 一致，故給 5 分。\nCompleteness：Golden Answer 中的重要資訊（裁罰筆數、期間、金額、違規性質，以及「與產品責任保險關聯性較低 / 未直接相關」的摘要判斷與管理面向說明）皆有呈現，雖模型以「水污染排放管理」作同義改寫，未造成資訊缺漏，故給 5 分。\nHallucination Control：模型僅新增「裁罰分數：9.0」此主觀評分，屬非關鍵延伸，未捏造新的裁罰事實、法規、金額或關聯判斷；其他內容皆可由 Golden Answer 支持，故給 5 分。\nCritical Rules：輸出為中文，且未將明確不相關裁罰判為直接相關或反向判定，因此無違反 critical rules。",
+                                          "SP_SUMMARY":  null,
+                                          "ESG_PENALTY_OVERVIEW":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  null
                                       },
                                       {
                                           "name":  "歷史",
@@ -13273,11 +13294,11 @@ window.validationReviewData = {
                                       {
                                           "name":  "客戶",
                                           "version":  "小量v2",
-                                          "deliveryDate":  "2026-07-29",
+                                          "deliveryDate":  "2026-08-05",
                                           "tokens":  {
-                                                         "input":  6341,
-                                                         "output":  985,
-                                                         "total":  7326
+                                                         "input":  null,
+                                                         "output":  null,
+                                                         "total":  null
                                                      },
                                           "SCORE":  6.0,
                                           "IS_MASK":  false,
@@ -13286,22 +13307,25 @@ window.validationReviewData = {
                                           "SP_SCORE":  6.0,
                                           "MASK_RAIL":  null,
                                           "BLOCK_RAIL":  null,
-                                          "SP_SUMMARY":  "該店面位於開放式區域，外觀為臨時搭建之攤棚且外牆為輕質板材，無明確出入口，判定為攤販。",
                                           "INPUT_TOKENS":  6341,
                                           "TOTAL_TOKENS":  7326,
                                           "OUTPUT_TOKENS":  985,
                                           "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
                                           "ESG_PENALTY_SCORE":  10.0,
-                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
-                                          "latency_ms":  19866
+                                          "latency_ms":  19866,
+                                          "overall_decision":  "pass",
+                                          "correctness":  5,
+                                          "completeness":  5,
+                                          "hallucination_control":  5,
+                                          "overall_score":  5.0,
+                                          "violated_critical_rules":  [
+
+                                                                      ],
+                                          "reason":  "Model Output 與 Golden Answer 在裁罰概況皆表述為「公司內部裁罰資料未提供與該客戶相符之裁罰紀錄」，在摘要判斷部分同樣為「無」/null，未改變任何事實或結論，故正確性為 5。Golden Answer 僅包含該裁罰概況與無摘要判斷兩點，Model 已完整覆蓋，無遺漏，完整性為 5。新增的「裁罰分數：10.0」不影響 ESG 裁罰事實與關聯結論，亦未虛構任何裁罰、金額或法規，屬非關鍵延伸，可視為無實質 hallucination，給予 5。輸出全為中文，且未將不相關裁罰誤判為相關，故無違反 critical rules。",
+                                          "SP_SUMMARY":  null,
+                                          "ESG_PENALTY_OVERVIEW":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  null
                                       },
                                       {
                                           "name":  "歷史",
@@ -14970,11 +14994,11 @@ window.validationReviewData = {
                                       {
                                           "name":  "客戶",
                                           "version":  "小量v2",
-                                          "deliveryDate":  "2026-07-29",
+                                          "deliveryDate":  "2026-08-05",
                                           "tokens":  {
-                                                         "input":  6341,
-                                                         "output":  990,
-                                                         "total":  7331
+                                                         "input":  null,
+                                                         "output":  null,
+                                                         "total":  null
                                                      },
                                           "SCORE":  6.0,
                                           "IS_MASK":  false,
@@ -14983,22 +15007,25 @@ window.validationReviewData = {
                                           "SP_SCORE":  6.0,
                                           "MASK_RAIL":  null,
                                           "BLOCK_RAIL":  null,
-                                          "SP_SUMMARY":  "因店面未位於建築物內且為臨時搭建之組合式結構，外牆材質非永久性且無明確出入口，判定為攤販。",
                                           "INPUT_TOKENS":  6341,
                                           "TOTAL_TOKENS":  7331,
                                           "OUTPUT_TOKENS":  990,
                                           "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
                                           "ESG_PENALTY_SCORE":  10.0,
-                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
-                                          "latency_ms":  15289
+                                          "latency_ms":  15289,
+                                          "overall_decision":  "pass",
+                                          "correctness":  5,
+                                          "completeness":  5,
+                                          "hallucination_control":  5,
+                                          "overall_score":  5.0,
+                                          "violated_critical_rules":  [
+
+                                                                      ],
+                                          "reason":  "Correctness：模型輸出正確重述了 Golden Answer 的裁罰概況「公司內部裁罰資料未提供與該客戶相符之裁罰紀錄」，摘要判斷為「無」，與基準完全一致，未改變結論或方向，故給 5 分。\nCompleteness：Golden Answer 僅包含裁罰概況與摘要判斷兩項關鍵資訊，模型均有呈現，無任何重要內容遺漏，故給 5 分。\nHallucination Control：模型僅多了一個「裁罰分數：10.0」欄位，這與裁罰事實與關聯判斷無衝突，亦未新增未被支持的裁罰、法規、金額或關聯事實，其餘內容皆受 Golden 支持，故給 5 分。\nCritical Rules：輸出為中文，且未將明確為「無相符裁罰紀錄」的情形誤判為與案件有直接關聯，無違反任何 critical rules。",
+                                          "SP_SUMMARY":  null,
+                                          "ESG_PENALTY_OVERVIEW":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  null
                                       },
                                       {
                                           "name":  "歷史",
@@ -16833,11 +16860,11 @@ window.validationReviewData = {
                                       {
                                           "name":  "客戶",
                                           "version":  "小量v2",
-                                          "deliveryDate":  "2026-07-29",
+                                          "deliveryDate":  "2026-08-05",
                                           "tokens":  {
-                                                         "input":  9009,
-                                                         "output":  1198,
-                                                         "total":  10207
+                                                         "input":  null,
+                                                         "output":  null,
+                                                         "total":  null
                                                      },
                                           "SCORE":  6.0,
                                           "IS_MASK":  false,
@@ -16846,22 +16873,25 @@ window.validationReviewData = {
                                           "SP_SCORE":  6.0,
                                           "MASK_RAIL":  null,
                                           "BLOCK_RAIL":  null,
-                                          "SP_SUMMARY":  "判定為攤販。因外觀為臨時搭建構造且外牆非固定材質，不符合固定店面之條件。",
                                           "INPUT_TOKENS":  9009,
                                           "TOTAL_TOKENS":  10207,
                                           "OUTPUT_TOKENS":  1198,
                                           "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
                                           "ESG_PENALTY_SCORE":  9.0,
-                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共2筆裁罰紀錄，已知累積裁罰金額為新臺幣6萬元，主要涉及延長工作時間超過法令規定及未依規定加給延長工時工資，分別依勞動基準法第32條第2項及第24條裁罰。",
                                           "ESG_PENALTY_IS_RELATED":  false,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "依目前裁罰資料未見與本次產品責任保險直接相關，案件內容均屬勞動工時及加班工資管理事項，與產品責任承保風險的直接關聯較低；兩筆裁罰均集中於延長工時相關勞動法遵，反映相關法遵執行及行政管理穩定性需留意。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
-                                          "latency_ms":  16079
+                                          "latency_ms":  16079,
+                                          "overall_decision":  "fail",
+                                          "correctness":  4,
+                                          "completeness":  5,
+                                          "hallucination_control":  3,
+                                          "overall_score":  4.0,
+                                          "violated_critical_rules":  [
+
+                                                                      ],
+                                          "reason":  "Correctness：模型正確反映有2筆裁罰、累計金額6萬元、主要為延長工時及未依規定加給工資，且與產品責任保險直接關聯性較低，方向一致。但將裁罰期間由2021–2025改為2021–2026，屬輕微事實差異，因此給4分。Completeness：Golden中的關鍵資訊（裁罰筆數、金額、工時管理性質、與產品責任關聯性低、顯示勞動法遵需留意）都有涵蓋且有同義改寫，故為5分。Hallucination：新增具體法條依據及將期間延伸至2026，且強調兩筆裁罰均集中於延長工時，這些在Golden未被支持，屬新增需人工確認的重要客觀事實，影響有限但存在，故給3分。Critical rules：輸出為中文，且未將不相關裁罰誤判為相關或反向，無違規。",
+                                          "SP_SUMMARY":  null,
+                                          "ESG_PENALTY_OVERVIEW":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  null
                                       },
                                       {
                                           "name":  "歷史",
@@ -18624,11 +18654,11 @@ window.validationReviewData = {
                                       {
                                           "name":  "客戶",
                                           "version":  "小量v2",
-                                          "deliveryDate":  "2026-07-29",
+                                          "deliveryDate":  "2026-08-05",
                                           "tokens":  {
-                                                         "input":  8982,
-                                                         "output":  1157,
-                                                         "total":  10139
+                                                         "input":  null,
+                                                         "output":  null,
+                                                         "total":  null
                                                      },
                                           "SCORE":  6.0,
                                           "IS_MASK":  false,
@@ -18637,22 +18667,25 @@ window.validationReviewData = {
                                           "SP_SCORE":  6.0,
                                           "MASK_RAIL":  null,
                                           "BLOCK_RAIL":  null,
-                                          "SP_SUMMARY":  "因外觀為組合式攤位結構且外牆材質不符，判定為攤販。",
                                           "INPUT_TOKENS":  8982,
                                           "TOTAL_TOKENS":  10139,
                                           "OUTPUT_TOKENS":  1157,
                                           "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
                                           "ESG_PENALTY_SCORE":  9.0,
-                                          "ESG_PENALTY_OVERVIEW":  "2021年至2026年間共1筆裁罰紀錄，已知累積裁罰金額為1,200元，主要涉及公司所屬車輛人員任意棄置垃圾，違反《廢棄物清理法》第27條第1款。",
                                           "ESG_PENALTY_IS_RELATED":  false,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "依目前裁罰資料未見與本次產品責任保險直接相關，該案屬車輛人員任意棄置垃圾之環境管理事項，與產品責任承保風險的直接關聯較低。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
-                                          "latency_ms":  17277
+                                          "latency_ms":  17277,
+                                          "overall_decision":  "pass",
+                                          "correctness":  5,
+                                          "completeness":  5,
+                                          "hallucination_control":  5,
+                                          "overall_score":  5.0,
+                                          "violated_critical_rules":  [
+
+                                                                      ],
+                                          "reason":  "Correctness：裁罰期間（2021-2026年間）、筆數（1筆）、金額（1,200元）、違規事項（車輛人員任意棄置垃圾）、違反法規條文（《廢棄物清理法》第27條第1款）皆與 Golden Answer 一致；關聯性結論也同為與產品責任保險直接關聯性較低，因此給 5 分。\nCompleteness：Golden Answer 中的重要資訊，包括裁罰概況、違規法規、僅單筆紀錄、與產品責任保險關聯性較低等，Model Output 均有呈現，無關鍵遺漏，因此給 5 分。\nHallucination Control：未新增任何 Golden Answer 未支持的裁罰、法規、金額或關聯事實；新增的「關聯判定：false」僅是對『關聯性較低/未見直接相關』的結論結構化表達，未改變含義，因此給 5 分。\nCritical Rules：使用中文作答，且未將不相關裁罰誤判為直接相關，無違反。",
+                                          "SP_SUMMARY":  null,
+                                          "ESG_PENALTY_OVERVIEW":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  null
                                       },
                                       {
                                           "name":  "歷史",
@@ -20292,11 +20325,11 @@ window.validationReviewData = {
                                       {
                                           "name":  "客戶",
                                           "version":  "小量v2",
-                                          "deliveryDate":  "2026-07-29",
+                                          "deliveryDate":  "2026-08-05",
                                           "tokens":  {
-                                                         "input":  6341,
-                                                         "output":  976,
-                                                         "total":  7317
+                                                         "input":  null,
+                                                         "output":  null,
+                                                         "total":  null
                                                      },
                                           "SCORE":  6.0,
                                           "IS_MASK":  false,
@@ -20305,22 +20338,25 @@ window.validationReviewData = {
                                           "SP_SCORE":  6.0,
                                           "MASK_RAIL":  null,
                                           "BLOCK_RAIL":  null,
-                                          "SP_SUMMARY":  "因外觀為臨時搭建之組合式攤棚且外牆非固定材質，判定為攤販。",
                                           "INPUT_TOKENS":  6341,
                                           "TOTAL_TOKENS":  7317,
                                           "OUTPUT_TOKENS":  976,
                                           "RESULT_SP_RULE":  "Result_SP_NL01008_A04",
                                           "ESG_PENALTY_SCORE":  10.0,
-                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
-                                          "correctness":  null,
-                                          "completeness":  null,
-                                          "hallucination_control":  null,
-                                          "overall_score":  null,
-                                          "reason":  null,
-                                          "latency_ms":  14649
+                                          "latency_ms":  14649,
+                                          "overall_decision":  "pass",
+                                          "correctness":  5,
+                                          "completeness":  5,
+                                          "hallucination_control":  5,
+                                          "overall_score":  5.0,
+                                          "violated_critical_rules":  [
+
+                                                                      ],
+                                          "reason":  "Correctness：模型輸出「公司內部裁罰資料未提供與該客戶相符之裁罰紀錄」與 Golden Answer 完全一致，摘要判斷為「無」，與 Golden 的「無。」相符，未改變任何事實或結論，因此給 5 分。Completeness：Golden Answer 只有兩個重點：1) 未有相符裁罰紀錄；2) 摘要判斷為無，模型皆有覆蓋，未遺漏重要資訊，給 5 分。Hallucination Control：模型僅多了一個「裁罰分數：10.0」，此為額外的內部評分欄位，未涉及新裁罰事件、金額、法規或關聯判斷，亦未改變主要結論，視為無實質幻覺，給 5 分。Critical Rules：輸出為中文，且未將不相關裁罰誤判為相關或反向判定，故無違規。",
+                                          "SP_SUMMARY":  null,
+                                          "ESG_PENALTY_OVERVIEW":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  null
                                       },
                                       {
                                           "name":  "歷史",
@@ -22355,11 +22391,11 @@ window.validationReviewData = {
                                       {
                                           "name":  "客戶",
                                           "version":  "小量v2",
-                                          "deliveryDate":  "2026-07-29",
+                                          "deliveryDate":  "2026-08-05",
                                           "tokens":  {
-                                                         "input":  0,
-                                                         "output":  0,
-                                                         "total":  0
+                                                         "input":  null,
+                                                         "output":  null,
+                                                         "total":  null
                                                      },
                                           "SCORE":  6.0,
                                           "IS_MASK":  false,
@@ -22368,22 +22404,25 @@ window.validationReviewData = {
                                           "SP_SCORE":  6.0,
                                           "MASK_RAIL":  null,
                                           "BLOCK_RAIL":  null,
-                                          "SP_SUMMARY":  "照片資訊不足,無法判讀關鍵外觀條件",
                                           "INPUT_TOKENS":  0,
                                           "TOTAL_TOKENS":  0,
                                           "OUTPUT_TOKENS":  0,
                                           "RESULT_SP_RULE":  "Result_SP_NL01008_A03",
                                           "ESG_PENALTY_SCORE":  10.0,
-                                          "ESG_PENALTY_OVERVIEW":  "公司內部裁罰資料未提供與該客戶相符之裁罰紀錄。",
                                           "ESG_PENALTY_IS_RELATED":  null,
-                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  "無。",
-                                          "overall_decision":  null,
+                                          "latency_ms":  66078,
+                                          "overall_decision":  "NO_GD",
                                           "correctness":  null,
                                           "completeness":  null,
                                           "hallucination_control":  null,
                                           "overall_score":  null,
-                                          "reason":  null,
-                                          "latency_ms":  66078
+                                          "violated_critical_rules":  [
+
+                                                                      ],
+                                          "reason":  "NO_GD: no substantive Golden Answer was found for this case; the model output was not evaluated.",
+                                          "SP_SUMMARY":  null,
+                                          "ESG_PENALTY_OVERVIEW":  null,
+                                          "ESG_PENALTY_RELEVANCE_SUMMARY":  null
                                       },
                                       {
                                           "name":  "客戶",
